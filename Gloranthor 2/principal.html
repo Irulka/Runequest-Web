@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUNEQUEST - Menú Principal</title>
+    <!-- Bootstrap CSS + Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('background1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Efecto de desenfoque para el contenido */
+        .main-content {
+            margin-left: 30px !important; /* === CAMBIO 1: Margen permanente === */
+            height: 100vh;
+            overflow-y: auto;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Panel lateral - Color sólido y animación */
+        .sidebar {
+            width: 15%;
+            min-width: 200px;
+            height: 100vh;
+            background: #2c3e50;
+            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            left: -200px; /* Oculto inicialmente */
+            top: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            color: white;
+            transition: left 0.3s ease;
+        }
+
+        /* Mostrar menú cuando está activo */
+        .sidebar.active {
+            left: 0;
+        }
+
+        /* Ajustar contenido cuando el menú está visible */
+        .sidebar.active ~ .main-content {
+            margin-left: 15%;
+        }
+
+        /* Zona de activación del hover */
+        .menu-activator {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 30px; /* Zona más ancha para mejor usabilidad */
+            height: 100vh;
+            z-index: 999;
+        }
+
+        /* Resto de estilos del menú */
+        .menu-header {
+            padding: 20px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10%;
+            object-fit: cover;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .menu-title {
+            font-weight: 600;
+            font-size: 1.7rem;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .menu-container {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px 0;
+        }
+
+        .menu-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-left: 3px solid transparent;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem !important; /* === CAMBIO 3: De 0.9rem a 1rem === */
+            user-select: none;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 3px solid #5bc0be;
+        }
+
+        .menu-item i {
+            margin-right: 8px;
+            font-size: 1.3rem;
+            width: 18px;
+            text-align: center;
+        }
+
+        .submenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .submenu.show {
+            max-height: 500px;
+        }
+
+        .submenu-item {
+            padding: 8px 15px 8px 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1rem;
+        }
+
+        .submenu-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #5bc0be;
+        }
+
+        .menu-arrow {
+            margin-left: auto;
+            transition: transform 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .menu-item.active .menu-arrow {
+            transform: rotate(90deg);
+        }
+
+        /* === CAMBIO 2: Tamaño del título aumentado === */
+        .main-content h2 {
+            font-size: 2.2rem; /* Antes: 1.5rem (Bootstrap) -> ahora 2.2rem */
+            margin-bottom: 1.5rem !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Zona de activación del menú (ahora más ancha) -->
+    <div class="menu-activator" id="menuActivator"></div>
+
+    <!-- Panel lateral izquierdo -->
+    <div class="sidebar" id="sidebar">
+        <div class="menu-header">
+            <img src="./usuario.png" alt="Usuario" 
+                 onerror="this.src='https://via.placeholder.com/60?text=USER'">
+            <div class="menu-title">RUNEQUEST</div>
+        </div>
+
+        <div class="menu-container">
+            <!-- Menú Personajes -->
+            <div class="menu-item" data-menu="personajes">
+                <i class="bi bi-people-fill"></i>
+                <span>Personajes</span>
+                <i class="bi bi-chevron-right menu-arrow"></i>
+            </div>
+            <div class="submenu" id="submenu-personajes">
+                <div class="submenu-item">Creación</div>
+                <div class="submenu-item">Modificadores</div>
+                <div class="submenu-item">NPCs</div>
+                <div class="submenu-item">Base de Datos</div>
+            </div>
+
+            <!-- Menú Mercado -->
+            <div class="menu-item" data-menu="mercado">
+                <i class="bi bi-shop"></i>
+                <span>Mercado</span>
+                <i class="bi bi-chevron-right menu-arrow"></i>
+            </div>
+            <div class="submenu" id="submenu-mercado">
+                <div class="submenu-item">Armas</div>
+                <div class="submenu-item">Armaduras</div>
+                <div class="submenu-item">Objetos Comunes</div>
+                <div class="submenu-item">Otras Posesiones</div>
+            </div>
+
+            <!-- Menú Bestiario -->
+            <div class="menu-item" data-menu="bestiario">
+                <i class="bi bi-bug-fill"></i>
+                <span>Bestiario</span>
+                <i class="bi bi-chevron-right menu-arrow"></i>
+            </div>
+            <div class="submenu" id="submenu-bestiario">
+                <div class="submenu-item">Animales</div>
+                <div class="submenu-item">Monstruos</div>
+                <div class="submenu-item">Espíritus</div>
+                <div class="submenu-item">Razas Inteligentes</div>
+            </div>
+
+            <!-- Menú Magia -->
+            <div class="menu-item" data-menu="magia">
+                <i class="bi bi-stars"></i>
+                <span>Magia</span>
+                <i class="bi bi-chevron-right menu-arrow"></i>
+            </div>
+            <div class="submenu" id="submenu-magia">
+                <div class="submenu-item">Objetos mágicos</div>
+                <div class="submenu-item">Varita de los Deseos</div>
+                <div class="submenu-item">Magia Divina</div>
+                <div class="submenu-item">Magia Espiritual</div>
+                <div class="submenu-item">Magia Hechicería</div>
+            </div>
+
+            <!-- Cerrar sesión -->
+            <div class="menu-item" id="logout-btn">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Salir</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h2 class="mb-4">Bienvenido al Sistema Runequest</h1>
+        <div class="alert alert-info">
+            Pasa el cursor por el borde izquierdo de la pantalla para mostrar el menú.
+        </div>
+    </div>
+
+    <!-- JavaScript mejorado -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const menuActivator = document.getElementById('menuActivator');
+            let hideTimeout;
+            const hoverArea = 30; // Ancho del área de activación en píxeles
+
+            // Mostrar menú al entrar en el área de activación o en el menú
+            function showMenu() {
+                clearTimeout(hideTimeout);
+                sidebar.classList.add('active');
+            }
+
+            // Ocultar menú después de un retraso al salir
+            function hideMenu() {
+                hideTimeout = setTimeout(() => {
+                    sidebar.classList.remove('active');
+                }, 300); // Retraso antes de ocultar
+            }
+
+            // Eventos para el área de activación
+            menuActivator.addEventListener('mouseenter', showMenu);
+            menuActivator.addEventListener('mouseleave', hideMenu);
+
+            // Eventos para el menú
+            sidebar.addEventListener('mouseenter', showMenu);
+            sidebar.addEventListener('mouseleave', hideMenu);
+
+            // Seleccionar todos los ítems de menú principales
+            const menuItems = document.querySelectorAll('.menu-item[data-menu]');
+            
+            // Agregar event listeners a cada ítem de menú
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const menuId = this.getAttribute('data-menu');
+                    const submenu = document.getElementById(`submenu-${menuId}`);
+                    
+                    // Cerrar otros submenús
+                    document.querySelectorAll('.submenu').forEach(sm => {
+                        if (sm !== submenu) {
+                            sm.classList.remove('show');
+                            sm.previousElementSibling.classList.remove('active');
+                        }
+                    });
+                    
+                    // Alternar el submenú actual
+                    this.classList.toggle('active');
+                    submenu.classList.toggle('show');
+                });
+            });
+            
+            // Event listener para el botón de salir
+            document.getElementById('logout-btn').addEventListener('click', function() {
+                if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
+                    window.location.href = 'index.html';
+                }
+            });
+            
+            // Event listeners para los ítems de submenú
+            document.querySelectorAll('.submenu-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    // Actualizar el contenido principal
+                    document.querySelector('.main-content').innerHTML = `
+                        <h2>${this.textContent}</h2>
+                        <p>Contenido de ${this.textContent} se cargará aquí.</p>
+                    `;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

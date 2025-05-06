@@ -383,7 +383,7 @@ h2 {
 }
 
 .varita-container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(229, 116, 116, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -435,7 +435,7 @@ h2 {
 
 .resultado-principal {
     background-color: rgba(106, 13, 173, 0.8);
-    color: rgb(192, 100, 100);
+    color: white;
 }
 
 .resultado-header {
@@ -467,7 +467,7 @@ h2 {
     }
     
     .eurmal-image {
-        max-height: 340px;
+        max-height: 300px;
     }
     
     .controles {

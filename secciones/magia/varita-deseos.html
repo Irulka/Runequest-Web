@@ -1,22 +1,38 @@
 <div class="seccion-activa">
-    <h2>Varita de los Deseos</h2>
+    <h2 class="text-center">Varita de los Deseos</h2>
     
     <div class="varita-container">
-        <p>Tirada de 1 a 100 para obtener efectos mágicos:</p>
+        <p class="explicacion-varita">
+            La Varita de los Deseos es un artefacto mágico impredecible. Al activarla (ya sea con 
+            una tirada aleatoria o introduciendo un valor manual entre 1 y 100), producirá un efecto 
+            mágico único. Cada número corresponde a un efecto específico, mientras que los valores 
+            intermedios generarán efectos aleatorios de menor potencia. ¡Usa con cuidado!
+        </p>
         
-        <div class="controles">
+        <div class="controles text-center">
             <button id="btn-aleatorio" class="btn-magia">Tirada Aleatoria</button>
             <button id="btn-manual" class="btn-magia">Introducir Valor</button>
             <input type="number" id="input-valor" min="1" max="100" placeholder="1-100" style="display: none;">
+            <button id="btn-reintentar" class="btn-magia" style="display: none;">Volver a Tirar</button>
         </div>
         
-        <div id="resultado-varita" style="display: none;">
-            <h3>Resultado: <span id="valor-tirada"></span></h3>
-            <p id="efecto-magico" class="efecto-texto"></p>
+        <div class="resultados-container">
+            <div id="resultado-anterior" class="resultado-box resultado-secundario">
+                <div class="resultado-header">Anterior</div>
+                <div class="resultado-valor"></div>
+                <div class="resultado-efecto"></div>
+            </div>
             
-            <div class="controles-navegacion">
-                <button id="btn-anterior" class="btn-magia">← Anterior</button>
-                <button id="btn-siguiente" class="btn-magia">Siguiente →</button>
+            <div id="resultado-principal" class="resultado-box resultado-principal" style="display: none;">
+                <div class="resultado-header">Resultado Actual</div>
+                <div class="resultado-valor"></div>
+                <div class="resultado-efecto"></div>
+            </div>
+            
+            <div id="resultado-siguiente" class="resultado-box resultado-secundario">
+                <div class="resultado-header">Siguiente</div>
+                <div class="resultado-valor"></div>
+                <div class="resultado-efecto"></div>
             </div>
         </div>
     </div>

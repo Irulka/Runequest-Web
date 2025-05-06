@@ -179,3 +179,106 @@ h2 {
 .btn-magia:hover {
     background: #3a8d8b;
 }
+
+/* Estilos para la Varita de los Deseos */
+.varita-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.explicacion-varita {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #666;
+}
+
+.controles {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-magia {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-magia:hover {
+    background-color: #8a2be2;
+    transform: translateY(-2px);
+}
+
+#input-valor {
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.resultados-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultado-box {
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.resultado-principal {
+    background-color: rgba(106, 13, 173, 0.8);
+    color: white;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.resultado-secundario {
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+
+.resultado-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resultado-valor {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.resultado-efecto {
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .controles {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .resultado-box {
+        width: 100%;
+    }
+}

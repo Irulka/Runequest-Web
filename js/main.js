@@ -1,4 +1,4 @@
-// js/main.js - Versión corregida
+// js/main.js - Versión corregida y optimizada
 document.addEventListener('DOMContentLoaded', function() {
     // ====================
     // 1. Configuración inicial
@@ -8,35 +8,34 @@ document.addEventListener('DOMContentLoaded', function() {
     let hideTimeout;
     let rutaActual = '';
 
-/// ====================
-// 2. Lógica del menú hover
-// ====================
-function showMenu() {
-    clearTimeout(hideTimeout);
-    sidebar.classList.add('active');
-}
+    // ====================
+    // 2. Lógica del menú hover
+    // ====================
+    function showMenu() {
+        clearTimeout(hideTimeout);
+        sidebar.classList.add('active');
+    }
 
-function hideMenu() {
-    hideTimeout = setTimeout(() => {
-        sidebar.classList.remove('active');
-    }, 300);
-}
+    function hideMenu() {
+        hideTimeout = setTimeout(() => {
+            sidebar.classList.remove('active');
+        }, 300);
+    }
 
-// Detectar si el dispositivo es táctil
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    // Detectar si el dispositivo es táctil
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-// Lógica para dispositivos táctiles
-if (isTouchDevice) {
-    menuActivator.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
-    });
-} else {
-    // Lógica para dispositivos no táctiles (ratón)
-    menuActivator.addEventListener('mouseenter', showMenu);
-    menuActivator.addEventListener('mouseleave', hideMenu);
-    sidebar.addEventListener('mouseenter', showMenu);
-    sidebar.addEventListener('mouseleave', hideMenu);
-}
+    if (isTouchDevice) {
+        menuActivator.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+    } else {
+        // Lógica para dispositivos no táctiles (ratón)
+        menuActivator.addEventListener('mouseenter', showMenu);
+        menuActivator.addEventListener('mouseleave', hideMenu);
+        sidebar.addEventListener('mouseenter', showMenu);
+        sidebar.addEventListener('mouseleave', hideMenu);
+    }
 
     // ====================
     // 3. Lógica de submenús
@@ -59,7 +58,7 @@ if (isTouchDevice) {
     });
 
     // ====================
-    // 4. Carga dinámica mejorada
+    // 4. Carga dinámica mejorada (CORRECCIÓN PRINCIPAL)
     // ====================
     function cargarSeccion(url) {
         if (rutaActual === url) return;
@@ -77,7 +76,10 @@ if (isTouchDevice) {
             })
             .then(html => {
                 document.getElementById('contenido').innerHTML = html;
-                cargarJS(url.replace('.html', '.js'));
+                
+                // CORRECCIÓN: Generar ruta JS correcta
+                const rutaJS = url.replace('secciones/', 'js/secciones/').replace('.html', '.js');
+                cargarJS(rutaJS);
             })
             .catch(error => {
                 console.error('Error al cargar:', error);
@@ -112,13 +114,16 @@ if (isTouchDevice) {
                     script.src = url;
                     script.setAttribute('data-section', 'true');
                     document.body.appendChild(script);
+                    console.log(`[Runequest] JS cargado: ${url}`);
+                } else {
+                    console.warn(`JS no encontrado para: ${url}`);
                 }
             })
-            .catch(() => console.warn(`JS no encontrado para: ${url}`));
+            .catch(error => console.error('Error al cargar JS:', error));
     }
 
     // ====================
-    // 5. Mapeo de secciones
+    // 5. Mapeo de secciones (CORRECCIÓN PARA VARITA)
     // ====================
     document.querySelectorAll('.submenu-item').forEach(item => {
         item.addEventListener('click', function() {
@@ -142,7 +147,6 @@ if (isTouchDevice) {
     // ====================
     // 6. Configuración inicial
     // ====================
-    // Cargar contenido inicial (evitando fetch)
     document.getElementById('contenido').innerHTML = `
         <div class="seccion-activa">
             <h2 style="text-align: center;">Bienvenido al Sistema Runequest</h2>
@@ -153,7 +157,6 @@ if (isTouchDevice) {
         </div>
     `;
 
-    // Logout
     document.getElementById('logout-btn')?.addEventListener('click', function() {
         if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
             window.location.href = 'index.html';

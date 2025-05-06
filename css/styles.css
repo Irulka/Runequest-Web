@@ -191,7 +191,7 @@ h2 {
     text-align: center;
     margin-bottom: 30px;
     font-style: italic;
-    color: #666;
+    color: #cfcccc;
 }
 
 .controles {
@@ -280,5 +280,73 @@ h2 {
     
     .resultado-box {
         width: 100%;
+    }
+}
+
+/* Estilos para el nuevo layout con imagen */
+.varita-layout-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.varita-content-container {
+    flex: 0 0 70%;
+    padding-right: 20px;
+}
+
+.eurmal-image-container {
+    flex: 0 0 30%;
+    position: relative;
+    min-height: 300px;
+}
+
+.eurmal-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+/* Ajustes para el contenido existente */
+.varita-container {
+    max-width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.resultados-container {
+    width: 100%;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .varita-layout-container {
+        flex-direction: column;
+    }
+    
+    .varita-content-container, 
+    .eurmal-image-container {
+        flex: 0 0 100%;
+    }
+    
+    .eurmal-image {
+        position: relative;
+        top: auto;
+        transform: none;
+        max-height: 300px;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .varita-content-container {
+        padding-right: 0;
     }
 }

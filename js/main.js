@@ -8,26 +8,35 @@ document.addEventListener('DOMContentLoaded', function() {
     let hideTimeout;
     let rutaActual = '';
 
-    // ====================
-    // 2. Lógica del menú hover
-    // ====================
-    function showMenu() {
-        clearTimeout(hideTimeout);
-        sidebar.classList.add('active');
-    }
+/// ====================
+// 2. Lógica del menú hover
+// ====================
+function showMenu() {
+    clearTimeout(hideTimeout);
+    sidebar.classList.add('active');
+}
 
-    function hideMenu() {
-        hideTimeout = setTimeout(() => {
-            sidebar.classList.remove('active');
-        }, 300);
-    }
+function hideMenu() {
+    hideTimeout = setTimeout(() => {
+        sidebar.classList.remove('active');
+    }, 300);
+}
 
-    if (menuActivator && sidebar) {
-        menuActivator.addEventListener('mouseenter', showMenu);
-        menuActivator.addEventListener('mouseleave', hideMenu);
-        sidebar.addEventListener('mouseenter', showMenu);
-        sidebar.addEventListener('mouseleave', hideMenu);
-    }
+// Detectar si el dispositivo es táctil
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+// Lógica para dispositivos táctiles
+if (isTouchDevice) {
+    menuActivator.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+    });
+} else {
+    // Lógica para dispositivos no táctiles (ratón)
+    menuActivator.addEventListener('mouseenter', showMenu);
+    menuActivator.addEventListener('mouseleave', hideMenu);
+    sidebar.addEventListener('mouseenter', showMenu);
+    sidebar.addEventListener('mouseleave', hideMenu);
+}
 
     // ====================
     // 3. Lógica de submenús

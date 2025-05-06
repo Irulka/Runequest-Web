@@ -435,7 +435,7 @@ h2 {
 
 .resultado-principal {
     background-color: rgba(106, 13, 173, 0.8);
-    color: white;
+    color: rgb(192, 100, 100);
 }
 
 .resultado-header {
@@ -467,7 +467,7 @@ h2 {
     }
     
     .eurmal-image {
-        max-height: 300px;
+        max-height: 340px;
     }
     
     .controles {

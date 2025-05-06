@@ -1,0 +1,25 @@
+<div class="seccion-activa">
+    <h2>Varita de los Deseos</h2>
+    
+    <div class="varita-container">
+        <p>Tirada de 1 a 100 para obtener efectos mágicos:</p>
+        
+        <div class="controles">
+            <button id="btn-aleatorio" class="btn-magia">Tirada Aleatoria</button>
+            <button id="btn-manual" class="btn-magia">Introducir Valor</button>
+            <input type="number" id="input-valor" min="1" max="100" placeholder="1-100" style="display: none;">
+        </div>
+        
+        <div id="resultado-varita" style="display: none;">
+            <h3>Resultado: <span id="valor-tirada"></span></h3>
+            <p id="efecto-magico" class="efecto-texto"></p>
+            
+            <div class="controles-navegacion">
+                <button id="btn-anterior" class="btn-magia">← Anterior</button>
+                <button id="btn-siguiente" class="btn-magia">Siguiente →</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/secciones/varita-deseos.js" data-section="true"></script>

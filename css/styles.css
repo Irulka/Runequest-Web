@@ -350,3 +350,128 @@ h2 {
         padding-right: 0;
     }
 }
+
+/* Estilos para la Varita de los Deseos - Funciona en local y GitHub */
+.varita-layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.varita-content-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+.eurmal-image-container {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.eurmal-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.varita-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.controles {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-magia {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.btn-magia:hover {
+    background-color: #8a2be2;
+    transform: translateY(-2px);
+}
+
+#input-valor {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.resultados-container {
+    margin-top: 30px;
+    display: none; /* Oculto inicialmente */
+}
+
+.resultado-box {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-principal {
+    background-color: rgba(106, 13, 173, 0.8);
+    color: white;
+}
+
+.resultado-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.resultado-valor {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.resultado-efecto {
+    line-height: 1.5;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .varita-layout-container {
+        flex-direction: column;
+    }
+    
+    .eurmal-image-container {
+        order: -1;
+        margin-bottom: 20px;
+    }
+    
+    .eurmal-image {
+        max-height: 300px;
+    }
+    
+    .controles {
+        flex-direction: column;
+        align-items: center;
+    }
+}

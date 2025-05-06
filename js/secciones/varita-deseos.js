@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnManual = document.getElementById('btn-manual');
     const btnReintentar = document.getElementById('btn-reintentar');
     const inputValor = document.getElementById('input-valor');
+    const resultadosContainer = document.querySelector('.resultados-container');
     const resultadoPrincipal = document.getElementById('resultado-principal');
     const resultadoAnterior = document.getElementById('resultado-anterior');
     const resultadoSiguiente = document.getElementById('resultado-siguiente');
@@ -120,19 +121,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // ====================
 
     function obtenerEfecto(valor) {
-        if (efectosVarita[valor]) {
-            return efectosVarita[valor];
-        } else {
-            // Esto no debería ocurrir ya que ahora tenemos todos los efectos definidos
-            return "Efecto misterioso: Algo inesperado ocurre (Director de Juego decide)";
-        }
+        return efectosVarita[valor] || "Efecto misterioso: Algo inesperado ocurre (Director de Juego decide)";
     }
 
     function mostrarResultados(valor) {
+        // Mostrar el contenedor de resultados si estaba oculto
+        resultadosContainer.style.display = 'block';
+        
         // Mostrar resultado principal
         resultadoPrincipal.querySelector('.resultado-valor').textContent = valor;
         resultadoPrincipal.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor);
-        resultadoPrincipal.style.display = 'block';
         
         // Mostrar resultado anterior (si existe)
         if (valor > 1) {
@@ -177,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnReintentar.addEventListener('click', function() {
         if (ultimoResultado) {
-            // Hacer una nueva tirada aleatoria
             const valor = Math.floor(Math.random() * 100) + 1;
             procesarTirada(valor);
         }

@@ -160,21 +160,21 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-    gap: 20px;
+    gap: 7px;
 }
 
 .varita-content-container {
     flex: 1;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 850px;
 }
 
 .varita-container {
-    background-color: rgba(42, 33, 61, 0.6); /* Fondo púrpura oscuro */
+    background-color: rgba(42, 33, 61, 0.6);
     padding: 12px;
-    margin-top: 2%; /* Aumenta espacio superior */
+    margin-top: 1%;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     color: #f0e6ff;
@@ -183,17 +183,17 @@ h2 {
 }
 
 .eurmal-image-container {
-    flex: 0 0 400px;
+    flex: 0 0 470px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 .eurmal-image {
     max-width: 100%;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     object-fit: contain;
     filter: drop-shadow(0 0 15px rgba(106, 13, 173, 0.5));
     transition: transform 0.3s ease;
@@ -254,13 +254,13 @@ h2 {
 }
 
 .resultado-box {
-    padding: 12px 15px; /* Reducido */
-    margin: 8px 0; /* Menos espacio entre cajas */
+    padding: 12px 15px;
+    margin: 8px 0;
     border-radius: 6px;
     background-color: rgba(75, 13, 88, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #6a0dad;
-    min-height: auto; /* Elimina altura fija */
+    min-height: auto;
 }
 
 .resultado-principal {
@@ -270,18 +270,17 @@ h2 {
 }
 
 .resultado-header {
-    font-size: 0.9rem; /* Título más pequeño */
+    font-size: 0.9rem;
     margin-bottom: 8px;
-    color: inherit; /* Usa el color del contenedor padre */
+    color: inherit;
 }
 
 .resultado-principal .resultado-header {
     color: white;
 }
 
-/* Eliminamos completamente .resultado-valor */
 .resultado-valor {
-    display: none !important; /* Oculta el número */
+    display: none !important;
 }
 
 .resultado-principal .resultado-valor {
@@ -291,8 +290,8 @@ h2 {
 .resultado-efecto {
     line-height: 1.5;
     font-size: 0.95rem;
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina padding extra */
+    margin: 0;
+    padding: 0;
 }
 
 /* === RESPONSIVE === */

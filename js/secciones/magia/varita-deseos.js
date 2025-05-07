@@ -104,110 +104,98 @@ function initVaritaDeseos() {
         100: "Deseo limitado: Cumple un deseo simple (el Director de Juego decide los límites)"
     };
 
-// Elementos de la interfaz con verificación
-const btnAleatorio = document.getElementById('btn-aleatorio');
-const btnManual = document.getElementById('btn-manual');
-const btnReintentar = document.getElementById('btn-reintentar');
-const inputValor = document.getElementById('input-valor');
-const resultadosContainer = document.querySelector('.resultados-container');
-const resultadoPrincipal = document.getElementById('resultado-principal');
-const resultadoAnterior = document.getElementById('resultado-anterior');
-const resultadoSiguiente = document.getElementById('resultado-siguiente');
+    // Elementos de la interfaz con verificación
+    const btnAleatorio = document.getElementById('btn-aleatorio');
+    const btnManual = document.getElementById('btn-manual');
+    const inputValor = document.getElementById('input-valor');
+    const resultadosContainer = document.querySelector('.resultados-container');
+    const resultadoPrincipal = document.getElementById('resultado-principal');
+    const resultadoAnterior = document.getElementById('resultado-anterior');
+    const resultadoSiguiente = document.getElementById('resultado-siguiente');
 
-// Verificación crítica de elementos
-if (!btnAleatorio || !btnManual || !resultadosContainer) {
-    console.error('Error: Elementos esenciales no encontrados en el DOM');
-    return;
-}
-
-// Estado inicial
-let ultimoResultado = null;
-inputValor.style.display = 'none';
-btnReintentar.style.display = 'none';
-resultadosContainer.style.display = 'none';
-
-// Función para obtener efecto mágico
-const obtenerEfecto = (valor) => {
-    return efectosVarita[valor] || `Efecto misterioso (${valor}): El DJ decide el resultado`;
-};
-
-// Función para mostrar resultados
-const mostrarResultados = (valor) => {
-    console.log(`Mostrando resultado para: ${valor}`);
-    
-    // Actualizar resultados
-    if (resultadoPrincipal) {
-        resultadoPrincipal.querySelector('.resultado-valor').textContent = valor;
-        resultadoPrincipal.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor);
+    // Verificación crítica de elementos
+    if (!btnAleatorio || !btnManual || !resultadosContainer) {
+        console.error('Error: Elementos esenciales no encontrados en el DOM');
+        return;
     }
 
-    if (resultadoAnterior && valor > 1) {
-        resultadoAnterior.querySelector('.resultado-valor').textContent = valor - 1;
-        resultadoAnterior.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor - 1);
-        resultadoAnterior.style.display = 'block';
-    } else if (resultadoAnterior) {
-        resultadoAnterior.style.display = 'none';
-    }
+    // Estado inicial
+    let ultimoResultado = null;
+    inputValor.style.display = 'none';
+    resultadosContainer.style.display = 'none';
 
-    if (resultadoSiguiente && valor < 100) {
-        resultadoSiguiente.querySelector('.resultado-valor').textContent = valor + 1;
-        resultadoSiguiente.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor + 1);
-        resultadoSiguiente.style.display = 'block';
-    } else if (resultadoSiguiente) {
-        resultadoSiguiente.style.display = 'none';
-    }
+    // Función para obtener efecto mágico
+    const obtenerEfecto = (valor) => {
+        return efectosVarita[valor] || `Efecto misterioso (${valor}): El DJ decide el resultado`;
+    };
 
-    // Mostrar elementos
-    resultadosContainer.style.display = 'block';
-    if (btnReintentar) btnReintentar.style.display = 'inline-block';
-    ultimoResultado = valor;
-};
-
-// Event Listeners con manejo de errores
-try {
-    btnAleatorio.addEventListener('click', () => {
-        const valor = Math.floor(Math.random() * 100) + 1;
-        console.log('Tirada aleatoria:', valor);
-        inputValor.style.display = 'none';
-        mostrarResultados(valor);
-    });
-
-    btnManual.addEventListener('click', () => {
-        inputValor.style.display = inputValor.style.display === 'none' ? 'block' : 'none';
-        if (inputValor.style.display === 'block') inputValor.focus();
-    });
-
-    inputValor.addEventListener('change', (e) => {
-        const valor = parseInt(e.target.value);
-        if (!isNaN(valor) && valor >= 1 && valor <= 100) {
-            mostrarResultados(valor);
-            e.target.value = '';
-            inputValor.style.display = 'none';
-        } else {
-            alert('Por favor, introduce un número entre 1 y 100');
-            inputValor.focus();
+    // Función para mostrar resultados
+    const mostrarResultados = (valor) => {
+        console.log(`Mostrando resultado para: ${valor}`);
+        
+        // Actualizar resultados
+        if (resultadoPrincipal) {
+            resultadoPrincipal.querySelector('.resultado-valor').textContent = valor;
+            resultadoPrincipal.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor);
         }
-    });
 
-    if (btnReintentar) {
-        btnReintentar.addEventListener('click', () => {
-            if (ultimoResultado !== null) {
-                const valor = Math.floor(Math.random() * 100) + 1;
-                console.log('Volver a tirar:', valor);
+        if (resultadoAnterior && valor > 1) {
+            resultadoAnterior.querySelector('.resultado-valor').textContent = valor - 1;
+            resultadoAnterior.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor - 1);
+            resultadoAnterior.style.display = 'block';
+        } else if (resultadoAnterior) {
+            resultadoAnterior.style.display = 'none';
+        }
+
+        if (resultadoSiguiente && valor < 100) {
+            resultadoSiguiente.querySelector('.resultado-valor').textContent = valor + 1;
+            resultadoSiguiente.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor + 1);
+            resultadoSiguiente.style.display = 'block';
+        } else if (resultadoSiguiente) {
+            resultadoSiguiente.style.display = 'none';
+        }
+
+        // Mostrar elementos
+        resultadosContainer.style.display = 'block';
+        ultimoResultado = valor;
+    };
+
+    // Event Listeners con manejo de errores
+    try {
+        btnAleatorio.addEventListener('click', () => {
+            const valor = Math.floor(Math.random() * 100) + 1;
+            console.log('Tirada aleatoria:', valor);
+            inputValor.style.display = 'none';
+            mostrarResultados(valor);
+        });
+
+        btnManual.addEventListener('click', () => {
+            inputValor.style.display = inputValor.style.display === 'none' ? 'block' : 'none';
+            if (inputValor.style.display === 'block') inputValor.focus();
+        });
+
+        inputValor.addEventListener('change', (e) => {
+            const valor = parseInt(e.target.value);
+            if (!isNaN(valor) && valor >= 1 && valor <= 100) {
                 mostrarResultados(valor);
+                e.target.value = '';
+                inputValor.style.display = 'none';
+            } else {
+                alert('Por favor, introduce un número entre 1 y 100');
+                inputValor.focus();
             }
         });
-    }
-} catch (error) {
-    console.error('Error al asignar event listeners:', error);
-}
 
-console.log('Varita de los Deseos lista para usar');
+    } catch (error) {
+        console.error('Error al asignar event listeners:', error);
+    }
+
+    console.log('Varita de los Deseos lista para usar');
 }
 
 // Inicialización condicional
 if (document.readyState === 'complete') {
-initVaritaDeseos();
+    initVaritaDeseos();
 } else {
-document.addEventListener('DOMContentLoaded', initVaritaDeseos);
+    document.addEventListener('DOMContentLoaded', initVaritaDeseos);
 }

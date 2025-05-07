@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Script de la Varita de los Deseos cargado correctamente');
+function initVaritaDeseos() {
+    console.log('Inicializando Varita de los Deseos...');
 
     const efectosVarita = {
         1: "¡Polvo de hadas! Todos en 10 metros estornudan durante 1d6 turnos",
@@ -104,97 +104,110 @@ document.addEventListener('DOMContentLoaded', function() {
         100: "Deseo limitado: Cumple un deseo simple (el Director de Juego decide los límites)"
     };
 
-       // Elementos de la interfaz
-       const btnAleatorio = document.getElementById('btn-aleatorio');
-       const btnManual = document.getElementById('btn-manual');
-       const btnReintentar = document.getElementById('btn-reintentar');
-       const inputValor = document.getElementById('input-valor');
-       const resultadosContainer = document.querySelector('.resultados-container');
-       const resultadoPrincipal = document.getElementById('resultado-principal');
-       const resultadoAnterior = document.getElementById('resultado-anterior');
-       const resultadoSiguiente = document.getElementById('resultado-siguiente');
-   
-       // Variable para almacenar el último resultado
-       let ultimoResultado = null;
-   
-       // Función para obtener el efecto mágico
-       function obtenerEfecto(valor) {
-           return efectosVarita[valor] || `Efecto misterioso (${valor}): El DJ decide el resultado`;
-       }
-   
-       // Función para mostrar los resultados
-       function mostrarResultados(valor) {
-           console.log(`Mostrando resultados para valor: ${valor}`);
-           
-           // Mostrar el contenedor principal si estaba oculto
-           resultadosContainer.style.display = 'block';
-           
-           // Actualizar resultado principal
-           resultadoPrincipal.querySelector('.resultado-valor').textContent = valor;
-           resultadoPrincipal.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor);
-           
-           // Actualizar resultado anterior (si existe)
-           if (valor > 1) {
-               resultadoAnterior.querySelector('.resultado-valor').textContent = valor - 1;
-               resultadoAnterior.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor - 1);
-               resultadoAnterior.style.display = 'block';
-           } else {
-               resultadoAnterior.style.display = 'none';
-           }
-           
-           // Actualizar resultado siguiente (si existe)
-           if (valor < 100) {
-               resultadoSiguiente.querySelector('.resultado-valor').textContent = valor + 1;
-               resultadoSiguiente.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor + 1);
-               resultadoSiguiente.style.display = 'block';
-           } else {
-               resultadoSiguiente.style.display = 'none';
-           }
-           
-           // Mostrar botón de reintentar
-           btnReintentar.style.display = 'inline-block';
-           ultimoResultado = valor;
-       }
-   
-       // Evento para tirada aleatoria
-       btnAleatorio.addEventListener('click', function() {
-           const valor = Math.floor(Math.random() * 100) + 1;
-           console.log(`Tirada aleatoria: ${valor}`);
-           inputValor.style.display = 'none';
-           mostrarResultados(valor);
-       });
-   
-       // Evento para mostrar/ocultar input manual
-       btnManual.addEventListener('click', function() {
-           inputValor.style.display = inputValor.style.display === 'none' ? 'block' : 'none';
-           if (inputValor.style.display === 'block') {
-               inputValor.focus();
-           }
-       });
-   
-       // Evento para input manual
-       inputValor.addEventListener('change', function(e) {
-           const valor = parseInt(e.target.value);
-           if (!isNaN(valor) && valor >= 1 && valor <= 100) {
-               console.log(`Valor manual introducido: ${valor}`);
-               mostrarResultados(valor);
-               e.target.value = '';
-               inputValor.style.display = 'none';
-           } else {
-               alert('Por favor, introduce un número válido entre 1 y 100');
-               inputValor.focus();
-           }
-       });
-   
-       // Evento para reintentar
-       btnReintentar.addEventListener('click', function() {
-           if (ultimoResultado !== null) {
-               const valor = Math.floor(Math.random() * 100) + 1;
-               console.log(`Reintentando tirada: ${valor}`);
-               mostrarResultados(valor);
-           }
-       });
-   
-       // Inicialización
-       console.log('Módulo de la Varita de los Deseos inicializado');
-   });
+// Elementos de la interfaz con verificación
+const btnAleatorio = document.getElementById('btn-aleatorio');
+const btnManual = document.getElementById('btn-manual');
+const btnReintentar = document.getElementById('btn-reintentar');
+const inputValor = document.getElementById('input-valor');
+const resultadosContainer = document.querySelector('.resultados-container');
+const resultadoPrincipal = document.getElementById('resultado-principal');
+const resultadoAnterior = document.getElementById('resultado-anterior');
+const resultadoSiguiente = document.getElementById('resultado-siguiente');
+
+// Verificación crítica de elementos
+if (!btnAleatorio || !btnManual || !resultadosContainer) {
+    console.error('Error: Elementos esenciales no encontrados en el DOM');
+    return;
+}
+
+// Estado inicial
+let ultimoResultado = null;
+inputValor.style.display = 'none';
+btnReintentar.style.display = 'none';
+resultadosContainer.style.display = 'none';
+
+// Función para obtener efecto mágico
+const obtenerEfecto = (valor) => {
+    return efectosVarita[valor] || `Efecto misterioso (${valor}): El DJ decide el resultado`;
+};
+
+// Función para mostrar resultados
+const mostrarResultados = (valor) => {
+    console.log(`Mostrando resultado para: ${valor}`);
+    
+    // Actualizar resultados
+    if (resultadoPrincipal) {
+        resultadoPrincipal.querySelector('.resultado-valor').textContent = valor;
+        resultadoPrincipal.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor);
+    }
+
+    if (resultadoAnterior && valor > 1) {
+        resultadoAnterior.querySelector('.resultado-valor').textContent = valor - 1;
+        resultadoAnterior.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor - 1);
+        resultadoAnterior.style.display = 'block';
+    } else if (resultadoAnterior) {
+        resultadoAnterior.style.display = 'none';
+    }
+
+    if (resultadoSiguiente && valor < 100) {
+        resultadoSiguiente.querySelector('.resultado-valor').textContent = valor + 1;
+        resultadoSiguiente.querySelector('.resultado-efecto').textContent = obtenerEfecto(valor + 1);
+        resultadoSiguiente.style.display = 'block';
+    } else if (resultadoSiguiente) {
+        resultadoSiguiente.style.display = 'none';
+    }
+
+    // Mostrar elementos
+    resultadosContainer.style.display = 'block';
+    if (btnReintentar) btnReintentar.style.display = 'inline-block';
+    ultimoResultado = valor;
+};
+
+// Event Listeners con manejo de errores
+try {
+    btnAleatorio.addEventListener('click', () => {
+        const valor = Math.floor(Math.random() * 100) + 1;
+        console.log('Tirada aleatoria:', valor);
+        inputValor.style.display = 'none';
+        mostrarResultados(valor);
+    });
+
+    btnManual.addEventListener('click', () => {
+        inputValor.style.display = inputValor.style.display === 'none' ? 'block' : 'none';
+        if (inputValor.style.display === 'block') inputValor.focus();
+    });
+
+    inputValor.addEventListener('change', (e) => {
+        const valor = parseInt(e.target.value);
+        if (!isNaN(valor) && valor >= 1 && valor <= 100) {
+            mostrarResultados(valor);
+            e.target.value = '';
+            inputValor.style.display = 'none';
+        } else {
+            alert('Por favor, introduce un número entre 1 y 100');
+            inputValor.focus();
+        }
+    });
+
+    if (btnReintentar) {
+        btnReintentar.addEventListener('click', () => {
+            if (ultimoResultado !== null) {
+                const valor = Math.floor(Math.random() * 100) + 1;
+                console.log('Volver a tirar:', valor);
+                mostrarResultados(valor);
+            }
+        });
+    }
+} catch (error) {
+    console.error('Error al asignar event listeners:', error);
+}
+
+console.log('Varita de los Deseos lista para usar');
+}
+
+// Inicialización condicional
+if (document.readyState === 'complete') {
+initVaritaDeseos();
+} else {
+document.addEventListener('DOMContentLoaded', initVaritaDeseos);
+}

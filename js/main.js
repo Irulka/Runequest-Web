@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ====================
-    // 4. Carga dinámica mejorada (CORRECCIÓN PRINCIPAL)
+    // 4. Carga dinámica mejorada
     // ====================
     function cargarSeccion(url) {
         if (rutaActual === url) return;
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(html => {
                 document.getElementById('contenido').innerHTML = html;
                 
-                // CORRECCIÓN: Generar ruta JS correcta
+                // Generar ruta JS correcta
                 const rutaJS = url.replace('secciones/', 'js/secciones/').replace('.html', '.js');
                 cargarJS(rutaJS);
             })
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function mostrarError(url) {
-        const nombreSeccion = url.split('/').pop().replace('.html', '').replace('-', ' ');
+        const nombreSeccion = url.split('/').pop().replace('.html', '').replace(/-/g, ' ');
         document.getElementById('contenido').innerHTML = `
             <div class="seccion-activa">
                 <h2>${nombreSeccion}</h2>
@@ -123,21 +123,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ====================
-    // 5. Mapeo de secciones (CORRECCIÓN PARA VARITA)
+    // 5. Mapeo de secciones (actualizado con Rasgos Caóticos)
     // ====================
     document.querySelectorAll('.submenu-item').forEach(item => {
         item.addEventListener('click', function() {
             const texto = this.textContent.trim();
             let ruta = '';
             
-            // Mapeo especial para Varita de los Deseos
-            if (texto === 'Varita de los Deseos') {
-                ruta = 'secciones/magia/varita-deseos.html';
-            } 
-            // Mapeo para otras secciones
-            else {
-                const seccionPadre = this.parentElement.id.replace('submenu-', '');
-                ruta = `secciones/${seccionPadre}/${texto.toLowerCase().replace(/\s+/g, '-')}.html`;
+            // Mapeo especial para secciones con nombres complejos
+            switch(texto) {
+                case 'Varita de los Deseos':
+                    ruta = 'secciones/magia/varita-deseos.html';
+                    break;
+                case 'Rasgos Caóticos':
+                    ruta = 'secciones/magia/rasgos-caoticos.html';
+                    break;
+                default:
+                    const seccionPadre = this.parentElement.id.replace('submenu-', '');
+                    ruta = `secciones/${seccionPadre}/${texto.toLowerCase().replace(/\s+/g, '-')}.html`;
             }
             
             cargarSeccion(ruta);

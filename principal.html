@@ -9,6 +9,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- CSS Personalizado -->
     <link href="./css/styles.css" rel="stylesheet">
+    <style>
+        /* Estilos para menús desplegables */
+        .submenu {
+            display: none;
+            padding-left: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        .submenu.show {
+            display: block;
+        }
+        .menu-item {
+            cursor: pointer;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.2s;
+            color: #ddd;
+            text-decoration: none;
+        }
+        .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .menu-arrow {
+            margin-left: auto;
+            transition: transform 0.3s;
+        }
+        .menu-item.open .menu-arrow {
+            transform: rotate(90deg);
+        }
+        .submenu-item {
+            padding: 8px 15px 8px 30px;
+            display: block;
+            color: #ddd;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .submenu-item:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        /* Estilo específico para el ítem Espíritus */
+        .submenu .menu-item {
+            padding: 8px 15px;
+            font-size: 0.9rem; /* Mismo tamaño que los demás items */
+        }
+        /* Estilo para el botón de salir */
+        #logout-btn {
+            background: none;
+            border: none;
+            color: #ddd;
+            padding: 10px 15px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+        }
+        #logout-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        /* Footer del menú */
+        .menu-footer {
+            margin-top: auto;
+            padding: 15px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
 </head>
 <body>
     <!-- Zona de activación del menú -->
@@ -30,10 +98,10 @@
                 <i class="bi bi-chevron-right menu-arrow"></i>
             </div>
             <div class="submenu" id="submenu-personajes">
-                <div class="submenu-item" data-seccion="personajes/creacion">Creación</div>
-                <div class="submenu-item" data-seccion="personajes/modificadores">Modificadores</div>
-                <div class="submenu-item" data-seccion="personajes/npcs">NPCs</div>
-                <div class="submenu-item" data-seccion="personajes/base-datos">Base de Datos</div>
+                <a class="submenu-item" href="#" data-seccion="personajes/creacion">Creación</a>
+                <a class="submenu-item" href="#" data-seccion="personajes/modificadores">Modificadores</a>
+                <a class="submenu-item" href="#" data-seccion="personajes/npcs">NPCs</a>
+                <a class="submenu-item" href="#" data-seccion="personajes/base-datos">Base de Datos</a>
             </div>
 
             <!-- Menú Mercado -->
@@ -43,10 +111,10 @@
                 <i class="bi bi-chevron-right menu-arrow"></i>
             </div>
             <div class="submenu" id="submenu-mercado">
-                <div class="submenu-item" data-seccion="mercado/armas">Armas</div>
-                <div class="submenu-item" data-seccion="mercado/armaduras">Armaduras</div>
-                <div class="submenu-item" data-seccion="mercado/objetos-comunes">Objetos Comunes</div>
-                <div class="submenu-item" data-seccion="mercado/otras-posesiones">Otras Posesiones</div>
+                <a class="submenu-item" href="#" data-seccion="mercado/armas">Armas</a>
+                <a class="submenu-item" href="#" data-seccion="mercado/armaduras">Armaduras</a>
+                <a class="submenu-item" href="#" data-seccion="mercado/objetos-comunes">Objetos Comunes</a>
+                <a class="submenu-item" href="#" data-seccion="mercado/otras-posesiones">Otras Posesiones</a>
             </div>
 
             <!-- Menú Bestiario -->
@@ -56,10 +124,22 @@
                 <i class="bi bi-chevron-right menu-arrow"></i>
             </div>
             <div class="submenu" id="submenu-bestiario">
-                <div class="submenu-item" data-seccion="bestiario/animales">Animales</div>
-                <div class="submenu-item" data-seccion="bestiario/monstruos">Monstruos</div>
-                <div class="submenu-item" data-seccion="bestiario/espiritus">Espíritus</div>
-                <div class="submenu-item" data-seccion="bestiario/razas-inteligentes">Razas Inteligentes</div>
+                <a class="submenu-item" href="#" data-seccion="bestiario/animales">Animales</a>
+                <a class="submenu-item" href="#" data-seccion="bestiario/monstruos">Monstruos</a>
+                
+                <!-- Submenú Espíritus - Tamaño corregido -->
+                <div class="menu-item submenu-espiritus">
+                    <span>Espíritus</span>
+                    <i class="bi bi-chevron-right menu-arrow"></i>
+                </div>
+                <div class="submenu sub-submenu" id="submenu-espiritus">
+                    <a class="submenu-item" href="#" data-seccion="bestiario/espiritus/elementales">Elementales</a>
+                    <a class="submenu-item" href="#" data-seccion="bestiario/espiritus/demonios">Demonios</a>
+                    <a class="submenu-item" href="#" data-seccion="bestiario/espiritus/fantasmas">Fantasmas</a>
+                    <a class="submenu-item" href="#" data-seccion="bestiario/espiritus/pasiones">Pasiones</a>
+                </div>
+                
+                <a class="submenu-item" href="#" data-seccion="bestiario/razas-inteligentes">Razas Inteligentes</a>
             </div>
 
             <!-- Menú Magia -->
@@ -69,32 +149,36 @@
                 <i class="bi bi-chevron-right menu-arrow"></i>
             </div>
             <div class="submenu" id="submenu-magia">
-                <div class="submenu-item" data-seccion="magia/objetos-magicos">Objetos mágicos</div>
-                <div class="submenu-item" data-seccion="magia/varita-deseos">Varita de los Deseos</div>
-                <div class="submenu-item" data-seccion="magia/rasgos-caoticos">Rasgos Caóticos</div>
-                <div class="submenu-item" data-seccion="magia/magia-divina">Magia Divina</div>
-                <div class="submenu-item" data-seccion="magia/magia-espiritual">Magia Espiritual</div>
-                <div class="submenu-item" data-seccion="magia/magia-hechiceria">Magia Hechicería</div>
+                <a class="submenu-item" href="#" data-seccion="magia/objetos-magicos">Objetos mágicos</a>
+                <a class="submenu-item" href="#" data-seccion="magia/varita-deseos">Varita de los Deseos</a>
+                <a class="submenu-item" href="#" data-seccion="magia/rasgos-caoticos">Rasgos Caóticos</a>
+                <a class="submenu-item" href="#" data-seccion="magia/maldicion-thed">Maldición de Thed</a>
+                <a class="submenu-item" href="#" data-seccion="magia/magia-divina">Magia Divina</a>
+                <a class="submenu-item" href="#" data-seccion="magia/magia-espiritual">Magia Espiritual</a>
+                <a class="submenu-item" href="#" data-seccion="magia/magia-hechiceria">Magia Hechicería</a>
             </div>
 
-            <!-- Cerrar sesión -->
-            <div class="menu-item" id="logout-btn">
+            <!-- Cerrar sesión - Color corregido -->
+            <a class="menu-item" id="logout-btn" href="#">
                 <i class="bi bi-box-arrow-left"></i>
                 <span>Salir</span>
-            </div>
+            </a>
             
-             <!-- Footer del menú -->
-             <div class="menu-footer" style="margin-top: auto; padding: 15px; text-align: center; color: #aaa; font-size: 0.8rem;">
+            <!-- Footer del menú con copyright -->
+            <div class="menu-footer">
                 © Diego Vivo, 2025
-             </div>
+            </div>
         </div>
     </div>
 
     <!-- Contenido principal dinámico -->
     <div class="main-content" id="contenido">
-        <h2 class="mb-4 text-center">Bienvenido al Sistema Runequest</h2>
-        <div class="alert alert-info">
-            Pasa el cursor por el borde izquierdo de la pantalla para mostrar el menú.
+        <div class="seccion-activa">
+            <h2 style="text-align: center;">Bienvenido al Sistema Runequest</h2>
+            <div class="alert alert-info">
+                <p>Selecciona una opción del menú lateral para comenzar.</p>
+                <small>Pasa el cursor por el borde izquierdo para mostrar el menú</small>
+            </div>
         </div>
     </div>
 

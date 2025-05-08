@@ -1,104 +1,67 @@
-// js/main.js - Versión corregida y optimizada
 document.addEventListener('DOMContentLoaded', function() {
-    // ====================
-    // 1. Configuración inicial
-    // ====================
+    // 1. Configuración del menú lateral
     const sidebar = document.getElementById('sidebar');
     const menuActivator = document.getElementById('menuActivator');
     let hideTimeout;
     let rutaActual = '';
 
-    // ====================
-    // 2. Lógica del menú hover
-    // ====================
     function showMenu() {
         clearTimeout(hideTimeout);
         sidebar.classList.add('active');
     }
 
     function hideMenu() {
-        hideTimeout = setTimeout(() => {
-            sidebar.classList.remove('active');
-        }, 300);
+        hideTimeout = setTimeout(() => sidebar.classList.remove('active'), 300);
     }
 
-    // Detectar si el dispositivo es táctil
+    // Detectar dispositivo táctil
     const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
     if (isTouchDevice) {
-        menuActivator.addEventListener('click', function() {
-            sidebar.classList.toggle('active');
-        });
+        menuActivator.addEventListener('click', () => sidebar.classList.toggle('active'));
     } else {
-        // Lógica para dispositivos no táctiles (ratón)
         menuActivator.addEventListener('mouseenter', showMenu);
         menuActivator.addEventListener('mouseleave', hideMenu);
         sidebar.addEventListener('mouseenter', showMenu);
         sidebar.addEventListener('mouseleave', hideMenu);
     }
 
-    // ====================
-    // 3. Lógica de submenús
-    // ====================
-    document.querySelectorAll('.menu-item[data-menu]').forEach(item => {
-        item.addEventListener('click', function() {
-            const menuId = this.getAttribute('data-menu');
-            const submenu = document.getElementById(`submenu-${menuId}`);
-            
-            document.querySelectorAll('.submenu').forEach(sm => {
-                if (sm !== submenu) {
-                    sm.classList.remove('show');
-                    sm.previousElementSibling.classList.remove('active');
-                }
-            });
-            
-            this.classList.toggle('active');
-            submenu.classList.toggle('show');
-        });
-    });
-
-    // ====================
-    // 4. Carga dinámica mejorada
-    // ====================
-    function cargarSeccion(url) {
-        if (rutaActual === url) return;
-        rutaActual = url;
-
+    // 2. Carga dinámica de contenido
+    function cargarSeccion(seccion) {
+        if (rutaActual === seccion) return;
+        rutaActual = seccion;
+        
+        const url = `secciones/${seccion}.html`;
         console.log(`[Runequest] Cargando: ${url}`);
         
         fetch(url)
             .then(response => {
                 if (!response.ok) {
-                    mostrarError(url);
+                    mostrarError(seccion);
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 return response.text();
             })
             .then(html => {
                 document.getElementById('contenido').innerHTML = html;
-                
-                // Generar ruta JS correcta
-                const rutaJS = url.replace('secciones/', 'js/secciones/').replace('.html', '.js');
-                cargarJS(rutaJS);
+                cargarJS(`js/secciones/${seccion}.js`);
             })
             .catch(error => {
                 console.error('Error al cargar:', error);
-                mostrarError(url);
+                mostrarError(seccion);
             });
     }
 
-    function mostrarError(url) {
-        const nombreSeccion = url.split('/').pop().replace('.html', '').replace(/-/g, ' ');
+    function mostrarError(seccion) {
+        const nombreSeccion = seccion.split('/').pop().replace(/-/g, ' ');
         document.getElementById('contenido').innerHTML = `
             <div class="seccion-activa">
                 <h2>${nombreSeccion}</h2>
                 <div class="alert alert-danger mt-3">
                     <p>Error al cargar la sección. Verifica:</p>
                     <ul>
-                        <li>Que el archivo <strong>${url}</strong> existe</li>
+                        <li>Que el archivo <strong>secciones/${seccion}.html</strong> existe</li>
                         <li>Que el servidor está funcionando</li>
                     </ul>
-                    <small>Consulta la consola (F12) para más detalles</small>
                 </div>
             </div>
         `;
@@ -107,60 +70,71 @@ document.addEventListener('DOMContentLoaded', function() {
     function cargarJS(url) {
         document.querySelectorAll('script[data-section]').forEach(script => script.remove());
         
-        fetch(url)
-            .then(response => {
-                if (response.ok) {
-                    const script = document.createElement('script');
-                    script.src = url;
-                    script.setAttribute('data-section', 'true');
-                    document.body.appendChild(script);
-                    console.log(`[Runequest] JS cargado: ${url}`);
-                } else {
-                    console.warn(`JS no encontrado para: ${url}`);
-                }
-            })
-            .catch(error => console.error('Error al cargar JS:', error));
+        const script = document.createElement('script');
+        script.src = url;
+        script.setAttribute('data-section', 'true');
+        script.onerror = () => console.warn(`JS no encontrado para: ${url}`);
+        document.body.appendChild(script);
+        console.log(`[Runequest] JS cargado: ${url}`);
     }
 
-    // ====================
-    // 5. Mapeo de secciones (actualizado con Rasgos Caóticos)
-    // ====================
-    document.querySelectorAll('.submenu-item').forEach(item => {
-        item.addEventListener('click', function() {
-            const texto = this.textContent.trim();
-            let ruta = '';
-            
-            // Mapeo especial para secciones con nombres complejos
-            switch(texto) {
-                case 'Varita de los Deseos':
-                    ruta = 'secciones/magia/varita-deseos.html';
-                    break;
-                case 'Rasgos Caóticos':
-                    ruta = 'secciones/magia/rasgos-caoticos.html';
-                    break;
-                default:
-                    const seccionPadre = this.parentElement.id.replace('submenu-', '');
-                    ruta = `secciones/${seccionPadre}/${texto.toLowerCase().replace(/\s+/g, '-')}.html`;
-            }
-            
-            cargarSeccion(ruta);
+    // 3. Manejo de menús desplegables
+    function setupMenuItems() {
+        // Menús principales
+        document.querySelectorAll('.menu-item[data-menu]').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const submenuId = `submenu-${this.getAttribute('data-menu')}`;
+                const submenu = document.getElementById(submenuId);
+                
+                if (submenu) {
+                    // Cerrar otros submenús del mismo nivel
+                    const parent = this.parentElement;
+                    parent.querySelectorAll('.submenu').forEach(sm => {
+                        if (sm !== submenu) {
+                            sm.classList.remove('show');
+                            const prevItem = sm.previousElementSibling;
+                            if (prevItem && prevItem.classList.contains('menu-item')) {
+                                prevItem.classList.remove('open');
+                            }
+                        }
+                    });
+                    
+                    // Alternar submenú actual
+                    submenu.classList.toggle('show');
+                    this.classList.toggle('open');
+                }
+            });
         });
-    });
 
-    // ====================
-    // 6. Configuración inicial
-    // ====================
-    document.getElementById('contenido').innerHTML = `
-        <div class="seccion-activa">
-            <h2 style="text-align: center;">Bienvenido al Sistema Runequest</h2>
-            <div class="alert alert-info">
-                <p>Selecciona una opción del menú lateral para comenzar.</p>
-                <small>Pasa el cursor por el borde izquierdo para mostrar el menú</small>
-            </div>
-        </div>
-    `;
+        // Submenú Espíritus
+        const espiritusItem = document.querySelector('.submenu-espiritus');
+        if (espiritusItem) {
+            espiritusItem.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const submenu = document.getElementById('submenu-espiritus');
+                if (submenu) {
+                    submenu.classList.toggle('show');
+                    this.classList.toggle('open');
+                }
+            });
+        }
 
-    document.getElementById('logout-btn')?.addEventListener('click', function() {
+        // Items de submenú (para cargar contenido)
+        document.querySelectorAll('.submenu-item[data-seccion]').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                cargarSeccion(this.getAttribute('data-seccion'));
+            });
+        });
+    }
+
+    // 4. Configuración inicial
+    setupMenuItems();
+    
+    // Botón de salir
+    document.getElementById('logout-btn')?.addEventListener('click', function(e) {
+        e.preventDefault();
         if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
             window.location.href = 'index.html';
         }

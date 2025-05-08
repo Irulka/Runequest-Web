@@ -1,0 +1,177 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Bestiario de Animales</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    A pesar de la asombrosa variedad de criaturas de Glorantha, los aventureros pueden interactuar con
+                    una amplia gama de animales convencionales, como monturas, enemigos o incluso como anfitriones de espíritus.
+                </p>
+                
+                <!-- Selectores directos de categoría -->
+                <div class="controles text-center" style="display: flex; gap: 15px; justify-content: center;">
+                    <button id="btn-domesticos" class="btn-magia">Domésticos</button>
+                    <button id="btn-salvajes" class="btn-magia">Salvajes</button>
+                </div>
+                
+                <!-- Selector de Animal (con scroll) -->
+                <div class="selector-animal-container" style="display: none;">
+                    <div class="animales-grid" id="animales-grid">
+                        <!-- Se llenará dinámicamente con JS -->
+                    </div>
+                </div>
+                
+                <!-- Contenedor de resultados -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-principal" class="resultado-box resultado-principal">
+                        <!-- Contenido generado dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/animales.png" alt="Bestiario Animal" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<!-- CSS adicional -->
+<style>
+    /* Estilo para el grid de animales */
+    .animales-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        max-height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    
+    .opcion-animal {
+        padding: 12px;
+        text-align: center;
+        background: #2d3748;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .opcion-animal:hover {
+        background: #4a5568;
+        transform: scale(1.05);
+    }
+    
+    .selector-animal-container {
+        margin-top: 15px;
+    }
+    
+    /* Estilos para pestañas */
+    .tabs {
+        display: flex;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .tab-btn {
+        padding: 8px 15px;
+        background: none;
+        border: none;
+        color: #cbd5e0;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .tab-btn.active {
+        border-bottom: 2px solid #d69e2e;
+        color: #f7fafc;
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }
+    
+    /* Plantilla de atributos */
+    .stats-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 15px 0;
+    }
+    
+    .stats-column {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .stat-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .stat-name {
+        font-weight: bold;
+        color: #cbd5e0;
+    }
+    
+    .stat-value {
+        color: #f7fafc;
+        font-family: monospace;
+    }
+    
+    /* Estilos para las tablas */
+    .tabla-localizaciones,
+    .tabla-armas {
+        margin-top: 15px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .tabla-localizaciones th, 
+    .tabla-localizaciones td,
+    .tabla-armas th,
+    .tabla-armas td {
+        padding: 8px 12px;
+        text-align: left;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .tabla-localizaciones th,
+    .tabla-armas th {
+        background-color: #2d3748;
+        color: #d69e2e;
+    }
+    
+    .tabla-localizaciones tr:hover,
+    .tabla-armas tr:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .tabla-localizaciones td:first-child {
+        width: 50%;
+    }
+    
+    .tabla-armas {
+        width: 100%;
+    }
+    
+    .tabla-armas th,
+    .tabla-armas td {
+        width: 25%;
+    }
+</style>
+
+<script src="js/secciones/bestiario/animales.js"></script>

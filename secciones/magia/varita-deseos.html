@@ -1,0 +1,54 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">La Varita de los Deseos de Eurmal</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    La Varita de los Deseos de Eurmal es un objeto ancestral que solo sirve al Dios Embaucador. 
+                    El usuario deberá invertir un asalto completo para usar la varita.
+                    Deberá formular su deseo en voz alta, mientras apunta con la varita a un objetivo. 
+                    El efecto de la varita podrá estar bien definido, o sujeto a interpretaciones del DJ. 
+                    Si el lanzador al tiempo de usar la varita, elige para si mismo un efecto pernicioso, Eurmal
+                    le permitirá poder elegir entre el resultado obtenido, el anterior, o el posterior.
+                </p>
+                
+                <div class="controles text-center">
+                    <button id="btn-aleatorio" class="btn-magia">Tirada Aleatoria</button>
+                    <button id="btn-manual" class="btn-magia">Introducir Valor</button>
+                    <input type="number" id="input-valor" min="1" max="100" placeholder="1-100" style="display: none;">
+                </div>
+                
+                <!-- Contenedor de resultados (inicialmente oculto) -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-anterior" class="resultado-box resultado-secundario">
+                        <div class="resultado-header">Resultado Anterior</div>
+                        <div class="resultado-valor"></div>
+                        <div class="resultado-efecto"></div>
+                    </div>
+                    
+                    <div id="resultado-principal" class="resultado-box resultado-principal">
+                        <div class="resultado-header">Resultado Obtenido</div>
+                        <div class="resultado-valor"></div>
+                        <div class="resultado-efecto"></div>
+                    </div>
+                    
+                    <div id="resultado-siguiente" class="resultado-box resultado-secundario">
+                        <div class="resultado-header">Resultado Siguiente</div>
+                        <div class="resultado-valor"></div>
+                        <div class="resultado-efecto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/eurmal.png" alt="Imagen de Eurmal" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<!-- Asegúrate de que esta ruta sea correcta según tu estructura de archivos -->
+<script src="js/secciones/varita-deseos.js"></script>

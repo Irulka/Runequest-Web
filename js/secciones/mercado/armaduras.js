@@ -3,9 +3,9 @@
  */
 
 const CONFIG = {
-    BASE: '../../',
+    BASE: '', // Cambiado para GitHub Pages
     PATHS: {
-        armaduras: './js/secciones/mercado/armaduras.json'
+        armaduras: 'js/secciones/mercado/armaduras.json'
     },
     DEBUG: true
 };
@@ -26,7 +26,7 @@ const UI = {
 
 async function cargarArmaduras() {
     try {
-        const response = await fetch(`${CONFIG.BASE}${CONFIG.PATHS.armaduras}`);
+        const response = await fetch(`${CONFIG.PATHS.armaduras}`);
         if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
         todasLasArmaduras = await response.json();
         
@@ -38,6 +38,7 @@ async function cargarArmaduras() {
     } catch (error) {
         console.error("Error cargando armaduras:", error);
         todasLasArmaduras = generarDatosError();
+        crearBotonesPartesCuerpo(["Error"]); // Mostrar al menos un botón
         return false;
     }
 }
@@ -63,11 +64,13 @@ function crearBotonesPartesCuerpo(partesCuerpo) {
     divBotones.style.gap = '15px';
     divBotones.style.justifyContent = 'center';
     divBotones.style.width = '100%';
+    divBotones.style.marginBottom = '20px'; // Añadido para mejor espaciado
     
     partesCuerpo.forEach((parte, index) => {
         const boton = document.createElement('button');
         boton.className = 'btn-magia';
         boton.textContent = parte;
+        boton.style.minWidth = '120px'; // Para que todos tengan similar ancho
         
         boton.addEventListener('click', () => {
             filtrarPorParteCuerpo(parte);

@@ -1,11 +1,11 @@
 /**
- * SISTEMA DE ARMADURAS CON BUSCADOR - VERSIÓN SIMPLIFICADA
+ * SISTEMA DE ARMADURAS - BUSQUEDA POR PARTE DEL CUERPO
  */
 
 const CONFIG = {
     BASE: '../../',
     PATHS: {
-        armaduras: 'js/secciones/mercado/armaduras.json'
+        armaduras: './js/secciones/mercado/armaduras.json'
     },
     DEBUG: true
 };
@@ -70,8 +70,7 @@ function crearBotonesPartesCuerpo(partesCuerpo) {
         boton.textContent = parte;
         
         boton.addEventListener('click', () => {
-            UI.buscador.value = parte;
-            buscarGlobalmente(parte);
+            filtrarPorParteCuerpo(parte);
         });
         
         divBotones.appendChild(boton);
@@ -84,6 +83,25 @@ function crearBotonesPartesCuerpo(partesCuerpo) {
     });
 }
 
+function filtrarPorParteCuerpo(parteCuerpo) {
+    UI.tablaBody.innerHTML = '';
+    UI.tituloCategoria.textContent = `Armaduras para: ${parteCuerpo}`;
+    UI.tituloCategoria.style.display = 'block';
+    UI.buscador.value = ''; // Limpiar el buscador
+
+    const armadurasFiltradas = todasLasArmaduras.filter(armadura => 
+        armadura.cubre.toLowerCase() === parteCuerpo.toLowerCase()
+    );
+
+    if (armadurasFiltradas.length === 0) {
+        mostrarMensajeTabla(`No se encontraron armaduras para ${parteCuerpo}`);
+    } else {
+        armadurasFiltradas.forEach(armadura => crearFilaArmadura(armadura));
+    }
+
+    UI.tablaContainer.style.display = 'block';
+}
+
 function mostrarMensajeTabla(mensaje) {
     const row = document.createElement('tr');
     row.innerHTML = `
@@ -94,7 +112,7 @@ function mostrarMensajeTabla(mensaje) {
     UI.tablaBody.appendChild(row);
 }
 
-function crearFilaArmadura(armadura, terminoBusqueda = '') {
+function crearFilaArmadura(armadura) {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>${armadura.tipo || '-'}</td>
@@ -105,15 +123,6 @@ function crearFilaArmadura(armadura, terminoBusqueda = '') {
         <td class="silueta">${armadura.cubre || '-'}</td>
         <td>${armadura.silencio >= 0 ? '+' : ''}${armadura.silencio || '0'}</td>
     `;
-    
-    if (terminoBusqueda && (
-        (armadura.tipo && armadura.tipo.toLowerCase().includes(terminoBusqueda)) ||
-        (armadura.material && armadura.material.toLowerCase().includes(terminoBusqueda)) ||
-        (armadura.cubre && armadura.cubre.toLowerCase().includes(terminoBusqueda))
-    )) {
-        row.classList.add('resultado-busqueda');
-    }
-    
     UI.tablaBody.appendChild(row);
 }
 
@@ -122,21 +131,17 @@ function buscarGlobalmente(termino) {
     UI.tituloCategoria.textContent = `Resultados para "${termino}"`;
     UI.tituloCategoria.style.display = 'block';
 
-    let resultadosEncontrados = 0;
     const terminoLower = termino.toLowerCase();
+    const resultados = todasLasArmaduras.filter(armadura => 
+        (armadura.tipo && armadura.tipo.toLowerCase().includes(terminoLower)) ||
+        (armadura.material && armadura.material.toLowerCase().includes(terminoLower)) ||
+        (armadura.cubre && armadura.cubre.toLowerCase().includes(terminoLower))
+    );
 
-    todasLasArmaduras.forEach(armadura => {
-        if ((armadura.tipo && armadura.tipo.toLowerCase().includes(terminoLower)) ||
-            (armadura.material && armadura.material.toLowerCase().includes(terminoLower)) ||
-            (armadura.cubre && armadura.cubre.toLowerCase().includes(terminoLower))
-        ) {
-            crearFilaArmadura(armadura, terminoLower);
-            resultadosEncontrados++;
-        }
-    });
-
-    if (resultadosEncontrados === 0) {
+    if (resultados.length === 0) {
         mostrarMensajeTabla(`No se encontraron armaduras que coincidan con "${termino}"`);
+    } else {
+        resultados.forEach(armadura => crearFilaArmadura(armadura));
     }
 
     UI.tablaContainer.style.display = 'block';
@@ -165,20 +170,16 @@ function configurarBuscador() {
 // --------------------------
 
 async function init() {
-    // Cargar todas las armaduras
     const exito = await cargarArmaduras();
     
     if (exito) {
-        // Configurar buscador
         configurarBuscador();
-        
-        // Estado inicial
         UI.tablaContainer.style.display = 'none';
         UI.tituloCategoria.style.display = 'none';
         
-        if (CONFIG.DEBUG) console.log('Sistema de armaduras inicializado correctamente');
+        if (CONFIG.DEBUG) console.log('Sistema de armaduras inicializado');
     } else {
-        mostrarMensajeTabla("Error al cargar los datos de armaduras. Por favor, recarga la página.");
+        mostrarMensajeTabla("Error al cargar los datos. Recarga la página.");
     }
 }
 

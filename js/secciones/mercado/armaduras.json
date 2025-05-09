@@ -1,0 +1,713 @@
+[
+ {
+  "cubre": "cabeza",
+  "tipo": "Capucha",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 3,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Sombrero ala ancha",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 4,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Gorro",
+  "material": "Cuero",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 5,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo Compuesto",
+  "material": "Placas",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo abierto",
+  "material": "Placas",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo cerrado",
+  "material": "Placas",
+  "absorcion": 5,
+  "crg": 1,
+  "precio": 30,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo compuesto",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 40,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo completo",
+  "material": "Placas",
+  "absorcion": 6,
+  "crg": 2,
+  "precio": 50,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Mangas",
+  "material": "Escamas Ligera",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 25,
+  "silencio": -15
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Mangas",
+  "material": "Escamas pesada",
+  "absorcion": 5,
+  "crg": 3,
+  "precio": 50,
+  "silencio": -15
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 0,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 30,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 5,
+  "crg": 1,
+  "precio": 60,
+  "silencio": -5
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales",
+  "material": "Placas bronce",
+  "absorcion": 6,
+  "crg": 2,
+  "precio": 100,
+  "silencio": -10
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Anillas",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 50,
+  "silencio": -5
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Caparazón",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 15,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 5,
+  "crg": 2,
+  "precio": 120,
+  "silencio": -5
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Escamas ligera",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 25,
+  "silencio": -10
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Escamas pesada",
+  "absorcion": 5,
+  "crg": 3,
+  "precio": 40,
+  "silencio": -25
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Bezanteada",
+  "absorcion": 5,
+  "crg": 2,
+  "precio": 100,
+  "silencio": -15
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Placas bronce",
+  "absorcion": 6,
+  "crg": 3,
+  "precio": 175,
+  "silencio": -15
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Linotórax",
+  "material": "Acolchado",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Linotórax",
+  "material": "Lino",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 30,
+  "silencio": -5
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 40,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Anillas",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 80,
+  "silencio": -15
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Escamas ligera",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 40,
+  "silencio": -20
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 5,
+  "crg": 3,
+  "precio": 150,
+  "silencio": -5
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga",
+  "material": "Escamas pesada",
+  "absorcion": 5,
+  "crg": 3,
+  "precio": 65,
+  "silencio": -25
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Segmentada",
+  "material": "Placas bronce",
+  "absorcion": 6,
+  "crg": 5,
+  "precio": 300,
+  "silencio": -50
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Lino",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Cuero tachonado",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 20,
+  "silencio": -5
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 4,
+  "crg": 3,
+  "precio": 80,
+  "silencio": -10
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Escamas ligera",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 30,
+  "silencio": -15
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda",
+  "material": "Escamas pesada",
+  "absorcion": 5,
+  "crg": 3,
+  "precio": 60,
+  "silencio": -30
+ },
+ {
+  "cubre": "Abd y piernas",
+  "tipo": "Calzas",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y piernas",
+  "tipo": "Calzas",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 1,
+  "precio": 15,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 40,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas",
+  "material": "Placas bronce",
+  "absorcion": 6,
+  "crg": 2,
+  "precio": 120,
+  "silencio": -15
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas",
+  "material": "Piel de Rinoceronte",
+  "absorcion": 5,
+  "crg": 2,
+  "precio": 100,
+  "silencio": -15
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Capucha élfica",
+  "material": "cuero duro",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 12,
+  "silencio": 5
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Capucha trollkin",
+  "material": "cuero",
+  "absorcion": 1,
+  "crg": 4,
+  "precio": 2,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Sombrero trollkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 4,
+  "precio": 3,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Gorro trollkin",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 3,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo halfling",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 4,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo troll",
+  "material": "plomo",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 80,
+  "silencio": 0
+ },
+ {
+  "cubre": "cabeza",
+  "tipo": "Yelmo cerrado troll",
+  "material": "placa de plomo",
+  "absorcion": 5,
+  "crg": 2,
+  "precio": 100,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales élficos",
+  "material": "Corteza",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 45,
+  "silencio": 5
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Brazales hafling",
+  "material": "Escamas Ligera",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 25,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Mangas trollkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 8,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Mangas trollkin",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 2,
+  "precio": 30,
+  "silencio": 0
+ },
+ {
+  "cubre": "brazos",
+  "tipo": "Mangas troll",
+  "material": "placa de plomo",
+  "absorcion": 6,
+  "crg": 2,
+  "precio": 80,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza élfica",
+  "material": "corteza",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 45,
+  "silencio": 5
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza halfling",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 5,
+  "precio": 5,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza trollkin",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 15,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza Trollkin",
+  "material": "Caparazon de tortuga",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza troll",
+  "material": "Caparazon de insecto",
+  "absorcion": 4,
+  "crg": 2,
+  "precio": 100,
+  "silencio": 0
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza",
+  "material": "Escamas ligera",
+  "absorcion": 4,
+  "crg": 1,
+  "precio": 25,
+  "silencio": -10
+ },
+ {
+  "cubre": "pecho",
+  "tipo": "Coraza troll",
+  "material": "Placa de plomo",
+  "absorcion": 6,
+  "crg": 4,
+  "precio": 120,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Linotórax Halfing",
+  "material": "Acolchado",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 15,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Linotórax trollkin",
+  "material": "Lino",
+  "absorcion": 3,
+  "crg": 2,
+  "precio": 25,
+  "silencio": -5
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga élfica",
+  "material": "Corteza",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 80,
+  "silencio": 5
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "LórigaTrolkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 2,
+  "precio": 15,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y pecho",
+  "tipo": "Lóriga troll",
+  "material": "Placa de plomo",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda trollkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 4,
+  "precio": 6,
+  "silencio": 0
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda trollkin",
+  "material": "Lino",
+  "absorcion": 3,
+  "crg": 2,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda  Halflin",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 2,
+  "precio": 15,
+  "silencio": -5
+ },
+ {
+  "cubre": "abdomen",
+  "tipo": "Falda troll",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y piernas",
+  "tipo": "Pantalones trollkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 2,
+  "precio": 3,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y piernas",
+  "tipo": "Pantalones halflin",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 2,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "Abd y piernas",
+  "tipo": "Pantalones troll",
+  "material": "Cuero duro",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas élficas",
+  "material": "Corteza",
+  "absorcion": 2,
+  "crg": 1,
+  "precio": 80,
+  "silencio": 5
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas trollkin",
+  "material": "Cuero",
+  "absorcion": 1,
+  "crg": 4,
+  "precio": 10,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas trollkin",
+  "material": "Cuero hervido",
+  "absorcion": 3,
+  "crg": 2,
+  "precio": 20,
+  "silencio": 0
+ },
+ {
+  "cubre": "piernas",
+  "tipo": "Grebas troll",
+  "material": "placa de plomo",
+  "absorcion": 6,
+  "crg": 2,
+  "precio": 100,
+  "silencio": 0
+ }
+]

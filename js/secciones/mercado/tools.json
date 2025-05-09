@@ -1,0 +1,163 @@
+[
+ {
+  "Id": 1,
+  "nombre": "Gancho de pesca",
+  "peso": "0,1 Kg",
+  "precio": "1 C",
+  "descripcion": "Fabricado normalmente de hueso, piedra y rara vez de bronce."
+ },
+ {
+  "Id": 2,
+  "nombre": "Martillo",
+  "peso": "0,5 Kg",
+  "precio": "5 C",
+  "descripcion": "Los más comunes están fabricados de madera y piedra."
+ },
+ {
+  "Id": 3,
+  "nombre": "Piel para escritura",
+  "peso": "0,1 Kg",
+  "precio": "3 C",
+  "descripcion": "Pequeña hoja de piel curtida para escribir, de no muy buena calidad. Aun puede tener incluso restos de pelo."
+ },
+ {
+  "Id": 4,
+  "nombre": "Cuchillo",
+  "peso": "ENC 4",
+  "precio": "1 L",
+  "descripcion": "De bronce, silex o piedra tallada, con distintos niveles de calidad y generalmente con una empuñadura de madera."
+ },
+ {
+  "Id": 5,
+  "nombre": "Piel",
+  "peso": "ENC 2",
+  "precio": "3 C",
+  "descripcion": "Una hoja o rollo de piel flexible. Si es gruesa como una suela cuesta el doble y el triple si es muy fina."
+ },
+ {
+  "Id": 6,
+  "nombre": "Cierre de bonce",
+  "peso": "0,5 Kg",
+  "precio": "20 L",
+  "descripcion": "Cierre de bronce sujeto por una cerradura similar a un candado."
+ },
+ {
+  "Id": 7,
+  "nombre": "Mazo",
+  "peso": "0,5 Kg",
+  "precio": "6 C",
+  "descripcion": "Normalmente de madera y con el mango envuelto en cuero sin curtir."
+ },
+ {
+  "Id": 8,
+  "nombre": "Papiro",
+  "peso": "ENC 50",
+  "precio": "1 C",
+  "descripcion": "Una hoja de aproximádamente 40 centímetros. A menudo se cosen las hojas unas a otras por los extremos y se enrollan."
+ },
+ {
+  "Id": 9,
+  "nombre": "Pergamino",
+  "peso": "ENC 20",
+  "precio": "3 C",
+  "descripcion": "Una hoja de aproximádamente 60 centímetros."
+ },
+ {
+  "Id": 10,
+  "nombre": "Pico de asta",
+  "peso": "ENC 2",
+  "precio": "6 C",
+  "descripcion": "Usado tanto en agricultura como en minería, se trata simplemente de una cornamenta unida a un mango."
+ },
+ {
+  "Id": 11,
+  "nombre": "Pico de bronce",
+  "peso": "ENC 2",
+  "precio": "4 L",
+  "descripcion": "Cabeza robusta de bronce con un pincho y un contrapeso para hacer palanca."
+ },
+ {
+  "Id": 12,
+  "nombre": "Cuerda (15m)",
+  "peso": "0,2 Kg",
+  "precio": "2 C",
+  "descripcion": "Fabricada con cáñamo o cualquier otro tipo de fibra vegetal trenzada."
+ },
+ {
+  "Id": 13,
+  "nombre": "Rascador",
+  "peso": "0,2 Kg",
+  "precio": "5 C",
+  "descripcion": "Herramienta de madera o hueso empleada para raspar pieles sin pelo."
+ },
+ {
+  "Id": 14,
+  "nombre": "Kit de costura",
+  "peso": "0,1 Kg",
+  "precio": "2 C",
+  "descripcion": "Compuesto por un punzón y varias agujas de hueso y madera, además de distintos tipos de hilo."
+ },
+ {
+  "Id": 15,
+  "nombre": "Pala",
+  "peso": "ENC 1",
+  "precio": "4 L",
+  "descripcion": "Hecha de madera o bronce."
+ },
+ {
+  "Id": 16,
+  "nombre": "Punta de lanza",
+  "peso": "0,2 Kg",
+  "precio": "1 C",
+  "descripcion": "Punta de lanza de silex tallado y afilado como una navaja."
+ },
+ {
+  "Id": 17,
+  "nombre": "Kit de tatuador",
+  "peso": "0,5 Kg",
+  "precio": "1 L",
+  "descripcion": "Variedad de herramientas para tatuar."
+ },
+ {
+  "Id": 18,
+  "nombre": "Kit Peletero",
+  "peso": "2 Kg",
+  "precio": "15 L",
+  "descripcion": "Martillos, cuchillas, punzones de bronce y herramientas de estampado."
+ },
+ {
+  "Id": 19,
+  "nombre": "Kit de Cantero",
+  "peso": "5 Kg",
+  "precio": "25 L",
+  "descripcion": "Martillos, cinceles, mazos, llanas y reglas."
+ },
+ {
+  "Id": 20,
+  "nombre": "Kit de Tejedor",
+  "peso": "20 Kg",
+  "precio": "2 L",
+  "descripcion": "Sencillo telar y algunas lanzaderas."
+ },
+ {
+  "Id": 21,
+  "nombre": "Kit Carpintero",
+  "peso": "8 Kg",
+  "precio": "2 L",
+  "descripcion": "Martillos, cinceles, hacha, cepillos, sierra y un taladro manual, fabricados en bronce."
+ },
+ {
+  "Id": 22,
+  "nombre": "Kit de Escritura",
+  "peso": "0,1 Kg",
+  "precio": "4 C",
+  "descripcion": "Plumas, una cuchilla afilada y tintas fabricadas con alquitran, hueso quemado y hollín."
+ },
+ {
+  "Id": 23,
+  "nombre": "Piedra de afilar",
+  "peso": "0,1 Kg",
+  "precio": "1 C",
+  "descripcion": "Piedra de grano fino para afilar herramientas o hachas. Es conveniente usar dos de distinto grano."
+ }
+]

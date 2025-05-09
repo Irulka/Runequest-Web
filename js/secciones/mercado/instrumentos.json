@@ -1,0 +1,142 @@
+[
+ {
+  "Id": 12,
+  "nombre": "Arpa",
+  "peso": "4 Kg",
+  "precio": "50 L",
+  "descripcion": "Arpa  construida con madera o bronce, con entre 5 y 12 cuerdas."
+ },
+ {
+  "Id": 20,
+  "nombre": "Caracola",
+  "peso": "0,2 Kg",
+  "precio": "1 C",
+  "descripcion": "Caracola marina a la que se ha practicado un agujero para usarla como trompeta."
+ },
+ {
+  "Id": 3,
+  "nombre": "Castañuelas",
+  "peso": "0,1 Kg",
+  "precio": "2 C",
+  "descripcion": "Dos de piezas concavas de madera unidas por una cuerda. Se sujeta por los dedos y se hacen castañatear."
+ },
+ {
+  "Id": 2,
+  "nombre": "Churinga",
+  "peso": "0.2 Kg",
+  "precio": "2 C",
+  "descripcion": "Pieza romboide de madera, metal o pizarra unida a una cuerda, que provoca sonido al girarlo como una honda."
+ },
+ {
+  "Id": 4,
+  "nombre": "Claves",
+  "peso": "0,1 Kg",
+  "precio": "1 C",
+  "descripcion": "Instrumento de percusión que consiste únicamente en dos palos cilíndricos de madera (o hueso en la cultura Uz)."
+ },
+ {
+  "Id": 11,
+  "nombre": "Cuerno",
+  "peso": "0,5 Kg",
+  "precio": "15 L",
+  "descripcion": "Cuerno de animal hueco al que se le ha practicado una boquilla y que puede producir una única nota."
+ },
+ {
+  "Id": 7,
+  "nombre": "Flauta",
+  "peso": "0,1 Kg",
+  "precio": "5 L",
+  "descripcion": "Pieza cilíndrica tallada de madera o hueso con agujeros que permite tocar distintas notas."
+ },
+ {
+  "Id": 9,
+  "nombre": "Flauta de nariz",
+  "peso": "0,1 Kg",
+  "precio": "1 C",
+  "descripcion": "Flauta de madera que se toca con la nariz en lugar de con la boca."
+ },
+ {
+  "Id": 8,
+  "nombre": "Flauta doble",
+  "peso": "0,2 Kg",
+  "precio": "10 L",
+  "descripcion": "Flauta formada por dos tubos perforados"
+ },
+ {
+  "Id": 1,
+  "nombre": "Gaita",
+  "peso": "1 Kg",
+  "precio": "10 L",
+  "descripcion": "Bolsa de piel con lengüeas del que salen una flauta y varios tubos con lengüetas."
+ },
+ {
+  "Id": 10,
+  "nombre": "Gong",
+  "peso": "2 Kg",
+  "precio": "50 L",
+  "descripcion": "Disco de bronce colgado de un bastidor que produce sonido al golpearse con un martillo."
+ },
+ {
+  "Id": 13,
+  "nombre": "Laud",
+  "peso": "1,2 Kg",
+  "precio": "25 L",
+  "descripcion": "Pequeña guitarra de madera de sonido dulce."
+ },
+ {
+  "Id": 14,
+  "nombre": "Lira",
+  "peso": "1 Kg",
+  "precio": "25 L",
+  "descripcion": "Arpa portatil, generalmente construida en madera o bronce."
+ },
+ {
+  "Id": 16,
+  "nombre": "Maraca",
+  "peso": "0,1 Kg",
+  "precio": "5 L",
+  "descripcion": "Instumento de percusion que suena cuando se agita."
+ },
+ {
+  "Id": 15,
+  "nombre": "Ocarina",
+  "peso": "0,1 Kg",
+  "precio": "3 L",
+  "descripcion": "Pieza hueca de barro con una boquilla y agujeros para las distintas notas."
+ },
+ {
+  "Id": 5,
+  "nombre": "Platillos",
+  "peso": "0,2 Kg",
+  "precio": "3 L",
+  "descripcion": "Dos platillos de bronce que producen sonido al chocarse entre ellos."
+ },
+ {
+  "Id": 19,
+  "nombre": "Silbato",
+  "peso": "0,1 kg",
+  "precio": "1 C",
+  "descripcion": "Pieza tallada generalmente en madera que produce un silbido potente."
+ },
+ {
+  "Id": 17,
+  "nombre": "Sonajero",
+  "peso": "0,1 Kg",
+  "precio": "5 L",
+  "descripcion": "Pieza curvada de bronce donde se insertan varillas que suenan al agitarse."
+ },
+ {
+  "Id": 6,
+  "nombre": "Tambor de piel",
+  "peso": "0,5 Kg",
+  "precio": "1 L",
+  "descripcion": "Fina piel de animal curtida y estirada sobre un bastidor de madera o metal."
+ },
+ {
+  "Id": 18,
+  "nombre": "Trompeta",
+  "peso": "0,5 Kg",
+  "precio": "40 L",
+  "descripcion": "Pieza cilíndrica y hueca de metal, generalmente con una lengüeta de hueso o madera."
+ }
+]

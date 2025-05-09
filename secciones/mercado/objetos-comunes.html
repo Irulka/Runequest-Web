@@ -1,0 +1,116 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Mercado de Objetos Comunes</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    En el bullicioso corazón del pueblo, los puestos del mercado ofrecen todo tipo de bienes cotidianos.
+                    Desde sogas y antorchas hasta raciones de viaje y herramientas básicas, aquí los aventureros encuentran
+                    lo esencial para sobrevivir en tierras peligrosas. ¡Regatea con sabiduría!
+                </p>
+                
+                <!-- Botones de categoría -->
+                <div class="controles text-center" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                    <div style="display: flex; gap: 15px; width: 100%; justify-content: center;">
+                        <button id="btn-herramientas" class="btn-magia">Herramientas</button>
+                        <button id="btn-ropa" class="btn-magia">Ropa</button>
+                        <button id="btn-equipo" class="btn-magia">Equipo</button>
+                    </div>
+                    <div style="display: flex; gap: 15px; width: 100%; justify-content: center; margin-top: 10px;">
+                        <button id="btn-instrumentos" class="btn-magia">Instrumentos</button>
+                        <button id="btn-alimento" class="btn-magia">Alimento</button>
+                        <button id="btn-joyeria" class="btn-magia">Joyería</button>
+                    </div>
+                </div>
+                
+                <!-- Buscador (posición y tamaño modificados) -->
+                <div class="buscador-container" style="width: 50%; margin: 20px auto; text-align: center;">
+                    <input type="text" id="buscador-objetos" placeholder="Buscar objetos en todas las categorías..." 
+                           style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #d69e2e; 
+                                  background-color: #2d3748; color: white; font-size: 0.9em;">
+                </div>
+                
+                <!-- Título de categoría seleccionada -->
+                <h3 id="titulo-categoria" style="margin-top: 10px; color: #d69e2e; display: none;"></h3>
+                
+                <!-- Contenedor de tabla -->
+                <div class="tabla-objetos-container" style="margin-top: 10px; display: none;">
+                    <table class="tabla-objeto">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">Nombre</th>
+                                <th style="width: 10%;">Peso</th>
+                                <th style="width: 10%;">Precio</th>
+                                <th style="width: 55%;">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="objetos-tbody">
+                            <!-- Datos dinámicos -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="../../imagenes/mercader.png" alt="Mercado de Objetos" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    .tabla-objeto {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(45, 55, 72, 0.5);
+    }
+    .tabla-objeto th {
+        background-color: #2d3748;
+        color: #d69e2e;
+        padding: 12px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+    .tabla-objeto td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #4a5568;
+        color: #f7fafc;
+    }
+    .tabla-objeto tr:hover {
+        background-color: rgba(214, 158, 46, 0.1);
+    }
+    .tabla-objetos-container {
+        max-height: 60vh;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+    .precio {
+        font-family: monospace;
+        color: #d69e2e;
+    }
+    /* Estilos mejorados para el buscador */
+    #buscador-objetos::placeholder {
+        color: #a0aec0;
+        opacity: 1;
+    }
+    #buscador-objetos:focus {
+        outline: none;
+        border-color: #f6ad55;
+        box-shadow: 0 0 0 1px #f6ad55;
+    }
+    .resultado-busqueda {
+        background-color: rgba(214, 158, 46, 0.2) !important;
+    }
+    /* Responsive para el buscador */
+    @media (max-width: 768px) {
+        .buscador-container {
+            width: 80% !important;
+        }
+    }
+</style>
+
+<script src="../../js/secciones/mercado/objetos-comunes.js" type="module"></script>

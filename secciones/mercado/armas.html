@@ -1,0 +1,76 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Mercado de Armas</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Desde espadas ancestrales hasta arcos de precisión, aquí encontrarás todo tipo de armas
+                    para defenderte en los peligrosos caminos de Glorantha. Cada arma tiene sus características
+                    únicas de daño, alcance y precio. ¡Elige tu herramienta de combate!
+                </p>
+                
+                <!-- Botones de categoría -->
+                <div class="controles text-center">
+                    <div class="fila-botones">
+                        <button class="boton-parte" id="btn-cuerpo">Armas Cuerpo a Cuerpo</button>
+                        <button class="boton-parte" id="btn-distancia">Armas a Distancia</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="../../../imagenes/armasalt.png" alt="Mercader de armas" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para los botones */
+    .fila-botones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .boton-parte {
+        background-color: #2d3748;
+        color: #d69e2e;
+        border: 1px solid #d69e2e;
+        border-radius: 4px;
+        padding: 12px 24px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s ease;
+        min-width: 200px;
+    }
+    
+    .boton-parte:hover {
+        background-color: #3c4a5f;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .boton-parte:active {
+        transform: translateY(1px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .fila-botones {
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .boton-parte {
+            width: 100%;
+        }
+    }
+</style>
+
+<script src="../../../js/secciones/mercado/armas.js"></script>

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         sidebar.addEventListener('mouseleave', hideMenu);
     }
 
-    // 2. Carga dinámica de contenido
+    // 2. Carga dinámica de contenido (versión mejorada)
     function cargarSeccion(seccion) {
         if (rutaActual === seccion) return;
         rutaActual = seccion;
@@ -43,13 +43,22 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(html => {
                 document.getElementById('contenido').innerHTML = html;
-                cargarJS(`js/secciones/${seccion}.js`);
+                
+                // Cargar el JS correspondiente con ruta corregida
+                const rutaJS = `js/secciones/${seccion}.js`;
+                cargarJS(rutaJS);
+                
+                // Forzar el reposicionamiento del scroll
+                window.scrollTo(0, 0);
             })
             .catch(error => {
                 console.error('Error al cargar:', error);
                 mostrarError(seccion);
             });
     }
+
+    // Función pública para que otras secciones puedan usarla
+    window.cargarSeccion = cargarSeccion;
 
     function mostrarError(seccion) {
         const nombreSeccion = seccion.split('/').pop().replace(/-/g, ' ');
@@ -68,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function cargarJS(url) {
+        // Limpiar scripts de sección anteriores
         document.querySelectorAll('script[data-section]').forEach(script => script.remove());
         
         const script = document.createElement('script');
@@ -78,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(`[Runequest] JS cargado: ${url}`);
     }
 
-    // 3. Manejo de menús desplegables
+    // 3. Manejo de menús desplegables (versión mejorada)
     function setupMenuItems() {
         // Menús principales
         document.querySelectorAll('.menu-item[data-menu]').forEach(item => {
@@ -132,6 +142,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // 4. Configuración inicial
     setupMenuItems();
     
+    // Cargar la sección inicial si no hay hash
+    if (!window.location.hash) {
+        document.getElementById('contenido').innerHTML = `
+            <div class="seccion-activa">
+                <div class="seccion-activa" style="text-align:center;">
+                    <img src="imagenes/runekeeper.png" alt="Runequest Logo" style="max-width:50%; height:auto;">
+                </div>
+            </div>
+        `;
+    }
+
     // Botón de salir
     document.getElementById('logout-btn')?.addEventListener('click', function(e) {
         e.preventDefault();
@@ -139,6 +160,12 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'index.html';
         }
     });
+
+    // Manejo de carga inicial desde hash
+    if (window.location.hash) {
+        const seccion = window.location.hash.substring(1).replace('-', '/');
+        cargarSeccion(seccion);
+    }
 
     console.log('[Runequest] Sistema iniciado correctamente');
 });

@@ -1,0 +1,178 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Mercado de Armas Cuerpo a Cuerpo</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Desde dagas hasta grandes mandobles, aquí encontrarás todo tipo de armas
+                    para enfrentarte a los peligros de Glorantha. Cada arma equilibra daño, 
+                    maniobrabilidad y precio. ¡Elige sabiamente tu ofensiva!
+                </p>
+                
+                <!-- Botones de categoría (se generan dinámicamente) -->
+                <div class="controles text-center">
+                    <div class="fila-botones">
+                        <button class="boton-categoria">Alabarda</button>
+                        <button class="boton-categoria">Daga</button>
+                        <button class="boton-categoria">Espada (1M)</button>
+                        <button class="boton-categoria">Espada (2M)</button>
+                    </div>
+                    <div class="fila-botones">
+                        <button class="boton-categoria">Flexible</button>
+                        <button class="boton-categoria">Hacha (1M)</button>
+                        <button class="boton-categoria">Hacha (2M)</button>
+                        <button class="boton-categoria">Lanza (1M)</button>
+                    </div>
+                    <div class="fila-botones">
+                        <button class="boton-categoria">Lanza (2M)</button>
+                        <button class="boton-categoria">Mantillo (1M)</button>
+                        <button class="boton-categoria">Mantillo (2M)</button>
+                        <button class="boton-categoria">Maza (1M)</button>
+                        <button class="boton-categoria">Maza (2M)</button>
+                    </div>
+                    <div class="fila-botones">
+                        <button class="boton-categoria">Escudo (9)</button>
+                        <button class="boton-categoria">Escudo (M)</button>
+                        <button class="boton-categoria">Escudo (G)</button>
+                    </div>
+                </div>
+                
+                <!-- Buscador -->
+                <div class="buscador-container" style="width: 50%; margin: 20px auto; text-align: center;">
+                    <input type="text" id="buscador-armasc" placeholder="Buscar por categoría o nombre..." 
+                           style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #d69e2e; 
+                                  background-color: #2d3748; color: white; font-size: 0.9em;">
+                </div>
+                
+                <!-- Título de categoría seleccionada -->
+                <h3 id="titulo-categoria" style="margin-top: 10px; color: #d69e2e; display: none;"></h3>
+                
+                <!-- Contenedor de tabla -->
+                <div class="tabla-armasc-container" style="margin-top: 10px; display: none;">
+                    <table class="tabla-armasc">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Nombre</th>
+                                <th style="width: 10%;">Básico</th>
+                                <th style="width: 10%;">FUE</th>
+                                <th style="width: 10%;">DES</th>
+                                <th style="width: 10%;">Daño</th>
+                                <th style="width: 10%;">PG</th>
+                                <th style="width: 10%;">CRG</th>
+                                <th style="width: 10%;">MR</th>
+                                <th style="width: 10%;">Tipo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="armasc-tbody">
+                            <!-- Datos dinámicos -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/arma.png" alt="Mercader de armas" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    .tabla-armasc {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(45, 55, 72, 0.5);
+    }
+    .tabla-armasc th {
+        background-color: #2d3748;
+        color: #d69e2e;
+        padding: 12px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+    .tabla-armasc td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #4a5568;
+        color: #f7fafc;
+    }
+    .tabla-armasc tr:hover {
+        background-color: rgba(214, 158, 46, 0.1);
+    }
+    .tabla-armasc-container {
+        max-height: 60vh;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+    /* Estilos para el buscador */
+    #buscador-armasc::placeholder {
+        color: #a0aec0;
+        opacity: 1;
+    }
+    #buscador-armasc:focus {
+        outline: none;
+        border-color: #f6ad55;
+        box-shadow: 0 0 0 1px #f6ad55;
+    }
+    .resultado-busqueda {
+        background-color: rgba(214, 158, 46, 0.2) !important;
+    }
+
+    /* Estilos para los botones de categorías */
+    .fila-botones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .boton-categoria {
+        background-color: #2d3748;
+        color: #d69e2e;
+        border: 1px solid #d69e2e;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+        min-width: 100px;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    
+    .boton-categoria:hover {
+        background-color: #3c4a5f;
+        transform: translateY(-1px);
+    }
+    
+    .boton-categoria:active {
+        transform: translateY(1px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .buscador-container {
+            width: 80% !important;
+        }
+        .tabla-armasc th, 
+        .tabla-armasc td {
+            padding: 8px 6px;
+            font-size: 0.9em;
+        }
+        .boton-categoria {
+            min-width: 80px;
+            max-width: 120px;
+            font-size: 12px;
+            padding: 6px 8px;
+        }
+    }
+</style>
+
+<script src="../../js/secciones/mercado/armasc.js"></script>

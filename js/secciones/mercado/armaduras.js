@@ -1,13 +1,12 @@
 /**
  * SISTEMA DE ARMADURAS - BUSQUEDA POR PARTE DEL CUERPO
- * Versión con diseño mejorado de botones
+ * Versión con rutas corregidas para GitHub Pages
  */
 
 (function() {
     const CONFIG = {
-        BASE: '../../',
         PATHS: {
-            armaduras: './armaduras.json'
+            armaduras: 'js/secciones/mercado/armaduras.json'
         },
         DEBUG: true
     };
@@ -28,7 +27,7 @@
 
     async function cargarArmaduras() {
         try {
-            const response = await fetch(`${CONFIG.BASE}${CONFIG.PATHS.armaduras}`);
+            const response = await fetch(`/${CONFIG.PATHS.armaduras}`);
             if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
             todasLasArmaduras = await response.json();
             

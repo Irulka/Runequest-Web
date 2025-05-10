@@ -116,6 +116,42 @@
             font-size: 0.9em;
         }
     }
+
+       /* Estilos para los botones de partes del cuerpo */
+    .fila-botones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .boton-parte {
+        background-color: #2d3748;
+        color: #d69e2e;
+        border: 1px solid #d69e2e;
+        border-radius: 4px;
+        padding: 8px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+        min-width: 80px;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+    
+    .boton-parte:hover {
+        background-color: #3c4a5f;
+        transform: translateY(-1px);
+    }
+    
+    .boton-parte:active {
+        transform: translateY(1px);
+    }
+
 </style>
 
 <script src="../../js/secciones/mercado/armaduras.js"></script>

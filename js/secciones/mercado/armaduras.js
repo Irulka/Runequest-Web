@@ -1,6 +1,6 @@
 /**
  * SISTEMA DE ARMADURAS - BUSQUEDA POR PARTE DEL CUERPO
- * Versión encapsulada para evitar conflictos
+ * Versión con diseño mejorado de botones
  */
 
 (function() {
@@ -12,9 +12,8 @@
         DEBUG: true
     };
 
-    // Variables encapsuladas
+    // Variables globales
     let todasLasArmaduras = [];
-    let timeoutBusqueda;
     const UI = {
         tablaBody: document.getElementById('armaduras-tbody'),
         tablaContainer: document.querySelector('.tabla-armaduras-container'),
@@ -33,6 +32,7 @@
             if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
             todasLasArmaduras = await response.json();
             
+            // Extraer partes del cuerpo únicas para los botones
             const partesCuerpo = [...new Set(todasLasArmaduras.map(item => item.cubre))];
             crearBotonesPartesCuerpo(partesCuerpo);
             
@@ -59,29 +59,46 @@
     function crearBotonesPartesCuerpo(partesCuerpo) {
         UI.contenedorBotones.innerHTML = '';
         
-        const divBotones = document.createElement('div');
-        divBotones.style.display = 'flex';
-        divBotones.style.flexWrap = 'wrap';
-        divBotones.style.gap = '15px';
-        divBotones.style.justifyContent = 'center';
-        divBotones.style.width = '100%';
+        // Crear contenedores para las dos filas de botones
+        const fila1 = document.createElement('div');
+        fila1.className = 'fila-botones';
         
-        partesCuerpo.forEach((parte, index) => {
+        const fila2 = document.createElement('div');
+        fila2.className = 'fila-botones';
+        
+        // Dividir los botones en dos filas
+        const mitad = Math.ceil(partesCuerpo.length / 2);
+        const primeraMitad = partesCuerpo.slice(0, mitad);
+        const segundaMitad = partesCuerpo.slice(mitad);
+        
+        // Primera fila de botones
+        primeraMitad.forEach(parte => {
             const boton = document.createElement('button');
-            boton.className = 'btn-magia';
+            boton.className = 'boton-parte';
             boton.textContent = parte;
             
             boton.addEventListener('click', () => {
                 filtrarPorParteCuerpo(parte);
             });
             
-            divBotones.appendChild(boton);
-            
-            if ((index + 1) % 3 === 0 || index === partesCuerpo.length - 1) {
-                UI.contenedorBotones.appendChild(divBotones.cloneNode(true));
-                divBotones.innerHTML = '';
-            }
+            fila1.appendChild(boton);
         });
+        
+        // Segunda fila de botones
+        segundaMitad.forEach(parte => {
+            const boton = document.createElement('button');
+            boton.className = 'boton-parte';
+            boton.textContent = parte;
+            
+            boton.addEventListener('click', () => {
+                filtrarPorParteCuerpo(parte);
+            });
+            
+            fila2.appendChild(boton);
+        });
+        
+        UI.contenedorBotones.appendChild(fila1);
+        UI.contenedorBotones.appendChild(fila2);
     }
 
     function filtrarPorParteCuerpo(parteCuerpo) {
@@ -149,25 +166,21 @@
     }
 
     function configurarBuscador() {
-        // Limpiar event listener previo si existe
-        UI.buscador.removeEventListener('input', manejarInputBuscador);
-        
-        // Agregar nuevo event listener
-        UI.buscador.addEventListener('input', manejarInputBuscador);
-    }
+        let timeoutBusqueda;
 
-    function manejarInputBuscador(e) {
-        clearTimeout(timeoutBusqueda);
-        const termino = e.target.value.trim();
-        
-        timeoutBusqueda = setTimeout(() => {
-            if (termino) {
-                buscarGlobalmente(termino);
-            } else {
-                UI.tablaContainer.style.display = 'none';
-                UI.tituloCategoria.style.display = 'none';
-            }
-        }, 300);
+        UI.buscador.addEventListener('input', (e) => {
+            clearTimeout(timeoutBusqueda);
+            const termino = e.target.value.trim();
+            
+            timeoutBusqueda = setTimeout(() => {
+                if (termino) {
+                    buscarGlobalmente(termino);
+                } else {
+                    UI.tablaContainer.style.display = 'none';
+                    UI.tituloCategoria.style.display = 'none';
+                }
+            }, 300);
+        });
     }
 
     // --------------------------
@@ -194,10 +207,4 @@
     } else {
         document.addEventListener('DOMContentLoaded', init);
     }
-
-    // Limpiar al salir de la página (para SPA)
-    window.addEventListener('beforeunload', function() {
-        UI.buscador.removeEventListener('input', manejarInputBuscador);
-        clearTimeout(timeoutBusqueda);
-    });
 })();

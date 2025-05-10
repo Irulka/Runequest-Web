@@ -336,3 +336,30 @@ menu-footer {
     color: #aaa;
     font-size: 0.8rem;
 }
+
+/* Estilos específicos para botones de armaduras */
+.btn-armadura {
+    background-color: #2d3748;
+    color: #d69e2e;
+    border: 1px solid #d69e2e;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.btn-armadura:hover {
+    background-color: #3c4a5f;
+    transform: translateY(-2px);
+}
+
+.btn-armadura-activo {
+    background-color: #d69e2e;
+    color: #2d3748;
+    font-weight: bold;
+}
+
+.botones-armadura-container {
+    margin-bottom: 15px;
+}

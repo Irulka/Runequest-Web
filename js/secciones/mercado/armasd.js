@@ -1,5 +1,5 @@
 /**
- * SISTEMA DE ARMAS CUERPO A CUERPO
+ * SISTEMA DE ARMAS A DISTANCIA
  * Versión con filtrado por categorías
  */
 
@@ -7,7 +7,7 @@
     const CONFIG = {
         BASE: '../../',
         PATHS: {
-            armasc: './js/secciones/mercado/armasc.json'
+            armasd: './js/secciones/mercado/armasd.json'
         },
         DEBUG: true
     };
@@ -15,11 +15,11 @@
     // Variables globales
     let todasLasArmas = [];
     const UI = {
-        tablaBody: document.getElementById('armasc-tbody'),
-        tablaContainer: document.querySelector('.tabla-armasc-container'),
+        tablaBody: document.getElementById('armasd-tbody'),
+        tablaContainer: document.querySelector('.tabla-armasd-container'),
         tituloCategoria: document.getElementById('titulo-categoria'),
-        buscador: document.getElementById('buscador-armasc'),
-        contenedorBotones: document.querySelector('.controles')
+        buscador: document.getElementById('buscador-armasd'),
+        contenedorBotones: document.getElementById('botones-categoria')
     };
 
     // --------------------------
@@ -28,7 +28,7 @@
 
     async function cargarArmas() {
         try {
-            const response = await fetch(`${CONFIG.BASE}${CONFIG.PATHS.armasc}`);
+            const response = await fetch(`${CONFIG.BASE}${CONFIG.PATHS.armasd}`);
             if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
             todasLasArmas = await response.json();
             
@@ -47,35 +47,23 @@
     function generarDatosError() {
         return [{
             categoria: "Error",
-            nombre: "Error al cargar datos",
-            basico: "-",
+            tipo: "Error al cargar datos",
+            porcentaje: "-",
             fue: "-",
             des: "-",
             dano: "-",
             pg: "-",
             crg: "-",
-            mr: "-",
-            tipo: "-"
+            alcance: "-",
+            tasa: "-",
+            precio: "-"
         }];
     }
 
     function crearBotonesCategorias(categorias) {
         UI.contenedorBotones.innerHTML = '';
         
-        // Crear contenedores para las dos filas de botones
-        const fila1 = document.createElement('div');
-        fila1.className = 'fila-botones';
-        
-        const fila2 = document.createElement('div');
-        fila2.className = 'fila-botones';
-        
-        // Dividir los botones en dos filas
-        const mitad = Math.ceil(categorias.length / 2);
-        const primeraMitad = categorias.slice(0, mitad);
-        const segundaMitad = categorias.slice(mitad);
-        
-        // Primera fila de botones
-        primeraMitad.forEach(categoria => {
+        categorias.forEach(categoria => {
             const boton = document.createElement('button');
             boton.className = 'boton-categoria';
             boton.textContent = categoria;
@@ -84,24 +72,8 @@
                 filtrarPorCategoria(categoria);
             });
             
-            fila1.appendChild(boton);
+            UI.contenedorBotones.appendChild(boton);
         });
-        
-        // Segunda fila de botones
-        segundaMitad.forEach(categoria => {
-            const boton = document.createElement('button');
-            boton.className = 'boton-categoria';
-            boton.textContent = categoria;
-            
-            boton.addEventListener('click', () => {
-                filtrarPorCategoria(categoria);
-            });
-            
-            fila2.appendChild(boton);
-        });
-        
-        UI.contenedorBotones.appendChild(fila1);
-        UI.contenedorBotones.appendChild(fila2);
     }
 
     function filtrarPorCategoria(categoria) {
@@ -126,7 +98,7 @@
     function mostrarMensajeTabla(mensaje) {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td colspan="9" style="text-align: center; color: #a0aec0;">
+            <td colspan="10" style="text-align: center; color: #a0aec0;">
                 ${mensaje}
             </td>
         `;
@@ -136,15 +108,15 @@
     function crearFilaArma(arma) {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${arma.nombre || '-'}</td>
-            <td>${arma.basico || '-'}</td>
+            <td>${arma.tipo || '-'}</td>
+            <td>${arma.porcentaje || '-'}</td>
             <td>${arma.fue || '-'}</td>
             <td>${arma.des || '-'}</td>
             <td>${arma.dano || '-'}</td>
             <td>${arma.pg || '-'}</td>
             <td>${arma.crg || '-'}</td>
-            <td>${arma.mr || '-'}</td>
-            <td>${arma.tipo || '-'}</td>
+            <td>${arma.alcance || '-'}</td>
+            <td>${arma.tasa || '-'}</td>
             <td>${arma.precio || '-'}</td>
         `;
         UI.tablaBody.appendChild(row);
@@ -157,8 +129,7 @@
 
         const terminoLower = termino.toLowerCase();
         const resultados = todasLasArmas.filter(arma => 
-            (arma.categoria && arma.categoria.toLowerCase().includes(terminoLower)) ||
-            (arma.nombre && arma.nombre.toLowerCase().includes(terminoLower))
+            (arma.tipo && arma.tipo.toLowerCase().includes(terminoLower))
         );
 
         if (resultados.length === 0) {
@@ -200,7 +171,7 @@
             UI.tablaContainer.style.display = 'none';
             UI.tituloCategoria.style.display = 'none';
             
-            if (CONFIG.DEBUG) console.log('Sistema de armas cuerpo a cuerpo inicializado');
+            if (CONFIG.DEBUG) console.log('Sistema de armas a distancia inicializado');
         } else {
             mostrarMensajeTabla("Error al cargar los datos. Recarga la página.");
         }

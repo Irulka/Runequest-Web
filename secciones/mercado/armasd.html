@@ -1,48 +1,27 @@
 <div class="seccion-activa">
     <div class="varita-header-container">
-        <h2 class="text-center">Mercado de Armas Cuerpo a Cuerpo</h2>
+        <h2 class="text-center">Mercado de Armas a Distancia</h2>
     </div>
     
     <div class="varita-layout-container">
         <div class="varita-content-container">
             <div class="varita-container">
                 <p class="explicacion-varita">
-                    Ya sea un mandoble de acero encantado o un sencillo cuchillo de silex, un arma fiable
-                    debe ser un compañero imprescindible para superar los obstáculos que los siempre
-                    caprichosos dioses pondrán en tu camino.
+                    Desde arcos hasta hondas y armas arrojadizas, aquí encontrarás todo tipo de armas
+                    para atacar a distancia en Glorantha. Cada arma equilibra daño, alcance, 
+                    precisión y precio. ¡Elige sabiamente tu ofensiva!
                 </p>
                 
                 <!-- Botones de categoría (se generan dinámicamente) -->
                 <div class="controles text-center">
-                    <div class="fila-botones">
-                        <button class="boton-categoria">Alabarda</button>
-                        <button class="boton-categoria">Daga</button>
-                        <button class="boton-categoria">Espada (1M)</button>
-                        <button class="boton-categoria">Espada (2M)</button>
-                    </div>
-                    <div class="fila-botones">
-                        <button class="boton-categoria">Flexible</button>
-                        <button class="boton-categoria">Hacha (1M)</button>
-                        <button class="boton-categoria">Hacha (2M)</button>
-                        <button class="boton-categoria">Lanza (1M)</button>
-                    </div>
-                    <div class="fila-botones">
-                        <button class="boton-categoria">Lanza (2M)</button>
-                        <button class="boton-categoria">Mantillo (1M)</button>
-                        <button class="boton-categoria">Mantillo (2M)</button>
-                        <button class="boton-categoria">Maza (1M)</button>
-                        <button class="boton-categoria">Maza (2M)</button>
-                    </div>
-                    <div class="fila-botones">
-                        <button class="boton-categoria">Escudo (9)</button>
-                        <button class="boton-categoria">Escudo (M)</button>
-                        <button class="boton-categoria">Escudo (G)</button>
+                    <div class="fila-botones" id="botones-categoria">
+                        <!-- Botones se generarán dinámicamente -->
                     </div>
                 </div>
                 
                 <!-- Buscador -->
                 <div class="buscador-container" style="width: 50%; margin: 20px auto; text-align: center;">
-                    <input type="text" id="buscador-armasc" placeholder="Buscar por categoría o nombre..." 
+                    <input type="text" id="buscador-armasd" placeholder="Buscar por tipo de arma..." 
                            style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #d69e2e; 
                                   background-color: #2d3748; color: white; font-size: 0.9em;">
                 </div>
@@ -51,23 +30,23 @@
                 <h3 id="titulo-categoria" style="margin-top: 10px; color: #d69e2e; display: none;"></h3>
                 
                 <!-- Contenedor de tabla -->
-                <div class="tabla-armasc-container" style="margin-top: 10px; display: none;">
-                    <table class="tabla-armasc">
+                <div class="tabla-armasd-container" style="margin-top: 10px; display: none;">
+                    <table class="tabla-armasd">
                         <thead>
                             <tr>
-                                <th style="width: 20%;">Nombre</th>
-                                <th style="width: 10%;">Básico</th>
-                                <th style="width: 10%;">FUE</th>
-                                <th style="width: 10%;">DES</th>
+                                <th style="width: 15%;">Tipo</th>
+                                <th style="width: 8%;">%</th>
+                                <th style="width: 8%;">FUE</th>
+                                <th style="width: 8%;">DES</th>
                                 <th style="width: 10%;">Daño</th>
-                                <th style="width: 10%;">PG</th>
-                                <th style="width: 10%;">CRG</th>
-                                <th style="width: 10%;">MR</th>
-                                <th style="width: 10%;">Tipo</th>
-                                <th style="width: 10%;">Precio</th>
+                                <th style="width: 8%;">PG</th>
+                                <th style="width: 8%;">CRG</th>
+                                <th style="width: 10%;">Alcance</th>
+                                <th style="width: 8%;">Tasa</th>
+                                <th style="width: 15%;">Precio</th>
                             </tr>
                         </thead>
-                        <tbody id="armasc-tbody">
+                        <tbody id="armasd-tbody">
                             <!-- Datos dinámicos -->
                         </tbody>
                     </table>
@@ -76,18 +55,18 @@
         </div>
         
         <div class="eurmal-image-container">
-            <img src="./imagenes/arma.png" alt="Mercader de armas" class="eurmal-image">
+            <img src="./imagenes/arma-distancia.png" alt="Mercader de armas a distancia" class="eurmal-image">
         </div>
     </div>
 </div>
 
 <style>
-    .tabla-armasc {
+    .tabla-armasd {
         width: 100%;
         border-collapse: collapse;
         background: rgba(45, 55, 72, 0.5);
     }
-    .tabla-armasc th {
+    .tabla-armasd th {
         background-color: #2d3748;
         color: #d69e2e;
         padding: 12px;
@@ -95,25 +74,25 @@
         position: sticky;
         top: 0;
     }
-    .tabla-armasc td {
+    .tabla-armasd td {
         padding: 10px 12px;
         border-bottom: 1px solid #4a5568;
         color: #f7fafc;
     }
-    .tabla-armasc tr:hover {
+    .tabla-armasd tr:hover {
         background-color: rgba(214, 158, 46, 0.1);
     }
-    .tabla-armasc-container {
+    .tabla-armasd-container {
         max-height: 60vh;
         overflow-y: auto;
         margin-bottom: 20px;
     }
     /* Estilos para el buscador */
-    #buscador-armasc::placeholder {
+    #buscador-armasd::placeholder {
         color: #a0aec0;
         opacity: 1;
     }
-    #buscador-armasc:focus {
+    #buscador-armasd:focus {
         outline: none;
         border-color: #f6ad55;
         box-shadow: 0 0 0 1px #f6ad55;
@@ -162,8 +141,8 @@
         .buscador-container {
             width: 80% !important;
         }
-        .tabla-armasc th, 
-        .tabla-armasc td {
+        .tabla-armasd th, 
+        .tabla-armasd td {
             padding: 8px 6px;
             font-size: 0.9em;
         }
@@ -176,4 +155,4 @@
     }
 </style>
 
-<script src="../../js/secciones/mercado/armasc.js"></script>
+<script src="../../js/secciones/mercado/armasd.js"></script>

@@ -1,0 +1,82 @@
+css
+  ------- styles.css
+
+imagenes 
+   --------- animales.png
+   --------- arma.png   
+   --------- armadura.png
+   --------- armas.png
+   --------- background1.jpg
+   --------- background2.png
+   --------- chaosbat.png
+   --------- elementales.png
+   --------- eurmal.png
+   --------- elemental.png
+   --------- glorantha.png
+   --------- mercader.png
+   --------- personaje.png
+   --------- personaje2.png
+   --------- runekeeper.png
+   --------- thed.png
+   --------- usuario.png
+js
+   --------- secciones
+                ---------bestiario
+                            --------- espiritus
+                                            --------- elementales.js
+
+                            --------- animales-data.js
+                            --------- animales.js
+
+                --------- magia
+                            --------- varita-deseos.js
+                            --------- espiritual.js
+
+                --------- mercado
+                            --------- armas.js
+                            --------- armasd.js
+                            --------- armasc.js
+                            --------- armasc.json
+                            --------- armaduras.js
+                            --------- armaduras.json
+                            --------- instrumentos.json
+                            --------- objetos-comunes.js
+                            --------- tools.json
+                     
+                --------- tablas
+                            --------- maldicion-thed.js
+                            --------- pifias.js
+                            --------- rasgos-caoticos.js
+
+                --------- dados.js
+                --------- main.js
+                --------- modificadores.js
+
+
+secciones
+    -------- bestiario
+                --------- espiritus
+                            --------- elementales.html
+
+                --------- animales.html
+
+    --------- magia
+                --------- espiritual.html
+                --------- varita-deseos.html
+
+    --------- mercado
+                --------- armas.html
+                --------- armasd.html
+                --------- armasc.html
+                --------- armaduras.html
+                --------- objetos-comunes.html
+
+    --------- tablas
+                --------- maldicion-thed.html
+                --------- rasgos-caoticos.html
+
+    --------- inicio.html  
+              
+favion.ico
+index.thml
+principal.html

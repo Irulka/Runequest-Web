@@ -1,0 +1,37 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Tabla de Pifias</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Incluso el guerrero más diestro puede tener un traspiés. Las pifias representan
+                    la esencia misma del caos, de lo inesperado y de como un combate sencillo puede
+                    tener un giro drámatico en tu contra.
+                </p>
+                
+                <div class="controles text-center">
+                    <button id="btn-aleatorio" class="btn-magia">Tirada Aleatoria</button>
+                    <button id="btn-manual" class="btn-magia">Introducir Valor</button>
+                    <input type="number" id="input-valor" min="1" max="100" placeholder="1-100" style="display: none;">
+                </div>
+                
+                <!-- Contenedor de resultados (inicialmente oculto) -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-principal" class="resultado-box resultado-principal">
+                        <div class="resultado-valor"></div>
+                        <div class="resultado-efecto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/pifia.png" alt="Imagen de Pifia" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<script src="js/secciones/tablas/pifias.js"></script>

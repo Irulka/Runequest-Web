@@ -9,6 +9,9 @@
         PATHS: {
             herramientas: 'js/secciones/mercado/tools.json',
             instrumentos: 'js/secciones/mercado/instrumentos.json',
+            equipo: 'js/secciones/mercado/equipo.json',
+            seguidores: 'js/secciones/mercado/seguidores.json',
+            servicios: 'js/secciones/mercado/servicios.json',
             defaultImage: 'imagenes/default-object.png'
         },
         DEBUG: false
@@ -20,8 +23,8 @@
         ropa: { nombre: "Ropa", datos: [] },
         equipo: { nombre: "Equipo", datos: [] },
         instrumentos: { nombre: "Instrumentos", datos: [] },
-        alimento: { nombre: "Alimento", datos: [] },
-        joyeria: { nombre: "Joyería", datos: [] }
+        seguidores: { nombre: "Seguidores", datos: [] },
+        servicios: { nombre: "Servicios", datos: [] }
     };
 
     // Referencias UI
@@ -44,12 +47,20 @@
             let archivo = '';
             if (categoria === 'herramientas') archivo = CONFIG.PATHS.herramientas;
             else if (categoria === 'instrumentos') archivo = CONFIG.PATHS.instrumentos;
+            else if (categoria === 'equipo') archivo = CONFIG.PATHS.equipo;
+            else if (categoria === 'seguidores') archivo = CONFIG.PATHS.seguidores;
+            else if (categoria === 'servicios') archivo = CONFIG.PATHS.servicios;
             else return [];
 
             const response = await fetch(`${CONFIG.BASE}${archivo}`);
             if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
             const data = await response.json();
-            return Array.isArray(data) ? data : [data];
+            
+            // Filtrar para eliminar la propiedad Id si existe
+            return Array.isArray(data) ? data.map(item => {
+                const { Id, ...rest } = item;
+                return rest;
+            }) : [];
         } catch (error) {
             console.error(`Error cargando ${categoria}:`, error);
             return generarDatosError(categoria);
@@ -58,7 +69,6 @@
 
     function generarDatosError(categoria) {
         return [{
-            Id: 0,
             nombre: `Error cargando ${categoria}`,
             peso: "-",
             precio: "-",
@@ -80,11 +90,13 @@
         const terminoBusqueda = filtro.toLowerCase();
 
         if (!items || items.length === 0) {
-            mostrarMensajeTabla(categoria === 'herramientas' || categoria === 'instrumentos' ? 
+            mostrarMensajeTabla(categoria === 'herramientas' || categoria === 'equipo' || 
+                              categoria === 'instrumentos' || categoria === 'seguidores' || 
+                              categoria === 'servicios' ? 
                 `No se encontraron ${categorias[categoria].nombre.toLowerCase()}` : 'Categoría en desarrollo');
         } else {
             const itemsFiltrados = items.filter(item => 
-                !terminoBusqueda || item.nombre.toLowerCase().includes(terminoBusqueda));
+                !terminoBusqueda || (item.nombre && item.nombre.toLowerCase().includes(terminoBusqueda)));
             
             if (itemsFiltrados.length === 0) {
                 mostrarMensajeTabla(`No se encontraron objetos en ${categorias[categoria].nombre} que coincidan con "${filtro}"`);
@@ -115,7 +127,7 @@
             <td>${item.descripcion || 'Sin descripción'}</td>
         `;
         
-        if (terminoBusqueda && item.nombre.toLowerCase().includes(terminoBusqueda)) {
+        if (terminoBusqueda && item.nombre && item.nombre.toLowerCase().includes(terminoBusqueda)) {
             row.classList.add('resultado-busqueda');
         }
         
@@ -201,6 +213,9 @@
     async function init() {
         categorias.herramientas.datos = await cargarDatosCategoria('herramientas');
         categorias.instrumentos.datos = await cargarDatosCategoria('instrumentos');
+        categorias.equipo.datos = await cargarDatosCategoria('equipo');
+        categorias.seguidores.datos = await cargarDatosCategoria('seguidores');
+        categorias.servicios.datos = await cargarDatosCategoria('servicios');
         
         configurarBotones();
         configurarBuscador();

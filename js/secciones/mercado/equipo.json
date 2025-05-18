@@ -1,0 +1,330 @@
+[
+ {
+  "Id": "44",
+  "nombre": "Alforja",
+  "peso": "2",
+  "precio": "5 L",
+  "descripcion": "Construida en piel, puede contener 2CAR en cada bolsillo."
+ },
+ {
+  "Id": "45",
+  "nombre": "Alforja calidad",
+  "peso": "2",
+  "precio": "20 L",
+  "descripcion": "Construida en piel adornada, puede contener 3 CAR en cada bolsillo."
+ },
+ {
+  "Id": 1,
+  "nombre": "Antídotos",
+  "peso": "(2)",
+  "precio": "20 L",
+  "descripcion": "Bolsa con frascos y preparados para contener venenos de pot 2D6+6."
+ },
+ {
+  "Id": "36",
+  "nombre": "Antorcha",
+  "peso": "(5)",
+  "precio": "1 C",
+  "descripcion": "Pequeña antorcha de mimbre y grasa."
+ },
+ {
+  "Id": "47",
+  "nombre": "Barril pequeño",
+  "peso": "3",
+  "precio": "1 L",
+  "descripcion": "Tonel pequeño de unos tres litros de capacidad."
+ },
+ {
+  "Id": "29",
+  "nombre": "Bloque de sebo",
+  "peso": "(4)",
+  "precio": "1 C",
+  "descripcion": "Ideal para lámparas, cocinar o suavizar pieles."
+ },
+ {
+  "Id": "9",
+  "nombre": "Bol y cubiertos",
+  "peso": "(5)",
+  "precio": "1 L",
+  "descripcion": "Cuchara, tenedor y un bol."
+ },
+ {
+  "Id": "3",
+  "nombre": "Bolsa bandolera",
+  "peso": "2",
+  "precio": "5 L",
+  "descripcion": "Bolsa de lino o piel fina que puede colgarse del hombro con una correa."
+ },
+ {
+  "Id": "17",
+  "nombre": "Bolsa de escalador",
+  "peso": "2",
+  "precio": "2 L",
+  "descripcion": "Bolsa con últiles de escalada como cuerda, gancho de escalada, pitones, etc."
+ },
+ {
+  "Id": "23",
+  "nombre": "Brasero",
+  "peso": "(10)",
+  "precio": "1 C",
+  "descripcion": "Pequeño recipiente que permite transportar brasas."
+ },
+ {
+  "Id": "13",
+  "nombre": "Cadena",
+  "peso": "8",
+  "precio": "2 L",
+  "descripcion": "10 metros de cadena eslabonada. Soporta hasta 150 kg."
+ },
+ {
+  "Id": "6",
+  "nombre": "Caja de especias",
+  "peso": "2",
+  "precio": "10 L",
+  "descripcion": "Una caja con distintas especias. Permiten aderezar aproximadamente 100 platos."
+ },
+ {
+  "Id": "2",
+  "nombre": "Capa enrollable",
+  "peso": "2",
+  "precio": "5 L",
+  "descripcion": "Capa de viaje que puede enrollarse para usar de almohada o colgarse en bandolera."
+ },
+ {
+  "Id": "8",
+  "nombre": "Cordon de lino",
+  "peso": "(10)",
+  "precio": "1 C",
+  "descripcion": "2 metros de cordel de lino. Soporta unos 30kg de peso."
+ },
+ {
+  "Id": "28",
+  "nombre": "Cuñas reforzada",
+  "peso": "(10)",
+  "precio": "1 C",
+  "descripcion": "De madera reforzada con bronze, permite dividir troncos o atrancar una puerta."
+ },
+ {
+  "Id": "38",
+  "nombre": "Estatuilla de culto",
+  "peso": "(2)",
+  "precio": "5 - 25",
+  "descripcion": "Hecha de terracota, madera o bronce, se trata de una pequeña estatuilla asociada a un culto."
+ },
+ {
+  "Id": "46",
+  "nombre": "Herradura",
+  "peso": "(2)",
+  "precio": "5 C",
+  "descripcion": "Precio por unidad. El coste de montaje será de 5C por herradura."
+ },
+ {
+  "Id": "30",
+  "nombre": "Hongo de yesca",
+  "peso": "(10)",
+  "precio": "1 C ",
+  "descripcion": "Un grupo de hongos secos ideales para iniciar un fuego."
+ },
+ {
+  "Id": "12",
+  "nombre": "Lámpara",
+  "peso": "1",
+  "precio": "2 L",
+  "descripcion": "Lámpara de barro, latón o bronce, a menudo ricamente decorada."
+ },
+ {
+  "Id": "14",
+  "nombre": "Lámpara de aceite",
+  "peso": "(4)",
+  "precio": "1 L",
+  "descripcion": "De arcilla, latón o bronce. Cada carga dura 1 hora."
+ },
+ {
+  "nombre": "Manta de lana",
+  "peso": "4",
+  "precio": "2 L",
+  "descripcion": "Tamaño suficiente para un humano de tamaño medio."
+ },
+ {
+  "Id": "15",
+  "nombre": "Mochila",
+  "peso": "1",
+  "precio": "2 L",
+  "descripcion": "Mochila de piel. Permite llevar 5 CAR."
+ },
+ {
+  "Id": "16",
+  "nombre": "Mochila bastidor",
+  "peso": "1",
+  "precio": "5 L",
+  "descripcion": "Mochila de piel, con un bastidor que permite llevar hasta 6 CAR."
+ },
+ {
+  "Id": "18",
+  "nombre": "Mochila de soldado",
+  "peso": "6",
+  "precio": "3 L",
+  "descripcion": "Contiene piel para dormir, odre, set de cubiertos y piquetas para acampada."
+ },
+ {
+  "Id": "42",
+  "nombre": "Montura",
+  "peso": "4",
+  "precio": "15 L",
+  "descripcion": "Silla de montar y cabezada para caballo o montura común en la zona."
+ },
+ {
+  "Id": "43",
+  "nombre": "Montura calidad",
+  "peso": "4",
+  "precio": "25 - 50 L",
+  "descripcion": "Silla de montar y cabezada de buena calidad para caballo o montura común en la zona."
+ },
+ {
+  "Id": "22",
+  "nombre": "Olla",
+  "peso": "1-2",
+  "precio": "2 - 4 L",
+  "descripcion": "Olla de bronce, con unas patas para sostenerse sobre un fuego."
+ },
+ {
+  "Id": "39",
+  "nombre": "Piedra de afilar",
+  "peso": "(2)",
+  "precio": "5 C",
+  "descripcion": "Piedra rugosa que permite recuperar el filo de un arma."
+ },
+ {
+  "Id": "4",
+  "nombre": "Piel curtida",
+  "peso": "1",
+  "precio": "2 C",
+  "descripcion": "Piel curtida que se puede usar como manta."
+ },
+ {
+  "Id": "25",
+  "nombre": "Ración viaje",
+  "peso": "1",
+  "precio": "2 C",
+  "descripcion": "Alimento suficiente para mantener a un adulto en plena actividad."
+ },
+ {
+  "Id": "24",
+  "nombre": "Recolector agua",
+  "peso": "-",
+  "precio": "2 - 4 L",
+  "descripcion": "Pirámide invertida de piel, que permite recolectar agua de lluvia o condensación."
+ },
+ {
+  "Id": "26",
+  "nombre": "Saco grande",
+  "peso": "(2)",
+  "precio": "2 C",
+  "descripcion": "De lino o piel. Permite llevar 4 CAR."
+ },
+ {
+  "Id": "27",
+  "nombre": "Saco pequeño",
+  "peso": "(4)",
+  "precio": "1 C",
+  "descripcion": "De lino o piel. Permite llevar 2 CAR."
+ },
+ {
+  "Id": "19",
+  "nombre": "Sartén",
+  "peso": "(2)",
+  "precio": "3 L",
+  "descripcion": "Sartén de bronce con pequeñas patas para sostenerse sobre un fuego."
+ },
+ {
+  "Id": "11",
+  "nombre": "Silex y pedernal",
+  "peso": "1",
+  "precio": "5 C",
+  "descripcion": "Piedra de silex y pedernal, que sueltan chispas al chocar."
+ },
+ {
+  "Id": "20",
+  "nombre": "Sombrilla",
+  "peso": "1",
+  "precio": "2 L",
+  "descripcion": "Sombrilla para protegerse o bien del sol o de la lluvia."
+ },
+ {
+  "Id": "31",
+  "nombre": "Tienda",
+  "peso": "4",
+  "precio": "10 L",
+  "descripcion": "Tienda lo suficientemente grande como para acomodar a cinco personas."
+ },
+ {
+  "Id": "33",
+  "nombre": "Tienda mediana",
+  "peso": "3",
+  "precio": "8 L",
+  "descripcion": "De tamaño suficiente para albergar a tres personas."
+ },
+ {
+  "Id": "34",
+  "nombre": "Tienda noble",
+  "peso": "50",
+  "precio": "100 L",
+  "descripcion": "Con soportes de madera y fabricada en piel y tela ornamentada."
+ },
+ {
+  "Id": "32",
+  "nombre": "Tienda pequeña",
+  "peso": "2",
+  "precio": "2 L",
+  "descripcion": "Tienda lo suficientemente grande como para acomodar a una persona."
+ },
+ {
+  "Id": "35",
+  "nombre": "Últiles de ladrón",
+  "peso": "1",
+  "precio": "20 L",
+  "descripcion": "Una pequeña palanca, ganzuas y grasa."
+ },
+ {
+  "Id": "7",
+  "nombre": "Útiles de cocina",
+  "peso": "3",
+  "precio": "2 L",
+  "descripcion": "Espátulas, cuchillos, cucharones, etc."
+ },
+ {
+  "Id": "10",
+  "nombre": "Útiles para hacer fuego",
+  "peso": "1",
+  "precio": "2 C",
+  "descripcion": "Un taladro de arco, yesca y todo lo necesario para hacer fuego."
+ },
+ {
+  "Id": "48",
+  "nombre": "Vaso",
+  "peso": "(3)",
+  "precio": "2 C",
+  "descripcion": "Vaso de archilla o latón."
+ },
+ {
+  "Id": "5",
+  "nombre": "Vela",
+  "peso": "(10)",
+  "precio": "1 C",
+  "descripcion": "Vela de cera o grasa."
+ },
+ {
+  "Id": "21",
+  "nombre": "Veneno",
+  "peso": "(2)",
+  "precio": "*",
+  "descripcion": "Usualmente de POT 2D6+6. El precio será de 20 L por punto de POT."
+ },
+ {
+  "Id": "37",
+  "nombre": "Veneno para armas",
+  "peso": "(2)",
+  "precio": "*",
+  "descripcion": "Estuche con veneno denso y duradero. Se requieren dos turnos para huntarlo en una daga y cinco para una espada."
+ }
+]

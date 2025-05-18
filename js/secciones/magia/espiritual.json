@@ -1,0 +1,602 @@
+{
+    "conjuros": [
+        {
+            "nombre": "Confusión",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Si el lanzador supera el poder del objetivo, este hechizo confunde a la víctima. No cambia sus creencias o percepciones, pero las confunde. Una víctima de Confusión no puede atacar, lanzar un hechizo ofensivo, dar la alarma, etc. Sin embargo, si es atacada, parará y se defenderá normalmente. A partir del siguiente asalto, la víctima del hechizo asume que quien lo ataca es su enemigo y extiende esa deducción a los aliados evidentes del atacante. Así, con engaños o alguna maniobra astuta, un oponente confundido podría terminar atacando a su propio grupo, mientras dure el conjuro.\nLa víctima puede gastar un asalto completo para intentar intentar deshacerse de su confusión. Eso es todo lo que la víctima puede hacer en ese asalto cuerpo a cuerpo. La víctima debe sacar una tirada superior a su INT×5 (debido a la confusión de los procesos de pensamiento, donde los objetivos más inteligentes son llevados a vertiginosos laberintos mentales mientras que los más torpes pueden simplemente actuar) o tener éxito con la habilidad Meditar. Sólo se puede intentar uno de estos dos enfoques cada asalto. Si cualquiera de las dos tácticas tiene éxito, entonces el hechizo de confusión termina, y el aventurero puede actuar normalmente en el siguiente asalto.\nSi la tirada de INT×5 resulta en un éxito especial o crítico el aventurero confundido confunde a sus amigos con sus enemigos (y viceversa) y actúa en consecuencia."
+        },
+        {
+            "nombre": "Recipiente Vinculante",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Ritual",
+            "duracion": "Encantamiento",
+            "Description": "Este hechizo crea un objeto mágico que puede contener un espíritu u otra criatura del otro mundo. El objeto que sirve como recipiente debe ser encantado con el sacrificio de 1 punto de POD por cada tipo de característica que posea la criatura.\nUna vez creado el recipiente, la persona que lo sostenga puede puede utilizar la ligadura de espíritus para atrapar un espíritu en su interior (RuneQuest, página 249)."
+        },
+        {
+            "nombre": "Cuchilla Afilada",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo funciona con cualquier arma cortante o punzante. Cada punto aumenta la probabilidad de golpear en un +5% y añade +1 a su daño. El hechizo es incompatible con Cuchilla Ignea (página 114). Si también se lanza Dullblade (página 113) sobre el arma, la probabilidad de golpear mejorada de Bladesharp no se ve afectada, pero el daño adicional del arma se reduce por el segundo hechizo.\nEl daño mágico adicional puede herir a criaturas que de otro modo serían invulnerables a las armas normales. Los Hermanos Lobo Telmori, por ejemplo, no sufren daño con la tirada de daño normal del arma, pero son vulnerables a la bonificación de daño mágico."
+        },
+        {
+            "nombre": "Garrotazo",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo funciona con cualquier arma contundente. Cada punto aumenta la probabilidad de golpear en un +5% y añade 1 de daño. Este hechizo es incompatible con Cuchilla Ignea (página 114).\nEl daño mágico adicional puede herir a criaturas que de otro modo serían invulnerables a las armas normales. Los Hermanos Lobo Telmori, por ejemplo, no sufren daño con la tirada de daño normal del arma, pero son vulnerables a la bonificación de daño mágico."
+        },
+        {
+            "nombre": "Comprensión",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro incrementa la agilidad mental del objetivo, sin incrementar su INT. Cada punto de Comprensión añade +5% a todas las habilidades de conocimientos del objetivo (las habilidades con 0% no se ven afectadas)."
+        },
+        {
+            "nombre": "Ocultar Objeto",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro oculta un único objeto de tamaño 2 o menos. Una cartera o una mochila podrían ser ocultadas con este conjuro. Si lo que se pretende ocultar es un arma, esta se hará visible tan pronto como se utilice para atacar o detener un ataque. El objeto no se vuelve invisible, sino que permanece oculto desviando la atención del observador."
+        },
+        {
+            "nombre": "Controlar (entidad)",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo tiene tantas variantes como tipos de espíritus, ninfas y elementales y animales comunes existen. Este hechizo somete a la entidad indicada a la voluntad del lanzador. Para usar un hechizo de Control, el lanzador debe primero reducir los puntos mágicos de su objetivo a 0 en combate espiritual, por lo que estos hechizos son usualmente utilizados por chamanes. En el siguiente asalto de combate, el usuario lanza el hechizo de control. El objetivo no puede resistirse y debe obedecer todas las órdenes recibidas por el lanzador.\nLa obligación de obedecer termina con el hechizo, incluso aunque no se hayan completado las órdenes. La entidad controlada está en una forma especial de comunicación telepática con el lanzador. Dicha comunicación mental está limitada por la línea de visión del lanzador. Para dar órdenes a una entidad controlada, el lanzador del hechizo debe formar una imagen mental de las acciones que desea que la entidad realice. Ordenar a una entidad, requiere de un asalto completo, antes de que la entidad pueda actuar."
+        },
+        {
+            "nombre": "Enfriar",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal (Especial)",
+            "uso": "Pasivo",
+            "Description": "Este hechizo debe lanzarse sobre un punto, como el hechizo Luz, y hace que el punto irradie un área de frescor en un radio de tres metros. Cada punto de hechizo lanzado hace que la temperatura dentro del radio sea 5ºC más fría que el aire circundante. Este hechizo nunca reducirá la temperatura por debajo de 0ºC."
+        },
+        {
+            "nombre": "Coordinación",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo incrementa la DES del objetivo en +3. Esto reduce el MR del objetivo en -1 y aumenta todas las habilidades de Agilidad y Manipulación (incluyendo armas), y las habilidades de Sigilo en un 5%."
+        },
+        {
+            "nombre": "Contramagia",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo defensivo protege al objetivo contra cualquier otro hechizo recibido, incluyendo aquellos como Detectar Magia, Protección, e incluso Curación. Sin embargo, no interfiere con los objetos encantados previamente, como por ejemplo, una espada con Cuchilla Afilada. No funciona contra espíritus, pero puede funcionar contra los hechizos lanzados por ellos. Contramagia no impide que el objetivo puedaa No interfiere con la capacidad del objetivo de lanzar hechizos.\nSi el hechizo entrante es 2 o más puntos más débil que Contramagia, dicho hechizo es anulado y la Contramagia permanece. Si el hechizo recibido es igual o está un punto por encima o por debajo de los puntos de Contramagia, ambos hechizos desaparecen. Si el hechizo atacante es 2+ puntos más fuerte que el de Contramagia, ésta queda elimina y afecta al objetivo normalmente.\nLa Magia Rúnica funciona con doble eficacia contra Contramagia. Por lo tanto, 5 puntos de Contramagia es el mínimo necesario para protegerse contra un hechizo Rúnico de 3 puntos.\nEste hechizo es incompatible con Protección, Resplandor y Pantalla Espiritual"
+        },
+        {
+            "nombre": "Pared Oscura",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo Especial",
+            "Description": "Este hechizo crea un muro de oscuridad de diez metros cuadrados de área y diez centímetros de espesor. Si el lanzador no realiza ninguna otra acción, puede mover el centro del muro de oscuridad tres metros por asalto de combate. Las fuentes de luz dentro de la oscuridad no emiten luz ni puede ser percibida mediante el sentido de la vista. Otros sentidos, como el oído, el sonar, el olfato, etc., no se ven afectados por este muro. Una pared oscura puede tener la forma, la altura, o anchura deseada, siempre que la superficie total sea de diez metros cuadrados. El grosor siempre es de diez centímetros, y el muro siempre se remodela alrededor de su centro.\nCuando se lanza un Pared de Luz en el mismo espacio que un Pared Oscura, los efectos de ambos se neutralizan mutuamente mientras están en el mismo espacio."
+        },
+        {
+            "nombre": "Desmoralización",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Si el lanzador supera el POD del objetivo, la víctima pierde la fe en la capacidad de su bando para ganar un combate, encontrar un tesoro, o lograr cualquier objetivo apropiado. Las víctimas pueden seguir defendiéndose normalmente, pero atacan con la mitad de sus posibilidades normales. Sólo pueden utilizar hechizos defensivos y de curación. Si Desmoralizar surte efecto antes de que comience el combate, la víctima no atacará. Enfrentada a una situación de superioridad, la víctima huirá o se rendirá,\nUn hechizo de Fanatismo anulará la Desmoralización, y viceversa. Una víctima consciente del hechizo puede utilizar todo su asalto usando la habilidad Meditar para eliminar los efectos de este hechizo."
+        },
+        {
+            "nombre": "Detectar Enemigos",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo indica al lanzador la dirección y distancia aproximada de cualquier ser que intente dañarlo, o detecta y localiza a un individuo específico en el que el lanzador se concentre. Los efectos del hechizo no pueden ser resistidos.\nEl efecto del conjuro no pueede atravesar más de un metro de espesor de sustancias densas como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Detectar Vida",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Detecta la existencia de vida e indica al lanzador la dirección y distancia. El hechizo discierne entre la vida de tamaño humano (TAM 3-21), y la de gran tamaño (TAM 22+). Los seres vivos de tamaño 2 o menos no son detectados. La detección es detenida por uno o más metros de una sustancia densa como la piedra, el metal o la tierra."
+        },
+        {
+            "nombre": "Detectar Magia",
+            "type": "Espiritual",
+            "puntos": "1 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo indica la dirección y distancia aproximada de todos los encantamientos y objetos mágicos. No detecta espíritus.\nLos objetos detectados brillan visiblemente para cualquiera que pueda ver el objeto, posiblemente revelndo a sus portadores. El hechizo no distingue entre objetos mágicos o encantamientos, ni revela qué o cuán poderosos son los objetos detectados. El efecto de detección se detiene con uno o más metros de una sustancia densa, como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Detectar Espíritus",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Revela al lanzador la existencia de espíritus, su dirección y distancia. El hechizo discierne entre espíritus de clase aproximadamente mortal (POD 3-21), y espíritus más grandes (POD 19+). Los espíritus con 2 POD o menos no son detectados. La detección es detenida por uno o más metros de una sustancia densa, como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Detectar (Sustancia)",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo indica al lanzador la dirección y distancia aproximada a la que se encuentra la sustancia indicada.\nDicha sustancia brillará visiblemente para cualquiera que pueda verla. El hechizo no evalua la cantidad o el valor de la sustancia detectada, ya que esto es subjetivo. La detección es detenida por uno o más metros de una sustancia densa, como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Detectar Trampas",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este conjuro puede detectar una trampa física, mágica o incluso una emboscada. No detectará un foso natural en el camino, una avalancha, o una sustancia venenosa, ya que no son trampas en si mismas. Este hechizo no detecta magia defensiva como Guardia. El conjuro ilumina un área de tres metros de diámetro alrededor de la trampa, el cual será visible para todo el que pueda verlo, pero no indica el lugar exacto o el tipo de trampa. La detección es detenida por uno o más metros de una sustancia densa, como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Detectar No Muertos",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Detecta la existencia de criaturas no muertas, como zombies, momias o vampiros, y da una dirección y distancia aproximada desde el lanzador. El conjuro discierne entre no muertos de tamaño humano (TAM 3-21) y otros de mayor tamaño (TAM 22+). Las criaturas no muertas de TAM 2 o menos, no serán detectadas. Este hechizo no dice que clase de no muerto ha sido detectado. La detección no puede atravesar más de un metro de sustancia densa, como piedra, metal o tierra."
+        },
+        {
+            "nombre": "Disipar Magia",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo elimina la magia. 1 punto anula un punto de magia espiritual, o 1 punto de intensidad de hechicería; 2 puntos elimina 1 punto de magia rúnica. Es necesario eliminar el total de puntos de un hechizo para poder destruirlo. Por lo tanto, para dispersar un hechizo de Confusión, se requieren 2 puntos de Disipar Magia, o para disipar 1 punto de Escudo, se requieren dos puntos. No se puede disipar solo una parte del conjuro.\nCuando se lanza contra un objetivo sin especificar un efecto u objeto específico, afectará primero a los conjuros defensivos, empezando por el más poderoso que pueda disipar. Sin embargo, puede lanzarse contra un hechizo específico, si el lanzador conoce de cual se trata."
+        },
+        {
+            "nombre": "Disrupción",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo, daña el cuerpo del objetivo. Si el lanzador supera el POD del objetivo, este recibe 1d3 de daño en una localización al azar. Las armaduras mágicas y físicas no protegen contra este daño."
+        },
+        {
+            "nombre": "Distracción",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo atrae la atención de un oponente hacia el lanzador del conjuro, como un objetivo más apropiado para su ataque. Cuando se lanza contra un espíritu involucrado en un Combate Espiritual, aleja automáticamente al espíritu. Deja de atacar a su objetivo actual y ataca al lanzador del conjuro en su lugar. Dicho combate comenzará en cuanto el espíritu pueda hacerlo. Atacará al lanzador hasta que este quede inconsciente o el espíritu sea derrotado. Solo se puede atacar a un espíritu a la vez."
+        },
+        {
+            "nombre": "Mellar Armas",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo reduce el daño causado por cualquier arma cuerpo a cuerpo o de proyectil, con o sin filo. Para que funcione correctamente, debe ser lanzado sobre el arma. Esto reducirá en un -5% las posibilidades de impactar del portador y el daño causado en -1 punto, por cada punto de Mellar Armas. Si se lanzara un segundo Mellar armas, solo surtirá efecto el hechizo con más puntos. Este hechizo también reduce el daño de armas con espíritus en su interiro, pero no funcionará contra armas naturales, tales como garras, colmillos, etc."
+        },
+        {
+            "nombre": "Extinguir",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo apaga llamas, fuego y enfria materiales más calientes que la temperatura ambiente. Un punto de Extinguir puede apagar una vela, una linterna o una pequeña antorcha; 2 puntos pueden apagar un fuego de campamento; 3 puntos una hoguera, etc. Los fuegos extinguidos permanecerán apagados y deben volver a encenderse."
+        },
+        {
+            "nombre": "Rostro de Lanbril",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A ti mismo",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo cambia la cara y ropas del usuario, dándole un aspecto, totalmente corriente y fácil de olvidar, por lo que el lanzador de este conjuro pasará fácilmente desapercibido, especialmente en una multitud. No hay dos usos idénticos de este hechizo que tengan como resultado el mismo rostro. Una tirada de Buscar, permite al observador percibir que el lanzador lleva una ropa mejor (o peor) oculta bajo su atuendo visible. El hechizo no puede cambiar la raza o el sexo del lanzador. Si una hembra troll lanza este conjuro, parecerá una hembra troll diferente pero totalmente corriente."
+        },
+        {
+            "nombre": "Falsa Curación",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro cura de forma inmediata todo el daño de una localización de golpe a elección del lanzador. Cuando el hechizo expira (o es dispersado) el daño reaparece.\nEste conjuro a menudo se utiliza para mantener a alguien vivo hasta que pueda recibir una curación permanente, pero a menudo también se utiliza para evitar que un enemigo se cure una herida en un momento concreto."
+        },
+        {
+            "nombre": "Vista Lejana",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo proporciona visión telescópica. Cada punto de este hechizo reduce a la mitad la distancia aparente del lanzador al mundo circundante. El efecto también acorta el campo de visión. El lanzador puede activar y desactivar el efecto mientras dure el hechizo. Esto no afecta al alcance de un arma, ya que sólo afecta a la percepción del del lanzador. "
+        },
+        {
+            "nombre": "Flecha Ignea",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Instantaneo",
+            "uso": "Pasivo",
+            "Description": "El hechizo debe lanzarse sobre una flecha, roca o dardo ordinario, que estalla en llamas y se consume cuando el proyectil sale de la mano del lanzador (arco, átlatl, honda, etc.). Este misil de fuego causa 3D6 puntos de daño si impacta, reemplazando el daño normal del proyectil. El bonificador de daño del lanzador sigue aplicándose a las armas arrojadizas, reducido a la mitad como es normal. Una flecha de fuego no puede empalar pero puede (y lo hace) incendiar material inflamable. La armadura ayuda a proteger al objetivo. Este daño no puede ser resistido mágicamente porque es un daño físico real, causado por el calor del fuego. Este hechizo es incompatible con Proyectil Múltiple (página 117) y Dardo Veloz (página 119)."
+        },
+         {
+            "nombre": "Cuchilla Ignea",
+            "type": "Espiritual",
+            "puntos": "4 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Lanzado sobre cualquier arma de filo o lanza, este hechizo cambia el daño del arma a 3D6. Esto reemplaza el daño daño normal del arma. El portador del arma sigue aplicando su bonus de daño cuando golpea. Este daño no puede ser resistido mágicamente porque es un daño daño físico real causado por el calor del fuego. Las armaduras protegen normalmente contra él. El arma queda ilesa de este fuego mágico. Este hechizo es incompatible con Cuchilla Afilada (página 110)."
+        },
+        {
+            "nombre": "Cosechar",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Toque",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo permite al lanzador recoger cualquier planta necesaria para comer, construir refugios, armas, etc. Asegura que la planta así utilizada no sufra daño o sea deshonrada. Si esto provoca la muerte de la planta, esta vuelve en paz al seno de Aldrya."
+        },
+        {
+            "nombre": "Olvidar",
+            "type": "Espiritual",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Hace que el sujeto olvide los sucesos que tuvieron lugar diez asaltos cuerpo a cuerpo antes de la ronda de invocación y hasta diez asaltos cuerpo a cuerpo después del lanzamiento. Esto requiere una tirada de resistencia de POD contra POD. La pérdida de memoria no afecta inmediatamente, sino que comienza a afectar al objetivo unos cinco minutos después de lanzar el hechizo. Si un guardia persigue a unos ladrones que le lanzan con éxito con este hechizo, el guardia no recordará el encuentro más tarde. Este es un buen hechizo para lanzarlo sobre una víctima que ya esté confundida."
+        },
+        {
+            "nombre": "Glamour",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo aumenta el CAR del objetivo en +8. Esto aumenta el daño de combate espiritual un nivel en la tabla de Combate Espiritual (por ejemplo, de +1D6 a +1D6+3, RuneQuest, página 56). También aumenta todas las habilidades de Comunicación en un +10%, y aumenta todas las habilidades de Magia como sigue: (CAR Antes del Hechizo - Aumento de Habilidades Mágicas) CAR 1-4 +5%; CAR 5-8 -; CAR 9-12 +5%; CAR 13+ +10%."
+        },
+        {
+            "nombre": "Pegamento",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cada punto de este hechizo crea un globo de cinco centímetros cuadrados de pegamento mágico. La fuerza de pegamento es igual a los puntos del hechizo multiplicado por 10. El pegamento puede despegar usando el FUE del aventurero en la tabla de resistencia. Si tiene éxito, entonces el hechizo se rompe, y el parche ya no es pegajoso. El pegamento nunca se pega a ningún tejido vivo o material orgánico vivo, pero funciona en cosas como un marco de puerta, ropa, una pata de palo, una espada en una vaina, botas, etc. Sin embargo, para pegar dos objetos, deben estar en reposo relativo."
+        },
+         {
+            "nombre": "Curación",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo repara el daño causado a los puntos de golpe. El lanzador debe tocar la parte del cuerpo que está siendo curada. Cada punto de Curación repara inmediatamente 1 punto de golpe en ese lugar. Si el lugar no está completamente restaurado, Sanar puede usarse de nuevo en los siguientes asaltos cuerpo a cuerpo. Sanar no puede resucitar a un aventurero. Sin embargo, 2 puntos de Curación detienen la hemorragia de cualquier herida o miembro amputado. miembro amputado, y 6 puntos de Curación devuelven un miembro amputado al cuerpo si todas las partes están disponibles."
+        },
+        {
+            "nombre": "Calentar Metales",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo hace que un CAR de metal se caliente y se vuelva maleable. El metal tarda un minuto en ponerse al rojo vivo. Si el metal se lleva puesto o se sostiene, causa 1D6 de daño por asalto en esa localización. Cada punto del hechizo aumenta la intensidad del calor en un nivel: 1 Punto: Demasiado calor para mantenerlo. - 2 Puntos: El estaño se funde. - 3 Puntos: El plomo se ablanda. - 4 Puntos: El plomo se funde. - 5 Puntos: El cobre, el oro, la plata, el aluminio, el bronce y el hierro se ablandan para el martilleo y la herrería. - 6 Puntos: El cobre, el oro, la plata, el aluminio, el bronce y el hierro se funden."
+        },
+         {
+            "nombre": "Fanatismo",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cuando se lanza sobre un ser con la característica INT, este hechizo aumenta su probabilidad de golpear a la mitad (redondea las fracciones). Por ejemplo, un aventurero con Estoque 33% tiene estoque 50% mientras está bajo los efectos de de Fanatismo (33÷2=17, 33+17=50%). Mientras esté afectado por Fanatismo, el aventurero no puede parar con un arma o escudo , ni lanzar magia que no sean hechizos de ataque (Disruption, Explosión mental, etc.). Además, el hechizo reduce a la mitad la Esquiva. Si el objetivo no desea que se le lance el hechizo el hechicero debe superar el POD del objetivo con una tirada de resistencia. Un hechizo de Desmoralizar con éxito (página 112) anula los efectos de un hechizo de Fanatismo, dejando al objetivo con moral normal."
+        },
+        {
+            "nombre": "Pies Calientes",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Si el lanzador supera el POD del objetivo, éste recibe un dolor ardiente en un pie (elegido por el lanzador) y no puede apoyarlo pie durante el resto del asalto. Si un bípedo tiene éxito en una tirada de DESx5, puede saltar sobre el otro pie hasta que el calor desaparezca. De lo contrario, el objetivo caerá."
+        },
+         {
+            "nombre": "Inflamar",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo enciende cualquier cosa normalmente inflamable. Crea un pequeño fuego que puede prender fuego a cosas como una antorcha techo de paja o una mochila seca. La piel no puede encenderse. El pelo pero sólo si el lanzador supera el POD del objetivo."
+        },
+         {
+            "nombre": "Mano de Hierro",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo mejora las armas naturales y el combate sin armas. Aunque el nombre implica que sólo funciona con las manos, el hechizo afecta a todo el cuerpo, incluidas maniobras como dar cabezazos y patadas. Varias criaturas no humanas tienen hechizos como Garra de Hierro, Colmillos de hierro, etc., que funcionan del mismo modo. Cada punto aumenta la probabilidad de golpear en un +5% y añade +1 al daño. El daño mágico adicional puede herir a criaturas invulnerables a los puñetazos normales. Los Telmori , por ejemplo, no sufren el daño de un arma natural, pero si son vulnerables a la bonificación de daño mágico."
+        }
+    ,
+    {
+            "nombre": "Salto",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Permite a una persona totalmente equipada saltar hasta tres metros de altura, o a tres metros de distancia durante la duración del hechizo. Cada punto adicional del hechizo añade tres metros al alcance de un salto, o permite a los usuarios levantar 3 puntos adicionales de TAM adicionales, o 15 puntos de CAR. Si el objetivo falla una tirada de salto, cae al aterrizar, aunque la distancia se salta."
+        },
+        {
+            "nombre": "Linterna",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Debe lanzarse sobre una superficie plana (normalmente la parte delantera de un escudo). Ilumina un radio de 12 metros y 180° por delante de la superficie, emitiendo un resplandor como el de una antorcha, lo bastante para leer, aunque no tanto como la luz del día. Este hechizo no es afectado por Extinguir."
+        },
+        {
+            "nombre": "Luz",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo debe lanzarse sobre algún objeto físico como una varita, la punta de un dedo o una pared. Ilumina todo en un radio de radio de diez metros a partir de ese punto con un resplandor, aunque no tanto como la luz del día. Este hechizo no se ve afectado por Extinguir. "
+        },
+        {
+            "nombre": "Pared de Luz",
+            "type": "Espiritual",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo (activo si se quiere mover la pared)",
+            "Description": "Este hechizo crea un muro de luz de diez metros cuadrados de área y diez centímetros de grosor. Si el lanzador no realiza ninguna otra acción puede mover el centro del muro de luz tres metros por asalto. El muro se mueve en el mismo rango de ataque en el que el lanzador original del hechizo. Presenta un resplandor brillante que es visualmente impenetrable, mientras que desde el lado del lanzador es completamente transparente. Además, el resplandor ilumina diez metros por todos los lados (excepto la retaguardia) hasta diez metros, cubriendo 270° de arco. Esta luz es lo bastante buena para leer, aunque no tan completa como la luz del día. Otros sentidos, como el oído, el sonar, el olfato, etc., no se ven afectados por este muro. Puede tener la altura o anchura deseadas, siempre que la superficie total sea de diez metros cuadrados. El grosor siempre es de diez centímetros y la pared siempre se remodela alrededor de su centro. Este hechizo no se ve afectado por Extinguir. Cuando se lanza un hechizo Muro de Luz en el mismo espacio que un Muro Oscuro, se neutralizan mutuamente. mientras estén en el mismo espacio."
+        },
+        {
+            "nombre": "Encantamiento de Puntos de Magia.",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Ritual",
+            "duracion": "Encantamiento",
+            "Description": "Este hechizo imbuye un objeto con la capacidad de almacenar 1D10 puntos de magia por punto de POD sacrificado. El ritual dura una hora por cada POD sacrificado. Los puntos de magia almacenados pueden dar poder o aumentar los hechizos lanzados por cualquiera que pueda usar el objeto. Los puntos de magia almacenados en objetos encantados no se regeneran por sí solos (no tienen la característica POD), pero el usuario de del objeto puede rellenar la capacidad de almacenamiento gastando sus propios puntos de magia. Se tarda un asalto cuerpo a cuerpo en almacenar 1 punto de magia en un objeto encantado. Un objeto encantado no puede almacenar más puntos mágicos de los que tiene capacidad."
+        },
+        {
+            "nombre": "Lluvia de Meteoritos",
+            "type": "Espiritual",
+            "puntos": "6 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Sólo pueden lanzarlo los iniciados en el culto de los Hacedores de Cráteres. Hace que caigan piedras del cielo. Si el lanzamiento es un éxito especial, la piedra alcanza a su objetivo. Con un éxito normal, la piedra cae al azar en un radio de 1D6 metros (y puede golpear a otro individuo). El daño causado por el enjambre de meteoritos se ve afectado como magia cíclica por la fase de la Luna Roja: Fase de la Luna Roja: Luna nueva 1D6; Creciente/Decreciente 3D6; Media 7D6; Llena 12D6.Los meteoros invocados por el culto son rocas lunares, disponibles para invocar Elementales Lunares. Caen 1/10 CAR de rocas lunares por cada 1D6 de daño hecho en una invocación. La habilidad mágica Lunar de Amplificar permite que caiga un meteorito adicional por cada 3 puntos utilizados."
+        },
+        {
+            "nombre": "Movilidad",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo duplica la MOV del objetivo y reduce su rango de golpe en 1. Al igual que Lentitud (página 119), lo utilizan los cazadores inteligentes, sobre sí mismos o sobre sus animales. También es lanzado sobre unidades de caballería de élite en batalla, dándoles un mayor valor de impacto"
+        },
+        {
+            "nombre": "Proyectil Múltiple",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cada punto de este hechizo lanzado sobre un proyectil (flecha, saeta, piedra, jabalina, etc.) crea un proyectil mágico en el instante en que se lanza o dispara el original, haciendo el mismo daño que el proyectil original. Cada ataque de proyectil se tira por separado. La primera tirada es para el original, el único que puede empalar o aplastar. Sin embargo, los proyectiles mágicos aún pueden hacer daño crítico. Los proyectiles más grandes requieren varios puntos para crear un único misil. Un arbalesto, por ejemplo, requiere 2 puntos de hechizo por proyectil adicional. Como regla general, cada 2D6 (o fracción) de daño de arma de requiere 1 punto. Este hechizo puede lanzarse sobre un proyectil: el hechizo funciona (una sola vez) si el proyectil se utiliza en cualquier momento dentro de la duración del hechizo. Si se lanza y el proyectil no se suelta (una torpeza como un arma caída, una cuerda de arco rota, etc.) el hechizo falla. Este hechizo es incompatible con Dardo Veloz (página 119) o Flecha Ignea (página 114)."
+        },
+        {
+            "nombre": "Toque de Pamalt",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo aumenta la probabilidad de éxito del objetivo al lanzar magia espiritual en un +5% por punto."
+        },
+        {
+            "nombre": "Parada",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo funciona con cualquier escudo. Cada punto aumenta en un +5% la probabilidad del portador de parar con ese escudo."
+        },
+        {
+            "nombre": "Conservar Hierbas",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Toque",
+            "duracion": "Duración (especial)",
+            "Description": "Este hechizo permite al lanzador conservar todas las plantas que pueda encontrar una persona durante un día. Esto permite a las plantas conservar sus propiedades intactas durante una estación, después de la cual quedan inutilizables."
+        },
+        {
+            "nombre": "Protección",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cada punto de este hechizo añade 1 punto de protección de armadura a todo el cuerpo u objeto. Actúa en todos los sentidos como armadura normal. Este hechizo es incompatible con Contramagia (página 111), Resplandor (página 118) y Pantalla Espiritual (página 121)."
+        },
+        {
+            "nombre": "Reparar",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Toque",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo repara objetos rotos. Todas las piezas deben estar presentes. Así, se puede arreglar una espada, un escudo, o reparar una armadura. Cada punto del hechizo repara 1D10 puntos de daño, si el objeto tiene puntos de golpe. Si no los tiene, el objeto simplemente se repara. El objeto reparado muestra una cicatriz, y pierde permanentemente 1 punto de golpe de su valor máximo de puntos de golpe. Cuando se utiliza en objetos mágicos, Reparar no devuelve ningún encantamiento roto ni ningún espíritu liberado."
+        },
+        {
+            "nombre": "Ojos del Río",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A uno mismo",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo permite al usuario ver a través del agua como si mirara a través del aire y viceversa, eliminando todos los reflejos y refracciones. Sin embargo, si el agua está turbia, o el aire es brumoso o con humo, no vuelve transparente el medio."
+        },
+        {
+            "nombre": "Visión Mística",
+            "type": "Espiritual",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo permite a una persona ver el aura (POD) de un ser vivo y medir su fuerza relativa. Este hechizo no permite al usuario ver el Mundo Espiritual. Los chamanes naturalmente tienen esta habilidad y no necesitan gastar puntos de magia para usarla, mientras que los aspirantes a chamán usan este hechizo. Las auras de todas las criaturas dentro del alcance del hechizo brillan, siendo visibles sólo para el lanzador. Si hay muchas criaturas dentro del alcance, es difícil para el lanzador determinar el POD de cada una. Los muertos vivientes no brillan, ya que no tienen la característica POD. Las auras de POD de los objetos encantados también son visibles, aunque los puntos de magia invertidos en hechizos no lo son. El director de juego debe indicar al jugador si las auras de POD de las criaturas observadas son muy inferiores al POD del lanzador, dentro de un margen de 5 puntos, o muy superiores a la del usuario. En el caso de un chamán, el director de juego debe incluir el POD de fetch al determinar esto. Puedes usar este conjuro para apuntar hechizos y golpes contra enemigos en la oscuridad, siempre que posea POD, sin embargo el lanzador no puede usarla para intentar Esquivar o parar, ya que el hechizo proporciona pocos detalles. Cualquier superficie opaca pesada (una gruesa manta de lana, una pared de madera, etc.) bloquea la Visión Mística."
+        },
+         {
+            "nombre": "Buscar Templo de la Cúpula Solar",
+            "type": "Espiritual",
+            "puntos": "3 Puntos",
+            "distancia": "A uno mismo",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo hace que un destello de luz dorada parpadee en el horizonte en la dirección exacta del templo de la Cúpula Solar más cercano. El destello sólo es visible para el lanzador."
+        },
+         {
+            "nombre": "Rielar",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo difumina y distorsiona la imagen visual del objetivo, haciéndolo más difícil de golpear. Cada punto resta -5% a la habilidad de combate de cualquier enemigo que intente golpear al objetivo afectado. No tiene efecto sobre los ataques que golpean automáticamente (por ejemplo, Perturbación, página 113), ni dificulta el lanzamiento de hechizos o la superación del POW del objetivo. Este hechizo es incompatible con Contramagia (página 111), Protección (página 118) y Pantalla Espiritual (página 121)."
+        },
+         {
+            "nombre": "Silencio",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Suprime el ruido creado por los movimientos de un ser vivo u objeto mecánico. Así, suprime el ruido metálico de una armadura de placas mientras su portador intenta ocultarse en las sombras. No detiene los ruidos creados deliberada o inadvertidamente mente, como los de alguien que lanza un hechizo, da órdenes, pisa una rama y provoca un fuerte chasquido, derriba un jarrón y lo hace añicos, o sonidos similares como los que puede provocar una tirada fallida de Moverse en silencio."
+        },
+         {
+            "nombre": "Sueño",
+            "type": "Espiritual",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Si el lanzador supera el POD del objetivo, éste cae en un profundo sueño mientras dure el hechizo. El objetivo sólo despierta si resulta herido o si un hechizo hostil se dirige a el. Una vez que el hechizo expira, el objetivo entra en un sueño ligero, y despierta fácilmente."
+        },
+         {
+            "nombre": "Enlentecer",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Si el lanzador supera el POD del objetivo, este hechizo reduce a la mitad su MOV (redondeando hacia abajo) y añade +1 a su rango de golpe. Puede reducir la MOV de una criatura a 0. Este hechizo lo suelen llevar los cazadores, la guardia de la ciudad, y las bestias de presa inteligentes como los babuinos."
+        },
+         {
+            "nombre": "Estornudos",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Instantaneo",
+            "uso": "Pasivo",
+            "Description": "Si el lanzador supera el POD del objetivo, la víctima comienza a estornudar en el siguiente rango de golpe y continúa estornudando durante 1D10 MRs. Mientras estornuda, la víctima está casi incapacitada: sólo puede esquivar o parar, y sólo a la mitad de su efectividad normal. Si lanza un hechizo, la víctima debe hacer una tirada de concentración de INTx3 cada rango de golpe que esté estornudando mientras intenta el hechizo; un solo fallo arruina el hechizo."
+        },
+         {
+            "nombre": "Solaz",
+            "type": "Espiritual",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Duración (especial)",
+            "uso": "Pasivo",
+            "Description": "Este hechizo actúa sobre la angustia mental del objetivo, ya sea por el dolor por la pérdida de un ser querido, por el miedo a la muerte, o por lo que sea. Durante 24 horas, este hechizo alivia el estrés de la víctima, y le permite seguir con su vida. No alivia el dolor de las heridas, ni reduce la probabilidad de muerte o mutilación si la víctima está gravemente herida o enferma, aunque le permite afrontar con valentía la perspectiva de la muerte."
+        },
+         {
+            "nombre": "Dardo Veloz",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cuando se lanza sobre cualquier proyectil, este hechizo añade +15% a la probabilidad de ataque del portador de y +3 puntos de daño. Este hechizo puede lanzarse sobre un proyectil, y el hechizo funciona una vez (sólo) si el proyectil se utiliza antes de que expire el hechizo. El daño mágico puede herir a criaturas mágicas que de otro modo serían invulnerables a las armas normales. Los Hermanos Lobo Telmori, por ejemplo, no sufren daño por el daño normal del proyectil, pero puede sufrir daño por el bonus de daño mágico. Es incompatible con Flecha Ignea (página 114) y Proyetil Múltiple (página 117)."
+        },
+         {
+            "nombre": "Matriz de Conjuros",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "distancia": "Ritual",
+            "duracion": "Encantamiento",
+            "Description": "Al crear una matriz de hechizo, el lanzador puede almacenar la potencialidad de un hechizo de magia espiritual en un objeto. Cualquiera que pueda utilizar el objeto adquiere la capacidad de utilizar el hechizo siempre que esté en contacto físico con el objeto, aunque pierde la potencialidad del hechizo en cuanto pierde ese contacto. El lanzador no puede hacer una matriz para un hechizo al que no tenga acceso. Para crear la matriz, el lanzador debe sacrificar POD igual a los puntos de magia necesarios para lanzar el hechizo. Así, para crear una matriz de Cuchilla Afilada 1 requiere 1 POD. Hacer una matriz Cuchilla Afilada 3 requiere 3 puntos de POD. La fuerza de una matriz se puede construir con el tiempo. Así, una matriz de 2 puntos de Cuchilla Afilada podría convertirse en una matriz de 4 puntos mediante sacrificios posteriores de POD. Esto puede hacerse en el transcurso de varias semanas o incluso temporadas. Por supuesto, la matriz no tiene el hechizo hasta que se hace el sacrificio completo. El usuario de una matriz tiene unas probabilidades de lanzar ese hechizo igual a su POWx5. El usuario también necesita gastar 1 punto de magia por cada punto de hechizo. La posesión de un objeto con una matriz de hechizo no cuenta para el límite de CAR del propietario para el conocimiento de hechizos"
+        },
+        {
+            "nombre": "Ligadura de Espíritus",
+            "type": "Espiritual",
+            "puntos": "1 Punto",
+            "duracion": "Instantaneo",
+            "Description": "Este hechizo se usa para vincular espíritus a familiares u objetos mágicos: ver el hechizo Vincular Encantamiento (RuneQuest, página 249) y Vincular Espíritus a Animales (RuneQuest, página 250) para más información. La vinculación de espíritus en familiares exige el uso de animales especiales de culto. Los objetos mágicos para retener espíritus se pueden hacer usando el ritual de Recipiente Vinculante (página 110), otros pueden ser obtenidos de un templo, o durante las aventuras. La muerte del atador libera al espíritu, incluso si el atador es revivido inmediatamente a través de la intervención divina u otros métodos."
+        },
+        {
+            "nombre": "Pantalla Espiritual",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo actúa como armadura espiritual para absorber el daño en combate de espíritus. Cada punto del hechizo absorbe 1 punto de daño espiritual. El objetivo permanece protegido durante la duración del hechizo. Pantalla Espiritual es incompatible con Contramagia (página 111), Protección (página 118) y Resplandor (página 118). Ejemplo: Mientras realiza una búsqueda de visión en la Ciudad Durmiente Hills, Vishi Dunn es atacado por un fantasma con Combate Espiritual 76%. Este no es su primer encuentro en las últimas horas, y Vishi tiene actualmente sólo 8 puntos de magia, por debajo de sus normales 19. Sin embargo, está protegido por 3 puntos de Pantalla Espiritual, y su Combate Espiritual es del 95%. Vishi intenta una tirada de Combate Espiritual para defenderse pero falla con una desafortunada tirada de 97. Para dañar a Vishi, el fantasma de debe infligir 4+ puntos de daño, debido a la Pantalla Espiritual 3 de Vishi, que funciona independientemente de si su tirada de defensa de Combate Espiritual ha tenido éxito o no."
+        },
+        {
+            "nombre": "Fuerza",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo añade +8 puntos de STR al objetivo durante la duración del hechizo. Si la STR+SIZ del objetivo es 40 o menos, esto aumenta el daño de combate cuerpo a cuerpo de incrementando en un nivel la tabla de Bonificación al Daño (por ejemplo, de +1D4 a +1D6, RuneQuest, página 56), aumenta todas las habilidades de Agilidad y Manipulación (incluyendo habilidades de arma). También permite al objetivo levantar o llevar pesos más pesados. Fuerza es incompatible con Vigor (página 122)."
+        },
+        {
+            "nombre": "Invocar (entidad)",
+            "type": "Espiritual",
+            "puntos": "Variable",
+            "distancia": "Ritual",
+            "uso": "Activo",
+            "Description": "Para lanzar este hechizo, el lanzador debe informar al Master del hechizo Invocar (entidad) que está utilizando. Los chamanes y los aventureros normalmente sólo invocan entidades espirituales. El invocador indicará cuántos puntos de magia está usando, incluyendo el coste de 1 punto de magia y no puede usar más puntos de magia de los disponibles. El ritual requiere una hora por cada punto mágico gastado en intentar la invocación. Si el número de puntos mágicos utilizados es inferior a los puntos mágicos que posee la entidad específica que se está invocando (generada por el master), entonces el ritual falla automáticamente. Los puntos mágicos del hechizo de invocación se gastan en, tanto si tiene éxito como si no. Si tiene éxito, un espécimen aleatorio del tipo de entidad deseada aparece mágicamente en el lugar donde se realizó la invocación, un asalto cuerpo a cuerpo después de que se completara la invocación. La entidad no está bajo el control del invocador (a menos que se lance un hechizo de control apropiado). Puede ser amistoso, neutral, o maligno para el invocador, según determine el director de juego, con las siguientes directrices: Un espíritu amistoso hace lo que el invocador desea. Un espíritu neutral no hace necesariamente lo que desea el invocador pero no ataca al invocador a menos que sea atacado. Un espíritu maligno ataca al invocador, intentando poseerlo. Un espíritu hostil ataca al invocador e intenta destruirlo."
+        },
+        {
+            "nombre": "Vigor",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Cada punto de este hechizo añade +3 puntos a la CON del objetivo. Esto aumenta los puntos de golpe del objetivo en +3 y añade +1 punto de golpe a cada localización de golpe. Vigor también aumenta la CAR máxima del objetivo. Vigor es incompatible con Fuerza (página 121)."
+        },
+               {
+            "nombre": "Visibilidad",
+            "type": "Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este hechizo sólo puede lanzarse sobre criaturas del Mundo de los Espíritus. Transporta a una criatura del Mundo de los Espíritus al Mundo Medio, dándole una forma translúcida en la forma que el ser invisible tenía mientras estaba vivo. El espíritu objetivo puede seguir lanzando hechizos e interactuando con el Mundo Mundano y está sujeto a los hechizos. Las armas normales no afectan a dichas criaturas, independientemente de si tienen magia lanzada sobre ellas. Este hechizo no está sujeto a las reglas normales de Disipar Magia (página 112), Neutralizar Magia (RuneQuest, página 397), o Desechar Magia (página 44)."
+        }
+    ]
+}

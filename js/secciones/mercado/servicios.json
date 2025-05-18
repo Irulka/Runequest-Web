@@ -1,0 +1,301 @@
+[
+ {
+  "nombre": "Posada barata",
+  "peso": "-",
+  "precio": "2C",
+  "descripcion": "Jergón de paja en hatibación comunal."
+ },
+ {
+  "nombre": "Posada",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "Habitación compartida."
+ },
+ {
+  "nombre": "Posada",
+  "peso": "-",
+  "precio": "5L",
+  "descripcion": "Habitación individual. Normalmente incluye desayuno."
+ },
+ {
+  "nombre": "Conjuro espiritual",
+  "peso": "-",
+  "precio": "45L",
+  "descripcion": "Por punto de conjuro."
+ },
+ {
+  "nombre": "Conjuro hechicería",
+  "peso": "-",
+  "precio": "120L",
+  "descripcion": "Una semana de estudio. Porcentaje inicial 2D4."
+ },
+ {
+  "nombre": "Contratar herrero",
+  "peso": "-",
+  "precio": "3L",
+  "descripcion": "Precio por día, sin incluir materia prima."
+ },
+ {
+  "nombre": "Contratar peletero",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "Precio por día, sin incluir materia prima."
+ },
+ {
+  "nombre": "Entrenador monturas",
+  "peso": "-",
+  "precio": "3L",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Entrenador habilidades",
+  "peso": "-",
+  "precio": "5C-1L",
+  "descripcion": "Precio por día. Depende de la habilidad y reputación del maestro."
+ },
+ {
+  "nombre": "Contratar escriba",
+  "peso": "-",
+  "precio": "1-5L",
+  "descripcion": "Precio por día. Precio por leer cartas 2C; copiar 1 página 1L; mapa 2-3L."
+ },
+ {
+  "nombre": "Establo",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Cuidado de animal exótico."
+ },
+ {
+  "nombre": "Establo",
+  "peso": "-",
+  "precio": "5C",
+  "descripcion": "Precio por día. Incluye alimento y agua para el animal."
+ },
+ {
+  "nombre": "Bardo",
+  "peso": "-",
+  "precio": "1-2L",
+  "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
+ },
+ {
+  "nombre": "Guerrero",
+  "peso": "-",
+  "precio": "5 -20L",
+  "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
+ },
+ {
+  "nombre": "Chaman",
+  "peso": "-",
+  "precio": "10-30L",
+  "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
+ },
+ {
+  "nombre": "Hechicero",
+  "peso": "-",
+  "precio": "15-40L",
+  "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
+ },
+ {
+  "nombre": "Alq. caballo",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Caballo de monta normal y corriente."
+ },
+ {
+  "nombre": "Alq. mula",
+  "peso": "-",
+  "precio": "5C",
+  "descripcion": "Para transportar mercancía y monta."
+ },
+ {
+  "nombre": "Contratar sastre",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Precio por día, sin incluir materia prima."
+ },
+ {
+  "nombre": "Contratar carpintero",
+  "peso": "-",
+  "precio": "5 C-5L",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Contratar sanador",
+  "peso": "-",
+  "precio": "4-8L",
+  "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
+ },
+ {
+  "nombre": "Contratar pastor",
+  "peso": "-",
+  "precio": "2C",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Contratar albañil",
+  "peso": "-",
+  "precio": "1C",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Contratar tatuador",
+  "peso": "-",
+  "precio": "1-10L",
+  "descripcion": "Depende de la calidad del tatuador y el tamaño del tatuaje."
+ },
+ {
+  "nombre": "Alq. Habitación",
+  "peso": "-",
+  "precio": "30-50L",
+  "descripcion": "Precio por estación. "
+ },
+ {
+  "nombre": "Alq. Casa",
+  "peso": "-",
+  "precio": "100L",
+  "descripcion": "Precio por estación. "
+ },
+ {
+  "nombre": "Alq. Villa",
+  "peso": "-",
+  "precio": "200L",
+  "descripcion": "Precio por estación. "
+ },
+ {
+  "nombre": "Entierro",
+  "peso": "-",
+  "precio": "1C",
+  "descripcion": "Solo un agujero en el suelo."
+ },
+ {
+  "nombre": "Entierro con caja",
+  "peso": "-",
+  "precio": "5C-5L",
+  "descripcion": "El precio varía si es una caja de madera o de piedra y una lápida."
+ },
+ {
+  "nombre": "Tumba con monolito",
+  "peso": "-",
+  "precio": "50L",
+  "descripcion": "Con capacidad para una o dos personas."
+ },
+ {
+  "nombre": "Mausoleo",
+  "peso": "-",
+  "precio": "25L",
+  "descripcion": "Para una persona."
+ },
+ {
+  "nombre": "Ataud",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "De madera y sin adornos."
+ },
+ {
+  "nombre": "Cremación",
+  "peso": "-",
+  "precio": "5C",
+  "descripcion": "Incineración lowcost."
+ },
+ {
+  "nombre": "Cripta",
+  "peso": "-",
+  "precio": "100L",
+  "descripcion": "Cámara funeraria subterranea"
+ },
+ {
+  "nombre": "Embalsamamiento",
+  "peso": "-",
+  "precio": "20L",
+  "descripcion": "Incluye extracción de órganos."
+ },
+ {
+  "nombre": "Pira funeraria",
+  "peso": "-",
+  "precio": "5 L"
+ },
+ {
+  "nombre": "Montículo funerario",
+  "peso": "-",
+  "precio": "20-100L",
+  "descripcion": "Montículo con cripta subterranea."
+ },
+ {
+  "nombre": "Rito funerario",
+  "peso": "-",
+  "precio": "2C-10L",
+  "descripcion": "Oraciones, incienso y un sacerdote."
+ },
+ {
+  "nombre": "Sarcófago",
+  "peso": "-",
+  "precio": "20L",
+  "descripcion": "Piedra, latón, cobre o bronce labrado."
+ },
+ {
+  "nombre": "Urna funeraria",
+  "peso": "-",
+  "precio": "5C-5L",
+  "descripcion": "Depende del material y la calidad de la orfebrería."
+ },
+ {
+  "nombre": "Mausoleo",
+  "peso": "-",
+  "precio": "100L",
+  "descripcion": "Monumento de piedra tallada."
+ },
+ {
+  "nombre": "Alq. Bote fluvial pequeño",
+  "peso": "-",
+  "precio": "1-2C",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Alq. Bote fluvial",
+  "peso": "-",
+  "precio": "2C",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Alq. Bote fluvial grande",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Precio por día."
+ },
+ {
+  "nombre": "Remontar el río",
+  "peso": "-",
+  "precio": "*",
+  "descripcion": "Barco impulsado por velas. Precio del barco por día X2."
+ },
+ {
+  "nombre": "Remontar el río",
+  "peso": "-",
+  "precio": "*",
+  "descripcion": "Barco impulsado por magia o elementos. Precio del barco por día X4."
+ },
+ {
+  "nombre": "Pasaje Embarcacion",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Pasaje en barco por ruta comercial."
+ },
+ {
+  "nombre": "Alq. Embarcación",
+  "peso": "-",
+  "precio": "20-30L",
+  "descripcion": "Precio por día. Incluye tripulación. Añadir el precio del viaje de vuelta"
+ },
+ {
+  "nombre": "Alq. Carreta",
+  "peso": "-",
+  "precio": "1-3L",
+  "descripcion": "De dos ruedas, con capacidad para dos personas."
+ },
+ {
+  "nombre": "Alq. Palanquín",
+  "peso": "-",
+  "precio": "3-15L",
+  "descripcion": "Depende del tamaño y calidad. Los porteadores se alquilan por separado."
+ }
+]

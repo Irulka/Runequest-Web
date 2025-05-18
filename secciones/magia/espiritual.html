@@ -1,0 +1,109 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Conjuros Espirituales</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Los conjuros espirituales son manifestaciones de poder que canalizan la energía mágica a través de la voluntad del lanzador. 
+                    Desde simples hechizos de detección hasta poderosos efectos de control, estos conjuros son esenciales para cualquier practicante de la magia.
+                </p>
+                
+                <!-- Grid de conjuros -->
+                <div class="conjuros-grid" id="conjuros-grid">
+                    <!-- Se llenará dinámicamente con JS -->
+                </div>
+                
+                <!-- Contenedor de resultados -->
+                <div class="resultados-container" style="display: none;">
+                    <!-- Contenido generado dinámicamente -->
+                    <div id="resultado-principal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/espiritual.png" alt="Conjuros Espirituales" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<!-- CSS adicional -->
+<style>
+    /* Estilo para el grid de conjuros */
+    .conjuros-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 10px;
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    
+    .opcion-conjuro {
+        padding: 12px;
+        text-align: center;
+        background: #2d3748;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .opcion-conjuro:hover {
+        background: #4a5568;
+        transform: scale(1.05);
+    }
+    
+    /* Estilos para la ficha del conjuro */
+    .ficha-conjuro {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .ficha-conjuro h3 {
+        color: #d69e2e;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .propiedad-conjuro {
+        margin-bottom: 10px;
+    }
+    
+    .propiedad-conjuro .valor-propiedad {
+        color: #f7fafc;
+    }
+    
+    .descripcion-conjuro {
+        margin-top: 20px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        line-height: 1.5;
+    }
+    
+    /* Botón de volver */
+    .btn-volver {
+        margin-top: 15px;
+        padding: 8px 15px;
+        background: #4a5568;
+        border: none;
+        border-radius: 4px;
+        color: #f7fafc;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .btn-volver:hover {
+        background: #2d3748;
+    }
+</style>
+
+<script src="js/secciones/magia/espiritual.js"></script>

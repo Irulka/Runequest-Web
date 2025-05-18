@@ -1,0 +1,212 @@
+[
+ {
+  "Id": "1",
+  "nombre": "Res",
+  "peso": 800,
+  "precio": "30 L",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "2",
+  "nombre": "Vaca",
+  "peso": 650,
+  "precio": "20 L",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "3",
+  "nombre": "Cabra",
+  "peso": 55,
+  "precio": "3 L",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "4",
+  "nombre": "Hombre de rebaño",
+  "peso": 80,
+  "precio": "15 L",
+  "descripcion": "Pueden entrenarse para tirar de carretas."
+ },
+ {
+  "Id": "5",
+  "nombre": "Caballo",
+  "peso": 750,
+  "precio": "75 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "6",
+  "nombre": "Alce",
+  "peso": 600,
+  "precio": "75 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "7",
+  "nombre": "Mula",
+  "peso": 400,
+  "precio": "35 L",
+  "descripcion": "Animal de carga y monta."
+ },
+ {
+  "Id": "8",
+  "nombre": "Yak",
+  "peso": 650,
+  "precio": "40 L",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "9",
+  "nombre": "Zebra",
+  "peso": 350,
+  "precio": "70 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "10",
+  "nombre": "Escarabajo gigante",
+  "peso": 1200,
+  "precio": "125 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "11",
+  "nombre": "Bisonte",
+  "peso": 850,
+  "precio": "30 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "12",
+  "nombre": "Lagarte de rocas",
+  "peso": 230,
+  "precio": "20 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "13",
+  "nombre": "Alticamello",
+  "peso": 900,
+  "precio": "55 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "14",
+  "nombre": "Pony",
+  "peso": 300,
+  "precio": "50 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "15",
+  "nombre": "Impala",
+  "peso": 70,
+  "precio": "10 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "16",
+  "nombre": "Avestruz",
+  "peso": 125,
+  "precio": "45 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "17",
+  "nombre": "Rinoceronte",
+  "peso": 2000,
+  "precio": "100 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "18",
+  "nombre": "Antílope",
+  "peso": 100,
+  "precio": "25 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "19",
+  "nombre": "Mamut",
+  "peso": 5500,
+  "precio": "450 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "20",
+  "nombre": "Mastodonte",
+  "peso": 5000,
+  "precio": "400 L",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "21",
+  "nombre": "Escarabajo cornudo",
+  "peso": 1800,
+  "precio": "1300 B",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "22",
+  "nombre": "Escarabajo pelotero",
+  "peso": 1300,
+  "precio": "750 B",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "23",
+  "nombre": "Escarabajo espalda roja",
+  "peso": 1100,
+  "precio": "600 B",
+  "descripcion": "Si es una montura de guerra costará el doble. Si no está entrenado la mitad."
+ },
+ {
+  "Id": "24",
+  "nombre": "Troll esclavo",
+  "peso": 350,
+  "precio": "20000 B",
+  "descripcion": "El doble si es un guerrero."
+ },
+ {
+  "Id": "25",
+  "nombre": "Humano hombre adulto",
+  "peso": 80,
+  "precio": "100 L",
+  "descripcion": "Entre 200 y 300 L si sabe leer y escribir, o si posee alguna habilidad específica."
+ },
+ {
+  "Id": "26",
+  "nombre": "Humano mujer adulta",
+  "peso": 65,
+  "precio": "75 L",
+  "descripcion": "Entre 150 y 225 L si sabe leer o escribir o si posee algún tipo de habilidad específica."
+ },
+ {
+  "Id": "27",
+  "nombre": "Trollkin",
+  "peso": 45,
+  "precio": "1000 B",
+  "descripcion": "Entre 500 y 2000 si es un troll que solo sirve para comérselo, o si tiene habilidades."
+ },
+ {
+  "Id": "28",
+  "nombre": "Cerdo",
+  "peso": "60",
+  "precio": "3L",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "29",
+  "nombre": "Gallina",
+  "peso": "3",
+  "precio": "5C",
+  "descripcion": "Animal de granja."
+ },
+ {
+  "Id": "30",
+  "nombre": "Pato",
+  "peso": "2",
+  "precio": "4C",
+  "descripcion": "Animal de granja."
+ }
+]

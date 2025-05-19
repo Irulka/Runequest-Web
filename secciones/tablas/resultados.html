@@ -1,0 +1,73 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Tabla de Resultados de Habilidades</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Esta tabla muestra los resultados posibles según el valor de habilidad del personaje.
+                    Introduce un valor de habilidad para ver los rangos de crítico, especial y pifia.
+                </p>
+                
+                <div class="controles text-center">
+                    <input type="number" id="input-valor" min="1" max="100" placeholder="1-100">
+                </div>
+                
+                <!-- Contenedor de resultados (inicialmente oculto) -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-principal" class="resultado-box resultado-principal">
+                        <table class="tabla-resultados">
+                            <tr>
+                                <th>Habilidad</th>
+                                <th>Rango</th>
+                                <th>Crítico</th>
+                                <th>Especial</th>
+                                <th>Pifia</th>
+                            </tr>
+                            <tr>
+                                <td id="valor-habilidad"></td>
+                                <td id="rango-habilidad"></td>
+                                <td id="valor-critico"></td>
+                                <td id="valor-especial"></td>
+                                <td id="valor-pifia"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/guerrero.png" alt="Imagen de Resultados" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    .tabla-resultados {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    
+    .tabla-resultados th, .tabla-resultados td {
+        padding: 8px 12px;
+        text-align: center;
+        border: 1px solid #dddddd;
+    }
+    
+    .tabla-resultados th {
+        background-color: #838383;
+        font-weight: bold;
+    }
+    
+    .tabla-resultados tr:nth-child(even) {
+        background-color: #484747;
+    }
+</style>
+
+<script>
+// Aquí iría todo el contenido del archivo resultados.js
+</script>

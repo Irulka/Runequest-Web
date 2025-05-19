@@ -2,6 +2,11 @@ css
   ------- styles.css
 
 imagenes 
+   --------- npcs
+               --------- babuino.png
+               --------- trolln.png
+               --------- vasana.png
+               
    --------- animales.png
    --------- arma.png   
    --------- armadura.png
@@ -13,11 +18,13 @@ imagenes
    --------- eurmal.png
    --------- elemental.png
    --------- glorantha.png
+   --------- guerrero.png
    --------- mercader.png
    --------- personaje.png
    --------- personaje2.png
    --------- runekeeper.png
    --------- thed.png
+   --------- npc.png
    --------- usuario.png
 js
    --------- secciones
@@ -42,11 +49,19 @@ js
                             --------- instrumentos.json
                             --------- objetos-comunes.js
                             --------- tools.json
+
+                --------- personajes
+                            --------- npcs.js
+                            --------- npcs
+                                        --------- babuino.json
+                                        --------- trolln.json
+                                        --------- vasana.json
                      
                 --------- tablas
                             --------- maldicion-thed.js
                             --------- pifias.js
                             --------- rasgos-caoticos.js
+                            --------- resultados.js
 
                 --------- dados.js
                 --------- main.js
@@ -71,9 +86,14 @@ secciones
                 --------- armaduras.html
                 --------- objetos-comunes.html
 
+    --------- personajes
+                --------- npcs.html
+                ---------- npcs
+
     --------- tablas
                 --------- maldicion-thed.html
                 --------- rasgos-caoticos.html
+                --------- resultados.html
 
     --------- inicio.html  
               

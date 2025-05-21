@@ -7,7 +7,7 @@
     const CONFIG = {
         BASE: '../../',
         PATHS: {
-            armasd: './js/secciones/mercado/armasd.json'
+            armasd: 'js/secciones/mercado/armasd.json'
         },
         DEBUG: true
     };

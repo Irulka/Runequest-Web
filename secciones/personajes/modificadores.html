@@ -1,0 +1,146 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Calculadora de Modificadores</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Introduce los valores de las características de tu personaje para calcular sus atributos derivados y modificadores de habilidades.
+                </p>
+                
+                <!-- Formulario para ingresar características -->
+                <div class="formulario-caracteristicas">
+                    <div class="caracteristicas-grid">
+                        <div class="caracteristica-input">
+                            <label for="fuerza">Fuerza (FUE)</label>
+                            <input type="number" id="fuerza" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="constitucion">Constitución (CON)</label>
+                            <input type="number" id="constitucion" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="tamano">Tamaño (TAM)</label>
+                            <input type="number" id="tamano" min="8" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="destreza">Destreza (DES)</label>
+                            <input type="number" id="destreza" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="poder">Poder (POD)</label>
+                            <input type="number" id="poder" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="inteligencia">Inteligencia (INT)</label>
+                            <input type="number" id="inteligencia" min="8" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="carisma">Carisma (CAR)</label>
+                            <input type="number" id="carisma" min="3" max="21" value="10">
+                        </div>
+                    </div>
+                    
+                    <button id="btn-calcular" class="btn-calcular">Calcular Modificadores</button>
+                </div>
+                
+                <!-- Resultados -->
+                <div class="resultados-container" id="resultados-container" style="display: none;">
+                    <div id="resultado-principal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img id="imagen-dinamica" src="./imagenes/mod.png" alt="Modificadores de Características" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para el formulario */
+    .formulario-caracteristicas {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    .caracteristicas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .caracteristica-input {
+        margin-bottom: 10px;
+    }
+    
+    .caracteristica-input label {
+        display: block;
+        margin-bottom: 5px;
+        color: #f7fafc;
+        font-weight: bold;
+    }
+    
+    .caracteristica-input input {
+        width: 50%;
+        padding: 8px;
+        background: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+        color: #f7fafc;
+    }
+    
+    .btn-calcular {
+        padding: 10px 20px;
+        background: #d69e2e;
+        border: none;
+        border-radius: 4px;
+        color: #1a202c;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .btn-calcular:hover {
+        background: #b7791f;
+    }
+    
+    /* Estilos para los resultados */
+    .atributo-resultado {
+        margin-bottom: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    
+    .atributo-resultado h3 {
+        margin-top: 0;
+        color: #d69e2e;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 5px;
+    }
+    
+    .tabla-localizaciones {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    
+    .tabla-localizaciones th, 
+    .tabla-localizaciones td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .tabla-localizaciones th {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+<script src="js/secciones/personajes/modificadores.js"></script>

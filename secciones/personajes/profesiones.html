@@ -1,0 +1,137 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Selector de Profesiones</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Selecciona una profesión para tu personaje o genera una aleatoriamente. La profesión determinará habilidades, equipo y otros atributos.
+                </p>
+                
+                <!-- Formulario para seleccionar profesión -->
+                <div class="formulario-profesiones">
+                    <div class="profesion-selector">
+                        <label for="profesion">Profesión:</label>
+                        <select id="profesion">
+                            <option value="">-- Selecciona una profesión --</option>
+                            <option value="Asistente de Chamán">Asistente de Chamán</option>
+                            <option value="Bandido">Bandido</option>
+                            <option value="Conductor de Carro">Conductor de Carro</option>
+                            <option value="Artesano">Artesano</option>
+                            <option value="Artista">Artista</option>
+                            <option value="Granjero">Granjero</option>
+                            <option value="Pescador">Pescador</option>
+                            <option value="Sanador">Sanador</option>
+                            <option value="Pastor">Pastor</option>
+                            <option value="Cazador">Cazador</option>
+                            <option value="Mercader">Mercader</option>
+                            <option value="Noble">Noble</option>
+                            <option value="Filósofo">Filósofo</option>
+                            <option value="Sacerdote">Sacerdote</option>
+                            <option value="Escriba">Escriba</option>
+                            <option value="Ladrón">Ladrón</option>
+                            <option value="Guerrero (Infantería Pesada)">Guerrero (Infantería Pesada)</option>
+                            <option value="Guerrero (Infantería Ligera)">Guerrero (Infantería Ligera)</option>
+                            <option value="Guerrero (Caballería Pesada)">Guerrero (Caballería Pesada)</option>
+                            <option value="Guerrero (Caballería Ligera)">Guerrero (Caballería Ligera)</option>
+                        </select>
+                    </div>
+                    
+                    <button id="btn-aleatorio" class="btn-aleatorio">Generar Aleatorio</button>
+                    <button id="btn-mostrar" class="btn-mostrar">Mostrar Profesión</button>
+                </div>
+                
+                <!-- Resultados -->
+                <div class="resultados-container" id="resultados-container" style="display: none;">
+                    <div id="resultado-principal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img id="imagen-dinamica" src="./imagenes/profesiones.png" alt="Profesiones" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para el formulario */
+    .formulario-profesiones {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    .profesion-selector {
+        margin-bottom: 15px;
+    }
+    
+    .profesion-selector label {
+        display: block;
+        margin-bottom: 5px;
+        color: #f7fafc;
+        font-weight: bold;
+    }
+    
+    .profesion-selector select {
+        width: 30%;
+        padding: 8px;
+        background: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+        color: #f7fafc;
+    }
+    
+    .btn-aleatorio, .btn-mostrar {
+        padding: 10px 20px;
+        background: #d69e2e;
+        border: none;
+        border-radius: 4px;
+        color: #1a202c;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        margin-right: 10px;
+    }
+    
+    .btn-aleatorio:hover, .btn-mostrar:hover {
+        background: #b7791f;
+    }
+    
+    /* Estilos para los resultados */
+    .atributo-resultado {
+        margin-bottom: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+    }
+    
+    .atributo-resultado h3 {
+        margin-top: 0;
+        color: #d69e2e;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 5px;
+    }
+    
+    .tabla-profesion {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 10px 0;
+    }
+    
+    .tabla-profesion th, 
+    .tabla-profesion td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .tabla-profesion th {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+<script src="js/secciones/personajes/profesiones.js"></script>

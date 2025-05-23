@@ -91,7 +91,7 @@ function initNPCs() {
                     ${generarTablaMagia(npc)}
                 </div>
                 
-                <button class="btn-volver">Volver a la lista</button>
+                <button class="btn-magia">Volver a la lista</button>
             </div>
         `;
         

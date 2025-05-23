@@ -90,18 +90,20 @@ function initModificadores() {
                     </table>
                 </div>
                 
-                <div class="atributo-resultado">
-                    <h3>Modificadores de Habilidades</h3>
-                    <p><strong>Agilidad:</strong> ${modAgilidad}%</p>
-                    <p><strong>Comunicación:</strong> ${modComunicacion}%</p>
-                    <p><strong>Conocimientos:</strong> ${modConocimientos}%</p>
-                    <p><strong>Magia:</strong> ${modMagia}%</p>
-                    <p><strong>Manipulación:</strong> ${modManipulacion}%</p>
-                    <p><strong>Percepción:</strong> ${modPercepcion}%</p>
-                    <p><strong>Sigilo:</strong> ${modSigilo}%</p>
-                </div>
+<div class="atributo-resultado">
+  <h3>Modificadores de Habilidades</h3>
+  <p>
+    <strong>Agilidad:</strong> ${modAgilidad}%, 
+    <strong>Comunicación:</strong> ${modComunicacion}%, 
+    <strong>Conocimientos:</strong> ${modConocimientos}%, 
+    <strong>Magia:</strong> ${modMagia}%, 
+    <strong>Manipulación:</strong> ${modManipulacion}%, 
+    <strong>Percepción:</strong> ${modPercepcion}%, 
+    <strong>Sigilo:</strong> ${modSigilo}%
+  </p>
+</div>
                 
-                <button class="btn-volver" onclick="document.getElementById('resultados-container').style.display='none'">Volver</button>
+                <button class="btn-magia" onclick="document.getElementById('resultados-container').style.display='none'">Volver</button>
             </div>
         `;
     }

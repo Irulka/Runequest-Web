@@ -231,19 +231,19 @@ h2 {
 }
 
 .btn-magia {
-    background-color: #6a0dad;
-    color: white;
-    border: none;
-    padding: 15px 30px; /* Aumentado padding */
-    border-radius: 8px; /* Bordes más redondeados */
-    cursor: pointer;
-    transition: all 0.3s;
-    font-size: 1.1rem; /* Aumentado tamaño de fuente */
-    min-width: 200px; /* Aumentado ancho mínimo */
+        padding: 10px 20px;
+        background: #d69e2e;
+        border: none;
+        border-radius: 4px;
+        color: #1a202c;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        margin-right: 10px;
 }
 
 .btn-magia:hover {
-    background-color: #8a2be2;
+        background: #b7791f;
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }

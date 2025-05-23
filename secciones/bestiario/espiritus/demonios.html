@@ -1,0 +1,125 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Generador de Demonios</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Genera demonios aleatorios para tu campaña de Runequest. Selecciona el tamaño del demonio y el sistema calculará automáticamente todas sus características según las reglas oficiales. Los demonios son criaturas poderosas del Inframundo con habilidades mágicas y combate letal.
+                </p>
+                
+                <!-- Botones de tamaño -->
+                <div class="fila-botones">
+                    <button id="btn-pequeno" class="btn-magia">Pequeño</button>
+                    <button id="btn-mediano" class="btn-magia">Mediano</button>
+                    <button id="btn-grande" class="btn-magia">Grande</button>
+                </div>
+                
+                <!-- Resultados -->
+                <div id="resultados-demonio" style="margin-top: 20px; display: none;">
+                    <h3 style="color: #d69e2e;">Características del Demonio</h3>
+                    
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Característica</th>
+                                    <th style="width: 20%;">Valor</th>
+                                    <th style="width: 50%;">Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody id="demonio-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Habilidades de Combate</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Arma</th>
+                                    <th style="width: 20%;">Ataque</th>
+                                    <th style="width: 20%;">Daño</th>
+                                    <th style="width: 30%;">MR</th>
+                                </tr>
+                            </thead>
+                            <tbody id="combate-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Magia</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Tipo</th>
+                                    <th style="width: 70%;">Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody id="magia-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/demonio.png" alt="Demonio de Runequest" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    .tabla-armadura {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(45, 55, 72, 0.5);
+    }
+    .tabla-armadura th {
+        background-color: #2d3748;
+        color: #d69e2e;
+        padding: 12px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+    }
+    .tabla-armadura td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #4a5568;
+        color: #f7fafc;
+    }
+    .tabla-armadura tr:hover {
+        background-color: rgba(214, 158, 46, 0.1);
+    }
+    .tabla-armaduras-container {
+        max-height: 60vh;
+        overflow-y: auto;
+        margin-bottom: 20px;
+    }
+    /* Estilos para los botones de tamaño */
+    .fila-botones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+        .tabla-armadura th, 
+        .tabla-armadura td {
+            padding: 8px 6px;
+            font-size: 0.9em;
+        }
+    }
+</style>
+
+<script src="js/secciones/espiritus/demonios.js"></script>

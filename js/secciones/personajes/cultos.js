@@ -292,7 +292,7 @@ function initCultos() {
                     </table>
                 </div>
                 
-                <button class="btn-volver" onclick="document.getElementById('resultados-container').style.display='none'">Volver</button>
+                <button class="btn-magia" onclick="document.getElementById('resultados-container').style.display='none'">Volver</button>
             </div>
         `;
         

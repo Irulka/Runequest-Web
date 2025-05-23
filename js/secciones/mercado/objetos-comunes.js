@@ -12,6 +12,7 @@
             equipo: 'js/secciones/mercado/equipo.json',
             seguidores: 'js/secciones/mercado/seguidores.json',
             servicios: 'js/secciones/mercado/servicios.json',
+            otros: 'js/secciones/mercado/otros.json',
             defaultImage: 'imagenes/default-object.png'
         },
         DEBUG: false
@@ -20,7 +21,7 @@
     // Datos iniciales
     const categorias = {
         herramientas: { nombre: "Herramientas", datos: [] },
-        ropa: { nombre: "Ropa", datos: [] },
+        otros: { nombre: "Otros", datos: [] },
         equipo: { nombre: "Equipo", datos: [] },
         instrumentos: { nombre: "Instrumentos", datos: [] },
         seguidores: { nombre: "Seguidores", datos: [] },
@@ -50,6 +51,7 @@
             else if (categoria === 'equipo') archivo = CONFIG.PATHS.equipo;
             else if (categoria === 'seguidores') archivo = CONFIG.PATHS.seguidores;
             else if (categoria === 'servicios') archivo = CONFIG.PATHS.servicios;
+            else if (categoria === 'otros') archivo = CONFIG.PATHS.otros;
             else return [];
 
             const response = await fetch(`${CONFIG.BASE}${archivo}`);
@@ -92,7 +94,7 @@
         if (!items || items.length === 0) {
             mostrarMensajeTabla(categoria === 'herramientas' || categoria === 'equipo' || 
                               categoria === 'instrumentos' || categoria === 'seguidores' || 
-                              categoria === 'servicios' ? 
+                              categoria === 'servicios' || categoria === 'otros' ? 
                 `No se encontraron ${categorias[categoria].nombre.toLowerCase()}` : 'Categoría en desarrollo');
         } else {
             const itemsFiltrados = items.filter(item => 
@@ -216,6 +218,7 @@
         categorias.equipo.datos = await cargarDatosCategoria('equipo');
         categorias.seguidores.datos = await cargarDatosCategoria('seguidores');
         categorias.servicios.datos = await cargarDatosCategoria('servicios');
+        categorias.otros.datos = await cargarDatosCategoria('otros');
         
         configurarBotones();
         configurarBuscador();

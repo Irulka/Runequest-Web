@@ -1,0 +1,128 @@
+[
+ {
+  "nombre": "Carreta",
+  "peso": "-",
+  "precio": "10L",
+  "descripcion": "Estructura abierta y de cuatro ruedas. Requiere dos animales de tiro."
+ },
+ {
+  "nombre": "Carreta pequeña",
+  "peso": "-",
+  "precio": "4L",
+  "descripcion": "Carreta de dos ruedas y estructura abierta. Requiere un animal de tiro."
+ },
+ {
+  "nombre": "Palanquín",
+  "peso": "-",
+  "precio": "10-100L",
+  "descripcion": "Depende del tamaño, artesanía y número de porteadores requerido."
+ },
+ {
+  "nombre": "Carreta cubierta",
+  "peso": "-",
+  "precio": "15+5L",
+  "descripcion": "De cuatro ruedas, con arquillos y cubierta de tela o pieles (opcional). Requiere 2 animales."
+ },
+ {
+  "nombre": "Carro de guerra Ligero",
+  "peso": "-",
+  "precio": "200L",
+  "descripcion": "De un solo eje, tirado por 2 bestias. Ligero y maniobrable. Dos tripulantes."
+ },
+ {
+  "nombre": "Carro de guerra pesado",
+  "peso": "-",
+  "precio": "250L",
+  "descripcion": "De doble eje, tirado por 4 bestias. Estructura sólida y refuerzos. Dos tripulantes."
+ },
+ {
+  "nombre": "Vagon de guerra",
+  "peso": "-",
+  "precio": "300L",
+  "descripcion": "Más alto, robusto, de doble eje y tirado por cuatro bestias. 3 Tripulantes."
+ },
+ {
+  "nombre": "Balsa",
+  "peso": "-",
+  "precio": "5C",
+  "descripcion": "Troncos atados. Capacidad para una o dos personas."
+ },
+ {
+  "nombre": "Balsa grande",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "Troncos atados. Capacidad para hasta seis personas."
+ },
+ {
+  "nombre": "Balsa pescador",
+  "peso": "-",
+  "precio": "1L",
+  "descripcion": "Con bejigas infladas en los laterales, es más estable para pescar con lanza. 1, o 2 personas."
+ },
+ {
+  "nombre": "Barca",
+  "peso": "-",
+  "precio": "6L",
+  "descripcion": "De fondo plano. Para 2 personas. Normalmente remolcada por un animal desde la orilla."
+ },
+ {
+  "nombre": "Canoa",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "Piel sobre un vastidor de juncos o madera. Para 1 solo remero. Desmontable."
+ },
+ {
+  "nombre": "Monoxylon",
+  "peso": "-",
+  "precio": "3L",
+  "descripcion": "Tronco ahuecado. Si vuelca, se puede enderezar haciéndolo girar. 1, o 2 personas."
+ },
+ {
+  "nombre": "Bote",
+  "peso": "-",
+  "precio": "8L",
+  "descripcion": "Para 6-8 personas."
+ },
+ {
+  "nombre": "Tumba con monolito",
+  "peso": "-",
+  "precio": "50L",
+  "descripcion": "Con capacidad para uno o dos difuntos."
+ },
+ {
+  "nombre": "Mausoleo",
+  "peso": "-",
+  "precio": "25L",
+  "descripcion": "Para un solo difunto."
+ },
+ {
+  "nombre": "Ataud",
+  "peso": "-",
+  "precio": "2L",
+  "descripcion": "De madera y sin adornos."
+ },
+ {
+  "nombre": "Cripta",
+  "peso": "-",
+  "precio": "100L",
+  "descripcion": "Cámara funeraria subterranea."
+ },
+ {
+  "nombre": "Montículo funerario",
+  "peso": "-",
+  "precio": "20-100L",
+  "descripcion": "Montículo con cripta subterranea."
+ },
+ {
+  "nombre": "Sarcófago",
+  "peso": "-",
+  "precio": "20-100",
+  "descripcion": "De madera o piedra tallada, con o sin incrustaciones y policromía."
+ },
+ {
+  "nombre": "Urna funeraria",
+  "peso": "-",
+  "precio": "5C-10L",
+  "descripcion": "Según material y calidad."
+ }
+]

@@ -9,7 +9,7 @@
   "nombre": "Posada",
   "peso": "-",
   "precio": "2L",
-  "descripcion": "Habitación compartida."
+  "descripcion": "Habitación compartida. "
  },
  {
   "nombre": "Posada",
@@ -60,37 +60,37 @@
   "descripcion": "Precio por día. Precio por leer cartas 2C; copiar 1 página 1L; mapa 2-3L."
  },
  {
-  "nombre": "Establo",
+  "nombre": "Alquiler Establo",
   "peso": "-",
   "precio": "1L",
   "descripcion": "Cuidado de animal exótico."
  },
  {
-  "nombre": "Establo",
+  "nombre": "Alquiler Establo",
   "peso": "-",
   "precio": "5C",
   "descripcion": "Precio por día. Incluye alimento y agua para el animal."
  },
  {
-  "nombre": "Bardo",
+  "nombre": "Contratar Bardo",
   "peso": "-",
   "precio": "1-2L",
   "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
  },
  {
-  "nombre": "Guerrero",
+  "nombre": "Contratar Guerrero",
   "peso": "-",
   "precio": "5 -20L",
   "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
  },
  {
-  "nombre": "Chaman",
+  "nombre": "Contratar Chaman",
   "peso": "-",
   "precio": "10-30L",
   "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
  },
  {
-  "nombre": "Hechicero",
+  "nombre": "Contratar Hechicero",
   "peso": "-",
   "precio": "15-40L",
   "descripcion": "Depende de su reputación. El precio no incluye alimentación ni hospedaje."
@@ -174,34 +174,10 @@
   "descripcion": "El precio varía si es una caja de madera o de piedra y una lápida."
  },
  {
-  "nombre": "Tumba con monolito",
-  "peso": "-",
-  "precio": "50L",
-  "descripcion": "Con capacidad para una o dos personas."
- },
- {
-  "nombre": "Mausoleo",
-  "peso": "-",
-  "precio": "25L",
-  "descripcion": "Para una persona."
- },
- {
-  "nombre": "Ataud",
-  "peso": "-",
-  "precio": "2L",
-  "descripcion": "De madera y sin adornos."
- },
- {
   "nombre": "Cremación",
   "peso": "-",
   "precio": "5C",
   "descripcion": "Incineración lowcost."
- },
- {
-  "nombre": "Cripta",
-  "peso": "-",
-  "precio": "100L",
-  "descripcion": "Cámara funeraria subterranea"
  },
  {
   "nombre": "Embalsamamiento",
@@ -215,40 +191,10 @@
   "precio": "5 L"
  },
  {
-  "nombre": "Montículo funerario",
-  "peso": "-",
-  "precio": "20-100L",
-  "descripcion": "Montículo con cripta subterranea."
- },
- {
   "nombre": "Rito funerario",
   "peso": "-",
   "precio": "2C-10L",
   "descripcion": "Oraciones, incienso y un sacerdote."
- },
- {
-  "nombre": "Sarcófago",
-  "peso": "-",
-  "precio": "20L",
-  "descripcion": "Piedra, latón, cobre o bronce labrado."
- },
- {
-  "nombre": "Urna funeraria",
-  "peso": "-",
-  "precio": "5C-5L",
-  "descripcion": "Depende del material y la calidad de la orfebrería."
- },
- {
-  "nombre": "Mausoleo",
-  "peso": "-",
-  "precio": "100L",
-  "descripcion": "Monumento de piedra tallada."
- },
- {
-  "nombre": "Alq. Bote fluvial pequeño",
-  "peso": "-",
-  "precio": "1-2C",
-  "descripcion": "Precio por día."
  },
  {
   "nombre": "Alq. Bote fluvial",
@@ -291,6 +237,18 @@
   "peso": "-",
   "precio": "1-3L",
   "descripcion": "De dos ruedas, con capacidad para dos personas."
+ },
+ {
+  "nombre": "Alq. Capilla",
+  "peso": "-",
+  "precio": "2-5L",
+  "descripcion": "Para ritual, durante una jornada."
+ },
+ {
+  "nombre": "Alq. Templo",
+  "peso": "-",
+  "precio": "4-10L",
+  "descripcion": "Para ritual, durante una jornada."
  },
  {
   "nombre": "Alq. Palanquín",

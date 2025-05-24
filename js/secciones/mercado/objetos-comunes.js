@@ -7,7 +7,7 @@
     const CONFIG = {
         BASE: '',
         PATHS: {
-            herramientas: 'js/secciones/mercado/tools.json',
+            herramientas: 'js/secciones/mercado/tools.json', 
             instrumentos: 'js/secciones/mercado/instrumentos.json',
             equipo: 'js/secciones/mercado/equipo.json',
             seguidores: 'js/secciones/mercado/seguidores.json',

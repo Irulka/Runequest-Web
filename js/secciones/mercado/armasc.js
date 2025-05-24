@@ -9,7 +9,7 @@
         PATHS: {
             armasc: 'js/secciones/mercado/armasc.json'
         },
-        DEBUG: true
+        DEBUG: false
     };
 
     // Variables globales

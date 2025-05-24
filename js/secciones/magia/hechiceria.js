@@ -1,13 +1,13 @@
-// Inicialización de conjuros espirituales
-function initEspiritual() {
-    console.log('Inicializando Conjuros Espirituales...');
+// Inicialización de conjuros de hechicería
+function initHechiceria() {
+    console.log('Inicializando Conjuros de Hechicería...');
     
     // Elementos de la interfaz
     const selectConjuro = document.getElementById('conjuro');
     const resultadosContainer = document.getElementById('resultados-container');
     
     // Cargar datos de conjuros
-    fetch('js/secciones/magia/espiritual.json')
+    fetch('js/secciones/magia/hechiceria.json')
         .then(response => response.json())
         .then(data => {
             // Ordenar conjuros alfabéticamente
@@ -85,7 +85,7 @@ function initEspiritual() {
 
 // Inicialización
 if (document.readyState === 'complete') {
-    initEspiritual();
+    initHechiceria();
 } else {
-    document.addEventListener('DOMContentLoaded', initEspiritual);
+    document.addEventListener('DOMContentLoaded', initHechiceria);
 }

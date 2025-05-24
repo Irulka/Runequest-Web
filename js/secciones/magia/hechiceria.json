@@ -1,0 +1,464 @@
+{
+    "conjuros": [
+        {
+            "nombre": "Acelerar Curación",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro duplica la tasa de curación del objetivo durante la duración del conjuro. Con fuerza 3 aumenta la tasa de curación a tres veces su valor normal, con fuerza 6 a cuatro veces, con fuerza 9 a cinco veces, y así sucesivamente."
+        },
+        {
+            "nombre": "Animar Muertos",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Cada punto de fuerza del conjuro anima 6 puntos de TAMAÑO o 1D6 de FUERZA, elegido al lanzar el conjuro. El hechicero normalmente necesita suficiente fuerza de conjuro para el TAMAÑO completo del cadáver (en circunstancias especiales, podría activarse solo un brazo, cabeza, etc.). La criatura puede tener más FUERZA que en vida. Si tiene una FUERZA más del triple de su TAMAÑO, podría dañarse al moverse. Un cadáver animado se mueve 2 puntos más lento que en vida, pero un esqueleto animado se mueve a la misma velocidad que en vida."
+        },
+        {
+            "nombre": "Atraer Magia",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro hace que cualquier otro conjuro a distancia lanzado en su área de efecto se desvíe para afectar al objetivo del conjuro, independientemente del objetivo original. Una vez lanzado, el alcance de Atraer Magia se centra en el objetivo. El receptor de los conjuros desviados debe ser un objetivo válido del conjuro en cuestión.\n\nEl conjuro compara su fuerza contra la intensidad del conjuro válido en la tabla de resistencia. Cada punto de Runa cuenta como 2 puntos de intensidad para este conjuro. Si Atraer Magia gana, el conjuro afecta al objetivo de Atraer Magia, incluso si estaba dirigido al lanzador original.\n\nSi el lanzador muere, el conjuro termina. Si dos conjuros Atraer afectan a un mismo ataque mágico, el de mayor fuerza comprueba primero si tiene éxito. Si dos conjuros de igual fuerza compiten, comprueba primero el más cercano al objetivo."
+        },
+        {
+            "nombre": "Atraer Misiles",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Ver Atraer Magia (arriba) para detalles.\n\nSe tira 1D20 por cada misil que pase por el radio del conjuro. Si el resultado es igual o menor a la fuerza del conjuro, el misil impacta en el objetivo. Si es mayor, el misil continúa su trayectoria original. Los impactos críticos y empalamientos se aplican si la tirada original del misil lo fue. Los efectos de un fallo crítico deben ser determinados por el director de juego, basándose en el resultado de la tirada."
+        },
+        {
+            "nombre": "Atraer Espíritus",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Ver Atraer Magia (arriba) para detalles.\n\nTodos los espíritus capaces de combate espiritual ofensivo deben tirar sus puntos de magia contra la fuerza del conjuro cada ronda que estén dentro de su radio. Si son superados por el conjuro, deben atacar al objetivo de Atraer Espíritus. Los espíritus actualmente en combate espiritual o que tengan 10 o más puntos de magia que la fuerza del conjuro pueden ignorarlo."
+        },
+        {
+            "nombre": "Vínculo Elemental",
+            "puntos": "3 Puntos POD",
+            "distancia": "Ritual (Encantamiento)",
+            "duracion": "Encantamiento",
+            "Description": "Un encantamiento de vinculación es un objeto mágico que puede contener un tipo específico de entidad, en este caso un elemental. El objeto que servirá como contenedor elemental debe ser encantado con 3 puntos de POD."
+        },
+        {
+            "nombre": "Vínculo de Espíritu",
+            "puntos": "2 Puntos POD",
+            "distancia": "Ritual (Encantamiento)",
+            "duracion": "Encantamiento",
+            "Description": "Un encantamiento de vinculación es un objeto mágico que puede contener un espíritu discorporado. El objeto que servirá como contenedor del espíritu debe ser encantado con 2 puntos de POD."
+        },
+        {
+            "nombre": "Don de Kargan Tor",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro debe lanzarse sobre un arma. Con fuerza 1, añade +1D3 al daño causado por esa arma durante la duración del conjuro. Si la fuerza del conjuro aumenta a 4, añade +1D6 de daño. Por cada 4 niveles adicionales de fuerza, añade +1D6 puntos de daño adicionales."
+        },
+        {
+            "nombre": "Invocar Frío",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro reduce la temperatura dentro de un radio igual a su alcance en 2° C por nivel de fuerza."
+        },
+        {
+            "nombre": "Invocar Luz",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro crea un tenue resplandor. Fuerza 1 es suficiente para leer, fuerza 5 es casi como la luz del día, y fuerza 10 crea una luz diurna brillante."
+        },
+        {
+            "nombre": "Calmar Aguas",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro reduce la velocidad y turbulencia del agua. Si tiene éxito, las aguas dentro del alcance se calman hasta formar una superficie lisa como un espejo. Además de calmar el agua, la FUERZA efectiva del viento (al menos en lo que afecta al agua) se reduce en 2 por cada nivel de fuerza del conjuro. Además, la velocidad a la que se mueve el agua (normalmente por el flujo del río o las mareas) dentro del alcance se reduce en 0.5 nudos por nivel de fuerza del conjuro."
+        },
+        {
+            "nombre": "Rebotar",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Si un conjuro ofensivo no supera los puntos de magia del objetivo del conjuro Rebote y la fuerza de ese conjuro ofensivo es igual o menor que la del Rebote, el conjuro ofensivo rebota contra el lanzador. Si tanto el objetivo como el lanzador tienen Rebote, el conjuro puede rebotar de un lado a otro hasta que finalmente afecte a un objetivo."
+        },
+        {
+            "nombre": "Conflagración",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro invoca fuego en un lugar dentro del alcance del conjuro. La intensidad del fuego depende de la fuerza del conjuro:\n\n| FUERZA | BRILLO | DAÑO/RONDA DE COMBATE |\n|--------|--------|------------------------|\n| 1-3 | Vela | 1D3 |\n| 4-7 | Antorcha | 1D6 |\n| 8-11 | Fuego intenso, suficiente para fundir estaño | 2D6 |\n| 12-15 | Fuego muy intenso, suficiente para fundir plomo | 3D6 |\n| 16-19 | Suficiente para fundir bronce, cobre, oro o plata | 4D6 |\n| 20+ | Suficiente para fundir hierro | 5D6 |\n\nEl fuego no se mueve, aunque puede extenderse si hay material inflamable cerca. Si se lanza sobre una persona viva, causa daño basado en la fuerza del conjuro hasta que el objetivo se aleje."
+        },
+        {
+            "nombre": "Crear Alucinación",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro crea una ilusión perceptible solo para el objetivo del conjuro. La ilusión combina los efectos de Crear Imagen, Crear Olor, Crear Sensación, Crear Sonido y Crear Sabor, pero solo para el objetivo. El POD del objetivo debe ser superado por la fuerza del conjuro para que funcione."
+        },
+        {
+            "nombre": "Crear Imagen",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es el conjuro para crear imágenes ilusorias. La fuerza de una ilusión determina su opacidad y tamaño. Cada punto de fuerza crea una ilusión de aspecto sólido de TAMAÑO 3. Alternativamente, el lanzador puede crear una ilusión más grande pero cada vez más transparente.\n\nEjemplo: Un punto de fuerza crea una imagen translúcida de TAMAÑO 6; o una transparencia coloreada de TAMAÑO 12; o una imagen de TAMAÑO 18 apenas visible como vidrio liso y claro (y difícil de detectar sin una tirada de Buscar)."
+        },
+        {
+            "nombre": "Crear Olor",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es el conjuro para crear olores ilusorios. El olor es el mismo para todas las especies y puede usarse para engañar a cualquier criatura. La fuerza de una ilusión determina la intensidad del olor.\n\n| FUERZA | EJEMPLO |\n|--------|---------|\n| 1-2 | Agua después de la lluvia |\n| 3-4 | Una rosa o trigo recién cortado |\n| 5-7 | Cebollas friendo o perfume empalagoso |\n| 8-9 | Aceite quemado |\n| 10+ | Aceite de mofeta fresco |\n\nUn olor más fuerte que un aroma ambiental puede usarse para enmascararlo. Un olor más débil puede usarse para modificarlo o alterarlo, como transformar el olor de madera de roble cortada en madera de cedro cortada.\n\nLos olores fétidos pueden usarse ofensivamente. Para esto, compara la intensidad del olor contra la CON del objetivo. Si el olor gana, el objetivo queda incapacitado ese asalto. Sigue tirando cada asalto hasta que el objetivo tenga éxito, cuando se habrá acostumbrado y no necesitará tirar de nuevo a menos que la intensidad del olor aumente."
+        },
+        {
+            "nombre": "Crear Sensación",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es el conjuro para crear sensaciones ilusorias. Se manifiesta como una fuerza sólida con TAMAÑO y FUERZA de 1 por punto de fuerza. Normalmente se usa como marco para lanzar otros conjuros ilusorios. Los conjuros no ilusorios pueden lanzarse sobre una sensación, pero no pueden tener mayor fuerza que la sensación original. Este conjuro no puede causar daño por sí solo, pero puede empujar objetos y seres, o puede ser manipulado manualmente para causar daño apropiado. Por ejemplo, la sensación de una espada ilusoria podría causar 1D8+1 de daño en manos de un aventurero con la habilidad Espada a una mano, más cualquier bonificación de daño aplicable."
+        },
+        {
+            "nombre": "Crear Sonido",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo (para sonidos complejos)",
+            "Description": "Este es el conjuro para crear sonidos ilusorios. Cada punto de fuerza aumenta el volumen de los efectos del conjuro. Cualquier tipo de habla comprensible o música necesita concentración como un conjuro activo.\n\n| FUERZA | SONIDO COMPARABLE |\n|--------|-------------------|\n| 1 | Respiración normal |\n| 2 | Hierba y hojas susurrando |\n| 3 | Taberna tranquila con conversaciones apagadas |\n| 4 | Conversaciones a volumen normal |\n| 5 | Un centro urbano concurrido |\n| 6 | Olas rompiendo |\n| 7 | Una taberna bulliciosa llena de gente y música |\n| 8-9 | Rugido de un león |\n| 10-11 | Olas rompiendo con fuerza |\n| 12-13 | Trueno |\n| 14-15 | Colapso de un muro de castillo |\n| 16+ | Desprendimiento de rocas |\n\nUna ilusión de sonido lo suficientemente fuerte puede dejar sordo a un objetivo durante 1D10+5 minutos si la fuerza del conjuro supera la CON del objetivo."
+        },
+        {
+            "nombre": "Crear Sabor",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro hace que un área de TAMAÑO 1 asuma un sabor creado por el lanzador. Fuerza 1 reproduce sabores suaves, como lechuga o agua. Fuerza 3 proporciona sabores más fuertes, como manzanas o cerdo a la parrilla, y fuerza 10 es muy potente, capaz de reproducir sabores como pimientos rojos picantes o morder una cebolla fresca.\n\nUna ilusión de sabor puede usarse para atacar a un enemigo, como una ilusión de olor. El lanzador debe superar la CON del objetivo con la fuerza de la ilusión. El éxito resulta en náuseas. Si el objetivo resiste con éxito la ilusión, el conjuro no puede inducir náuseas en ese objetivo de nuevo y debe relanzarse para tener tal efecto."
+        },
+        {
+            "nombre": "Crear Muro de Llamas",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro crea un muro llameante de fuego de hasta tres metros cuadrados. El muro inflige daño a los puntos de vida generales de cualquiera que lo atraviese, con la cantidad determinada consultando la tabla de Fuerza de Hechicería en la página 385. La armadura mundana no protege contra este daño, aunque la armadura mágica sí. Por cada nivel de fuerza añadido al conjuro, el área afectada aumenta en 1 metro cuadrado. El muro es estacionario y no puede moverse con este conjuro. El muro puede encender materiales inflamables cercanos."
+        },
+        {
+            "nombre": "Atenuar Daño",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro se lanza sobre un arma y requiere fuerza igual a la tirada mínima de daño del arma. Por ejemplo, una espada ancha (1D8+1) requiere fuerza 2. Un hacha de asta (2D6+2) requiere fuerza 4. El efecto del conjuro es reducir el daño del arma al mínimo posible. Las bonificaciones por éxitos especiales o bonificaciones mágicas o de daño no se alteran."
+        },
+        {
+            "nombre": "Desaparecer",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro hace que el objetivo sea invisible creando la ilusión de transparencia. Por cada nivel de fuerza, este conjuro afecta 6 puntos de TAMAÑO.\n\nEl objetivo pasa desapercibido a menos que haga ruido, sea detectado usando un sentido distinto a la vista, o sea detectado por magia. Si el objetivo se mueve, un enemigo podría intentar una tirada de Escanear para identificar su ubicación. Si es notado, o si el objetivo hace ruido, un enemigo puede intentar atacar solo por el sonido, con su probabilidad de éxito reducida en ~50%.\n\nSi el objetivo ataca con proyectiles, armas cuerpo a cuerpo o magia, se vuelve visible en el mismo rango de ataque en el que ataca y desaparece de nuevo después del último rango de ataque de ese asalto a menos que esté en combate cuerpo a cuerpo. En cualquier asalto en que el objetivo se retire del combate cuerpo a cuerpo, desaparece de nuevo al final del asalto de retirada."
+        },
+        {
+            "nombre": "Dominar (Humanoide)",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es un conjunto de conjuros, cada uno vinculado a una sola especie de criatura humanoide con la Runa del Hombre. Lanzar un conjuro Dominar a la especie correcta requiere una fuerza de conjuro de al menos la mitad de los puntos de magia del objetivo. Lanzar un conjuro Dominar a una especie incorrecta (pero aún humanoide) requiere una fuerza de conjuro igual o mayor que los puntos de magia del objetivo.\n\nSi el objetivo no logra resistir la fuerza del conjuro Dominar con su POD, el objetivo cae bajo el dominio del lanzador. Si el lanzador intenta forzar al objetivo a realizar una acción extremadamente repugnante (fuertemente contraria a una Runa o Pasión), obtiene una oportunidad inmediata de intentar invocar esa habilidad y liberarse."
+        },
+        {
+            "nombre": "Dominar (Animal)",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es un conjunto de conjuros, cada uno vinculado a una sola especie animal con la Runa de la Bestia. Si lanzas un conjuro Dominar a la especie correcta, requiere una fuerza de conjuro de al menos la mitad de los puntos de magia del objetivo. Si lanzas un conjuro Dominar a una especie incorrecta (pero aún animal), requiere una fuerza de conjuro igual o mayor que los puntos de magia del objetivo.\n\nSi el objetivo no logra resistir la fuerza del conjuro Dominar con su POD, el objetivo cae bajo el dominio del lanzador."
+        },
+        {
+            "nombre": "Dominar (Espíritu Discorporado)",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es un conjunto de conjuros, cada uno vinculado a un solo tipo de espíritu, discorporado o encarnado. Si lanzas un conjuro Dominar a la especie correcta, requiere una fuerza de conjuro de al menos la mitad de los puntos de magia del objetivo. Si lanzas un conjuro Dominar a una especie incorrecta de espíritu, requiere una fuerza de conjuro igual o mayor que los puntos de magia del objetivo.\n\nUn ser dentro de un encantamiento de vinculación no puede resistir este conjuro, y solo se necesita 1 nivel de fuerza independientemente de los puntos de magia del ser."
+        },
+        {
+            "nombre": "Dominar (Elemental)",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este es un conjunto de conjuros, cada uno vinculado a un solo tipo de elemental. Lanzar un conjuro Dominar al elemental correcto requiere una fuerza de conjuro de al menos la mitad de los puntos de magia del objetivo. Lanzar un conjuro Dominar a un tipo incorrecto de elemental requiere una fuerza de conjuro igual o mayor que los puntos de magia del objetivo.\n\nUn ser dentro de un encantamiento de vinculación no puede resistir este conjuro, y solo se necesita 1 nivel de fuerza, independientemente de los puntos de magia del ser."
+        },
+        {
+            "nombre": "Drenar Alma",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Instantáneo",
+            "Description": "Si el objetivo no logra resistir, este conjuro reduce instantáneamente sus puntos de magia en 1D3. Con fuerza 4, reduce los puntos de magia del objetivo en 1D6, y así sucesivamente, siguiendo el daño listado en la tabla de Fuerza de Hechicería (página 385). Un objetivo reducido a 0 puntos de magia cae inconsciente y no puede ser reducido a menos de 0 puntos de magia."
+        },
+        {
+            "nombre": "Mejorar INT",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro aumenta temporalmente la INT del objetivo en 1. Cada 4 niveles de fuerza añadidos al conjuro aumentan la INT del objetivo en +1. Así, si la fuerza del conjuro aumenta en 8 puntos de magia, añade +3 a la INT del objetivo durante la duración del conjuro.\n\nEste conjuro afecta la INT Libre del objetivo durante la duración del conjuro y puede aumentar la INT del objetivo más allá del máximo de su especie."
+        },
+        {
+            "nombre": "Dedo de Fuego",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro toma una llama existente y la extiende, moviéndola como un tentáculo de fuego dentro del alcance del conjuro. El Dedo de Fuego no es particularmente flexible o maleable, extendiéndose casi como una extensión de la mano o manos del hechicero. No puede formarse en formas o rodear objetivos.\n\nEl tentáculo de fuego tiene un MOV de 12 y causa 1D6 de daño a una localización aleatoria si impacta. Cuando golpea a un objetivo, termina con ellos, pero continúa existiendo y puede llevarse contra otro objetivo para ataques adicionales. El Dedo de Fuego permanece en efecto mientras el hechicero lo manipule, y cada ataque sucesivo es con un +5 adicional al rango de ataque original. Por cada 4 puntos adicionales de fuerza del conjuro, el tentáculo causa +1D6 de daño o se puede crear un tentáculo adicional."
+        },
+        {
+            "nombre": "Geomancia",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro ayuda a localizar una cosa o entidad deseada sobre una representación simbólica de un área dentro del alcance. Esto podría ser un mapa, una pintura de una ubicación, o incluso marcas en la tierra o un boceto tosco en carbón. El lanzador usa un palo, péndulo o incluso un dedo y debe declarar qué está intentando localizar en el mapa. Si tiene éxito, aprende la ubicación correspondiente en el mapa a donde está actualmente la cosa o entidad, si la cosa o entidad está actualmente en algún lugar que corresponda a una ubicación en el mapa y está dentro del alcance del conjuro."
+        },
+        {
+            "nombre": "Acelerar Embarcación",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro aumenta la velocidad de una embarcación en 1 nudo por nivel de fuerza del conjuro."
+        },
+        {
+            "nombre": "Identificar Entidad del Otro Mundo",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro proporciona información sobre un espíritu específico, discorporado o encarnado, dentro del alcance del conjuro. Los espíritus discorporados se ubican en la ubicación material que corresponde más estrechamente a su lugar en el Mundo Espiritual. El lanzador debe hacer una pregunta específica sobre el espíritu, como su naturaleza, identidad, nombre verdadero, genealogía, poder comparativo o habilidades. Si tiene éxito, el director de juego da una respuesta de hasta siete palabras por punto de fuerza del conjuro."
+        },
+        {
+    "nombre": "Identificar Conjuro",
+    "puntos": "3 Puntos",
+    "distancia": "A distancia",
+    "duracion": "Instantáneo",
+    "Description": "Permite al lanzador identificar un conjuro y puede lanzarse sobre el sujeto de un conjuro o sobre un conjuro que se está lanzando (aunque debido al tiempo para lanzar conjuros de hechicería, normalmente solo es útil para conjuros que se lanzan durante períodos más largos). La fuerza del Identificar Conjuro da al lanzador más información sobre el conjuro al que está dirigido.\n\n| FUERZA | INFORMACIÓN OBTENIDA |\n|--------|----------------------|\n| 1-2 | Categoría general del conjuro (hechicería, Runa, magia espiritual, etc.) |\n| 3-4 | Puntos en el conjuro |\n| 5-6 | Nombre del conjuro |\n| 7+ | Descripción completa del conjuro, si el conjuro es desconocido para el lanzador |"
+        },
+        {
+            "nombre": "Claridad Lógica",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro inmuniza al sujeto contra los efectos de Locura, Oratoria u otra confusión mental durante la duración del conjuro. Si el sujeto no está dispuesto, el lanzador debe superar los puntos de magia del sujeto con el nivel de fuerza del conjuro. Mientras el conjuro está en efecto, el lanzador no puede intentar una tirada usando ninguna Pasión ni intentar aumentar ninguna habilidad con una."
+        },
+        {
+            "nombre": "Lógico",
+            "puntos": "2 Puntos",
+            "distancia": "A uno mismo",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro añade +10% a cualquier habilidad de Conocimiento por nivel de fuerza del conjuro durante su duración. Solo puede lanzarse sobre el lanzador. Mientras el conjuro está en efecto, el lanzador no puede intentar una tirada usando ninguna Pasión ni intentar aumentar ninguna habilidad con una."
+        },
+        {
+            "nombre": "Encantamiento de Puntos de Magia",
+            "puntos": "2 Puntos",
+            "distancia": "Ritual (Encantamiento)",
+            "duracion": "Encantamiento",
+            "uso": "Pasivo",
+            "Description": "Cada punto de POD sacrificado en este encantamiento puede usarse para almacenar 1D10 puntos de magia. El ritual toma 1 hora por punto de POD sacrificado. Estos puntos de magia almacenados pueden usarse para potenciar o aumentar conjuros por cualquiera que pueda usar el objeto. Los puntos de magia almacenados en objetos encantados no se regeneran por sí solos (no tienen la característica POD), pero el usuario del objeto puede rellenar la capacidad de almacenamiento gastando sus propios puntos de magia. Se tarda un asalto cuerpo a cuerpo en almacenar 1 punto de magia en un objeto encantado. Un objeto encantado no puede almacenar más puntos mágicos de los que tiene capacidad."
+        },
+        {
+            "nombre": "Reparar Carne",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Instantáneo",
+            "uso": "Pasivo",
+            "Description": "Este conjuro cura 1D3 puntos de daño a una localización de golpe. Con fuerza 4 cura 1D6 puntos de daño, con fuerza 8 cura 2D6 puntos de daño, con fuerza 12 cura 3D6 puntos de daño, y así sucesivamente. El conjuro puede reatarar miembros amputados (si la parte amputada está presente y unida a la herida) e incluso reparar miembros mutilados si la localización es curada completamente por el conjuro. Las heridas curadas con este conjuro no dejan cicatrices."
+        },
+        {
+            "nombre": "Fuego Lunar",
+            "puntos": "4 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Durante la duración del conjuro, fuego carmesí cae del cielo en un radio de 5 metros, causando daño a una localización aleatoria, con la cantidad determinada consultando la tabla de Fuerza de Hechicería en la página 385. La armadura protege, pero no es necesario superar los puntos de magia del objetivo. Por cada 4 puntos de fuerza, el radio del área afectada se duplica. Como todos los conjuros de hechicería que usan la Runa Lunar, este conjuro está sujeto al ciclo Lunar."
+        },
+        {
+            "nombre": "Moverse sobre el Agua",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro permite a una criatura o vehículo viajar sobre la superficie de un cuerpo de agua como si fuera tierra sólida durante la duración del conjuro. Por cada punto de fuerza del conjuro, un ser o vehículo adicional puede moverse sobre el agua. Cuando el conjuro termina, todos los que estén sobre la superficie del agua caerán dentro, y dependiendo de la profundidad del agua, podrían tener que nadar o hundirse hasta el fondo."
+        },
+        {
+            "nombre": "Neutralizar Armadura",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro se lanza sobre un arma. Cuando el arma golpea, la fuerza del conjuro se tira contra los puntos de armadura del objetivo en una tirada de resistencia. Si el conjuro tiene éxito, la armadura del enemigo no protege contra ese golpe. La fuerza del conjuro Neutralizar Armadura debe ser al menos la mitad de la armadura en cuestión. Si la fuerza del conjuro es el doble o más que los puntos de armadura, el conjuro ignora automáticamente la armadura.\n\nLanzar Neutralizar Armadura sobre un arco es inútil, a menos que el arco mismo se use para golpear físicamente a un enemigo. Puede lanzarse sobre flechas individuales."
+        },
+        {
+            "nombre": "Neutralizar Magia",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro neutraliza cualquier conjuro con duración si supera la fuerza del conjuro objetivo en la tabla de resistencia. La magia rúnica tiene una fuerza de 2 por cada punto de Runa usado para lanzar el conjuro rúnico. La fuerza del conjuro Neutralizar Magia debe ser al menos la mitad del conjuro en cuestión. Si la fuerza del conjuro es el doble o más que la fuerza del conjuro objetivo, el conjuro neutraliza automáticamente el conjuro objetivo.\n\nUn conjuro que ha sido neutralizado no tiene efecto durante la duración del conjuro Neutralizar Magia. Si la duración del conjuro excede la del Neutralizar Magia, tiene efecto cuando el conjuro Neutralizar Magia expira."
+        },
+        {
+            "nombre": "Neutralizar (Runa)",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro protege a su objetivo contra la magia rúnica asociada con una Runa específica. Cualquier conjuro rúnico de esa Runa lanzado sobre una persona o cosa protegida por un conjuro Neutralizar (Runa) apropiado debe superar la fuerza del conjuro usando la tabla de resistencia."
+        },
+        {
+            "nombre": "Neutralizar Magia Espiritual",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro neutraliza la magia espiritual lanzada contra o ya afectando a su objetivo. Usando una tirada de resistencia, el hechicero debe enfrentar la fuerza del conjuro Neutralizar Magia Espiritual contra los puntos de magia de los conjuros de magia espiritual lanzados contra o ya afectando al objetivo. Si tiene éxito, entonces el o los conjuros de magia espiritual lanzados contra o ya en el objetivo son eliminados. Si el hechicero falla la tirada de resistencia, entonces el conjuro Neutralizar Magia Espiritual no tiene efecto.\n\nCuando se lanza contra un objetivo con múltiples conjuros de magia espiritual ya en efecto (por ejemplo, Fuerza 2 y Protección 3), se suman todos los puntos y deben superarse en la tabla de resistencia con la fuerza del conjuro Neutralizar Magia Espiritual.\n\nEste conjuro continúa neutralizando la Magia Espiritual lanzada contra su objetivo durante toda su duración o hasta que falle una tirada de resistencia."
+        },
+        {
+            "nombre": "Mares Abiertos",
+            "puntos": "2 Puntos",
+            "distancia": "Ritual",
+            "duracion": "Duración (Especial)",
+            "uso": "Pasivo",
+            "Description": "Este conjuro tarda diez minutos en lanzarse. Debe lanzarse cada vez que el barco levante anclas o zarpe. Si el conjuro falla, entonces en el momento en que el barco pierda de vista la tierra, el Cierre se reafirma y trae catástrofe a la embarcación.\n\nTodos los marineros de mar abierto en todo Glorantha conocen este ritual o tienen un experto en el barco que lo conoce. De lo contrario, el viaje por mar sería imposible."
+        },
+        {
+            "nombre": "Traspasar Velo",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro solo afecta al lanzador; el alcance del conjuro es qué tan lejos puede ver el lanzador con el conjuro. El lanzador puede percibir cada entidad en alcance con puntos de magia. Pueden ver la cantidad exacta de puntos de magia en todo lo percibido, hasta tres veces la fuerza del conjuro. Cualquier cosa por encima de eso es simplemente 'mayor de lo que el conjuro puede cuantificar'.\n\nA corta distancia (dentro de unos pocos metros), el conjuro percibe si una fuente de puntos de magia es regenerativa o no regenerativa. Así, el conjuro podría distinguir un cristal de POD de un espíritu vinculado en un cristal de POD, o los vivos de los no muertos. El lanzador puede percibir la presencia de magia con duración.\n\nEl conjuro no proporciona ninguna iluminación y la capacidad del lanzador para percibir está limitada por la capacidad normal de ver algo. Por lo tanto, el conjuro requiere luz adicional en la oscuridad, no puede ver a través de material opaco, etc."
+        },
+        {
+            "nombre": "Círculo Protector",
+            "puntos": "2 Puntos",
+            "distancia": "Alcance (Especial)",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro crea un marco mágico sobre el cual se pueden lanzar otros conjuros. El radio del círculo es igual a 1/10 de su alcance. Ninguno de los conjuros lanzados sobre el Círculo Protector puede tener una fuerza mayor que la del Círculo Protector. El círculo es inmóvil sobre lo que se haya lanzado; si se lanza sobre algo móvil (por ejemplo, la cubierta de un barco), el círculo se mueve con él.\n\nLos conjuros lanzados sobre el círculo por cualquiera dentro de él se convierten en parte de él y protegen a todos dentro. Por ejemplo, Neutralizar Magia Espiritual defiende a todos dentro contra la magia espiritual; Neutralizar Runa de Fuego defiende a todos contra conjuros rúnicos basados en fuego, etc.\n\nLos conjuros de ataque lanzados sobre el Círculo Protector se activan cuando un objetivo apropiado entra en el círculo y están respaldados con puntos de magia usados para potenciar el círculo. Si el círculo no está potenciado, el conjuro ataca como si lo hubiera lanzado una persona con 1 POD."
+        },
+        {
+            "nombre": "Preservar Objeto",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Se necesita un nivel de fuerza de conjuro por ENC del objeto objetivo. El objeto preservado obtiene una bonificación de +1 punto de armadura y permanece en el mismo estado de reparación que cuando se lanzó el conjuro: la armadura permanece brillante, la ropa sin manchar y una habitación se mantiene limpia y ordenada."
+        },
+        {
+            "nombre": "Revelar Runa",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Identifica la Runa más fuerte del objetivo y su valor aproximado (dentro de un rango del 20%, por lo que una Runa de Aire del 75% se identificaría como entre 65% y 85%). Cada nivel adicional de fuerza revela la siguiente Runa más fuerte, etc."
+        },
+        {
+            "nombre": "Ola Rebelde",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro crea una ola de agua en un lago, río, mar o cuerpo de agua similar lo suficientemente poderosa como para dañar un bote o barco. La ola puede continuar golpeando su objetivo hasta que el conjuro expire. Por cada asalto que la ola 'ataque' al barco, resta 1 de la Navegabilidad del barco. Luego tira el daño indicado por el daño a los Puntos de Estructura del barco. La Calidad del Casco protege como armadura contra este daño.\n\n| FUERZA | DAÑO/ASALTO |\n|--------|-------------|\n| 1 | 1D3 |\n| 4 | 1D6+3 |\n| 8 | 2D6+6 |\n| 12 | 3D6+6 |\n| 16 | 4D6+6 |\n| 20 | 6D6+6 |"
+        },
+        {
+            "nombre": "Consuelo de la Mente Lógica",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro defiende al sujeto de los efectos de la magia que altera la mente, incluidos Confusión o el Encanto de un vampiro, durante la duración del conjuro. Si el sujeto no está dispuesto, el lanzador debe superar los puntos de magia del sujeto con los niveles de fuerza del conjuro. Mientras el conjuro está en efecto, el lanzador no puede invocar ninguna Pasión ni aumentar ninguna habilidad con esa Pasión."
+        },
+        {
+            "nombre": "Hablar con la Mente",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro permite al lanzador hablar de mente a mente con un objetivo. Cada nivel de fuerza del conjuro permite que una persona más esté en contacto con el lanzador. Los pensamientos a transmitir deben ser susurrados y los oyentes escuchan el mensaje en sus mentes en el idioma susurrado. No se pueden transmitir conocimientos de conjuros. Hablar con la Mente no crea un enlace abierto entre los comunicantes del lanzador del conjuro."
+        },
+        {
+            "nombre": "Protección contra Espíritus",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro proporciona a su objetivo protección contra el combate espiritual. Los puntos de daño de combate espiritual infligidos a una criatura protegida deben superar la fuerza del conjuro usando la tabla de resistencia. Si el daño de combate espiritual supera la resistencia del conjuro, entonces la fuerza completa del daño afecta al objetivo. Si el daño de combate espiritual no supera el conjuro, entonces el objetivo no pierde ningún punto de magia de ese intercambio de combate espiritual.\n\nEl conjuro protege al objetivo durante toda su duración. Si se combina con el conjuro rúnico Bloqueo Espiritual o el conjuro de magia espiritual Pantalla Espiritual, el daño se compara primero contra la tabla de resistencia y luego, si pasa al objetivo, es absorbido por los conjuros Pantalla Espiritual o Bloqueo Espiritual y cualquier armadura que lleve el objetivo."
+        },
+        {
+            "nombre": "Robar Aliento",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro permite al lanzador convertir 3 metros cúbicos de aire en 1D6 puntos de magia por asalto. Cada 2 niveles de fuerza añadidos al conjuro añaden otros 3 metros cúbicos de aire para convertir en 1D6 puntos de magia más. Si se lanza sobre una persona, esta sufre asfixia después del primer asalto.\n\nLos puntos de magia obtenidos de esta manera actúan en todos los aspectos como puntos de magia normales (es decir, pueden usarse para lanzar conjuros, aumentar las probabilidades del hechicero de que sus conjuros superen la resistencia de un objetivo, etc.), excepto que no se regeneran mediante el descanso. Si los puntos de magia totales del hechicero exceden su máximo normal, los puntos adicionales solo están disponibles para usar hasta que expire la duración del conjuro Robar Aliento."
+        },
+        {
+            "nombre": "Detener Embarcación",
+            "puntos": "3 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro reduce la velocidad de una embarcación en 1 nudo por nivel de fuerza del conjuro."
+        },
+        {
+            "nombre": "Invocar (Especie)",
+            "puntos": "3 Puntos",
+            "distancia": "Ritual",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro invoca una criatura de otro mundo al lanzador. Requiere una ceremonia de una hora que puede aumentarse con prácticas rituales. El jugador informa al director de juego qué entidad está invocando el hechicero y la fuerza del conjuro de invocación. Si el hechicero conoce el nombre verdadero de una entidad específica, esa entidad puede ser invocada.\n\nSi el hechicero está invocando un elemental, el jugador también debe declarar el tamaño del elemental deseado (pequeño, mediano o grande) y qué fuerza de conjuro tiene. El hechicero debe tener suficiente sustancia apropiada disponible de la cual el elemental pueda formar su cuerpo. Si el hechicero carece de suficiente material (por ejemplo, agua para un elemental de agua), entonces la invocación falla automáticamente. La fuerza mínima del conjuro para invocar un elemental depende del tamaño del elemental.\n\n- Elemental Pequeño: Fuerza mínima 6\n- Elemental Mediano: Fuerza mínima 12\n- Elemental Grande: Fuerza mínima 18\n\nLa fuerza del conjuro puede ser mayor que la mínima requerida; de hecho, por las razones explicadas a continuación, normalmente es mucho mayor que el mínimo a menos que el lanzador conozca el nombre verdadero de la entidad.\n\nSi el conjuro tiene éxito, el resultado depende de si el lanzador conoce el nombre verdadero de la entidad (normalmente por haber invocado con éxito a esa entidad específica antes, o usando hechicería como Identificar Entidad del Otro Mundo, o consultando registros de hechicería antiguos que podrían listar el nombre verdadero de algunas entidades). Si el lanzador conoce el nombre verdadero, la entidad aparece y obedece al lanzador durante la duración del conjuro.\n\nSi el lanzador no conoce el nombre verdadero de la entidad invocada, el lanzador debe superar los puntos de magia de la entidad con la fuerza total del conjuro de invocación. Si eso tiene éxito, la entidad obedece al lanzador durante la duración del conjuro (incluyendo decirle al lanzador su nombre verdadero). Si falla, la entidad es hostil al lanzador y a todos cerca de la invocación. Dependiendo de las fuerzas relativas de la entidad y el invocador (y dependiendo de su naturaleza), el director de juego debe decidir si el ser intenta atacar al invocador, huye y permanece en el Mundo Mundano, o si intenta regresar a su otro mundo nativo."
+        },
+        {
+            "nombre": "Extraer Cuerpo",
+            "puntos": "2 Puntos",
+            "distancia": "Toque",
+            "duracion": "Temporal",
+            "uso": "Activo",
+            "Description": "Este conjuro permite al lanzador transformar puntos de TAMAÑO en puntos de magia. El hechicero debe poder tocar físicamente a un objetivo para extraerlo. Un hechicero puede extraer su propio TAMAÑO.\n\nEl conjuro extrae 1 punto de TAMAÑO y lo convierte en 1D6 puntos de magia. Los puntos de TAMAÑO extraídos se pierden permanentemente. El TAMAÑO no puede reducirse por debajo de 1 punto. El hechicero debe superar los puntos de magia de la víctima, si es alguien distinto de sí mismo.\n\nPor cada 2 niveles de fuerza añadidos al conjuro, se convierte 1 punto más de TAMAÑO en otros 1D6 puntos de magia. Por ejemplo, si se añaden 4 puntos de fuerza al conjuro (haciendo un total de 6 puntos de magia), el conjuro convierte 3 puntos de TAMAÑO en 3D6 puntos de magia.\n\nLos puntos de magia obtenidos de esta manera actúan en todos los aspectos como puntos de magia normales (es decir, pueden usarse para lanzar conjuros, aumentar las probabilidades del hechicero de que sus conjuros superen la resistencia de un objetivo, etc.), excepto que no se regeneran mediante el descanso. Si los puntos de magia totales del hechicero exceden su máximo normal, los puntos adicionales solo están disponibles para usar hasta que expire la duración del conjuro Extraer Cuerpo."
+        },
+        {
+            "nombre": "Recuerdo Total",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Con este conjuro, el objetivo puede recordar, con perfecto y completo detalle, una experiencia previa en su vida anterior al lanzamiento del conjuro. Cuán atrás en el pasado puede recordar el objetivo una experiencia está determinado por la fuerza del conjuro:\n\n| FUERZA | PERÍODO DE TIEMPO |\n|--------|-------------------|\n| 1 | 1 año |\n| 2 | 2 años |\n| 3 | 3 años |\n| 4 | 5 años |\n| 5 | 8 años |\n| 6 | 13 años |\n| 7 | 21 años |\n| 8 | 34 años |\n| 9 | 55 años |\n| 10 | 89 años |\n| 11 | +1 |\n\nLos niveles adicionales de fuerza del conjuro aumentan el período de tiempo en el mismo patrón, sumando los dos períodos anteriores para determinar el nuevo valor. El sujeto puede intentar tiradas de Escanear, Buscar, Escuchar, Leer/Escribir, Hablar o cualquier otra habilidad apropiada, como si estuviera presente en la escena una vez más, aunque este recuerdo no altera los eventos en el tiempo. Este conjuro es únicamente el hechicero revisitando una construcción de estos recuerdos dentro de su propia mente, no un viaje en el tiempo real. El director de juego debe usar discreción extrema al determinar qué información puede obtenerse."
+        },
+        {
+            "nombre": "Protección contra Armas",
+            "puntos": "2 Puntos",
+            "distancia": "A distancia",
+            "duracion": "Temporal",
+            "uso": "Pasivo",
+            "Description": "Este conjuro protege solo el cuerpo del objetivo (no sus posesiones). El daño total infligido a una criatura u objeto protegido debe superar la fuerza del conjuro usando la tabla de resistencia. Si el daño supera la fuerza del conjuro, entonces la fuerza completa del daño afecta al objetivo. La armadura del objetivo absorbe tanto daño como pueda. Si el daño no supera el conjuro, entonces el golpe no causa daño al objetivo. El conjuro protege al objetivo durante toda su duración. Si se combina con el conjuro rúnico Escudo o el conjuro de magia espiritual Protección, el daño se compara primero contra la tabla de resistencia y luego, si pasa al objetivo, es absorbido por los conjuros Protección o Escudo y cualquier armadura que lleve el objetivo."
+        }
+    ]
+}

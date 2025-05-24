@@ -3,14 +3,25 @@ function initRunica() {
     
     // Elementos de la interfaz
     const selectConjuro = document.getElementById('conjuro');
-    const resultadosContainer = document.querySelector('.resultados-container');
+    const resultadosContainer = document.getElementById('resultados-container');
+    const resultadoPrincipal = document.getElementById('resultado-principal');
     
     // Cargar datos de conjuros
     fetch('js/secciones/magia/runica.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error al cargar el archivo JSON');
+            }
+            return response.json();
+        })
         .then(data => {
             // Ordenar conjuros alfabéticamente
             const conjurosOrdenados = data.conjuros.sort((a, b) => a.nombre.localeCompare(b.nombre));
+            
+            // Limpiar select antes de llenarlo
+            while (selectConjuro.options.length > 1) {
+                selectConjuro.remove(1);
+            }
             
             // Llenar el select con los conjuros
             conjurosOrdenados.forEach(conjuro => {
@@ -36,52 +47,47 @@ function initRunica() {
                     mostrarFichaConjuro(conjuro);
                 }
             });
-            
-            // Configurar evento para el botón de volver
-            document.addEventListener('click', (e) => {
-                if (e.target.classList.contains('btn-volver')) {
-                    resultadosContainer.style.display = 'none';
-                    selectConjuro.value = '';
-                }
-            });
         })
-        .catch(error => console.error('Error cargando los conjuros:', error));
+        .catch(error => {
+            console.error('Error cargando los conjuros:', error);
+            // Mostrar mensaje de error al usuario si es necesario
+        });
     
-    // Función para mostrar la ficha completa del conjuro (igual que en espiritual.js)
+    // Función para mostrar la ficha del conjuro
     function mostrarFichaConjuro(conjuro) {
         resultadosContainer.style.display = 'block';
         
-        // Construir la línea de propiedades (distancia, duración, uso)
-        let propiedadesLinea = [];
-        if (conjuro.distancia) propiedadesLinea.push(conjuro.distancia);
-        if (conjuro.duracion) propiedadesLinea.push(conjuro.duracion.toLowerCase());
-        if (conjuro.uso) propiedadesLinea.push(conjuro.uso.toLowerCase());
-        const propiedadesTexto = propiedadesLinea.join(', ');
-        
-        document.getElementById('resultado-principal').innerHTML = `
+        resultadoPrincipal.innerHTML = `
             <div class="ficha-conjuro">
                 <h3>${conjuro.nombre}</h3>
-                
                 <div class="propiedades-conjuro">
                     <div class="propiedad-conjuro">
-                        <span class="valor-propiedad">${conjuro.puntos || '-'}</span>
+                        <strong>Puntos:</strong> <span class="valor-propiedad">${conjuro.puntos || '-'}</span>
                     </div>
                     <div class="propiedad-conjuro">
-                        <span class="valor-propiedad">${propiedadesTexto || '-'}</span>
+                        <strong>Distancia:</strong> <span class="valor-propiedad">${conjuro.distancia || '-'}</span>
+                    </div>
+                    <div class="propiedad-conjuro">
+                        <strong>Duración:</strong> <span class="valor-propiedad">${conjuro.duracion || '-'}</span>
                     </div>
                 </div>
-                
                 <div class="descripcion-conjuro">
                     <h4>Descripción</h4>
                     <p>${conjuro.Description ? conjuro.Description.replace(/\n/g, '<br>') : 'No hay descripción disponible.'}</p>
                 </div>
-                
-                <button class="btn-volver">Volver a la lista</button>
+                <button class="btn-magia">Volver a la lista</button>
             </div>
         `;
+
+        // Configurar evento para el botón de volver
+        document.querySelector('.btn-magia').addEventListener('click', () => {
+            resultadosContainer.style.display = 'none';
+            selectConjuro.value = '';
+        });
     }
 }
 
+// Inicialización
 if (document.readyState === 'complete') {
     initRunica();
 } else {

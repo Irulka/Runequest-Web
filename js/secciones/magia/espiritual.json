@@ -2,7 +2,6 @@
     "conjuros": [
         {
             "nombre": "Confusión",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -11,7 +10,6 @@
         },
         {
             "nombre": "Recipiente Vinculante",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Ritual",
             "duracion": "Encantamiento",
@@ -19,7 +17,6 @@
         },
         {
             "nombre": "Cuchilla Afilada",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -28,7 +25,6 @@
         },
         {
             "nombre": "Garrotazo",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -37,7 +33,6 @@
         },
         {
             "nombre": "Comprensión",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -46,7 +41,6 @@
         },
         {
             "nombre": "Ocultar Objeto",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -55,7 +49,6 @@
         },
         {
             "nombre": "Controlar (entidad)",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -64,7 +57,6 @@
         },
         {
             "nombre": "Enfriar",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal (Especial)",
@@ -73,7 +65,6 @@
         },
         {
             "nombre": "Coordinación",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -82,7 +73,6 @@
         },
         {
             "nombre": "Contramagia",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -91,7 +81,6 @@
         },
         {
             "nombre": "Pared Oscura",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -100,7 +89,6 @@
         },
         {
             "nombre": "Desmoralización",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -109,7 +97,6 @@
         },
         {
             "nombre": "Detectar Enemigos",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -117,7 +104,6 @@
         },
         {
             "nombre": "Detectar Vida",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -125,7 +111,6 @@
         },
         {
             "nombre": "Detectar Magia",
-            "type": "Espiritual",
             "puntos": "1 Puntos",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -133,7 +118,6 @@
         },
         {
             "nombre": "Detectar Espíritus",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -141,7 +125,6 @@
         },
         {
             "nombre": "Detectar (Sustancia)",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -149,7 +132,6 @@
         },
         {
             "nombre": "Detectar Trampas",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -157,7 +139,6 @@
         },
         {
             "nombre": "Detectar No Muertos",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -165,7 +146,6 @@
         },
         {
             "nombre": "Disipar Magia",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -173,7 +153,6 @@
         },
         {
             "nombre": "Disrupción",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -181,7 +160,6 @@
         },
         {
             "nombre": "Distracción",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -189,7 +167,6 @@
         },
         {
             "nombre": "Mellar Armas",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -198,7 +175,6 @@
         },
         {
             "nombre": "Extinguir",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -206,7 +182,6 @@
         },
         {
             "nombre": "Rostro de Lanbril",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A ti mismo",
             "duracion": "Temporal",
@@ -215,7 +190,6 @@
         },
         {
             "nombre": "Falsa Curación",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -224,7 +198,6 @@
         },
         {
             "nombre": "Vista Lejana",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -233,7 +206,6 @@
         },
         {
             "nombre": "Flecha Ignea",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "Toque",
             "duracion": "Instantaneo",
@@ -242,7 +214,6 @@
         },
          {
             "nombre": "Cuchilla Ignea",
-            "type": "Espiritual",
             "puntos": "4 Puntos",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -251,7 +222,6 @@
         },
         {
             "nombre": "Cosechar",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Toque",
             "duracion": "Instantaneo",
@@ -259,7 +229,6 @@
         },
         {
             "nombre": "Olvidar",
-            "type": "Espiritual",
             "puntos": "3 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -268,7 +237,6 @@
         },
         {
             "nombre": "Glamour",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -277,7 +245,6 @@
         },
         {
             "nombre": "Pegamento",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -286,7 +253,6 @@
         },
          {
             "nombre": "Curación",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Instantaneo",
@@ -294,7 +260,6 @@
         },
         {
             "nombre": "Calentar Metales",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -303,7 +268,6 @@
         },
          {
             "nombre": "Fanatismo",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -312,7 +276,6 @@
         },
         {
             "nombre": "Pies Calientes",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -320,7 +283,6 @@
         },
          {
             "nombre": "Inflamar",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -328,7 +290,6 @@
         },
          {
             "nombre": "Mano de Hierro",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -338,7 +299,6 @@
     ,
     {
             "nombre": "Salto",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -347,7 +307,6 @@
         },
         {
             "nombre": "Linterna",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -356,7 +315,6 @@
         },
         {
             "nombre": "Luz",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -365,7 +323,6 @@
         },
         {
             "nombre": "Pared de Luz",
-            "type": "Espiritual",
             "puntos": "4 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -374,7 +331,6 @@
         },
         {
             "nombre": "Encantamiento de Puntos de Magia.",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Ritual",
             "duracion": "Encantamiento",
@@ -382,7 +338,6 @@
         },
         {
             "nombre": "Lluvia de Meteoritos",
-            "type": "Espiritual",
             "puntos": "6 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -391,7 +346,6 @@
         },
         {
             "nombre": "Movilidad",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -400,7 +354,6 @@
         },
         {
             "nombre": "Proyectil Múltiple",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -409,7 +362,6 @@
         },
         {
             "nombre": "Toque de Pamalt",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -418,7 +370,6 @@
         },
         {
             "nombre": "Parada",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -427,7 +378,6 @@
         },
         {
             "nombre": "Conservar Hierbas",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Toque",
             "duracion": "Duración (especial)",
@@ -435,7 +385,6 @@
         },
         {
             "nombre": "Protección",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -444,7 +393,6 @@
         },
         {
             "nombre": "Reparar",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Toque",
             "duracion": "Instantaneo",
@@ -452,7 +400,6 @@
         },
         {
             "nombre": "Ojos del Río",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A uno mismo",
             "duracion": "Temporal",
@@ -461,7 +408,6 @@
         },
         {
             "nombre": "Visión Mística",
-            "type": "Espiritual",
             "puntos": "3 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -470,7 +416,6 @@
         },
          {
             "nombre": "Buscar Templo de la Cúpula Solar",
-            "type": "Espiritual",
             "puntos": "3 Puntos",
             "distancia": "A uno mismo",
             "duracion": "Instantaneo",
@@ -478,7 +423,6 @@
         },
          {
             "nombre": "Rielar",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -487,7 +431,6 @@
         },
          {
             "nombre": "Silencio",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -496,7 +439,6 @@
         },
          {
             "nombre": "Sueño",
-            "type": "Espiritual",
             "puntos": "3 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -505,7 +447,6 @@
         },
          {
             "nombre": "Enlentecer",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -514,7 +455,6 @@
         },
          {
             "nombre": "Estornudos",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Instantaneo",
@@ -523,7 +463,6 @@
         },
          {
             "nombre": "Solaz",
-            "type": "Espiritual",
             "puntos": "3 Puntos",
             "distancia": "A distancia",
             "duracion": "Duración (especial)",
@@ -532,7 +471,6 @@
         },
          {
             "nombre": "Dardo Veloz",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -541,7 +479,6 @@
         },
          {
             "nombre": "Matriz de Conjuros",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "distancia": "Ritual",
             "duracion": "Encantamiento",
@@ -549,14 +486,12 @@
         },
         {
             "nombre": "Ligadura de Espíritus",
-            "type": "Espiritual",
             "puntos": "1 Punto",
             "duracion": "Instantaneo",
             "Description": "Este hechizo se usa para vincular espíritus a familiares u objetos mágicos: ver el hechizo Vincular Encantamiento (RuneQuest, página 249) y Vincular Espíritus a Animales (RuneQuest, página 250) para más información. La vinculación de espíritus en familiares exige el uso de animales especiales de culto. Los objetos mágicos para retener espíritus se pueden hacer usando el ritual de Recipiente Vinculante (página 110), otros pueden ser obtenidos de un templo, o durante las aventuras. La muerte del atador libera al espíritu, incluso si el atador es revivido inmediatamente a través de la intervención divina u otros métodos."
         },
         {
             "nombre": "Pantalla Espiritual",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "A distancia",
             "duracion": "Temporal",
@@ -565,7 +500,6 @@
         },
         {
             "nombre": "Fuerza",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -574,7 +508,6 @@
         },
         {
             "nombre": "Invocar (entidad)",
-            "type": "Espiritual",
             "puntos": "Variable",
             "distancia": "Ritual",
             "uso": "Activo",
@@ -582,7 +515,6 @@
         },
         {
             "nombre": "Vigor",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "Toque",
             "duracion": "Temporal",
@@ -591,7 +523,6 @@
         },
                {
             "nombre": "Visibilidad",
-            "type": "Espiritual",
             "puntos": "2 Puntos",
             "distancia": "A distancia",
             "duracion": "Temporal",

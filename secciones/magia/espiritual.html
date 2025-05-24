@@ -8,17 +8,22 @@
             <div class="varita-container">
                 <p class="explicacion-varita">
                     Los conjuros espirituales son manifestaciones de poder que canalizan la energía mágica a través de la voluntad del lanzador. 
-                    Desde simples hechizos de detección hasta poderosos efectos de control, estos conjuros son esenciales para cualquier practicante de la magia.
+                    Estos conjuros son esenciales para cualquier practicante de la magia.
                 </p>
                 
-                <!-- Grid de conjuros -->
-                <div class="conjuros-grid" id="conjuros-grid">
-                    <!-- Se llenará dinámicamente con JS -->
+                <!-- Formulario para seleccionar conjuro -->
+                <div class="formulario-profesiones">
+                    <div class="profesion-selector">
+                        <label for="conjuro">Conjuro Espiritual:</label>
+                        <select id="conjuro">
+                            <option value="">-- Selecciona un conjuro --</option>
+                            <!-- Opciones se llenarán dinámicamente con JS -->
+                        </select>
+                    </div>
                 </div>
                 
                 <!-- Contenedor de resultados -->
-                <div class="resultados-container" style="display: none;">
-                    <!-- Contenido generado dinámicamente -->
+                <div class="resultados-container" id="resultados-container" style="display: none;">
                     <div id="resultado-principal"></div>
                 </div>
             </div>
@@ -32,34 +37,36 @@
 
 <!-- CSS adicional -->
 <style>
-    /* Estilo para el grid de conjuros */
-    .conjuros-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-        gap: 10px;
-        max-height: 400px;
-        overflow-y: auto;
-        padding: 10px;
+    /* Estilo para el formulario */
+    .formulario-profesiones {
+        margin-top: 20px;
+        padding: 15px;
         background: rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        margin-top: 15px;
     }
     
-    .opcion-conjuro {
-        padding: 12px;
-        text-align: center;
+    .profesion-selector {
+        margin-bottom: 15px;
+    }
+    
+    .profesion-selector label {
+        display: block;
+        margin-bottom: 5px;
+        color: #f7fafc;
+        font-weight: bold;
+    }
+    
+    .profesion-selector select {
+        width: 50%;
+        padding: 8px;
         background: #2d3748;
+        border: 1px solid #4a5568;
         border-radius: 4px;
+        color: #f7fafc;
         cursor: pointer;
-        transition: all 0.2s ease;
     }
     
-    .opcion-conjuro:hover {
-        background: #4a5568;
-        transform: scale(1.05);
-    }
-    
-    /* Estilos para la ficha del conjuro */
+    /* Estilos para los resultados */
     .ficha-conjuro {
         background: rgba(0, 0, 0, 0.2);
         padding: 15px;
@@ -103,6 +110,13 @@
     
     .btn-volver:hover {
         background: #2d3748;
+    }
+
+    /* Responsive para el select */
+    @media (max-width: 768px) {
+        .profesion-selector select {
+            width: 100%;
+        }
     }
 </style>
 

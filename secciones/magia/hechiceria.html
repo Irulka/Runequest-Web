@@ -1,27 +1,28 @@
 <div class="seccion-activa">
     <div class="varita-header-container">
-        <h2 class="text-center">Selector de Magia Rúnica</h2>
+        <h2 class="text-center">Conjuros de Hechicería</h2>
     </div>
     
     <div class="varita-layout-container">
         <div class="varita-content-container">
             <div class="varita-container">
                 <p class="explicacion-varita">
-                    Selecciona un conjuro rúnico para ver sus detalles. Los conjuros rúnicos son poderosas invocaciones divinas que requieren puntos de runa para ser lanzados.
+                    Los conjuros de hechicería son manifestaciones de poder arcano que canalizan la energía mágica a través de runas y técnicas especializadas. 
+                    Estos conjuros requieren conocimiento y afinidad con las runas utilizadas.
                 </p>
                 
                 <!-- Formulario para seleccionar conjuro -->
                 <div class="formulario-profesiones">
                     <div class="profesion-selector">
-                        <label for="conjuro">Conjuro Rúnico:</label>
+                        <label for="conjuro">Conjuro de Hechicería:</label>
                         <select id="conjuro">
                             <option value="">-- Selecciona un conjuro --</option>
-                            <!-- Las opciones se llenarán dinámicamente con JS -->
+                            <!-- Opciones se llenarán dinámicamente con JS -->
                         </select>
                     </div>
                 </div>
                 
-                <!-- Resultados -->
+                <!-- Contenedor de resultados -->
                 <div class="resultados-container" id="resultados-container" style="display: none;">
                     <div id="resultado-principal"></div>
                 </div>
@@ -29,13 +30,14 @@
         </div>
         
         <div class="eurmal-image-container">
-            <img id="imagen-dinamica" src="./imagenes/runica.png" alt="Magia Rúnica" class="eurmal-image">
+            <img src="./imagenes/hechiceria.png" alt="Conjuros de Hechicería" class="eurmal-image">
         </div>
     </div>
 </div>
 
+<!-- CSS adicional -->
 <style>
-    /* Estilos para el formulario */
+    /* Estilo para el formulario */
     .formulario-profesiones {
         margin-top: 20px;
         padding: 15px;
@@ -65,52 +67,57 @@
     }
     
     /* Estilos para los resultados */
-    .atributo-resultado {
-        margin-bottom: 10px;
-        padding: 10px;
+    .ficha-conjuro {
         background: rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+        padding: 15px;
+        border-radius: 5px;
     }
     
-    .atributo-resultado h3 {
-        margin-top: 0;
+    .ficha-conjuro h3 {
         color: #d69e2e;
         border-bottom: 1px solid #4a5568;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
     }
     
-    .tabla-profesion {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 10px 0;
+    .propiedad-conjuro {
+        margin-bottom: 10px;
     }
     
-    .tabla-profesion th, 
-    .tabla-profesion td {
-        padding: 8px;
-        text-align: left;
-        border-bottom: 1px solid #4a5568;
+    .propiedad-conjuro .valor-propiedad {
+        color: #f7fafc;
     }
     
-    .tabla-profesion th {
-        background-color: rgba(0, 0, 0, 0.3);
+    .descripcion-conjuro {
+        margin-top: 20px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        line-height: 1.5;
     }
     
+    /* Botón de volver */
     .btn-volver {
-        padding: 10px 20px;
-        background: #d69e2e;
+        margin-top: 15px;
+        padding: 8px 15px;
+        background: #4a5568;
         border: none;
         border-radius: 4px;
-        color: #1a202c;
-        font-weight: bold;
+        color: #f7fafc;
         cursor: pointer;
         transition: background 0.2s ease;
-        margin-top: 15px;
     }
     
     .btn-volver:hover {
-        background: #b7791f;
+        background: #2d3748;
+    }
+
+    /* Responsive para el select */
+    @media (max-width: 768px) {
+        .profesion-selector select {
+            width: 100%;
+        }
     }
 </style>
 
-<script src="js/secciones/magia/runica.js"></script>
+<script src="js/secciones/magia/hechiceria.js"></script>

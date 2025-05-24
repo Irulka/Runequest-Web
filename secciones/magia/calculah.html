@@ -1,0 +1,219 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Calculadora de Hechicería</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Calcula el coste y potencia de tus hechizos de hechicería basado en tu Inteligencia Libre
+                    y las reglas del sistema. Selecciona un conjuro y distribuye los puntos disponibles.
+                </p>
+                
+                <!-- Formulario para calcular hechizo -->
+                <div class="formulario-hechiceria">
+                    <div class="columnas-hechiceria">
+                        <!-- Columna izquierda -->
+                        <div class="columna-izquierda">
+                            <div class="campo-hechiceria">
+                                <label for="int-libre">Int Libre:</label>
+                                <input type="number" id="int-libre" min="1" value="10" class="campo-numerico">
+                            </div>
+                            
+                            <div class="campo-hechiceria">
+                                <label for="conjuro-hechiceria">Conjuro:</label>
+                                <select id="conjuro-hechiceria" class="selector-conjuro">
+                                    <option value="">-- Selecciona --</option>
+                                </select>
+                            </div>
+                            
+                            <div class="campo-hechiceria">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="maestria-runa"> Maestría de Runa
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Columna derecha -->
+                        <div class="columna-derecha" id="distribucion-puntos" style="display: none;">
+                            <div class="campo-hechiceria">
+                                <label for="intensidad">Intensidad:</label>
+                                <input type="number" id="intensidad" min="1" value="1" class="campo-numerico">
+                            </div>
+                            
+                            <div class="campo-hechiceria">
+                                <label for="duracion">Duración:</label>
+                                <input type="number" id="duracion" min="1" value="1" class="campo-numerico">
+                            </div>
+                            
+                            <div class="campo-hechiceria">
+                                <label for="alcance">Alcance:</label>
+                                <input type="number" id="alcance" min="1" value="1" class="campo-numerico">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="puntos-disponibles" id="puntos-disponibles-container" style="display: none;">
+                        Puntos disponibles: <span id="puntos-disponibles">0</span>
+                    </div>
+                    
+                    <button id="calcular-coste" class="btn-magia">Calcular Coste</button>
+                </div>
+                
+                <!-- Contenedor de resultados -->
+                <div class="resultados-container" id="resultados-container" style="display: none;">
+                    <div id="resultado-principal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/calculah.png" alt="Hechicería" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<!-- CSS adicional -->
+<style>
+    /* Estilo para el formulario */
+    .formulario-hechiceria {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    .columnas-hechiceria {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .columna-izquierda, .columna-derecha {
+        flex: 1;
+    }
+    
+    .campo-hechiceria {
+        margin-bottom: 12px;
+    }
+    
+    .campo-hechiceria label {
+        display: block;
+        margin-bottom: 3px;
+        color: #f7fafc;
+        font-size: 0.9em;
+    }
+    
+    .campo-numerico {
+        width: 70px;
+        padding: 6px;
+        background: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+        color: #f7fafc;
+    }
+    
+    .selector-conjuro {
+        width: 100%;
+        padding: 6px;
+        background: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+        color: #f7fafc;
+    }
+    
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+    
+    .checkbox-label input {
+        margin: 0;
+    }
+    
+    .puntos-disponibles {
+        margin-top: 10px;
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        color: #f7fafc;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    
+    /* Estilos para los resultados */
+    .ficha-conjuro {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .ficha-conjuro h3 {
+        color: #d69e2e;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .propiedades-conjuro {
+        margin-bottom: 15px;
+    }
+    
+    .tabla-resultados {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+        font-size: 0.9em;
+    }
+    
+    .tabla-resultados th, .tabla-resultados td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #4a5568;
+    }
+    
+    .tabla-resultados th {
+        color: #d69e2e;
+    }
+    
+    .tabla-resultados td {
+        color: #f7fafc;
+    }
+    
+    .coste-doble {
+        color: #f56565;
+        font-weight: bold;
+    }
+    
+    /* Botones */
+    .btn-calcular, .btn-volver {
+        margin-top: 15px;
+        padding: 8px 15px;
+        background: #4a5568;
+        border: none;
+        border-radius: 4px;
+        color: #f7fafc;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        width: 100%;
+    }
+    
+    .btn-calcular:hover, .btn-volver:hover {
+        background: #2d3748;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .columnas-hechiceria {
+            flex-direction: column;
+        }
+        
+        .campo-numerico {
+            width: 100%;
+        }
+    }
+</style>
+
+<script src="js/secciones/magia/calculah.js"></script>

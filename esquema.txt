@@ -6,6 +6,8 @@ imagenes
                --------- babuino.png
                --------- trolln.png
                --------- vasana.png
+   --------- objetosm
+               --------- arpa.png
                
    --------- animales.png
    --------- arma.png   
@@ -13,31 +15,46 @@ imagenes
    --------- armas.png
    --------- background1.jpg
    --------- background2.png
+   --------- calculah.png
    --------- chaosbat.png
+   --------- demonio.png
    --------- elementales.png
    --------- eurmal.png
    --------- elemental.png
+   --------- fisberg.png
+   --------- fisberg2.png
    --------- glorantha.png
    --------- guerrero.png
+   --------- hechiceria.png
    --------- mercader.png
+   --------- modificadores.png
+   --------- npc.png
    --------- personaje.png
    --------- personaje2.png
+   --------- profesiones.png
    --------- runekeeper.png
    --------- thed.png
-   --------- npc.png
    --------- usuario.png
 js
    --------- secciones
                 ---------bestiario
                             --------- espiritus
-                                            --------- elementales.js
+                                           --------- demonios.js
+                                           --------- elementales.js
 
                             --------- animales-data.js
                             --------- animales.js
 
                 --------- magia
-                            --------- varita-deseos.js
+                            --------- calculah.js
                             --------- espiritual.js
+                            --------- espiritual.json
+                            --------- hechiceria.js
+                            --------- hechiceria.json
+                            --------- objetosm.js
+                            --------- runica.js
+                            --------- runica.json
+                            --------- varita-deseos.js
 
                 --------- mercado
                             --------- armas.js
@@ -48,14 +65,18 @@ js
                             --------- armaduras.json
                             --------- instrumentos.json
                             --------- objetos-comunes.js
+                            --------- otros.json
                             --------- tools.json
 
                 --------- personajes
+                            --------- cultos.js
                             --------- npcs.js
                             --------- npcs
                                         --------- babuino.json
                                         --------- trolln.json
                                         --------- vasana.json
+                            --------- modificadores.js
+                            --------- profesiones.js
                      
                 --------- tablas
                             --------- maldicion-thed.js
@@ -65,18 +86,22 @@ js
 
                 --------- dados.js
                 --------- main.js
-                --------- modificadores.js
 
 
 secciones
     -------- bestiario
                 --------- espiritus
+                            --------- demonios.html
                             --------- elementales.html
 
                 --------- animales.html
 
     --------- magia
+                --------- calculah.html
                 --------- espiritual.html
+                --------- hechiceria.html
+                --------- objetosm.html
+                --------- runica.html
                 --------- varita-deseos.html
 
     --------- mercado
@@ -87,7 +112,10 @@ secciones
                 --------- objetos-comunes.html
 
     --------- personajes
+                --------- cultos.html
+                --------- modificadores.html
                 --------- npcs.html
+                --------- profesiones.html
                 ---------- npcs
 
     --------- tablas

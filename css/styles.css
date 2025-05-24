@@ -246,7 +246,7 @@ h2 {
 }
 
 .btn-magia:hover {
-        background: #b7791f;
+    background: #b7791f;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }

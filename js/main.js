@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('contenido').innerHTML = `
             <div class="seccion-activa">
                 <div class="seccion-activa" style="text-align:center;">
-                    <img src="imagenes/runekeeper.png" alt="Runequest Logo" style="max-width:50%; height:auto;">
+                    <img src="imagenes/runekeeper.webp" alt="Runequest Logo" style="max-width:50%; height:auto;">
                 </div>
             </div>
         `;

@@ -24,7 +24,7 @@ function initNPCs() {
             if (e.target.classList.contains('btn-volver')) {
                 resultadosContainer.style.display = 'none';
                 npcsGrid.style.display = 'grid';
-                imagenDinamica.src = './imagenes/npc.png';
+                imagenDinamica.src = './imagenes/npc.webp';
                 imagenDinamica.alt = 'Personajes No Jugadores';
             }
         });
@@ -40,7 +40,7 @@ function initNPCs() {
             
             const avatar = document.createElement('div');
             avatar.className = 'npc-avatar';
-            avatar.innerHTML = `<img src="${npc.imagen || './imagenes/npc.png'}" alt="${npc.nombre}">`;
+            avatar.innerHTML = `<img src="${npc.imagen || './imagenes/npc.webp'}" alt="${npc.nombre}">`;
             
             const info = document.createElement('div');
             info.className = 'npc-info';
@@ -52,7 +52,7 @@ function initNPCs() {
             opcionNPC.addEventListener('click', () => {
                 mostrarFichaNPC(npc);
                 // Cambiar la imagen de la sección por la del NPC
-                imagenDinamica.src = npc.imagen || './imagenes/npc.png';
+                imagenDinamica.src = npc.imagen || './imagenes/npc.webp';
                 imagenDinamica.alt = npc.nombre;
             });
             

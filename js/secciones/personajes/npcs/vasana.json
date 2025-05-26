@@ -1,6 +1,6 @@
 {
   "nombre": "Vasana",
-  "imagen": "./imagenes/npcs/vasana.png",
+  "imagen": "./imagenes/npcs/vasana.webp",
   "caracteristicas": {
     "FUE": 16,
     "CON": 12,

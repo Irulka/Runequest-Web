@@ -39,7 +39,7 @@ function initCultos() {
             magiaEspiritual: "Confundir (2 pts.), Espada Oscura (var.), Sanar (var.), Luz (1 pt.), Brillo (var.), y Dormir (3 pts.)",
             pasiones: "Lealtad (templo)",
             notas: "Los cultistas de Chalana Arroy juran nunca dañar a una criatura inteligente o causar dolor innecesario a cualquier ser vivo",
-            cultosAsociados: "Emalda, Eurnal, Issaries, Lhankor Mhy, Orlanth, Storm Bull, Yelm"
+            cultosAsociados: "Emalda, Eurnal, Issaries, Lhankor Mhy, Orlanth, Toro Tempestuoso , Yelm"
         },
         {
             nombre: "Daka Fal",
@@ -58,7 +58,7 @@ function initCultos() {
             magiaEspiritual: "Visión Lejana (var.), Sanar (var.), Lentitud (1 pt.), y Pantalla Espiritual (var.). Todos los iniciados comienzan con el hechizo Encender como un hechizo adicional de magia espiritual que no cuenta contra sus 5 puntos iniciales",
             pasiones: "Amor (familia), Lealtad (templo), Lealtad (tribu)",
             notas: "Solo mujeres praxianas pueden unirse al culto de Eirtha",
-            cultosAsociados: "Ernalda, Storm Bull, Waha"
+            cultosAsociados: "Ernalda, Toro Tempestuoso, Waha"
         },
         {
             nombre: "Engizi",
@@ -76,7 +76,7 @@ function initCultos() {
             magiaRuna: "Absorción, Despertar Pasión, Bendecir Campeón, Bendecir Cultivos, Bendecir Embarazo, Carisma, Comandar Serpiente, Comandar Cerdo, Despedir Elemental de Tierra (cualquier tamaño), Poder de la Tierra, Gnomo a Gárgola (un solo uso), Sanar Cuerpo, Inviolable, Regenerar Miembro, Reproducir, Restaurar Salud, Invocar Elemental de Tierra (cualquier tamaño), e Invocar Guardián del Hogar",
             magiaEspiritual: "Confundir (2 pts.), Desmoralizar (2 pts.), Sanar (var.), Segunda Vista (3 pts.), Brillo (var.), Lentitud (1 pt.), Fuerza (2 pts.), y Vigor (2 pts.). Todos los iniciados comienzan con el hechizo Encender como un hechizo adicional de magia espiritual que no cuenta contra sus 5 puntos iniciales",
             pasiones: "Devoción (Ernalda), Lealtad (templo), Lealtad (suma sacerdotisa)",
-            cultosAsociados: "Argan Argar, Babcester Gor, Chalana Arroy, Eirtha, Maran Gor, Orlanth, Storm Bull, Yelm, Yelmallo"
+            cultosAsociados: "Argan Argar, Babcester Gor, Chalana Arroy, Eirtha, Maran Gor, Orlanth, Toro Tempestuoso, Yelm, Yelmallo"
         },
         {
             nombre: "Eurmal",
@@ -152,7 +152,7 @@ function initCultos() {
             magiaEspiritual: "Afilar Arma (var.), Desmoralizar (2 pts.), Detectar Enemigos (1 pt.), Disrupción (1 pt.), Sanar (var.), Movilidad (1 pt.), Protección (var.), y Fuerza (2 pts.)",
             pasiones: "Devoción (Orlanth), Odio (Caos), Honor, Lealtad (templo)",
             notas: "Orlanth tiene dos subcultos principales: Aventurero y Atronador. El jugador debe elegir el subculto al que pertenece su aventurero",
-            cultosAsociados: "Chalana Arroy, Ernalda, Eurnal, Issaries, Lhankor Mhy, Odayla, Storm Bull, Yinkin"
+            cultosAsociados: "Chalana Arroy, Ernalda, Eurnal, Issaries, Lhankor Mhy, Odayla, Toro Tempestuoso, Yinkin"
         },
         {
             nombre: "Siete Madres",
@@ -164,13 +164,13 @@ function initCultos() {
             cultosAsociados: "Diosa Roja"
         },
         {
-            nombre: "Storm Bull",
+            nombre: "Toro Tempestuoso",
             descripcion: "El Asesino del Caos",
             habilidades: "Arma Cultural (elegir tipo) +15%, Sentir Caos +20%, Intimidar +10%",
             magiaRuna: "Berserker, Despedir Elemental de Aire (solo pequeño), Enfrentar Caos, Impedir Caos, e Invocar Elemental de Aire (solo pequeño)",
             magiaEspiritual: "Desmoralizar (2 pts.), Detectar Enemigos (1 pt.), Disipar Magia (var.), Fanatismo (1 pt.), Sanar (var.), y Protección (var.)",
-            pasiones: "Devoción (Storm Bull), Odio (Caos), Lealtad (Storm Khan)",
-            notas: "Todos los cultistas de Storm Bull pueden aprender la habilidad Sentir Caos",
+            pasiones: "Devoción (Toro Tempestuoso), Odio (Caos), Lealtad (Storm Khan)",
+            notas: "Todos los cultistas de Toro Tempestuoso pueden aprender la habilidad Sentir Caos",
             cultosAsociados: "Chalana Arroy, Eiritha, Ernalda, Orlanth, Waha"
         },
         {
@@ -181,7 +181,7 @@ function initCultos() {
             magiaEspiritual: "Contramagia (var.), Detectar Espíritu (1 pt.), Distracción (1 pt.), Sanar (1 pt.), Protección (var.), Segunda Vista (3 pts.), Lentitud (1 pt.), Disparo Rápido (1 pt.), Pantalla Espiritual (var.), y Vigor (2 pts.)",
             pasiones: "Devoción (Waha), Lealtad (khan)",
             notas: "Restringido a hombres praxianos. Los iniciados no pueden aprender más de un punto del Hechizo de Sanar",
-            cultosAsociados: "Eiritha, Storm Bull"
+            cultosAsociados: "Eiritha, Toro Tempestuoso"
         },
         {
             nombre: "Yelm",

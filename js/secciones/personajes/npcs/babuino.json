@@ -1,6 +1,6 @@
 {
   "nombre": "Jefe Babuino",
-  "imagen": "./imagenes/npcs/babuino.png",
+  "imagen": "./imagenes/npcs/babuino.webp",
   "caracteristicas": {
     "FUE": 17,
     "CON": 11,

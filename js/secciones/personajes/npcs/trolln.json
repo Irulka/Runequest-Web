@@ -1,6 +1,6 @@
 {
   "nombre": "Troll Negro",
-  "imagen": "./imagenes/npcs/trolln.png",
+  "imagen": "./imagenes/npcs/trolln.webp",
   "caracteristicas": {
     "FUE": 19,
     "CON": 13,

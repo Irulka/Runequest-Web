@@ -1,0 +1,34 @@
+{
+  "nombre": "Oso",
+  "caracteristicas": {
+    "FUE": "3D6+6",
+    "CON": "2D6+3",
+    "TAM": "3D6+3",
+    "POD": "3D6",
+    "DES": "3D6",
+    "Puntos de Vida": "?",
+    "Movimiento": 8,
+    "SR DES": "?",
+    "SR TAM": "?",
+    "Bonus de Daño": "?",
+    "Puntos de Magia": "1?"
+  },
+  "armadura": "2 puntos de piel y pelaje.",
+
+  "ataques": [
+    {"arma": "Mordisco", "%": 45, "daño": "1D8", "MR": 8},
+    {"arma": "Garra", "%": 30, "daño": "1D6", "MR": 8},
+    {"arma": "Abrazo", "%": 30, "daño": "1D6", "MR": 8}
+  ],
+  "localizaciones": [
+    {"zona": "Pata Trasera Derecha", "d20": "1-2", "armadura/HP": "2/?"},
+    {"zona": "Pata Trasera Izquierda", "d20": "3-4", "armadura/HP": "2/?"},
+    {"zona": "Cuartos Traseros", "d20": "5-7", "armadura/HP": "2/?"},
+    {"zona": "Cuartos Delanteros", "d20": "8-10", "armadura/HP": "2/?"},
+    {"zona": "Pata Delantera Derecha", "d20": "11-13", "armadura/HP": "2/?"},
+    {"zona": "Pata Delantera Izquierda", "d20": "14-16", "armadura/HP": "2/?"},
+    {"zona": "Cabeza", "d20": "17-20", "armadura/HP": "2/?"}
+  ],
+
+  "notas": "Un oso puede morder y arañar dos veces, o morder y abrazar en un asalto. Si elige morder y abrazar, ambos ataques deben ser contra el mismo enemigo. Si muerde y araña dos veces, puede atacar hasta a tres enemigos distintos."
+}

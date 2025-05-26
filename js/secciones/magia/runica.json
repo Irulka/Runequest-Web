@@ -1581,7 +1581,1533 @@
             "distancia": "A uno mismo",
             "duracion": "Temporal, Acumulable",
             "Description": "Este conjuro aumenta la temperatura en diez metros alrededor del lanzador en 1D6° C. Cada punto adicional usado intensifica el calor en 1D6° C adicionales o duplica el radio de efecto."
-        }
-        
-    ]
+        },
+    {
+        "nombre": "Encarnar Ancestro",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Este conjuro trae el espíritu de un ancestro para que posea el cuerpo del objetivo. A menos que el lanzador falle al lanzar el conjuro o el conjuro se extienda más de un día, el ancestro poseerá el cuerpo permanentemente, y el espíritu del huésped anterior irá a la Tierra de los Muertos. Este conjuro puede lanzarse sin nombrar a un ancestro específico, en cuyo caso un ancestro aleatorio vendrá. Esto es peligroso a menos que se haya preparado previamente un conjuro de Axis Mundi."
+    },
+    {
+        "nombre": "Aumentar Temperatura",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Este conjuro aumenta la temperatura en un radio de diez metros alrededor del lanzador en 1D6° C. Cada punto adicional utilizado intensifica el calor en 1D6° C adicionales o duplica el radio de efecto."
+    },
+    {
+        "nombre": "Aumentar/Disminuir Viento",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Este conjuro aumenta o disminuye la fuerza promedio del viento en 1D6 para 100 metros alrededor del lanzador. Cada punto adicional ajusta la fuerza del viento en otro 1D6 o aumenta el radio de efecto en otros 100 metros. No afecta la temperatura ni la dirección del viento."
+    },
+    {
+        "nombre": "Inducir Uzdo",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "Description": "Este conjuro se usa cuando una troll hembra desea dar a luz a un gran troll. Invoca a un seguidor de Karq, un espíritu de oscuridad con un POW de 12D6. La troll sufre un ataque de Fearshock. Si sobrevive, se fusiona con la oscuridad del espíritu y, después de varias horas, emerge embarazada. Un año después, da a luz a un gran troll bebé."
+    },
+    {
+        "nombre": "Inyectar Canción",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal, No acumulable",
+        "Description": "El objetivo crece dos pequeñas alas en la espalda que producen un ruido chirriante. El ruido es ensordecedor de cerca y audible hasta cinco kilómetros. Se usa para transmitir mensajes a iniciados de Gorakiki-locusi. El mensaje es incomprensible para los demás."
+    },
+    {
+        "nombre": "Inspiración",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Este conjuro añade +20% a una de las siguientes habilidades: Celestial Lore, Cult Lore (del culto del lanzador), Dance, Play Instrument o Sing. Cada punto acumulado (hasta 4) aumenta otra habilidad o incrementa el beneficio en +20%."
+    },
+    {
+        "nombre": "Inspirar Amor",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Este conjuro añade +20% a una Pasión de Amor del objetivo o crea temporalmente una nueva Pasión de Amor al 20%. El objetivo puede resistirse. Cada punto adicional acumulado (hasta 4) añade otro +20% a la Pasión."
+    },
+    {
+        "nombre": "Revitalizar",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, No acumulable",
+        "Description": "Este conjuro revitaliza y refresca completamente al objetivo, incluso si está exhausto. No restaura puntos de vida o daño a atributos, pero recupera CON perdido temporalmente por condiciones como hambre, sed o agotamiento."
+    },
+    {
+        "nombre": "Inviolable",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Este conjuro afecta a cualquier miembro de Ernalda o cultos asociados dentro de tres metros del lanzador. Evita que alguien se excite o se vuelva violento. Contrarresta conjuros que afectan las emociones, como Demoralize, Fanaticism o Fear, si son más débiles que Inviolable. Puede potenciarse con puntos mágicos para superar conjuros más poderosos."
+    },
+    {
+        "nombre": "Invisibilidad",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Este conjuro hace que el objetivo sea invisible desviando la atención hacia otro lugar. El sujeto permanece inadvertido a menos que desee llamar la atención o sea detectado por magia. Si ataca, se vuelve visible durante el ataque."
+    },
+    {
+        "nombre": "Jabbers",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Convierte un brazo de un hombre escorpión en un jabber: un hueso largo y puntiagudo para luchar. Tiene un rango de ataque base de 2, hace 1D8+1 de daño y tiene el doble de puntos de vida del brazo."
+    },
+    {
+        "nombre": "Kenclaw",
+        "puntos": "3 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Convierte las manos del objetivo en garras de león. Pueden atacar con una habilidad igual a DEXx6, haciendo 1D8 de daño. Las garras no pueden sostener armas humanas."
+    },
+    {
+        "nombre": "Conocer Linaje",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "Description": "Este conjuro puede lanzarse sobre descendientes de Kero Fin o sus hijos. El lanzador recibe el linaje exacto, familia y tribu (si la tiene) del objetivo."
+    },
+    {
+        "nombre": "Conocimiento",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Permite al usuario leer la historia del objeto tocado. Cualquier información que no pueda asimilarse en los 15 minutos de duración del conjuro se pierde. El conjuro comienza al principio de la historia del objeto a menos que se especifique un tiempo."
+    },
+    {
+        "nombre": "Lanza de Lava",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Cuando se lanza sobre una lanza, permite al usuario disparar roca fundida desde la punta gastando puntos mágicos. Cada 2 puntos mágicos gastados causan 1D6 de daño. El ataque tiene un alcance de 100 metros y un 25% de probabilidad de acierto."
+    },
+    {
+        "nombre": "Salto",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Permite a una persona completamente cargada saltar hasta seis metros de alto o de largo. Cada punto acumulado añade seis metros al salto o permite levantar 6 SIZ adicionales mientras salta."
+    },
+    {
+        "nombre": "Piernas Saltarinas",
+        "puntos": "3 Puntos",
+        "distancia": "Personal",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Convierte las piernas traseras del lanzador en extremidades parecidas a las de un saltamontes. El lanzador puede saltar hasta 50 metros horizontal o verticalmente. La carga excesiva reduce la distancia del salto."
+    },
+    {
+        "nombre": "Mentira",
+        "puntos": "2 Puntos",
+        "distancia": "Personal",
+        "duracion": "Instantáneo, No acumulable",
+        "Description": "Este conjuro se lanza cuando un embustero dice una mentira. Cualquiera que la escuche la cree automáticamente, sin importar cuán descabellada sea. La creencia persiste hasta que haya evidencia incontrovertible de su falsedad o durante al menos un round de combate."
+    },
+    {
+        "nombre": "Relámpago",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, Acumulable",
+        "Description": "Un rayo de energía proyectado por el lanzador. Si supera el POW del objetivo, cada punto de Relámpago causa 1D6 de daño a una ubicación del cuerpo. La armadura no protege contra este daño."
+    },
+    {
+        "nombre": "Cerrar",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "Description": "Este conjuro se lanza sobre puertas, cofres, bolsas, etc. Es una versión más potente del conjuro Glue. Solo el lanzador puede abrir el objeto. Dura ocho semanas y no puede ser removido por Dispel Magic o Dismiss Magic."
+    },
+    {
+        "nombre": "Locura",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "Description": "Si el lanzador supera el POW del objetivo, el objetivo sufre efectos basados en la tabla de Efectos de Locura. Los resultados varían según el grado de éxito del lanzador."
+    },
+    {
+        "nombre": "Encantamiento de Puntos Mágicos",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Encantamiento, Acumulable",
+        "Description": "Cada punto de POW sacrificado permite al objeto almacenar 1D10 puntos mágicos. Estos puntos pueden usarse para potenciar conjuros. El ritual tarda una hora por punto de POW sacrificado."
+    },
+    {
+        "nombre": "Amplificar Comando",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Duración (especial), No acumulable",
+        "Description": "Este conjuro debe acumularse con un Comando (criatura marina específica). Cada punto mágico gastado aumenta la duración del conjuro acumulado en una hora."
+    },
+    {
+        "nombre": "Creación de Matriz",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Encantamiento, Acumulable",
+        "Description": "Este conjuro almacena un conjuro de espíritu o Runa en un objeto. El usuario puede lanzar el conjuro mientras esté en contacto físico con el objeto. Requiere sacrificar POW igual al costo del conjuro almacenado."
+    },
+    {
+        "nombre": "Fusión de Forma",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Encantamiento",
+        "Description": "Este ritual se realiza cuando un cultista sacrifica para el conjuro Proteus. Una criatura viva del tipo deseado debe ser provista. Al finalizar, el suplicante gana la habilidad de transformarse en esa criatura usando Proteus."
+    },
+    {
+        "nombre": "Explosión Mental",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "Description": "Si el lanzador supera el POW del objetivo, reduce temporalmente el INT del objetivo a cero durante días igual a la mitad del POW del lanzador. Un éxito especial también causa 1D6+2 de daño a la cabeza."
+    },
+    {
+        "nombre": "Puente Mental",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Permite la transmisión de pensamientos entre dos personas. El alcance es de 1,000 metros por punto del conjuro. Solo dos personas pueden estar vinculadas a la vez."
+    },
+    {
+        "nombre": "Leer Mente",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Si el lanzador supera el POW del objetivo, puede leer los pensamientos conscientes del objetivo sin su consentimiento. El objetivo puede detectar la intrusión."
+    },
+    {
+        "nombre": "Nube de Niebla",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Crea una burbuja de niebla con un diámetro de dos metros por punto de Runa acumulado. La visibilidad dentro o a través de la niebla se limita a un metro."
+    },
+    {
+        "nombre": "Moldear Roca",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Permite al lanzador usar sus manos como herramientas para dar forma a la roca, incluyendo Truestone o adamantio, pero requiere una Intervención Divina exitosa al mismo tiempo."
+    },
+    {
+        "nombre": "Descomponer",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, Acumulable, Un solo uso",
+        "Description": "Causa que un hongo, moho, óxido u otro tipo de infestación afecte un objeto, animal, árbol o área de un metro cuadrado. Acumular el conjuro aumenta el número de objetivos o el área afectada."
+    },
+    {
+        "nombre": "Moral",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "Description": "Este conjuro afecta al objetivo y a todo su regimiento, evitando que huyan en batalla y aumentando su probabilidad de acierto en un 50%. Dura hasta el amanecer o el atardecer."
+    },
+    {
+        "nombre": "Salto de Montaña",
+        "puntos": "2 Puntos",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable, Un solo uso",
+        "Description": "Invoca un viento de montaña (a menudo en forma de un carnero gigante) que transporta al lanzador a la cima de una montaña sagrada. Cada punto de Runa acumulado permite que una persona adicional acompañe al lanzador. Es un viaje de ida."
+    },
+    {
+        "nombre": "Multiconjuro",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "Description": "Permite al lanzador lanzar dos conjuros de espíritu a la vez. Cada punto acumulado permite combinar un conjuro adicional. No reduce el costo en puntos mágicos de los conjuros."
+    },
+    {
+        "nombre": "Pesadilla",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Especial, No acumulable",
+        "Description": "Debe lanzarse sobre un objetivo dormido, inconsciente o meditando. Si el lanzador supera el POW del objetivo, este experimenta una pesadilla horrible. Al despertar, sufre de Desesperación y tiene un -10% en todas sus habilidades hasta que vuelva a dormir."
+    },
+    {
+        "nombre": "Juramento",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "Description": "Este conjuro une a dos o más personas en un pacto. Cualquiera que rompa el juramento sufre un ataque de Sever Spirit con puntos mágicos iguales a los invertidos en el conjuro. Cada punto acumulado añade un participante adicional."
+    },
+    {
+        "nombre": "Diente de Dolor",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Lanzado sobre un arma, hace que cualquier golpe que penetre la armadura incapacite la ubicación golpeada. La víctima puede rodar CONx2 cada round para recuperarse."
+    },
+    {
+        "nombre": "Pánico",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "Description": "Si el lanzador supera el POW del objetivo, este es presa de un terror abrumador. No puede lanzar conjuros o atacar en combate cuerpo a cuerpo, pero puede esquivar o parar normalmente. Suele huir."
+    },
+    {
+        "nombre": "Paso",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "Description": "Abre cualquier apertura cerrada, bloqueada o sellada mágicamente. Cada punto de Paso permite que una persona pase a través de la apertura afectada. Dura ocho semanas."
+    },
+    {
+        "nombre": "Vigía del Camino",
+        "puntos": "2 Puntos",
+        "distancia": "Personal",
+        "duracion": "Duración (especial), No acumulable",
+        "Description": "Alerta al usuario sobre la dirección y número de enemigos y trampas dentro de un radio de 100 metros mientras viaja por un camino conocido. Dura hasta que el lanzador se duerme o el camino termina."
+    },
+    {
+        "nombre": "Sendero",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro permite al usuario determinar la dirección del oasis más cercano. Si se usan 2 puntos de runa, el lanzador conoce el oasis más cercano y el segundo más cercano, y cada punto adicional aumenta el número de oasis conocidos. No hay límite para acumular puntos de runa, pero el conjuro solo indica la dirección y la distancia relativa (más cercano, siguiente más cercano, etc.), no la distancia real."
+    },
+    {
+        "nombre": "Paz",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable, Un solo uso",
+        "descripcion": "Este conjuro hace que todas las personas que no sean de estatus de Maestro de Runas dentro de un radio de un kilómetro guarden sus armas y olviden toda violencia y guerra. Durante la duración del conjuro, prefieren escuchar las maravillas de la paz y el amor que los espíritus envían a sus mentes, y no pueden hacer daño a otros (a discreción del director de juego sobre lo que constituye daño)."
+    },
+    {
+        "nombre": "Espía Vegetal",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro convierte una planta en un espía remoto al hacer que sus hojas transmitan sonido y tacto al lanzador. Aparte de detectarse como mágico, la planta parece completamente normal. Las plantas espía cortadas o arrancadas mueren y dejan de enviar información. El usuario del conjuro solo puede recibir información de un espía vegetal a la vez, aunque puede lanzar el conjuro sobre múltiples plantas simultáneamente."
+    },
+    {
+        "nombre": "Plastrón",
+        "puntos": "2 Puntos",
+        "distancia": "Contacto, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro otorga al objetivo un caparazón o coraza sobre su pecho y abdomen. El conjuro debe potenciarse con puntos de magia. La coraza tiene 1 punto de armadura por cada punto de magia invertido en el conjuro."
+    },
+    {
+        "nombre": "Prom",
+        "puntos": "1 Punto",
+        "distancia": "Contacto, Duración (especial)",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro fortalece al lanzador y a cualquier animal de tiro que esté tirando de un arado durante un día, permitiéndoles arar tierra normal o rocosa a una velocidad cuatro veces mayor, o aproximadamente cuatro acres en un día. El arado no sufre daño al final del día. En tierra extremadamente rocosa que normalmente no es cultivable, este conjuro permite que el arado se mueva a velocidad normal, pero a costa de 1D6 de daño al arado. En piedra sólida, si el agricultor encuentra útil o necesario arar tal tierra, el equipo de arado mágico puede romperla para convertirla en tierra extremadamente rocosa, pero solo se puede arar ¼ de acre por día, o una sola línea de unos 500 metros. Usarlo en piedra sólida causa 3D6 de daño al arado al final del día, probablemente rompiéndolo."
+    },
+    {
+        "nombre": "Drenaje de Poder",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo de este conjuro gana la habilidad de drenar puntos de magia mediante el tacto. Debe tocar a una víctima con su mano desnuda, aunque el conjuro funciona a través de ropa o armadura. El objetivo también debe superar el POD de la víctima con cada toque exitoso. Si la víctima es superada, pierde 1D6 puntos de magia y el objetivo los gana. El receptor del conjuro puede realizar un ataque de drenaje por cada asalto de combate. Cuando el conjuro termina, el objetivo pierde cualquier punto de magia que exceda su capacidad normal."
+    },
+    {
+        "nombre": "Drenaje de Poder (Variante del Murciélago Carmesí)",
+        "puntos": "2 Puntos",
+        "distancia": "Contacto, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro actúa exactamente como Drenaje de Poder (arriba), excepto que el objetivo no se queda con los puntos de magia drenados; fluyen directamente al Murciélago Carmesí."
+    },
+    {
+        "nombre": "Predecir Clima",
+        "puntos": "2 Puntos",
+        "distancia": "Personal, Instantáneo",
+        "duracion": "No acumulable",
+        "descripcion": "Cuando se lanza, el usuario sabe aproximadamente cómo será el clima natural durante las próximas 24 horas. Este conjuro no puede tener en cuenta las acciones directas de los dioses de las tormentas o el uso de conjuros que afecten el clima."
+    },
+    {
+        "nombre": "Embarazo",
+        "puntos": "3 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro permite al sujeto llevar un niño a término incluso si eso no sería físicamente posible en condiciones normales. El conjuro puede combinarse con Bendición del Embarazo (página 18)."
+    },
+    {
+        "nombre": "Preservar Alimento",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Permanente",
+        "duracion": "Acumulable (hasta 5 pts.)",
+        "descripcion": "Este conjuro afecta a 1 ENC de raciones, evitando que se echen a perder, aunque aún pueden ser comidas por insectos o ratones. Cada punto acumulado en el conjuro (hasta 5) duplica la cantidad de raciones afectadas, por lo que un conjuro de 2 puntos protege 2 ENC, un conjuro de 3 puntos protege 4 ENC, etc. Como se indica (RuneQuest, página 56), un solo punto de ENC equivale aproximadamente a algo que se puede sostener fácilmente con una mano, como un pan, una calabaza, una pierna de cordero, etc."
+    },
+    {
+        "nombre": "Preservar Riqueza",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable (hasta 5 pts.)",
+        "descripcion": "Este conjuro debe lanzarse sobre un contenedor de almacenamiento de 40 litros, como una ánfora. Alimentos, líquidos y otras sustancias orgánicas se colocan dentro del contenedor, que luego se sella como parte del ritual. El contenido permanece fresco hasta que el contenedor se abre, después de lo cual el conjuro termina. Cada punto acumulado en el conjuro (hasta 5) duplica el tamaño máximo del contenedor de almacenamiento."
+    },
+    {
+        "nombre": "Producir Luz",
+        "puntos": "1 Punto",
+        "distancia": "Personal, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro produce un círculo de luz tan brillante como un día claro de verano al mediodía. El círculo tiene un diámetro de 100 metros por punto en el conjuro, por lo que un conjuro de 10 puntos ilumina un círculo de un kilómetro de diámetro."
+    },
+    {
+        "nombre": "Proyectar Música",
+        "puntos": "1 Punto",
+        "distancia": "Personal, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro aumenta la distancia audible de la voz o instrumento del lanzador en un +50%. Puntos adicionales (hasta 4) añaden el instrumento del lanzador a su voz o viceversa, y aumentan el efecto en otro +50%, por lo que un conjuro de 3 puntos aumenta la distancia en un +150%."
+    },
+    {
+        "nombre": "Proliferar",
+        "puntos": "3 Puntos",
+        "distancia": "Contacto, Instantáneo",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un ser vivo fértil. En su próxima reproducción exitosa, el ser produce 1D6 veces más crías de lo habitual. Así, una mujer embarazada tendría 1D6 hijos en lugar de uno. Un perro tendría 7D6 cachorros en lugar de 6–8. Un manzano que normalmente produce unos cientos de frutos produciría mil. Esta abundancia tiene un costo: el producto del conjuro Proliferar es más pequeño y generalmente inferior. Los cachorros multiplicados serían todos enclenques, y una cosecha de manzanas proliferadas incluiría muchas frutas pequeñas o defectuosas."
+    },
+    {
+        "nombre": "Proteo",
+        "puntos": "1 Punto",
+        "distancia": "Personal, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "El usuario debe someterse a un ritual de Fusión de Forma (página 63) para usar el conjuro Proteo. Este conjuro permite al lanzador cambiar su forma a la de otro ser vivo que haya sido establecido mediante el ritual de Fusión de Forma. El INT, CAR y POD del usuario no cambian, pero todas las demás características se vuelven idénticas a las de la criatura usada en el ritual. El usuario también puede usar cualquier poder innato especial de la criatura en la que se ha convertido. Durante la duración del conjuro, el usuario puede transformarse de un lado a otro entre su forma habitual y la de la criatura elegida. Cada transformación toma un asalto de combate, durante el cual el lanzador no puede hacer nada más. Si el lanzador usa más de un punto en el conjuro, puede alternar entre una cantidad de formas igual al número de puntos de runa usados."
+    },
+    {
+        "nombre": "Ritual de Purificación",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual purifica a las trolls hembras que han dado a luz una camada de trollkin. Normalmente, una troll hembra que da a luz trollkin seguirá teniendo trollkin en todos sus futuros embarazos. Una hembra que se somete a este ritual y evita el embarazo durante un año completo después del ritual es purificada y puede volver a dar a luz hijos troll oscuros (aunque no hay garantía de que lo haga)."
+    },
+    {
+        "nombre": "Purificar Agua",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Instantáneo",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro hace que toda la materia particulada en un volumen de agua de 3×9×9 metros se asiente. No funciona en tejido vivo ni en material disuelto en el agua (como la sal). Este conjuro también puede crear agua bendita de culto al lanzarlo sobre un pequeño volumen (un litro o menos) de agua de mar especialmente preparada."
+    },
+    {
+        "nombre": "Lluvia",
+        "puntos": "1 Punto",
+        "distancia": "Personal, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro hace que llueva dentro de un radio de 100 metros alrededor del lanzador. Si no está lloviendo actualmente, el conjuro crea una lluvia según la tabla de Cobertura de Nubes, según corresponda. Si está lloviendo actualmente, el conjuro aumenta la lluvia como si hubiera una categoría más de cobertura de nubes en la tabla. Tabla de Cobertura de Nubes:\n% Cobertura | Descripción | Lluvia (dentro de la duración)\n0–10 | Ninguna | 0–10 mm\n11–20 | Nubes escasas | 11–20 mm\n21–30 | Nubes dispersas | 21–30 mm\n31–40 | Ligeramente nublado | 31–40 mm\n41–50 | Moderadamente nublado | 41–50 mm\n51–65 | Mayormente nublado | 51–65 mm\n66–80 | Completamente nublado | 66–80 mm\n81–00 | Nubes densas, poca luz | 81–100 mm\nEste conjuro requiere cobertura de nubes visible para ser efectivo; las nubes pueden ser invocadas usando el conjuro rúnico Llamada de Nubes (página 30). Cada punto de runa acumulado aumenta la cantidad de lluvia como si la cobertura de nubes aumentara en un +10% o aumenta el radio otros 100 metros."
+    },
+    {
+        "nombre": "Éxtasis",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo de este conjuro debe resistir POD contra POD o quedar hipnotizado, casi en coma, respirando apenas y extasiado. Tocados por la presencia de lo divino, experimentan sueños incoherentes y apenas recordados de visitas de espíritus y elementales, viendo ángeles en la arquitectura. Los efectos normalmente duran hasta que el conjuro expira, pero se rompen instantáneamente si la víctima es atacada o en peligro, dejando solo una sensación persistente de tristeza y soledad."
+    },
+    {
+        "nombre": "Renacimiento del Caos",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia (especial), Permanente",
+        "duracion": "No acumulable, Un solo uso",
+        "descripcion": "Lanzado sobre miembros laicos e iniciados de Thed, este conjuro tiene el mismo efecto que el renacimiento natural del Caos que todos los Maestros de Runas experimentan, y además otorga al miembro una característica del Caos (página 24). Aumenta su Runa del Caos al 60% o en un 20%, lo que sea mayor. Hay un peligro en esto: el objetivo tiene un porcentaje de probabilidad de morir igual al 5%, más un 5% por cada característica del Caos que ya posea. Un broo con dos características del Caos tiene un 15% de probabilidad de morir cuando se lanza este conjuro sobre él. Solo los Sacerdotes de Runas del culto de Thed pueden aprender este conjuro. Tiene un alcance de diez metros."
+    },
+    {
+        "nombre": "Reconstrucción",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro hace que cualquier secuencia de tiempo del pasado se reproduzca para los sentidos del lanzador, mientras esté en el área inmediata donde ocurrió. Los eventos se reproducen en tiempo real, hasta la duración del conjuro. El usuario está en un estado de trance y nadie más puede percibir lo que él percibe. El usuario debe especificar la hora y la fecha para que comience la visión."
+    },
+    {
+        "nombre": "Refinar Medicina",
+        "puntos": "1 Punto",
+        "distancia": "Contacto, Instantáneo",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro permite al lanzador alterar la potencia o utilidad de una planta en la categoría 'Otros' de la lista de plantas curativas (ver página 72). Lanzamientos posteriores pueden refinar aún más la medicina. El lanzador también debe gastar puntos de magia para realizar el cambio. Cada punto de magia crea un cambio de una columna en la tabla de Potencia Estacional o un cambio de una fila en la lista de Utilidad."
+    },
+    {
+        "nombre": "Reflejo",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro refleja los conjuros que no superan el POD del objetivo protegido. Los conjuros reflejados atacan a su(s) lanzador(es) en el siguiente rango de ataque. El POD del conjuro reflejado es igual al POD del lanzador cuando el conjuro fue lanzado originalmente. Por cada punto acumulado, este conjuro refleja 2 puntos de magia espiritual o hechicería, o 1 punto de magia rúnica. El reflejo no funciona si el conjuro entrante es demasiado poderoso, pero el conjuro de Reflejo permanece en su lugar."
+    },
+    {
+        "nombre": "Regenerar Miembro",
+        "puntos": "2 Puntos",
+        "distancia": "Contacto, Permanente",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro regenera una extremidad amputada o mutilada. Cuando se pierde una extremidad, el director de juego debe determinar qué porcentaje de la extremidad se perdió. El director de juego puede tirar D100 o simplemente decidir. El resultado muestra cuánto necesita regenerarse. La tasa de recuperación es del 10% de la extremidad por semana de juego si el conjuro se aplica dentro de los diez minutos posteriores al daño, aumentando al 20% por temporada a partir de entonces."
+    },
+    {
+        "nombre": "Liberar No Muerto",
+        "puntos": "2 Puntos",
+        "distancia": "Contacto, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro solo puede lanzarse sobre una espada. Permite que la espada corte cualquier encantamiento que haya creado una entidad no muerta y libere su alma, si la tiene, de su atadura antinatural. El alma se libera si los puntos de golpe totales de la entidad no muerta se reducen a 0, o si el daño a su cabeza, pecho o abdomen iguala o excede el doble de los puntos de golpe de la ubicación. Además, un golpe crítico libera el alma de la entidad no muerta automáticamente, y en un éxito especial, la ubicación golpeada también se destruye (tratar como si la ubicación perdiera el triple de sus puntos de golpe). Un no muerto liberado no puede ser reanimado."
+    },
+    {
+        "nombre": "Remover (Parte del Cuerpo)",
+        "puntos": "2 Puntos",
+        "distancia": "Personal, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro permite al lanzador quitarse la extremidad u órgano especificado sin daño ni dolor. La extremidad separada puede ser movida por el lanzador y recibe toda la información sensorial normal como si aún estuviera unida, pero con la libertad adicional de movimiento. Un lanzador con Remover Mano puede quitarse la mano y enviarla a gatear. Incluso si el lanzador no puede ver su extremidad, aún puede controlarla y sentir lo que siente, aunque puede no saber dónde o qué tan lejos está. Si la extremidad separada sufre daño, se aplican todas las reglas normales como si no estuviera separada: el dueño puede quedar incapacitado, sufrir daño general o incluso ser envenenado. El lanzador no puede hacer crecer una nueva parte equivalente con un conjuro de Regenerar Miembro (página 73) o su equivalente hasta que la parte vieja sea destruida. El lanzador puede volver a unir la parte separada si la devuelve dentro de la duración del conjuro. Si el conjuro termina antes de que se restaure, la parte permanece separada hasta que se lance el conjuro nuevamente. Esto no resulta en la muerte del lanzador, incluso si la parte separada del cuerpo es la cabeza."
+    },
+    {
+        "nombre": "Reproducir",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, No acumulable",
+        "descripcion": "Lanzado sobre un solo ser vivo de cualquier tipo, este conjuro le permite recrearse a sí mismo a través de procesos naturales. El próximo intento de procreación del ser tiene éxito en la mayor medida posible. Si se bendijera un brote de maíz, la planta adulta estaría cargada de mazorcas, y todos los granos en cada mazorca serían grandes, fértiles y capaces de crecer una nueva planta. Un humano daría a luz a un bebé sano, posiblemente incluso gemelos o trillizos (en tal caso, el director de juego puede querer tirar 1D3 para determinar cuántos bebés). Sin embargo, si la reproducción es normalmente imposible, este conjuro no la hace posible."
+    },
+    {
+        "nombre": "Exigir Verdad",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, Acumulable",
+        "descripcion": "Si el lanzador supera el POD del objetivo, este conjuro obliga al objetivo a responder las preguntas del lanzador con la verdad. Cada punto en el conjuro lo obliga a responder una sola pregunta. Deben responder en voz alta, y sus respuestas deben ser lo que creen que es verdad, pero solo la letra de la pregunta, no su espíritu, necesita ser respondida. Si el interrogador preguntara: '¿Sabes dónde está el escondite secreto?', el objetivo solo necesita responder: 'Sí'. El usuario del conjuro no necesita hacer las preguntas consecutivamente. Podría hacer solo parte de las preguntas y regresar días, semanas (o años) después para más preguntas, y el objetivo seguirá obligado a responder con la verdad, hasta el límite del conjuro."
+    },
+    {
+        "nombre": "Resistir Dolor",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "El objetivo de este conjuro se vuelve inmune al dolor. Aunque el objetivo no se cura de ningún daño como resultado de este conjuro, no sufre inconsciencia o shock como resultado del daño. Las extremidades aún pueden quedar incapacitadas al recibir el doble de sus puntos de golpe, pero el objetivo puede continuar actuando, incluso si la cabeza o el pecho se reducen a menos de 0 puntos de golpe. El objetivo aún muere si sus puntos de golpe totales se reducen a 0 o recibe el triple o más de daño en la cabeza, el pecho o el abdomen. El objetivo también soporta dificultades y torturas que normalmente serían insoportables y puede aceptar sin inmutarse el dolor y las lesiones personales."
+    },
+    {
+        "nombre": "Restaurar Magia",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable, Un solo uso",
+        "descripcion": "Este conjuro afecta solo al lanzador o a un miembro de su culto. Por cada Restaurar Magia lanzado, el objetivo recupera 1D6 puntos de runa incluso si no están en un templo. Si se recuperan más puntos de los que el usuario ha usado, se ignora el exceso. Como todos los conjuros de un solo uso, solo se puede conocer una instancia de este conjuro en cualquier momento dado."
+    },
+    {
+        "nombre": "Restaurar Visión",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, No acumulable",
+        "descripcion": "Este conjuro restaura la vista normal al objetivo, ya sea que se haya perdido permanentemente o temporalmente a través de un conjuro como Ceguera (página 19). Si los ojos mismos fueron dañados o destruidos, también se debe lanzar un conjuro Curar Herida (página 56) en cada ojo."
+    },
+    {
+        "nombre": "Resucitar",
+        "puntos": "3 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual restaura a un aventurero a la vida. Primero, el cuerpo debe ser curado a al menos 3 puntos de golpe. Si el cuerpo murió por enfermedad, la enfermedad debe eliminarse antes de lanzar el conjuro. Este conjuro invoca al espíritu del difunto para que se acerque a su antiguo cuerpo. El lanzador del conjuro o su espíritu aliado debe entablar combate espiritual con el difunto. Si el lanzador logra hacer que el difunto pierda puntos de magia, el espíritu es forzado a volver al cuerpo y regresa a la vida plena. Si el lanzador falla al terminar el combate espiritual temprano o ser derrotado, el alma regresa a las Cortes del Silencio. Cada día después del primero que el aventurero muerto permanece muerto reduce permanentemente sus características de FUE, CON y DES en 1D3 puntos cada una. Cuando cualquier característica se reduce a 0 o menos, ese aventurero se pierde irrevocablemente. Por lo tanto, la muerte por pérdida de características significa que el aventurero no puede ser resucitado a menos que la característica sea restaurada primero (ver Restaurar Salud, abajo). Finalmente, cualquier persona muerta por más de siete días no puede ser resucitada con este conjuro. Solo pueden ser devueltos a través de un heroquest exitoso."
+    },
+    {
+        "nombre": "Restaurar Salud",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, Acumulable",
+        "descripcion": "Este conjuro restaura puntos de características que se han perdido por enfermedad, hechicería, conjuros de Drenaje u otras causas. Este conjuro no cura ninguna enfermedad que pueda estar presente. No restaura características perdidas debido a la muerte o resurrección. Cada punto de runa de Restaurar Salud restaura 1 punto de una característica especificada. El uso de este conjuro solo puede restaurar puntos de características hasta su valor anterior."
+    },
+    {
+        "nombre": "Restaurar Mente",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo",
+        "descripcion": "Este conjuro calma y restaura la cordura de un objetivo. Alivia los efectos de estar abatido o desesperado, cualquiera que sea la fuente de esas condiciones. Cancela los efectos de conjuros como Confundir (página 110), Locura (página 63) y Explosión Mental (página 63), de Choque de Miedo (Glorantha Bestiary, página 179), y otra magia que induzca locura. No tiene efecto sobre la Iluminación."
+    },
+    {
+        "nombre": "Montar Caballo de Río",
+        "puntos": "2 Puntos",
+        "distancia": "Personal",
+        "duracion": "Temporal, No acumulable, Un solo uso",
+        "descripcion": "Este conjuro, que solo puede lanzarse en un manantial, invoca a un caballo de río, un espíritu con el cuerpo delantero de un caballo y los cuartos traseros de un pez. Puede ser montado y cabalgado en su viaje de un manantial a otro. El Sacerdote del Río debe tener una idea clara de a qué manantial viajar; de lo contrario, el caballo de río lleva al jinete a un manantial aleatorio, posiblemente en otra tierra. Todo el viaje nunca toma más de unos pocos minutos. Cualquiera puede montar el caballo de río, pero hay un límite de diez pasajeros por punto de conjuro. Este es un viaje de ida; el regreso requiere otro conjuro."
+    },
+    {
+        "nombre": "Seguro",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Duración (especial), No acumulable",
+        "descripcion": "Este conjuro se lanza sobre un contenedor o apertura para bloquear el paso no deseado. El lanzador debe potenciar el conjuro con uno o más puntos de magia (normalmente el lanzador usa tantos como sea posible). Durante las próximas ocho semanas, cuando alguien que no sea el lanzador intente abrir un contenedor o cruzar una apertura asegurada con este conjuro, se tiran los puntos de magia del conjuro contra el POD del intruso. Si el conjuro tiene éxito, el intruso sufre 1D6 puntos de daño general y es rechazado. Si el POD del intruso no es superado, el conjuro se rompe y termina. Un intruso puede intentar forzar su paso una y otra vez hasta que tenga éxito, se rinda o muera."
+    },
+    {
+        "nombre": "Santificar",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Duración (especial), Acumulable",
+        "descripcion": "Este conjuro bendice el volumen de un área de diez metros de radio, generalmente una esfera (aunque el terreno sagrado del culto a la Tierra siempre toma forma cúbica). Lanzado en terreno llano, un hemisferio está aproximadamente en el aire y el otro dentro de la tierra. Mientras que el área Santificada no es detectable por el tacto o el Sentido Oscuro de los trolls, los límites brillan levemente a plena luz del día. Los miembros del culto pueden realizar ceremonias dentro de un área Santificada como si fuera un templo, como reponer puntos de runa. Cuando las ceremonias cesan, los efectos del conjuro expiran. Cualquier persona dentro de cualquier parte del área santificada se considera completamente dentro de ella. Si no iniciados, conjuros o espíritus cruzan el límite, el lanzador es alertado inmediatamente de su presencia. Puntos de runa adicionales de Santificar aumentan el área de protección a la mitad nuevamente. Por lo tanto, 2 puntos de Santificar protegen un radio de 15 metros, 3 puntos protegen un radio de 22.5 metros, y así sucesivamente."
+    },
+    {
+        "nombre": "Escabullirse",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, Acumulable",
+        "descripcion": "Este conjuro aumenta el MOV del objetivo. El MOV mejorado del objetivo es su MOV regular multiplicado por el número de puntos en el conjuro +1. Por lo tanto, para humanos, un conjuro de 1 punto aumenta el MOV a 16 (10+5+1), un conjuro de 2 puntos lo aumenta a 24, y un conjuro de 3 puntos lo aumenta a 32, etc. Esta velocidad aumentada reduce la capacidad de reacción del objetivo. Por cada punto en el conjuro, reduce las habilidades de Agilidad y Manipulación del objetivo en un –20%."
+    },
+    {
+        "nombre": "Alga",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Duración (especial), Acumulable",
+        "descripcion": "Este conjuro solo puede lanzarse sobre un cuerpo de agua quieto que contenga plantas vivas. Hace que un área de tres metros cuadrados de la superficie del agua se cubra completamente de crecimiento de algas. Las algas crecen para cubrir completamente el área elegida en 15 minutos. Puntos adicionales del conjuro multiplican el área afectada por tres metros por punto."
+    },
+    {
+        "nombre": "Fuerza Marina",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "Este conjuro duplica la FUE base del objetivo, sin restricciones en el máximo. El objetivo debe estar en contacto con agua de mar cuando se lanza el conjuro."
+    },
+    {
+        "nombre": "Sellar Alma",
+        "puntos": "3 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable, Un solo uso",
+        "descripcion": "Este es un conjuro de resurrección limitada, que típicamente solo se usa en miembros del culto, aunque ocasionalmente se vende a extraños por precios exorbitantes. El cuerpo debe haber sido asesinado, no muerto por enfermedad o vejez. El cuerpo debe estar completamente curado, o morirá nuevamente cuando su alma regrese. Después de lanzar el conjuro, el lanzador entabla combate espiritual con el espíritu del difunto. Si el lanzador tiene éxito en superar al espíritu durante el primer asalto de combate, entonces el cuerpo y el espíritu se reúnen, devolviendo así al objetivo a la vida. Después de lanzar el conjuro y enfrentar al espíritu, el lanzador pierde 1D3 de CON por una actividad tan extenuante. Cada día que la persona ha estado muerta reduce permanentemente sus características de FUE, CON y DES en 1D3 puntos cada una. Cuando cualquier característica se reduce a 0 o menos, ese aventurero se pierde irrevocablemente. Finalmente, cualquier persona muerta por más de siete días no puede reunir su cuerpo y alma con este conjuro. Solo pueden ser devueltos a través de un heroquest exitoso."
+    },
+    {
+        "nombre": "Sellar Lengua",
+        "puntos": "4 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Encantamiento, No acumulable",
+        "descripcion": "Este ritual de cuatro horas debe realizarse sobre un objetivo dispuesto, que debe sacrificar 2 puntos de POD en el proceso. Se deben acumular puntos de magia con el conjuro. El objetivo suma los puntos de magia acumulados con el ritual a su propio POD para resistir cualquier intento de interrogatorio con un conjuro detector o forzador de verdad de cualquier naturaleza. Si el objetivo resiste con éxito, el conjuro no tiene efecto sobre él; si falla al resistir, muere."
+    },
+    {
+        "nombre": "Sellar Herida",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "Este conjuro hace que un arma cause daño que no puede regenerarse o curarse mágicamente, sino que debe curarse normalmente con el tiempo. Curar 2 (página 115) detiene el sangrado de dicha herida, pero no cura los puntos de golpe. Del mismo modo, Curar 6 reata una extremidad cercenada pero no la repara."
+    },
+    {
+        "nombre": "Segunda Boca",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "Este conjuro solo puede ser lanzado por una mujer. Le permite tomar venganza inmediata por cualquier contacto sexual no deseado y la hace inmune a poderes progenitivos durante la duración del conjuro. Los detalles de este conjuro son mejor definidos por el director de juego, si se considera deseable y apropiado."
+    },
+    {
+        "nombre": "Buscar Augurio",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual debe realizarse sobre un único individuo elegido y no puede lanzarse más de una vez por persona por semana. Cuando se realiza, tira 2D6, etiquetando uno de los dados como el dado 'bueno' y el otro como el dado 'malo'. Resta el puntaje del dado menor del mayor. Si los dos dados sacan el mismo número, entonces Buscar Augurio no tiene resultado. Por cada punto que el dado 'bueno' exceda al 'malo', el objetivo tiene una tirada de habilidad significativa (elegida por el director de juego) cambiada a un éxito crítico en algún momento de la próxima semana. Por cada punto que el dado 'malo' exceda al 'bueno', el objetivo tiene una tirada de habilidad significativa (elegida por el director de juego) cambiada a un fallo crítico en algún momento de la próxima semana. El lanzador sabe si el objetivo elegido estará sujeto a buena o mala suerte y tiene cierta idea de cuánto. Si el lanzador transmite esa información al objetivo es otra cuestión."
+    },
+    {
+        "nombre": "Cortar Espíritu",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "descripcion": "Este conjuro actúa como una espada para cortar el vínculo entre el cuerpo y el espíritu del objetivo. Si el lanzador supera el POD del objetivo, el objetivo muere. Si no tiene éxito, el objetivo sufre 1D6 de daño a sus puntos de golpe generales."
+    },
+    {
+        "nombre": "Danza de Sombras",
+        "puntos": "4 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Duración (especial), No acumulable",
+        "descripcion": "Cuando se lanza sobre un grupo de trolls bailando, todos los trolls en la danza reciben un beneficio especial: durante la duración del conjuro, cada vez que el troll supere a un enemigo en combate espiritual, inflige 1 punto de daño adicional. La duración nominal del conjuro es de 15 minutos. Si el troll objetivo tuvo éxito en una tirada de Danza cuando se lanzó el conjuro, dura una hora. Si el troll obtuvo un éxito especial en Danza, el conjuro dura seis horas; para un éxito crítico, el conjuro dura una semana."
+    },
+    {
+        "nombre": "Sacudir Tierra",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "descripcion": "El lanzador debe gastar puntos de magia al lanzar este conjuro. Los puntos de magia determinan el tamaño del área afectada, y los puntos de runa acumulados determinan la severidad del resultado. El conjuro afecta un área geométricamente proporcional al número de puntos de magia gastados. Un punto de magia cubre un metro cuadrado, 2 puntos de magia cubren cuatro metros cuadrados, y así sucesivamente. Todos dentro del área afectada modifican todas las habilidades de Agilidad y Manipulación y las tiradas de DES en un -5% por cada punto de runa acumulado. Cada asalto, cualquier persona de pie debe tirar DES×5 o caerá al suelo (esta tirada se modifica por la penalización anterior). Otros resultados del temblor, como árboles cayendo, avalanchas, etc., quedan a discreción del director de juego. Un terremoto puede variar desde un temblor ligero que causa poco daño hasta un evento catastrófico que destruye ciudades, a discreción del director de juego."
+    },
+    {
+        "nombre": "Formar Metal",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "Este conjuro permite al lanzador usar sus manos como martillos, tenazas, moldes y taladros para dar forma al metal según sea necesario. Es igualmente útil con cualquier metal, incluyendo metales rúnicos y hierro. Incluso si el metal está en su punto de fusión, el usuario no sufre daño."
+    },
+    {
+        "nombre": "Destrozar",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "descripcion": "Si el lanzador supera el POD del objetivo, el objetivo sufre 4D3 de daño a una ubicación de golpe."
+    },
+    {
+        "nombre": "Escudo",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "descripcion": "Este conjuro protege al objetivo del daño. Cada punto de Escudo le da al portador 2 puntos de armadura mágica y 2 puntos de Contramagia (página 111). Los efectos de este conjuro son acumulativos tanto con Protección (página 118) como con Contramagia. Para superar un conjuro de Escudo, un conjuro debe ser al menos 1 punto más fuerte que la defensa del escudo. Este conjuro no se disipa cuando es superado. Permanece en efecto por toda la duración, o hasta que sea destruido con Disipar Magia (página 112), Despedir Magia (página 44), o Neutralizar Magia o Neutralizar (Runa) (ambos en RUNEQUEST, página 397). Si tal conjuro se lanza sobre una persona protegida por ambos Contramagia y Escudo, el conjuro de Contramagia se destruye antes que el conjuro de Escudo, si es posible."
+    },
+    {
+        "nombre": "Escudo de Oscuridad",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable (hasta 4 pts.)",
+        "descripcion": "Cada punto de este conjuro (hasta 4) le da al objetivo 2 puntos de armadura en todo el cuerpo y modifica la habilidad con armas de cualquiera que ataque al objetivo en un -10% por punto. También crea un Muro Oscuro (página 111). Es acumulable con cualquier conjuro de magia espiritual, pero no con Absorción (página 10), Reflejo (página 71), Escudo (página 78), o Bloqueo Espiritual (página 83)."
+    },
+    {
+        "nombre": "Estrella Fugaz",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo, Acumulable",
+        "descripcion": "Cuando una flecha potenciada por este conjuro es disparada, la flecha se divide en dos misiles ígneos que dejan estelas brillantes detrás de ellos. Cada una de las flechas ígneas hace 3D6 de daño y puede encender materiales inflamables. Como esto es fuego real, la armadura protege contra este daño pero la resistencia mágica no aplica. Estos misiles no pueden empalar, pero pueden lograr golpes críticos. Cada punto adicional acumulado sobre el primero agrega dos misiles más. Todos los misiles deben apuntar al mismo oponente."
+    },
+        {
+        "nombre": "Esfera de Silencio",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Crea una barrera de sonido de tres metros de radio centrada en el objetivo. Ningún sonido puede atravesar esta barrera. Los personajes dentro de la barrera pueden escucharse entre sí, pero no pueden escuchar nada del exterior, y viceversa. Normalmente se usa para permitir que el objetivo se desplace sigilosamente por el bosque y eluda la detección de los guardias enemigos. Si el conjuro se lanza sobre un enemigo no dispuesto o inconsciente, el lanzador debe superar el POD del objetivo."
+    },
+    {
+        "nombre": "Rastro Plateado",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Duración (especial), No acumulable",
+        "descripcion": "Otorga la habilidad de rastrear mágicamente durante las próximas ocho horas. El MOV del rastreador es 12 en noches despejadas, 8 si al menos una estrella es visible y 0 si no hay estrellas visibles. El rastreador ve el rastro brillando con un destello plateado; esto duplica su habilidad de Rastreo. Debe lanzarse sobre un rastro específico, y solo ese rastro brilla."
+    },
+    {
+        "nombre": "Vista Celestial",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "Acumulable (hasta 4 pts.)",
+        "descripcion": "Otorga al objetivo un punto de vista remoto en el cielo. Este punto de vista puede estar a hasta 250 metros del objetivo y flota a 50 metros sobre el lugar que el objetivo desea ver. El cielo debe estar despejado de nubes y otros obstáculos. El conjuro puede combinarse con otros conjuros que mejoren la visión, como Visión Lejana o Vista Estelar.\n\nMientras se usa Vista Celestial, el personaje no puede usar sus propios ojos, pero puede alternar entre el punto de vista del conjuro y el suyo propio de una ronda de combate a otra.\n\nCada punto acumulado (hasta 4) aumenta la distancia o elevación del punto de vista:\n- 1 Punto: Alcance de 500 metros, o altura de 100 metros sobre el objetivo.\n- 2 Puntos: Alcance de un kilómetro, o altura de 250 metros sobre el objetivo.\n- 3 Puntos: Alcance de dos kilómetros, o altura de 500 metros sobre el objetivo.\n- 4 Puntos: Alcance de cinco kilómetros, o altura de un kilómetro sobre el objetivo."
+    },
+    {
+        "nombre": "Tajo",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un hacha de una o dos manos. Cada punto de Tajo aumenta el daño infligido en +1D6. No puede combinarse con Verdad (arma) (página 100)."
+    },
+    {
+        "nombre": "Rebelión Latente",
+        "puntos": "1 Punto",
+        "distancia": "Ritual, Invocación",
+        "duracion": "No acumulable, Un solo uso",
+        "descripcion": "Este es un conjuro secreto y a largo plazo que tiene vida propia. Cuando un sacerdote ha sido ofendido por el gobernante de su tierra sin posibilidad de recurso, puede realizar este ritual. Una vez que se ha invertido POD en el conjuro y se ha nombrado al gobernante infractor, el conjuro habita en el plano espiritual. Si el gobernante continúa con sus malas acciones, otros sacerdotes y acólitos se inspiran para sacrificar POD a este conjuro, el cual se alimenta y crece. Naturalmente, con cada crimen que comete el gobernante, más sacerdotes se inspiran a invertir POD en este conjuro.\n\nA medida que el conjuro se fortalece, cada punto añade al efecto final, que requiere cientos de puntos de POD para tener alguna posibilidad de actuar. Nadie sabe exactamente cuántos puntos de POD se necesitan, y diferentes gobernantes pueden requerir tamaños diferentes del conjuro. Sin embargo, una vez iniciado, no puede ser disipado. Espera y crece hasta que el gobernante se retire permanentemente o muera, o el conjuro se active. Nadie sabe exactamente qué desencadena los efectos del conjuro, pero 'cuando el perro gris se alza, el gallo negro crece tres veces a medianoche, y la campana invisible suena, todos los hombres marchan a vengarse'. Cuando el conjuro surte efecto, toda la población campesina de la tierra se levanta en revuelta.\n\nEl conjuro se lanzó por última vez en 1460 (tiempo Lunar 4/51) cuando Darjlin y las Tierras del Corazón Lunar se levantaron contra Sheng Seleris. Desde entonces, el Emperador Rojo siempre ha tenido cuidado de respetar los derechos y privilegios de la gente común."
+    },
+    {
+        "nombre": "Nube de Humo",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro crea una espesa nube de humo de dos metros de diámetro por cada punto de Runa gastado con el conjuro. La visibilidad dentro o a través de la niebla está limitada a un metro. La nube puede formarse para rodear y así cegar a un oponente."
+    },
+    {
+        "nombre": "Nieve",
+        "puntos": "1 Punto",
+        "distancia": "Personal, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro hace que caiga nieve dentro de un radio de 100 metros del lanzador durante la duración del conjuro. Si no está lloviendo o nevando actualmente, el conjuro crea nieve como se muestra en la tabla de Cobertura de Nubes, durante la duración del conjuro. Si está lloviendo o nevando actualmente, el conjuro aumenta la nevada en una categoría hacia abajo.\n\nCada punto adicional aumenta el radio de efecto en 100 metros.\n\nTABLA DE COBERTURA DE NUBES:\n% COBERTURA | DESCRIPCIÓN | NIEVE\n0–10 | Ninguna | 0–10 cm\n11–20 | Nubes escas | 11–20 cm\n21–30 | Nubes dispersas | 21–30 cm\n31–40 | Ligeramente nublado | 31–40 cm\n41–50 | Moderadamente nublado | 41–50 cm\n51–65 | Mayormente nublado | 51–65 cm\n66–80 | Completamente nublado | 66–80 cm\n81–00 | Nubes densas, poca luz | 81–100 cm"
+    },
+    {
+        "nombre": "Vista del Alma",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Permite al objetivo ver el aura de POD de los vivos y conocer mágicamente los puntos de magia actuales de otras cosas y criaturas, incluida la cantidad dedicada a conjuros actualmente en efecto (como conjuros defensivos).\n\nEl objetivo también puede saber si una persona es un iniciado o superior; y si lo es, si el iniciado está en buen estado o no. Este conjuro no diferencia entre un iniciado y un Maestro de Runas, simplemente nota que han sido iniciados en un culto."
+    },
+    {
+        "nombre": "Lanza del Alma",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre una lanza. La cabeza de la lanza arde con una extraña llama negra translúcida. Cuando la lanza golpea a un oponente y hace al menos un punto de daño, ese oponente también pierde 1D6 puntos de magia."
+    },
+    {
+        "nombre": "Generar Mano Reptante",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual debe realizarse sobre un cadáver. Desprende y anima una de las manos de la víctima.\n\nLa mano reptante no es inteligente, con una boca con colmillos en la muñeca. Puede sobrevivir indefinidamente si se le proporciona comida, generalmente gorp y otros Engendros. Una vez que muere, la mano se marchita y se descompone rápidamente. Mientras está animada, la mano sirve a su creador. Responde a órdenes habladas de su creador, pero con su pequeño tamaño y falta de apalancamiento, rara vez tiene una FUE de más de 3. Tiene el TAM y los puntos de golpe que poseía en vida, rara vez más de 2 cada uno. Tiene un MOV de 2 y puede saltar hasta su FUE en metros."
+    },
+    {
+        "nombre": "Generar Gorp",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Instantáneo",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro tarda 1D6 minutos en lanzarse. Transforma una porción del suelo en un gorp viviente con un TAM igual al número de puntos de Runa en el conjuro. Otras características se determinan al azar."
+    },
+    {
+        "nombre": "Generar Homúnculo",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual se realiza sobre el cuerpo del lanzador. Transforma una porción de la carne del lanzador (una ubicación de golpe elegida al azar) en una masa de brotes que madura en una pequeña criatura humanoide Caótica llamada homúnculo. En siete días, la masa de brotes madura y se separa del cuerpo del lanzador como un homúnculo independiente.\n\nESTADÍSTICAS DEL HOMÚNCULO:\nFUE | CON | TAM | DES | INT | POD | CAR\n3 | 3 | 3 | 3 | 1 | 3 | 1\n\nATAQUES:\nARMA | % | DAÑO | SR\nMordisco | 50 | 2 puntos de ácido | 12\n\nUBICACIONES DE GOLPE:\nUBICACIÓN | D20 | AP/PG | CALIDAD | VALOR\nPierna Derecha | 01–04 | 0/2 | Puntos de Golpe | 3\nPierna Izquierda | 05–08 | 0/2 | Movimiento | 1\nAbdomen | 09–11 | 0/2 | \nPecho | 12 | 0/2 | \nBrazo Derecho | 13–15 | 0/2 | \nBrazo Izquierdo | 16–18 | 0/2 | \nCabeza | 19–20 | 0/2 |"
+    },
+    {
+        "nombre": "Hablar con Aves",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo puede hablar con cualquier tipo de ave. El conjuro no puede usarse para hablar con familiares o aves habitadas por almas no aviares. Si la persona desea convencer al ave, debe usar una habilidad de Comunicación como Hablar Rápido, Intimidar o Arengar."
+    },
+    {
+        "nombre": "Hablar con Bestias de Manada",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo puede hablar con cualquier tipo de bestia de manada. Si la persona desea convencer a la bestia, debe usar una habilidad de Comunicación como Hablar Rápido, Intimidar o Arengar. El conjuro no infunde inteligencia en la criatura, por lo que solo puede hablar desde su conciencia natural."
+    },
+    {
+        "nombre": "Hablar con Caballos",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro permite a la persona sobre la que se lanza hablar con un caballo durante la duración del conjuro. Se pueden usar habilidades como Arengar o Hablar Rápido si es necesario convencer a la criatura. El conjuro no infunde inteligencia en la criatura, por lo que solo puede hablar desde su conciencia natural."
+    },
+    {
+        "nombre": "Hablar con Insectos",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo puede conversar con cualquier tipo de insecto. Si la persona desea convencer al insecto, aplican tiradas de habilidad. Este conjuro puede usarse para hablar con insectos muy pequeños, pero su INT es insignificante y podrían no ser capaces de proporcionar ideas muy coherentes."
+    },
+    {
+        "nombre": "Hablar con Escorpiones",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo puede conversar con cualquier tipo de escorpión. Si la persona desea convencer al escorpión, debe usar una habilidad de Comunicación como Hablar Rápido, Intimidar o Arengar. Los escorpiones son muy pequeños y podrían no ser capaces de presentar ideas muy coherentes."
+    },
+    {
+        "nombre": "Hablar con Animales Pequeños",
+        "puntos": "1 Punto",
+        "distancia": "A distancia (voz), Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "El objetivo puede hablar con cualquier animal pequeño e inofensivo. La criatura no puede responder pero entiende lo que se le dice. Este conjuro no infunde inteligencia en la criatura, por lo que solo puede comprender con su conciencia natural."
+    },
+    {
+        "nombre": "Intercambio de Conjuros",
+        "puntos": "2 Puntos",
+        "distancia": "Toque, Instantáneo",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro permite al lanzador intercambiar un uso de cualquier conjuro de Runa (excepto este) a cambio de un uso de cualquier conjuro de Runa conocido por otro Maestro de Runas de cualquier culto. El intercambio debe ser voluntario. Cada participante debe gastar puntos de Runa equivalentes al costo del conjuro intercambiado.\n\nEl conjuro solo funciona si el lanzador sigue este procedimiento especial:\n- El intercambio debe realizarse en un Mercado de Issaries. Esto protege al lanzador de personas con malas intenciones, de modo que un ladrón que intente 'accidentalmente' lanzar un Golpe Mental al cultista de Issaries sea detectado por el conjuro del mercado.\n- Los objetos intercambiados deben declararse. Los precios exactos son negociables, pero Issaries insiste en un beneficio claro y negociado para su sacerdote de una forma u otra.\n- Ambas partes deben intercambiar un token que represente el conjuro que se está intercambiando. Por ejemplo, un conjuro de Escudo podría usar un escudo, un conjuro de Humakt un cuchillo, o un Invocar Elemental de Aire (pequeño) una bolsa de aire. Esto es adicional a cualquier objeto intercambiado.\n- Tira un D100 para cada parte. Si ambos obtienen un 1–95, el conjuro se intercambia con éxito, pero un resultado de 96–00 por cualquiera de las partes significa que el conjuro se activa contra la otra parte y ¡toma efecto inmediatamente! Por ejemplo, si se está intercambiando un Rayo Solar, el objetivo previsto es golpeado por el rayo. Incluso si una parte no logra intercambiar el conjuro correctamente, aún recibe el conjuro de la otra parte.\n- Los puntos de Runa utilizados para intercambiar un conjuro de Runa pueden reponerse de la manera habitual. Para lanzar el conjuro recibido, no es necesario gastar puntos de Runa y el lanzador usa la calificación de Runa relevante de la persona que proporcionó el conjuro, incluso si es menor que la suya.\n- Los puntos de Runa utilizados para intercambiar un conjuro de Runa de un solo uso se pierden para el propietario del conjuro, como si el conjuro se hubiera lanzado con un éxito normal.\n- Los 'propietarios' originales de los conjuros aún pueden lanzarlos después de intercambiarlos, siempre que el conjuro no fuera de un solo uso y que se cumplan todos los demás requisitos para el conjuro (puntos de Runa, estado del culto, etc.).\n\nNingún culto intercambia magia especial de culto a la ligera; otros cultos tratan estas transacciones de diversas maneras. Todos los Portadores de Luz, por ejemplo, tratan con su dios asociado de Issaries, pero las diosas de la Tierra permiten intercambios de conjuros solo si la Suma Sacerdotisa del templo lo aprueba. Los dioses nómadas (Toro de la Tormenta y Waha) requieren que el Sumo Sacerdote esté presente para negociar. Las deidades no humanas son aún más reacias. Un conjuro adquirido mediante intercambio puede volver a intercambiarse con otro mediante el uso de este conjuro."
+    },
+    {
+        "nombre": "Cabeza de Araña",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro otorga a la mordedura de una araña la capacidad de empalar (pero las mandíbulas nunca se quedan en la herida) y duplica el POT del veneno de la araña.\n\nCuando se lanza sobre no arañas, este conjuro convierte la cabeza del objetivo en la de una araña gigante. El objetivo gana 2 puntos de armadura en la cabeza y un ataque de Mordisco del 50% más el modificador de categoría de habilidad de Armas. Hace 1D6 de daño más cualquier bonificación de daño e inyecta veneno de araña (RuneQuest, página 159) con un POT igual al CON del lanzador. El ataque de Mordisco puede mejorar con la experiencia."
+    },
+    {
+        "nombre": "Aracnidad",
+        "puntos": "3 Puntos",
+        "distancia": "Toque, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Cuando se lanza sobre una araña, su MOV se duplica, su habilidad de Escalar se triplica y se vuelve inmune a ataques de telarañas, pegamento, agarre y enredos.\n\nCuando se lanza sobre una no araña, el objetivo brota cuatro extremidades adicionales de sus costados. Dos piernas duplican el MOV y la habilidad de Escalar del usuario, además de volverlo inmune a telarañas naturales y mágicas. Las otras dos armas pueden sostener armas adicionales.\n\nMientras está en efecto, el usuario recibe un ataque y una parada adicionales por ronda, además de todas las demás acciones de combate. El ataque adicional ocurre en el mismo rango de ataque que su ataque principal, y la parada adicional no está sujeta a la penalización por múltiples paradas en una ronda y no cuenta para ese modificador en paradas posteriores."
+    },
+    {
+        "nombre": "Encantamiento de Armadura Espiritual",
+        "puntos": "1 Punto",
+        "distancia": "Ritual, Encantamiento",
+        "duracion": "Acumulable",
+        "descripcion": "Este encantamiento crea una armadura espiritual que absorbe daño de puntos de magia en combate espiritual. Requiere un ritual de una hora, después del cual el lanzador sacrifica 1 o más puntos de POD. Cada punto de POD sacrificado para el encantamiento imbuye al objeto con el equivalente a 1D3 puntos de armadura espiritual."
+    },
+    {
+        "nombre": "Bloqueo Espiritual",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este común conjuro de Runa ayuda a proteger al objetivo de ataques de espíritus. Cada punto de este conjuro actúa como una armadura espiritual que absorbe 2 puntos de daño de puntos de magia en combate espiritual.\n\nEjemplo: Sorala, protegida por Bloqueo Espiritual 2, tiene 8 puntos de magia actuales y está en combate espiritual. Pierde esta ronda contra el espíritu, que hace 5 puntos de daño de combate espiritual a Sorala. Su Bloqueo Espiritual la protege por 4 puntos, por lo que solo 1 punto de daño la afecta. Ahora tiene 7 puntos de magia actuales.\n\nSi los puntos de magia actuales del espíritu atacante caen por debajo del valor del Bloqueo Espiritual, no puede continuar el combate espiritual con el objetivo protegido, y el combate espiritual termina."
+    },
+    {
+        "nombre": "Guardián Espiritual",
+        "puntos": "1 Punto",
+        "distancia": "A distancia, Duración (especial)",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un espíritu ancestral amistoso. Establece una conexión mental, idéntica a la de un espíritu aliado (RuneQuest, página 277), entre el espíritu y el objetivo.\n\nCada punto acumulado con este conjuro añade un día de duración. El objetivo solo puede tener un Guardián Espiritual a la vez."
+    },
+    {
+        "nombre": "Fusión Espiritual",
+        "puntos": "2 Puntos",
+        "distancia": "Toque, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un espíritu ancestral amistoso que envuelva al lanzador. Durante la duración del conjuro, suma el POD del espíritu al del lanzador cuando este resista combate espiritual y conjuros. Si el espíritu abandona al lanzador, el conjuro termina."
+    },
+    {
+        "nombre": "Brotar",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro hace que una semilla brote inmediatamente y envíe raíces. En el transcurso de 15 minutos, la planta infantil crece y se expande hasta que su pequeño brote despliega hojas verdaderas. Este conjuro afecta a cualquier semilla entera, incluso si está cocida, agrietada o enferma, devolviéndola a la vida. Si falta más de la mitad de la semilla, ya sea comida por insectos o infectada por hongos, el conjuro no tiene efecto."
+    },
+    {
+        "nombre": "Brotar Piernas",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Temporal",
+        "duracion": "Acumulable (hasta 4 pts.)",
+        "descripcion": "Este conjuro hace que una o más piernas adicionales broten del tórax del hombre escorpión. Esta pierna es un apéndice normal y tiene los mismos puntos de golpe que las otras piernas. Se crea una pierna por cada punto acumulado, hasta un máximo de cuatro."
+    },
+    {
+        "nombre": "Brotar Alas",
+        "puntos": "3 Puntos",
+        "distancia": "Toque, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Alas membranosas crecen en la espalda del lanzador, otorgando vuelo a MOV 12 y permitiéndole llevar su ENC normal completo. Cada 3 puntos de ENC por encima de su ENC máximo reduce su MOV en 1."
+    },
+    {
+        "nombre": "Agilidad",
+        "puntos": "4 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro otorga al objetivo 24 rangos de ataque por ronda, numerados 1, 1a, 2, 2a, y así sucesivamente. Si otro ser tiene este conjuro lanzado sobre él en un combate, usa 1b, 2b, etc. Cada rango de ataque se trata normalmente para el usuario, que puede usar los rangos de ataque adicionales para moverse o realizar acciones adicionales según lo permitan las reglas. Por ejemplo, un usuario que normalmente actúa en el rango de ataque 7 actúa en su lugar en el rango de ataque 3a. El MOV del objetivo también se duplica durante la duración del conjuro.\n\nEl objetivo aún está limitado a dos veces sus acciones normales de combate por ronda, aunque obviamente ocurren mucho antes en la ronda, dando al objetivo del conjuro la oportunidad de huir en la última parte de la ronda, quizás antes de que su enemigo pueda atacar."
+    },
+    {
+        "nombre": "Brillo Estelar",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro coloca un círculo de luz suave y plateada con un radio de 30 metros alrededor del objetivo del conjuro. Si el objetivo vivo no está dispuesto, el lanzador debe superar su POD.\n\nEsta luz es tan fuerte como la noche más brillante iluminada por estrellas. Cualquiera que ataque a un iniciado del culto de la Runa de la Luz, incluso parcialmente dentro de su radio, sufre un -10% a su habilidad de ataque. También desmoraliza a los trolkin y trolls de cueva dentro del área según el conjuro (página 112).\n\nUn elemental de Oscuridad dentro del área de Brillo Estelar recibe 1D3 de daño por ronda. Si se lanza con éxito directamente sobre un elemental de Oscuridad y se supera una tirada de POD vs. POD, el conjuro disuelve al elemental, aunque el conjuro también termina."
+    },
+    {
+        "nombre": "Vista Estelar",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Duración (especial)",
+        "duracion": "Acumulable",
+        "descripcion": "Permite al usuario ver con luz de estrellas (solo) como si fuera luz diurna durante 30 minutos. Este conjuro puede acumularse con Visión Lejana, que luego tiene una duración igual al conjuro de Vista Estelar (página 85)."
+    },
+    {
+        "nombre": "Caminata Estelar",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia, Duración (especial)",
+        "duracion": "No acumulable",
+        "descripcion": "Esta es una variación muy especializada de Extensión (página 49). Solo funciona en unidades militares que son parte de un templo de Polaris, y solo si se lanza después del atardecer. Cada miembro de la unidad (hasta 12, incluido el lanzador de Caminata Estelar) debe primero lanzar Movilidad (página 117) sobre sí mismo o su caballo; el lanzador luego lanza Caminata Estelar, afectando a todo el escuadrón. El conjuro de Caminata Estelar otorga a la unidad el equivalente a Movilidad y Vista Estelar (arriba) hasta el próximo amanecer."
+    },
+    {
+        "nombre": "Guardias Estelares",
+        "puntos": "1 Punto",
+        "distancia": "Ritual, Especial",
+        "duracion": "Acumulable",
+        "descripcion": "Este ritual crea un área de seguridad para aquellos dentro. Seis discos lisos de plata dispuestos en un círculo aproximado definen el límite del área. Estos deben colocarse para encerrar un área máxima de hasta 100 metros cuadrados. El conjuro se extiende en el aire hasta tres metros por encima de los discos y bajo tierra hasta la profundidad de los discos. Los discos no necesitan ser visibles para funcionar; algunos lanzadores los entierran completamente.\n\nEl conjuro conecta estos discos invisiblemente para formar una barrera detectable solo por medios mágicos. Los efectos de protección se activan cuando enemigos físicos o espirituales del lanzador cruzan la barrera, o cuando se lanza un conjuro a través de la barrera desde el exterior. Cuando esto ocurre, comienza un ruido fuerte (un gemido, silbido, estruendo, etc.), que puede ser suprimido por el sacerdote lanzador.\n\nCada punto de Guardias Estelares (hasta 4) cuenta como 1 punto de Contraconjuro (página 111) contra conjuros lanzados a través de la barrera, 2 puntos de Pantalla Espiritual (página 121) contra espíritus externos, da a cualquiera que use fuego de proyectiles a través del límite un -5% a su habilidad de ataque, y, con una tirada exitosa de resistencia del POD del lanzador, hace 1D3 de daño (ignorando armadura) a una ubicación de golpe de cualquier enemigo corpóreo lo suficientemente imprudente como para cruzar el límite.\n\nCada punto acumulado de Guardias Estelares aumenta el área protegida en otros 100 metros cuadrados, aumenta la penalización por disparar proyectiles a través del límite en otro -5% y añade 1D3 al daño hecho a la misma ubicación al cruzar.\n\nEl conjuro de Guardias Estelares permanece en efecto hasta que se retira uno de los discos. Cualquiera que no sea el lanzador que intente tocar los discos se ve afectado por los Guardias Estelares, pero después de sufrir el efecto, la persona puede retirar los discos."
+    },
+    {
+        "nombre": "Aguijón",
+        "puntos": "2 Puntos",
+        "distancia": "Toque, Temporal",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro transforma la mitad inferior del cuerpo del usuario en la de una abeja gigante, completa con aguijón. El objetivo puede atacar con el aguijón con una habilidad igual a su DES-5 (que puede mejorar con la experiencia), haciendo 1D10 de daño más bonificación, e inyectando veneno con un POT igual al POD del lanzador. El abdomen y las piernas del objetivo también ganan 3 puntos de armadura."
+    },
+    {
+        "nombre": "Mordedura de Piedra",
+        "puntos": "1 Punto",
+        "distancia": "Toque, Temporal",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro es usado solo por iniciados trol contra enanos. Cada punto (hasta 4) aumenta la habilidad de Mordisco del objetivo en +10% y añade 1D6 de daño."
+    },
+    {
+        "nombre": "Piedra para Matar al Caos",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "No acumulable, de un solo uso",
+        "descripcion": "Este conjuro encanta una roca con una única habilidad mágica, que puede ser usada una vez. La piedra es lanzada contra el objetivo y tiene efecto si impacta. Las piedras no necesitan penetrar la armadura, y el objetivo no puede resistir el efecto. El efecto y color de cada piedra depende de cómo fue hecha. Kyger Litor prohíbe matar troles para hacer estas piedras, pero no prohíbe hacerlas a partir de troles que murieron por otras causas o fueron asesinados por otras razones.\n\n- **Piedras Negras:** Anulan una característica del Caos del objetivo durante 1D6 horas. Si el objetivo tiene más de una característica del Caos, elige cuál es anulada. El encantador debe comer el corazón de un trol muerto que, en vida, tuvo un POW de 10 o más.\n- **Piedras Azules:** Drenan puntos de magia del objetivo. El encantador debe comer un ser muerto que en vida tuvo un INT de 12 o más. Seres con 12–14 INT producen piedras que drenan 1D10 puntos de magia. Si el ser tenía 15–17 INT, la piedra drena 2D10 puntos de magia. Si el ser tenía un INT de 18 o más, la piedra drena 3D10 puntos de magia.\n- **Piedras Verdes:** Únicamente, son lanzadas a amigos y curan daño causado por cualquier ataque del Caos. El daño a puntos de vida por ubicación se cura primero (elección del objetivo), luego el daño general a puntos de vida, y luego el daño a características como STR o CON (nuevamente, elección del objetivo). El encantador debe comer a un cultista de la Tierra, preferiblemente una sacerdotisa o habladora de dioses. Por cada 3 puntos de Runa que el cultista de la Tierra tenía en vida, la piedra cura 1D6 de daño al ser usada.\n- **Piedras Amarillas:** Hacen 1D10 de daño a puntos de vida, ignorando cualquier armadura. Las piedras amarillas son ineficaces si son lanzadas por un trol o cualquier otra criatura de la oscuridad, y usualmente los troles chantajean o fuerzan a humanos para usarlas en su nombre. Para encantar la piedra, el lanzador debe comer un elemental de Fuego entero con un POW de 6+. Esto significa que debe destruir al elemental usando solo su ataque de Mordisco (no se permiten otras armas o ataques mágicos, pero se permiten mejoras mágicas). El elemental de Fuego se defiende vigorosamente mientras es destruido, por lo que el lanzador probablemente sufrirá bastante daño. Si el elemental de Fuego tenía un POW de 12 o más, la piedra hace 2D10 de daño. Si el POW era de 18 o más, hace 3D10 de daño, y así sucesivamente, aumentando el daño en 1D10 por cada 6 puntos completos de POW que el elemental de Fuego poseía.\n- **Piedras Marrones:** Son las más poderosas y espectaculares. Rompen cualquier monstruo del Caos golpeado en 1D4 pedazos. Esto mata al monstruo a menos que el resultado del ataque sea un 1, o el objetivo sea un gorp. Para encantar la piedra, el lanzador debe comer un ser de cualquier tipo que haya sido matado por un rayo."
+    },
+    {
+        "nombre": "Detener Resurrección",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, no acumulable, de un solo uso",
+        "descripcion": "Este conjuro debe ser lanzado por una Espada de Humakt sobre un cadáver. Evita que cualquier ritual de resurrección afecte al cadáver, incluyendo aquellos que forman vampiros o zombis. La intervención divina no es detenida por este conjuro."
+    },
+    {
+        "nombre": "Fuerza de Basmol",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal, no acumulable",
+        "descripcion": "Este conjuro hincha los tendones y músculos del objetivo, dándole gran fuerza y furia para golpear a sus enemigos. Duplica la STR actual del objetivo y aumenta su probabilidad de golpear con cualquier arma en +50%. Por ejemplo, si el objetivo normalmente tiene un 60% de probabilidad de golpear con una lanza, aumenta a 90%. El objetivo no puede esquivar mientras este conjuro esté en efecto, y su probabilidad de parar se reduce a la mitad."
+    },
+    {
+        "nombre": "Golpe",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal (especial), no acumulable",
+        "descripcion": "Este conjuro se lanza sobre un arma. El siguiente golpe de esa arma ignora toda armadura. Puede ser parado o esquivado como de costumbre. Cuando el arma ha golpeado exitosamente a un objetivo, la duración del conjuro termina."
+    },
+    {
+        "nombre": "Hoja Fuerte",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, no acumulable",
+        "descripcion": "Este conjuro hace que una espada o daga sea irrompible. No importa cuánto daño pare el arma, sus puntos de vida no disminuyen."
+    },
+    {
+        "nombre": "Red Fuerte",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, no acumulable",
+        "descripcion": "Este conjuro hace que una red sea irrompible por cualquier medio, incluyendo fuego e intervención divina. Una víctima atrapada solo puede escapar desenredándose, arrancando la red de las manos de su captor o pasando entre los hilos."
+    },
+    {
+        "nombre": "Orilla del Estigia",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual debe realizarse en la orilla del Río Estigia en el Inframundo. Invoca a Jeset el Barquero y su bote a la orilla para llevar al invocador y sus compañeros al otro lado. Por esto, Jeset cobra una pequeña tarifa de un clack de cobre, o un pequeño objeto mágico de valor variable para los vivos que deseen usar sus servicios."
+    },
+    {
+        "nombre": "Sumergir",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal, acumulable",
+        "descripcion": "Cada punto de este conjuro cancela la flotabilidad de un metro cúbico de cualquier objeto flotante, causando que se hunda. Objetos grandes requieren más puntos de Sumergir para hundirse. Objetos que ya se están hundiendo lo hacen más rápidamente. Un punto de Sumergir es suficiente para hundir a un nadador humano bajo la superficie.\nCada punto de Sumergir cancela 2 puntos del conjuro Flotar (página 53)."
+    },
+    {
+        "nombre": "Invocar Ancestro",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este conjuro invoca un espíritu aleatorio entre los ancestros del lanzador en la Tierra de los Muertos. Rara vez se invoca al mismo espíritu dos veces. Las características del espíritu son las indicadas en la tabla de Invocación Ancestral (página 88), y aparece dentro del alcance del conjuro.\n\nSi el espíritu es amistoso, el invocador puede darle órdenes. El espíritu puede participar en combate espiritual (RuneQuest, página 366) contra un enemigo. También puede lanzar cualquier conjuro que conozca, pero esto reduce sus puntos de magia como es habitual. En cualquier caso, si los puntos de magia del espíritu se reducen a 11 o menos, el espíritu desaparece inmediatamente (incluso si está en combate espiritual) y regresa a la Tierra de los Muertos. Si el espíritu invocado tiene menos de 11 puntos de magia inicialmente, desaparece una vez que pierde cualquier punto de magia.\n\nDespués de dar órdenes al espíritu (si es amistoso), el invocador debe tirar un D100. En un resultado de 00, el espíritu malinterpreta la orden y se vuelve contra el invocador.\n\nEl espíritu no puede ser usado para memorizar conjuros, suministrar puntos de magia o enseñar al invocador. El espíritu puede hablar Lengua Espiritual y su idioma nativo de su vida anterior."
+    },
+    {
+        "nombre": "Invocar Espíritu de Culto",
+        "puntos": "1-3 Puntos (dependiendo del espíritu de culto)",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el espíritu",
+        "descripcion": "Este conjuro permite al lanzador pedir a su deidad que envíe un espíritu de culto en su ayuda. El tamaño del espíritu depende de la cantidad de puntos de Runa acumulados para el conjuro. Como regla general, las deidades mayores tienen más tamaños y tipos de espíritus de culto. La entidad invocada llega al final de la ronda, en el rango de ataque 12.\n\nEste conjuro puede lanzarse simultáneamente con Ordenar (espíritu de culto) (página 30).\n\nInvocar Elemental es un ejemplo específico de este conjuro, pero existen muchas otras variantes. Los cultistas de Chalana Arroy usan este conjuro para invocar un espíritu sanador, y los cultistas de Engizi lo usan para invocar una náyade del Río Arroyuelo.\n\nConsulta el BESTIARIO DE GLOBANTHA, páginas 169–182, para ejemplos de espíritus de culto."
+    },
+    {
+        "nombre": "Invocar Muerto",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este ritual debe realizarse sobre el cadáver, tumba u otros restos del individuo que se invoca, y el invocador debe conocer el nombre del difunto. Si el ser objetivo reside actualmente en las vastas Cavernas de los Muertos de Ty Kora Tek, su fantasma surge de la tierra al final de la invocación."
+    },
+    {
+        "nombre": "Invocar Demonio",
+        "puntos": "1-3 Puntos (dependiendo del tamaño)",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el demonio",
+        "descripcion": "Con este conjuro, el lanzador pide a Shargash que envíe un demonio del Inframundo. El tamaño del demonio depende de la cantidad de puntos de Runa acumulados con el conjuro. Una vez invocado, el demonio busca destrucción y caos, y ataca inmediatamente al objetivo más cercano a menos que el invocador también tenga éxito con un conjuro de Ordenar (espíritu de culto) (página 30). Si tiene éxito, el demonio sirve al invocador hasta que el conjuro expire o sea destruido físicamente."
+    },
+    {
+        "nombre": "Invocar Delfín",
+        "puntos": "1 Punto",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el delfín",
+        "descripcion": "Este conjuro invoca un delfín a las aguas marinas más cercanas al lanzador. El delfín es amistoso con los adoradores de Choralinthor y está dispuesto a ayudarlos."
+    },
+    {
+        "nombre": "Invocar Elemental (Tipo)",
+        "puntos": "1-3 Puntos (dependiendo del tamaño)",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el elemental",
+        "descripcion": "Con este conjuro, el lanzador pide a su deidad que envíe un elemental. El tamaño del elemental depende de los puntos de Runa acumulados con el conjuro (y está limitado por el tamaño máximo disponible para el culto).\n\nLos elementales vienen en tres tamaños: pequeño, mediano y grande. Consulta el Bestiario de Glorantha, páginas 176–182, para más detalles. Un elemental pequeño tiene un metro cúbico de tamaño (1x1x1). Dos puntos de Runa invocan un elemental mediano, que ocupa tres metros cúbicos (1x3x1). Tres puntos de Runa invocan un elemental grande, que ocupa diez metros cúbicos (2x5x1). La mayoría de los cultos tienen límites en cuanto al tamaño del elemental que pueden invocar.\n\nUna vez invocado, un elemental actúa según su naturaleza y afiliación de culto. Un elemental no controlado puede destruir cosas juguetonamente a su alrededor, alejarse o incluso atacar a aquellos hostiles a su dios, todo a discreción del director de juego.\n\nSi el invocador lanza un conjuro apropiado de Ordenar (espíritu de culto) (página 30) y supera el POW del elemental, este sirve al invocador hasta que sea destruido físicamente o el conjuro termine. Si el lanzador no supera el POW del elemental, este se vuelve hostil. El lanzador puede intentar nuevamente lanzar Ordenar (espíritu de culto) y superar el POW del elemental, pero será más difícil mientras es atacado.\n\nUn aventurero puede invocar y controlar cualquier cantidad de elementales. Un elemental no puede ser invocado sin al menos una cantidad razonable de ese elemento presente. No necesita estar cerca del volumen del elemental, pero si un aventurero está sin agua en el desierto, ¡no puede invocar un elemental de agua!\n\nUna vez que se invoca un elemental con éxito, la deidad envía el mismo elemental cada vez que el aventurero invoca un elemental de ese tamaño y tipo. Si el lanzador invoca más de un elemental de ese tamaño, puede elegir cuál invocar en el futuro."
+    },
+    {
+        "nombre": "Invocar Pez",
+        "puntos": "1 Punto",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el pez",
+        "descripcion": "Este conjuro invoca un pequeño banco de peces nativos de las aguas locales para que aparezcan mágicamente en las aguas donde se realizó la invocación, en la ronda de combate posterior a la invocación. El tamaño del banco depende de la especie de pez invocada. Los peces no están bajo el mando del invocador.\n\nCada punto acumulado aumenta el tamaño del banco de peces."
+    },
+    {
+        "nombre": "Invocar Fantasma",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este ritual debe realizarse sobre el cadáver, tumba u otros restos del individuo que se invoca. También se debe conocer el nombre del individuo. Si la persona contactada reside actualmente en el Cuarto Infierno, su fantasma surge de la tierra al final de la invocación. Dura 15 minutos."
+    },
+    {
+        "nombre": "Invocar Guardián",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este ritual invoca un espíritu con 2D6+6 POW y 3D6 CHA para proteger tesoros almacenados bajo tierra o en una estructura dedicada a Asrelia (como un granero). El espíritu se manifiesta como una serpiente grande o un perro grande, y el conjuro termina si es asesinado. El espíritu guardián conoce 1D3 puntos de magia de espíritu de culto (típicamente Curar o Desmoralizar). El espíritu está vinculado a los límites de la estructura y debe recibir adoración regular del dueño y/o sus compañeros. El lanzador puede aprovechar los puntos de magia del espíritu guardián mientras esté dentro de los límites de la estructura."
+    },
+        {
+        "nombre": "Invocar Guardián de Thanatar",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este conjuro invoca el espíritu de un miembro fallecido del culto desde el Lugar de la Espera. El espíritu usa combate espiritual para atacar a una víctima especialmente preparada. Si supera a la víctima en combate espiritual, toma posesión del cuerpo. Si el cuerpo es asesinado posteriormente, el espíritu regresa al Lugar de la Espera. Tira 2D6+6 para el INT del guardián y 3D6 para su POW. Su STR, CON, SIZ, DEX y CHA son los de la víctima. Conoce 2D6 puntos de magia de espíritu de culto y tiene 2D6-5 puntos de Runa con un aspecto elegido por el director de juego."
+    },
+    {
+        "nombre": "Invocar Espíritu Sanador",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este conjuro invoca un espíritu sanador como se describe en el Bestiario de Glorantha, página 169. A menos que esté sujeto a un conjuro de Ordenar (espíritu de culto), el espíritu sanador actúa en el siguiente orden de prioridad:\n\n1. Atacar al Espíritu de Enfermedad más poderoso presente en combate espiritual.\n2. Liberar a una persona infectada de una enfermedad como se describe en el Bestiario (página 169).\n3. Curar a la persona más cercana a la muerte. El espíritu puede curar tantos puntos de daño como puntos de magia tenga. Solo puede curar a un ser determinado una vez en un período de 24 horas, y el proceso de curación tarda una hora, pero evita la muerte incluso para una víctima con puntos de vida negativos (suponiendo que el espíritu tenga suficientes puntos de magia para llevar a la víctima a puntos de vida positivos).\n\nLa POW y CHA del espíritu sanador se determinan en la siguiente tabla:\n\n| D100  | POW      | CHA       |\n|-------|----------|-----------|\n| 01–10 | 1D6      | 1D3       |\n| 11–20 | 2D6      | 1D6       |\n| 21–35 | 3D6      | 2D6       |\n| 36–75 | 3D6+6    | 3D6       |\n| 76–90 | 4D6+6    | 3D6+3     |\n| 91–95 | 5D6+6    | 3D6+6     |\n| 96    | 6D6+6    | 3D6+6     |\n| 97    | 7D6+6    | 3D6+6     |\n| 98    | 8D6+6    | 3D6+6     |\n| 99    | 9D6+6    | 4D6+6     |\n| 00    | 10D6+6   | 4D6+6     |"
+    },
+    {
+        "nombre": "Invocar Guardián del Hogar",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este ritual invoca un espíritu con 2D6+6 POW y 3D6 CHA para proteger un hogar y sus miembros. El espíritu se manifiesta como una serpiente grande, y el conjuro termina si es asesinado. El espíritu del hogar conoce 1D3 puntos de magia de espíritu de culto (típicamente Curar o Desmoralizar, páginas 115 y 112). El espíritu está vinculado a los límites del hogar y debe recibir adoración regular de la familia. El lanzador puede aprovechar los puntos de magia del espíritu del hogar mientras esté dentro de los límites de la casa."
+    },
+    {
+        "nombre": "Invocar Ninfa de Hielo",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual, a distancia",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro invoca una ninfa de hielo, una diosa local de la nieve de montaña. El ritual debe realizarse en una montaña y el invocador necesita tener acceso a suficiente hielo o nieve para que la ninfa de hielo se manifieste. La ninfa de hielo no está bajo el mando del invocador, pero actúa como ella considere apropiado."
+    },
+    {
+        "nombre": "Invocar Holiri",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable",
+        "descripcion": "Este conjuro invoca un holiri (un demonio de hielo descrito en el Bestiario de Glorantha, página 184). El invocador necesita tener acceso a hielo o nieve para que el holiri se manifieste."
+    },
+    {
+        "nombre": "Invocar Enjambre de Insectos",
+        "puntos": "1 Punto",
+        "distancia": "Invocación, a distancia, temporal, acumulable",
+        "duracion": "Varía según el enjambre",
+        "descripcion": "Este conjuro invoca un enjambre de insectos de tamaño normal. Estos no necesitan características, solo una descripción de efectos. El tipo de insecto invocado depende del subculto del lanzador. Por cada punto de Runa acumulado, consulta la tabla de Enjambre de Insectos:\n\n| Puntos de Runa | Tamaño del Enjambre (y equivalente) | Daño por Ronda |\n|----------------|-------------------------------------|----------------|\n| 1              | Muy pequeño (pequeño nido de avispas)| 1D6            |\n| 2              | Pequeño (nido grande de avispas, pequeña colmena)| 2D6            |\n| 3              | Grande (colmenea promedio)          | 3D6            |\n| 4              | Muy grande (colmenea grande)        | 4D6            |\n| 5              | Enorme (colonia de hormigas de fuego)| 5D6            |\n\nLa armadura funciona de manera diferente contra un enjambre de insectos. Primero, los puntos de armadura reducen cada D6 tirado por el daño por ronda. Segundo, la protección es diferente: la armadura normal solo resta 1 por D6 de daño por ronda (incluso un peto de bronce solo protege 1 punto por D6), la ropa pesada protege 2 puntos por D6, y la armadura natural (como piel gruesa) y los conjuros mágicos protegen su cantidad completa por D6.\n\nEl daño se aplica a los puntos de vida generales, no por ubicación, pero al determinar la protección de la armadura, se usa la ubicación con la menor protección."
+    },
+    {
+        "nombre": "Invocar Lodril",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro debe lanzarse en el borde de un volcán activo. Cada punto de Runa en el conjuro da un 1% de probabilidad de comenzar una erupción. Varios lanzadores pueden acumular sus conjuros para aumentar la probabilidad total de éxito. La explosión real se retrasa varias horas después de que comienzan los primeros temblores, por lo que los grupos de invocación tienen tiempo para escapar de la furia del volcán."
+    },
+    {
+        "nombre": "Invocar Ludoch",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Invocación, no acumulable, de un solo uso",
+        "descripcion": "Este ritual de una hora de duración señala a todos los Ludoch de la tribu Chorolinthor dentro de cinco kilómetros para que terminen sus asuntos inmediatos rápidamente, reúnan cualquier equipo y naden hacia el invocador dentro de los dos días posteriores al lanzamiento del conjuro. Durante este tiempo, el lanzador debe permanecer en el mismo lugar o el conjuro se dispersa y libera a la tribu de su compulsión de informar. El conjuro debe lanzarse desde dentro o en las orillas de la Bahía Mirrorsca. El conjuro es un privilegio y no debe ser abusado."
+    },
+    {
+        "nombre": "Invocar Luxita",
+        "puntos": "3 Puntos",
+        "distancia": "Invocación",
+        "duracion": "No acumulable",
+        "descripcion": "Este conjuro invoca a uno de los Pueblos del Cielo para que caiga del cielo a la tierra y luche por el invocador. La misma Luxita responde cada invocación.\n\nLa lanza de la Luxita es un haz de luz solidificada.\n\nEl Rayo de Luz es un haz de los ojos de la Luxita que hace 1D6 de daño directamente a los puntos de vida generales del objetivo si se supera el POW del objetivo. La armadura no protege contra el Rayo de Luz.\n\n**Estadísticas de Luxita:**\n- **STR:** 3D6+3 (13–14)\n- **SIZ:** 3D6+3 (13–14)\n- **CON:** 2D6+6 (10–11)\n- **DEX:** 3D6 (15)\n- **INT:** 2D6+6 (13)\n- **POW:** 4D6 (14)\n- **CHA:** 3D6 (10–11)\n\n**Ataques:**\n- **Lanza a dos manos:** 75%, daño 1D8+1 + bonificación, SR 4, HP 25\n- **Rayo de Luz:** Automático, 1D6 a puntos de vida generales, SR 1\n\n**Ubicaciones de golpe (D20):**\n- **Pierna derecha:** 01–03, AP/HP 6/4\n- **Pierna izquierda:** 04–06, AP/HP 6/4\n- **Abdomen:** 07–09, AP/HP 6/4\n- **Pecho:** 10, AP/HP 6/5\n- **Ala derecha:** 11–12, AP/HP 6/3\n- **Ala izquierda:** 13–14, AP/HP 6/3\n- **Brazo derecho:** 15–16, AP/HP 6/3\n- **Brazo izquierda:** 17–18, AP/HP 6/3\n- **Cabeza:** 19–20, AP/HP 6/4\n\n**Atributos:**\n- **Puntos de vida:** 12\n- **Movimiento:** 8/12\n- **Rango de ataque:** 4\n- **Puntos de magia:** 14\n- **Armadura:** Armadura de luz\n- **Habilidades:** Volar 90%"
+    },
+    {
+        "nombre": "Invocar Espíritu de la Ley",
+        "puntos": "1 Punto",
+        "distancia": "Invocación, a distancia, temporal, no acumulable",
+        "descripcion": "Este conjuro invoca un espíritu débil (POW 2D6+6 y CHA 2D6) para un ataque de combate espiritual contra un objetivo del Caos. El espíritu tiene una habilidad de combate espiritual igual a su POWx5 y no conoce conjuros. Si el espíritu aparece y no detecta un espíritu o alma del Caos, el Espíritu de la Ley se va sin atacar."
+    },
+        {
+        "nombre": "Invocar Espíritu Maestro",
+        "puntos": "2 Puntos",
+        "distancia": "Invocación, Instantáneo, No acumulable",
+        "duracion": "Varía",
+        "descripcion": "Este conjuro debe acumularse con el conjuro de Invocar Ancestro de 1 punto (página 87). El espíritu invocado puede enseñar conjuros, dar información o actuar como un fetch de chamán durante la duración del conjuro. Permite la enseñanza rápida de conjuros, que pueden aprenderse en un día. Puede acumularse con Invocar Ancestro Específico (página 95)."
+    },
+    {
+        "nombre": "Invocar Marea Gigante",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "descripcion": "Este conjuro debe lanzarse en el mar. Cada punto acumulado con el conjuro da un 1% de probabilidad de invocar a Marea Gigante, un elemental de agua demasiado poderoso para ser sometido a un conjuro de Ordenar.\n\nCuando se invoca, Marea Gigante avanza hacia tierra en la dirección especificada por el lanzador(es). Se mueve con increíble velocidad hasta acercarse a la costa. Luego se eleva como un enorme muro de agua que puede viajar varios kilómetros tierra adentro antes de retroceder."
+    },
+    {
+        "nombre": "Invocaciones del Mal",
+        "puntos": "3 Puntos",
+        "distancia": "Ritual",
+        "duracion": "Invocación, No acumulable",
+        "descripcion": "Este conjuro se realiza típicamente al comienzo de un ritual de Adoración a Orlanth. Requiere hacer una efigie de un enemigo del lanzador (que puede ser un individuo, una deidad, una especie, etc.). La efigie suele hacerse de mimbre o madera. Cuando se lanza, el conjuro anima la efigie con un espíritu malévolo asociado a ese enemigo. También invoca al representante más poderoso de ese enemigo durante la duración del ritual.\n\nEl espíritu invocado suele tener un POW entre 4D6+6 y 5D6+6, pero no se desconocen espíritus más poderosos. El espíritu permanece atrapado dentro de la efigie y sus límites hasta el final del ritual, cuando los participantes deben destruirlo. Durante este tiempo, se defiende con cualquier habilidad que posea, ya sea mágica o de otro tipo. El espíritu tiene puntos de vida y una STR igual a su POW y siempre tiene uno o más poderes espirituales (Bestiario de Glorantha, página 165).\n\nSi la efigie es destruida, los participantes obtienen un +20% para superar la resistencia mágica o defenderse contra conjuros lanzados por el enemigo representado por la efigie durante la ceremonia. También obtienen un +50% en su tirada de Adoración para esa ceremonia (como resultado, los puntos de Runa gastados en el conjuro suelen recuperarse al final de la ceremonia).\n\nMientras la efigie está presente, el conjuro invoca al representante más poderoso del enemigo dentro del alcance del conjuro. El enemigo no se da cuenta de que ha sido invocado, pero siente una necesidad urgente de ir al lugar donde se realiza el ritual. Esta compulsión tiene sentido racional y emocional para el sujeto: puede 'reconocer' que esta es una rara oportunidad de destruir a un enemigo odiado, o quizás que se necesita un ataque preventivo para evitar que el lanzador realice un ritual más peligroso. El enemigo se apresura a reunir compañeros, seguidores y aliados y luego parte por los medios normales de viaje para el enemigo.\n\nEl alcance se determina por el tiempo que se mantiene el ritual hasta que se destruye la efigie. Cuanto más se mantenga la ceremonia, mayor será el alcance. Por ejemplo, durante una ceremonia de Adoración típica de un día, el conjuro invoca a un enemigo dentro de un día de viaje (normalmente entre 8-16 kilómetros). Si la ceremonia se mantiene durante los 14 días del Tiempo Sagrado, un enemigo a 200 kilómetros de distancia podría ser invocado. Si el lanzador tiene un enemigo que realiza búsquedas heroicas, el conjuro siempre intentará invocar a ese ser, además del enemigo inicial invocado por la efigie.\n\nUna vez destruida la efigie, el enemigo ya no está obligado a viajar, pero puede venir de todos modos, especialmente si compañeros, aliados y seguidores ya han comenzado a viajar."
+    },
+    {
+        "nombre": "Brillo Solar",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, No acumulable",
+        "descripcion": "Este conjuro crea un círculo de luz de 60 metros de radio alrededor del objetivo del conjuro. Si el objetivo no está dispuesto, el lanzador debe superar su POW. Esta luz tiene el efecto de la luz del día plena, por lo que afecta a criaturas como los troles de cueva. Desmoraliza a vampiros, ghouls y otros no muertos inteligentes (como el conjuro Desmoralizar, página 112). Cualquiera que ataque al objetivo sufre un -10% a su habilidad de ataque.\n\nUn elemental de Oscuridad recibe 1D3 puntos de daño cada ronda que permanezca bajo la influencia de un conjuro Brillo Solar. Si un conjuro Brillo Solar se lanza directamente sobre un elemental de Oscuridad y supera su POW, el elemental se disuelve. El conjuro entonces termina porque no tiene objetivo."
+    },
+    {
+        "nombre": "Maduración Solar",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Duración (especial), Acumulable",
+        "descripcion": "Este conjuro debe lanzarse el primer día del año después del Tiempo Sagrado. Permite que la vida vegetal recién despertada dentro de los diez metros del lanzador aproveche los poderes del sol para crecer sin moho, óxido o enfermedad. El sol ayuda a resistir insectos y parásitos y a madurar hasta su máximo esplendor. Cada punto adicional aumenta el radio de efecto en diez metros."
+    },
+    {
+        "nombre": "Lanza Solar",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, No acumulable",
+        "descripcion": "Este conjuro solo funciona bajo la luz solar directa. Cuando se lanza, un rayo de fuego solar golpea a un único objetivo designado. El objetivo debe ser visible para el lanzador y no puede resistirse.\n\nEl objetivo y todo ser vivo dentro de un metro del objetivo recibe 4D6 de daño a sus puntos de vida totales. El objetivo solo recibe protección de armadura igual a su valor más bajo en todas las ubicaciones de golpe; la protección mágica es ineficaz contra él. El conjuro hace la mitad de daño en los momentos del amanecer y el atardecer.\n\nA discreción del director de juego, este conjuro puede encender material inflamable o derretir objetos no inflamables, dependiendo del daño tirado y las circunstancias."
+    },
+    {
+        "nombre": "Sostener",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Duración (especial), Acumulable (hasta 4 pts.)",
+        "descripcion": "Este conjuro sostiene cualquier sección de pared, zanja de irrigación o canal durante un día. Sostiene un volumen de 54 metros cúbicos o menos por punto de Runa, para que se pueda trabajar en él."
+    },
+    {
+        "nombre": "Suprimir Lodril",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal, Acumulable",
+        "descripcion": "Este conjuro crea una esfera de tres metros de radio, centrada en cualquier punto especificado dentro del alcance. Si se centra en un objetivo no dispuesto, el lanzador debe superar su POW. Dentro del área hay una neblina sombría equivalente a un conjuro Invocar Elemental Pequeño (Sombra) (página 91). Cualquier iniciado de las Runas de Luz, Calor o Cielo que cruce el límite del conjuro recibe 2D6 de daño directamente a una ubicación corporal aleatoria, ignorando toda armadura, sin posibilidad de resistir. El límite de la esfera también actúa como Contrahechizo de 4 puntos (página 111) contra conjuros lanzados por iniciados o Maestros Rúnicos de cultos basados en las Runas de Luz, Calor o Cielo. Este conjuro puede lanzarse para rodear a un miembro de dicho culto y así restringir sus movimientos.\n\nCada punto de Runa adicional usado en este conjuro aumenta el daño hecho en 1D6 y el efecto de Contrahechizo en 2 puntos."
+    },
+    {
+        "nombre": "Suprimir Oakfed",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo, Acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un fuego. Cada punto reduce el diámetro del fuego en un metro. Si el tamaño se reduce a nada, queda una llama del tamaño de una vela. Un punto de este conjuro reduce el daño hecho por una Hoja de Fuego o Lanza de Fuego en 1D6 (páginas 114 y 52), o disminuye el daño hecho por un elemental de Fuego en 1D6. El elemental de Fuego puede resistir el efecto del conjuro."
+    },
+        {
+        "nombre": "Disparo Seguro",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro se lanza sobre un arma de proyectiles. A menos que el jugador del aventurero saque un 96–00, el próximo ataque de proyectil del aventurero acierta automáticamente, sin importar el movimiento, la distancia (dentro del alcance máximo, por supuesto), el ocultamiento, etc. Las posibilidades de un resultado crítico, especial o fallido siguen basándose en la habilidad de proyectiles del aventurero. Los aciertos exitosos hechos con Disparo Seguro no califican para verificaciones de experiencia. Este conjuro es compatible con Velociflecha o Flecha de Fuego (páginas 119 y 114). Puede combinarse con Multiflecha (página 117), pero solo afecta a la flecha real."
+    },
+    {
+        "nombre": "Tragar",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Instantáneo",
+        "acumulable": "Acumulable",
+        "descripcion": "Cada punto de este conjuro permite al usuario tragar instantáneamente un punto de TAM de cualquier sustancia. Así, un conjuro de 4 puntos permite al usuario tragarse un perro promedio entero. El objetivo previsto puede intentar esquivar o evadir, pero no puede atacar una vez que el conjuro ha surtido efecto. Cualquier ser vivo tragado por el lanzador muere inmediatamente. El objeto o sustancia tragada es destruido y desaparece por completo una vez que termina la duración del conjuro. El lanzador no sufre daño incluso si traga sustancias activamente peligrosas como fuego, ácido o veneno. Además, el lanzador no sufre ningún efecto por usar este conjuro, como un aumento de TAM debido a la cantidad tragada. El director de juego debe determinar si algún objeto tragado es recuperable después de lanzar el conjuro."
+    },
+    {
+        "nombre": "Sudor Ácido",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Hace que la piel del objetivo secrete un ácido con un POT igual al POD del lanzador. El objetivo y los objetos que lleva o usa no son afectados por el ácido, pero los seres o objetos externos que toquen al objetivo sufren el efecto del ácido."
+    },
+    {
+        "nombre": "Cambiar de Lugar",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre una aparición creada mediante el conjuro rúnico Visión Ilusoria (página 59) que el lanzador pueda ver. El lanzador intercambia lugares con la aparición. Una táctica común es que el lanzador cree una aparición de sí mismo, permita que sea revelada como una ilusión (y por lo tanto deje de ser de interés), y luego lance Cambiar de Lugar."
+    },
+    {
+        "nombre": "Trance de Espada",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro fusiona la conciencia del lanzador con su espada. El conjuro debe potenciarse con 1 o más puntos de magia. Cada punto de magia aumenta la habilidad de espada deseada del lanzador en +10%. Este conjuro puede combinarse con otros conjuros que potencien armas. Este conjuro no combina efectos con Berserker (página 16) o Fanatismo (página 114). Mientras está en trance, el usuario solo puede lanzar conjuros que potencien armas, como Afilar Arma, Reparar, etc. (páginas 110 y 118), excluyendo toda otra magia, incluida la curación. Si la batalla termina antes de que expire el conjuro, el usuario permanece en reposo y espera a nuevos enemigos. Este no es un conjuro de Berserker; el usuario sabe quiénes son sus amigos y enemigos. Sin embargo, el usuario está en trance y no puede beber, comer, dormir o hacer nada excepto concentrarse en su espada y sus enemigos. Cuando deja de concentrarse en usar su espada en batalla, el conjuro termina."
+    },
+    {
+        "nombre": "Tambor",
+        "puntos": "2 Puntos",
+        "distancia": "Especial",
+        "duracion": "Especial",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un grupo de bailarines, hasta una tribu entera. El lanzador del conjuro debe tocar un tambor y sacrificar permanentemente uno o más puntos de una o más de sus características (FUE, TAM, POD, etc.). Todos los participantes en el baile que tengan éxito en su habilidad de Baile al menos una vez añaden esos puntos a sus atributos durante la duración del conjuro. Así, si el tamborilero sacrifica 3 de su INT, todos los bailarines exitosos tendrían su INT aumentada en 3 durante la duración del conjuro. La duración y el poder del conjuro dependen del tamborilero, quien debe tirar su habilidad de Tocar Tambor una vez por hora. Cada vez que falle, la ganancia en cada característica potenciada disminuye en 1 punto. Una vez que no quede ningún aumento de característica, el conjuro termina y el tamborilero colapsa. Otras personas suelen encargarse de cuidarlo. Frecuentemente, varios tamborileros se reúnen para lanzar este conjuro, distribuyendo así la pérdida de características y aumentando la distancia que recorre el sonido. Si una persona beneficiada por este conjuro se aleja del alcance auditivo de todos los tambores, pierde 1 punto de cada característica potenciada, pero no sufre ningún otro efecto negativo. Si la persona regresa al alcance auditivo y los tambores siguen sonando, sus características aumentan nuevamente."
+    },
+    {
+        "nombre": "Matorral Espeso",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro requiere semillas tan especiales y raras que normalmente solo hay disponibles 1D6 semillas por año para cualquier chamán o Jardinero. Las semillas se conservan indefinidamente. Cuando se lanza el conjuro y las semillas se arrojan sobre tierra cultivable, cada semilla crece hasta convertirse en un cubo de tres metros de matorral impenetrable. El matorral tarda 15 minutos en madurar. Si el lanzador también usa Crecimiento Acelerado (página 10), el matorral madura en siete rondas de combate. Cortar el matorral daña el arma cortante en 9 puntos por ronda, como si hubiera parado un ataque que causara ese daño. Quemar cada cubo de tres metros produce una esfera de gas venenoso de seis metros de radio con un POT de 9. Para cortar el matorral, cada sección de un metro cúbico tiene 10 puntos de golpe. El matorral muere en un día a menos que se mantenga con 1 punto de magia por semilla por día."
+    },
+    {
+        "nombre": "Toro Dócil",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Si el lanzador supera el POD del toro objetivo, este conjuro calma al toro lo suficiente como para que el lanzador lo castre, lo ate a un arado o incluso lo monte. El conjuro funciona con todo el ganado macho (incluidos todos los machos de las bestias de manada de Prax), ganado castrado (bueyes) o toros del cielo. También calma a los cultistas de Toro de Tormenta y los pone de buen humor."
+    },
+    {
+        "nombre": "Teleportación",
+        "puntos": "3 Puntos",
+        "distancia": "Personal (y Toque)",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "El lanzador puede teletransportarse a cualquier lugar que pueda ver, ya sea directamente o a través de los ojos de un espíritu aliado. Cada punto adicional permite al lanzador teletransportar un ser vivo extra al mismo tiempo, siempre que estén en contacto con él. El destino previsto debe ser un lugar real capaz de acomodar al objetivo y no puede ser algo vago como 'en el cielo'. El conjuro puede usarse para teletransportar a otra persona, pero el lanzador debe estar en contacto físico con el objetivo y superar su POD."
+    },
+    {
+        "nombre": "Aterrorizar Caballo",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro solo afecta a caballos. Hace que el caballo afectado entre en pánico sin posibilidad de resistencia: inmediatamente se encabrita, gira y huye del lanzador a un galope incontrolable durante la duración del conjuro. El caballo intenta saltar o esquivar obstáculos, obligando al jinete a hacer una tirada de Montar o caerse. Si el caballo está atrapado y no puede huir, se derrumba, temblando, durante la duración del conjuro."
+    },
+    {
+        "nombre": "Rayo",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "Acumulable",
+        "descripcion": "El cielo debe tener nubes visibles para que este conjuro sea efectivo, aunque las nubes podrían ser invocadas usando Llamar Nubes (página 30). Este conjuro atrae un rayo de energía divina de las nubes de tormenta y lo dirige a un objetivo específico, acompañado de un estruendo ensordecedor. Este conjuro causa 3D6 puntos de daño directamente a los puntos de golpe totales sin posibilidad de resistencia. Ni la armadura ni los conjuros que protegen contra el daño físico son efectivos, aunque la Contramagia (página 111) funciona. Cada punto acumulado añade otro objetivo."
+    },
+    {
+        "nombre": "Lengua",
+        "puntos": "2 Puntos",
+        "distancia": "Personal",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro convierte la lengua del objetivo en un arma con un alcance de tres metros y una probabilidad de ataque base de DESx5 del objetivo. Con cada ataque exitoso, el objetivo debe superar el POD de la víctima. Si tiene éxito, la lengua causa 4D3 de daño. La armadura protege contra este daño."
+    },
+    {
+        "nombre": "Transferir Embarazo",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Instantáneo",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro transfiere un embarazo entre hembras de la misma especie que estén dispuestas. El lanzador puede acumular puntos adicionales por cada uno de los siguientes modificadores: los objetivos son de especies diferentes, alguno de los participantes no es sensible, o alguno no es una hembra biológica."
+    },
+    {
+        "nombre": "Transformar Cabeza (Abeja)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro convierte la cabeza del objetivo en la cabeza de una abeja gigante. Esto otorga la capacidad de almacenar alimentos líquidos internamente y de beber de las flores. El objetivo puede beber líquidos (incluidos cerveza, miel, agua, etc.) y almacenarlos internamente sin dañarlos en lo más mínimo, aunque si bebe más de un líquido, se mezclarán. El objetivo puede regurgitar el líquido más tarde y seguirá siendo perfectamente potable. Este líquido puede almacenarse de forma segura más allá de la duración del conjuro, pero no se pueden beber nuevos líquidos."
+    },
+    {
+        "nombre": "Transformar Cabeza (Escarabajo)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro convierte la cabeza del objetivo en la de un escarabajo gigante, con grandes mandíbulas espinosas. Obtienen un ataque de mordisco adicional que causa un daño base de 2D6 (más el bonus de daño) con una probabilidad de acierto de DESx5 (que puede mejorarse con experiencia), con un coste de rango de ataque de 3. La cabeza del objetivo también gana una armadura de 6 puntos."
+    },
+    {
+        "nombre": "Transformar Cabeza (León)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro convierte la cabeza del objetivo en la de un león. Obtiene un ataque de mordisco adicional con una habilidad de ataque base igual a su DESx3 (que puede mejorarse con experiencia) que causa 1D10 de daño más el bonus de daño. El objetivo puede morder cada ronda (además de atacar y parar o esquivar), aunque el mordisco debe realizarse a 3 rangos de ataque de distancia de cualquier otro ataque que haga el objetivo. El objetivo también puede ver en cualquier nivel de luz como si fuera de día (como el conjuro Ojo de Gato, página 24)."
+    },
+    {
+        "nombre": "Transformar Cabeza (Saltamontes)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro convierte la cabeza del objetivo en la de un saltamontes gigante. Añade 3 puntos de armadura natural a la cabeza y otorga un ataque de mordisco con una habilidad del 25% (que puede mejorarse con experiencia) que causa 2D6 de daño. El objetivo también puede devorar cualquier cosa a voluntad, siempre que no sea realmente venenosa o activamente dañina, como metal al rojo vivo."
+    },
+    {
+        "nombre": "Transformar Cabeza (Polilla)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "La cabeza del objetivo se convierte en la de una gran polilla peluda. El objetivo obtiene largas antenas plumosas que pueden rastrear ciertos objetos específicos muy bien; cuando se lanza el conjuro, el objetivo puede especificar una especie animal o vegetal determinada a la que ser sensible. El objetivo tiene un 100% de probabilidad de Rastrear ese tipo de ser, un 100% de probabilidad de detectar esa especie y precisar su ubicación si está dentro de 160 metros."
+    },
+    {
+        "nombre": "Transformar Cabeza (Tortuga)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro le da al objetivo la cabeza de una gran tortuga. El objetivo puede aguantar la respiración durante 15 minutos, y su cabeza gana 3 puntos de armadura. El objetivo pierde la capacidad de hablar."
+    },
+    {
+        "nombre": "Transformar en Sí Mismo",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Especial",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro debe acumularse con los tres conjuros de cambio de forma especializados del culto. Por ejemplo, un cultista de Odayla usa Piel de Oso, Fuerza de Oso y Garras (páginas 15 y 28). Cuando estos conjuros se combinan con Transformar en Sí Mismo, el usuario se transforma físicamente en una versión mágica y semidivina del animal del dios. Todos los conjuros surten efecto completo y duran una hora completa. Todas las habilidades normales del animal pueden ser utilizadas por el objetivo durante la duración del conjuro."
+    },
+    {
+        "nombre": "Traducir",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro traduce todas las palabras tocadas por el dedo índice del objetivo a velocidad de lectura normal (unas 3.000 palabras escritas en 15 minutos), dejando una impresión del significado después, de una manera que ayuda en las traducciones del mismo idioma o escritura. Las palabras intraducibles no se traducen, aunque el objetivo recibe una idea del significado de la palabra."
+    },
+    {
+        "nombre": "Canción de Tala de Árboles",
+        "puntos": "2 Puntos",
+        "distancia": "Ritual",
+        "duracion": "No acumulable",
+        "descripcion": "Este ritual se realiza como una canción grupal que influye en todos los miembros del culto de Kyger Litor (incluidos los laicos) que participan. El lanzador y todos los participantes deben golpear troncos con sus mazas o mazos como parte del ritual. Los efectos duran una batalla o un día, lo que termine primero. Todos los influenciados pueden usar cualquier tipo de hacha contra Aldryami de cualquier tipo como si esas armas fueran mazas o mazos. No se convierten otros tipos de armas. En cualquier batalla entre elfos y trolls, la noche anterior a la batalla se caracteriza por varias reuniones de trolls golpeando troncos y cantando su canción gutural."
+    },
+    {
+        "nombre": "Habla Verdadera",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro obliga a la víctima a no decir más que la verdad durante la duración, respondiendo a todas las preguntas de manera literal. El usuario debe superar el POD del objetivo por cada pregunta. El objetivo puede negarse a hablar, pero si habla y su POD es superado, debe decir la verdad. Combinado con Leer Mente (página 65), este conjuro convierte al sabio de Lhankor Mhy en un inquisidor potente."
+    },
+    {
+        "nombre": "Afinación Verdadera",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro debe lanzarse sobre un instrumento musical de cuerda, que brilla por los efectos del conjuro. Duplica la habilidad de cualquiera que intente tocar ese instrumento."
+    },
+    {
+        "nombre": "Verdadera (Arma)",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Lanzado sobre un arma cuerpo a cuerpo especificada, este conjuro duplica el daño normal del arma. Cuando el portador acierta, tira los dados de daño del arma dos veces y suma los resultados. El bonus de daño del portador no se duplica. La versión Humakti de este conjuro se llama Espada Verdadera, pero algunos otros cultos tienen versiones para sus propias armas."
+    },
+    {
+        "nombre": "Voltear Golpe",
+        "puntos": "3 Puntos",
+        "distancia": "Personal",
+        "duracion": "Especial",
+        "acumulable": "No acumulable",
+        "descripcion": "Durante las próximas 12 rondas de ataque, este conjuro refleja todo el daño infligido al lanzador de vuelta al atacante. Si el lanzador es golpeado por un ataque cuerpo a cuerpo o de proyectil, cualquier daño que atraviese la armadura también daña al atacante. La armadura del atacante no protege contra el daño reflejado. El veneno y el veneno de arma no se reflejan, pero el daño de conjuros que potencian armas como Afilar Arma (página 110) sí. Escudo (página 78) protege contra los efectos de este conjuro. Las ubicaciones de los golpes se mantienen constantes, de modo que si el lanzador es golpeado en la cabeza, el daño reflejado va a la cabeza del atacante (si no hay un equivalente directo, usa el mismo dado de ubicación de golpe). Ejemplo: Ramba la sacerdotisa lanza este conjuro en una pelea contra un elfo. El conjuro surte efecto en la ronda de ataque 3 y el elfo acierta con una lanza larga también en la ronda de ataque 3, simultáneamente. El elfo saca un impacto crítico y también añade su conjuro Afilar Arma para un total de 18 puntos de daño. Ramba tiene 4 puntos de armadura en su abdomen (la ubicación del golpe), así que 14 penetran. 14 también van directamente al abdomen del elfo, cuya armadura de 6 puntos más 4 puntos del conjuro Protección no cuentan, y muere. Este conjuro es compatible con Atraer Atención (página 13)."
+    },
+    {
+        "nombre": "Ahuyentar No Muertos",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "Acumulable",
+        "descripcion": "Cada punto de este conjuro afecta a una criatura no muerta (esqueleto, zombi, momia, ghoul, vampiro, etc.). El lanzador debe superar los puntos de magia de cada objetivo (los no muertos no tienen POD) con su propio POD; tira por separado para cada objetivo. Si tiene éxito, tira en la tabla de Resultados de Ahuyentar No Muertos: \n\nTABLA DE RESULTADOS DE AHUYENTAR NO MUERTOS\n\n| RESULTADO    | EFECTOS    |\n|--------------|------------|\n| Crítico      | El no muerto es destruido, liberado o terminado de manera apropiada. |\n| Especial     | El no muerto queda paralizado e inmóvil durante 20 rondas de combate menos el INT de la criatura (los que no tienen INT son afectados durante 20 rondas), con un mínimo de una ronda. |\n| Éxito        | El no muerto se da la vuelta y huye, si es posible. Si no, usa los efectos de éxito especial, arriba. |\n| Fracaso      | El no muerto queda confundido (como el conjuro Confundir, página 110). |\n| Pifia        | Sin efecto. |"
+    },
+    {
+        "nombre": "Unisonancia",
+        "puntos": "1 Punto",
+        "distancia": "Especial",
+        "duracion": "Especial",
+        "acumulable": "Acumulable",
+        "descripcion": "El lanzador debe sentarse en el suelo, frente a un fuego con un instrumento especialmente encantado. Al lanzar el conjuro, el instrumento resuena con el otro instrumento con el que está emparejado. El lanzador puede entonces comunicarse musicalmente a una distancia de 15 kilómetros por punto acumulado. La comunicación se lleva a cabo con las melodías tocadas."
+    },
+    {
+        "nombre": "Unidad",
+        "puntos": "3 Puntos",
+        "distancia": "Temporal",
+        "duracion": "Acumulable (hasta 4 pts.)",
+        "descripcion": "Este conjuro genera una Pasión de Amor (otro) entre dos personas, comenzando en 60%. Por cada punto de Runa adicional acumulado con el conjuro, resta -10% al valor inicial de la pasión, hasta un máximo de 100%, o se puede añadir una persona adicional. Cuando el conjuro expire, la pasión mágica se desvanecerá en un anhelo distante por algo ausente."
+    },
+    {
+        "nombre": "Mordedura Venenosa",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Con un ataque de mordisco exitoso que cause daño, el objetivo de este conjuro inyecta un veneno con un POT igual al POD del lanzador. El objetivo es inmune a los efectos del veneno durante la duración del conjuro."
+    },
+    {
+        "nombre": "Potenciar Veneno",
+        "puntos": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable (hasta 4 pts.)",
+        "descripcion": "Cada punto de este conjuro (hasta 4) lanzado sobre un hombre escorpión aumenta el POT de su veneno de aguijón en 1D6. El aumento se tira por separado para cada ataque de aguijón que atraviese la armadura."
+    },
+    {
+        "nombre": "Víspera",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro hace que el lanzador brille con un color rojo sangre apagado. Este brillo cubre un área de diez metros de diámetro. El lanzador y sus aliados suman +5% a sus habilidades efectivas en combate espiritual y lanzamiento de conjuros mientras estén dentro del brillo. Cada punto adicional aumenta el diámetro en diez metros o añade otro +5% al bonus."
+    },
+    {
+        "nombre": "Visión",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro proporciona un punto de vista hasta 160 metros de distancia del espíritu del objetivo del conjuro. Ver desde este punto de vista es aproximadamente como ver a través de los ojos del lanzador, pero proporciona una vista de 180°. El punto de vista puede girarse hasta 180° en una ronda de combate. El punto de vista no puede moverse. Mientras usa Visión, el lanzador no puede usar sus propios ojos. Sin embargo, puede cambiar entre el punto de vista del conjuro y el suyo propio de una ronda de combate a otra. El punto de vista es visible como una esfera semitransparente de unos cuatro centímetros de diámetro. Los conjuros de ataque lanzados contra el punto de vista afectan al lanzador del conjuro de Visión."
+    },
+    {
+        "nombre": "Vomitar Ácido",
+        "puntos": "3 Puntos",
+        "distancia": "Personal",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "Este horripilante conjuro debe potenciarse con uno o más puntos de magia. El usuario vomita inmediatamente una cantidad de ácido humeante con un POT igual a los puntos de magia gastados. El lanzador y su equipo no son afectados por el ácido, pero todo lo demás sí. El ácido mágico producido es suficiente para cubrir gran parte de un objetivo del tamaño de un humano, afectando tres ubicaciones de golpe contiguas en dicho objetivo (menos si el objetivo es más grande que un humano, a criterio del director de juego). El ácido acierta automáticamente a cualquier objetivo al frente del lanzador y dentro del alcance cuerpo a cuerpo normal, golpeando como si fuera un éxito especial. El objetivo puede esquivar el ácido con una tirada de Esquivar especial. Un parada exitosa significa que el escudo (o arma) que para y la extremidad que para son dos de las tres ubicaciones golpeadas. Las paradas especiales o críticas no tienen efecto sobre el daño del ácido. El ácido inflige su POT en daño por separado a cada ubicación golpeada. La armadura y los conjuros de protección reducen el daño del ácido, pero la Contramagia (página 111) no tiene efecto. El ácido destruye armaduras y armas."
+    },
+    {
+        "nombre": "Protección",
+        "puntos": "1 Punto",
+        "distancia": "Ritual",
+        "duracion": "Acumulable",
+        "descripcion": "Este ritual crea un área de seguridad para quienes estén dentro. Cuatro varitas dispuestas en un rectángulo aproximado definen el límite del área. Pueden estar hechas de cualquier material y deben colocarse para encerrar un área máxima de hasta 100 metros cuadrados (típicamente 10x10 metros). El conjuro se extiende en el aire hasta tres metros por encima de las varitas, y bajo tierra hasta la profundidad de las varitas. Las estacas no necesitan ser visibles para funcionar; algunos lanzadores las entierran por completo. El conjuro conecta estas varitas invisiblemente para formar una barrera detectable solo por medios mágicos. Los efectos de protección se activan cuando enemigos físicos o espirituales del lanzador cruzan la barrera, o cuando se lanza un conjuro a través de la barrera desde el exterior. Cuando esto ocurre, comienza un ruido fuerte (un lamento, silbido, estruendo, etc.), que puede ser suprimido por el sacerdote lanzador. Cada punto de Protección (hasta 4) cuenta como 1 punto de Contramagia (página 111) contra conjuros lanzados a través de la barrera, 2 puntos de Pantalla Espiritual (página 121) contra espíritus externos, e inflige 1D3 de daño, ignorando la armadura, a una ubicación de golpe de cualquier enemigo corpóreo lo suficientemente imprudente como para cruzar el límite. Cada punto acumulado de Protección aumenta el área protegida en otros 100 metros cuadrados. El conjuro de Protección permanece en efecto hasta que se retire una de las varitas. Cualquiera que no sea el lanzador que intente tocar las estacas es afectado por la Protección, pero después de sufrir el efecto, la persona puede retirar las estacas."
+    },
+    {
+        "nombre": "Guerrero de Piedra",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro anima una estatua preparada de piedra y metal al introducir un espíritu elemental de tierra en ella. Un punto permite que un elemental de tierra pequeño habite la estatua, dos permiten un elemental de tierra mediano, y tres permiten uno grande. La estatua no puede ser más grande que TAM 20 y debe estar perfectamente formada (normalmente con Formar Metal (página 78) o Moldear Roca (página 66). La estatua tiene una DES de 1D6, y una FUE igual a la del elemental de tierra que la habita. La CON de la estatua es igual a los puntos de golpe del elemental de tierra, y la armadura de la estatua es igual a su TAM. La estatua tiene el INT y POD del elemental de tierra, y actúa como un elemental típico a menos que sea compelido por Ordenar (espíritu de culto) (página 30). Tiene una probabilidad base de acierto del 5% (más su bonus de ataque), y causa daño igual a su bonus de daño (si no tiene bonus de daño, no causa daño, pero aún puede moverse, etc.). El MOV de la estatua es 3."
+    },
+    {
+        "nombre": "Agotar Lomos",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "Si el lanzador supera el POD del objetivo, este conjuro hace que el objetivo se vuelva impotente y estéril o infértil para siempre: nunca podrá volver a tener hijos."
+    },
+        {
+        "nombre": "Torbellino de Agua",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro crea un torbellino de agua. Por cada punto acumulado, tiene una altura de tres metros y un diámetro de un metro. Los objetivos a más de un metro bajo la superficie del agua están a salvo del torbellino. Cualquier cosa atrapada en el torbellino sufre 1D6 puntos de daño a los puntos de golpe generales por punto acumulado. La armadura más delgada del objetivo protege contra el daño. Si el torbellino golpea un barco, aplica el daño que exceda la calidad del casco del barco directamente a los puntos estructurales del barco cada ronda. El libro RuneQuest Weapons & Equipment contiene más información sobre barcos y combate naval. Si se combina con un Remolino (ver abajo), un objetivo puede quedar atrapado e impedido de salir del área del Torbellino de Agua, obligándolo a recibir daño cada ronda."
+    },
+    {
+        "nombre": "Caminar sobre el Agua",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro permite al objetivo moverse sobre la superficie del agua como si fuera tierra firme (o viceversa, si se lanza sobre un pez)."
+    },
+    {
+        "nombre": "Telarañas",
+        "puntos": "2 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro lanza una masa de hilos plateados sobre un área especificada de tres metros cuadrados. Aquellos dentro de la zona objetivo pueden Esquivar para saltar fuera del camino. Cualquiera golpeado por los hilos queda indefenso hasta que supere la FUE de 40 de la telaraña con su propia FUE. Si múltiples víctimas quedan atrapadas, combinan su FUE y hacen una única tirada de escape para todos. Cualquiera que camine sobre la telaraña tiene sus pies inmovilizados con una FUE de 20."
+    },
+    {
+        "nombre": "Remolino",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro crea un remolino de un metro de diámetro y tres metros de profundidad, con una FUE de 1D6. Cada punto adicional añade un metro al diámetro, tres metros a la profundidad y 1D6 de FUE. Las criaturas que vuelan sobre la superficie del agua son inmunes a los efectos del remolino. Cualquier cosa atrapada en el remolino debe superar la FUE del remolino con la suya o ser succionada hacia abajo. Una víctima atrapada en el remolino no puede realizar ninguna acción excepto intentar escapar. Los seres no acuáticos atrapados en el remolino deben tener éxito en una tirada de Nadar antes de poder superar la FUE del remolino. El capitán de un barco atrapado en el remolino debe tirar su habilidad de Manejo de Barcos. Si tiene éxito, el capitán puede comparar la navegabilidad del barco contra la FUE del remolino. Con un éxito, el barco escapa del remolino. Cada ronda de fallo causa 1D6 de daño a la navegabilidad del barco. Los barcos y sus cualidades se discuten en RuneQuest Weapons & Equipment."
+    },
+    {
+        "nombre": "Caminar sobre el Viento",
+        "puntos": "3 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro permite al objetivo caminar sobre el aire como si fuera tierra firme y comúnmente se lanza sobre animales de monta. La velocidad a través del aire es igual a la velocidad normal de caminar o montar, más 1 MOV por cada 4 puntos de fuerza del viento si el objetivo se mueve con el viento (o menos 1 MOV por cada 4 puntos si se mueve contra el viento). El objetivo puede ascender o descender a 1/3 de su velocidad normal."
+    },
+    {
+        "nombre": "Marchitar",
+        "puntos": "3 Puntos",
+        "distancia": "A distancia",
+        "duracion": "Instantáneo",
+        "acumulable": "Acumulable",
+        "descripcion": "Si el lanzador supera el POD del objetivo, tira una ubicación de golpe. Esa ubicación se marchita, quedando permanentemente deformada e inútil. Los puntos de golpe de esa ubicación se reducen a 0, pero esto no afecta los puntos de golpe totales del objetivo. Si se afecta un área vital como la cabeza, el pecho o el abdomen, el objetivo muere. Una extremidad marchita no puede curarse pero podría ser amputada; conjuros como Regenerar Miembro (página 73) u otros similares podrían restaurarla."
+    },
+    {
+        "nombre": "Deformar Viento",
+        "puntos": "1 Punto",
+        "distancia": "Personal",
+        "duracion": "Temporal",
+        "acumulable": "Acumulable",
+        "descripcion": "Este conjuro cambia la dirección del viento en 30° hacia la dirección elegida por el lanzador, en un radio de 100 metros alrededor del lanzador. Cada punto adicional añade 30° más o aumenta el radio de efecto en otros 100 metros. Este conjuro duplica el efecto del viento sobre las armas de proyectiles. Cuando el conjuro termina, el viento se detiene, inmóvil, durante una ronda de combate, y luego abruptamente regresa a su dirección original. Pequeños torbellinos pueden formarse en los límites del conjuro, donde el viento se ve forzado a chocar consigo mismo."
+    },
+    {
+        "nombre": "Palabras al Viento",
+        "puntos": "1 Punto",
+        "distancia": "A distancia",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "El lanzador hace que el viento le traiga conversaciones a sus oídos, como si estuviera parado junto al hablante. El lanzador puede elegir qué conversaciones desea escuchar dentro del alcance."
+    },
+    {
+        "nombre": "Cabeza de Lobo",
+        "puntos": "1 Punto",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro solo puede lanzarse sobre un iniciado de Telmor. Convierte la cabeza del objetivo en la de un gran lobo. El sujeto gana el ataque adicional de Mordisco, con una habilidad de DESx5 (que puede mejorarse con experiencia) y causa 1D8 de daño más el bonus de daño. El objetivo puede morder cada ronda, además de atacar y parar o esquivar, aunque el Mordisco debe realizarse a 3 rangos de ataque de distancia de cualquier otro ataque."
+    },
+    {
+        "nombre": "Piel de Lobo",
+        "puntos": "3 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro solo puede lanzarse sobre un iniciado de Telmor. El objetivo desarrolla pelaje y una cola. Solo la magia, el fuego, el hierro o los metales Rúnicos puros pueden penetrar el pelaje del objetivo. Si una espada de bronce ordinaria con Afilar Arma 3 (página 110) golpea al objetivo del conjuro, solo los efectos de Afilar Arma pueden penetrar el pelaje. Si toda la hoja estuviera encantada—como con una Espada Verdadera (página 100) o Espada de Fuego (página 114)—todo el daño tirado (excepto cualquier bonus de daño) cuenta. El veneno aún afecta al objetivo si se penetra la piel. El objetivo aún necesita oxígeno y puede asfixiarse o ahogarse. Este conjuro no puede lanzarse en Día de Agua o Día de Arcilla."
+    },
+    {
+        "nombre": "Correr como Lobo",
+        "puntos": "2 Puntos",
+        "distancia": "Toque",
+        "duracion": "Temporal",
+        "acumulable": "No acumulable",
+        "descripcion": "Este conjuro solo puede lanzarse sobre un iniciado de Telmor. Convierte los brazos y piernas del objetivo en las extremidades de un lobo, permitiéndole correr a cuatro patas. Aumenta las habilidades de Moverse Silenciosamente y Agilidad (incluyendo Esquivar) del objetivo en +40%. Su MOV se convierte en 12. Las extremidades de lobo impiden que el usuario sostenga armas y reducen a la mitad todas las habilidades de Manipulación. Este conjuro no puede lanzarse en Día de Agua o Día de Arcilla."
+    }
+]
 }

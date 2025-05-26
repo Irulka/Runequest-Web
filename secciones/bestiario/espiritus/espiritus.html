@@ -1,0 +1,116 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Generador de Espíritus</h2>
+    </div>
+
+    <div class="varita-layout-container">
+    <div class="varita-content-container">
+        <div class="varita-container">
+            <p class="explicacion-varita">
+                Los espíritus de enfermedad son servidores de la Madre de la Enfermedad, los de curación sirven a Chalana Arroy, los de pasión afectan las emociones de sus víctimas, y los fantasmas son espíritus de los muertos inquietos. Selecciona el tipo de espíritu para ver sus características y habilidades especiales.
+            </p>
+            
+            <!-- Botones de tipo -->
+            <div class="fila-botones">
+                <button id="btn-curacion" class="btn-magia">Curación</button>
+                <button id="btn-enfermedad" class="btn-magia">Enfermedad</button>
+                <button id="btn-fantasma" class="btn-magia">Fantasma</button>
+                <button id="btn-pasion" class="btn-magia">Pasión</button>
+            </div>
+            
+            <!-- Resultados -->
+            <div id="resultados-espiritu" style="margin-top: 20px; display: none;">
+                <h3 style="color: #d69e2e;">Características del Espíritu</h3>
+                
+                <div class="tabla-armaduras-container">
+                    <table class="tabla-armadura">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Característica</th>
+                                <th style="width: 20%;">Valor</th>
+                                <th style="width: 50%;">Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody id="espiritu-tbody">
+                            <!-- Datos dinámicos -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 style="color: #d69e2e; margin-top: 20px;">Habilidades Especiales</h3>
+                <div class="tabla-armaduras-container">
+                    <table class="tabla-armadura">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Tipo</th>
+                                <th style="width: 70%;">Descripción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="habilidades-tbody">
+                            <!-- Datos dinámicos -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Sección específica para enfermedad -->
+                <div id="enfermedad-info" style="display: none;">
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Enfermedad Portada</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Nombre</th>
+                                    <th style="width: 70%;">Efectos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="enfermedad-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sección específica para pasión -->
+                <div id="pasion-info" style="display: none;">
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Pasión</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Nombre</th>
+                                    <th style="width: 70%;">Efectos</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pasion-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sección específica para fantasma -->
+                <div id="fantasma-info" style="display: none;">
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Información del Fantasma</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Atributo</th>
+                                    <th style="width: 70%;">Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="fantasma-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="eurmal-image-container">
+        <img src="./imagenes/fantasma.webp" alt="Espíritu de Runequest" class="eurmal-image">
+    </div>
+</div>
+</div><script src="js/secciones/espiritus/espiritus.js"></script>

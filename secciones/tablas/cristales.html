@@ -1,0 +1,38 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Generador de Cristales Mágicos</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Los cristales mágicos son formados de la sangre de los dioses y poseen poderes extraordinarios.
+                    Algunos pueden almacenar POD, otros tienen habilidades únicas, y unos pocos están contaminados por el Caos.
+                    Este generador te ayudará a descubrir qué tipo de cristal ha encontrado tu aventurero.
+                </p>
+                
+                <div class="controles text-center">
+                    <button id="btn-aleatorio" class="btn-magia">Cristal Aleatorio</button>
+                    <button id="btn-manual" class="btn-magia">Introducir Valor</button>
+                    <input type="number" id="input-valor" min="1" max="100" placeholder="1-100" style="display: none;">
+                </div>
+                
+                <!-- Contenedor de resultados (inicialmente oculto) -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-principal" class="resultado-box resultado-principal">
+                        <div class="resultado-tipo"></div>
+                        <div class="resultado-pod"></div>
+                        <div class="resultado-descripcion"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/cristal.png" alt="Imagen de un cristal mágico" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<script src="js/secciones/tablas/cristales.js"></script>

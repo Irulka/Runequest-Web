@@ -1,20 +1,24 @@
 (function() {
 // Elementos de la interfaz
 const UI = {
-btnCuracion: document.getElementById('btn-curacion'),
-btnEnfermedad: document.getElementById('btn-enfermedad'),
-btnFantasma: document.getElementById('btn-fantasma'),
-btnPasion: document.getElementById('btn-pasion'),
-resultados: document.getElementById('resultados-espiritu'),
-tablaEspiritu: document.getElementById('espiritu-tbody'),
-tablaHabilidades: document.getElementById('habilidades-tbody'),
-seccionEnfermedad: document.getElementById('enfermedad-info'),
-tablaEnfermedad: document.getElementById('enfermedad-tbody'),
-seccionPasion: document.getElementById('pasion-info'),
-tablaPasion: document.getElementById('pasion-tbody'),
-seccionFantasma: document.getElementById('fantasma-info'),
-tablaFantasma: document.getElementById('fantasma-tbody')
+    btnCuracion: document.getElementById('btn-curacion'),
+    btnEnfermedad: document.getElementById('btn-enfermedad'),
+    btnFantasma: document.getElementById('btn-fantasma'),
+    btnPasion: document.getElementById('btn-pasion'),
+    btnVegetal: document.getElementById('btn-vegetal'),
+    resultados: document.getElementById('resultados-espiritu'),
+    tablaEspiritu: document.getElementById('espiritu-tbody'),
+    tablaHabilidades: document.getElementById('habilidades-tbody'),
+    seccionEnfermedad: document.getElementById('enfermedad-info'),
+    tablaEnfermedad: document.getElementById('enfermedad-tbody'),
+    seccionPasion: document.getElementById('pasion-info'),
+    tablaPasion: document.getElementById('pasion-tbody'),
+    seccionFantasma: document.getElementById('fantasma-info'),
+    tablaFantasma: document.getElementById('fantasma-tbody'),
+    seccionVegetal: document.getElementById('vegetal-info'),
+    tablaVegetal: document.getElementById('vegetal-tbody')
 };
+
 // Lista de enfermedades posibles
 const enfermedades = [
     {
@@ -71,6 +75,30 @@ const pasiones = [
     }
 ];
 
+// Lista de tipos de plantas para espíritus vegetales
+const tiposVegetales = [
+    "Árbol",
+    "Flor",
+    "Hongo",
+    "Enredadera",
+    "Arbusto",
+    "Hierba",
+    "Musgo",
+    "Liquen"
+];
+
+// Lista de hechizos típicos para espíritus vegetales
+const hechizosVegetales = [
+    "Confusión",
+    "Contramagia",
+    "Detectar Vida",
+    "Disipar Magia",
+    "Curar",
+    "Protección",
+    "Pantalla Espiritual",
+    "Fuerza"
+];
+
 // Función para tirar dados (ejemplo: "3D6" => tira 3 dados de 6 caras)
 function tirarDados(notacion) {
     const [numDados, caras] = notacion.split('D').map(Number);
@@ -88,6 +116,7 @@ function generarEspiritu(tipo) {
     UI.btnEnfermedad.classList.remove('seleccionado');
     UI.btnFantasma.classList.remove('seleccionado');
     UI.btnPasion.classList.remove('seleccionado');
+    UI.btnVegetal.classList.remove('seleccionado');
     
     // Marcar botón seleccionado
     document.getElementById(`btn-${tipo}`).classList.add('seleccionado');
@@ -111,6 +140,34 @@ function generarEspiritu(tipo) {
             ataque: 70, // Ataque en combate espiritual fijo en 70%
             magia: "Puede tener cualquier tipo de magia (a elección del director de juego)"
         };
+    } else if (tipo === 'vegetal') {
+        // Características especiales para espíritus vegetales
+        const POD = tirarDados('1D6') + Math.floor(Math.random() * 5) * 6; // 1D6 a 5D6+6
+        const INT = tirarDados('3D6') + (Math.random() > 0.5 ? 0 : tirarDados('1D6')); // 3D6 o 4D6
+        const CHA = tirarDados('1D3') + (Math.random() > 0.5 ? 0 : tirarDados('3D6') + 6); // 1D3 o 3D6+6
+        const tipoPlanta = tiposVegetales[Math.floor(Math.random() * tiposVegetales.length)];
+        
+        // Generar hechizos aleatorios
+        const numHechizos = Math.min(CHA, hechizosVegetales.length);
+        const hechizos = [];
+        const hechizosDisponibles = [...hechizosVegetales];
+        
+        for (let i = 0; i < numHechizos; i++) {
+            const randomIndex = Math.floor(Math.random() * hechizosDisponibles.length);
+            hechizos.push(hechizosDisponibles.splice(randomIndex, 1)[0]);
+        }
+        
+        espiritu = {
+            tipo: 'Vegetal (' + tipoPlanta + ')',
+            POD: POD,
+            INT: INT,
+            CHA: CHA,
+            MOV: POD, // Movimiento igual a POD
+            PM: POD * 2, // Puntos de magia igual al doble de POD
+            ataque: POD * 5, // Ataque en combate espiritual igual a POD×5%
+            magia: hechizos.join(", "),
+            tipoPlanta: tipoPlanta
+        };
     } else {
         // Características para otros espíritus
         const POD = tirarDados('3D6') + 6;
@@ -125,33 +182,21 @@ function generarEspiritu(tipo) {
         };
     }
 
+    // Mostrar secciones según tipo
+    UI.seccionEnfermedad.style.display = tipo === 'enfermedad' ? 'block' : 'none';
+    UI.seccionPasion.style.display = tipo === 'pasion' ? 'block' : 'none';
+    UI.seccionFantasma.style.display = tipo === 'fantasma' ? 'block' : 'none';
+    UI.seccionVegetal.style.display = tipo === 'vegetal' ? 'block' : 'none';
+
     // Asignar enfermedad si es espíritu de enfermedad
     if (tipo === 'enfermedad') {
         const randomIndex = Math.floor(Math.random() * enfermedades.length);
         espiritu.enfermedad = enfermedades[randomIndex];
-        UI.seccionEnfermedad.style.display = 'block';
-        UI.seccionPasion.style.display = 'none';
-        UI.seccionFantasma.style.display = 'none';
     } 
     // Asignar pasión si es espíritu de pasión
     else if (tipo === 'pasion') {
         const randomIndex = Math.floor(Math.random() * pasiones.length);
         espiritu.pasion = pasiones[randomIndex];
-        UI.seccionEnfermedad.style.display = 'none';
-        UI.seccionPasion.style.display = 'block';
-        UI.seccionFantasma.style.display = 'none';
-    }
-    // Mostrar información de fantasma si corresponde
-    else if (tipo === 'fantasma') {
-        UI.seccionEnfermedad.style.display = 'none';
-        UI.seccionPasion.style.display = 'none';
-        UI.seccionFantasma.style.display = 'block';
-    }
-    // Ocultar todas las secciones especiales para curación
-    else {
-        UI.seccionEnfermedad.style.display = 'none';
-        UI.seccionPasion.style.display = 'none';
-        UI.seccionFantasma.style.display = 'none';
     }
 
     // Mostrar resultados
@@ -166,6 +211,7 @@ function mostrarEspiritu(espiritu) {
     UI.tablaEnfermedad.innerHTML = '';
     UI.tablaPasion.innerHTML = '';
     UI.tablaFantasma.innerHTML = '';
+    UI.tablaVegetal.innerHTML = '';
 
     // Mostrar características principales
     let caracteristicas = [];
@@ -178,6 +224,15 @@ function mostrarEspiritu(espiritu) {
             { nombre: 'Movimiento', valor: espiritu.MOV, detalles: 'Igual al valor de POD' },
             { nombre: 'Puntos de Magia', valor: espiritu.PM, detalles: 'Igual al valor de POD' },
             { nombre: 'Ataque Espiritual', valor: `${espiritu.ataque}%`, detalles: 'Fijo en 70% para fantasmas' }
+        ];
+    } else if (espiritu.tipo.startsWith('Vegetal')) {
+        caracteristicas = [
+            { nombre: 'POD (Poder)', valor: espiritu.POD, detalles: 'Tirada de 1D6 a 5D6+6' },
+            { nombre: 'INT (Inteligencia)', valor: espiritu.INT, detalles: 'Tirada de 3D6 a 4D6' },
+            { nombre: 'CAR (Carisma)', valor: espiritu.CHA, detalles: 'Tirada de 1D3 a 3D6+6' },
+            { nombre: 'Movimiento', valor: espiritu.MOV, detalles: 'Igual al valor de POD' },
+            { nombre: 'Puntos de Magia', valor: espiritu.PM, detalles: 'Igual al doble del valor de POD' },
+            { nombre: 'Ataque Espiritual', valor: `${espiritu.ataque}%`, detalles: 'Igual a POD×5%' }
         ];
     } else {
         caracteristicas = [
@@ -249,6 +304,30 @@ function mostrarEspiritu(espiritu) {
             { 
                 tipo: 'Magia', 
                 descripcion: espiritu.magia 
+            }
+        ];
+    }
+    else if (espiritu.tipo.startsWith('Vegetal')) {
+        habilidades = [
+            { 
+                tipo: 'Apariencia', 
+                descripcion: `En el Mundo Espiritual toman forma de Aldryami (${espiritu.tipoPlanta === 'Hongo' ? 'elfos negros' : 'elfos, dríadas o corredores'}). ${espiritu.tipoPlanta === 'Flor' ? 'Algunos tienen alas transparentes.' : ''}` 
+            },
+            { 
+                tipo: 'Magia', 
+                descripcion: `Conoce los siguientes hechizos: ${espiritu.magia || 'Ninguno'}` 
+            },
+            { 
+                tipo: 'Posesión', 
+                descripcion: 'Raramente poseen huéspedes físicos, pero algunos espíritus vegetales malignos poseen a aquellos que derrotan en combate espiritual.' 
+            },
+            { 
+                tipo: 'Efectos', 
+                descripcion: 'Las víctimas de posesión pueden sufrir efectos similares al hechizo de Locura o a la habilidad especial Muerte Lenta.' 
+            },
+            { 
+                tipo: 'Conocimiento', 
+                descripcion: 'Muchos espíritus vegetales son conscientes de sí mismos y tienen gran conocimiento de su área.' 
             }
         ];
     }
@@ -329,6 +408,41 @@ function mostrarEspiritu(espiritu) {
         });
     }
 
+    // Mostrar información de vegetal si corresponde
+    if (espiritu.tipo.startsWith('Vegetal')) {
+        const infoVegetal = [
+            { 
+                atributo: 'Naturaleza', 
+                descripcion: 'Espíritu de plantas y hongos específicos. En el Mundo Espiritual toman forma de seres feéricos.' 
+            },
+            { 
+                atributo: 'Vinculación', 
+                descripcion: 'A menudo están vinculados a lugares sagrados o áreas naturales importantes.' 
+            },
+            { 
+                atributo: 'Magia', 
+                descripcion: 'Los chamanes a menudo hacen pactos con espíritus vegetales poderosos para obtener conocimiento o poder.' 
+            },
+            { 
+                atributo: 'Almacenamiento', 
+                descripcion: 'Los magos a menudo los enlazan en cristales o matrices espirituales como fuente de puntos de magia.' 
+            },
+            { 
+                atributo: 'Variedad', 
+                descripcion: 'Los espíritus de flores suelen ser más pequeños y delicados, mientras que los de árboles son más poderosos.' 
+            }
+        ];
+
+        infoVegetal.forEach(info => {
+            const fila = document.createElement('tr');
+            fila.innerHTML = `
+                <td>${info.atributo}</td>
+                <td>${info.descripcion}</td>
+            `;
+            UI.tablaVegetal.appendChild(fila);
+        });
+    }
+
     // Mostrar sección de resultados
     UI.resultados.style.display = 'block';
 }
@@ -342,6 +456,7 @@ function configurarBotones() {
     UI.btnEnfermedad.addEventListener('click', () => generarEspiritu('enfermedad'));
     UI.btnFantasma.addEventListener('click', () => generarEspiritu('fantasma'));
     UI.btnPasion.addEventListener('click', () => generarEspiritu('pasion'));
+    UI.btnVegetal.addEventListener('click', () => generarEspiritu('vegetal'));
 }
 
 // --------------------------

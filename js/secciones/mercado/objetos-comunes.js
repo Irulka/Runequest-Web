@@ -13,7 +13,7 @@
             seguidores: 'js/secciones/mercado/seguidores.json',
             servicios: 'js/secciones/mercado/servicios.json',
             otros: 'js/secciones/mercado/otros.json',
-            defaultImage: 'imagenes/default-object.png'
+            defaultImage: 'imagenes/default-object.webp'
         },
         DEBUG: false
     };

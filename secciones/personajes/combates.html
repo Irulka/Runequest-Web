@@ -1,0 +1,38 @@
+<div class="seccion-activa">
+    <div class="combate-header-container">
+        <h2 class="text-center">Gestor de Combate RuneQuest</h2>
+    </div>
+
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Configura el número de jugadores y enemigos para iniciar el combate. Arrastra los personajes para unirlos y gestionar sus puntos de vida.
+                </p>
+
+                <div class="controles text-center">
+                    <div class="input-group">
+                        <label for="num-jugadores">Número de Jugadores:</label>
+                        <input type="number" id="num-jugadores" min="1" max="6" value="1">
+                    </div>
+                    <div class="input-group">
+                        <label for="num-enemigos">Número de Enemigos:</label>
+                        <input type="number" id="num-enemigos" min="0" max="6" value="0">
+                    </div>
+                    <button id="btn-iniciar-combate" class="btn-magia">Iniciar Combate</button>
+                </div>
+
+                <div id="tablero-combate" class="tablero-combate-container" style="display: none;">
+                    <div id="cuadricula-hexagonos">
+                        </div>
+                    <div id="contenedor-personajes">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="eurmal-image-container">
+            <img src="imagenes/guerrero.webp" alt="Ilustración de Combate" class="eurmal-image">
+        </div>
+    </div>
+</div>

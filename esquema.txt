@@ -1,46 +1,53 @@
 css
   ------- styles.css
+  ------- combates.css
 
 imagenes 
    --------- npcs
-               --------- babuino.png
-               --------- trolln.png
-               --------- vasana.png
+               --------- babuino.webp
+               --------- trolln.webp
+               --------- vasana.webp
    --------- objetosm
-               --------- arpa.png
+               --------- arpa.webp
                
-   --------- animales.png
-   --------- arma.png   
-   --------- armadura.png
-   --------- armas.png
-   --------- background1.jpg
-   --------- background2.png
-   --------- calculah.png
-   --------- chaosbat.png
-   --------- demonio.png
-   --------- elementales.png
-   --------- eurmal.png
-   --------- elemental.png
-   --------- fisberg.png
-   --------- fisberg2.png
-   --------- glorantha.png
-   --------- guerrero.png
-   --------- hechiceria.png
-   --------- mercader.png
-   --------- modificadores.png
-   --------- npc.png
-   --------- personaje.png
-   --------- personaje2.png
-   --------- profesiones.png
-   --------- runekeeper.png
-   --------- thed.png
-   --------- usuario.png
+   --------- animales.webp
+   --------- arma.webp 
+   --------- armadura.webp
+   --------- armas.webp
+   --------- background1.webp
+   --------- background2.webp
+   --------- calculah.webp
+   --------- chaosbat.webp
+   --------- cristal.webp
+   --------- demonio.webp
+   --------- elementales.webp
+   --------- eurmal.webp
+   --------- elemental.webp
+   --------- fisberg.webp
+   --------- fisberg2.webp
+   --------- glorantha.webp
+   --------- guerrero.webp
+   --------- hechiceria.webp
+   --------- mercader.webp
+   --------- modificadores.webp
+   --------- noctalo.webp
+   --------- npc.webp
+   --------- personaje.webp
+   --------- personaje2.webp
+   --------- pifias.webp
+   --------- pifiasesp.webp
+   --------- profesiones.webp
+   --------- runekeeper.webp
+   --------- thed.webp
+   --------- usuario.webp
 js
    --------- secciones
                 ---------bestiario
                             --------- espiritus
                                            --------- demonios.js
                                            --------- elementales.js
+                                           --------- espiritus.js
+                                           --------- otros.js
 
                             --------- animales-data.js
                             --------- animales.js
@@ -69,6 +76,7 @@ js
                             --------- tools.json
 
                 --------- personajes
+                            --------- combates.js
                             --------- cultos.js
                             --------- npcs.js
                             --------- npcs
@@ -79,8 +87,10 @@ js
                             --------- profesiones.js
                      
                 --------- tablas
+                            --------- cristal.js
                             --------- maldicion-thed.js
                             --------- pifias.js
+                            --------- pifiasesp.js
                             --------- rasgos-caoticos.js
                             --------- resultados.js
 
@@ -93,6 +103,8 @@ secciones
                 --------- espiritus
                             --------- demonios.html
                             --------- elementales.html
+                            --------- espiritus.html
+                            --------- otros.html
 
                 --------- animales.html
 
@@ -112,6 +124,7 @@ secciones
                 --------- objetos-comunes.html
 
     --------- personajes
+                --------- combates.html
                 --------- cultos.html
                 --------- modificadores.html
                 --------- npcs.html
@@ -119,7 +132,10 @@ secciones
                 ---------- npcs
 
     --------- tablas
+                --------- cristal.html
                 --------- maldicion-thed.html
+                --------- pifias.html
+                --------- pifiasesp.html
                 --------- rasgos-caoticos.html
                 --------- resultados.html
 

@@ -7,7 +7,7 @@
     <div class="varita-content-container">
         <div class="varita-container">
             <p class="explicacion-varita">
-                Los espíritus de enfermedad son servidores de la Madre de la Enfermedad, los de curación sirven a Chalana Arroy, los de pasión afectan las emociones de sus víctimas, y los fantasmas son espíritus de los muertos inquietos. Selecciona el tipo de espíritu para ver sus características y habilidades especiales.
+                Los espíritus de enfermedad son servidores de la Madre de la Enfermedad, los de curación sirven a Chalana Arroy, los de pasión afectan las emociones de sus víctimas, los fantasmas son espíritus de los muertos inquietos y los espíritus vegetales son las almas de plantas y hongos. Selecciona el tipo de espíritu para ver sus características y habilidades especiales.
             </p>
             
             <!-- Botones de tipo -->
@@ -16,6 +16,7 @@
                 <button id="btn-enfermedad" class="btn-magia">Enfermedad</button>
                 <button id="btn-fantasma" class="btn-magia">Fantasma</button>
                 <button id="btn-pasion" class="btn-magia">Pasión</button>
+                <button id="btn-vegetal" class="btn-magia">Vegetal</button>
             </div>
             
             <!-- Resultados -->
@@ -100,6 +101,24 @@
                                 </tr>
                             </thead>
                             <tbody id="fantasma-tbody">
+                                <!-- Datos dinámicos -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sección específica para vegetal -->
+                <div id="vegetal-info" style="display: none;">
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Información del Espíritu Vegetal</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Atributo</th>
+                                    <th style="width: 70%;">Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="vegetal-tbody">
                                 <!-- Datos dinámicos -->
                             </tbody>
                         </table>

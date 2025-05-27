@@ -1,0 +1,141 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Generador de Otros Espíritus</h2>
+    </div>
+
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Genera diferentes tipos de espíritus no convencionales. Selecciona el tipo para ver sus características y habilidades especiales.
+                </p>
+                
+                <div class="fila-botones">
+                         <button id="btn-animal" class="btn-magia">Animal</button>
+                         <button id="btn-noctulo" class="btn-magia">Nyctalope</button>
+                         <button id="btn-ninfa" class="btn-magia">Ninfa</button>
+                         <button id="btn-serpiente" class="btn-magia">Hija Serpiente</button>
+                    </div>
+                
+                <div id="resultados-espiritu" style="margin-top: 20px; display: none;">
+                    <h3 style="color: #d69e2e;">Características del Espíritu</h3>
+                    
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Característica</th>
+                                    <th style="width: 20%;">Valor</th>
+                                    <th style="width: 50%;">Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody id="espiritu-tbody">
+                                </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="ataques-info" style="display: none;">
+                        <h3 style="color: #d69e2e; margin-top: 20px;">Ataques</h3>
+                        <div class="tabla-armaduras-container">
+                            <table class="tabla-armadura">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Tipo</th>
+                                        <th style="width: 20%;">Ataque %</th>
+                                        <th style="width: 50%;">Daño</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ataques-tbody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="localizaciones-info" style="display: none;">
+                        <h3 style="color: #d69e2e; margin-top: 20px;">Localizaciones de Golpe</h3>
+                        <div class="tabla-armaduras-container">
+                            <table class="tabla-armadura">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Localización</th>
+                                        <th style="width: 20%;">D20</th>
+                                        <th style="width: 50%;">Armadura/PV</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="localizaciones-tbody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <h3 style="color: #d69e2e; margin-top: 20px;">Habilidades Especiales</h3>
+                    <div class="tabla-armaduras-container">
+                        <table class="tabla-armadura">
+                            <thead>
+                                <tr>
+                                    <th style="width: 30%;">Tipo</th>
+                                    <th style="width: 70%;">Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="habilidades-tbody">
+                                </tbody>
+                        </table>
+                    </div>
+
+                    <div id="animal-info" style="display: none;">
+                        <h3 style="color: #d69e2e; margin-top: 20px;">Información del Espíritu Animal</h3>
+                        <div class="tabla-armaduras-container">
+                            <table class="tabla-armadura">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Atributo</th>
+                                        <th style="width: 70%;">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="animal-tbody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="descripcion-info" style="display: none;">
+                        <h3 style="color: #d69e2e; margin-top: 20px;">Descripción</h3>
+                        <div class="tabla-armaduras-container">
+                            <table class="tabla-armadura">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Atributo</th>
+                                        <th style="width: 70%;">Detalles</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="descripcion-tbody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="magia-info" style="display: none;">
+                        <h3 style="color: #d69e2e; margin-top: 20px;">Magia</h3>
+                        <div class="tabla-armaduras-container">
+                            <table class="tabla-armadura">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 30%;">Tipo</th>
+                                        <th style="width: 70%;">Hechizos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="magia-tbody">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/nyctalope.webp" alt="Espíritu de Runequest" class="eurmal-image">
+        </div>
+    </div>
+</div>
+<script src="js/secciones/otros/otros.js"></script>

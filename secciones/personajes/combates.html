@@ -1,38 +1,373 @@
 <div class="seccion-activa">
-    <div class="combate-header-container">
-        <h2 class="text-center">Gestor de Combate RuneQuest</h2>
+    <div class="varita-header-container">
+        <h2 class="text-center">Gestión de Combates</h2>
     </div>
-
+    
     <div class="varita-layout-container">
         <div class="varita-content-container">
-            <div class="varita-container">
-                <p class="explicacion-varita">
-                    Configura el número de jugadores y enemigos para iniciar el combate. Arrastra los personajes para unirlos y gestionar sus puntos de vida.
-                </p>
-
+            <div class="varita-container">                
                 <div class="controles text-center">
-                    <div class="input-group">
-                        <label for="num-jugadores">Número de Jugadores:</label>
-                        <input type="number" id="num-jugadores" min="1" max="6" value="1">
-                    </div>
-                    <div class="input-group">
-                        <label for="num-enemigos">Número de Enemigos:</label>
-                        <input type="number" id="num-enemigos" min="0" max="6" value="0">
-                    </div>
-                    <button id="btn-iniciar-combate" class="btn-magia">Iniciar Combate</button>
+                    <button id="btn-nuevo-combate" class="btn-magia">Nuevo Combate</button>
+                    <button id="btn-agregar-pj" class="btn-magia">Añadir PJ</button>
+                    <button id="btn-agregar-npc" class="btn-magia">Añadir NPC</button>
                 </div>
-
-                <div id="tablero-combate" class="tablero-combate-container" style="display: none;">
-                    <div id="cuadricula-hexagonos">
-                        </div>
-                    <div id="contenedor-personajes">
-                        </div>
-                </div>
+                
+                <div id="tablero-combate" style="display:none;"></div>
+                
+                <div id="lista-participantes" style="margin-top:20px; display:none;"></div>
             </div>
         </div>
-
+        
         <div class="eurmal-image-container">
-            <img src="imagenes/guerrero.webp" alt="Ilustración de Combate" class="eurmal-image">
+            <img src="./imagenes/combates.webp" alt="Combate" class="eurmal-image">
         </div>
     </div>
 </div>
+
+<div id="modal-personaje-info" class="modal-info" style="display: none;">
+    <div class="modal-content-info">
+        <span class="close-button-info">&times;</span>
+        <h3 id="modal-personaje-nombre"></h3>
+        <p>PV: <span id="modal-personaje-pv"></span> 
+            <button class="btn-mod-stat" data-stat="pv" data-action="minus">-</button>
+            <button class="btn-mod-stat" data-stat="pv" data-action="plus">+</button>
+        </p>
+        <p>PM: <span id="modal-personaje-pm"></span> 
+            <button class="btn-mod-stat" data-stat="pm" data-action="minus">-</button>
+            <button class="btn-mod-stat" data-stat="pm" data-action="plus">+</button>
+        </p>
+        <textarea id="modal-personaje-anotaciones" placeholder="Anotaciones..."></textarea>
+        <button id="modal-guardar-anotaciones" class="btn-magia">Guardar</button>
+    </div>
+</div>
+
+<div id="modal-obstaculo-selector" class="modal-info" style="display: none;">
+    <div class="modal-content-info">
+        <span class="close-button-info obstaculo-close-button">&times;</span>
+        <h3>Seleccionar Tipo de Obstáculo</h3>
+        <div class="obstacle-color-options">
+            <button class="btn-obstacle-color original" data-color="original">Original</button>
+            <button class="btn-obstacle-color celeste" data-color="celeste">Celeste</button>
+            <button class="btn-obstacle-color verde" data-color="verde">Verde</button>
+            <button class="btn-obstacle-color gris" data-color="gris">Gris</button>
+            <button class="btn-obstacle-color marron" data-color="marron">Marrón</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-add-personaje" class="modal-info" style="display: none;">
+    <div class="modal-content-info">
+        <span class="close-button-info add-personaje-close-button">&times;</span>
+        <h3 id="modal-add-personaje-title">Añadir Personaje</h3>
+        <div class="form-group">
+            <label for="input-nombre-personaje">Nombre:</label>
+            <input type="text" id="input-nombre-personaje" class="modal-input">
+        </div>
+        <div class="form-group-inline"> <label for="input-pv-personaje">PV:</label>
+            <input type="number" id="input-pv-personaje" class="modal-input-short" value="10">
+            <button class="btn-mod-stat" data-stat="pv" data-action="minus">-</button>
+            <button class="btn-mod-stat" data-stat="pv" data-action="plus">+</button>
+        </div>
+        <div class="form-group-inline"> <label for="input-pm-personaje">PM:</label>
+            <input type="number" id="input-pm-personaje" class="modal-input-short" value="5">
+            <button class="btn-mod-stat" data-stat="pm" data-action="minus">-</button>
+            <button class="btn-mod-stat" data-stat="pm" data-action="plus">+</button>
+        </div>
+        <button id="btn-confirmar-add-personaje" class="btn-magia">Añadir</button>
+    </div>
+</div>
+
+<style>
+    /* ===== ESTILOS CUADRÍCULA CUADRADA ===== */
+    #tablero-combate { 
+        display: grid;
+        grid-template-columns: repeat(16, 50px); /* 16 columnas fijas de 50px */
+        grid-template-rows: repeat(12, 50px); /* 12 filas fijas de 50px */
+        gap: 2px; 
+        width: calc(16 * 50px + 15 * 2px + 4px); /* Ancho calculado para 16 columnas + 15 gaps + padding */
+        margin: 40px auto;
+        position: relative;
+        background-color: #333; 
+        padding: 2px; 
+        overflow: hidden; 
+    }
+
+    .celda-tablero { 
+        width: 100%;
+        height: 100%;
+        border-radius: 8px; 
+        background: #2d3748;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* Clases para estados de las celdas */
+    .celda-ocupada { background: #2c5282; } 
+    .celda-enemigo { background: #9b2c2c; } 
+    .celda-fallecido { 
+        background-color: rgba(0,0,0,0.7); 
+        border: 2px dashed #ff0000; 
+    }
+    .celda-fallecido .personaje-hex {
+        opacity: 0.5; 
+        filter: grayscale(100%); 
+        cursor: default; 
+    }
+
+    /* Estilos para tipos de obstáculos */
+    .celda-obstaculo-celeste { background-color: #63b3ed; } 
+    .celda-obstaculo-verde { background-color: #68d391; } 
+    .celda-obstaculo-gris { background-color: #a0aec0; } 
+    .celda-obstaculo-marron { background-color: #b3745c; } 
+    .celda-obstaculo-original { background-color: #2d3748; } 
+
+
+    .personaje-hex {
+        width: 40px; /* Reducido para ajustarse a 50x50 */
+        height: 40px; /* Reducido para ajustarse a 50x50 */
+        border-radius: 50%;
+        background: rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        cursor: move;
+        user-select: none;
+        font-size: 0.8em; /* Ajustado el tamaño de fuente */
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    /* Efectos arrastre */
+    #personaje-arrastrando {
+        position: absolute;
+        z-index: 1000;
+        transform: scale(1.1);
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    /* Lista participantes */
+    .participante-card {
+        background: rgba(0,0,0,0.2);
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 4px;
+        color: white;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        /* flex-wrap: wrap; Ya no es necesario si los datos vuelven a una línea */
+    }
+
+    .participante-card .info-personaje-lista {
+        flex-grow: 1; 
+        margin-right: 10px; 
+    }
+    .participante-card .info-personaje-lista span {
+        display: inline; /* Vuelve a mostrar en línea */
+        margin-right: 10px; /* Espacio entre los elementos de la línea */
+    }
+    .participante-card .info-personaje-lista span:last-child {
+        margin-right: 0;
+    }
+
+
+    /* Estilo para los botones de "Colocar" en la lista de participantes */
+    .participante-card .btn-magia-pequeno { 
+        background-color: #d69e2e;
+        border: none;
+        color: #1a202c;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 10px; 
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        flex-shrink: 0; 
+    }
+
+    .participante-card .btn-magia-pequeno:hover {
+        background-color: #b7791f;
+    }
+
+    /* ===== ESTILOS MODAL INFORMACIÓN PERSONAJE Y OBSTÁCULO (COMBINADOS) ===== */
+    .modal-info {
+        position: fixed;
+        z-index: 1001;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content-info {
+        background-color: #333;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 280px; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        position: relative;
+        color: white;
+    }
+
+    .close-button-info {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+
+    .close-button-info:hover,
+    .close-button-info:focus {
+        color: white;
+        text-decoration: none;
+    }
+
+    .modal-content-info h3 {
+        color: #d69e2e;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .modal-content-info p {
+        margin-bottom: 10px;
+    }
+
+    .btn-mod-stat {
+        background-color: #d69e2e;
+        border: none;
+        color: #1a202c;
+        padding: 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 0 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .btn-mod-stat:hover {
+        background-color: #b7791f;
+    }
+
+    #modal-personaje-anotaciones {
+        width: calc(100% - 10px);
+        height: 80px;
+        margin-top: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #555;
+        background-color: #2a3340;
+        color: white;
+        resize: vertical;
+    }
+
+    #modal-guardar-anotaciones {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Estilos para el selector de obstáculos */
+    .obstacle-color-options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .btn-obstacle-color {
+        width: 80px;
+        height: 40px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .btn-obstacle-color.original { background-color: #2d3748; border-color: #555; }
+    .btn-obstacle-color.celeste { background-color: #63b3ed; }
+    .btn-obstacle-color.verde { background-color: #68d391; }
+    .btn-obstacle-color.gris { background-color: #a0aec0; }
+    .btn-obstacle-color.marron { background-color: #b3745c; }
+
+    .btn-obstacle-color:hover {
+        opacity: 0.8;
+        border-color: #d69e2e;
+    }
+
+    /* Estilos para el nuevo modal de añadir personaje */
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    /* Nuevo: para alinear el input y los botones en la misma línea */
+    .form-group-inline {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #d69e2e;
+        font-weight: bold;
+    }
+    .form-group-inline label { /* Ajuste para labels en línea */
+        margin-right: 10px;
+        min-width: 30px; /* Para alinear un poco las etiquetas */
+    }
+
+
+    .modal-input {
+        width: calc(100% - 10px); 
+        padding: 8px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: #2a3340;
+        color: white;
+        box-sizing: border-box; 
+    }
+
+    /* Nuevo: Estilo para inputs de PV/PM más estrechos */
+    .modal-input-short {
+        width: 60px; /* Ancho fijo para 2 dígitos */
+        padding: 8px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        background-color: #2a3340;
+        color: white;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px; /* Espacio antes de los botones */
+    }
+
+    #btn-confirmar-add-personaje {
+        margin-top: 20px;
+        width: 100%;
+    }
+</style>
+
+<script src="js/secciones/personajes/combates.js"></script>

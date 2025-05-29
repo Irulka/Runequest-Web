@@ -8,7 +8,7 @@ imagenes
                --------- trolln.webp
                --------- vasana.webp
    --------- objetosm
-               --------- arpa.webp
+               --------- het-het.webp
                
    --------- animales.webp
    --------- arma.webp 
@@ -53,6 +53,8 @@ js
                             --------- animales.js
 
                 --------- magia
+                            --------- objetosm
+                                          --------- het-het.json
                             --------- calculah.js
                             --------- espiritual.js
                             --------- espiritual.json

@@ -1,0 +1,24 @@
+{
+    "nombre": "Het-Het el Erudito",
+    "imagen": "./imagenes/objetosm/het-het.webp",
+    "descripcion": "Un collar de toscas cuentas de madera se unen por el pelo a la cabeza reducida de un difunto erudito llamado Het-Het, el cual fue maldito, decapitado y transformado en lo que ahora ves por el hechicero Balpurguis. Het-Het está consciente casi todo el tiempo. Pese a estar muerto posee Puntos de Vida, que representan la durabilidad de su recipiente físico. No se puede curar. Si llegara a 0 puntos de vida, el alma de Het-Het se liberaría del plano mundano. Es un viejo alcohólico amargado, cuyo caracter se suaviza temporalmente si consume vino de forma regular. Para beber suele pedir que pongan su cabeza sobre un tazón o plato con vino, para absorverlo desde la garganta. Si pasa mucho tiempo sin 'hidratarse' se seca y se aletarga, ignorando cualquier petición.",
+    "propiedades": {
+        "INT": 17,
+        "POD": 6,
+        "CAR": 8,
+        "PV": 6
+    },
+    "efectos": [
+        {
+            "nombre": "Conocimientos",
+            "descripcion": "Leer/ Escribir Raliano 82%; Leer/ Escribir Mostalí 43%; Leer/ Escribir Britino 22%; Saber de las razas antiguas 80%; Saber animal 51%; Buscar Libros 70%; Saber Regional (Sartar) 57%."
+        },
+         {
+            "nombre": "Conjuros de Hechicería conocidos",
+            "descripcion": "Drenar Alma 62%; Lógico 49%; Geomancia 21%."
+        }
+    ]
+}
+
+
+       

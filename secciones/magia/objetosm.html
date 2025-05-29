@@ -1,0 +1,153 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Objetos Mágicos</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Los Objetos Mágicos son artefactos poderosos que otorgan habilidades especiales a sus portadores.
+                    Aquí puedes consultar sus propiedades, habilidades y efectos mágicos.
+                </p>
+                
+                <!-- Grid de Objetos Mágicos -->
+                <div class="objetosm-grid" id="objetosm-grid">
+                    <!-- Se llenará dinámicamente con JS -->
+                </div>
+                
+                <!-- Contenedor de resultados -->
+                <div class="resultados-container" style="display: none;">
+                    <div id="resultado-principal"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img id="imagen-dinamica" src="./imagenes/objetosm.webp" alt="Objetos Mágicos" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilo para el grid de Objetos Mágicos */
+    .objetosm-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+        max-height: 500px;
+        overflow-y: auto;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    
+    .opcion-objeto {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background: #2d3748;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .opcion-objeto:hover {
+        background: #4a5568;
+        transform: scale(1.02);
+    }
+    
+    .objeto-avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+        object-fit: cover;
+        border: 2px solid #d69e2e;
+    }
+    
+    .objeto-info h3 {
+        margin: 0;
+        color: #fcfaf7;
+    }
+    
+    /* Estilos para la ficha del Objeto Mágico */
+    .ficha-objeto {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .ficha-objeto h2 {
+        color: #d69e2e;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+    
+    /* Secciones de información */
+    .seccion-info {
+        margin-bottom: 20px;
+    }
+    
+    .seccion-info h3 {
+        color: #d69e2e;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #4a5568;
+        padding-bottom: 5px;
+    }
+    
+    .descripcion-texto {
+        line-height: 1.6;
+    }
+    
+    .caracteristicas-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .caracteristica {
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+    }
+    
+    .habilidades-lista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .habilidad-item {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+    }
+    
+    .habilidad-nombre {
+        font-weight: bold;
+        color: #d69e2e;
+        margin-bottom: 5px;
+    }
+    
+    /* Botón de volver */
+    .btn-volver {
+        margin-top: 15px;
+        padding: 8px 15px;
+        background: #4a5568;
+        border: none;
+        border-radius: 4px;
+        color: #f7fafc;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+    
+    .btn-volver:hover {
+        background: #2d3748;
+    }
+</style>
+
+<script src="js/secciones/magia/objetosm.js"></script>

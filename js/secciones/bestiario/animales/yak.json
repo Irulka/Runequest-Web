@@ -1,0 +1,48 @@
+{
+  "nombre": "Yak",
+  "descripcion": "Bóvido de pelo largo adaptado a las altas altitudes, con una fisiología única que incluye pulmones y corazón más grandes. Fundamental para los Lo-Fak Hsunchen de Kralorela y Far Pent, son animales de carga esenciales en las montañas Shan Shan. Su denso pelaje los protege del frío pero los hace vulnerables al calor por encima de los 15°C.",
+  "caracteristicas": {
+    "FUE": "3D6+21",
+    "CON": "2D6+8",
+    "TAM": "3D6+21",
+    "POD": "3D6",
+    "DES": "2D6"
+  },
+  "movimiento": 8,
+  "MR": 4,
+  "armadura": "6 (piel y pelaje grueso)",
+  "habilidades": {
+    "Resistencia a Altitud": "+30% en ambientes de alta montaña",
+    "Carga Pesada": "Puede transportar hasta 300kg en terreno montañoso",
+    "Tolerancia al Frío": "Inmune a efectos por clima frío"
+  },
+  "ataques": [
+    {
+      "nombre": "Cornada",
+      "porcentaje": "30%",
+      "daño": "1D10",
+      "MR": 8,
+      "nota": "No puede cornear y pisotear en el mismo turno."
+    },
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "40%",
+      "daño": "3D6",
+      "MR": 8,
+      "efecto": "Solo contra objetivos derribados."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 6, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 6, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 6, "pv": "PV/3 + 2" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 6, "pv": "PV/3 + 2" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 6, "pv": "PV/3" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 6, "pv": "PV/3" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 6, "pv": "PV/3 + 1" }
+  ],
+  "habilidadesEspeciales": [
+    "Adaptación Montañesa: +2 a CON en alturas superiores a 3000m",
+    "Sufre 1D6 daño por hora a temperaturas sobre 15°C"
+  ]
+}

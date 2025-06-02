@@ -1,0 +1,52 @@
+{
+  "nombre": "Pitón Esroliana",
+  "descripcion": "Una enorme serpiente constrictora con escamas brillantes, conocida por su capacidad de hipnotizar a sus presas con la mirada antes de atacar. Originaria de las regiones cálidas de Esrolia, es un depredador paciente que utiliza tanto la fuerza bruta como técnicas de emboscada.",
+  "caracteristicas": {
+    "FUE": "3D6+12",
+    "CON": "2D6+6",
+    "TAM": "4D6",
+    "POD": "3D6+6",
+    "DES": "2D6+6"
+  },
+  "movimiento": 6,
+  "MR": 4,
+  "armadura": "2 (escamas brillantes)",
+  "habilidades": {
+    "Esquivar": "35%",
+    "Ocultar": "75%",
+    "Moverse Silenciosamente": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Hipnotizar",
+      "porcentaje": "Automático",
+      "daño": "Especial",
+      "MR": 3,
+      "efecto": "Compara POD vs POD de la víctima. Si gana, la víctima queda fascinada hasta ser atacada o hasta que la pitón mire hacia otro lado. La víctima no puede defenderse. +20% a ataques posteriores contra víctimas fascinadas."
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "65%",
+      "daño": "1D6",
+      "MR": 7,
+      "efecto": "+20% contra víctimas fascinadas."
+    },
+    {
+      "nombre": "Constricción",
+      "porcentaje": "45%",
+      "daño": "2D6 (inicial) + 2D6 por ronda",
+      "MR": 9,
+      "efecto": "Si impacta, la víctima queda atrapada. Puede liberar un brazo con tirada de DEXx3%. Cada ronda causa 2D6 daño (armadura aplica) y requiere tirada de CONx5% para no perder el conocimiento.+20% contra víctimas fascinadas."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Cola", "rango": "01-06", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Cuerpo", "rango": "07-14", "armadura": 2, "pv": "PV/3" },
+    { "locacion": "Cabeza", "rango": "15-20", "armadura": 2, "pv": "PV/3 - 1" }
+  ],
+  "habilidadesEspeciales": [
+    "Mirada Hipnótica: Puede fascinar presas antes de atacar",
+    "Víctimas que resistan la hipnosis no son afectadas nuevamente"
+
+  ]
+}

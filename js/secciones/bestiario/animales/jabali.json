@@ -1,0 +1,45 @@
+{
+  "nombre": "Jabalí Salvaje",
+  "descripcion": "Criatura astuta y salvaje que habita en diversas regiones de Genertela. Viajan en manadas de aproximadamente 20 individuos, siendo especialmente peligrosos los machos viejos y solitarios. Conocidos por su naturaleza pendenciera y ferocidad cuando son acorralados.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+12",
+    "POD": "3D6",
+    "DES": "1D6"
+  },
+  "movimiento": 10,
+  "MR": 6,
+  "armadura": "4 (piel gruesa)",
+  "habilidades": {
+    "Buscar": "80%",
+    "Rastrear por Olfato": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Embestida",
+      "porcentaje": "50%",
+      "daño": "2D6",
+      "MR": 10,
+      "efecto": "No puede embestir y pisotear al mismo objetivo en un mismo turno."
+    },
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 10,
+      "efecto": "Solo contra objetivos derribados."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 4, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": ["Especialmente agresivo cuando está acorralado o protegiendo crías."
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "nombre": "Alti-Llama",
+  "descripcion": "Camélidos altos y veloces que habitan en las tierras baldías de Prax. Son los monturas más rápidas de la región y son utilizados por una de las Cinco Grandes Tribus de Prax. Su altura les da una ventaja única en combate, permitiendo a sus jinetes atacar desde una posición elevada con lanzas y hachas largas.",
+  "caracteristicas": {
+    "FUE": "3D6+24",
+    "CON": "2D6+9",
+    "TAM": "3D6+30",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 12,
+  "MR": 3,
+  "armadura": "2 (piel gruesa)",
+  "habilidades": {
+    "Correr": "95%",
+    "Esquivar": "30%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "1D8",
+      "MR": 7,
+      "nota": "Puede usarse junto con una patada"
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 7,
+      "nota": "Puede atacar a uno o dos enemigos simultáneamente"
+    },
+    {
+      "nombre": "Empinarse y Arremeter",
+      "porcentaje": "25%",
+      "daño": "2D8",
+      "MR": 7,
+      "nota": "Ataque potente contra un solo objetivo"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 2, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 2, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 2, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Los jinetes tiran 1D10+10 en la tabla de localizaciones al atacar. Además, solo pueden usar armas cuerpo a cuerpo con MR 1-0 contra infantería",
+    "Ataques Combinados: Puede morder y patear simultáneamente"
+  ]
+}

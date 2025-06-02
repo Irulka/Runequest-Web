@@ -1,0 +1,38 @@
+{
+  "nombre": "Serpiente de Cascabel Diamantada",
+  "descripcion": "Una serpiente venenosa altamente peligrosa conocida por su distintivo cascabel. Es extremadamente sigilosa y rápida, con un veneno potente que puede ser fatal. Su mordedura causa síntomas graves que incluyen vómitos, espasmos violentos y fallo respiratorio.",
+  "caracteristicas": {
+    "FUE": "2D4",
+    "CON": "3D6",
+    "TAM": "2D4",
+    "POD": "3D6+6",
+    "DES": "3D6+6"
+  },
+  "movimiento": 6,
+  "MR": 4,
+  "armadura": "Ninguna",
+  "habilidades": {
+    "Esquivar": "50%",
+    "Ocultar": "70%",
+    "Moverse Silenciosamente": "80%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D4 + veneno",
+      "MR": 8,
+      "efecto": "Veneno sistémico igual a su CON. Si supera la CON de la víctima en la tabla de resistencia, causa vómitos, espasmos violentos y fallo respiratorio en 15-60 minutos."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Cola", "rango": "01-06", "armadura": 0, "pv": "PV/3" },
+    { "locacion": "Cuerpo", "rango": "07-14", "armadura": 0, "pv": "PV/3 + 1" },
+    { "locacion": "Cabeza", "rango": "15-20", "armadura": 0, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Veneno Potente: Mordedura con veneno que afecta el sistema nervioso",
+    "Sigilo Natural: Muy difícil de detectar antes de atacar",
+    "Sonido de Advertencia: Usa su cascabel para advertir antes de atacar"
+  ]
+}

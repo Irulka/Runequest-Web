@@ -1,0 +1,54 @@
+{
+  "nombre": "Antílope Sable",
+  "descripcion": "Conocidos como 'Ciervos Lunares' por la forma de sus cuernos, estos antílopes son monturas de los Jinetes Sable, una de las Cinco Grandes Tribus de Prax. Cuando se ven acorralados, pueden embestir, morder y patear. Los Jinetes Sable destacan por su variedad de armas y tácticas de combate, a diferencia de otras tribus nómadas más conservadoras.",
+  "caracteristicas": {
+    "FUE": "3D6+12",
+    "CON": "2D6+6",
+    "TAM": "4D6+12",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 12,
+  "MR": 3,
+  "armadura": "1 (piel delgada)",
+  "habilidades": {
+    "Esquivar": "65%"
+  },
+  "ataques": [
+    {
+      "nombre": "Cornada",
+      "porcentaje": "35%",
+      "daño": "2D6",
+      "MR": 7,
+      "nota": "Solo un tipo de ataque por ronda"
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "35%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Puede combinarse con mordisco"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "2D4",
+      "MR": 7,
+      "nota": "Puede combinarse con patada"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 1, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 1, "pv": "PV/3 - 1" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 1, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 1, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 1, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 1, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 1, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Montura Versátil: Usada por los Jinetes Sable, conocidos por su flexibilidad táctica",
+    "Solo realiza un tipo de ataque por ronda (cornada o combinación mordisco/patada)",
+    "Combate Defensivo: Alta capacidad de esquivar gracias a su agilidad"
+  ]
+}

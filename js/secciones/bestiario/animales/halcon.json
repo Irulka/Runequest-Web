@@ -1,0 +1,35 @@
+{
+  "nombre": "Halcón Vrok",
+  "descripcion": "Poderosa ave de rapiña con plumaje dorado pálido, sagrada para el culto de Yelmalio. Conocida por su excepcional vista y habilidades de vuelo. Aunque pequeño en tamaño, es un cazador formidable en los cielos.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "3D6",
+    "TAM": "2D3",
+    "POD": "2D6",
+    "DES": "2D6+9"
+  },
+  "movimiento": "4/12 (Volar)",
+  "MR": 4,
+  "armadura": "2 (plumas)",
+  "habilidades": {
+    "Esquivar": "70%",
+    "Volar": "95%",
+    "Otear": "90%",
+    "Buscar": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Picotazo",
+      "porcentaje": "45%",
+      "daño": "1D4",
+      "MR": 8
+    }
+  ],
+ 
+  "localizaciones": [
+    { "locacion": "Cuerpo", "rango": "01-20", "armadura": 2, "pv": "PV/3" }],
+  
+  "habilidadesEspeciales": [
+    "Sagrado para Yelmalio: Considerado mensajero del dios solar."
+  ]
+}

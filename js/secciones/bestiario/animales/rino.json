@@ -1,0 +1,54 @@
+{
+  "nombre": "Rinoceronte de Prax",
+  "descripcion": "Los colosos de Prax, estas criaturas viciosas son afortunadamente raras en estado salvaje. Son los corceles de los Jinetes de Rinoceronte, una tribu que alguna vez fue tan grande como las otras Grandes Tribus de Prax, pero ahora mucho más reducida. Siguen sus antiguas costumbres y usan a sus bestias para proveer las necesidades de la vida, incluyendo la armadura casi impenetrable que usan en batalla.",
+  "caracteristicas": {
+    "FUE": "3D6+30",
+    "CON": "2D6+9",
+    "TAM": "3D6+30",
+    "POD": "3D6",
+    "DES": "2D6"
+  },
+  "movimiento": 8,
+  "MR": 4,
+  "armadura": "7 (piel gruesa)",
+  "habilidades": {
+    "Oler Enemigos": "45%"
+  },
+  "ataques": [
+    {
+      "nombre": "Embestida",
+      "porcentaje": "50%",
+      "daño": "1D10",
+      "MR": 8,
+      "nota": "Solo un ataque por ronda"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "1D10",
+      "MR": 8,
+      "nota": "Solo un ataque por ronda"
+    },
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "75%",
+      "daño": "4D6",
+      "MR": 8,
+      "nota": "Solo un ataque por ronda"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 7, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 7, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 7, "pv": "PV/3 + 2" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 7, "pv": "PV/3 + 2" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 7, "pv": "PV/3" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 7, "pv": "PV/3" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 7, "pv": "PV/3 + 1" }
+  ],
+  "habilidadesEspeciales": [
+    "Carga Imparable: Tiende a atacar en embestidas frontales",
+    "El rinoceronte lanudo de Fronela tiene +1D6 a FUE y TAM",
+    "Montura de los Jinetes de Rinoceronte, antiguamente una de las Grandes Tribus"
+  ]
+}

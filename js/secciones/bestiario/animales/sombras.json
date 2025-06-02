@@ -1,0 +1,55 @@
+{
+  "nombre": "Gato de las Sombras",
+  "descripcion": "Felinos de color oscuro que varían desde el tamaño de un gato doméstico hasta el de un lince. Son extremadamente rápidos y silenciosos, conocidos también como 'gatos brillantes' por su dificultad para ser alcanzados. Domesticados por los Orlanthi para pastorear ganado y cazar, son animales sociales que cazan en grupos. Sagrados para Orlanth, en el Paso del Dragón se les llama 'alynxes'.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "2D6+6",
+    "TAM": "1D6",
+    "POD": "2D6+12",
+    "DES": "3D6+12"
+  },
+  "movimiento": 12,
+  "MR": 3,
+  "armadura": "Ninguna",
+  "habilidades": {
+    "Esquivar": "50%",
+    "Ocultar": "75%",
+    "Moverse Silenciosamente": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Garra (x2)",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Ataque simultáneo con ambas garras"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Ataque simultáneo con las garras"
+    },
+    {
+      "nombre": "Desgarrar",
+      "porcentaje": "80%",
+      "daño": "3D6",
+      "MR": 7,
+      "nota": "Requiere que ambos ataques de garra hayan impactado"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 0, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 0, "pv": "PV/3 - 1" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 0, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 0, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 0, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 0, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 0, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque Combinado: Ataca simultáneamente con ambas garras y mordisco",
+    "Caza Cooperativa: +20% a ataques cuando cazan en grupo"
+  ]
+}

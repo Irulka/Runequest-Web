@@ -37,13 +37,13 @@
     }
   ],
     "localizaciones": [
-    { "locacion": "Pierna Derecha", "rango": "01-02", "armadura": 4, "pv": "PV/3" },
-    { "locacion": "Pierna Izquierda", "rango": "03-04", "armadura": 4, "pv": "PV/3" },
-    { "locacion": "Abdomen", "rango": "05-07", "armadura": 4, "pv": "PV/3 + 1" },
-    { "locacion": "Pecho", "rango": "08-10", "armadura": 4, "pv": "PV/3 + 1" },
-    { "locacion": "Brazo Derecho", "rango": "15-16", "armadura": 4, "pv": "PV/3 - 1" },
-    { "locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 4, "pv": "PV/3 - 1" },
-    { "locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3" }
+    { "locacion": "Pierna Derecha", "rango": "01-04", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Abdomen", "rango": "09-11", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Pecho", "rango": "12", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Brazo Derecho", "rango": "13-15", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "1-20", "armadura": 4, "pv": "PV/3" }
   ],
   "habilidadesEspeciales": [
     "Familiar Espiritual: Puede albergar espíritus vinculados (solo en estado no despertado)",

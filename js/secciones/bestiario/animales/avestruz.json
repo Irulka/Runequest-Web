@@ -1,0 +1,49 @@
+{
+  "nombre": "Avestruz de Prax",
+  "descripcion": "Aves no voladoras que alcanzan alturas de 2.5 metros o más. Los machos tienen plumas blancas y negras, mientras que las hembras, ligeramente más pequeñas, tienen plumas grises. Son criadas y montadas por la Tribu Avestruz de Prax. Forman bandadas de hasta seis individuos y son extremadamente veloces. Sus huevos, que pueden alcanzar 30 cm de diámetro, son utilizados como recipientes por las tribus de Prax.",
+  "caracteristicas": {
+    "FUE": "4D6+6",
+    "CON": "3D6",
+    "TAM": "4D6+8",
+    "POD": "2D6",
+    "DES": "3D6+6"
+  },
+  "movimiento": 12,
+  "MR": 1,
+  "armadura": "1 (plumas en cuerpo y cabeza), 1 (piel dura en patas)",
+  "habilidades": {
+    "Esquivar": "35%",
+    "Escuchar": "50%"
+  },
+  "ataques": [
+    {
+      "nombre": "Picotazo",
+      "porcentaje": "45%",
+      "daño": "1D8",
+      "MR": 5,
+      "nota": "Puede atacar con picotazo y patada simultáneamente"
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "45%",
+      "daño": "1D6",
+      "MR": 5,
+      "nota": "Puede atacar con picotazo y patada simultáneamente"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Derecha", "rango": "01-04", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Pata Izquierda", "rango": "05-08", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Abdomen", "rango": "09-10", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Pecho", "rango": "11-14", "armadura": 1, "pv": "PV/3 + 1" },
+    { "locacion": "Ala Derecha", "rango": "15", "armadura": 1, "pv": "PV/3 - 3" },
+    { "locacion": "Ala Izquierda", "rango": "16", "armadura": 1, "pv": "PV/3 - 3" },
+    { "locacion": "Cuello", "rango": "17-19", "armadura": 1, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "20", "armadura": 1, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Doble Ataque: Puede picotear y patear simultáneamente en un mismo turno",
+    "Velocidad Extrema: Uno de los monturas más rápidos de Prax",
+    "Montura de la Tribu Avestruz, una de las tribus menores de Prax"
+  ]
+}

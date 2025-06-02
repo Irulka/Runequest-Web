@@ -1,0 +1,55 @@
+{
+  "nombre": "Tigre Dientes de Sable",
+  "descripcion": "Depredador mortal de tonos marrones y dorados, conocido como 'sakkar' por los pelorianos y sagrado para varios cultos de la Muerte. Aunque sus números han disminuido desde el Amanecer, aún se encuentran en áreas salvajes. Caza mediante emboscadas, esperando pacientemente cerca de abrevaderos o senderos para atacar con sus enormes colmillos y garras. Prefiere presas grandes como bisontes, llamas altas, rinocerontes y jóvenes brontosaurios.",
+  "caracteristicas": {
+    "FUE": "4D6+18",
+    "CON": "2D6+10",
+    "TAM": "4D6+12",
+    "POD": "2D6+6",
+    "DES": "2D6+10"
+  },
+  "movimiento": 10,
+  "MR": 3,
+  "armadura": "3 (piel y pelaje grueso)",
+  "habilidades": {
+    "Ocultar": "70%",
+    "Moverse Silenciosamente": "70%",
+    "Rastrear": "50%"
+  },
+  "ataques": [
+    {
+      "nombre": "Garras (x2)",
+      "porcentaje": "60%",
+      "daño": "1D8",
+      "MR": 5,
+      "nota": "Ataque simultáneo con ambas garras"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "2D6",
+      "MR": 5,
+      "nota": "Puede impalar pero no se queda atascado"
+    },
+    {
+      "nombre": "Desgarrar",
+      "porcentaje": "80%",
+      "daño": "2D8",
+      "MR": 5,
+      "nota": "Requiere que ambos ataques de garra hayan impactado"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 3, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque Combinado: Ataca simultáneamente con ambas garras y mordisco. Si ambas garras impactan, se aferra y desgarra con las patas traseras al siguiente turno.",
+    "Tácticas de Emboscada: +30% a Ocultar y Moverse Silenciosamente cuando acecha"
+  ]
+}

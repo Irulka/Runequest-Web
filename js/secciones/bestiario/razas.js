@@ -1,69 +1,35 @@
-// Inicialización del bestiario de animales
-function initAnimales() {
-    console.log('Inicializando Bestiario de Animales...');
+// Inicialización del generador de razas antiguas
+function initRazas() {
+    console.log('Inicializando Razas Antiguas...');
     
     // Elementos de la interfaz
-    const selectAnimal = document.getElementById('animal');
+    const selectRaza = document.getElementById('raza');
     const resultadosContainer = document.getElementById('resultados-container');
     
-    // Lista de animales disponibles
-    const animalesLista = [
-        { nombre: "Alce", archivo: "animales/alce.json" },  
-        { nombre: "Altillama", archivo: "animales/llama.json" },  
-        { nombre: "Antilope Sable", archivo: "animales/antilope.json" },                
-        { nombre: "Avestruz", archivo: "animales/avestruz.json" },     
-        { nombre: "Bisonte", archivo: "animales/bisonte.json" },            
-        { nombre: "Caballo", archivo: "animales/caballo.json" },  
-        { nombre: "Serpiente de Cascabel", archivo: "animales/cascabel.json" },                      
-        { nombre: "Ciervo de cola Negra", archivo: "animales/ciervo.json" },
-        { nombre: "Cocodrilo", archivo: "animales/coco.json" },
-        { nombre: "Cocodrilo Gigante", archivo: "animales/cocogi.json" },
-        { nombre: "Colmilludo", archivo: "animales/colmilludo.json" },  
-        { nombre: "Corredor de Escombros", archivo: "animales/corredor.json" },  
-        { nombre: "Dientes de Sable", archivo: "animales/dientes.json" },   
-        { nombre: "Gato Sombrío", archivo: "animales/sombras.json" },                       
-        { nombre: "Gran Condor", archivo: "animales/condor.json" },        
-        { nombre: "Grulla Gigante", archivo: "animales/grulla.json" },
-         { nombre: "Halcón Vrok", archivo: "animales/halcon.json" },  
-        { nombre: "Halcón Vrok Gigante", archivo: "animales/halcongi.json" },     
-        { nombre: "Hiena", archivo: "animales/hiena.json" },  
-        { nombre: "Hombre de Rebaño", archivo: "animales/hombre.json" }, 
-        { nombre: "Impala", archivo: "animales/impala.json" },   
-        { nombre: "Jabalí Salvaje", archivo: "animales/jabali.json" },                         
-        { nombre: "Lagarto Bolo", archivo: "animales/lagartobolo.json" },           
-        { nombre: "León", archivo: "animales/leon.json" },   
-        { nombre: "Lobo", archivo: "animales/lobo.json" },          
-        { nombre: "Loper", archivo: "animales/loper.json" }, 
-        { nombre: "Mamut Lanudo", archivo: "animales/mamut.json" },  
-        { nombre: "Mastodonte", archivo: "animales/masto.json" },                              
-        { nombre: "Oso Negro", archivo: "animales/osonegro.json" },
-        { nombre: "Oso Marrón", archivo: "animales/osomarron.json" },
-        { nombre: "Oso Blanco", archivo: "animales/osoblanco.json" },
-        { nombre: "Oso Saltarín", archivo: "animales/ososalta.json" },        
-        { nombre: "Pájaro de Sangre", archivo: "animales/bloodbird.json" },
-        { nombre: "Perro Cerdo", archivo: "animales/perrocerdo.json" },        
-        { nombre: "Perro de Caza", archivo: "animales/perroca.json" },          
-        { nombre: "Perro de Pelea", archivo: "animales/perrop.json" }, 
-        { nombre: "Pitón", archivo: "animales/piton.json" },         
-        { nombre: "Puma", archivo: "animales/puma.json" }, 
-        { nombre: "Rinoceronte", archivo: "animales/rino.json" },                
-        { nombre: "Buey", archivo: "animales/toro.json" },
-        { nombre: "Titanótero", archivo: "animales/titan.json" },
-        { nombre: "Lobo Wargo", archivo: "animales/wargo.json" },         
-        { nombre: "Yak", archivo: "animales/yak.json" },        
-        { nombre: "Zebra", archivo: "animales/zebra.json" },        
+    // Lista de razas disponibles
+    const razasLista = [
+        { nombre: "Dryade", archivo: "razas/dryade.json" },
+        { nombre: "Elfo Marrón", archivo: "razas/elfom.json" },
+        { nombre: "Elfo Verde", archivo: "razas/elfov.json" },
+        { nombre: "Elfo Amarillo", archivo: "razas/elfoa.json" },
+        { nombre: "Elfo Negro", archivo: "razas/elfon.json" },
+        { nombre: "Centauro", archivo: "razas/centauro.json" },
+        { nombre: "Morocante", archivo: "razas/morocante.json" },
+        { nombre: "Aldryami", archivo: "razas/aldryami.json" },
+        { nombre: "Mostali", archivo: "razas/mostali.json" },
+        { nombre: "Uz", archivo: "razas/uz.json" }
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
-    // Llenar el select con los animales
-    animalesLista.forEach(animal => {
+    // Llenar el select con las razas
+    razasLista.forEach(raza => {
         const option = document.createElement('option');
-        option.value = animal.archivo;
-        option.textContent = animal.nombre;
-        selectAnimal.appendChild(option);
+        option.value = raza.archivo;
+        option.textContent = raza.nombre;
+        selectRaza.appendChild(option);
     });
     
     // Configurar evento para el select
-    selectAnimal.addEventListener('change', function() {
+    selectRaza.addEventListener('change', function() {
         const archivoSeleccionado = this.value;
         
         if (!archivoSeleccionado) {
@@ -71,44 +37,44 @@ function initAnimales() {
             return;
         }
         
-        // Cargar el archivo específico del animal
+        // Cargar el archivo específico de la raza
         fetch(`../js/secciones/bestiario/${archivoSeleccionado}`)
             .then(response => {
-                if (!response.ok) throw new Error('Animal no encontrado');
+                if (!response.ok) throw new Error('Raza no encontrada');
                 return response.json();
             })
-            .then(animal => {
-                mostrarFichaAnimal(animal);
+            .then(raza => {
+                mostrarFichaRaza(raza);
             })
             .catch(error => {
-                console.error('Error cargando el animal:', error);
+                console.error('Error cargando la raza:', error);
                 mostrarError();
             });
     });
     
     // Configurar evento para el botón de volver
     document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('btn-animal')) {
+        if (e.target.classList.contains('btn-magia')) {
             resultadosContainer.style.display = 'none';
-            selectAnimal.value = '';
+            selectRaza.value = '';
         }
     });
 
     // Función para variar porcentajes ±25% con límites de 10-100%
     function variarPorcentaje(valor) {
-    if (typeof valor === 'string' && valor.endsWith('%')) {
-        const num = parseInt(valor);
-        if (!isNaN(num)) {
-            // Variación aleatoria entre -10 y +25
-            const variacion = Math.floor(Math.random() * 36) - 10;
-            let nuevoValor = num + variacion;
-            // Asegurar que esté entre 10% y 100%
-            nuevoValor = Math.max(10, Math.min(100, nuevoValor));
-            return `${nuevoValor}%`;
+        if (typeof valor === 'string' && valor.endsWith('%')) {
+            const num = parseInt(valor);
+            if (!isNaN(num)) {
+                // Variación aleatoria entre -10 y +25
+                const variacion = Math.floor(Math.random() * 36) - 10;
+                let nuevoValor = num + variacion;
+                // Asegurar que esté entre 10% y 100%
+                nuevoValor = Math.max(10, Math.min(100, nuevoValor));
+                return `${nuevoValor}%`;
+            }
         }
+        return valor;
     }
-    return valor;
-}
 
     // Función para procesar objetos con posibles porcentajes
     function procesarPorcentajes(obj) {
@@ -142,44 +108,54 @@ function initAnimales() {
         });
     }
 
-    function mostrarFichaAnimal(animal) {
+    function mostrarFichaRaza(raza) {
         resultadosContainer.style.display = 'block';
         
         // Generar características aleatorias
         const caracteristicasGeneradas = {};
-        if (animal.caracteristicas) {
-            for (const [key, value] of Object.entries(animal.caracteristicas)) {
+        if (raza.caracteristicas) {
+            for (const [key, value] of Object.entries(raza.caracteristicas)) {
                 caracteristicasGeneradas[key] = tirarDados(value);
             }
         }
         
         // Calcular puntos de vida
-        const puntosVida = Math.max(1, animal.puntosVida || calcularPuntosVida(caracteristicasGeneradas));
-        const pvLocalizaciones = calcularPVLocalizaciones(animal, puntosVida);
+        const puntosVida = Math.max(1, raza.puntosVida || calcularPuntosVida(caracteristicasGeneradas));
+        const pvLocalizaciones = calcularPVLocalizaciones(raza, puntosVida);
         
-        // Calcular modificadores de combate (sin daño espiritual)
+        // Generar Puntos de Magia
+        if (raza.puntosMagia) {
+            if (typeof raza.puntosMagia === 'string' && raza.puntosMagia.includes('D')) {
+                caracteristicasGeneradas.POD = tirarDados(raza.puntosMagia);
+            } else {
+                caracteristicasGeneradas.POD = raza.puntosMagia;
+            }
+        }
+        
+        // Calcular modificadores de combate
         const modCombate = calcularModificadoresCombate(caracteristicasGeneradas);
             
         // Procesar todos los campos con porcentajes
-        const habilidadesProcesadas = procesarPorcentajes(animal.habilidades);
-        const idiomasProcesados = procesarPorcentajes(animal.idiomas);
-        const pasionesProcesadas = procesarPorcentajes(animal.pasiones);
-        const runasProcesadas = procesarPorcentajes(animal.runas);
-        const ataquesProcesados = procesarAtaques(animal.ataques);
+        const habilidadesProcesadas = procesarPorcentajes(raza.habilidades);
+        const idiomasProcesados = procesarPorcentajes(raza.idiomas);
+        const pasionesProcesadas = procesarPorcentajes(raza.pasiones);
+        const runasProcesadas = procesarPorcentajes(raza.runas);
+        const ataquesProcesados = procesarAtaques(raza.ataques);
         
         document.getElementById('resultado-principal').innerHTML = `
-            <div class="ficha-animal">
-                <h2>${animal.nombre}</h2>
+            <div class="ficha-raza">
+                <h2>${raza.nombre}</h2>
                 
                 <div class="tabs">
                     <button class="tab-btn active" data-tab="caracteristicas">Características</button>
                     <button class="tab-btn" data-tab="combate">Combate</button>
                     <button class="tab-btn" data-tab="habilidades">Habilidades</button>
+                    <button class="tab-btn" data-tab="magia">Magia</button>
                 </div>
                 
                 <div class="tab-content active" id="caracteristicas">
                     ${generarTablaCaracteristicas(
-                        {...animal, pasiones: pasionesProcesadas, runas: runasProcesadas}, 
+                        {...raza, pasiones: pasionesProcesadas, runas: runasProcesadas}, 
                         caracteristicasGeneradas, 
                         puntosVida, 
                         pvLocalizaciones, 
@@ -188,14 +164,18 @@ function initAnimales() {
                 </div>
                 
                 <div class="tab-content" id="combate">
-                    ${generarTablaCombate({...animal, ataques: ataquesProcesados}, pvLocalizaciones, puntosVida)}
+                    ${generarTablaCombate({...raza, ataques: ataquesProcesados}, pvLocalizaciones, puntosVida)}
                 </div>
                 
                 <div class="tab-content" id="habilidades">
-                    ${generarTablaHabilidades({...animal, habilidades: habilidadesProcesadas, idiomas: idiomasProcesados})}
+                    ${generarTablaHabilidades({...raza, habilidades: habilidadesProcesadas, idiomas: idiomasProcesados})}
                 </div>
                 
-                <button class="btn-animal">Volver a la lista</button>
+                <div class="tab-content" id="magia">
+                    ${generarTablaMagia(raza, caracteristicasGeneradas)}
+                </div>
+                
+                <button class="btn-magia">Volver a la lista</button>
             </div>
         `;
         
@@ -211,10 +191,10 @@ function initAnimales() {
         });
     }
 
-    function generarTablaCaracteristicas(animal, caracteristicas, puntosVida, pvLocalizaciones, modCombate) {
+    function generarTablaCaracteristicas(raza, caracteristicas, puntosVida, pvLocalizaciones, modCombate) {
         return `
-            <div class="descripcion-animal">
-                <p>${animal.descripcion || 'No hay descripción disponible.'}</p>
+            <div class="descripcion-raza">
+                <p>${raza.descripcion || 'No hay descripción disponible.'}</p>
             </div>
             
             <h3>Características Generadas</h3>
@@ -229,44 +209,46 @@ function initAnimales() {
             <h3>Atributos</h3>
             <div class="atributos-grid">
                 <div class="atributo"><strong>Puntos de Vida:</strong> ${puntosVida}</div>
-                <div class="atributo"><strong>Movimiento:</strong> ${animal.movimiento || '-'}</div>
+                <div class="atributo"><strong>Puntos de Magia:</strong> ${caracteristicas.POD || raza.puntosMagia || '-'}</div>
+                <div class="atributo"><strong>Movimiento:</strong> ${raza.movimiento || '-'}</div>
                 <div class="atributo"><strong>Mod. Daño:</strong> ${modCombate.modDanio}</div>
+                <div class="atributo"><strong>Daño Espiritual:</strong> ${modCombate.danioEspiritual}</div>
                 <div class="atributo"><strong>Mod. Tamaño:</strong> ${modCombate.modTamano}</div>
                 <div class="atributo"><strong>Mod. Destreza:</strong> ${modCombate.modDestreza}</div>
-                <div class="atributo"><strong>Armadura:</strong> ${typeof animal.armadura === 'object' ? 
-                    Object.entries(animal.armadura).map(([k,v]) => `${k}: ${v}`).join(', ') : 
-                    (animal.armadura || 'Ninguna')}</div>
+                <div class="atributo"><strong>Armadura:</strong> ${typeof raza.armadura === 'object' ? 
+                    Object.entries(raza.armadura).map(([k,v]) => `${k}: ${v}`).join(', ') : 
+                    (raza.armadura || 'Ninguna')}</div>
             </div>
             
-            ${animal.runas ? `
+            ${raza.runas ? `
             <h3>Runas</h3>
             <div class="runas-grid">
-                ${typeof animal.runas === 'string' ? `
-                    <div class="runa">${animal.runas}</div>
-                ` : Object.entries(animal.runas).map(([runa, valor]) => `
+                ${typeof raza.runas === 'string' ? `
+                    <div class="runa">${raza.runas}</div>
+                ` : Object.entries(raza.runas).map(([runa, valor]) => `
                     <div class="runa"><strong>${runa}:</strong> ${valor}</div>
                 `).join('')}
             </div>` : ''}
             
-            ${animal.pasiones ? `
+            ${raza.pasiones ? `
             <h3>Pasiones</h3>
             <div class="pasiones-grid">
-                ${typeof animal.pasiones === 'string' ? `
-                    <div class="pasion">${animal.pasiones}</div>
-                ` : Object.entries(animal.pasiones).map(([pasion, valor]) => `
+                ${typeof raza.pasiones === 'string' ? `
+                    <div class="pasion">${raza.pasiones}</div>
+                ` : Object.entries(raza.pasiones).map(([pasion, valor]) => `
                     <div class="pasion"><strong>${pasion}:</strong> ${valor}</div>
                 `).join('')}
             </div>` : ''}
         `;
     }
 
-    function generarTablaCombate(animal, pvLocalizaciones, puntosVida) {
+    function generarTablaCombate(raza, pvLocalizaciones, puntosVida) {
         return `
             <h3>Ataques</h3>
-            ${animal.ataques?.length ? `
+            ${raza.ataques?.length ? `
             <table class="tabla-ataques">
                 <tr><th>Nombre</th><th>%</th><th>Daño</th><th>MR</th><th>Efecto</th></tr>
-                ${animal.ataques.map(a => `
+                ${raza.ataques.map(a => `
                     <tr>
                         <td>${a.nombre}</td>
                         <td>${a.porcentaje}</td>
@@ -295,44 +277,57 @@ function initAnimales() {
                 <strong>Puntos de Vida:</strong> ${puntosVida}
             </div>
             
-            ${animal.habilidadesEspeciales?.length ? `
+            ${raza.habilidadesEspeciales?.length ? `
             <h3>Habilidades Especiales</h3>
             <ul class="habilidades-especiales">
-                ${animal.habilidadesEspeciales.map(h => `<li>${h}</li>`).join('')}
+                ${raza.habilidadesEspeciales.map(h => `<li>${h}</li>`).join('')}
             </ul>` : ''}
         `;
     }
 
-    function generarTablaHabilidades(animal) {
+    function generarTablaHabilidades(raza) {
         return `
-            ${animal.habilidades ? `
+            ${raza.habilidades ? `
             <div class="habilidades-grid">
-                ${typeof animal.habilidades === 'string' ? `
-                    <div class="habilidad">${animal.habilidades}</div>
-                ` : Object.entries(animal.habilidades).map(([h, v]) => `
+                ${typeof raza.habilidades === 'string' ? `
+                    <div class="habilidad">${raza.habilidades}</div>
+                ` : Object.entries(raza.habilidades).map(([h, v]) => `
                     <div class="habilidad"><strong>${h}:</strong> ${v}</div>
                 `).join('')}
             </div>` : '<p>No tiene habilidades definidas</p>'}
             
-            ${animal.idiomas ? `
+            ${raza.idiomas ? `
             <h3>Idiomas</h3>
             <div class="idiomas-grid">
-                ${typeof animal.idiomas === 'string' ? `
-                    <div class="idioma">${animal.idiomas}</div>
-                ` : Object.entries(animal.idiomas).map(([i, v]) => `
+                ${typeof raza.idiomas === 'string' ? `
+                    <div class="idioma">${raza.idiomas}</div>
+                ` : Object.entries(raza.idiomas).map(([i, v]) => `
                     <div class="idioma"><strong>${i}:</strong> ${v}</div>
                 `).join('')}
             </div>` : ''}
         `;
     }
 
+    function generarTablaMagia(raza, caracteristicas) {
+        return `
+            ${raza.magia ? `
+            <div class="magia-info">
+                <p><strong>Capacidad Mágica:</strong> ${raza.magia}</p>
+            </div>` : ''}
+            
+            <div class="puntos-magia">
+                <strong>Puntos de Magia:</strong> ${caracteristicas.POD || raza.puntosMagia || '-'}
+            </div>
+        `;
+    }
+
     function mostrarError() {
         resultadosContainer.style.display = 'block';
         document.getElementById('resultado-principal').innerHTML = `
-            <div class="ficha-animal">
+            <div class="ficha-raza">
                 <h3>Error</h3>
-                <p>No se pudo cargar la información del animal.</p>
-                <button class="btn-animal">Volver a la lista</button>
+                <p>No se pudo cargar la información de la raza.</p>
+                <button class="btn-magia">Volver a la lista</button>
             </div>
         `;
     }
@@ -387,10 +382,10 @@ function initAnimales() {
     }
 
     // Cálculo de PV por localización, respetando las definidas o usando fórmulas con mínimo de 1
-    function calcularPVLocalizaciones(animal, puntosVida) {
-        if (!animal.localizaciones) return null;
+    function calcularPVLocalizaciones(raza, puntosVida) {
+        if (!raza.localizaciones) return null;
         
-        return animal.localizaciones.map(loc => {
+        return raza.localizaciones.map(loc => {
             if (typeof loc.pv === 'number') {
                 return { ...loc, pvCalculado: Math.max(1, loc.pv) };
             }
@@ -412,14 +407,17 @@ function initAnimales() {
         });
     }
 
-    // Nuevas funciones para calcular modificadores de combate (sin daño espiritual)
+    // Nuevas funciones para calcular modificadores de combate
     function calcularModificadoresCombate(caracteristicas) {
         const fue = caracteristicas.FUE || 10;
         const tam = caracteristicas.TAM || 10;
+        const pod = caracteristicas.POD || 10;
         const dex = caracteristicas.DES || 10;
+        const car = caracteristicas.CAR || 10;
         
         return {
             modDanio: calcularModificadorDanio(fue, tam),
+            danioEspiritual: calcularDanioEspiritual(pod, car),
             modTamano: calcularModificadorTamano(tam),
             modDestreza: calcularModificadorDestreza(dex)
         };
@@ -435,6 +433,18 @@ function initAnimales() {
         
         const dadosExtra = Math.floor((suma - 56) / 16);
         return `+${2 + dadosExtra}D6`;
+    }
+
+    function calcularDanioEspiritual(pod, car) {
+        const suma = pod + car;
+        if (suma <= 12) return "1D6";
+        if (suma <= 24) return "1D6+1";
+        if (suma <= 32) return "1D6+2";
+        if (suma <= 40) return "2D6";
+        if (suma <= 56) return "2D6+1";
+        
+        const dadosExtra = Math.floor((suma - 56) / 16);
+        return `${2 + dadosExtra}D6+1`;
     }
 
     function calcularModificadorTamano(tam) {
@@ -455,7 +465,7 @@ function initAnimales() {
 }
 
 if (document.readyState === 'complete') {
-    initAnimales();
+    initRazas();
 } else {
-    document.addEventListener('DOMContentLoaded', initAnimales);
+    document.addEventListener('DOMContentLoaded', initRazas);
 }

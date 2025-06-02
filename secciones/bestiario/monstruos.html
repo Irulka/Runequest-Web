@@ -1,22 +1,22 @@
 <div class="seccion-activa">
     <div class="varita-header-container">
-        <h2 class="text-center">Bestiario de Animales</h2>
+        <h2 class="text-center">Bestiario de RuneQuest</h2>
     </div>
     
     <div class="varita-layout-container">
         <div class="varita-content-container">
             <div class="varita-container">
                 <p class="explicacion-varita">
-                    El bestiario de animales contiene las criaturas no mágicas que podrás encontrar en tus aventuras en Glorantha.
-                    Selecciona un animal para generar un ejemplar aleatorio con sus características.
+                    El bestiario contiene las criaturas y monstruos que podrás encontrar en tus aventuras en Glorantha.
+                    Selecciona un monstruo para generar un ejemplar aleatorio con sus características.
                 </p>
                 
-                <!-- Formulario para seleccionar animal -->
+                <!-- Formulario para seleccionar monstruo -->
                 <div class="formulario-profesiones">
                     <div class="profesion-selector">
-                        <label for="animal">Animal:</label>
-                        <select id="animal">
-                            <option value="">-- Selecciona un animal --</option>
+                        <label for="monstruo">Monstruo:</label>
+                        <select id="monstruo">
+                            <option value="">-- Selecciona un monstruo --</option>
                             <!-- Opciones se llenarán dinámicamente con JS -->
                         </select>
                     </div>
@@ -30,7 +30,7 @@
         </div>
         
         <div class="eurmal-image-container">
-            <img id="imagen-dinamica" src="../imagenes/animales.webp" alt="Bestiario de Animales" class="eurmal-image">
+            <img id="imagen-dinamica" src="../imagenes/broo.webp" alt="Bestiario de RuneQuest" class="eurmal-image">
         </div>
     </div>
 </div>
@@ -65,14 +65,14 @@
         cursor: pointer;
     }
     
-    /* Estilos para la ficha del animal */
-    .ficha-animal {
+    /* Estilos para la ficha del monstruo */
+    .ficha-monstruo {
         background: rgba(0, 0, 0, 0.2);
         padding: 15px;
         border-radius: 5px;
     }
     
-    .ficha-animal h2 {
+    .ficha-monstruo h2 {
         color: #d69e2e;
         border-bottom: 1px solid #4a5568;
         padding-bottom: 8px;
@@ -166,8 +166,17 @@
         margin-bottom: 5px;
     }
     
+    /* Magia */
+    .magia-info,
+    .puntos-magia {
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
     /* Botón de volver */
-    .btn-animal {
+    .btn-magia {
         margin-top: 15px;
         padding: 8px 15px;
         background: #4a5568;
@@ -178,7 +187,7 @@
         transition: background 0.2s ease;
     }
     
-    .btn-animal:hover {
+    .btn-magia:hover {
         background: #2d3748;
     }
     
@@ -190,4 +199,4 @@
     }
 </style>
 
-<script src="../js/secciones/bestiario/animales.js"></script>
+<script src="../js/secciones/bestiario/monstruos.js"></script>

@@ -51,6 +51,7 @@
             <button class="btn-obstacle-color verde" data-color="verde">Verde</button>
             <button class="btn-obstacle-color gris" data-color="gris">Gris</button>
             <button class="btn-obstacle-color marron" data-color="marron">Marrón</button>
+            <button class="btn-obstacle-color negro" data-color="negro">Negro</button>
         </div>
     </div>
 </div>
@@ -81,10 +82,10 @@
     /* ===== ESTILOS CUADRÍCULA CUADRADA ===== */
     #tablero-combate { 
         display: grid;
-        grid-template-columns: repeat(16, 50px); /* 16 columnas fijas de 50px */
-        grid-template-rows: repeat(12, 50px); /* 12 filas fijas de 50px */
+        grid-template-columns: repeat(16, 45px); /* 16 columnas fijas de 50px */
+        grid-template-rows: repeat(12, 45px); /* 12 filas fijas de 50px */
         gap: 2px; 
-        width: calc(16 * 50px + 15 * 2px + 4px); /* Ancho calculado para 16 columnas + 15 gaps + padding */
+        width: calc(16 * 45px + 15 * 2px + 4px); /* Ancho calculado para 16 columnas + 15 gaps + padding */
         margin: 40px auto;
         position: relative;
         background-color: #333; 
@@ -121,6 +122,7 @@
     .celda-obstaculo-verde { background-color: #68d391; } 
     .celda-obstaculo-gris { background-color: #a0aec0; } 
     .celda-obstaculo-marron { background-color: #b3745c; } 
+    .celda-obstaculo-negro { background-color: #000000; }  
     .celda-obstaculo-original { background-color: #2d3748; } 
 
 
@@ -311,6 +313,7 @@
     .btn-obstacle-color.verde { background-color: #68d391; }
     .btn-obstacle-color.gris { background-color: #a0aec0; }
     .btn-obstacle-color.marron { background-color: #b3745c; }
+    .btn-obstacle-color.negro { background-color: #000000; }
 
     .btn-obstacle-color:hover {
         opacity: 0.8;

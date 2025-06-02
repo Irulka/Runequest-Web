@@ -8,6 +8,10 @@ function initNPCs() {
     // Array con los nombres de los archivos JSON de los NPCs
     const npcFiles = [
         'js/secciones/personajes/npcs/babuino.json',
+        'js/secciones/personajes/npcs/bunto.json',
+        'js/secciones/personajes/npcs/fenton.json',
+        'js/secciones/personajes/npcs/jordi.json',
+        'js/secciones/personajes/npcs/remuerto.json',
         'js/secciones/personajes/npcs/trolln.json',
         'js/secciones/personajes/npcs/vasana.json'
         // Añade más archivos aquí
@@ -21,7 +25,7 @@ function initNPCs() {
         mostrarNPCs(npcs);
         
         document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('btn-volver')) {
+            if (e.target.classList.contains('btn-volver') || e.target.classList.contains('btn-magia')) {
                 resultadosContainer.style.display = 'none';
                 npcsGrid.style.display = 'grid';
                 imagenDinamica.src = './imagenes/npc.webp';
@@ -91,7 +95,7 @@ function initNPCs() {
                     ${generarTablaMagia(npc)}
                 </div>
                 
-                <button class="btn-magia">Volver a la lista</button>
+                <button class="btn-volver">Volver a la lista</button>
             </div>
         `;
         

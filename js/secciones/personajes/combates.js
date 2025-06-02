@@ -99,7 +99,8 @@ function iniciarNuevoCombate() {
       'celda-obstaculo-celeste',
       'celda-obstaculo-verde',
       'celda-obstaculo-gris',
-      'celda-obstaculo-marron',
+      'celda-obstaculo-marron', 
+      'celda-obstaculo-negro', 
       'celda-obstaculo-original'
     );
     celda.innerHTML = '';
@@ -244,7 +245,8 @@ function colocarPersonaje(id) {
         oldCelda.classList.remove(
             'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
             'celda-obstaculo-celeste', 'celda-obstaculo-verde',
-            'celda-obstaculo-gris', 'celda-obstaculo-marron', 'celda-obstaculo-original'
+            'celda-obstaculo-gris', 'celda-obstaculo-marron',
+            'celda-obstaculo-negro', 'celda-obstaculo-original'
         );
         oldCelda.innerHTML = '';
         oldCelda.style.backgroundColor = ''; 
@@ -372,7 +374,8 @@ function moverPersonaje(fromIndex, toIndex) {
   celdaFrom.classList.remove(
       'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
       'celda-obstaculo-celeste', 'celda-obstaculo-verde',
-      'celda-obstaculo-gris', 'celda-obstaculo-marron', 'celda-obstaculo-original'
+      'celda-obstaculo-gris', 'celda-obstaculo-marron',
+      'celda-obstaculo-negro', 'celda-obstaculo-original'
   );
   celdaFrom.innerHTML = '';
   celdaFrom.style.backgroundColor = ''; 
@@ -489,6 +492,7 @@ function seleccionarTipoObstaculo(color) {
         'celda-obstaculo-verde',
         'celda-obstaculo-gris',
         'celda-obstaculo-marron',
+        'celda-obstaculo-negro',
         'celda-obstaculo-original'
     );
     celdaElement.style.backgroundColor = ''; 

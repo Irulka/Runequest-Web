@@ -3,10 +3,7 @@
     "imagen": "./imagenes/objetosm/laudnav.webp",
     "descripcion": "Este hermoso instrumento tiene la apariencia de un laud bellamente decorado.  Suena igual, se toca igual, y salvo que se supere un chequeo de INTx3 o se lance un conjuro de Detectar Magia, nadie podría asegurar que se trata en realidad de un poderoso objeto mágico. Si se observa detenidamente a través del agujero de la caja de resonancia, se podrán observar pequeñas partituras grabadas en el interior del instrumento, las cuales podrá interpretar cualquier personaje que posea una habilidad de al menos 25% en tocar cualquier instrumento musical. Para hacer funcionar el objeto, se debe tocar cualquiera de las melodías, sacrificar los puntos necesarios y superar una tirada de Meditación y otra de Tocar Laud. Salvo que se indique lo contrario, los efectos comenzarán a partir de que se acabe de tocar la canción, las cuales tendrán un asalto de duración.",
     "propiedades": {
-        "INT": 17,
-        "POD": 6,
-        "CAR": 8,
-        "PV": 6
+        "Peso": "1,2 Kg"
     },
     "efectos": [
         {

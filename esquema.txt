@@ -30,6 +30,7 @@ imagenes
    --------- hechiceria.webp
    --------- mercader.webp
    --------- modificadores.webp
+   --------- monstruo.webp
    --------- noctalo.webp
    --------- npc.webp
    --------- personaje.webp
@@ -48,7 +49,10 @@ js
                                            --------- elementales.js
                                            --------- espiritus.js
                                            --------- otros.js
-
+                            --------- monstruos
+                                           --------- dancer.json
+                            --------- monstruos.json
+                            --------- monstruo.js
                             --------- animales-data.js
                             --------- animales.js
 
@@ -107,6 +111,7 @@ secciones
                             --------- elementales.html
                             --------- espiritus.html
                             --------- otros.html
+                --------- monstruos.html
 
                 --------- animales.html
 

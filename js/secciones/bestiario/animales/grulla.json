@@ -1,0 +1,83 @@
+{
+  "nombre": "Grulla Gigante",
+  "descripcion": "Majestuosas aves de cuello y patas largas con plumaje gris-blanco y alas de puntas negras. Cabeza roja brillante y pico verde largo. No migratorias, son veneradas por los isleños de Choralinthor como protectoras contra piratas. Emiten fuertes llamados trompeteantes cuando se sienten amenazadas.",
+  "caracteristicas": {
+    "FUE": "4D6",
+    "CON": "3D6",
+    "TAM": "4D6+6",
+    "POD": "2D6",
+    "DES": "3D6+6"
+  },
+  "movimiento": "12/12 (Volar)",
+  "MR": 2,
+  "armadura": {
+    "Cuerpo y cabeza": "1 (plumas)",
+    "Patas": "1 (piel dura)"
+  },
+  "habilidades": {
+    "Volar": "90%",
+    "Observar": "75%"
+  },
+  "ataques": [
+    {
+      "nombre": "Picotazo",
+      "porcentaje": "45%",
+      "daño": "1D6",
+      "MR": 6,
+      "efecto": "Ataque rápido dirigido usualmente a los ojos o cara"
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Pata Derecha",
+      "rango": "01-04",
+      "armadura": 1,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Pata Izquierda",
+      "rango": "05-08",
+      "armadura": 1,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Abdomen",
+      "rango": "09-10",
+      "armadura": 1,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Pecho",
+      "rango": "11-12",
+      "armadura": 1,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Ala Derecha",
+      "rango": "13-14",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Ala Izquierda",
+      "rango": "15-16",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cuello",
+      "rango": "17-19",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cabeza",
+      "rango": "20",
+      "armadura": 1,
+      "pv": "PV/3"
+    }
+  ],
+  "habilidadesEspeciales": [
+    "Defensa comunal: Atacan en grandes bandadas cuando se sienten amenazadas",
+    "Llamado de alerta: Emiten fuertes sonidos trompeteantes para advertir de peligros"
+  ]}

@@ -1,0 +1,71 @@
+{
+  "nombre": "Hadrosauro",
+  "descripcion": "Grandes reptiles inteligentes nacidos de huevos de dragón inmaduros que nunca completaron su metamorfosis. Vegetarianos pacíficos que prefieren hojas y vegetación dura. Combinan características de bestias de manada con seres sapientes. Aunque evitan a los extraños, pueden compartir conocimiento sobre territorios y pastos si se les aborda correctamente en su lenguaje arcaico.",
+  "caracteristicas": {
+    "FUE": "2D6+24",
+    "CON": "3D6+12",
+    "TAM": "2D6+36",
+    "INT": "3D6",
+    "POD": "2D6+24",
+    "DES": "1D6+6",
+    "CAR": "2D6"
+  },
+  "movimiento": 10,
+  "puntosMagia": "2D6+24",
+  "MR": 3,
+  "armadura": {
+    "Piel": "8 puntos (todas localizaciones)"
+  },
+  "habilidades": {
+    "Encontrar plantas comestibles": "75%",
+    "Buscar": "35%",
+    "Hablar Auld Wyrnish": "60%",
+    "Entender Tractalk": "32%"
+  },
+  "magia": {
+    "Magia espiritual": "Todos la conocen",
+    "Puntos rúnicos": "1D6",
+    "Tipo": "Magia rúnica (no dracónica)"
+  },
+  "habilidadesEspeciales": [
+    "Inteligencia: Capaces de comunicación compleja",
+    "Conocimiento ecológico: Saben territorios de depredadores y buenos pastos",
+    "Defensa limitada: Aunque pacíficos, pueden defenderse si es necesario",
+    "Origen draconico: Nacidos de huevos de dragón que no maduraron",
+    "Vida en manada: Sociales pero cautelosos con extraños"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "45%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Puede usarse simultáneamente con patada"
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "65%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Puede usarse simultáneamente con mordisco"
+    },
+    {
+      "nombre": "Latigazo de cola",
+      "porcentaje": "85%",
+      "daño": "4D6",
+      "MR": 7,
+      "nota": "Solo contra objetivos a los lados o traseros"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 8, "pv": 9},
+    {"locacion": "Pata trasera derecha", "rango": "03-04", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Pata trasera izquierda", "rango": "05-06", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 8, "pv": "PV/3 + 1"},
+    {"locacion": "Pecho", "rango": "10-12", "armadura": 8, "pv": "PV/3 + 1"},
+    {"locacion": "Mano derecha", "rango": "13-14", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Mano izquierda", "rango": "15-16", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 8, "pv": "PV/3"}
+  ],
+  "notas": "Aunque generalmente pacíficos, pueden defenderse combinando mordiscos y patadas, o usando su cola contra amenazas laterales/traseras. Su conocimiento mágico proviene posiblemente de los dragonewt, aunque usan magia rúnica en lugar de magia dracónica. El Trachodon es la variedad más común en Paso del Dragón, existiendo también versiones no inteligentes."
+}

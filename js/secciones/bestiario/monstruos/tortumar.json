@@ -1,0 +1,56 @@
+{
+  "nombre": "Gran Tortuga Marina (Sofali)",
+  "descripcion": "Colosales tortugas marinas que mantienen una relación simbiótica con los Hsunchen Sofali, quienes las usan como barcos vivientes para navegar los océanos de Glorantha. Capaces de sumergirse a más de 1 km de profundidad y nadar más rápido que un humano corriendo. Su caparazón sirve de plataforma para viajes transoceánicos.",
+
+  "caracteristicas": {
+    "FUE": "3D6+24",
+    "CON": "4D6",
+    "TAM": "4D6+24",
+    "INT": "2D6",
+    "POD": "4D6",
+    "DES": "3D6"
+  },
+
+  "movimiento": "1 Tierra / 10 Mar",
+  "MR": 3,
+  "armadura": {
+    "Caparazón": 9,
+    "Extremidades": 4
+  },
+
+  "habilidades": {
+    "Nadar": "120%"
+  },
+
+  "habilidadesEspeciales": [
+    "Buceo profundo: Puede sumergirse a más de 1000 metros",
+    "Plataforma viviente: Puede transportar pasajeros y carga en su caparazón",
+    "Resistencia oceánica: Adaptada para largas travesías marinas"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "2D6",
+      "MR": 7,
+      "efecto": "Usado solo en defensa propia"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Derecha", "rango": "03", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cuerpo", "rango": "05-15", "armadura": 9, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "16", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "18-20", "armadura": 4, "pv": "PV/3"}
+  ],
+
+  "notas": [
+    "Relación simbiótica con los Hsunchen Sofali de Fethlon, las Islas del Este y Pamaletla",
+    "Pueden ser domesticadas como medio de transporte marino",
+    "Normalmente pacíficas, solo atacan si son provocadas"
+  ]
+}

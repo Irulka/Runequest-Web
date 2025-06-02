@@ -1,0 +1,59 @@
+{
+  "nombre": "Wyrm Marino",
+  "descripcion": "Variante acuática de los wyrms que carece de alas pero posee una habilidad excepcional para nadar. Respiran tanto agua como aire y son extremadamente agresivos, atacando en el 90% de los encuentros. Pueden volcar embarcaciones emergiendo bajo ellas y suelen retirarse a las profundidades cuando están heridos para recuperarse.",
+
+  "caracteristicas": {
+    "FUE": "10D6",
+    "CON": "3D6",
+    "TAM": "10D6",
+    "INT": "4D6",
+    "POD": "3D6+6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+
+  "movimiento": 6,
+
+  "MR": 3,
+  "armadura": "Escamas gruesas (8 puntos)",
+
+  "habilidades": {
+    "Nadar": "95%",
+    "Escudriñar": "50%"
+  },
+
+  "idiomas": {
+    "Auld Wyrmish": "75%",
+    "Lengua Marina": "50%",
+    "Lengua de Embarcaciones": "35%",
+    "Lengua humana local": "50%"
+  },
+
+  "magia": "Conoce hechizos espirituales equivalentes a su CAR. Algunos son iniciados en cultos con acceso a magia rúnica.",
+
+  "habilidadesEspeciales": [
+    "Limitación de ataque: Solo un ataque por asalto cuando está en el agua",
+    "Retirada: Se sumergen para sanar cuando están heridos"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "85%",
+      "daño": "1D10",
+      "MR": 7
+    },
+    {
+      "nombre": "Latigazo de cola",
+      "porcentaje": "85%",
+      "daño": "1D6",
+      "MR": 7
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-06", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Cuerpo", "rango": "07-14", "armadura": 8, "pv": "PV/3 + 1"},
+    {"locacion": "Cabeza", "rango": "15-20", "armadura": 8, "pv": "PV/3"}
+  ]
+}

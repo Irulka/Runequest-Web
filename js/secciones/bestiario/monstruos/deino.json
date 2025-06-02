@@ -1,0 +1,63 @@
+{
+  "nombre": "Deinonychus",
+  "descripcion": "Dinosaurios bípedos, emplumados y veloces que cazan en manada. Miden aproximadamente 3.5 metros de largo y son depredadores inteligentes y feroces. Atacan sujetando a sus presas con las garras delanteras y desgarrando con sus afiladas garras traseras en forma de cimitarra. Se alimentan de pequeños mamíferos, aves acuáticas y bestias de manada.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+8",
+    "POD": "2D6",
+    "DES": "1D6+12"
+  },
+  "movimiento": 12,
+  "puntosMagia": "2D6",
+  "MR": 2,
+  "armadura": {
+    "Piel": "3 puntos (todas localizaciones)"
+  },
+  "habilidades": {
+    "Esquivar": "40%",
+    "Rastreo visual": "50%",
+    "Rastreo por olfato": "50%"
+  },
+  "habilidadesEspeciales": [
+    "Caza cooperativa: Atacan en manada con estrategias coordinadas",
+    "Tácticas de agarre: Primero sujetan a la presa antes de desgarrarla",
+    "Velocidad: Movimiento rápido (12m) y reflejos ágiles",
+    "Inteligencia: Comparativamente más inteligentes que otros dinosaurios",
+    "Instinto depredador: Persisten hasta eliminar todas las amenazas"
+  ],
+  "ataques": [
+    {
+      "nombre": "Garra delantera",
+      "porcentaje": "70%",
+      "daño": "1D6 + agarre",
+      "MR": 6,
+      "efecto": "Puede realizar 2 ataques por round hasta sujetar a la víctima"
+    },
+    {
+      "nombre": "Garra trasera",
+      "porcentaje": "80%",
+      "daño": "2D6",
+      "MR": 6,
+      "efecto": "Requiere víctima agarrada, daño doble en golpe especial"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "35%",
+      "daño": "1D8",
+      "MR": 6,
+      "efecto": "Requiere víctima agarrada"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata trasera derecha", "rango": "03-04", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata trasera izquierda", "rango": "05-06", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Pecho", "rango": "10-12", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Garra delantera derecha", "rango": "13-14", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Garra delantera izquierda", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 3, "pv": "PV/3"}
+  ],
+  "notas": "Siguen una secuencia de ataque específica: primero intentan sujetar con las garras delanteras (2 ataques/round), luego mantienen el agarre mientras muerden y desgarran con las garras traseras. No atacan grupos grandes a menos que sean acorralados. Una vez que matan a una presa, inmediatamente pasan a la siguiente amenaza viva. Las garras traseras causan daño doble en golpes especiales."
+}

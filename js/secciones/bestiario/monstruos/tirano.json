@@ -1,0 +1,58 @@
+{
+  "nombre": "Tiranosaurio Rex",
+  "descripcion": "El más feroz de los dinosaurios, el tiranosaurio es un gran dinosaurio carnívoro, resultado de un dragonewt con pico que sucumbió a la codicia o al deseo de poder. Alcanzan 12 o más metros de longitud y miden entre 4 y 6 metros de altura. Son bípedos, con cabezas grandes llenas de dientes afilados, colas largas para equilibrarse y piel resistente. Estas bestias rápidas y astutas tienen la aguda vista de las aves de presa y un buen sentido del olfato. Pueden ser solitarios o cazar en pequeñas manadas, dependiendo de la zona y la abundancia de presas. Los tiranosaurios jóvenes están cubiertos de plumas, pero las pierden en su mayoría al alcanzar la madurez.",
+  "caracteristicas": {
+    "FUE": "4D6+120",
+    "CON": "2D6+40",
+    "TAM": "4D6+60",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "2D6+6"
+  },
+  "movimiento": 12,
+  "MR": 2,
+  "armadura": {
+    "Escamas y plumas gruesas": "24 puntos"
+  },
+  "habilidades": {
+    "Rastrear por olfato": "55%",
+    "Escudriñar": "50%"
+  },
+  "pasiones": {
+    "Ferocidad": "90%",
+    "Codicia": "70%"
+  },
+  "runas": {
+    "Bestia": "75%",
+    "Poder": "50%"
+  },
+  "magia": "Los tiranosaurios no utilizan magia, pero su naturaleza está influenciada por su origen dragonewt, lo que les otorga una astucia inusual para bestias de su tamaño.",
+  "habilidadesEspeciales": [
+    "Vista aguda: Comparable a la de las aves de presa.",
+    "Olfato desarrollado: Puede rastrear presas por el olor con gran eficacia."
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "80%",
+      "daño": "1D10",
+      "MR": 6
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "80%",
+      "daño": "1D6",
+      "MR": 6
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 24, "pv": "PV/3 - 1"},
+    {"locacion": "Pierna Derecha", "rango": "03-06", "armadura": 24, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "07-10", "armadura": 24, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "11-12", "armadura": 24, "pv": "PV/3 + 1"},
+    {"locacion": "Pecho", "rango": "13-14", "armadura": 24, "pv": "PV/3 + 1"},
+    {"locacion": "Garra Derecha", "rango": "15", "armadura": 24, "pv": "PV/3 - 5"},
+    {"locacion": "Garra Izquierda", "rango": "16", "armadura": 24, "pv": "PV/3 - 5"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 24, "pv": 21}
+  ]
+}

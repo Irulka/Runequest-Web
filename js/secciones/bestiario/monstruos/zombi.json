@@ -1,0 +1,43 @@
+{
+  "nombre": "Zombi",
+  "descripcion": "Cadáveres reanimados por magia que actúan bajo las órdenes de su creador. Son criaturas torpes pero resistentes, incapaces de iniciativa propia. Solo pueden ser detenidos destruyendo completamente sus extremidades o el torso. Pierden su capacidad de ataque si se destruye su cabeza.",
+
+  "caracteristicas": {
+    "FUE": "5D6",
+    "CON": "5D6",
+    "TAM": "2D6+6",
+    "INT": "1D6+3",
+    "DES": "2D6",
+    "POD": "1D6"
+  },
+
+  "movimiento": 6,
+  "MR": 6,
+  "armadura": "Cuero (2 puntos) o según equipo",
+
+  "habilidadesEspeciales": [
+    "control: Requiere dirección mágica constante. Iniciativa nula, solo siguen órdenes básicas",
+    "Continúan luchando hasta ser completamente destruidos",
+    "Para detenerlo es necesario incapacitar el torso. Si pierden la cabeza dejan de percibir objetivos."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mazo",
+      "porcentaje": "35%",
+      "daño": "2D8",
+      "MR": 7,
+      "efecto": "Puede usar cualquier arma que se le proporcione."
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

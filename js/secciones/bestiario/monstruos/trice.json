@@ -1,0 +1,59 @@
+{
+  "nombre": "Triceratops",
+  "descripcion": "Triceratops son el resultado de dragonewts que fueron superados por el deseo de procrear y enredarse en el Mundo Material. Estos dinosaurios cornudos son de pico duro, piel resistente, tan grandes como elefantes y viven en manadas de varias docenas. Son pugnaces y a menudo luchan entre sí. Se alimentan de materia leñosa dura y pueden vivir bien con una dieta de troncos y hojas.",
+  "caracteristicas": {
+    "FUE": "3D6+50",
+    "CON": "3D6+30",
+    "TAM": "3D6+40",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "7"
+  },
+  "movimiento": 10,
+  "MR": 4,
+  "armadura": {
+    "Cabeza": "21 puntos",
+    "Cuerpo y extremidades": "14 puntos"
+  },
+  "habilidades": {
+    "Carga": "80%",
+    "Pisotear": "80%"
+  },
+  "pasiones": {
+    "Pugnacidad": "65%"
+  },
+  "runas": {
+    "Bestia": "70%",
+    "Tierra": "70%"
+  },
+  "magia": "Los Triceratops son sagrados para Maran Gor y a veces son entrenados por ese culto o por dragonewts para llevar guerreros. Pueden ser dirigidos por mahouts, jinetes de animales especializados.",
+  "habilidadesEspeciales": [
+    "Giro Rápido: Los Triceratops giran instintivamente para enfrentar a sus enemigos y pueden pivotar rápidamente.",
+    "Carga Mejorada: Si un Triceratops carga, su ataque de embestida tiene un 50% adicional de probabilidad de golpear."
+  ],
+  "ataques": [
+    {
+      "nombre": "Embestida",
+      "porcentaje": "80%",
+      "daño": "2D10",
+      "MR": 8,
+      "nota": "Puede empalar si carga."
+    },
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "80%",
+      "daño": "7D6",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 14, "pv": "PV/3 - 4"},
+    {"locacion": "Pierna Trasera Derecha", "rango": "03-04", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Pierna Trasera Izquierda", "rango": "05-06", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Cuartos Traseros", "rango": "07-08", "armadura": 14, "pv": "PV/3 + 4"},
+    {"locacion": "Cuartos Delanteros", "rango": "09-10", "armadura": 14, "pv": "PV/3 + 4"},
+    {"locacion": "Pierna Delantera Derecha", "rango": "11-12", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Pierna Delantera Izquierda", "rango": "13-14", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "15-20", "armadura": 21, "pv": "PV/3 + 4"}
+  ]
+}

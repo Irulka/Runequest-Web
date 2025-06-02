@@ -1,0 +1,58 @@
+{
+  "nombre": "Hipogrifo",
+  "descripcion": "Criaturas extremadamente raras con cuerpo de caballo y alas y garras delanteras de águila. Habitan en las altas montañas y nubes, descendiendo raramente a tierra. Pueden ser domesticados si se crían desde huevo, aunque el proceso es peligroso. Son leales solo a su dueño y pueden atacar con garras y mordisco simultáneamente.",
+
+  "caracteristicas": {
+    "FUE": "3D6+18",
+    "CON": "2D6+6",
+    "TAM": "3D6+12",
+    "POD": "2D6+6",
+    "DES": "3D6+6"
+  },
+
+  "movimiento": 12,
+
+  "MR": 1,
+  "armadura": "Piel (3 puntos)",
+
+  "habilidades": {
+    "Esquivar": "25%",
+    "Volar": "75%",
+    "Escudriñar": "75%"
+  },
+  
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "55%",
+      "daño": "1D6",
+      "MR": 5,
+      "nota": "Puede atacar junto con mordisco"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 5,
+      "nota": "Puede atacar junto con garra"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01-03", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04-06", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Cuartos Traseros", "rango": "07-09", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos Delanteros", "rango": "10", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ],
+
+  "notas": [
+    "Solo atacan si son provocados o para defender a su dueño",
+    "Pueden transportar jinetes si están domesticados",
+    "Origen: Descendientes puros de Hipogrifo anteriores a la Gran Oscuridad"
+  ]
+}

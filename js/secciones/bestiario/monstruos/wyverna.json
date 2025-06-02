@@ -1,0 +1,58 @@
+{
+  "nombre": "Wyverna",
+  "descripcion": "Criaturas aladas nacidas de los sueños lujuriosos de los Dragones Verdaderos. Poseen dos patas traseras, alas membranosas y una cola venenosa que pueden usar para atacar por delante. Son depredadores ágiles que atacan en picado, usando sus garras, mordisco y el aguijón venenoso de su cola.",
+
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+24",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "2D6"
+  },
+
+  "movimiento": "6/10",
+  "MR": 2,
+  "armadura": "Escamas (6 puntos)",
+
+  "habilidades": {
+    "Esquivar": "35%",
+    "Volar": "75%"
+  },
+
+  "habilidadesEspeciales": [
+    "Pueden atacar con mordisco y aguijón simultáneamente",
+    "Ataque en picado",
+    "Combinación mordisco + aguijón",
+    "Posible captura de presas con garras (especies grandes)",
+    "En el aguijón de su cola poseen un veneno de POT igual a su CON."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D8",
+      "MR": 6
+    },
+    {
+      "nombre": "Aguijón",
+      "porcentaje": "60%",
+      "daño": "1D6 + veneno (POT=CON)",
+      "MR": 6,
+      "efecto": "Puede atacar hacia adelante con la cola"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pata Derecha", "rango": "02-04", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pata Izquierda", "rango": "05-07", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "08", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "09-11", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "13-14", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "15-16", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 6, "pv": "PV/3"}
+  ]
+}

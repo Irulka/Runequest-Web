@@ -1,0 +1,67 @@
+{
+  "nombre": "Magus Magnus",
+  "descripcion": "Los Magus Magnus son los más grandes y raros de los magisaurios, resultantes de dragonewt crestados que fallaron o rechazaron su metamorfosis a la etapa de pico. Estos seres herbívoros de sangre fría habitan pantanos y humedales, viajando en grupos familiares de 4-8 individuos. Aunque han perdido la capacidad de renacimiento dragonewt y la memoria de su existencia anterior, conservan habilidades mágicas avanzadas.",
+  "caracteristicas": {
+    "FUE": "2D6+24",
+    "CON": "3D6+12",
+    "TAM": "2D6+36",
+    "INT": "1D6",
+    "POD": "2D6+24",
+    "DES": "1D6+6",
+    "CAR": "1D6"
+  },
+  "movimiento": "10/6 (Nadar)",
+  "puntosMagia": "2D6+24",
+  "MR": 3,
+  "armadura": {
+    "Escamas": "6 puntos"
+  },
+  "runas": {
+    "Tierra": "60%",
+    "Agua": "60%"
+  },
+  "habilidades": {
+    "Esquivar": "30%",
+    "Combate espiritual": "70%",
+    "Hablar Auld Wyrmish": "60%"
+  },
+  "magia": {
+    "Tipo": "Todos excepto magia dracónica",
+    "Hechizos": "Conoce número de hechizos de magia espiritual igual a su CAR",
+    "Encantamientos": "Tienen encantamientos grabados en su piel con POW total igual a su CON",
+    "Preferencias mágicas": "Elementales ligados, matrices de hechizos y encantamientos de vinculación espiritual"
+  },
+  "habilidadesEspeciales": [
+    "Transformación fallida: Resultado de metamorfosis dragonewt incompleta",
+    "Herbívoro pacífico: No agresivo a menos que sea provocado",
+    "Vida en grupo: Estructura social familiar compleja",
+    "Rituales de madurez: Los machos jóvenes desafían al líder en combates mágicos mortales",
+    "Defensas mágicas: Encantamientos protectores en su piel"
+  ],
+  "ataques": [
+    {
+      "nombre": "Patada",
+      "porcentaje": "55%",
+      "daño": "1D6",
+      "MR": 7
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "55%",
+      "daño": "1D6+4D3",
+      "MR": 7,
+      "nota": "Recibe solo mitad de bonificación de daño normal"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pata derecha", "rango": "03-05", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pata izquierda", "rango": "06-08", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo derecho", "rango": "13-15", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo izquierdo", "rango": "16-18", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 6, "pv": "PV/3"}
+  ],
+  "notas": "Aunque físicamente imponentes, los Magus Magnus son criaturas pacíficas que prefieren evitar conflictos. Sus ataques físicos son defensivos más que ofensivos. Su verdadero poder reside en sus habilidades mágicas, con múltiples encantamientos protectores grabados en su piel. Su estructura social incluye complejos rituales de madurez donde los machos jóvenes desafían al líder en combates mágicos que suelen ser mortales para el perdedor."
+}

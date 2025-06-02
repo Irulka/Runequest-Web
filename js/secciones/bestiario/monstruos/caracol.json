@@ -1,0 +1,41 @@
+{
+  "nombre": "Caracol Dragón",
+  "descripcion": "Caracoles gigantes con cabeza de dragón, a menudo con dos cabezas, creados durante la Gran Oscuridad de la Guerra de los Dioses cuando la Espiral de la Ley explotó y el Demonio quedó atrapado en las Llanuras de Prax bajo el fragmento conocido como El Bloque. Son criaturas del Caos con características caóticas y se consideran 'Partes del Demonio'. Habitan en pantanos y áreas acuáticas y devoran cualquier materia orgánica.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6",
+    "TAM": "4D6+12",
+    "POD": "3D6",
+    "DES": "2D6"
+  },
+  "puntosVida": 15,
+  "movimiento": 3,
+  "MR": 4,
+  "armadura": {
+    "Caparazón": 8,
+    "Cuerpo": 4
+  },
+  "habilidadesEspeciales": [
+    "Características Caóticas: Estas criaturas tienen 1D3 características caóticas diferentes"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D8+2",
+      "MR": 9
+    },
+    {
+      "nombre": "Golpe con caparazón",
+      "porcentaje": "35%",
+      "daño": "1D6+4",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Concha", "rango": "01-08", "armadura": 8, "pv": "PV/3"},
+{"locacion": "Cuerpo Frontal", "rango": "09-14", "armadura": 4, "pv": "PV/3"},
+{"locacion": "Cabeza Derecha", "rango": "15-17", "armadura": 4, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza Izquierda", "rango": "18-20", "armadura": 4, "pv": "PV/3 - 1"}
+  ]
+}

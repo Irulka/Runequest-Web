@@ -1,0 +1,52 @@
+{
+  "nombre": "Anquilosauro",
+  "descripcion": "Dinosaurios acorazados de gran tamaño que deambulan solitarios. Tienen una inteligencia básica y no atacan a menos que sean provocados. Cuando se ven forzados a luchar, pueden maniobrar para golpear con su cola en forma de maza. Su pesada armadura los hace prácticamente inmunes a la mayoría de depredadores.",
+  "caracteristicas": {
+    "FUE": "3D6+30",
+    "CON": "3D6+10",
+    "TAM": "3D6+30",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 6,
+  "puntosMagia": "3D6",
+  "MR": 3,
+  "armadura": {
+    "Patas y cola": "16 puntos",
+    "Cuerpo y cabeza": "20 puntos"
+  },
+  "habilidadesEspeciales": [
+    "Armadura pesada: Protección extremadamente alta contra ataques",
+    "Cola de maza: Potente arma contundente que puede golpear hacia adelante",
+    "Apatar: Puede aplastar objetivos pequeños o caídos con su masa",
+    "Temperamento pacífico: Solo ataca cuando es provocado",
+    "Resistencia: Físico robusto capaz de soportar grandes daños"
+  ],
+  "ataques": [
+    {
+      "nombre": "Golpe de cola",
+      "porcentaje": "60%",
+      "daño": "1D10",
+      "MR": 7,
+      "efecto": "Golpe contundente con la maza ósea de la cola"
+    },
+    {
+      "nombre": "Apatar",
+      "porcentaje": "60%",
+      "daño": "8D6",
+      "MR": 7,
+      "efecto": "Solo contra objetivos en el suelo o con TAM menor a 1/3 del suyo"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-03", "armadura": 16, "pv": "PV/3"},
+    {"locacion": "Pata trasera derecha", "rango": "04-05", "armadura": 16, "pv": "PV/3"},
+    {"locacion": "Pata trasera izquierda", "rango": "06-07", "armadura": 16, "pv": "PV/3"},
+    {"locacion": "Cuartos traseros", "rango": "08-11", "armadura": 20, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos delanteros", "rango": "12-15", "armadura": 20, "pv": "PV/3 + 1"},
+    {"locacion": "Pata delantera derecha", "rango": "16", "armadura": 16, "pv": "PV/3"},
+    {"locacion": "Pata delantera izquierda", "rango": "17", "armadura": 16, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "18-20", "armadura": 20, "pv": "PV/3"}
+  ],
+  "notas": "Su armadura corporal (20 puntos) es prácticamente impenetrable para la mayoría de armas convencionales. La cola puede girar 180° para golpear objetivos al frente. Aunque generalmente pacíficos, un anquilosauro enfurecido es un oponente extremadamente peligroso debido a su combinación de armadura pesada y poderosos ataques contundentes."
+}

@@ -1,0 +1,45 @@
+{
+  "nombre": "Gran Cóndor",
+  "descripcion": "Un ave gigante y poderosa, con plumas resistentes y garras afiladas. Habita en las altas montañas de Glorantha, siendo un depredador formidable y un símbolo de majestuosidad.",
+  "caracteristicas": {
+    "FUE": "3D6+18",
+    "CON": "3D6",
+    "TAM": "3D6+18",
+    "POD": "2D6+8",
+    "DES": "3D6+6"
+  },
+  "movimiento": "4/12 (Volar)",
+  "MR": 1,
+  "armadura": "5 (plumas), 2 (patas escamosas)",
+  "habilidades": {
+    "Volar": "95%",
+    "Escudriñar": "75%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "35%",
+      "daño": "1D8",
+      "MR": 3
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-03", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "04-06", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Abdomen", "rango": "07-08", "armadura": 5, "pv": "PV/3 + 1" },
+    { "locacion": "Pecho", "rango": "09-11", "armadura": 5, "pv": "PV/3 + 1" },
+    { "locacion": "Cola", "rango": "12", "armadura": 5, "pv": "PV/3" },
+    { "locacion": "Ala Derecha", "rango": "13-14", "armadura": 5, "pv": "PV/3" },
+    { "locacion": "Ala Izquierda", "rango": "15-16", "armadura": 5, "pv": "PV/3" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 5, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Vuelo rápido: Puede moverse a gran velocidad en el aire, lo que le otorga ventaja en combates aéreos."
+  ]
+}

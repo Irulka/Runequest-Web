@@ -1,0 +1,55 @@
+{
+  "nombre": "Brollachán",
+  "descripcion": "Horribles seres amorlos semi-inteligentes, descendientes de los voughs. Consisten en masas informes de tejido sin extremidades, con solo dos ojos y una boca ancha. Pueden moverse por tierra ondulando y flotar o sumergirse en el agua. Son criaturas estúpidas pero viciosas que pueden atacar botes subiendo por los costados.",
+  "caracteristicas": {
+    "FUE": "5D6",
+    "CON": "3D6",
+    "TAM": "5D6",
+    "INT": "1D6",
+    "POD": "2D6+6",
+    "DES": "1D4+4",
+    "CAR": "1D6"
+  },
+  "movimiento": "7/7 (Nadar)",
+  "puntosMagia": "2D6+6",
+  "MR": 5,
+  "armadura": {
+    "Piel": "1 punto"
+  },
+  "habilidades": {
+    "Nadar": "50%"
+  },
+  "magia": "Suele conocer al menos 2 hechizos de magia espiritual",
+  "habilidadesEspeciales": [
+    "Forma amorfa: Puede moverse por cualquier abertura lo suficientemente grande para sus ojos",
+    "Ataque múltiple: Puede morder y envolver simultáneamente (contra el mismo o diferentes oponentes)",
+    "Engullir: Al envolver con éxito, la víctima sufre daño igual a la bonificación de daño del brollachan (1D6) cada round",
+    "Ahogamiento: Víctimas engullidas deben hacer tiradas de CON para evitar ahogarse",
+    "Retirada estratégica: Si es herido gravemente, huirá bajo el agua hacia su madre"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D6",
+      "MR": 5
+    },
+    {
+      "nombre": "Engullir",
+      "porcentaje": "40%",
+      "daño": "1D6 + ahogamiento",
+      "MR": 5,
+      "efecto": "Víctima queda envuelta, debe superar CON cada round para respirar"
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Masa amorfa",
+      "rango": "01-20",
+      "armadura": 1,
+      "pv": "PV",
+      "nota": "No tiene localizaciones específicas debido a su naturaleza amorfa"
+    }
+  ],
+  "notas": "Las víctimas engullidas sufren 1D6 de daño por round (la armadura reduce este daño) y deben superar tiradas de CON para evitar ahogamiento. Si fallan la primera tirada de CON, comienzan a ahogarse inmediatamente. Al ser criaturas amorfas, no tienen localizaciones específicas de golpe."
+}

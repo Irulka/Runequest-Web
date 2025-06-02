@@ -1,0 +1,56 @@
+{
+  "nombre": "Alosaurio",
+  "descripcion": "Grandes dinosaurios carnívoros de hasta 10 metros de largo y 3 metros de altura, resultado de dragonewt que sucumbieron a la codicia o sed de poder. Son bípedos con cabezas masivas llenas de dientes afilados, colas largas para equilibrarse y piel gruesa. Cazadores rápidos y astutos con excelente vista y olfato, pueden ser solitarios o cazar en manadas pequeñas.",
+  "caracteristicas": {
+    "FUE": "4D6+72",
+    "CON": "2D6+24",
+    "TAM": "4D6+36",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "2D6+6"
+  },
+  "movimiento": 12,
+  "puntosMagia": "3D6",
+  "MR": 2,
+  "armadura": {
+    "Piel gruesa": "14 puntos (todas localizaciones)"
+  },
+  "habilidades": {
+    "Rastrear visual": "75%",
+    "Rastrear por olfato": "75%"
+  },
+  "habilidadesEspeciales": [
+    "Origen mágico: Creados a partir de dragonewt corruptos",
+    "Sentidos agudos: Vista comparable a aves rapaces y excelente olfato",
+    "Caza cooperativa: Pueden organizarse en manadas pequeñas para cazar",
+    "Físico poderoso: Capaz de derribar presas grandes con su masa y fuerza",
+    "Golpe contundente: La cola puede usarse como arma secundaria"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "60%",
+      "daño": "1D10",
+      "MR": 6,
+      "efecto": "Daño penetrante por dientes aserrados"
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "60%",
+      "daño": "1D6",
+      "MR": 6,
+      "efecto": "Garras afiladas para desgarrar carne"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 14, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Derecha", "rango": "03-06", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Pata Izquierda", "rango": "07-10", "armadura": 14, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "11-12", "armadura": 14, "pv": "PV/3 + 1"},
+    {"locacion": "Pecho", "rango": "13-14", "armadura": 14, "pv": "PV/3 + 1"},
+    {"locacion": "Garra Derecha", "rango": "15", "armadura": 14, "pv": "PV/3 - 1"},
+    {"locacion": "Garra Izquierda", "rango": "16", "armadura": 14, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 14, "pv": "PV/3"}
+  ],
+  "notas": "A pesar de su tamaño masivo, son relativamente ágiles para su envergadura. Su piel extremadamente gruesa (14 puntos de armadura) los hace muy resistentes. El daño de sus ataques refleja su enorme fuerza física (bonificación de +7D6). Pueden atacar alternando mordiscos y zarpazos en combate."
+}

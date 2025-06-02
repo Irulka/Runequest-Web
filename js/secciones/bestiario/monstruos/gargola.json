@@ -1,0 +1,62 @@
+{
+  "nombre": "Gárgola",
+  "descripcion": "Criaturas humanoides de apariencia pétrea que permanecen inmóviles como estatuas cuando descansan. Habitan en montañas y bosques, con cuerpos duros como roca y caras grotescas. Su inteligencia es limitada y muchas poseen alas. Su origen es desconocido, aunque algunas teorías sugieren conexiones con los Mostali. A menudo son domesticadas o esclavizadas por razas más inteligentes.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6",
+    "TAM": "4D6",
+    "INT": "1D6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "CAR": "2D6"
+  },
+  "movimiento": "5/9",
+  "MR": 5,
+  "armadura": "Piel pétrea (6 puntos)",
+  "habilidades": {
+    "Esquivar": "35%",
+    "Volar": "30%"
+  },
+  "idiomas": {
+    "Lengua humana local": "15%"
+  },
+  "magia": "Excepcionalmente, algunas gárgolas inteligentes pueden conocer hechizos como 'Speedart', pero es raro.",
+  "pasiones": {
+    "Obedece a amos": "50%",
+    "Naturaleza territorial": "40%"
+  },
+  "runas": {
+    "Piedra": "100%",
+    "Bestia": "65%"
+  },
+  "habilidadesEspeciales": [
+    "Mimetismo pétreo: En reposo, son indistinguibles de estatuas.",
+    "Resistencia mineral: Inmunidad parcial a efectos que afectan a seres orgánicos."
+  ],
+  "ataques": [
+    {
+      "nombre": "Jabalina",
+      "porcentaje": "35%",
+      "daño": "1D10",
+      "MR": 3,
+      "alcance": "Variable"
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "40%",
+      "daño": "1D6",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-03", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "04-06", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 6, "pv": 4},
+    {"locacion": "Pecho", "rango": "10", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Derecho", "rango": "15-16", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 6, "pv": "PV/3"}
+  ]
+}

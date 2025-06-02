@@ -1,0 +1,82 @@
+{
+  "nombre": "Broo",
+  "descripcion": "Criaturas caóticas y corruptas que adoran a deidades malignas. Son portadoras de enfermedades y suelen tener características caóticas.",
+  "caracteristicas": {
+    "FUE": "2D6+6",
+    "CON": "1D6+12",
+    "TAM": "2D6+6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "CAR": "2D6"
+  },
+  "movimiento": 9,
+  "MR": 5,
+  "armadura": {
+    "Cuerpo": "Cuirboilli (3 pts), menos la cabeza."
+  },
+  "habilidades": {
+    "Escalar": "40%",
+    "Ocultar": "25%",
+    "Esquivar": "35%",
+    "Esconderse": "40%",
+    "Intimidar": "35%",
+    "Saltar": "45%",
+    "Escuchar": "50%",
+    "Moverse En Silencio": "50%",
+    "Rastrear": "50%"
+  },
+  "idiomas": {
+    "Lengua humana local": "25%",
+    "Comercial": "25%"
+  },
+  "pasiones": {
+    "Odio (Vida)": "60%"
+  },
+  "runas": {
+    "Bestia": "60%",
+    "Caos": "60%"
+  },
+  "magia": "Los Broos a veces aprenden magia espiritual de las entidades malignas adoradas por sus chamanes. Los cultos de Mallia y Thed son particularmente populares. Los hechizos comunes incluyen Curar y Contramagia. Los líderes Broo a menudo conocen magia rúnica caótica.",
+  
+  "habilidadesEspeciales": [
+    "Características Caóticas: Hay un posibilidad igual al POD×3 o menos en D100 de que un Broo tenga una característica caótica",
+    "Enfermedad: 50% de probabilidad de que un Broo porte una enfermedad aleatoria en su cuerpo y/o armas"
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Garrote",
+      "porcentaje": "40%",
+      "daño": "1D8+2",
+      "MR": 9
+    },
+    {
+      "nombre": "Lanza",
+      "porcentaje": "35%",
+      "daño": "1D6+1",
+      "MR": 7
+    },
+    {
+      "nombre": "Cabezazo",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 9
+    },
+    {
+      "nombre": "Escudo Mediano",
+      "porcentaje": "30%",
+      "daño": "1D4",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Abdomen", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Pecho", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+{"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

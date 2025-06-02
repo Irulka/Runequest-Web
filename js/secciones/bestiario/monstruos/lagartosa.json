@@ -1,0 +1,45 @@
+{
+  "nombre": "Reptil Marino (Lagarto Acuático)",
+  "descripcion": "Depredadores acuáticos de gran tamaño que habitan en las costas del Océano Homeward. De cuerpo alargado, color verde-negruzco y cola aplanada, son conocidos por atacar embarcaciones cuando están hambrientos. No son criaturas valientes y pueden ser disuadidos arrojándoles carne o matando a uno de ellos.",
+
+  "caracteristicas": {
+    "FUE": "3D6+6",
+    "CON": "2D6+6",
+    "TAM": "3D6+12",
+    "POD": "2D6",
+    "DES": "2D6+6"
+  },
+
+  "movimiento": "7/10",
+  "MR": 2,
+  "armadura": "Piel gruesa (3 puntos)",
+
+  "habilidades": {
+    "Ocultarse": "40%",
+    "Nadar": "85%"
+  },
+
+  "habilidadesEspeciales": [
+    "Nadan bajo superficie para evitar proyectiles. Solo atacan si son provocados."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "55%",
+      "daño": "1D8",
+      "MR": 6
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-03", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Derecha", "rango": "04-05", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "06-07", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cuartos Traseros", "rango": "08-11", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos Delanteros", "rango": "12-15", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "18-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

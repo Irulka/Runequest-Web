@@ -1,0 +1,55 @@
+{
+  "nombre": "Toro Celestial",
+  "descripcion": "Majestuosos bovinos alados, descendientes del Dios Toro Tempestuoso de Prax y ganado mortal. De naturaleza herbívora pero agresiva, atacan en picado para pisotear a sus víctimas antes de retirarse volando. Existen dos variedades regionales: los de Prax (parecidos a bisontes alados) y los de Paso del Dragón (similares a los extintos uros).",
+
+  "caracteristicas": {
+    "FUE": "5D6+24",
+    "CON": "3D6+12",
+    "TAM": "5D6+24",
+    "POD": "3D6",
+    "DES": "2D6"
+  },
+
+  "movimiento": 11,
+  "MR": 4,
+  "armadura": "Piel gruesa (3 puntos)",
+
+  "habilidades": {
+    "Volar": "75%"
+  },
+
+  "habilidadesEspeciales": [
+    "Ataque en picado: Vuelan alto y descienden para pisotear",
+    "Retirada: Vuelven a ganar altura tras cada ataque",
+    "Carga: Solo en combate aéreo o si están en tierra"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "35%",
+      "daño": "2D6",
+      "MR": 8,
+      "efecto": "Ataque preferido desde el aire"
+    },
+    {
+      "nombre": "Embestida",
+      "porcentaje": "35%",
+      "daño": "2D6",
+      "MR": 8,
+      "efecto": "Usado solo en combate aéreo o terrestre forzado"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01-03", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04-06", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Cuartos Traseros", "rango": "07-09", "armadura": 3, "pv": "PV/3 + 2"},
+    {"locacion": "Cuartos Delanteros", "rango": "10", "armadura": 3, "pv": "PV/3 + 2"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

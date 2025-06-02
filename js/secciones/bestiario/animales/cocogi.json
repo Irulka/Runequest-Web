@@ -1,0 +1,90 @@
+{
+  "nombre": "Cocodrilo Gigante",
+  "descripcion": "Una versión colosal de los cocodrilos comunes, este monstruo saurio habita en los ríos y pantanos más profundos de Glorantha. Capaz de derribar barcos pequeños y arrastrar a presas del tamaño de un caballo bajo el agua.",
+  "caracteristicas": {
+    "FUE": "3D6+30",
+    "CON": "2D6+12",
+    "TAM": "3D6+30",
+    "POD": "3D6",
+    "DES": "2D6+3"
+  },
+  "movimiento": 7,
+  "MR": 3,
+  "armadura": 10,
+  "habilidades": {
+    "Ocultarse": "25%",
+    "Moverse Silenciosamente": "25%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco Devastador",
+      "porcentaje": "60%",
+      "daño": "1D10",
+      "MR": 7,
+      "efecto": "En agua, puede aferrarse y realizar giros mortales causando daño de bonificación cada ronda siguiente. Solo la armadura protege contra el mordisco inicial."
+    },
+    {
+      "nombre": "Latigazo Colosal",
+      "porcentaje": "60%",
+      "daño": "1D6",
+      "MR": 7,
+      "efecto": "Objetivo debe superar prueba de FUE×5 o caerá al suelo instantáneamente."
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Cola",
+      "rango": "01-03",
+      "armadura": 10,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Pata Trasera Derecha",
+      "rango": "04-05",
+      "armadura": 10,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Pata Trasera Izquierda",
+      "rango": "06-07",
+      "armadura": 10,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cuartos Traseros",
+      "rango": "08-11",
+      "armadura": 10,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Cuartos Delanteros",
+      "rango": "12-13",
+      "armadura": 10,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Pata Delantera Derecha",
+      "rango": "14-15",
+      "armadura": 10,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Pata Delantera Izquierda",
+      "rango": "16-17",
+      "armadura": 10,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cabeza",
+      "rango": "18-20",
+      "armadura": 10,
+      "pv": "PV/3"
+    }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque combinado: Puede morder y golpear con la cola simultáneamente contra diferentes objetivos",
+    "Giro de la muerte: En agua, al morder una extremidad o cabeza realiza giros que causan daño masivo cada ronda",
+    "Resistencia legendaria: Casi invulnerable a ataques menores gracias a su piel de 10 puntos de armadura",
+    "Presencia aterradora: Su tamaño colosal impone penalizaciones a los ataques de oponentes no heroicos"
+  ]
+}

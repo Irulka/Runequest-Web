@@ -1,0 +1,38 @@
+{
+  "nombre": "Loper",
+  "descripcion": "Criatura grande cubierta de pelaje rojo-anaranjado brillante o carmesí, ocasionalmente moteado o con bandas de ocre opaco. Musculoso y de gran tamaño, con cabezas estrechas y ojos grandes. Carece de cola y posee una serie de órganos similares a párpados a lo largo de su espalda que le permiten teletransportarse y comunicarse. Es carnívoro, aunque también consume melones, huevos y carroña. Se creía extinto, pero algunos cazadores de Prax afirman haberlo encontrado en las Tierras Baldías. Fue montura de los Zaranistangi, un pueblo legendario que aprendió a entrenarlos.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6",
+    "TAM": "4D6+12",
+    "POD": "3D6",
+    "DES": "2D6+12"
+  },
+  "movimiento": 12,
+  "MR": 0,
+  "armadura": "3 (piel gruesa)",
+  "habilidades": {
+    "Esquivar": "65%",
+    "Saltar": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 4
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 3, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Teletransporte: Puede teletransportarse a cualquier lugar visible gastando 3 puntos de magia. Si lleva un jinete, este también se teletransporta.",
+    "Comunicación: Usa los órganos de su espalda para comunicarse con otros lopers y sus jinetes mediante patrones de luz."
+  ]}

@@ -1,0 +1,54 @@
+{
+  "nombre": "Hombres-Rebaño",
+  "descripcion": "Los Hombres-Rebaño son una especie peculiar de Prax. Aunque superficialmente parecen humanos, carecen de inteligencia humana y son tratados como animales por los Morokanth. Según la tradición, aquellos que perdieron ante los Morokanth durante el Pacto de Supervivencia perdieron su humanidad por mandato divino. Los Morokanth los utilizan para recolectar alimentos, transportar provisiones y como parte de su dieta religiosa. Pueden ser despertados mágicamente para servir como aliados, adquiriendo entonces una inteligencia limitada.",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "3D6",
+    "TAM": "2D6+6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "INT": "0 (2D6+6 cuando está despertado)"
+  },
+  "movimiento": 8,
+  "MR": 5,
+  "armadura": "Ninguna",
+  "habilidades": {
+    "Recolectar": "60%",
+    "Transportar": "75%"
+  },
+  "ataques": [
+    {
+      "nombre": "Puñetazo",
+      "porcentaje": "25%",
+      "daño": "1D3",
+      "MR": 9
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 9
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "15%",
+      "daño": "1D2",
+      "MR": 9
+    }
+  ],
+    "localizaciones": [
+    { "locacion": "Pierna Derecha", "rango": "01-02", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pierna Izquierda", "rango": "03-04", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Abdomen", "rango": "05-07", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Pecho", "rango": "08-10", "armadura": 4, "pv": "PV/3 + 1" },
+    { "locacion": "Brazo Derecho", "rango": "15-16", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Familiar Espiritual: Puede albergar espíritus vinculados (solo en estado no despertado)",
+    "Reproducción Híbrida: El 50% de la descendencia con humanos son Hombres-Rebaño no inteligentes", 
+    "Los Morokanth pueden convertir humanos en Hombres-Rebaño mediante rituales de Waha",
+    "Despertado: INT 2D6+6, puede servir como aliado en cultos"
+  ]
+}

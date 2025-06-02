@@ -1,0 +1,58 @@
+{
+  "nombre": "JackOso",
+  "descripcion": "Criatura humanoide con cabeza similar a una calabaza y habilidades exóticas. Posee un poder de parálisis que puede congelar a sus víctimas comparando su POD contra el de ellas. Las víctimas quedan paralizadas hasta que el Jack O'Bear muera o el efecto sea disipado. Son criaturas fuertemente caóticas.",
+  "caracteristicas": {
+    "FUE": "3D6+6",
+    "CON": "2D6+6",
+    "TAM": "3D6+6",
+    "INT": "2D6",
+    "POD": "4D6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 10,
+  "puntosMagia": "4D6",
+  "MR": 4,
+  "armadura": {
+    "Cuerpo": "Piel gruesa (3 puntos)"
+  },
+  "habilidades": {
+    "Ocultarse": "50%",
+    "Moverse Silenciosamente": "50%"
+  },
+  "habilidadesEspeciales": [
+    "Armonizar: Cada round de combate, puede comparar su POD contra un enemigo. Si gana, la víctima queda paralizada hasta que la criatura muera o el efecto sea disipado (como magia rúnica de 1 punto). No gasta PM.",
+    "Control de víctimas: Puede controlar vivas hasta la mitad de su POD en víctimas simultáneamente.",
+    "Característica Caótica: Tiene un 5% de probabilidad de tener una característica caótica adicional."
+  ],
+  "ataques": [
+    {
+      "nombre": "Garra Derecha",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 8
+    },
+    {
+      "nombre": "Garra Izquierda",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 8
+    },
+    {
+      "nombre": "Armonizar",
+      "porcentaje": "Automático",
+      "daño": "Parálisis (POD vs POD)",
+      "MR": 1
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Pata Trasera Derecha", "rango": "01-04", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Pata Trasera Izquierda", "rango": "05-08", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Cuartos Traseros", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Cuartos Delanteros", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+{"locacion": "Pata Delantera Derecha", "rango": "13-15", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Pata Delantera Izquierda", "rango": "16-18", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ],
+  "notas": "Puede atacar con ambas garras en el mismo round de combate, con 3 rangos de ataque de diferencia. La habilidad Armonizar no consume puntos de magia y puede usarse además de los ataques físicos cada round."
+}

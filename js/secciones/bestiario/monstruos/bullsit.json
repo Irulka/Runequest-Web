@@ -1,0 +1,35 @@
+{
+  "nombre": "Insecto Toro",
+  "descripcion": "Insectos del tamaño de un puño, conocidos como 'Partes del Diablo'. Tienen un afilado probóscide que puede perforar incluso piel de rinoceronte y cuyo veneno enloquece a las criaturas. Prefieren animales a humanos, y solo atacan a bestias con pezuñas (pero no a hombres-bestia). Son más comunes en y cerca de pantanos (especialmente el Pantano del Diablo), aunque pueden encontrarse en pequeñas cantidades en cualquier lugar de Prax.",
+  "caracteristicas": {
+    "FUE": "1",
+    "CON": "1D3",
+    "TAM": "1",
+    "POD": "1D6",
+    "DES": "2D6+15"
+  },
+  "movimiento": "4/11 (Vuelo)",
+  "MR": 3,
+  "armadura": "Ninguna",
+  "habilidades": {
+    "Volar": "90%",
+    "Esquivar": "60%"
+  },
+  "habilidadesEspeciales": [
+    "Característica del Caos: Cada bullsitch tiene un 1% de probabilidad de tener una característica del Caos visible",
+    "Veneno enloquecedor: Su mordisco inyecta un veneno equivalente al de un wyvern que causa dolor enloquecedor",
+    "Evasión: Los intentos de golpearlos sufren un -40% de penalización",
+    "Aversión al agua limpia: Pueden abandonar a su presa si esta cruza un río o cuerpo de agua limpia"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco*",
+      "porcentaje": "80%",
+      "daño": "Dolor enloquecedor + veneno",
+      "MR": 7,
+      "efecto": "Una vez que muerden, permanecen adheridos; no se necesita tirar para impactar en rondas posteriores"
+    }
+  ],
+  "magia": "No tienen capacidades mágicas innatas",
+  "notas": "Las bestias mordidas por un bullsitch enloquecen de dolor y corren en dirección aleatoria, pudiendo provocar estampidas. Los jinetes deben superar una tirada de Montar cada asalto para controlar al animal afectado."
+}

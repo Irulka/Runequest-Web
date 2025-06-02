@@ -1,0 +1,59 @@
+{
+  "nombre": "Wyrm",
+  "descripcion": "Serpientes aladas sin patas de gran inteligencia y poder mágico, creadas por el Segundo Consejo en un fallido intento de reproducir dragones. Son la especie más mágica de los dragones y tienden a unirse a cultos divinos, particularmente a Orlanth por su control sobre los vientos. Aunque algunas son amigables con humanos, la mayoría mantiene neutralidad u hostilidad.",
+  "caracteristicas": {
+    "FUE": "10D6",
+    "CON": "3D6",
+    "TAM": "10D6",
+    "INT": "4D6",
+    "POD": "3D6+6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 10,
+  "MR": 3,
+  "armadura": {
+    "Escamas": "8 puntos"
+  },
+  "habilidades": {
+    "Volar": "75%",
+    "Planear Silenciosamente": "60%",
+    "Escuchar": "75%",
+    "Otear": "50%"
+  },
+  "idiomas": {
+    "Auld Wyrmish (hablado)": "75%",
+    "Auld Wyrmish (escrito)": "60%",
+    "Lengua humana local": "50%"
+  },
+  "magia": [
+    "Conoce hechizos espirituales equivalentes a su CAR. Pueden tener hasta la mitad de su POD en puntos rúnicos."
+  ],
+  "runas": {
+    "Elemental": "70%",
+    "De Poder": "70%"
+  },
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "85%",
+      "daño": "1D10",
+      "MR": 7
+    },
+    {
+      "nombre": "Latigazo de cola",
+      "porcentaje": "85%",
+      "daño": "1D6",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-04", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "09-12", "armadura": 8, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "13-14", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "15-16", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 8, "pv": "PV/3"}
+  ]
+}

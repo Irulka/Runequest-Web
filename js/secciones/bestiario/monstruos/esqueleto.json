@@ -1,0 +1,41 @@
+{
+  "nombre": "Esqueleto",
+  "descripcion": "No-muertos animados por magia rúnica o hechicería. Sus huesos son frágiles y se rompen con facilidad al ser golpeados. Aunque peligrosos en grupo, individualmente son fáciles de destruir. Un golpe en la cabeza los desactiva inmediatamente.",
+
+  "caracteristicas": {
+    "FUE": "1D4+8",
+    "TAM": "2D6+6",
+    "DES": "3D6"
+  },
+
+  "movimiento": 8,
+  "MR": 5,
+  "armadura": "Según equipamiento",
+
+  "habilidades": {
+    "Esquivar": "68%",
+    "Combate": "68%"
+  },
+   "habilidadesEspeciales": [
+    "Cualquier golpe destruye la localización impactada",
+    "Golpe en cabeza los desactiva instantáneamente",
+    "Sin voluntad propia, siguen órdenes básicas. Se pueden programar para tareas específicas."
+  ],
+
+  "ataque": {
+    "porcentaje": "55%",
+    "daño": "Según arma equipada",
+    "MR": "Según arma equipada",
+    "efecto": "Según arma equipada"
+  },
+
+ "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": 1, "efecto": "Destruida al ser golpeada"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": 1, "efecto": "Destruida al ser golpeada"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": 1, "efecto": "Destruida al ser golpeada"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": 1, "efecto": "Destruida al ser golpeada"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": 1, "efecto": "Destruido al ser golpeado (pierde arma)"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": 1, "efecto": "Destruido al ser golpeado (pierde arma)"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": 1, "efecto": "Desactiva al esqueleto inmediatamente"}
+  ]
+}

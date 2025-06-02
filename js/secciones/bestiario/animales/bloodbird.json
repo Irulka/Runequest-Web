@@ -1,0 +1,88 @@
+{
+  "nombre": "Pájaro de Sangre",
+  "descripcion": "Gigantescas aves costeras que habitan desde Seshnela hasta Kethaela. De cuerpo blanco perlado con alas y ojos negros, estas aves de más de 2 metros de altura se alimentan exclusivamente de sangre fresca de vertebrados. Atacan en bandadas, concentrándose siempre en una sola víctima hasta matarla o hasta que uno de ellos muera.",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "2D6+2",
+    "TAM": "3D6+6",
+    "POD": "1D6+6",
+    "DES": "2D6+12"
+  },
+  "movimiento": "8/8 (Volar)",
+  "MR": 1,
+  "armadura": {
+    "Cuerpo": "3 (plumas)",
+    "Patas": "2 (piel)"
+  },
+  "habilidades": {
+    "Volar": "60%",
+    "Observar": "75%",
+    "Nadar": "80%"
+  },
+  "ataques": [
+    {
+      "nombre": "Picotazo",
+      "porcentaje": "70%",
+      "daño": "1D10",
+      "MR": 5,
+      "efecto": "Puede impalar. Si penetra armadura, drena 1D6 puntos de FUE por ronda. Inmoviliza la localización golpeada."
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "35%",
+      "daño": "1D4",
+      "MR": 5
+    },
+    {
+      "nombre": "Golpe de Ala",
+      "porcentaje": "35%",
+      "daño": "1D4",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Pata Derecha",
+      "rango": "01-02",
+      "armadura": 2,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Pata Izquierda",
+      "rango": "03-04",
+      "armadura": 2,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cuerpo",
+      "rango": "05-08",
+      "armadura": 3,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Ala Derecha",
+      "rango": "09-12",
+      "armadura": 3,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Ala Izquierda",
+      "rango": "13-16",
+      "armadura": 3,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Cabeza",
+      "rango": "17-20",
+      "armadura": 3,
+      "pv": "PV/3"
+    }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque en bandada: Todos los pájaros de un grupo atacan al mismo objetivo",
+    "Drenaje de sangre: Si el picotazo penetra la armadura, el pájaro permanece adherido drenando 1D6 puntos de FUE por ronda",
+    "Ataques múltiples: Cada ronda puede picotear una vez, patear una vez y golpear con ambas alas",
+    "Cobardía: Huyen inmediatamente si uno de ellos muere o si fallan todos sus ataques iniciales",
+    "Regeneración: Si pierde el pico, regenera uno nuevo en 1-3 semanas"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "nombre": "Hombre Escorpión",
+  "descripcion": "Criaturas del Caos con torso, brazos y cabeza humana, pero abdomen, cola y seis (a veces ocho) patas de escorpión. Sobrevivientes de la Gran Oscuridad, viven en aldeas gobernadas por una Reina Escorpión que produce continuamente huevos. Son omnívoros caníbales, extremadamente voraces, que sobreviven mediante incursiones y trabajando como guardaespaldas. Su naturaleza caótica los hace poco confiables.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "3D6",
+    "TAM": "2D6+12",
+    "INT": "2D6",
+    "POD": "2D6",
+    "DES": "3D6+3",
+    "CAR": "3D6"
+  },
+  "movimiento": 8,
+  "puntosMagia": "2D6",
+  "MR": 3,
+  "armadura": {
+    "Piel": "3 puntos (todas localizaciones)"
+  },
+  "habilidades": {
+    "Trepar": "50%",
+    "Improvisar": "40%",
+    "Esquivar": "50%",
+    "Habla Comercial": "35%"
+  },
+  "runas": {
+    "Bestia": "80%",
+    "Caos": "60%"
+  },
+  "magia": "Conocen algo de magia espiritual. Hechizos favoritos: Mazazo, Mano de Hierro, Protección y Flecha Veloz.",
+  "habilidadesEspeciales": [
+    "Ataque múltiple: Puede atacar con arma y aguijón simultáneamente",
+    "Veneno sistémico: El aguijón inyecta veneno con POT igual a su CON",
+    "Resistencia artrópoda: Puede perder patas sin afectar sus PV totales (2 patas perdidas en un lado reducen habilidades de agilidad a la mitad, 3 lo inmovilizan)",
+    "Característica Caótica: Probabilidad igual a POD×5 en D100 de tener rasgos caóticos adicionales",
+    "Reproducción: Cada aldea tiene una Reina Escorpión que produce continuamente nuevos hombres escorpión"
+  ],
+  "ataques": [
+    {
+      "nombre": "Garrote",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 6,
+      "alcance": "Cuerpo a cuerpo"
+    },
+    {
+      "nombre": "Honda",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 3,
+      "alcance": "A distancia"
+    },
+    {
+      "nombre": "Aguijón",
+      "porcentaje": "55%",
+      "daño": "1D6 + veneno",
+      "MR": 7,
+      "efecto": "Veneno sistémico (POT=CON)"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata trasera derecha", "rango": "01", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata media derecha", "rango": "02", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata delantera derecha", "rango": "03-04", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata trasera izquierda", "rango": "05", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata media izquierda", "rango": "06", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata delantera izquierda", "rango": "07-08", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Cola", "rango": "09-10", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Tórax", "rango": "11-12", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Pecho", "rango": "13-14", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ],
+  "notas": "Como artrópodos, pueden perder patas sin sufrir daño adicional a sus PV totales. Daño que exceda el doble de los PV de una localización se ignora. Pierden movilidad al perder múltiples patas de un mismo lado. Su sociedad está organizada alrededor de Reinas Escorpión que son las únicas hembras fértiles."
+}

@@ -1,0 +1,80 @@
+{
+  "nombre": "Grifo",
+  "descripcion": "Criatura majestuosa con cabeza, alas y patas delanteras de águila, y cuerpo y patas traseras de león. Son seres antiguos y poderosos que rara vez se involucran en asuntos humanos. Viven en grupos familiares llamados 'manadas' y son extremadamente protectores de sus tesoros. Prefieren atacar en picado desde el aire y pueden llevar presas humanoides con sus garras.",
+
+  "caracteristicas": {
+    "FUE": "8D6",
+    "CON": "2D6+6",
+    "TAM": "8D6",
+    "INT": "2D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6",
+    "CAR": "2D6+6"
+  },
+
+  "movimiento": "8 Tierra / 12 Vuelo",
+
+  "MR": 3,
+  "armadura": "Plumas y piel (4 puntos)",
+
+  "habilidades": {
+    "Esquivar": "25%",
+    "Volar": "75%",
+    "Escudriñar": "75%"
+  },
+
+  "idiomas": {
+    "Lengua del Fuego": "35%"
+  },
+
+  "runas": {
+    "Fuego/Cielo": "80%"
+  },
+
+  "magia": "Conocen magia espiritual equivalente a su CAR. Algunos pertenecen a cultos Fuego/Cielo.",
+
+  "pasiones": {
+    "Protección del tesoro": "90%",
+    "Orgullo": "Alto"
+  },
+
+  "habilidadesEspeciales": [
+    "Ataque en picado: Bonificación al atacar desde el aire",
+    "Transporte aéreo: Puede llevar presas humanoides con sus garras"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 7,
+      "nota": "Puede atacar a múltiples objetivos"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 7,
+      "nota": "Puede atacar junto con las garras"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01-03", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04-06", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Cuartos Traseros", "rango": "07-09", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos Delanteros", "rango": "10", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3"}
+  ],
+
+  "notas": [
+    "Viven en manadas de hasta 12 individuos (la mitad inmaduros)",
+    "Atacan preferentemente desde el aire en picado",
+    "Pueden usar garras y mordisco simultáneamente contra diferentes objetivos"
+  ]
+}

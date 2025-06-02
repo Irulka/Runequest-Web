@@ -1,0 +1,53 @@
+{
+  "nombre": "León",
+  "descripcion": "Los leones alguna vez cazaron en todo el centro y oeste de Genertela, pero ahora son raros fuera de los Alcances Occidentales y Tanisor. El león peloriano tiene una melena negra distintiva y es temido por sus feroces bandas de machos solteros. El león seshnelano tiene una melena dorada. Las leonas son ligeramente diferentes en características físicas.",
+  "caracteristicas": {
+    "FUE": "5D6+12",
+    "CON": "3D6",
+    "TAM": "4D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6+6"
+  },
+  "movimiento": 10,
+  "MR": 2,
+  "armadura": "2 (pelaje); 4 (melena en el cuello, solo machos)",
+  "habilidades": {
+    "Esquivar": "55%",
+    "Ocultar": "80%",
+    "Moverse Silenciosamente": "75%",
+    "Rastrear": "50%"
+  },
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "60%",
+      "daño": "1D6",
+      "MR": 6
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D10",
+      "MR": 6
+    },
+    {
+      "nombre": "Desgarrar",
+      "porcentaje": "80%",
+      "daño": "2D8",
+      "MR": 6,
+      "efecto": "Requiere que el mordisco y una garra hayan impactado en el turno anterior."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 2, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 2, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 2, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 2, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 2, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 4, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque combinado: Primero ataca con una garra y luego muerde 3 MR después. Si ambos golpes impactan, el león se aferra y desgarra con sus patas traseras en la siguiente ronda mientras continúa mordiendo."
+  ]
+}

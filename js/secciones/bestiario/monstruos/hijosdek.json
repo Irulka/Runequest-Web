@@ -1,0 +1,66 @@
+{
+  "nombre": "Hijo de Krarsht",
+  "descripcion": "Horror subterráneo que perfora la tierra con túneles tortuosos. Tiene un cuerpo central de 1 metro de diámetro con seis patas que sobresalen. Criaturas sin ojos y asimétricas con un sentido del hambre que las dirige hacia sus presas. La mayoría de la gente de la superficie nunca ha oído hablar de estos monstruos. Se comunican de manera incomprensible pero cooperan entre sí y con el culto de Krarsht.",
+  "caracteristicas": {
+    "FUE": "2D6+6",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "3D6",
+    "POD": "2D6+12",
+    "DES": "3D6+6"
+  },
+  "movimiento": "3/10 (en túneles)",
+  "puntosMagia": "2D6+12",
+  "MR": 3,
+  "armadura": {
+    "Cuerpo": "Caparazón quitinoso (7 puntos)",
+    "Patas": "Caparazón quitinoso (3 puntos)"
+  },
+  "habilidades": {
+    "Sentir Vida": "90%"
+  },
+  "habilidadesEspeciales": [
+    "Mordedura paralizante: El veneno tiene POT igual al CON del Krarshtkid. Si supera el CON del objetivo, lo paraliza por 20-CON días. Los antídotos minerales son mitad efectivos.",
+    "Lengua ácida: Golpea el POD del objetivo. Si tiene éxito, causa 4D3 de daño (como hechizo Diurigación).",
+    "Escupitajo (Pratzim): Sustancia gomosa que atrapa (POT 15). La víctima debe superar tirada de STR contra POT para liberarse. Mientras está atrapada, no puede usar armas y su movimiento se reduce a 2."
+  ],
+  "ataques": [
+    {
+      "nombre": "Colmillos",
+      "porcentaje": "50%",
+      "daño": "2D6 + veneno paralizante",
+      "MR": 7,
+      "efecto": "Parálisis (CON vs CON), dura 20-CON días"
+    },
+    {
+      "nombre": "Garra excavadora",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 6
+    },
+    {
+      "nombre": "Lengua",
+      "porcentaje": "75%",
+      "daño": "4D3 (daño espiritual)",
+      "MR": 6,
+      "efecto": "Resistencia POD vs POD"
+    },
+    {
+      "nombre": "Escupitajo (Pratzim)",
+      "porcentaje": "80%",
+      "daño": "Atrapamiento",
+      "MR": 1,
+      "efecto": "Resistencia STR vs POT 15 para liberarse"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata trasera derecha", "rango": "01-03", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata trasera izquierda", "rango": "04-06", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata media derecha", "rango": "07-09", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata media izquierda", "rango": "10-12", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata delantera derecha", "rango": "13-15", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata delantera izquierda", "rango": "16-18", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Cuerpo", "rango": "19-20", "armadura": 7, "pv": "PV/3 + 1"}
+  ],
+  "notas": "Pueden atacar con múltiples extremidades en el mismo round. Prefieren comer arcilla, arena y piedra caliza, pero atacarán a criaturas vivas cuando las detecten. Su saliva pratzim permanece en la víctima hasta que toda la ropa sea limpiada a fondo."
+}

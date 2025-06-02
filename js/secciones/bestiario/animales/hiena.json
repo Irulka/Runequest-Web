@@ -1,0 +1,72 @@
+{
+  "nombre": "Hiena",
+  "descripcion": "Depredador oportunista y carroñero de las llanuras de Glorantha. Conocido por su característica risa y su comportamiento de manada. Aunque a menudo se alimenta de carroña, es un cazador capaz cuando trabaja en grupo.",
+  "caracteristicas": {
+    "FUE": "2D6+8",
+    "CON": "3D6",
+    "TAM": "3D6",
+    "POD": "2D6",
+    "DES": "3D6"
+  },
+  "movimiento": 9,
+  "MR": 5,
+  "armadura": 1,
+  "habilidades": {
+    "Esquivar": "30%",
+    "Detectar Ocultos": "80%",
+    "Rastrear por Olfato": "60%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "30%",
+      "daño": "1D8",
+      "MR": 9
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Pata Trasera Derecha",
+      "rango": "01-02",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Pata Trasera Izquierda",
+      "rango": "03-04",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cuartos Traseros",
+      "rango": "05-07",
+      "armadura": 1,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Cuartos Delanteros",
+      "rango": "08-10",
+      "armadura": 1,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Pata Delantera Derecha",
+      "rango": "11-13",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Pata Delantera Izquierda",
+      "rango": "14-16",
+      "armadura": 1,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Cabeza",
+      "rango": "17-20",
+      "armadura": 1,
+      "pv": "PV/3"
+    }
+  ],
+  "habilidadesEspeciales": [
+    "Caza en manada: Más peligrosa cuando ataca en grupo"]}

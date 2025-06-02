@@ -1,0 +1,52 @@
+{
+  "nombre": "Pteranodon Gigante",
+  "descripcion": "Transformación mágica de dinosaurios que tomaron conciencia de su condición y buscaron purificarse. Estas criaturas aladas se forman cuando un dinosaurio se envuelve en un huevo mágico y emerge como pteranodon. Los dragonewt a veces capturan ejemplares jóvenes para entrenarlos como monturas voladoras, creando mercenarios que sirven al mejor postor. Son avistados con frecuencia sobrevolando Paso del Dragón.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+24",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "2D6"
+  },
+  "movimiento": "6/10 (Vuelo)",
+  "puntosMagia": "3D6",
+  "MR": 2,
+  "armadura": {
+    "Escamas": "6 puntos"
+  },
+  "habilidades": {
+    "Esquivar": "50%",
+    "Volar": "100%",
+    "Moverse silenciosamente (en vuelo)": "70%",
+    "Explorar": "70%",
+    "Rastrear": "50%"
+  },
+  "habilidadesEspeciales": [
+    "Transformación mágica: Surgen de dinosaurios que se purifican",
+    "Montura aérea: Puede ser entrenado para transportar jinetes",
+    "Vuelo sigiloso: Capaz de moverse silenciosamente en el aire",
+    "Visión aguda: Excelente capacidad de exploración desde el aire",
+    "Origen metamórfico: Nacen de huevos mágicos autocreados"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D8",
+      "MR": 6
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata derecha", "rango": "01-03", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pata izquierda", "rango": "04-06", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-08", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "09-11", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Cola", "rango": "12", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Ala derecha", "rango": "13-14", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Ala izquierda", "rango": "15-16", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 6, "pv": "PV/3"}
+  ],
+  "notas": "Aunque pueden atacar con sus poderosos mordiscos, su principal valor reside en su capacidad de vuelo. Los dragonewt invierten mucho esfuerzo en entrenarlos como monturas, creando así los mercenarios pteranodon. Su transformación mágica les otorga habilidades aéreas excepcionales, aunque mantienen ciertos rasgos de su existencia anterior como dinosaurios."
+}

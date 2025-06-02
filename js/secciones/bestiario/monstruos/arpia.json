@@ -1,0 +1,59 @@
+{
+  "nombre": "Arpía",
+  "descripcion": "Criaturas repugnantes con cabeza y pechos de mujer humana, pero el resto de su cuerpo se asemeja al de un buitre. Son notoriamente sucias y disfrutan contaminando la comida y cuerpos de otros. Cobardes, huirán si son atacadas a menos que superen en número a su enemigo. Cualquier alimento tocado por sus excrementos se vuelve portador de enfermedades y completamente incomible (excepto para las arpías).",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "3D6",
+    "POD": "3D6",
+    "DES": "4D6",
+    "CAR": "1D6"
+  },
+  "movimiento": "3/10 (Vuelo)",
+  "MR": 4,
+  "armadura": "Plumas (1 punto)",
+  "habilidades": {
+    "Esquivar": "65%",
+    "Volar": "90%"
+  },
+  "idiomas": {
+    "Lengua propia (variante local humana)": "20%"
+  },
+  "pasiones": {
+    "Venganza": "60%"
+  },
+  "runas": {
+    "Caos": "60%"
+  },
+  "magia": "Muchas arpías pertenecen a cultos repugnantes como Mallia, y aprenden magia espiritual como Atadura, Mano de Hierro y Flecha Veloz.",
+  "habilidadesEspeciales": [
+    "Excrementos Pestilentes: Cualquier alimento tocado por sus excrementos se vuelve portador de enfermedades e incomible",
+    "Venganza Persistente: Siguen a sus enemigos (a distancia segura) durante kilómetros para vengarse"
+  ],
+  "ataques": [
+    {
+      "nombre": "Garras",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 4,
+      "efecto": "Ataque rápido mientras vuelan"
+    },
+    {
+      "nombre": "Robo",
+      "porcentaje": "65%",
+      "daño": "-",
+      "MR": 3,
+      "efecto": "Arrebatan objetos pequeños o realizan tormentos menores"
+    }
+  ],
+   "localizaciones": [
+{"locacion": "Pierna Derecha", "rango": "01-02", "armadura": 1, "pv": "PV/3"},
+{"locacion": "Pierna Izquierda", "rango": "03-04", "armadura": 1, "pv": "PV/3"},
+{"locacion": "Abdomen", "rango": "05-7", "armadura": 1, "pv": "PV/3"},
+{"locacion": "Pecho", "rango": "08-09", "armadura": 1, "pv": "PV/3 + 1"},
+{"locacion": "Ala derecha", "rango": "10-13", "armadura": 1, "pv": "PV/3 - 1"},
+{"locacion": "Ala izquierda", "rango": "14-17", "armadura": 1, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "18-20", "armadura": 1, "pv": "PV/3"}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "nombre": "Anguila Gigante",
+  "descripcion": "Depredadores acuáticos masivos que habitan en lagos y ríos de Genertela. Cazan en grupo usando su agudo sentido del olfato para localizar presas. Pueden alcanzar hasta 20 metros de longitud y son capaces de arrastrarse sobre cubiertas de barcos para atacar directamente a los tripulantes. Su movimiento serpentino les permite nadar tanto hacia adelante como hacia atrás.",
+  "caracteristicas": {
+    "FUE": "8D6+30",
+    "CON": "6D6+20",
+    "TAM": "8D6+30",
+    "POD": "5D6",
+    "DES": "2D6"
+  },
+  "movimiento": "4",
+  "MR": 4,
+  "armadura": "Piel gruesa (10 puntos)",
+  "habilidades": {
+    "Oler Presas": "70%"
+  },
+  "pasiones": {
+    "Cooperación en caza": "75%",
+    "Agresividad": "100%"
+  },
+  "runas": {
+    "Agua": "88%",
+    "Bestia": "55%"
+  },
+  "habilidadesEspeciales": [
+    "Nado reversible: Puede cambiar dirección instantáneamente invirtiendo el movimiento de sus ondas corporales.",
+    "Asalto anfibio: Capacidad de atacar fuera del agua brevemente (1-2 asaltos)"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "60%",
+      "daño": "2D6",
+      "MR": 8,
+      "nota": "Puede arrastrar presas medianas bajo el agua"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-09", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Cuerpo", "rango": "10-16", "armadura": 10, "pv": "PV/3 + 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 10, "pv": "PV/3"}
+  ],
+  "notas": [
+    "Tamaño típico: 20m de largo × 1m de diámetro",
+    "Pueden coordinar ataques con otras anguilas (+20% a porcentaje de ataque cuando cazan en grupo)"
+  ]
+}

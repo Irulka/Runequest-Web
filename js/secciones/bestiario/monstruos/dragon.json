@@ -1,0 +1,77 @@
+{
+  "nombre": "Dragón de los Sueños",
+  "descripcion": "Serpientes aladas de cuatro patas creadas por la mente de Dragones Verdaderos. Manifestaciones físicas de sus sueños, son criaturas poderosas y temibles con aliento mágico (fuego, hielo o veneno). Suelen ser solitarios, avariciosos e impredecibles, aunque algunos muestran benevolencia. No envejecen ni se reproducen, y sus cadáveres se desvanecen lentamente al morir.",
+  "caracteristicas": {
+    "FUE": "15D6",
+    "CON": "4D6",
+    "TAM": "15D6",
+    "INT": "4D6",
+    "POD": "4D6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": "7/12",
+  "MR": 3,
+  "armadura": "Piel (4-10 puntos)",
+  "habilidades": {
+    "Volar": "65%",
+    "Escuchar": "60%",
+    "Escudriñar": "50%"
+  },
+  "idiomas": {
+    "Auld Wyrmish": "75%",
+    "Lenguas locales": "45%"
+  },
+  "magia": "Magia dragónica con múltiples efectos (ver páginas 42-43).",
+  "pasiones": {
+    "Avaricia": "75%",
+    "Impredecibilidad": "90%"
+  },
+  "runas": {
+    "Dragón": "100%",
+    "Poder": "55%"
+  },
+  "habilidadesEspeciales": [
+    "Aliento Mágico: Fuego (4D6 por localización), Hielo (4D6 a PV generales) o Gas venenoso (resistir CON vs POD).",
+    "Inmunidades: Variables, a menudo resistentes a magia."
+  ],
+  "ataques": [
+    {
+      "nombre": "Aliento",
+      "porcentaje": "80%",
+      "daño": "Variable (según tipo)",
+      "MR": 3,
+      "alcance": "15m (cono/linea)"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "80%",
+      "daño": "7D6",
+      "MR": 7
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "80%",
+      "daño": "6D6",
+      "MR": 7
+    },
+    {
+      "nombre": "Cola",
+      "porcentaje": "80%",
+      "daño": "3D6",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pierna Trasera Derecha", "rango": "03-04", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Pierna Trasera Izquierda", "rango": "05-06", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Cuartos Traseros", "rango": "07-08", "armadura": 7, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos Delanteros", "rango": "09-10", "armadura": 7, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 7, "pv": "PV/3"}
+  ]
+}

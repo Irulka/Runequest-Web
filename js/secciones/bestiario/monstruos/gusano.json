@@ -1,0 +1,47 @@
+{
+  "nombre": "Gusano Dragón",
+  "descripcion": "Criaturas caóticas y mutantes, parientes degenerados de los dragones. Surgieron durante la Gran Oscuridad cuando algunos dragones fueron corrompidos por el Caos. Carecen de alas y patas, pareciendo serpientes gigantes con cabeza draconiana. Son criaturas no inteligentes que a menudo se encuentran enrolladas alrededor de objetos. Todos tienen la capacidad de regeneración como característica caótica.",
+  "caracteristicas": {
+    "FUE": "12D6",
+    "CON": "1D6+12",
+    "TAM": "12D6",
+    "POD": "4D6",
+    "DES": "2D6"
+  },
+  "movimiento": 6,
+  "puntosMagia": "4D6",
+  "MR": 4,
+  "armadura": {
+    "Piel viscosa": "6 puntos (todas localizaciones)"
+  },
+  "habilidadesEspeciales": [
+    "Regeneración: Cura 1 punto de daño por localización cada round (el fuego y ciertos ataques mágicos previenen esta regeneración)",
+    "Recomposición: Si es cortado en dos, puede volver a unirse (excepto si el daño fue causado por fuego)",
+    "Aliento venenoso: Nube de gas tóxico (POT=POD) que llena esfera de 4m (puede usarlo cada 5 rounds)",
+    "Característica Caótica: Probabilidad igual a POD×3 en D100 de tener rasgos caóticos adicionales",
+    "Resistencia: Ignora daño que exceda el doble de los PV de una localización"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 8,
+      "alcance": "Cuerpo a cuerpo"
+    },
+    {
+      "nombre": "Aliento venenoso",
+      "porcentaje": "Automático",
+      "daño": "Gas tóxico (POT=POD)",
+      "MR": 1,
+      "efecto": "Todos en radio de 4m deben superar tirada de CON (reglas de asfixia)",
+      "nota": "Usable cada 5 rounds de combate"
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Cola", "rango": "13-15", "armadura": 6, "pv": "PV/3"},
+{"locacion": "Cuerpo", "rango": "16-18", "armadura": 6, "pv": "PV/3 + 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 6, "pv": "PV/3"}
+  ],
+  "notas": "Al ser atacado, inmediatamente expulsa su aliento venenoso. Para evitar inhalar el veneno, los aventureros deben superar tiradas de CON (reglas de asfixia). El fuego detiene su regeneración y capacidad de recomponerse. Son criaturas extremadamente resistentes gracias a su rápida regeneración."
+}

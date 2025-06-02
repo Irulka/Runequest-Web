@@ -1,0 +1,52 @@
+{
+  "nombre": "Mamut Lanudo",
+  "descripcion": "El mamut lanudo habita en las elevaciones más altas del sur de Peloria y el Paso del Dragón. Viajan en manadas lideradas por hembras y se alimentan de hierba, flores, arbustos y materia arbórea. Sobreviven fácilmente en climas fríos y helados. Su trompa es sensible y no la usará para luchar después de ser golpeada, a menos que el mamut esté reducido a la mitad o menos de sus puntos de vida totales.",
+  "caracteristicas": {
+    "FUE": "4D6+36",
+    "CON": "2D6+6",
+    "TAM": "4D6+36",
+    "POD": "3D6",
+    "DES": "2D6"
+  },
+  "movimiento": 12,
+  "MR": 4,
+  "armadura": "6 (piel y pelaje grueso)",
+  "habilidades": {
+    "Esquivar": "20%",
+    "Resistir Frío": "Automática"
+  },
+  "ataques": [
+    {
+      "nombre": "Cornear",
+      "porcentaje": "65%",
+      "daño": "1D8+6D6",
+      "MR": 8
+    },
+    {
+      "nombre": "Pisotear",
+      "porcentaje": "75%",
+      "daño": "10D6",
+      "MR": 8
+    },
+    {
+      "nombre": "Trompa (agarre)",
+      "porcentaje": "65%",
+      "daño": "0",
+      "MR": 8,
+      "efecto": "La víctima debe superar una tirada de FUE contra la mitad de la FUE del mamut o será colocada en posición para ser pisoteada automáticamente en la siguiente ronda. Alternativamente, el mamut puede lanzar a la víctima, causando daño por caída basado en 1 metro por cada 3 puntos de FUE del mamut."
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 6, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 6, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 6, "pv": "PV/3 + 3" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 6, "pv": "PV/3 + 3" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 6, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 6, "pv": "PV/3 + 1" },
+    { "locacion": "Trompa", "rango": "17", "armadura": 6, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "18-20", "armadura": 6, "pv": "PV/3 + 2" }
+  ],
+  "habilidadesEspeciales": [
+    "Trompa Sensible: No usará la trompa para luchar después de ser golpeada una vez, a menos que esté gravemente herido (mitad o menos de sus PV)."
+  ]
+}

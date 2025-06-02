@@ -1,0 +1,79 @@
+{
+  "nombre": "Vampiro",
+  "descripcion": "Nobleza de los No-Muertos, Maestros Rúnicos del culto Vivamort. Criaturas pálidas de fuerza sobrenatural que pueden transformarse en murciélago, lobo o humo. Se crean durante la noche sagrada del culto Vivamort, cuando el candidato es drenado de todo su POD y Vivamort ata su mente al cuerpo muerto. Son seres poderosos pero con vulnerabilidades específicas.",
+  "caracteristicas": {
+    "FUE": "6D6",
+    "CON": "6D6",
+    "TAM": "2D6+6",
+    "INT": "2D6+6",
+    "POD": "0 (drenado en creación)",
+    "DES": "2D6+6",
+    "CAR": "3D6"
+  },
+  "movimiento": "9/1 (como humo)",
+  "puntosMagia": "2D6+6 (máximo especie)",
+  "MR": 5,
+  "armadura": "Ninguna normalmente (puede usar cualquiera)",
+  "habilidades": "Como en su existencia previa",
+  "runas": {
+    "Caos": "60%",
+    "Oscuridad": "60%",
+    "No-Muerto": "60%"
+  },
+  "magia": "Pueden usar algunos hechizos rúnicos especiales del culto. No usan magia espiritual. Pueden realizar rituales mágicos vampíricos en días sagrados. Potentes hechiceros.",
+  "habilidadesEspeciales": [
+    "Transformación: Puede convertirse en murciélago, lobo o humo a voluntad",
+    "Regeneración: Si cualquier localización llega a 0 PV, se transforma en humo al final del round y regenera 1 PV por round",
+    "Drenar sangre: Al morder, transfiere 10k PV de la víctima al vampiro (hasta su máximo normal)",
+    "Drenar magia: Al tocar, puede robar 10k PM de la víctima si gana resistencia POD vs PM del vampiro",
+    "Encantar: Puede dominar con la mirada (POD vs PM), víctima queda paralizada 25 rounds",
+    "Inmunidades: No afectado por Contramagia contra su habilidad de Encantar"
+  ],
+  "ataques": [
+    {
+      "nombre": "Arma cualquiera",
+      "porcentaje": "75%",
+      "daño": "Daño del arma + bonificación",
+      "MR": "Según arma"
+    },
+    {
+      "nombre": "Toque",
+      "porcentaje": "50%",
+      "daño": "Drena 10k PM",
+      "MR": 8,
+      "efecto": "Resistencia POD (víctima) vs PM (vampiro)"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D3 + drena 10k PV",
+      "MR": 8,
+      "efecto": "Transfiere PV de víctima a vampiro"
+    },
+    {
+      "nombre": "Encantar",
+      "porcentaje": "Automático",
+      "daño": "Parálisis",
+      "MR": 1,
+      "efecto": "POD×5 para evitar, dura 25 rounds"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ],
+  "debilidades": [
+    "Estaca en el corazón: Impide regeneración si la cabeza ha sido dañada",
+    "Decapitación: Necesaria para destruirlo permanentemente",
+    "Runa Muerte: Causa daño al tocarla y enfoca hechizos de Disrupción efectivos",
+    "Fuego y luz solar: Pueden impedir su regeneración",
+    "No puede recuperar PM naturalmente, solo drenándolos",
+    "Limitado a máximo de PM de su especie original"
+  ],
+  "notas": "Para evitar ser Encantado, un aventurero puede luchar con los ojos cerrados (con penalizaciones). Vampiro no puede usar magia espiritual ni sacrificar por nuevos puntos rúnicos excepto con Vivamort. Si ya tenía puntos rúnicos en vida, los conserva."
+}

@@ -1,0 +1,38 @@
+{
+  "nombre": "Hydra Menor",
+  "descripcion": "Monstruo del Caos con múltiples cabezas y cuerpo reptiliano o serpentino. Cada hydra menor tiene 2D6 cabezas. La mayoría no puede regenerar las cabezas perdidas. Los hechizos como Desmoralizar, Miedo o Locura solo afectan a una cabeza, y el combate espiritual solo afecta a una cabeza a la vez. Cada cabeza defiende con el POD completo de la hydra.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "1D6+12",
+    "TAM": "2D6+18",
+    "POD": "2D6+6",
+    "DES": "2D6+12"
+  },
+  "movimiento": 6,
+  "puntosMagia": "2D6+6",
+  "MR": 0,
+  "armadura": {
+    "Piel": "6 puntos"
+  },
+  "habilidadesEspeciales": [
+    "Múltiples cabezas: 2D6 cabezas (determinar al crear la ficha)",
+    "Característica del Caos: Cada cabeza tiene una posibilidad igual a su POD×1 en D100 de tener una característica caótica",
+    "Resistencia mágica: Efectos que afectan una sola cabeza (como Desmoralizar) solo afectan a una cabeza a la vez",
+    "Veneno sistémico: POT igual al POD de la hydra (antídoto de wyvern es mitad efectivo)",
+    "Ácido corrosivo: POT igual a POD/2"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D6 + veneno + ácido",
+      "MR": 4,
+      "efecto": "Veneno (POT=POD), Ácido (POT=POD/2)"
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Cuerpo", "rango": "01-02", "armadura": 6, "pv": "PV/3"},
+{"locacion": "Cabezas", "rango": "19-20", "armadura": 6, "pv": "PV/3 - 1"}
+  ],
+  "notas": "Las hydras verdaderas (mayores) son extremadamente raras, con solo una docena conocidas en todo Glorantha. Son mucho más grandes y poderosas que estas hydras menores. El veneno y ácido de la hydra afectan simultáneamente con cada mordisco exitoso."
+}

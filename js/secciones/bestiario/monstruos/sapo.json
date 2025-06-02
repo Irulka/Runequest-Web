@@ -1,0 +1,61 @@
+{
+  "nombre": "Sapo de los Acantilados",
+  "descripcion": "Anfibios gigantes de color gris y textura pedreguesa que habitan zonas rocosas, montañas y cañones. Los jóvenes son una molestia que roba provisiones, mientras que los adultos cazan monturas y jinetes con sus lenguas adhesivas. Pueden tragar presas enteras de hasta su TAM y crecen continuamente durante toda su vida, llegando los más antiguos a superar el tamaño de un mamut.",
+  "caracteristicas": {
+    "FUE": "2-12D6",
+    "CON": "3D6",
+    "TAM": "2-12D6",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": "1/3 por D6 de TAM (Salto)",
+  "puntosMagia": "3D6",
+  "MR": "3-5",
+  "armadura": {
+    "Piel": "7 puntos"
+  },
+  "habilidades": {
+    "Trepar": "100%",
+    "Ocultarse": "90%"
+  },
+  "habilidadesEspeciales": [
+    "Salto: Puede saltar 3 metros por cada D6 de TAM",
+    "Lengua adhesiva: Alcance de 3m por cada D6 de TAM (35% de acierto)",
+    "Tragar presas: Puede engullir criaturas de hasta su TAM (80% de éxito)",
+    "Ácido digestivo: POT igual a 2 niveles por D6 de TAM",
+    "Camuflaje natural: Se confunde perfectamente con entornos rocosos"
+  ],
+  "ataques": [
+    {
+      "nombre": "Lengua",
+      "porcentaje": "35%",
+      "daño": "1D6 + bonificación",
+      "MR": 4,
+      "efecto": "80% de probabilidad de atraer a la víctima a la boca al siguiente round"
+    },
+    {
+      "nombre": "Tragar",
+      "porcentaje": "80%",
+      "daño": "Ácido digestivo (POT=2×D6 de TAM)",
+      "MR": "Automático",
+      "efecto": "Daño sistémico continuo hasta escapar o ser digerido"
+    },
+    {
+      "nombre": "Constricción",
+      "porcentaje": "Automático",
+      "daño": "1D6+bonificación",
+      "MR": "—",
+      "nota": "Si falla tragar pero la lengua sigue adherida"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata trasera derecha", "rango": "01-02", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pata trasera izquierda", "rango": "03-04", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Cuarto trasero", "rango": "05-07", "armadura": 7, "pv": "PV/3 + 1"},
+    {"locacion": "Cuarto delantero", "rango": "08-10", "armadura": 7, "pv": 6},
+    {"locacion": "Pata delantera derecha", "rango": "11-13", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pata delantera izquierda", "rango": "14-16", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 7, "pv": "PV/3"}
+  ],
+  "notas": "Los sapos jóvenes (TAM 2D6) son una molestia menor, mientras que los ancianos (hasta 12D6) son depredadores formidables. Su lengua adhesiva puede capturar presas a distancia considerable (3m × D6 de TAM). Las víctimas tragadas sufren daño por ácido cada round hasta escapar o morir."
+}

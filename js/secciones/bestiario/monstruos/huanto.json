@@ -1,0 +1,75 @@
+{
+  "nombre": "Huan-To",
+  "descripcion": "Horrores del Caos de las estribaciones montañosas de Kralorela. Tienen cabezas enormes y huesudas, casi tan grandes como sus torsos, con extremidades fibrosas y garras similares a las de un pájaro. Su principal motivación es derrocar al antiguo gobierno humano de Kralorela. Su mordedura inyecta un veneno mágico con POT igual a su POD que puede convertir a la víctima en un necrófago.",
+  "caracteristicas": {
+    "FUE": "3D6+12",
+    "CON": "3D6+6",
+    "TAM": "4D6+12",
+    "INT": "3D6+6",
+    "POD": "1D6+12",
+    "DES": "3D6",
+    "CAR": "2D6"
+  },
+  "movimiento": 8,
+  "MR": 3,
+  "armadura": {
+    "Piel": "4 puntos en cuerpo",
+    "Cabeza": "8 puntos (piel reforzada)"
+  },
+  "habilidades": {
+    "Ocultar": "65%",
+    "Costumbres (humanos locales)": "50%",
+    "Esquivar": "35%",
+    "Intimidar": "50%",
+    "Meditar": "50%",
+    "Rastrear": "55%"
+  },
+  "idiomas": {
+    "Kralori": "80%"
+  },
+  "pasiones": {
+    "Odio (Kralori)": "90%"
+  },
+  "runas": {
+    "Caos": "60%",
+    "Oscuridad": "60%",
+    "Muerte": "60%"
+  },
+  "magia": "Pueden usar cualquier tipo de magia. A menudo aprenden hechicería, especializándose en hechizos de Drenaje. Pueden adorar a dioses como Mallia, Vivamort (dios no-muerto) o Ikadz (dios de la tortura).",
+  "habilidadesEspeciales": [
+    "Mordedura Venenosa: Inyecta veneno mágico con POT=POD. Si supera la CON de la víctima, esta cae inconsciente en 1D8 asaltos. Si no se purga en 1D3 horas, la víctima muere y resurge como necrófago.",
+    "Ataque Combinado: Puede atacar/parar normalmente más morder en el mismo round (con 3 rangos de diferencia)",
+    "Aliados Siniestros: Suele estar acompañado por grupos de necrófagos y otras criaturas no-muertas",
+    "Resistencia al Veneno: Los antídotos para veneno de araña son solo mitad de efectivos contra su veneno"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordedura",
+      "porcentaje": "90%",
+      "daño": "1D8+2D3 + veneno",
+      "MR": 7,
+      "efecto": "Inyecta veneno mágico (POT=POD). Conversión a necrófago si no se neutraliza."
+    },
+    {
+      "nombre": "Espadón",
+      "porcentaje": "65%",
+      "daño": "2D8",
+      "MR": 4
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "65%",
+      "daño": "1D6",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 4, "pv": "PV/3"},
+{"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 4, "pv": "PV/3"},
+{"locacion": "Abdomen", "rango": "09-11", "armadura": 4, "pv": "PV/3"},
+{"locacion": "Pecho", "rango": "12", "armadura": 4, "pv": "PV/3 + 1"},
+{"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 4, "pv": "PV/3 - 1"},
+{"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 4, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3"}
+  ]
+}

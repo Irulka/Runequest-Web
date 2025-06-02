@@ -1,0 +1,49 @@
+{
+  "nombre": "Renacido (No-Muerto)",
+  "descripcion": "Cadáveres animados por voluntades oscuras que han sacrificado su POD para preservar su intelecto más allá de la muerte. Comunes entre los cultistas de Zorak Zoran, son creados mediante rituales que involucran la extracción de vísceras y cerebro, y la preservación del cuerpo con minerales y aceites. Vulnerables al fuego, mantienen habilidades de su vida anterior pero carecen de capacidad mágica propia.",
+
+  "caracteristicas": {
+    "FUE": "6D6",
+    "CON": "6D6",
+    "TAM": "Como en vida",
+    "INT": "2D6+6",
+    "DES": "2D6",
+    "POD": "0 (No-Muerto)"
+  },
+
+  "movimiento": 7,
+    "puntosMagia": "2D6+6",
+  "MR": 5,
+  "armadura": {
+    "Base": "Piel preservada (3 puntos)",
+    "Adicional": "Puede usar armadura normal"
+  },
+  "habilidades": "Mantienen las habilidades y conocimiento de idiomas que conocieran en vida.",
+
+  "magia": "Magia rúnica conocida en vida y hechicería. No pueden obtener nuevos puntos rúnicos ni utilizar magia espiritual.",
+
+  "ataques": [
+    {
+      "nombre": "Mazo",
+      "porcentaje": "70%",
+      "daño": "2D8",
+      "MR": 6
+    },
+    {
+      "nombre": "Puño",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 8
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ]
+  }

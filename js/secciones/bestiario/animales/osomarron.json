@@ -1,0 +1,54 @@
+{
+  "nombre": "Oso Marrón",
+  "descripcion": "Un oso grande y poderoso, más agresivo que el oso negro. Habita en bosques y montañas de Glorantha, siendo un adversario formidable cuando se siente amenazado.",
+  "caracteristicas": {
+    "FUE": "3D6+15",
+    "CON": "2D6+6",
+    "TAM": "3D6+15",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 8,
+  "MR": 3,
+  "armadura": 3,
+  "habilidades": {
+    "Trepar": "35%",
+    "Ocultar": "25%",
+    "Esconderse": "35%",
+    "Escuchar": "45%",
+    "Rastrear": "45%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 7
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "35%",
+      "daño": "1D6",
+      "MR": 7
+    },
+    {
+      "nombre": "Abrazo",
+      "porcentaje": "35%",
+      "daño": "2D6",
+      "MR": 7,
+      "efecto": "Debe golpear con mordisco en el mismo turno"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 3, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 3, "pv": "PV/3 + 1" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 3, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 3, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque combinado: Puede morder y abrazar en el mismo turno (contra el mismo objetivo) o morder y usar ambas garras (contra hasta 3 objetivos diferentes)"
+  ]
+}

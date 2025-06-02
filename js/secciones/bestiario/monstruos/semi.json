@@ -1,0 +1,51 @@
+{
+  "nombre": "Semipájaro",
+  "descripcion": "Montura de los dragonewt, está en perpetuo enlace mental con su jinete y sigue todas sus órdenes. Son bípedos con plumas, y pico. Pponen huevos, pero tienen huesos sólidos y brazos vestigiales emplumados en lugar de alas. Son criaturas carnívoras y muy intrépidas.",
+  "caracteristicas": {
+    "FUE": "4D6+18",
+    "CON": "2D6+6",
+    "TAM": "4D6+12",
+    "POD": "3D6",
+    "DES": "3D6+6"
+  },
+  "movimiento": 12,
+  "puntosMagia": "3D6",
+  "MR": 1,
+  "armadura": {
+    "Cuerpo/Cabeza": "Plumas (4 puntos)",
+    "Patas": "Piel dura (4 puntos)"
+  },
+  "habilidades": {
+    "Esquivar": "50%"
+  },
+  "habilidadesEspeciales": [
+    "Enlace mental: Conexión permanente con su jinete dragonewt",
+    "Ataque múltiple: Puede morder y patear simultáneamente",
+    "Resistencia: Huesos sólidos (no huecos como aves comunes)",
+    "Obediencia absoluta: Sigue todas las órdenes de su jinete sin cuestionar"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "45%",
+      "daño": "1D8",
+      "MR": 5
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "45%",
+      "daño": "1D6",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata Derecha", "rango": "01-04", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pata Izquierda", "rango": "05-08", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-10", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "11-13", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "14-15", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "16-17", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "18-20", "armadura": 4, "pv": "PV/3"}
+  ],
+  "notas": "Aunque se llaman 'semipájaros', son más cercanos a dinosaurios terópodos que a aves verdaderas. Sus 'alas' vestigiales no les permiten volar, pero mantienen las plumas características. Son excelentes monturas de combate debido a su ferocidad natural y obediencia absoluta."
+}

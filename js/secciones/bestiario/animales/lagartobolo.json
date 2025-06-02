@@ -1,0 +1,48 @@
+{
+  "nombre": "Lagarto Bolo",
+  "descripcion": "Criaturas grandes similares a dinosaurios que corren sobre sus dos patas traseras, capaces de llevar un pequeño jinete. Evitan el combate directo cuando es posible, pero muerden cuando es necesario. Son generalmente vegetarianos pero pueden comer carroña en situaciones extremas. Los Jinetes de Lagarto Bolo son una de las tribus menores de Prax.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "3D6",
+    "TAM": "2D6+12",
+    "POD": "3D6",
+    "DES": "1D6+12"
+  },
+  "movimiento": 12,
+  "MR": 2,
+  "armadura": "1 (piel delgada)",
+  "habilidades": {
+    "Correr": "90%",
+    "Esquivar": "40%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 6,
+      "nota": "Puede atacar con mordisco y patada en el mismo turno"
+    },
+    {
+      "nombre": "Patada",
+      "porcentaje": "25%",
+      "daño": "1D8",
+      "MR": 6,
+      "nota": "Puede atacar con mordisco y patada en el mismo turno"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Cola", "rango": "01-02", "armadura": 1, "pv": "PV/3 - 2" },
+    { "locacion": "Pata Trasera Derecha", "rango": "03-04", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "05-06", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Abdomen", "rango": "07-09", "armadura": 1, "pv": "PV/3" },
+    { "locacion": "Pecho", "rango": "10-14", "armadura": 1, "pv": "PV/ + 1" },
+    { "locacion": "Garra Delantera Derecha", "rango": "15", "armadura": 1, "pv": "PV/3 - 2" },
+    { "locacion": "Garra Delantera Izquierda", "rango": "16", "armadura": 1, "pv": "PV/3 - 2" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 1, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Doble Ataque: Puede atacar con mordisco y patada en el mismo turno de combate",
+    "Montura Ágil: Su diseño bípedo lo hace especialmente adecuado para jinetes ligeros"
+  ]
+}

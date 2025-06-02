@@ -1,0 +1,90 @@
+{
+  "nombre": "Cocodrilo",
+  "descripcion": "Grandes saurios que habitan ríos y humedales de Glorantha. Depredadores activos que se alimentan de peces, serpientes y animales que se acercan a beber. Existen varias especies, incluyendo una común en el río Oslir y otra marina que frecuenta costas y ríos del sur de Generela.",
+  "caracteristicas": {
+    "FUE": "2D6+18",
+    "CON": "2D6+6",
+    "TAM": "2D6+18",
+    "POD": "3D6",
+    "DES": "2D6+3"
+  },
+  "movimiento": 6,
+  "MR": 3,
+  "armadura": 5,
+  "habilidades": {
+    "Ocultarse": "50%",
+    "Moverse Silenciosamente": "50%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D10",
+      "MR": 7,
+      "efecto": "Si está en el agua, puede aferrarse y girar, haciendo daño adicional cada ronda siguiente. Solo protege la armadura contra el mordisco inicial."
+    },
+    {
+      "nombre": "Latigazo de Cola",
+      "porcentaje": "40%",
+      "daño": "1D6",
+      "MR": 7,
+      "efecto": "Objetivo debe superar prueba de FUE×5 o caerá al suelo."
+    }
+  ],
+  "localizaciones": [
+    {
+      "locacion": "Pata Trasera Derecha",
+      "rango": "01-03",
+      "armadura": 5,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Pata Trasera Izquierda",
+      "rango": "04-06",
+      "armadura": 5,
+      "pv": "PV/3"
+    },
+    {
+      "locacion": "Cola",
+      "rango": "07-10",
+      "armadura": 5,
+      "pv": "PV/3 - 1"
+    },
+    {
+      "locacion": "Abdomen",
+      "rango": "11-13",
+      "armadura": 5,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Lomo",
+      "rango": "14-16",
+      "armadura": 5,
+      "pv": "PV/3 + 1"
+    },
+    {
+      "locacion": "Pata Delantera Derecha",
+      "rango": "17",
+      "armadura": 5,
+      "pv": "PV/3 -1"
+    },
+    {
+      "locacion": "Pata Delantera Izquierda",
+      "rango": "18",
+      "armadura": 5,
+      "pv": "PV/3 -1"
+    },
+    {
+      "locacion": "Cabeza",
+      "rango": "19-20",
+      "armadura": 5,
+      "pv": "PV/3"
+    }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque combinado: Puede morder y golpear con la cola simultáneamente (a objetivos diferentes)",
+    "Giro mortal: En el agua, al morder una extremidad o cabeza puede girar causando daño adicional cada ronda",
+    "Aguante acuático: Puede contener la respiración durante largos periodos",
+    "Camuflaje natural: Difícil de detectar cuando está inmóvil en el agua"
+  ]
+}

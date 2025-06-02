@@ -1,0 +1,71 @@
+{
+  "nombre": "Pulpandante (Walktapus)",
+  "descripcion": "Criatura anfibia extremadamente caótica con cuerpo humanoide y cabeza similar a un pulpo gigante. Puede atacar con sus ocho tentáculos mientras usa sus brazos humanos para mantener el equilibrio, permitiéndole combatir contra hasta cuatro oponentes simultáneamente. Odian los climas secos y prefieren ambientes acuáticos.",
+  "caracteristicas": {
+    "FUE": "2D6+18",
+    "CON": "2D6+6",
+    "TAM": "2D6+18",
+    "POD": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 7,
+  "puntosMagia": "3D6",
+  "MR": 3,
+  "armadura": {
+    "Piel": "4 puntos (todas localizaciones)"
+  },
+  "habilidadesEspeciales": [
+    "Regeneración caótica: Cada parte cortada crece como un nuevo pulpandante (1 PV cada 25 rounds)",
+    "Multiataque: Puede atacar con hasta 4 tentáculos simultáneamente",
+    "Nube de gas venenoso: POT=CON en radio de 3m (reglas de asfixia)",
+    "Constricción: Si 2+ tentáculos golpean, constriñen automáticamente (2D6 daño/round)",
+    "Anfibio: Respira perfectamente bajo el agua",
+    "Resistencia extrema: Solo puede ser destruido permanentemente con magia poderosa o disolución completa en ácido"
+  ],
+  "ataques": [
+    {
+      "nombre": "Tentáculo",
+      "porcentaje": "40%",
+      "daño": "2D6",
+      "MR": 7,
+      "nota": "Hasta 4 ataques por round"
+    },
+    {
+      "nombre": "Constricción",
+      "porcentaje": "Automático",
+      "daño": "2D6 por round",
+      "MR": 1,
+      "efecto": "Requiere 2 tentáculos conectados, rompe armadura progresivamente"
+    },
+    {
+      "nombre": "Nube de gas",
+      "porcentaje": "Automático",
+      "daño": "Veneno POT=CON",
+      "MR": 1,
+      "efecto": "Radio 3m, resistencia CON para reducir daño"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-02", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "03-04", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "05", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "06", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "07-08", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "09-10", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Tentáculo 1", "rango": "11", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Tentáculo 2", "rango": "12", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 3", "rango": "13", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 4", "rango": "14", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 5", "rango": "15", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 6", "rango": "16", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 7", "rango": "17", "armadura": 4, "pv": "PV/"},
+    {"locacion": "Tentáculo 8", "rango": "18", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3"}
+  ],
+  "debilidades": [
+    "Climas secos: Prefieren ambientes acuáticos",
+    "Regeneración lenta: Solo 1 PV cada 25 rounds",
+    "Fragmentación: Partes cortadas se convierten en nuevos individuos (puede ser contraproducente)"
+  ],
+  "notas": "La armadura protege contra constricción hasta que se supera su tasa de absorción. La nube de gas afecta a todos en 3m de radio - CON vs POT para reducir daño (mitad si resiste, completo si falla). Cada parte cortada crece como nuevo pulpandante en días (el fuego solo ralentiza este proceso)."
+}

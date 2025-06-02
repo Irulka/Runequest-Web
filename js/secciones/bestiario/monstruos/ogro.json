@@ -1,0 +1,66 @@
+{
+  "nombre": "Ogro",
+  "descripcion": "Humanoides que pueden pasar por humanos en la sociedad. Se cree que surgieron de una tribu humana que eligió el Caos durante la Gran Oscuridad. Son raros, con dientes afilados y pueden parecer muy atractivos. Su visión de la vida siempre está teñida por el Caos y tienen conocido gusto por la carne humana. Algunas sectas creen que actos de canibalismo pueden transformar a una persona en ogro.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+6",
+    "INT": "2D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 8,
+  "puntosMagia": "2D6+6",
+  "MR": 5,
+  "armadura": {
+    "Predeterminada": "Cuero (2 puntos en todas localizaciones)"
+  },
+  "habilidades": {
+    "Esquivar": "55%",
+    "Disfrazarse": "50%",
+    "Intimidar": "25%",
+    "Idioma nativo": "30%"
+  },
+  "pasiones": {
+    "Amor (familia)": "60%"
+  },
+  "runas": {
+    "Caos": "60%",
+    "Muerte": "60%",
+    "Ilusión": "60%"
+  },
+  "magia": "Pueden unirse a cultos rúnicos locales donde su naturaleza caótica no sea evidente. Muchos adoran en secreto al Cacodemonio (demonio del Caos).",
+  "habilidadesEspeciales": [
+    "Camuflaje social: Pueden pasar por humanos en la sociedad",
+    "Reconocimiento caótico: Otras criaturas del Caos los reconocen por su aura y normalmente no los atacan",
+    "Característica Caótica: 5% de probabilidad de tener una característica caótica adicional",
+    "Bonificación de daño: +1D4 a cualquier arma que usen"
+  ],
+  "ataques": [
+    {
+      "nombre": "Arma cualquiera",
+      "porcentaje": "50%",
+      "daño": "Daño base del arma",
+      "MR": 5,
+      "nota": "Usan cualquier arma disponible"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "1D6+1D4",
+      "MR": 5,
+      "nota": "Dientes extremadamente afilados"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ],
+  "notas": "Pueden usar cualquier tipo de armadura, pero normalmente comienzan con al menos armadura de cuero (2 puntos). Su naturaleza caótica puede manifestarse en características físicas inusuales (5% de probabilidad)."
+}

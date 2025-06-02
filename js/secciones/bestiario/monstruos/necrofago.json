@@ -1,0 +1,48 @@
+{
+  "nombre": "Necrófago",
+  "descripcion": "Criaturas semimuertas que mantienen su existencia alimentándose de cadáveres. Se forman cuando espíritus malignos poseen un cuerpo sin vida, transformándolo y animándolo en una parodia de la vida. Tienen un aullido escalofriante en combate y pueden inyectar veneno mágico con sus colmillos podridos.",
+  "caracteristicas": {
+    "FUE": "4D6",
+    "CON": "3D6",
+    "TAM": "2D6+6",
+    "INT": "3D6",
+    "DES": "3D6"
+  },
+  "movimiento": 8,
+  "puntosMagia":"2D6+6",
+  "MR": 5,
+  "habilidadesEspeciales": [
+    "Aullido aterrador: En combate, iguala sus PM contra la INT de cada enemigo. Si supera, el objetivo queda Desmoralizado (como el hechizo). Si resiste 5 rondas seguidas, se vuelve inmune.",
+    "Mordedura venenosa: Inyecta veneno mágico con potencia igual a su CON. Si supera el CON de la víctima, paraliza hasta usar antídoto (el de araña es mitad efectivo).",
+    "Ataque múltiple: Puede atacar con ambas garras y mordedura simultáneamente en el mismo rango de ataque."
+  ],
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "30%",
+      "daño": "1D6",
+      "MR": 9
+    },
+    {
+      "nombre": "Mordedura",
+      "porcentaje": "30%",
+      "daño": "1D6 + veneno",
+      "MR": 9
+    },
+    {
+      "nombre": "Aullido",
+      "porcentaje": "N/A",
+      "daño": "Efecto Desmoralizar",
+      "MR": 3
+    }
+  ],
+  "localizaciones": [
+{"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Abdomen", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+{"locacion": "Pecho", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+{"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 3, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

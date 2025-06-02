@@ -1,0 +1,49 @@
+{
+  "nombre": "Oso Saltarín",
+  "descripcion": "Uno de los mayores depredadores de Prax y las Tierras Baldías. Aunque más pequeño que un oso común, posee un pelaje grueso y grisáceo, una cabeza similar a la de un perro y una cola robusta. No es un oso verdadero, sino más cercano a los cánidos. Es omnívoro, caza en solitario o en pareja y ataca mediante emboscadas, saltando sobre sus presas. Es nocturno y habita en guaridas excavadas en colinas o lechos secos de ríos.",
+  "caracteristicas": {
+    "FUE": "3D6+12",
+    "CON": "2D6+12",
+    "TAM": "3D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6"
+  },
+  "movimiento": 9,
+  "MR": 4,
+  "armadura": "4 (piel y pelaje grueso)",
+  "habilidades": {
+    "Esquivar": "40%",
+    "Ocultar": "40%",
+    "Saltar": "50%",
+    "Moverse Silenciosamente": "40%",
+    "Rastrear por Olfato": "30%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 8
+    },
+    {
+      "nombre": "Garra",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 4, "pv": "PV/3 + 2" },
+    { "locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 4, "pv": "PV/3 + 2" },
+    { "locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 4, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Ataque combinado: Puede morder y luego usar una garra 3 rangos de ataque después, o levantarse y atacar con ambas garras.",
+    "Emboscada: Si ataca desde un escondite, recibe +20% al ataque y puede saltar sobre su presa.",
+    "Nocturno. Prefiere atacar desde la retaguardia y utiliza guaridas excavadas en colinas o lechos de ríos secos."
+  ]
+}

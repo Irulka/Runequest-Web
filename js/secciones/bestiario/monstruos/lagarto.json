@@ -1,0 +1,66 @@
+{
+  "nombre": "Lagarto de las Rocas",
+  "descripcion": "Reptiles pesados y lentos que habitan en zonas rocosas, alimentándose principalmente de carroña. Su piel dura varía entre verde y gris. Son conocidos por su técnica de combate: al golpear con una garra, se aferran al objetivo para atacar con la otra garra y su mordisco en turnos posteriores.",
+
+  "caracteristicas": {
+    "FUE": "2D6+6",
+    "CON": "2D6+6",
+    "TAM": "4D6",
+    "POD": "2D6+3",
+    "DES": "2D6+6"
+  },
+
+  "movimiento": 4,
+  "MR": 4,
+  "armadura": "Piel gruesa (3 puntos)",
+
+  "habilidades": {
+    "Ocultarse": "50%",
+    "Oler Presas": "50%"
+  },
+
+  "comportamiento": {
+    "alimentacion": "Carnívoro (principalmente carroña)",
+    "social": "Se agrupan hasta por docenas",
+    "actividad": "Toman el sol por las mañanas"
+  },
+
+"habilidadesEspeciales": [
+    "Primer ataque: Doble garra (hasta que una acierte).",
+    "Secuencia exitosa: Garra (agarre) → Garra libre → Mordisco."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 8,
+      "efecto": "Agarre (si acierta, mantiene sujeto al objetivo)"
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "25%",
+      "daño": "1D10",
+      "MR": 8,
+      "requisito": "Debe tener agarrado al objetivo"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-03", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pata Trasera Derecha", "rango": "04-05", "armadura": 3, "pv": 4},
+    {"locacion": "Pata Trasera Izquierda", "rango": "06-07", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Cuartos Traseros", "rango": "08-11", "armadura": 3, "pv": "PV/3 + 2"},
+    {"locacion": "Cuartos Delanteros", "rango": "12-15", "armadura": 3, "pv": "PV/3 + 2"},
+    {"locacion": "Pata Delantera Derecha", "rango": "16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "18-20", "armadura": 3, "pv": "PV/3"}
+  ],
+
+  "notas": [
+    "Combate típico: Primero intenta golpear con ambas garras alternativamente hasta acertar",
+    "Una vez sujeta al objetivo con una garra, usa la otra garra y luego muerde",
+    "Poco peligrosos para humanos alertas, pero peligrosos si logran agarrar"
+  ]
+}

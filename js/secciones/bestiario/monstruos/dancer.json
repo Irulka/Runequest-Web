@@ -1,0 +1,64 @@
+{
+"nombre": "Bailarina de las Tinieblas",
+"descripcion": "Estas mujeres vampíricas de piel pálida son las elegidas del Nigromante Delecti. Carecen de POD y deben drenar los puntos de magia de seres vivos conscientes para continuar su existencia no-muerta.",
+"caracteristicas": {
+"FUE": "6D6",
+"CON": "6D6",
+"TAM": "2D6+6",
+"INT": "2D6+6",
+"DES": "3D6",
+"CAR": "3D6+6",
+"POD": "0" 
+},
+"movimiento": "10/1 (Humo)",
+"puntosMagia": 21,
+"MR": 5,
+"armadura": "Ninguna natural",
+"habilidades": {
+"Danza": "80%",
+"Esquivar": "75%",
+"Ocultarse": "90%",
+"Moverse Silenciosamente": "65%",
+"Buscar": "80%"
+},
+"idiomas": "Habla (lengua humana local) 50%",
+"pasiones": "Lealtad (Delecti) 60%",
+"runas": "Caos 60%, No-muerto 90%",
+"magia": "No pueden utilizar magia espiritual ni rúnica ni sacrificar por magia rúnica, pero pueden ser poderosas hechiceras",
+"habilidadesEspeciales": [
+"Encatamiento: Puede paralizar a aquellos cuyo POD supere con su CAR",
+"Forma de Humo: Puede convertirse en humo, regenerando 1 PV por asalto",
+"Debilidad a la Runa Muerte: Sufren daño no regenerable cuando se les presenta la Runa Muerte"
+],
+"ataques": [
+{
+"nombre": "Toque",
+"porcentaje": "90%",
+"daño": "Especial",
+"MR": 9,
+"efecto": "La víctima debe igualar sus PM contra los del vampiro. Si el vampiro gana, la víctima cede 1D4 PM"
+},
+{
+"nombre": "Mordisco",
+"porcentaje": "90%",
+"daño": "1D3+Especial",
+"MR": 9,
+"efecto": "Si penetra la armadura, el vampiro permanece adherido y toma 1D6 PV (sangre) de la víctima"
+},
+{
+"nombre": "Encatamiento",
+"porcentaje": "Automático",
+"daño": "CAR vs. POD",
+"efecto": "Inmoviliza a la víctima durante 25 asaltos"
+}
+],
+"localizaciones": [
+{"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+{"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+{"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+{"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+{"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+{"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+{"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+]
+}

@@ -1,0 +1,47 @@
+{
+  "nombre": "Jolanti",
+  "descripcion": "Los Jolanti son creaciones vivientes de los Mostali, diseñadas como parte del gran mecanismo cósmico de Mostal el Hacedor. Estas criaturas masivas representan la filosofía mostali de que todo en el mundo es materia prima o producto terminado. Los Jolanti son esencialmente 'obreros vivientes', construidos para tareas específicas en el gran plan de reparación cósmica de los enanos. Su movimiento lento pero poderosa presencia los hace temibles en combate, aunque su falta de iniciativa los limita a seguir su programación original.",
+  "caracteristicas": {
+    "FUE": "11D6+12",
+    "CON": "7D6",
+    "TAM": "7D6+6",
+    "DES": "1D6",
+    "INT": "No aplica (siguen programación)",
+    "POD": "No aplica"
+  },
+  "movimiento": 2,
+  "MR": 5,
+  "puntosMagia": 15,
+  "armadura": {
+    "Piel de Material Compuesto": "10 pts (cuerpo)",
+    "Refuerzos de Torso": "11 pts (pecho)"
+  },
+  "habilidades": {
+    "Reparación Cósmica": "Programación específica"
+  },
+  "magia": "No usa magia convencional - opera bajo principios de ingeniería cósmica mostali",
+
+  "habilidadesEspeciales": [
+    "Constructor Viviente: Puede manipular materiales a escala masiva",
+    "Resistencia Mecánica: Cuerpo diseñado para soportar grandes daños",
+    "Programación Inalterable: Sólo sigue las directrices de sus creadores mostali"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Golpe",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 9
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 11, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 10, "pv": "PV/3"}
+  ]
+}

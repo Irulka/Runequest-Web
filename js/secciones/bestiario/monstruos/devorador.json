@@ -1,0 +1,48 @@
+{
+  "nombre": "Devoradores",
+  "descripcion": "Los Devoradores son criaturas artificiales creadas por los Mostali para proteger sus invenciones. Programados para consumir una sustancia específica, su obsesión los lleva a destruir todo a su paso en busca de su 'alimento' designado. Con una fisiología grotesca (cuatro brazos, cola bifurcada y una boca central enorme), son incapaces de comunicarse y solo se detienen cuando han consumido tanto que se autodestruyen. Ciudades enteras han caído víctimas de su insaciable apetito.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "4D6+12",
+    "TAM": "3D6+12",
+    "INT": "1D6+2",
+    "POD": "3D6",
+    "DES": "2D6+8"
+  },
+  "movimiento": 8,
+  "MR": 2,
+  "armadura": {
+    "Piel Metálica": "7 pts"
+  },
+  "habilidades": {
+    "Esquivar": "35%",
+    "Oler Sustancia": "160%"
+  },
+  "magia": "Pueden consumir cantidades casi ilimitadas de su sustancia designada. A veces son potenciados con encantamientos o hechizos de los enanos.",
+
+  "habilidadesEspeciales": [
+    "Obsesión Programada: +1% a ataques por cada ENC de su sustancia objetivo consumida.",
+    "Evolución Adaptativa: +1 a una característica por cada 10 ENC consumidos (según programación mostali).",
+    "Ataque Cuádruple: Golpea 4 veces por ronda (brazos superiores e inferiores en rangos de ataque separados).",
+    "Autodestrucción: El consumo excesivo los lleva a colapsar tras orgías destructivas."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Zarpa",
+      "porcentaje": "55% (+1% por ENC consumido)",
+      "daño": "1D4",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pierna Derecha", "rango": "02-03", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Pierna Izquierda", "rango": "04-05", "armadura": 7, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Inferior Derecho", "rango": "06-08", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Brazo Inferior Izquierdo", "rango": "09-11", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Brazo Superior Derecho", "rango": "12-14", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Brazo Superior Izquierdo", "rango": "15-17", "armadura": 7, "pv": "PV/3"},
+    {"locacion": "Cuerpo/Cabeza", "rango": "18-20", "armadura": 7, "pv": "PV/3 + 3"}
+  ]
+}

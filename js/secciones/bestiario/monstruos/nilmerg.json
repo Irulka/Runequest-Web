@@ -1,0 +1,39 @@
+{
+  "nombre": "Nilmerg",
+  "descripcion": "Los Nilmerg son pequeñas criaturas artificiales creadas por los enanos Mostali para realizar tareas específicas de mantenimiento y reparación. Carecen de inteligencia independiente y se dedican obsesivamente a su función designada, ya sea limpiar, martillar o reparar un tipo particular de máquina. Algunos Nilmerg defectuosos son convertidos en 'gremlins', programados para sabotear equipos en lugar de repararlos, convirtiéndose en plagas para quienes roban secretos enanos.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "2D6",
+    "TAM": 2,
+    "INT": 6,
+    "POD": "1D6",
+    "DES": "2D6+6"
+  },
+  "movimiento": 6,
+  "MR": 5,
+  "armadura": {
+    "Tamaño Pequeño": "-20% a los ataques enemigos"
+  },
+  "habilidades": {
+    "Artesanía (Objeto Específico)": "100%",
+    "Sabotaje (Solo Gremlins)": "100%"
+  },
+  "magia": "Algunos adoran máquinas especiales que funcionan con puntos de magia sacrificados",
+
+  "habilidadesEspeciales": [
+    "Enfoque Obsesivo: 100% en su tarea designada",
+    "Difícil de Golpear: Penalización de -20% para ataques debido a su pequeño tamaño",
+    "Transformación a Gremlin: Versiones defectuosas son reprogramadas como saboteadores",
+    "Automatización Pura: Incapaz de acción independiente inteligente"
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

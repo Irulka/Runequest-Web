@@ -87,7 +87,7 @@ function initAnimales() {
         }
         
         // Cargar el archivo específico del animal
-        fetch(`../js/secciones/bestiario/${archivoSeleccionado}`)
+        fetch(`/js/secciones/bestiario/${archivoSeleccionado}`)
             .then(response => {
                 if (!response.ok) throw new Error('Animal no encontrado');
                 return response.json();

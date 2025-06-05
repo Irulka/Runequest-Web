@@ -1,0 +1,98 @@
+{
+  "nombre": "Dragonewt Alto Sacerdote (Cuarto Estadío)",
+  "descripcion": "Los Altos Sacerdotes son la cuarta y penúltima etapa de los dragonewts, inmersos en la magia dracónica y en proceso de convertirse en dragones verdaderos. Con más de 2 metros de altura y 225 kg, desarrollan alas que crecen con la edad. Rara vez abandonan sus nidos, donde meditan sobre los secretos de la dragonicidad. Algunos pueden transformarse en dragones inmensos para defender su colonia, preparándose para su metamorfosis final.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6+6",
+    "TAM": "4D6+12",
+    "INT": "4D6",
+    "POD": "24-26 (fijo)",
+    "DES": "2D6+6",
+    "CAR": "3D6+12"
+  },
+  "movimiento": "10/12 (Vuelo)",
+  "MR": 2,
+  "armadura": {
+    "Escamas Draconianas": "9 puntos"
+  },
+  "habilidades": {
+    "Ocultar": "120%",
+    "Esquivar": "120%",
+    "Vestir Armadura": "75%",
+    "Saber Dracónico": "120%",
+    "Volar": "75%",
+    "Meditar": "120%",
+    "Moverse en Silencio": "120%",
+    "Desenvaine Rápido": "120%"
+  },
+  "idiomas": {
+    "Hablar Auld Wyrmish": "120%"
+  },
+  "pasiones": {
+    "Dualidad Trascendente": "Fluctúa entre ingenio/torpeza, innovación/conservadurismo, optimismo/pesimismo"
+  },
+  "runas": {
+    "Dragón": 100
+  },
+  "magia": "Exclusivamente magia dracónica en su máxima expresión. Capaces de transformarse temporalmente en dragones.",
+
+  "habilidadesEspeciales": [
+    "Pre-Dragón: Puede transformarse en un dragón completo para defensa del nido.",
+    "Alas Emergentes: Vuelo limitado (75% de habilidad) que mejora con la edad.",
+    "Sabiduría Ancestral: +120% en habilidades dracónicas y lingüísticas.",
+    "Armadura Legendaria: 9 pts de escamas (máxima protección entre dragonewts)."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Klanth",
+      "porcentaje": "120%",
+      "daño": "1D10+1",
+      "MR": 4,
+      "nota": "Espada curva imbuida con poder dracónico"
+    },
+    {
+      "nombre": "Korff",
+      "porcentaje": "40%",
+      "daño": "1D8+1",
+      "MR": 6,
+      "nota": "Arma pesada de doble filo"
+    },
+    {
+      "nombre": "Arco Largo de Hueso",
+      "porcentaje": "90%",
+      "daño": "1D10+1",
+      "MR": 2
+    },
+        {
+      "nombre": "Samarin",
+      "porcentaje": "80%",
+      "daño": "1D4+1",
+      "MR": 3
+    },
+  {
+      "nombre": "Chokin",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 2
+    },
+    {
+      "nombre": "Aliento Dracónico",
+      "porcentaje": "N/A (Magia)",
+      "daño": "Variable",
+      "nota": "Habilidad emergente durante transformación"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Pierna Derecha", "rango": "03-05", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "06-08", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 9, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "13", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "14", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Derecho", "rango": "15-16", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 9, "pv": "PV/3"}
+  ]
+}

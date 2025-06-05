@@ -1,0 +1,66 @@
+{
+  "nombre": "Dryade",
+  "descripcion": "Una raza completamente femenina que se reproduce con elfos para su continuidad. Forman el núcleo del sacerdocio del culto Aldryami. Se especializan en magia, con poca inclinación hacia la lucha. Siempre están vinculadas a su árbol de nacimiento, y cualquier aflicción que sufra el árbol la sienten ellas, y viceversa. Raramente se convierten en aventureras, prefiriendo permanecer en sus bosques. Una dryad puede controlar toda la vida vegetal en su arboleda.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "3D6",
+    "TAM": "2D6+3",
+    "INT": "3D6+6",
+    "POD": "2D6+16",
+    "DES": "4D6",
+    "CAR": "2D6+12"
+  },
+  "movimiento": 9,
+  "MR": 4,
+  "armadura": {
+    "Cuerpo": "Ninguna"
+  },
+  "habilidades": {
+    "Trepar": "90%",
+    "Danza": "90%",
+    "Esquivar": "50%",
+    "Primeros Auxilios": "95%",
+    "Ocultar": "85%",
+    "Moverse en Silencio": "85%",
+    "Conocimiento de Plantas": "90%",
+    "Cantar": "90%",
+    "Combate Espiritual": "125%",
+    "Danza Espiritual": "75%",
+    "Conocimiento Espiritual": "80%",
+    "Viaje Espiritual": "90%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "90%"
+  },
+  "pasiones": {
+    "Amor (arboleda)": "80%"
+  },
+  "runas": {
+    "Tierra": "80%",
+    "Fertilidad": "70%",
+    "Planta": "90%"
+  },
+  "magia": "Todas las dryades adoran a Aldrya (Hermana Mayor) y tienen al menos 3D6 puntos de runa. Una dryade típicamente tiene su límite de CAR en magia espiritual, incluyendo Curar y Segunda Vista.",
+  
+  "habilidadesEspeciales": [
+    "Control de Plantas: Por 1 PM, la dryade puede comandar cualquier criatura incompleta nacida en su arboleda. La criatura no puede resistir este encanto, que dura una hora cada vez."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Golpe de Rama",
+      "porcentaje": "40%",
+      "daño": "1D4",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

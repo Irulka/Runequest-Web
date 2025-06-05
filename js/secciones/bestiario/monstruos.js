@@ -53,6 +53,9 @@ function initBestiario() {
         { nombre: "Wyrm", archivo: "monstruos/wyrm.json" },
         { nombre: "Wyrm Marino", archivo: "monstruos/wyrnmma.json" },
         { nombre: "Wyverna", archivo: "monstruos/wyverna.json" },  
+        { nombre: "Devorador", archivo: "monstruos/devorador.json" }, 
+        { nombre: "Jolanti", archivo: "monstruos/jolanti.json" },  
+        { nombre: "Nilmerg", archivo: "monstruos/nilmerg.json" },                              
         { nombre: "Zombi", archivo: "monstruos/zombi.json" }                  
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
@@ -104,8 +107,8 @@ function initBestiario() {
             // Variación aleatoria entre -10 y +25
             const variacion = Math.floor(Math.random() * 36) - 10;
             let nuevoValor = num + variacion;
-            // Asegurar que esté entre 10% y 100%
-            nuevoValor = Math.max(10, Math.min(100, nuevoValor));
+            // Asegurar que esté entre 10% y 150%
+            nuevoValor = Math.max(10, Math.min(150, nuevoValor));
             return `${nuevoValor}%`;
         }
     }

@@ -1,0 +1,69 @@
+{
+  "nombre": "Troll Raza Señorial (Uzuz)",
+  "descripcion": "Las Matriarcas Trolls de la Raza Señorial son seres ancestrales, consideradas las madres reverenciadas de todos los trols. Según los mitos trols, existían antes que la tierra y el mar. Criaturas extremadamente raras, con solo unos pocos miles sobreviviendo en Glorantha debido a la Gran Maldición. Poseen habilidades mágicas excepcionales y una fisiología única que incluye huesos que pueden petrificarse con la edad, múltiples pares de pechos y partos múltiples. Donde existen, siempre ocupan posiciones de poder en la sociedad uz.",
+  "caracteristicas": {
+    "FUE": "4D6+6",
+    "CON": "2D6+6",
+    "TAM": "3D6+12",
+    "INT": "2D6+12",
+    "POD": "4D6",
+    "DES": "2D6+6",
+    "CAR": "2D6+6"
+  },
+  "movimiento": 9,
+  "MR": 2,
+  "armadura": {
+    "Piel": "2 pts"
+  },
+  "habilidades": {
+    "Danza": "65%",
+    "Percepción en la Oscuridad (Explorar)": "85%",
+    "Percepción en la Oscuridad (Buscar)": "85%",
+    "Esquivar": "35%",
+    "Ocultar": "70%",
+    "Intimidar": "85%",
+    "Escuchar": "70%",
+    "Moverse Silenciosamente": "70%",
+    "Canto": "65%",
+    "Combate Espiritual": "95%",
+    "Saber Trol": "85%",
+    "Saber Inframundo": "85%"
+  },
+  "idiomas": {
+    "Hablar Lengua Oscura": "75%"
+  },
+  "pasiones": {
+    "Devoción (deidad)": "80%",
+    "Amor (familia)": "60%"
+  },
+  "runas": {
+    "Oscuridad": "90%"
+  },
+
+  "magia": "Se convierten en Señoras Rúnicas o Sacerdotisas-Chamán lo antes posible. Poseen su espíritu aliado (Fetch) y numeoros espíritus vinculados.",
+
+  "habilidadesEspeciales": [
+    "Metabolismo Único: Pueden extraer energía de objetos inertes",
+    "Fertilidad Múltiple: Partos múltiples en cada embarazo",
+    "Liderazgo Innato: Autoridad indiscutida en la sociedad uz"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Cualquier arma",
+      "porcentaje": "120%",
+      "daño": "Daño del arma + Mod. Daño",
+      "MR": "2+",
+      "nota": "Prefieren armas mágicas o encantadas"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "nombre": "Elfo Amarillo",
+  "descripcion": "Los elfos amarillos, o embyli, están asociados con árboles de hoja ancha, especialmente los perennes como las palmeras. Todos son masculinos y se aparean con dríadas para su continuidad. Organizados en quaendoms tribales por las dríadas, son físicamente más pequeños (∼120 cm, ∼35 kg), con piel oliva-marrón y sin vello corporal excepto por parches de musgo. Como todos los elfos, son vulnerables al hierro, recibiendo doble daño de armas de hierro.",
+  "caracteristicas": {
+    "FUE": "2D6+2",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "3D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6+3",
+    "CAR": "3D6"
+  },
+  "movimiento": 9,
+  "MR": 4,
+  "armadura": {
+    "Cuerpo": "Ninguna",
+    "Capa de hojas": "+20% a Ocultar en bosques apropiados"
+  },
+  "habilidades": {
+    "Trepar": "85%",
+    "Ocultar": "50%",
+    "Esquivar": "65%",
+    "Sentido Élfico": "65%",
+    "Conocimiento Élfico": "50%",
+    "Primeros Auxilios": "50%",
+    "Escuchar": "50%",
+    "Moverse en Silencio": "50%",
+    "Conocimiento de Plantas": "75%",
+    "Cantar": "55%",
+    "Combate Espiritual": "55%",
+    "Rastrear": "55%",
+    "Adoración (deidad élfica)": "50%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "50%",
+    "Hablar Comercial": "15%"
+  },
+  "pasiones": {
+    "Odio (Mostali)": "60%",
+    "Odio (Uz)": "60%",
+    "Lealtad (Bosque)": "60%"
+  },
+  "runas": {
+    "Tierra o Fuego/Cielo": "60%",
+    "Planta": "75%"
+  },
+  "magia": "Todos los elfos adoran a Aldrya. Otros dioses comunes incluyen Flamal y Yelmalio. La magia espiritual común incluye Curar y Flecha Veloz.",
+  
+  "habilidadesEspeciales": [
+    "Vulnerabilidad al Hierro: Doble daño de armas de hierro.",
+    "Trance de Flecha: Magia rúnica especial.",
+    "Arma Élfica: Arcos y cerbatanas se marchitan en manos no élficas. Pueden almacenar 2D6+2 puntos de magia.",
+    "Cerbatana Venenosa: Dardos típicamente envenenados con toxinas herbales (1D3+1 + veneno)."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Cerbatana Élfica",
+      "porcentaje": "70%",
+      "daño": "1D3+1 + veneno",
+      "MR": 2,
+      "efecto": "Dardos envenenados"
+    },
+    {
+      "nombre": "Arco Élfico",
+      "porcentaje": "70%",
+      "daño": "1D8+1",
+      "MR": 2,
+      "efecto": "Alcance reducido en bosques"
+    },
+    {
+      "nombre": "Escudo Pequeño",
+      "porcentaje": "50%",
+      "daño": "1D3",
+      "MR": 7
+    },
+    {
+      "nombre": "Lanza Corta",
+      "porcentaje": "50%",
+      "daño": "1D6+1",
+      "MR": 6
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

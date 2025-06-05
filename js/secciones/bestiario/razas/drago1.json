@@ -1,0 +1,78 @@
+{
+  "nombre": "Dragonewt Crestado (Etapa Inicial)",
+  "descripcion": "Los dragonidos cresta son la primera etapa de desarrollo de su especie. Pequeños (1.5m de altura) y vegetarianos, poseen una cresta arqueada y cola corta. Sus patrones de color son apagados. Sirven como exploradores, honderos y esclavos para dragonidos superiores. Tras siglos de muertes y renacimientos, evolucionan a la etapa guerrera. Su personalidad fluctúa entre agresividad/pasividad y valentía/cobardía, un conflicto que pueden tardar siglos en resolver.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "4D6",
+    "POD": "2D6",
+    "DES": "2D6+9",
+    "CAR": "3D6"
+  },
+  "movimiento": 7,
+  "MR": 5,
+  "armadura": {
+    "Piel": "Escamas (1 punto)"
+  },
+  "habilidades": {
+    "Ocultar": "25%",
+    "Esquivar": "32%",
+    "Meditar": "25%",
+    "Moverse en Silencio": "25%",
+    "Adoración (Ritual Atuma)": "25%"
+  },
+  "idiomas": {
+    "Hablar Auld Wyrmish": "30%"
+  },
+  "pasiones": {
+    "Conflicto Emocional": "Fluctúa entre agresividad/pasividad, valentía/cobardía, energía/apatía"
+  },
+  "runas": {
+    "Dragón": "Manifiesta en etapas superiores"
+  },
+  "magia": "Usan magia no-dracónica (solo esta etapa y proscritos): Coordinación, Disrupción, Curación, Movilidad y Flecha Veloz.",
+  
+  "habilidadesEspeciales": [
+    "Metamorfosis: Tras siglos y múltiples muertes, renacen como dragonidos guerreros (etapa superior).",
+    "Resistencia Evolutiva: Cada renacimiento acerca a la siguiente etapa de desarrollo."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Samarin",
+      "porcentaje": "25%",
+      "daño": "1D4+1",
+      "MR": 2
+    },
+    {
+      "nombre": "Chokin",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 2
+    },
+    {
+      "nombre": "Honda",
+      "porcentaje": "25%",
+      "daño": "1D8",
+      "MR": 2,
+      "efecto": "Para cazar aves/conejos"
+    },
+    {
+      "nombre": "Utuma",
+      "porcentaje": "25%",
+      "daño": "1D6+1",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Pierna Derecha", "rango": "03-05", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "06-08", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 1, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 1, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 1, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 1, "pv": "PV/3"}
+  ]
+}

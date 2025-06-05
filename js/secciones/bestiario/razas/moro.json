@@ -1,0 +1,77 @@
+{
+  "nombre": "Morocante",
+  "descripcion": "Los morocantes son criaturas inteligentes con forma de tapir, reconocidos como una de las Cinco Grandes Tribus de Prax. A diferencia de otras tribus, pastorean humanos bestiales en lugar de animales. Su sociedad está dominada por Reinas de Manada, figuras más importantes que los Khans. Son seres nocturnos con una fuerte conexión a la Runa de la Oscuridad, y aunque comparten dioses con los humanos de Prax, su cultura y fisiología los hacen únicos en las llanuras.",
+  "caracteristicas": {
+    "FUE": "3D6+6",
+    "CON": "3D6",
+    "TAM": "3D6+6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+3",
+    "CAR": "3D6"
+  },
+  "movimiento": 8,
+  "MR": 4,
+  "armadura": {
+    "Piel": "4 pts",
+    "Refuerzos de cuero (cabeza y torso)": "+2 pts"
+  },
+  "habilidades": {
+    "Entrenamiento de Bestias": "25%",
+    "Escalar": "50%",
+    "Esquivar": "25%",
+    "Ocultar": "50%",
+    "Escuchar": "50%",
+    "Artes Marciales": "25%",
+    "Moverse Silenciosamente": "50%",
+    "Buscar": "45%",
+    "Combate Espiritual": "50%",
+    "Rastrear": "65%"
+  },
+  "idiomas": {
+    "Hablar Praxiano": "50%",
+    "Comprender Bestias de Manada": "35%"
+  },
+  "pasiones": "Similares a los humanos praxianos",
+  "runas": {
+    "Oscuridad": "60% o más"
+  },
+  "magia": "Adoran a los mismos dioses que los humanos de Prax. Hechizos favoritos: Contramagia, Curación, Garra de Hierro, Movilidad, Protección.",
+
+  "habilidadesEspeciales": [
+    "Pastoreo de Humanos: Expertos en controlar humanos bestiales (Hombres-Rebaño).",
+    "Visión Nocturna: Mejor desempeño en condiciones de oscuridad gracias a su Runa de Oscuridad.",
+    "Trompa Prensil: Pueden manipular objetos con su corta trompa.",
+    "Estructura Matriarcal: Las Reinas de Manada tienen mayor autoridad que los Khans."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 9
+    },
+    {
+      "nombre": "Lanza Larga",
+      "porcentaje": "45%*",
+      "daño": "1D10+1",
+      "MR": 5
+    },
+    {
+      "nombre": "Maza Pesada",
+      "porcentaje": "40%*",
+      "daño": "1D10",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 6, "pv": "PV/3"}
+  ]
+}

@@ -8,8 +8,8 @@ function initAnimales() {
     
     // Lista de animales disponibles
     const animalesLista = [
-        { nombre: "Alce", archivo: "animales/alce.json" },  
-        { nombre: "Altillama", archivo: "animales/llama.json" },  
+        { nombre: "Alce", archivo: "/animales/alce.json" },  
+        { nombre: "Altillama", archivo: "/animales/llama.json" },  
         { nombre: "Antilope Sable", archivo: "animales/antilope.json" },                
         { nombre: "Avestruz", archivo: "animales/avestruz.json" },     
         { nombre: "Bisonte", archivo: "animales/bisonte.json" },            
@@ -49,9 +49,24 @@ function initAnimales() {
         { nombre: "Rinoceronte", archivo: "animales/rino.json" },                
         { nombre: "Buey", archivo: "animales/toro.json" },
         { nombre: "Titanótero", archivo: "animales/titan.json" },
-        { nombre: "Lobo Wargo", archivo: "animales/wargo.json" },         
+        { nombre: "Lobo Wargo", archivo: "animales/wargo.json" }, 
+        { nombre: "Gorila", archivo: "animales/gorila.json" },                 
         { nombre: "Yak", archivo: "animales/yak.json" },        
-        { nombre: "Zebra", archivo: "animales/zebra.json" },        
+        { nombre: "Zebra", archivo: "animales/zebra.json" },
+        { nombre: "Hormiga León Gigante", archivo: "animales/hormiga.json" }, 
+        { nombre: "Escarbajo Jamón", archivo: "animales/escarabajo.json" },  
+        { nombre: "Escarbajo Guardian", archivo: "animales/guardian.json" }, 
+        { nombre: "Cienpiés Gigante", archivo: "animales/cienpies.json" }, 
+        { nombre: "Libélula Gigante", archivo: "animales/libelula.json" }, 
+        { nombre: "Abeja Gigante", archivo: "animales/abeja.json" }, 
+        { nombre: "Abeja Reina Gigante", archivo: "animales/abejareina.json" },  
+        { nombre: "Mantis Gigante", archivo: "animales/mantis.json" },    
+        { nombre: "Arácnido Gigante", archivo: "animales/sopulgido.json" },  
+        { nombre: "Araña Lobo", archivo: "animales/aralobo.json" },   
+        { nombre: "Aráña Lobo Gigante", archivo: "animales/aralobogi.json" },  
+        { nombre: "Tarántula Gigante", archivo: "animales/tarantula.json" },                                                       
+        { nombre: "Cangrejo Arboreo", archivo: "animales/arboreo.json" },          
+        { nombre: "Cangrejo Gigante", archivo: "animales/cangrejo.json" },                           
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
     // Llenar el select con los animales
@@ -102,7 +117,7 @@ function initAnimales() {
             // Variación aleatoria entre -10 y +25
             const variacion = Math.floor(Math.random() * 36) - 10;
             let nuevoValor = num + variacion;
-            // Asegurar que esté entre 10% y 100%
+            // Asegurar que esté entre 10% y 150%
             nuevoValor = Math.max(10, Math.min(100, nuevoValor));
             return `${nuevoValor}%`;
         }

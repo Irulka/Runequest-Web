@@ -1,0 +1,83 @@
+{
+  "nombre": "Dragonewt Picudo (Etapa Guerrero)",
+  "descripcion": "Los dragonidos pico representan la segunda etapa evolutiva de su especie. Más grandes (2m de altura) y carnívoros, desarrollan colas largas y protuberancias defensivas que se endurecen como armadura natural. Su apariencia varía drásticamente según patrones desconocidos, con espinas, cuernos o placas óseas. Sirven como guerreros, cazadores o guardianes en colonias dragonoideas, montando criaturas llamadas semiaves. Su personalidad oscila entre extremos como curiosidad/apatía o liderazgo/sumisión.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "3D6+6",
+    "TAM": "2D6+12",
+    "INT": "4D6",
+    "POD": "12-14 (fijo)",
+    "DES": "2D6+3",
+    "CAR": "3D6+3"
+  },
+  "movimiento": 7,
+  "MR": 4,
+  "armadura": {
+    "Escamas y protuberancias": "6 puntos (distribución variable)"
+  },
+  "habilidades": {
+    "Ocultar": "70%",
+    "Esquivar": "70%",
+    "Saber Dracónico": "50%",
+    "Meditar": "70%",
+    "Moverse en Silencio": "70%",
+    "Desenvaine Rápido": "50%",
+    "Montar (Semiave)": "75%",
+    "Adoración (Ritual Utuma)": "70%"
+  },
+  "idiomas": {
+    "Hablar Auld Wyrmish": "50%"
+  },
+  "pasiones": {
+    "Dualidad Existencial": "Fluctúa entre curiosidad/apatía, líder/seguidor, impulsivo/cauto"
+  },
+  "runas": {
+    "Dragón": 50
+  },
+  "magia": "Solo magia dracónica (ver manual, págs. 42-43). Pierden capacidad para magia no-dracónica.",
+  
+  "habilidadesEspeciales": [
+    "Armadura Adaptativa: Las protuberancias se endurecen en zonas estratégicas (6 pts de armadura).",
+    "Combate Ambidiestro: Usa klauth (espada curva) en izquierda y utuma (hacha) en derecha simultáneamente.",
+    "Vinculo con Semiaves: Montan criaturas equinas aladas para combate y caza."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Klanth (espada curva)",
+      "porcentaje": "50%",
+      "daño": "1D10+1",
+      "MR": 6,
+      "mano": "Izquierda"
+    },
+    {
+      "nombre": "Utuma (hacha)",
+      "porcentaje": "25% (derecha) / 80% (izquierda)",
+      "daño": "1D6+1",
+      "MR": 6,
+      "mano": "Derecha o izquierda"
+    },
+    {
+      "nombre": "Arco Largo de Hueso",
+      "porcentaje": "50%",
+      "daño": "1D10+1",
+      "MR": 3
+    },
+    {
+      "nombre": "Samarin",
+      "porcentaje": "80%",
+      "daño": "1D4+1",
+      "MR": 3
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pierna Derecha", "rango": "03-05", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "06-08", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 6, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 6, "pv": "PV/3"}
+  ]
+}

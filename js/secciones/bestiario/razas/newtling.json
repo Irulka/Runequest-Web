@@ -1,0 +1,68 @@
+{
+  "nombre": "Newtling",
+  "descripcion": "Los Newtling son una raza anfibia que guarda cierto parecido superficial con los dragonewts, aunque su biología es fundamentalmente diferente. Almacenan agua en sus colas para sobrevivir en territorios secos y tienen un ciclo de vida que va desde grandes renacuajos hasta adultos asexuados ('solteros') que regresan a sus aldeas para reproducirse. Son criaturas ágiles y adaptables, con una fuerte conexión espiritual con el agua.",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "3D6"
+  },
+  "movimiento": "6/6 (Nadar)",
+  "MR": 4,
+  "armadura": {
+    "Piel de Pescado (opcional)": "2 pts"
+  },
+  "habilidades": {
+    "Navegación": "50%",
+    "Esquivar": "35%",
+    "Ocultar": "60%",
+    "Escuchar": "50%",
+    "Moverse Silenciosamente": "50%",
+    "Buscar": "45%",
+    "Nadar": "80%",
+    "Rastrear": "30%"
+  },
+  "idiomas": {
+    "Hablar Newling": "50%",
+    "Hablar (lengua humana local)": "20%"
+  },
+  "runas": {
+    "Agua": "80%"
+  },
+  "magia": "Adoran a dioses fluviales locales y cultos espirituales acuáticos",
+
+  "habilidadesEspeciales": [
+    "Reserva de Agua: Pueden almacenar agua en sus colas para sobrevivir en ambientes secos",
+    "Adaptación Anfibia: Movimiento igual en tierra y agua (6m)",
+    "Camuflaje Acuático: +20% a Ocultarse en ambientes acuáticos",
+    "Ciclo de Vida Único: Se desarrollan de renacuajos gigantes a adultos asexuados"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Tridente",
+      "porcentaje": "45%",
+      "daño": "1D6+1",
+      "MR": 6
+    },
+    {
+      "nombre": "Honda",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 2
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Derecha", "rango": "03-05", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "06-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

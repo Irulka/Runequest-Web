@@ -1,0 +1,72 @@
+{
+  "nombre": "Elfo Azul",
+  "descripcion": "Los elfos azules, o murthoi, son seres acuáticos que habitan bosques de algas marinas. Con morfología andrógina (cola de anguila en lugar de piernas, piel magenta y dedos palmeados), existen en tres especies: una hermafrodita y dos con cuatro sexos cada una. No pueden respirar aire y mueren rápidamente fuera del agua. Viven en costas o en mar abierto entre colonias flotantes de algas, manteniendo interacciones limitadas con elfos terrestres.",
+  "caracteristicas": {
+    "FUE": "2D4+1",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "1D6+12",
+    "POD": "2D6+6",
+    "DES": "3D6+3",
+    "CAR": "3D6"
+  },
+  "movimiento": "0/9 (Nadar)",
+  "MR": 4,
+  "armadura": {
+    "Cola": "Fibras naturales (4 pts)",
+    "Torso/Brazos": "Piel de pez tratada (2 pts)",
+    "Cabeza": "Casco de piel de lagarto (3 pts)"
+  },
+  "habilidades": {
+    "Esquivar": "67%",
+    "Ocultar": "60%",
+    "Moverse en Silencio": "70%",
+    "Sentido Fluvial": "55%",
+    "Combate Espiritual": "55%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "20%",
+    "Hablar Murthoi": "50%"
+  },
+  "pasiones": {
+    "Odio (Trols marinos)": "60%",
+    "Lealtad (Arboredo marino)": "60%"
+  },
+  "runas": {
+    "Planta": "75%",
+    "Agua": "60%"
+  },
+  "magia": "Adoran a la diosa de plantas marinas Murth-drya. Hechizos comunes: Curar, Destello y Flecha Veloz.",
+  
+  "habilidadesEspeciales": [
+    "Adaptación Acuática: Movimiento natatorio 9, incapacidad para moverse en tierra.",
+    "Sentido Fluvial: Reemplaza Escuchar/Explorar para detectar movimiento y contornos en el agua.",
+    "Armamento Especializado: Uso de dardos marinos y lancetas de madera oceánica.",
+    "Respiración Acuática: Muerte rápida fuera del agua (1D6 minutos)."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Dardo Marino",
+      "porcentaje": "70%",
+      "daño": "1D6",
+      "MR": 2,
+      "efecto": "Alcance 10m (20m en aire), capacidad de empalar"
+    },
+    {
+      "nombre": "Lanceta",
+      "porcentaje": "60%",
+      "daño": "1D10",
+      "MR": 5,
+      "efecto": "Usada a dos manos, modificador MR 1"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-07", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "08-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

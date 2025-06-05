@@ -1,0 +1,83 @@
+{
+  "nombre": "Mujer Zorro (Forma Humana)",
+  "descripcion": "En su forma humana, las elunae son legendarias por su belleza sobrenatural y habilidades seductoras. Conservan su cola zorro incluso en esta forma, y a menudo usan su apariencia humana para engañar o manipular a los mortales. Como tricksters naturales, sus motivos varían desde travesuras inocentes hasta planes malévolos complejos. Adoran deidades de la Ilusión y su naturaleza dual les otorga habilidades únicas.",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "3D6",
+    "TAM": "2D6+3",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "1D6+12"
+  },
+  "movimiento": 9,
+  "MR": 4,
+  "armadura": {
+    "Torso": "Cuero (2 pts)",
+    "Cabeza": "Sombrero ancho (1 pt)",
+    "Extremidades": "Cuero (2 pts)"
+  },
+  "habilidades": {
+    "Encanto": "75%",
+    "Trepar": "50%",
+    "Danza": "65%",
+    "Esquivar": "40%",
+    "Habla Rápida": "65%",
+    "Ocultar": "40%",
+    "Moverse en Silencio": "40%",
+    "Cantar": "65%"
+  },
+  "idiomas": {
+    "Hablar Lengua Bestia": "50%",
+    "Hablar Comercial": "25%",
+    "Hablar Lengua Local Humana": "35%"
+  },
+  "pasiones": {
+    "Seducción": "80%",
+    "Travesura": "70%",
+    "Lealtad (Hermandad Elunae)": "50%"
+  },
+  "runas": {
+    "Bestia": "60%",
+    "Fertilidad": "60%",
+    "Ilusión": "60%"
+  },
+  "magia": "Típicamente adoran deidades afiliadas a la Ilusión. Su CAR no sufre modificadores cuando interactúan con hombres humanos. Hechizos comunes: Encanto, Imagen Espejismo y Cambiar Forma.",
+  
+  "habilidadesEspeciales": [
+    "Cambio de Forma: Puede transformarse en zorro a voluntad (1 PM).",
+    "Belleza Sobrenatural: CAR 1D6+12 (siempre efectiva contra hombres humanos).",
+    "Trickster Nata: +30% a pruebas de engaño y manipulación.",
+    "Sentidos Agudos: Conserva percepción mejorada en forma humana (+20% detectar mentiras)."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Honda",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 2
+    },
+    {
+      "nombre": "Espada Corta",
+      "porcentaje": "50%",
+      "daño": "1D6+1",
+      "MR": 7
+    },
+    {
+      "nombre": "Escudo Pequeño",
+      "porcentaje": "50%",
+      "daño": "1D3",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

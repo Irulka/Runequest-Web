@@ -1,0 +1,81 @@
+{
+  "nombre": "Agimori (Hombres-y-Medio)",
+  "descripcion": "Los Agimori, conocidos como 'Hombres-y-Medio', son una de las diez tribus independientes de Prax, destacados como los mejores infantes de Glorantha. Sobreviven en las áridas llanuras gracias a su resistencia sobrenatural y habilidades de caza. Su nombre proviene de su capacidad física superior, considerada 'un hombre y medio' en términos de fuerza y resistencia.",
+  "caracteristicas": {
+    "FUE": "3D6+6",
+    "CON": "1D4+14",
+    "TAM": "3D6+6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 10,
+  "MR": 4,
+  "armadura": {
+    "Piel": "2 pts",
+    "Casco Compuesto": "3 pts (cabeza)",
+    "Grebas y Brazales (Curbollii)": "3 pts (piernas/brazos)",
+    "Torso (Cuero Pesado)": "2 pts"
+  },
+  "habilidades": {
+    "Esquivar": "35%",
+    "Ocultar": "50%",
+    "Escuchar": "40%",
+    "Moverse Silenciosamente": "40%",
+    "Explorar": "50%",
+    "Rastrear": "50%"
+  },
+  "idiomas": {
+    "Hablar Agimori": "50%",
+    "Hablar Praxiano": "15%"
+  },
+  "runas": {
+    "Fuego/Cielo": "100%",
+    "Movimiento": "75%"
+  },
+  "magia": "Hechizos típicos: Afilar Armas 2, Disrupción, Movilidad, Protección 2, Reparación.",
+
+  "habilidadesEspeciales": [
+    "Resistencia al Fuego: Reciben la mitad de daño por ataques de calor/fuego (redondeando hacia arriba).",
+    "Marcha Infatigable: Pueden correr STRx4 km en terreno llano, STRx3 en colinas o STRx2 en montañas/pantanos en el tiempo que un humano normal caminaría.",
+    "Infantería Élite: Considerados los mejores soldados de infantería de Glorantha.",
+    "Equipo de Combate: Uso especializado de picas y jabalinas en formación."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Pica",
+      "porcentaje": "55%",
+      "daño": "2D6+1",
+      "MR": 4
+    },
+    {
+      "nombre": "Lanza (1 mano)",
+      "porcentaje": "55%",
+      "daño": "1D8+1",
+      "MR": 5
+    },
+    {
+      "nombre": "Jabalina",
+      "porcentaje": "55%",
+      "daño": "1D10",
+      "MR": 3
+    },
+    {
+      "nombre": "Escudo Grande",
+      "porcentaje": "40%",
+      "daño": "1D6",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 5, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 5, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 4, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 5, "pv": "PV/3"}
+  ]
+}

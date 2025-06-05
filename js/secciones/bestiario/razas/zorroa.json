@@ -1,0 +1,61 @@
+{
+  "nombre": "Mujer Zorro (Forma Animal)",
+  "descripcion": "Las mujeres zorro, o elunae, son cambiaformas mágicas que pasan la mayor parte del tiempo en su forma animal. Omnívoras, se alimentan principalmente de frutas e insectos. En su forma humana son legendarias por su belleza y lujuria, a menudo seduciendo a hombres humanos como tricksters con motivos que varían de travesuras a malevolencia. Conservan su cola en cualquier forma.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "2D6+6",
+    "TAM": "1D2",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "4D6+6",
+    "CAR": "1D6+12"
+  },
+  "movimiento": 10,
+  "MR": 3,
+  "armadura": {
+    "Cuerpo": "Ninguna"
+  },
+  "habilidades": {
+    "Esquivar": "65%",
+    "Ocultar": "40%",
+    "Moverse en Silencio": "60%",
+    "Rastrear": "65%"
+  },
+  "idiomas": {
+    "Hablar Lengua Bestia": "100%"
+  },
+  "pasiones": {
+    "Seducción": "70%",
+    "Travesura": "60%"
+  },
+  "runas": {
+    "Bestia": "80%",
+    "Ilusión": "70%"
+  },
+  "magia": "Pueden cambiar de forma entre zorro y humanoide. Magia típica incluye Encanto y Crear Ilusión.",
+  
+  "habilidadesEspeciales": [
+    "Cambiaforma: Puede alternar entre forma zorro y humana a voluntad.",
+    "Agilidad Sobrenatural: DES 4D6+6 (una de las más altas entre las razas).",
+    "Seducción Natural: +40% a pruebas de persuasión en forma humana.",
+    "Sigilo Innato: Moverse en Silencio automático en entornos naturales."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D4",
+      "MR": 5
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01-02", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "03-04", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cuartos Traseros", "rango": "05-07", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Cuartos Delanteros", "rango": "08-10", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "11-13", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "14-16", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

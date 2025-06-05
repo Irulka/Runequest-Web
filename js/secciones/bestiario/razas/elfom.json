@@ -1,0 +1,91 @@
+{
+  "nombre": "Elfo Marrón",
+  "descripcion": "Los elfos marrones, o *mreli*, están asociados con árboles caducifolios. Duermen todo el invierno, protegidos por los elfos verdes, pero por lo demás no duermen. Los elfos marrones son tanto masculinos como femeninos, y los machos pueden cruzarse con dríadas, que tienen un lugar importante en su sociedad. Un elfo marrón típicamente pesa unos 55 kilogramos y mide un poco más de 160 centímetros de altura. Son vulnerables al hierro, y cualquier daño de un arma de hierro que penetre su armadura hará el doble de daño normal.",
+  "caracteristicas": {
+    "FUE": "2D6+2",
+    "CON": "3D6",
+    "TAM": "2D4+4",
+    "INT": "3D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6+3",
+    "CAR": "3D6"
+  },
+  "movimiento": 9,
+  "MR": 4,
+  "armadura": {
+    "Cuerpo": "Armadura de corteza tratada (2 pts)",
+    "Capa de hojas": "+20% a Ocultar en bosques apropiados"
+  },
+  "habilidades": {
+    "Trepar": "85%",
+    "Ocultar": "50%",
+    "Esquivar": "65%",
+    "Sentido Élfico": "55%",
+    "Conocimiento Élfico": "50%",
+    "Primeros Auxilios": "50%",
+    "Escuchar": "50%",
+    "Moverse en Silencio": "50%",
+    "Conocimiento de Plantas": "75%",
+    "Cantar": "55%",
+    "Combate Espiritual": "55%",
+    "Rastrear": "55%",
+    "Adoración (deidad élfica)": "50%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "50%",
+    "Hablar Comercial": "20%"
+  },
+  "pasiones": {
+    "Odio (Mostali)": "60%",
+    "Odio (Uz)": "60%",
+    "Lealtad (bosque)": "60%"
+  },
+  "runas": {
+    "Tierra o Fuego/Cielo": "60%",
+    "Planta": "75%"
+  },
+  "magia": "Todos los elfos adoran a Aldrya. Otros dioses comunes incluyen Babcester Got, Chalana Arroy, Emalda, Flamal y Yelmalio. La magia espiritual común incluye Curar y Flecha Veloz.",
+  
+  "habilidadesEspeciales": [
+    "Vulnerabilidad al Hierro: Cualquier daño de un arma de hierro que penetre su armadura hace el doble de daño normal.",
+    "Trance de Flecha: Magia rúnica especial.",
+    "Arco Élfico: Se marchita en manos no élficas. Puede almacenar 2D6+2 puntos de magia para su usuario. Su alcance se reduce a la mitad en el bosque."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Arco Élfico",
+      "porcentaje": "70%",
+      "daño": "1D8+1",
+      "MR": 2,
+      "efecto": "Alcance reducido a la mitad en bosques"
+    },
+    {
+      "nombre": "Lanza Corta",
+      "porcentaje": "50%",
+      "daño": "1D6+1",
+      "MR": 6
+    },
+    {
+      "nombre": "Escudo Pequeño",
+      "porcentaje": "50%",
+      "daño": "1D3",
+      "MR": 7
+    },
+    {
+      "nombre": "Espada Corta",
+      "porcentaje": "50%",
+      "daño": "1D6+1",
+      "MR": 7
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

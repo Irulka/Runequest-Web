@@ -1,0 +1,66 @@
+{
+  "nombre": "Corredor",
+  "descripcion": "Aldryami atrofiados y degenerados, los corredores tienen su propia cultura en los árboles de los bosques élficos. Cubiertos por un pelaje suave similar al musgo, nunca usan armadura ni ropa. Se niegan a abandonar las ramas de sus bosques y cuando combaten, lo hacen en ataques masivos de corredores gritones emergiendo de los árboles. Son vulnerables al hierro, recibiendo doble daño de armas de este metal.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "2D6+6",
+    "TAM": "2D6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "3D6"
+  },
+  "movimiento": 9,
+  "MR": 5,
+  "armadura": {
+    "Cuerpo": "Pelaje de musgo (0 pts)"
+  },
+  "habilidades": {
+    "Trepar": "95%",
+    "Esquivar": "50%",
+    "Ocultar": "65%",
+    "Moverse en Silencio": "65%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "50%"
+  },
+  "pasiones": {
+    "Lealtad (bosque natal)": "70%"
+  },
+  "runas": {
+    "Planta": "75%"
+  },
+  "magia": "Adoran a Aldrya pero raramente superan el estatus de Niños del Bosque. Magia espiritual común: Curar.",
+  
+  "habilidadesEspeciales": [
+    "Vulnerabilidad al Hierro: Doble daño de armas de hierro.",
+    "Tácticas de Enjambre: Bonificación cuando atacan en grupos grandes (+10% por cada 3 corredores adicionales).",
+    "Movimiento Arbóreo: Pueden moverse a través de árboles sin penalización.",
+    "Fusta: Puede inmovilizar localizaciones (prueba de FUE vs FUE + pts del arma para liberarse)."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Fusta",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 7,
+      "efecto": "Inmoviliza localización golpeada (FUE vs FUE+6 para liberarse). Golpe a cabeza estrangula."
+    },
+    {
+      "nombre": "Dardo",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 2
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

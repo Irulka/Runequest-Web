@@ -1,0 +1,75 @@
+{
+  "nombre": "Pato",
+  "descripcion": "Los patos son una raza antropomórfica de aves acuáticas que habitan en las regiones pantanosas de Glorantha. Pequeños pero astutos, son conocidos por su naturaleza cautelosa y su habilidad para nadar. A pesar de su reputación de cobardía, pueden ser ferozmente leales a su propia gente. Muchos patos adoran a las deidades Orlanthi, con una minoría siguiendo a Humakt.",
+  "caracteristicas": {
+    "FUE": "2D6+1",
+    "CON": "2D6+6",
+    "TAM": "1D6+2",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "3D6"
+  },
+  "movimiento": "5/8 (Nadar)",
+  "MR": 5,
+  "armadura": {
+    "Torso": "Cuirboilli (3 pts)",
+    "Cabeza": "Casco compuesto (3 pts)",
+    "Extremidades": "Cuero (2 pts)"
+  },
+  "habilidades": {
+    "Navegación": "65%",
+    "Esquivar": "50%",
+    "Nadar": "80%"
+  },
+  "idiomas": {
+    "Hablar Heortling": "50%",
+    "Hablar Comercial": "25%"
+  },
+  "pasiones": {
+    "Lealtad (Patos)": "60%",
+    "Cobardía": "60%"
+  },
+  "runas": {
+    "Aire": "60%",
+    "Muerte": "60%"
+  },
+  "magia": "La mayoría de los patos adoran a las deidades Orlanthi, aunque algunos favorecen a Humakt. Su magia rúnica especial depende de su culto.",
+  
+  "habilidadesEspeciales": [
+    "Nado Superior: Movimiento de natación de 8 metros.",
+    "Cobardía Innata: Debe superar una prueba de POD×3 para realizar actos de valentía.",
+    "Adaptación Anfibia: Pueden contener la respiración hasta 10 minutos.",
+    "Tamaño Pequeño: Bonificación +20% para esconderse."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Honda",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 2
+    },
+    {
+      "nombre": "Espada Corta",
+      "porcentaje": "45%",
+      "daño": "1D6+1",
+      "MR": 8
+    },
+    {
+      "nombre": "Escudo Pequeño",
+      "porcentaje": "45%",
+      "daño": "1D3",
+      "MR": 8
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

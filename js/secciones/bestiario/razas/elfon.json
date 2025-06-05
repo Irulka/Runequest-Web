@@ -1,0 +1,70 @@
+{
+  "nombre": "Elfo Negro",
+  "descripcion": "Los elfos negros, o voralans, están más relacionados con hongos que con plantas verdaderas. No son Aldryami auténticos, pero se les clasifica popularmente como tales. Miden unos 125 cm y pesan 30 kg, con piel grisácea lisa, sin pelo ni uñas. Son hermafroditas que raramente se reproducen, generando camadas de hermanos casi idénticos con un vínculo telepático permanente. Habitan zonas oscuras, a menudo cerca de trolls, aunque mantienen afinidad cultural con otros elfos.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "3D6",
+    "TAM": "2D4",
+    "INT": "3D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6+6",
+    "CAR": "3D6"
+  },
+  "movimiento": 7,
+  "MR": 4,
+  "armadura": {
+    "Cuerpo": "Ninguna"
+  },
+  "habilidades": {
+    "Alquimia": "85%",
+    "Ocultar": "85%",
+    "Esquivar": "65%",
+    "Moverse en Silencio": "95%",
+    "Combate Espiritual": "55%",
+    "Adoración (Mee Vorala)": "50%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "25%",
+    "Hablar Tracteralk": "25%",
+    "Hablar Voralan": "50%"
+  },
+  "pasiones": {
+    "Lealtad (colonia)": "80%"
+  },
+  "runas": {
+    "Oscuridad": "60%"
+  },
+  "magia": "Adoran a la diosa de los hongos Mee Vorala. Magia espiritual típica incluye Muro Oscuro, Disrupción y Curar. Tienen un vínculo telepático innato con sus hermanos de camada, pudiendo comunicarse a cualquier distancia.",
+  
+  "habilidadesEspeciales": [
+    "Telepatía Fraternal: Comunicación telepática ilimitada con hermanos de camada.",
+    "Armas Bioquímicas: Uso de heshes (almohadillas impregnadas con drogas/venenos) y hondas con proyectiles especiales.",
+    "Naturaleza Fúngica: Inmunidad a efectos que afectan plantas verdaderas, vulnerabilidad a antifúngicos."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Hesh",
+      "porcentaje": "50%",
+      "daño": "Variable (veneno/ácido/parásitos)",
+      "MR": 9,
+      "efecto": "12 usos por carga"
+    },
+    {
+      "nombre": "Honda",
+      "porcentaje": "70%",
+      "daño": "1D8 o paquete bioquímico",
+      "MR": 1,
+      "efecto": "Proyectiles estándar o especiales"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

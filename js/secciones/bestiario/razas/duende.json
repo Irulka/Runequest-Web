@@ -1,0 +1,66 @@
+{
+  "nombre": "Duende",
+  "descripcion": "Los duendes son espíritus de flores y hierbas aromáticas que pueden tomar forma material cuando lo desean. Criaturas de la Era Verde, están llenos de alegría y travesura inocente. Aparecen como elfos o dríadas diminutas con alas translúcidas de gasa, con colores de piel y cabello que a menudo se asemejan a flores. Tienen voces tintineantes agudas y actitudes infantiles. Sirven a las dríadas o ninfas locales y ayudan a los elfos cuando se les solicita. Evitan el combate directo, luchando solo en defensa propia.",
+  "caracteristicas": {
+    "FUE": "2D4",
+    "CON": "3D6",
+    "TAM": "1D6",
+    "INT": "2D6+6",
+    "POD": "2D6+6",
+    "DES": "4D6",
+    "CAR": "3D6"
+  },
+  "movimiento": "3/10 (Volar)",
+  "MR": 5,
+  "armadura": {
+    "Cuerpo": "Ninguna"
+  },
+  "habilidades": {
+    "Idear": "50%",
+    "Esquivar": "60%",
+    "Volar": "80%",
+    "Ocultar": "100%",
+    "Moverse en Silencio": "100%",
+    "Cantar": "30%",
+    "Combate Espiritual": "70%"
+  },
+  "idiomas": {
+    "Hablar Aldryami": "50%"
+  },
+  "pasiones": {
+    "Amor (arboleda/prado/bosque específico)": "80%"
+  },
+  "runas": {
+    "Fertilidad": "70%",
+    "Ilusión": "70%",
+    "Planta": "90%"
+  },
+  "magia": "Todos los pixies adoran a Aldrya (Hermana Mayor). Magia espiritual típica incluye Confundir o Disrupción. Por 1 punto de magia, un pixie puede Descorporarse (su cuerpo material desaparece). Puede reaparecer en el Mundo Mundano por 1 punto de magia.",
+  
+  "habilidadesEspeciales": [
+    "Vuelo: Movimiento aéreo de 10 metros.",
+    "Descorporación: Pueden desaparecer/reaparecer gastando 1 PM.",
+    "Camuflaje Natural: +50% a Ocultarse en entornos naturales.",
+    "Tamaño Diminuto: Solo TAM 3-4, afecta modificadores de combate."
+  ],
+  
+  "ataques": [
+    {
+      "nombre": "Honda",
+      "porcentaje": "50%",
+      "daño": "1D8",
+      "MR": 2
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-03", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "04-06", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "10", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Derecho", "rango": "15-16", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

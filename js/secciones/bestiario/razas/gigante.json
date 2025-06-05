@@ -1,0 +1,62 @@
+{
+  "nombre": "Gigante",
+  "descripcion": "Los gigantes son una raza extremadamente huraña y desconfiada, conocidos como 'Los Devoradores' por su afición a la carne humana. Alcanzan hasta 15 metros de altura en su máximo crecimiento (1 punto de TAM por año), siendo criaturas formidables que habitan en guaridas montañosas. Su fuerza y tamaño aumentan proporcionalmente (3D6 +18 por cada 2m de altura). Atraídos por el olor a carroña, son tan longevos que algunos como Gonn Orta (de la Primera Edad) aún sobreviven. Usan árboles o grandes mazas en combate, con capacidad para golpear múltiples objetivos. Su naturaleza contradictoria los hace casi inmunes a magias de influencia (solo 5% de efectividad). Están vinculados a la Runa del Desorden, no al Caos.",
+  "caracteristicas": {
+    "FUE": "4D6+18",
+    "CON": "2D6+18",
+    "TAM": "4D6+18",
+    "INT": "3D6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 12,
+  "MR": 3,
+  "armadura": {
+    "Piel gruesa": "6 a 13 ptos."
+  },
+  "habilidades": {
+    "Oler Sangre": "50%",
+    "Hablar (lengua local)": "40%"
+  },
+  "pasiones": {
+    "Contrariedad Innata": "Inmunidad práctica a magias de influencia emocional (5% efectividad)"
+  },
+  "runas": {
+    "Desorden": "95%"
+  },
+  "magia": "Pueden aprender cualquier magia si alguien se atreve a enseñarles.",
+
+  "habilidadesEspeciales": [
+    "Barrido Devastador: Puede atacar múltiples enemigos con su maza (alcance = SIZ/4 metros, +20% probabilidad, daño reducido a 2/4 pero derriba objetivos).",
+    "Crecimiento Continuo: Aumenta 1 punto de TAM anual (STR/TAM escalan proporcionalmente).",
+    "Resistencia Física: HP basados en CON + TAM (ejemplo: 29 HP para 9m).",
+    "Lanzamiento de Rocas: Ataque a distancia con rocas (50%, 1D4+Mod daño)."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mazo Gigante",
+      "porcentaje": "85%",
+      "daño": "2D6",
+      "MR": 4,
+      "pts": 12,
+      "efecto": "Puede usarse para barrido área"
+    },
+    {
+      "nombre": "Roca Arrojadiza",
+      "porcentaje": "50%",
+      "daño": "1D4",
+      "MR": 3
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 10, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 10, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 10, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 10, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 10, "pv": "PV/3"}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "nombre": "Mantícora",
+  "descripcion": "Los manticoras son una raza de Hombres Bestia con cuerpo de león, cola de escorpión y cabeza humanoide. Son seres huraños e independientes, que ocasionalmente trabajan como guardaespaldas para humanos y otros, aunque rara vez se relacionan con sus congéneres bestiales. Prefieren la fuerza bruta antes que la magia.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "2D6+6",
+    "TAM": "4D6+12",
+    "INT": "2D6",
+    "POD": "3D6",
+    "DES": "2D6+3",
+    "CAR": "2D6"
+  },
+  "movimiento": 9,
+  "MR": 3,
+  "armadura": "4 (piel y pelaje)",
+  "habilidades": {
+    "Escalar": "80%",
+    "Esquivar": "20%",
+    "Rastrear": "40%",
+    "Hablar Lenguaje Bestia": "30%"
+  },
+  
+  "runas": {
+    "Bestia": "80%"
+},
+  "ataques": [
+    {
+      "nombre": "Garra",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 7,
+      "localizacion": "Pata delantera"
+    },
+    {
+      "nombre": "Aguijón",
+      "porcentaje": "50%",
+      "daño": "1D6",
+      "MR": 7,
+      "localizacion": "Cola",
+      "efecto": "Veneno sistémico (potencia igual a CON, normalmente 13)"
+    }
+  ],
+  "localizaciones": [
+    { "locacion": "Cola", "rango": "01-02", "armadura": 4, "pv": "PV/3 - 1" },
+    { "locacion": "Pata Trasera Derecha", "rango": "03-04", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pata Trasera Izquierda", "rango": "05-06", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Cuartos Traseros", "rango": "07-09", "armadura": 4, "pv": "PV/3 + 2" },
+    { "locacion": "Cuartos Delanteros", "rango": "10-12", "armadura": 4, "pv": "PV/3 + 2" },
+    { "locacion": "Pata Delantera Derecha", "rango": "13-14", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Pata Delantera Izquierda", "rango": "15-16", "armadura": 4, "pv": "PV/3" },
+    { "locacion": "Cabeza", "rango": "17-20", "armadura": 4, "pv": "PV/3" }
+  ],
+  "habilidadesEspeciales": [
+    "Puede atacar con garra y aguijón simultáneamente, incluso contra dos oponentes distintos.",
+    "Veneno en el aguijón (potencia igual a CON, normalmente 13).",
+    "Prefiere la fuerza física antes que la magia."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "nombre": "Enano de Hierro",
+  "descripcion": "Los Enanos de Hierro son miembros de la casta guerrera de los Mostali, conocidos por su devoción al deber y su odio hacia elfos y trolls. Visten pesadas armaduras de hierro no encantado y son inmunes a la mayoría de los hechizos. Su sociedad está organizada en castas y valoran la precisión y la eficiencia por encima de todo. Son maestros herreros y utilizan armas de hierro especialmente efectivas contra sus enemigos ancestrales.",
+  "caracteristicas": {
+    "FUE": "4D6",
+    "CON": "2D6+6",
+    "TAM": "2D6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "CAR": "3D6"
+  },
+  "movimiento": 6,
+  "MR": 5,
+  "armadura": {
+    "Cota de malla de hierro enano": "9 pts (todo el cuerpo)",
+    "Yelmo completo": "9 pts (cabeza)"
+  },
+  "habilidades": {
+    "Artesanía (Hierro)": "65%",
+    "Esquivar": "35%",
+    "Sentido de la Tierra (Explorar)": "50%",
+    "Sentido de la Tierra (Buscar)": "50%",
+    "Conocimiento Mineral": "35%"
+  },
+  "idiomas": {
+    "Hablar Mostali": "50%",
+    "Leer/Escribir Mostali": "50%"
+  },
+  "pasiones": {
+    "Devoción (deberes de casta)": "60%",
+    "Odio (Aldryami/Elfos)": "60%",
+    "Odio (Uz/Trolls)": "60%"
+  },
+  "runas": {
+    "Tierra": "80%",
+    "Estasis": "80%"
+  },
+  "magia": "Usan hechizería enana. No lanzan hechizos en combate mientras llevan armadura no encantada.",
+
+  "habilidadesEspeciales": [
+    "Resistencia Mágica: 70% de probabilidad de ser inmune a cualquier hechizo.",
+    "Armadura Completa: Protección uniforme de 9 pts en todo el cuerpo.",
+    "Daño Mejorado: Sus armas de hierro duplican daño contra elfos/trolls y afectan a criaturas inmunes a armas normales.",
+    "Ballesta Repetidora: Puede disparar 5 virotes seguidos antes de recargar (3 rondas)."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Martillo de Hierro (1 mano)",
+      "porcentaje": "80%",
+      "daño": "1D6+2",
+      "MR": 8,
+      "efecto": "Doble daño a elfos/trolls, afecta criaturas inmunes"
+    },
+    {
+      "nombre": "Hacha de Batalla de Hierro",
+      "porcentaje": "60%",
+      "daño": "1D8+2",
+      "MR": 7,
+      "efecto": "Doble daño a elfos/trolls, afecta criaturas inmunes"
+    },
+    {
+      "nombre": "Ballesta Repetidora",
+      "porcentaje": "75%",
+      "daño": "2D4+2",
+      "MR": 3,
+      "efecto": "5 disparos consecutivos antes de recargar (3 rondas)"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 9, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 9, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 9, "pv": "PV/3"}
+  ]
+}

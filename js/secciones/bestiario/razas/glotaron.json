@@ -1,0 +1,82 @@
+{
+  "nombre": "Glotarón",
+  "descripcion": "El Glotarón es una criatura masiva y poderosa, conocida por su fuerza descomunal y su resistencia física. Con una altura y tamaño imponentes, es capaz de causar estragos en el campo de batalla. Su piel gruesa y su armadura adicional lo hacen extremadamente resistente a los ataques. Aunque su inteligencia y carisma son limitados, su destreza y habilidades de combate lo convierten en un oponente formidable. Suele utilizar armas grandes como arcos, espadas y escudos, demostrando una versatilidad inusual para su tamaño.",
+  "caracteristicas": {
+    "FUE": "3D6+24",
+    "CON": "4D6+12",
+    "TAM": "3D6+30",
+    "INT": "3D6",
+    "POD": "3D6",
+    "DES": "2D6+18",
+    "CAR": "2D6"
+  },
+  "movimiento": 10,
+  "MR": 0,
+  "armadura": {
+    "Piel": "8 puntos",
+    "Armadura de Torso (Curboulli)": "3 puntos adicionales"
+  },
+  "habilidades": {
+    "Escalar": "60%",
+    "Explorar": "30%",
+    "Buscar": "50%",
+    "Combate Espiritual": "50%",
+    "Danza Espiritual": "30%"
+  },
+  "idiomas": {
+    "Hablar Aldryani": "10%",
+    "Hablar Glotarón": "50%"
+  },
+  "runas": {
+    "Tierra": "60%"
+  },
+  "magia": "Conoce los siguientes hechizos: Visión Lejana, Curar 3, Movilidad, Multiflecha 1, Flecha Veloz.",
+
+  "habilidadesEspeciales": [
+    "Combate con Armas Grandes: Puede manejar armas de gran tamaño con facilidad.",
+    "Resistencia Física: Alta CON y armadura lo hacen difícil de derrotar.",
+    "Tiro con Arco Experto: Gran precisión con arcos grandes.",
+    "Uso de Escudo: Capaz de bloquear ataques mientras contraataca."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Arco Grande",
+      "porcentaje": "90%",
+      "daño": "3D6+1",
+      "MR": "1/6/11"
+    },
+    {
+      "nombre": "Roca Arrojadiza",
+      "porcentaje": "80%",
+      "daño": "1D4"
+    },
+    {
+      "nombre": "Espada Grande (Mano Derecha)",
+      "porcentaje": "70%",
+      "daño": "2D8",
+      "MR": 1
+    },
+    {
+      "nombre": "Espada Grande (Mano Izquierda)",
+      "porcentaje": "70%",
+      "daño": "2D8",
+      "MR": 6
+    },
+    {
+      "nombre": "Escudo Grande",
+      "porcentaje": "70%",
+      "daño": "1D6",
+      "MR": 3
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-03", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "04-06", "armadura": 8, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 11, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "10-11", "armadura": 11, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "12-14", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "15-17", "armadura": 8, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Central", "rango": "18-20", "armadura": 8, "pv": "PV/3 - 1"}
+  ]
+}

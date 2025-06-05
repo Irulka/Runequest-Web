@@ -1,0 +1,76 @@
+{
+  "nombre": "Ludoch",
+  "descripcion": "Los Ludoch son la variedad más común y conocida de tritones en Glorantha. Criaturas marinas amistosas con los humanos, poseen una elegante cola en lugar de piernas y una naturaleza sociable. Habitantes de los mares y costas, son reconocidos por sus habilidades de canto y su fuerte sentido de comunidad. Su sociedad está organizada en tribus, mostrando una lealtad inquebrantable hacia su grupo.",
+  "caracteristicas": {
+    "FUE": "3D6",
+    "CON": "3D6",
+    "TAM": "2D6+6",
+    "INT": "2D6+6",
+    "POD": "3D6",
+    "DES": "2D6+6",
+    "CAR": "4D6"
+  },
+  "movimiento": "9 (Nadar)",
+  "MR": 4,
+  "armadura": {
+    "Grasa Natural (cola)": "2 pts",
+    "Opcional": [
+      "Piel de tiburón (2 pts)",
+      "Piel de serpiente marina (4 pts)",
+      "Coraza de cangrejo gigante (6 pts, solo pecho)"
+    ]
+  },
+  "habilidades": {
+    "Esquivar": "50%",
+    "Escuchar": "50%",
+    "Canto": "50%",
+    "Combate Espiritual": "50%"
+  },
+  "idiomas": {
+    "Hablar Lenguaje de Barcos": "15%",
+    "Hablar Cetoi": "50%"
+  },
+  "pasiones": {
+    "Lealtad (tribu)": "60%"
+  },
+  "runas": {
+    "Agua": "80%"
+  },
+  "magia": "Hechizos comunes: Cuchilla Afilada, Curación, Movilidad",
+
+  "habilidadesEspeciales": [
+    "Comunicación Marina: Pueden comunicarse con algunas criaturas marinas",
+    "Armadura Natural: Protección en la cola sin necesidad de equipo"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Tridente",
+      "porcentaje": "60%",
+      "daño": "2D3",
+      "MR": 6
+    },
+    {
+      "nombre": "Tridente (arrojadizo)",
+      "porcentaje": "50%",
+      "daño": "1D6+1",
+      "MR": 2,
+      "nota": "No puede lanzarse bajo el agua"
+    },
+    {
+      "nombre": "Golpe de Cola",
+      "porcentaje": "35%",
+      "daño": "1D4",
+      "MR": 8,
+      "localizacion": "Cola"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-07", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "08-11", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 0, "pv": "PV/3  1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

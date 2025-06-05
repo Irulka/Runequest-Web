@@ -1,0 +1,91 @@
+{
+  "nombre": "Dragonewt Sacerdote (Tercer Estadío)",
+  "descripcion": "Los Sacerdotes Coludos representan la tercera etapa evolutiva de los dragonewts. Más pequeños que los dragonewts picudos (menos de 2m y 80kg), intercambian sus armaduras naturales por adornos comunicativos como crestas, espinas y glándulas odoríferas. Sus colores son más vívidos y adoptan una dieta omnívora, algunos convirtiéndose en gourmets. Actúan como líderes espirituales, diplomáticos y maestros de magia dracónica, manteniendo relaciones pacíficas con otras razas mientras profundizan en los misterios de la Runa Dragón.",
+  "caracteristicas": {
+    "FUE": "2D6+6",
+    "CON": "3D6+6",
+    "TAM": "2D6+6",
+    "INT": "4D6",
+    "POD": "18-20 (fijo)",
+    "DES": "2D6+6",
+    "CAR": "3D6+6"
+  },
+  "movimiento": 8,
+  "MR": 4,
+  "armadura": {
+    "Escamas decorativas": "3 puntos (menos protección pero más ornamentación)"
+  },
+  "habilidades": {
+    "Ocultar": "90%",
+    "Esquivar": "90%",
+    "Vestir Armadura": "25%",
+    "Saber Dracónico": "90%",
+    "Meditar": "90%",
+    "Moverse en Silencio": "90%",
+    "Desenvaine Rápido": "90%",
+    "Montar (Semiave)": "90%"
+  },
+  "idiomas": {
+    "Hablar Auld Wyrmish": "90%"
+  },
+  "pasiones": {
+    "Dualidad Ética": "Fluctúa entre honor/deshonor, generosidad/codicia, paciencia/impaciencia"
+  },
+  "runas": {
+    "Dragón": 75
+  },
+  "magia": "Exclusivamente magia dracónica avanzada. Enfocados en desbloquear secretos de la Runa Dragón.",
+
+  "habilidadesEspeciales": [
+    "Comunicación Multisensorial: Crestas y glándulas para señales visuales/olorosas complejas.",
+    "Diplomacia Innata: Habilidades sociales mejoradas (CAR 16-17) para tratar con otras razas.",
+    "Precisión Marcial: Ataques con klauth/long bow al 90% a pesar de menor FUE.",
+    "Adaptación Gastronómica: Dieta omnívora con aprecio por cocinas exóticas."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Klanth",
+      "porcentaje": "90%",
+      "daño": "1D10+1",
+      "MR": 6,
+      "nota": "Espada curva de precisión ceremonial"
+    },
+    {
+      "nombre": "Korff",
+      "porcentaje": "40%",
+      "daño": "1D8+1",
+      "MR": 6,
+      "pts": 15,
+      "nota": "Arma pesada de doble filo"
+    },
+    {
+      "nombre": "Arco Largo de Hueso",
+      "porcentaje": "90%",
+      "daño": "1D10+1",
+      "MR": 2
+    },
+        {
+      "nombre": "Samarin",
+      "porcentaje": "80%",
+      "daño": "1D4+1",
+      "MR": 3
+    },
+  {
+      "nombre": "Chokin",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 2
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-02", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pierna Derecha", "rango": "03-05", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "06-08", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "nombre": "Hijo del Viento",
+  "descripcion": "Humanoides con majestuosas alas emplumadas, los Hijos del Viento están profundamente vinculados a la Runa del Aire. Desprecian el combate cuerpo a cuerpo y las armaduras, prefiriendo ataques a distancia y tácticas de movilidad. Son ágiles voladores y devotos de dioses del aire como Orlanth, utilizando magia relacionada con el viento en sus batallas.",
+  "caracteristicas": {
+    "FUE": "2D6",
+    "CON": "3D6",
+    "TAM": "2D6",
+    "INT": "2D6+6",
+    "POD": "2D6+6",
+    "DES": "3D6+6",
+    "CAR": "2D6+6"
+  },
+  "movimiento": "6 (tierra) / 12 (vuelo)",
+  "MR": 3,
+  "armadura": "Ninguna",
+  "habilidades": {
+    "Escalar": "50%",
+    "Esquivar": "60%",
+    "Volar": "80%",
+    "Cantar": "30%",
+    "Orate": "30%",
+    "Escaneo": "45%",
+    "Buscar": "45%",
+    "Conocimiento del Viento": "40%"
+  },
+  "idiomas": {
+    "Hablar Lengua de la Tormenta": "50%"
+  },
+  "pasiones": {
+    "Devoción (Dios del Aire)": "60%",
+    "Amor (familia)": "60%"
+  },
+  "runas": {
+    "Aire": "100%"
+  },
+  "magia": "Aumentar/Disminuir Viento, Disrupción, Curación, Brillo, Arte de Velocidad",
+  
+  "habilidadesEspeciales": [
+    "Vuelo Ágil: Movimiento aéreo superior (80% en habilidad Volar).",
+    "Resistencia al Viento: Inmunidad a efectos climáticos adversos relacionados con el viento.",
+    "Fragilidad Alar: Sus alas son vulnerables (0 armadura, 3 PV). Daño severo puede impedir el vuelo."
+  ],
+  "ataques": [
+    {
+      "nombre": "Arco Corto (preferido)",
+      "porcentaje": "60% (base) + modificadores",
+      "daño": "1D6",
+      "MR": 3,
+      "efecto": "Ataque a distancia preferido, usualmente con flechas especializadas."
+    },
+    {
+      "nombre": "Daga (emergencia)",
+      "porcentaje": "40% (base) + modificadores",
+      "daño": "1D4+1",
+      "MR": 5,
+      "efecto": "Solo para defensa personal en situaciones extremas."
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-03", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "04-06", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "07-09", "armadura": 0, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "10", "armadura": 0, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Derecho", "rango": "15-16", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "17-18", "armadura": 0, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 0, "pv": "PV/3"}
+  ]
+}

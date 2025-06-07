@@ -211,6 +211,35 @@ function initCultos() {
             magiaEspiritual: "Coordinación (2 pts.), Detectar Vida (1 pt.), Disrupción (1 pt.), Glamour (2 pts.), Sanar (var.), Movilidad (1 pt.), Silencio (1 pt.), Lentitud (1 pt.)",
             pasiones: "Amor (familia), Lealtad (tribu)",
             cultosAsociados: "Daka Fal, Foundchild, Odayla, Orlanth"
+        },
+        {
+            nombre: "Telmor",
+            descripcion: "Padre de los Lobos",
+            habilidades: "Culto (Telmor) +15%, Meditar +5%, Cantar +10%, Combate espiritual +20%, Rastrear +15%, Culto (Telmor) +20%. Espíritu +20%, Rastrear +15%, Culto (Telmor) +20%.",
+            magiaRuna: "Transformarse, Correr como Lobo, Piel de Lobo, Cabeza de Lobo.",
+            magiaEspiritual: "Toda",
+            pasiones: "Amor (familia), Lealtad (líder de la manada).",
+            cultosAsociados: "Yinkin, Nysalilor, Hykim y Mikyh."
+        },
+        {
+            nombre: "Hijos del Bosque",
+            descripcion: "Subculto de Aldrya.",
+            habilidades: "Arco, Trepar, Sentido de los Elfos, Esconderse, Moverse en Silencio, Conocimiento de Plantas.",
+            magiaRuna: "",
+            magiaEspiritual: "Curación, Dardo Veloz.Transformarse, Piel de Lobo, Carrera de Lobo, Cabeza de Lobo.",
+            pasiones: "",
+            notas: "Los Hijos del Bosque no pueden sacrificar POD por puntos de Runa y no tienen acceso a intervención divina.",
+            cultosAsociados: ""
+        },
+        {
+            nombre: "Colmillo Sangriento",
+            descripcion: "Culto de los Jinetes de los Colmillos.",
+            habilidades: "",
+            magiaRuna: "Apaciguar Tierra, Comandar Cerdos,Atadura Mortal, Miedo, Diente Doloroso, Sellar Herida.",
+            magiaEspiritual: "Cuchilla Afilada, Contramagia, Desmoralizar,Curación, Mano de hierro, Movilidad, Protección, Lentitud y Vigor.",
+            pasiones: "Devoción (Colmillo Sangriento), Odio (cualquier cosa), Amor (causar dolor), Lealtad (líder de guerra).",
+            notas: "A los iniciados se les enseña la habilidad Corte Sangriento.",
+            cultosAsociados: ""
         }
     ];
     

@@ -1,0 +1,19 @@
+{
+    "nombre": "Tritura Broos",
+    "imagen": "./imagenes/objetosm/Tritura.webp",
+    "descripcion": "Este bumerán mágico está construido en un tipo de madera procedente de bosques aldryani, la cual es extraordinariamente densa y dura, dando como resultado un arma que pesa tanto como una espada ancha o similar. Mide unos 50 centímetros de largo. Su forma es la de un trozo de madera curvo y plano, que presenta ambos bordes afilados. En ambos lados posee brillantes runas sunchen las cuales ponen simplemente 'Triturador de Broos'.",
+    "propiedades": {
+        "Peso": "1,5 Kg",
+        "Daño": "1D6+1 Kg",
+        "Alcance": "30 m"
+},
+ "efectos": [
+        {
+            "nombre": "Arrojadizo",
+            "descripcion": "Las posibilidades iniciales de lanzar serán igual a DESx2. Si no impacta contra nada volverá a la mano del lanzador. Será necesaria una nueva tirada para recuperarlo. Si se usa contra cualquier tipo de ser caótico, el daño que causa se duplica (2D5+2) antes de restar la posible armadura del objetivo."
+        }
+    ]
+}
+
+
+       

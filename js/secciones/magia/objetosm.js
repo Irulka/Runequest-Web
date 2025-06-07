@@ -8,7 +8,9 @@ function initObjetosM() {
     // Array con los nombres de los archivos JSON de los objetos mágicos
     const objetoFiles = [
         'js/secciones/magia/objetosm/het-het.json',
+        'js/secciones/magia/objetosm/tritura.json',
         'js/secciones/magia/objetosm/laudnav.json'
+
         // Añade más archivos aquí según sea necesario
     ];
     

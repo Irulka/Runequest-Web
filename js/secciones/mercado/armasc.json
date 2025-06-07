@@ -1051,5 +1051,57 @@
   "mr": "3",
   "tipo": "A",
   "precio": "85"
+ },
+  {
+  "categoria": "Espada (1M)",
+  "nombre": "Klant",
+  "basico": "10",
+  "fue": "7",
+  "des": "11",
+  "dano": "1D10+1",
+  "pg": "12",
+  "crg": "1",
+  "mr": "2",
+  "tipo": "T",
+  "precio": "Dragonewt"
+ },
+  {
+  "categoria": "Espada (1M)",
+  "nombre": "Korff",
+  "basico": "10",
+  "fue": "7",
+  "des": "11",
+  "dano": "1D8+1",
+  "pg": "15",
+  "crg": "1",
+  "mr": "2",
+  "tipo": "FP",
+  "precio": "Dragonewt"
+ },
+  {
+  "categoria": "Espada (1M)",
+  "nombre": "Gami",
+  "basico": "5",
+  "fue": "7",
+  "des": "13",
+  "dano": "3D3",
+  "pg": "10",
+  "crg": "1",
+  "mr": "3",
+  "tipo": "FP",
+  "precio": "Dragonewt"
+ },
+  {
+  "categoria": "Daga",
+  "nombre": "Utuma",
+  "basico": "15",
+  "fue": "-",
+  "des": "-",
+  "dano": "1D6+1",
+  "pg": "8",
+  "crg": "(4)",
+  "mr": "2",
+  "tipo": "FP",
+  "precio": "Dragonewt"
  }
 ]

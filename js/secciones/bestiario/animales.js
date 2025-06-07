@@ -66,7 +66,11 @@ function initAnimales() {
         { nombre: "Aráña Lobo Gigante", archivo: "/animales/aralobogi.json" },  
         { nombre: "Tarántula Gigante", archivo: "/animales/tarantula.json" },                                                       
         { nombre: "Cangrejo Arboreo", archivo: "/animales/arboreo.json" },          
-        { nombre: "Cangrejo Gigante", archivo: "/animales/cangrejo.json" },                           
+        { nombre: "Cangrejo Gigante", archivo: "/animales/cangrejo.json" },     
+        { nombre: "Araña Tejedora", archivo: "/animales/tejedora.json" },
+        { nombre: "Araña Tejedora Gigante", archivo: "/animales/tejedoragrande.json" },    
+        { nombre: "Avispa Gigante", archivo: "/animales/avispa.json" },    
+        { nombre: "Gusano de Hielo Gigante", archivo: "/animales/gusano.json" },                                                  
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
     // Llenar el select con los animales

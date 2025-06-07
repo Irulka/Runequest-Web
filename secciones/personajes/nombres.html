@@ -1,0 +1,295 @@
+<div class="seccion-activa">
+    <div class="varita-header-container">
+        <h2 class="text-center">Generador de Nombres</h2>
+    </div>
+    
+    <div class="varita-layout-container">
+        <div class="varita-content-container">
+            <div class="varita-container">
+                <p class="explicacion-varita">
+                    Genera nombres auténticos para tus personajes y NPCs en RuneQuest. 
+                    Selecciona la raza, género y si deseas incluir un apodo, luego pulsa "Generar Nombre".
+                </p>
+                
+                <div class="formulario-profesiones">
+                    <div class="profesion-selector">
+                        <label for="raza">Raza del personaje:</label>
+                        <select id="raza">
+                            <option value="">-- Selecciona una raza --</option>
+                            <option value="humano">Humano</option>
+                            <option value="elfo">Elfo</option>
+                            <option value="enano">Enano</option>
+                            <option value="orco">Orco</option>
+                            <option value="troll">Troll</option>
+                        </select>
+                    </div>
+                    
+                    <div class="opciones-genero-apodo">
+                        <div class="profesion-selector">
+                            <label>Género:</label>
+                            <div class="genero-botones">
+                                <button id="masculino" class="btn-magia active">Masculino</button>
+                                <button id="femenino" class="btn-magia">Femenino</button>
+                            </div>
+                        </div>
+                        
+                        <div class="profesion-selector">
+                            <label for="incluir-apodo" class="checkbox-label">
+                                <input type="checkbox" id="incluir-apodo">
+                                <span class="checkmark"></span>
+                                <strong>Incluir apodo</strong>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button id="generar-nombre" class="btn-magia">Generar Nombre</button>
+                </div>
+
+                <div class="resultado-generado-container" id="resultado-generado-container">
+                    <div id="resultado-principal"></div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="eurmal-image-container">
+            <img src="./imagenes/nombres.webp" alt="Generador de Nombres" class="eurmal-image">
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilos para el formulario y select de raza (replicando monstruos.html) */
+    .formulario-profesiones {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    
+    .profesion-selector {
+        margin-bottom: 15px;
+    }
+    
+    .profesion-selector label {
+        display: block;
+        margin-bottom: 5px;
+        color: #f7fafc;
+        font-weight: bold;
+    }
+    
+    .profesion-selector select {
+        width: 50%; /* Se puede ajustar según la necesidad */
+        padding: 8px;
+        background: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+        color: #f7fafc;
+        cursor: pointer;
+    }
+    
+    .opciones-genero-apodo {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px; /* Espacio debajo de los selectores de género/apodo */
+    }
+
+    .genero-botones {
+        display: flex;
+        gap: 10px;
+    }
+
+    /* Estilos para los botones de género (activo/inactivo) */
+    .genero-botones .btn-magia {
+        background-color: rgba(60, 60, 60, 0.7); /* Estilo por defecto */
+        color: #ddd;
+        border: 1px solid #555;
+        transition: background-color 0.3s ease;
+    }
+
+    .genero-botones .btn-magia.active {
+        background-color: #d69e2e; /* Color cuando está activo */
+        color: #333;
+        border-color: #ecc94b;
+    }
+
+    .genero-botones .btn-magia:hover:not(.active) {
+        background-color: rgba(90, 90, 90, 0.8);
+    }
+    
+    /* Estilos para el checkbox de "Incluir apodo" (restaurando original) */
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+        color: #f7fafc;
+        user-select: none;
+        font-weight: normal; /* El strong dentro de label se encargará de la negrita */
+    }
+    
+    .checkbox-label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #2d3748;
+        border: 1px solid #4a5568;
+        border-radius: 4px;
+    }
+    
+    .checkbox-label:hover input ~ .checkmark {
+        background-color: #4a5568;
+    }
+    
+    .checkbox-label input:checked ~ .checkmark {
+        background-color: #d69e2e; /* Color amarillo al marcar */
+    }
+    
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .checkbox-label input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    .checkbox-label .checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid #1a202c; /* Color del tick, un negro oscuro para contraste */
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+    
+    /* Estilos para el botón "Generar Nombre" */
+    #generar-nombre {
+        padding: 10px 20px;
+        background: #d69e2e;
+        border: none;
+        border-radius: 4px;
+        color: #1a202c;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 10px;
+    }
+    
+    #generar-nombre:hover {
+        background: #ecc94b;
+    }
+    
+    /* Estilos para la ficha del nombre generado (cuando está dentro de varita-container) */
+    .ficha-nombre {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        animation: fadeIn 0.5s ease-out;
+        margin-top: 20px; /* Espacio superior para separarlo de los botones */
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .ficha-nombre .nombre-y-apodo {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 15px; /* Espacio después del nombre/apodo */
+    }
+
+    /* Estilos comunes para el nombre principal y el apodo */
+    .ficha-nombre .nombre-principal,
+    .ficha-nombre .apodo {
+        color: #d69e2e; /* Color dorado */
+        font-size: 2.2rem; /* Tamaño de fuente grande */
+        font-weight: bold; /* En negrita */
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra de texto */
+        display: inline; /* Para que estén en la misma línea */
+    }
+
+    .ficha-nombre .apodo {
+        margin-left: 10px; /* Espacio entre el nombre y el apodo */
+    }
+    
+    /* Estilos para el contenedor del resultado (VISIBILIDAD) */
+    .resultado-generado-container {
+        padding: 0; 
+        border-radius: 8px;
+        transition: opacity 0.5s ease-in-out; 
+        opacity: 0; 
+        pointer-events: none; 
+    }
+
+    .resultado-generado-container.visible {
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+
+    /* Estilos para el contenedor de imagen lateral (como en monstruos.html) */
+    .eurmal-image-container {
+        flex-shrink: 0;
+        width: 300px; /* Ancho fijo para la imagen lateral */
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .eurmal-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Ajuste para el layout cuando la imagen está presente */
+    .varita-layout-container {
+        display: flex;
+        align-items: flex-start; /* Alinea arriba el contenido y la imagen */
+        gap: 20px; /* Espacio entre el contenido y la imagen */
+    }
+
+    .varita-content-container {
+        flex-grow: 1; /* Permite que el contenido tome el espacio restante */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) { /* Ajusta el breakpoint si es necesario */
+        .varita-layout-container {
+            flex-direction: column; /* Apila los elementos en pantallas pequeñas */
+            align-items: center; /* Centra los elementos apilados */
+        }
+
+        .eurmal-image-container {
+            width: 100%; /* La imagen ocupa todo el ancho */
+            margin-left: 0; /* Sin margen a la izquierda */
+            margin-top: 20px; /* Espacio superior para la imagen apilada */
+        }
+        
+        .profesion-selector select {
+            width: 100%; /* Select ocupa todo el ancho en móviles */
+        }
+        
+        .opciones-genero-apodo {
+            flex-direction: column; /* Apila los selectores de género y apodo */
+            gap: 10px;
+        }
+    }
+</style>

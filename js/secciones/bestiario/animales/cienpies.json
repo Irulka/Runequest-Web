@@ -1,0 +1,57 @@
+{
+  "nombre": "Ciempiés Gigante",
+  "descripcion": "Depredadores nocturnos extremadamente rápidos y terroríficos. Emiten un sonido de chasquido al moverse. Cada una de sus numerosas patas termina en una punta afilada conectada a una glándula venenosa. Son comunes en Prax, los Yermos, Dagori Inkarth y Caladraland.",
+  "caracteristicas": {
+    "FUE": "6D6+12",
+    "CON": "2D6+12",
+    "TAM": "8D6",
+    "POD": "3D6",
+    "DES": "3D6",
+    "INT": "1 (instintivo)"
+  },
+  "movimiento": 12,
+  "MR": 3,
+  "armadura": "5 pts (quitina en todo el cuerpo)",
+
+  "habilidades": {
+    "Acechar": "70%",
+    "Moverse Silenciosamente": "65%",
+    "Trepar": "80%",
+    "Percepción de Vibraciones": "75%"
+  },
+ 
+  "habilidadesEspeciales": [
+    "Multiples Patas: Es casi imposible golpear la misma pata dos veces",
+    "Sonido característico: Chasquido metálico al moverse",
+    "Comportamiento: Extremadamente agresivos",
+    "Veneno Sistémico: POT igual a la mitad de su CON",
+    "Movimiento Ultrarrápido: Uno de los depredadores más veloces"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "75%",
+      "daño": "1D6",
+      "MR": 7,
+      "efecto": "Inyecta veneno sistémico (POT = CON/2)"
+    },
+    {
+      "nombre": "Contacto con Patas",
+      "porcentaje": "Automático al moverse",
+      "daño": "1D3",
+      "MR": 3,
+      "efecto": "Pequeñas heridas punzantes por contacto"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cuerpo Posterior", "rango": "01-03", "armadura": 5, "pv": "PV/3 + 1"},
+    {"locacion": "Patas Traseras Derechas (grupo)", "rango": "04-05", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Patas Traseras Izquierdas (grupo)", "rango": "06-07", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Cuerpo Medio", "rango": "08-10", "armadura": 5, "pv": "PV/3 + 1"},
+    {"locacion": "Patas Delanteras Derechas (grupo)", "rango": "11-13", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Patas Delanteras Izquierdas (grupo)", "rango": "14-16", "armadura": 5, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 5, "pv": "PV/3"}
+  ]
+}

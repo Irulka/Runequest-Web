@@ -1,0 +1,66 @@
+{
+  "nombre": "Gorila",
+  "descripcion": "Los gorilas son simios terrestres que habitan los bosques del sur de Generela. Son cuadrúpedos pero pueden caminar y pararse sobre sus patas traseras. Son seres inteligentes, aunque de mente más lenta en comparación con los humanos y los babuinos. Los gorilas son principalmente vegetarianos, pero también comen larvas, insectos y ocasionalmente presas. Se mueven en pequeños grupos familiares liderados por un macho espalda plateada. Algunos gorilas particularmente inteligentes se han convertido en bandidos o mercenarios en tierras humanas.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6",
+    "TAM": "2D6+12",
+    "POD": "3D6",
+    "DES": "3D6+6",
+    "INT": "2D6",
+    "CAR": "2D6"
+  },
+  "movimiento": 8,
+  "MR": 2,
+  "armadura": "3 (piel, músculo y pelo)",
+  "habilidades": {
+    "Escalar": "65%",
+    "Esquivar": "40%",
+    "Ocultarse": "40%",
+    "Escuchar": "25%",
+    "Moverse Silenciosamente": "30%",
+    "Rastrear": "25%",
+    "Hablar Lenguaje Bestia": "50%"
+  },
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "1D10",
+      "MR": 6
+    },
+    {
+      "nombre": "Golpe",
+      "porcentaje": "40%",
+      "daño": "1D3",
+      "MR": 6
+    },
+    {
+      "nombre": "Agarrar",
+      "porcentaje": "60%",
+      "daño": "Especial",
+      "MR": 6
+    },
+    {
+      "nombre": "Garrote",
+      "porcentaje": "25%",
+      "daño": "1D6",
+      "MR": 6
+    }
+  ],
+   "localizaciones": [
+    {"locacion": "Pierna Derecha", "rango": "01-04", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pierna Izquierda", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Abdomen", "rango": "09-11", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Pecho", "rango": "12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Brazo Derecho", "rango": "13-15", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Brazo Izquierdo", "rango": "16-18", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 2, "pv": "PV/3"}
+  ],
+  "habilidadesEspeciales": [
+    "Puede atacar dos veces por ronda, con 3 rangos de ataque de diferencia.",
+    "Si un agarre tiene éxito, el gorila inflige su daño completo (3D6) cada ronda y puede seguir mordiendo.",
+    "Runa Bestia al 60% o más.",
+    "Algunos gorilas pertenecen al culto Daka Fal y aprenden magia espiritual."
+  ]
+}

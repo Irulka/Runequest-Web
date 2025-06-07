@@ -1,0 +1,57 @@
+{
+  "nombre": "Abeja Gigante",
+  "descripcion": "Insectos gigantes organizados en colmenas con tres castas: obreras, zánganos y reinas. Las obreras forrajeras generalmente evitan conflictos, pero defenderán ferozmente su colmena. Su miel y jalea real pueden tener propiedades especiales dependiendo de las flores que polinicen.",
+  "caracteristicas": {
+    "FUE": "4D6",
+    "CON": "2D6+6",
+    "TAM": "2D6+5",
+    "POD": "2D6",
+    "DES": "2D6+6",
+    "INT": "1"
+  },
+  "movimiento": "6 / 10 (vuelo)",
+  "MR": 4,
+  "armadura": "4 pts (quitina en cuerpo y patas), 1 pt (alas)",
+ 
+  "habilidades": {
+    "Volar": "95%",
+    "Detectar Intrusos": "60%",
+    "Localizar Flores": "75%",
+    "Navegación": "90%"
+  },
+  "ataques": [
+    {
+      "nombre": "Aguijón",
+      "porcentaje": "60%",
+      "daño": "1D6 + veneno",
+      "MR": 5,
+      "efecto": "Si impacta, el aguijón se clava y continúa inyectando veneno (POT 1D6 por ronda durante 2D6 rondas). La abeja muere en 3D6 rondas."
+    },
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "40%",
+      "daño": "1D4",
+      "MR": 7,
+      "efecto": "Ataque secundario mientras el aguijón está clavado"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Derecha", "rango": "02", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "03", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Izquierda", "rango": "04", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Tórax", "rango": "09-10", "armadura": 4, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 1, "pv": "PV/3"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 4, "pv": "PV/3"}
+  ],
+  "habilidadesEspeciales": [
+    "Miel: Puede ser dulce, amarga, venenosa o mágica",
+    "Jalea Real: Sustancia nutritiva con posibles propiedades especiales",
+    "Extraer Aguijón: STR/2 + CON/2 en D100"
+  ]
+}

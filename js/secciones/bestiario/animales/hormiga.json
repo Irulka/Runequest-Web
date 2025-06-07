@@ -1,0 +1,48 @@
+{
+  "nombre": "León Hormiga Gigante (Etapa Larval)",
+  "descripcion": "Depredador voraz con una etapa larval extremadamente peligrosa y una adulta inofensiva. Las larvas excavan pozos de arena de 3m de profundidad y 4m de ancho, donde esperan emboscar a sus presas. Tienen grandes mandíbulas en forma de hoz que inyectan veneno paralizante. Los adultos son similares a libélulas gigantes y solo existen para reproducirse.",
+  "caracteristicas": {
+    "FUE": "4D6+12",
+    "CON": "3D6+6",
+    "TAM": "3D6+12",
+    "POD": "3D6",
+    "DES": "1D4+4",
+    "INT": "1 (instintivo)"
+  },
+  "movimiento": 3,
+  "MR": 4,
+  "armadura":  "6/3 pts",
+
+  "habilidades": {
+    "Excavar": "Automático",
+    "Emboscar": "90% (en su pozo)",
+    "Percepción de Vibraciones": "75%",
+    "Veneno Paralizante": "De igual POT a la CON de la hormiga. Si causa efecto, paraliza 1D10 asaltos."
+  },
+ 
+  "habilidadesEspeciales": [
+    "Atrapa presas que caen en su pozo (requiere tirada de Saltar o DESx3 para evitar caer)",
+    "Una vez mordida, la víctima queda sujeta (liberación solo si STR > STR del león hormiga o muere)",
+    "Víctimas sujetas atacan con penalización (1D10+10 para localización)"
+  ],
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "75%",
+      "daño": "2D8",
+      "MR": 5,
+      "efecto": "Inyecta veneno paralizante + sujeta a la víctima"
+    }
+  ],
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Derecha", "rango": "02", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "03", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Izquierda", "rango": "04", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Tórax", "rango": "09-12", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "13-14", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 6, "pv": "PV/3 + 2"}
+  ]
+}

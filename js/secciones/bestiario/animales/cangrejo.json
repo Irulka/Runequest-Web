@@ -1,0 +1,61 @@
+{
+  "nombre": "Cangrejo Gigante",
+  "descripcion": "Los cangrejos gigantes son los artrópodos más grandes, aunque las especies más grandes habitan en aguas profundas. Son omnívoros y carroñeros que atacarán cualquier cosa que parezca remotamente comestible. Durante la temporada no reproductiva pueden aventurarse varios kilómetros tierra adentro.",
+  "caracteristicas": {
+    "FUE": "3D6+24",
+    "CON": "2D6+6",
+    "TAM": "4D6+18",
+    "POD": "2D6",
+    "DES": "2D6",
+    "INT": "1 (instintivo)"
+  },
+  "movimiento": "5 (tierra) / 8 (agua)",
+  "MR": 4,
+  "armadura": "12 pts (caparazón quitinoso)",
+
+  "habilidades": {
+    "Ocultarse": "75%",
+    "Percepción Subacuática": "80%",
+    "Acechar": "60%",
+    "Nadar": "70%"
+  },
+ 
+  "habilidadesEspeciales": [
+    "Pinzas Dobles: Puede atacar con ambas pinzas simultáneamente",
+    "Resistencia Natural: Caparazón extremadamente duro",
+    "Adaptación Anfibia: Puede sobrevivir tanto en agua como en tierra",
+    "Debilidad: Movimiento lateral limitado en tierra"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Pinza",
+      "porcentaje": "50%",
+      "daño": "1D10",
+      "MR": 8,
+      "efecto": "Ataque de trituración poderosa (puede usar ambas pinzas)"
+    },
+    {
+      "nombre": "Agarre",
+      "porcentaje": "Automático al golpear con pinza",
+      "daño": "1D6 por ronda",
+      "MR": "-",
+      "efecto": "Mantiene sujetas a las víctimas (escape con STR opuesta)"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Derecha", "rango": "01", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Izquierda", "rango": "02", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Derecha", "rango": "03", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Cuerpo Posterior", "rango": "05-08", "armadura": 12, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Central Derecha", "rango": "09", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Izquierda", "rango": "10", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "11", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "12", "armadura": 12, "pv": "PV/3 - 1"},
+    {"locacion": "Pinza Derecha", "rango": "13-15", "armadura": 12, "pv": "PV/3"},
+    {"locacion": "Pinza Izquierda", "rango": "16-18", "armadura": 12, "pv": "PV/3"},
+    {"locacion": "Cuerpo Frontal", "rango": "19-20", "armadura": 12, "pv": "PV/3 + 1"}
+  ]
+}

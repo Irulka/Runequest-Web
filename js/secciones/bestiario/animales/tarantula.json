@@ -1,0 +1,45 @@
+{
+  "nombre": "Tarántula Gigante",
+  "descripcion": "Ante ti se alza una tarántula del tamaño de un caballo, con ojos múltiples que brillan con inteligencia oscura y quelíceros del grosor de dagas. Sus patas peludas apenas hacen ruido al moverse, pero cada paso anuncia una caza letal. Criatura de las sombras y los túneles profundos, pocos viven para contar que la han visto.",
+  "caracteristicas": {
+    "FUE": "6D6+18",
+    "CON": "2D6+18",
+    "TAM": "6D6+18",
+    "POD": "4D6",
+    "DES": "2D6+12",
+    "INT": "2D6"
+  },
+  "movimiento": 7,
+  "MR": 0,
+  "armadura": 9,
+
+  "habilidades": {
+    "Trepar": "90%",
+    "Ocultarse": "60%",
+    "Moverse Silenciosamente": "75%",
+    "Acechar": "75%"
+  },
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "65%",
+      "daño": "1D6",
+      "MR": 4,
+      "efecto": "Inyecta veneno (POT = CON de la araña)"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "02", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Trasera Derecha", "rango": "03", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Trasera Izquierda", "rango": "04", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Central Delantera Derecha", "rango": "09-10", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Delantera Izquierda", "rango": "11-12", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "13-14", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 3, "pv": "PV/3"}
+  ]
+}

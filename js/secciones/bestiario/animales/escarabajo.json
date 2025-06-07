@@ -1,0 +1,43 @@
+{
+  "nombre": "Escarabajo Jamón",
+  "descripcion": "Pequeños escarabajos herbívoros del tamaño de un jamón, criados como alimento por los trolls. Vuelan en enjambres y son comunes en todas partes. Aunque inofensivos, pueden volverse molestos en grandes cantidades.",
+  "caracteristicas": {
+    "FUE": "1D3",
+    "CON": "2D6",
+    "TAM": "1D4",
+    "POD": "1D6+6",
+    "DES": "3D6",
+    "INT": "1 (instintivo)"
+  },
+  "movimiento": "4 (tierra) / 8 (vuelo)",
+  "MR": 6,
+  "armadura": "2 pts (quitina)",
+
+  "habilidades": {
+    "Volar": "50%",
+    "Formar Enjambres": "Automático"
+  },
+ 
+  "habilidadesEspeciales": [
+    "Vuelo en Grupo: Pueden formar enjambres coordinados",
+    "Fuente de Alimento: Criados activamente por trolls como recurso alimenticio"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "20%",
+      "daño": "1D4-1",
+      "MR": 10
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Ala Derecha", "rango": "01-02", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "03-04", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Tórax", "rango": "09-12", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Patas", "rango": "13-16", "armadura": 2, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

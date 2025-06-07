@@ -1,0 +1,51 @@
+{
+  "nombre": "Gusano de Hielo Gigante",
+  "descripcion": "Un gusano gigante de piel translúcida blanca, con múltiples patas y tres sierras bucales. Aunque no es un artrópodo, se asemeja a un cruce entre un ciempiés y una oruga. Vive exclusivamente en temperaturas bajo cero y utiliza un esqueleto hidrostático para moverse a través de grietas en los glaciares. Es un depredador de emboscada que captura presas lanzando un limo pegajoso.",
+  "caracteristicas": {
+    "FUE": "2D6+20",
+    "CON": "3D6",
+    "TAM": "2D6+20",
+    "POD": "3D6",
+    "DES": "3D6+6",
+    "INT": "2D6"
+  },
+  "movimiento": 7,
+  "MR": 0,
+  "armadura": 2,
+  "puntos_vida": 15,
+  "puntos_magia": 11,
+  "SR_base": 1,
+
+  "habilidades": {
+    "Ocultarse en Nieve": "75%"
+  },
+
+"habilidadesEspeciales": [
+  "Fuego: Cualquier daño por fuego que penetre la armadura se duplica. Tiene 5% de probabilidad acumulativa por ronda de quedar Desmoralizado cuando se usa fuego contra él.",
+  "Temperatura: Su cuerpo se derrite después de exposición continua a temperaturas superiores a 5°C",
+  "Combate: Puede atacar tres veces por asalto: 1 mordisco y 2 disparos de limo (pueden ser contra objetivos diferentes). Un objetivo inmovilizado no puede atacar ni esquivar, pero puede parar y lanzar hechizos."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "50%",
+      "daño": "3D4",
+      "SR": 5,
+      "efecto": ""
+    },
+    {
+      "nombre": "Limo Pegajoso",
+      "porcentaje": "50%",
+      "daño": "N/A",
+      "SR": 1,
+      "efecto": "Inmoviliza objetivo (Fuerza del limo = CON del gusano), alcance 20m"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Cola", "rango": "01-06", "armadura": 2, "pv": "PV/3"},
+    {"locacion": "Cuerpo", "rango": "07-14", "armadura": 2, "pv": "PV/3 + 1"},
+    {"locacion": "Cabeza", "rango": "15-20", "armadura": 2, "pv": "PV/3"}
+  ]
+}

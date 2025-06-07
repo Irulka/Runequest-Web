@@ -1,0 +1,63 @@
+{
+  "nombre": "Cangrejo Arbóreo",
+  "descripcion": "Cangrejos gigantes adaptados a la vida terrestre y arbórea. Aunque eclosionan en el agua, los adultos poseen pulmones braquiostegales que les permiten respirar aire. Son depredadores que cazan mediante emboscadas desde los árboles, dejándose caer sobre sus presas. Morirían si permanecen sumergidos varias horas.",
+  "caracteristicas": {
+    "FUE": "2D6+12",
+    "CON": "2D6+6",
+    "TAM": "2D6+12",
+    "POD": "2D6",
+    "DES": "2D6",
+    "INT": "1 (instintivo)"
+  },
+  "movimiento": 6,
+  "MR": 5,
+  "armadura": {
+    "Cuerpo y pinzas": "9 pts",
+    "Patas": "4 pts"
+  },
+
+  "habilidades": {
+    "Trepar": "90%",
+    "Ocultarse": "75%",
+    "Olfatear": "75%",
+    "Acechar": "80%"
+  },
+ 
+  "habilidadesEspeciales": [
+    "Emboscada Arbórea: Atacan dejándose caer desde los árboles",
+    "Respiración Aérea: Pulmones braquiostegales (se ahogan en agua)",
+    "Camuflaje Natural: Se confunden con la corteza de los árboles"
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Pinza",
+      "porcentaje": "50%",
+      "daño": "1D10",
+      "MR": 9,
+      "efecto": "Ataque de trituración (puede usar ambas pinzas)"
+    },
+    {
+      "nombre": "Ataque por Caída",
+      "porcentaje": "75% (en emboscada)",
+      "daño": "+1D6 por impacto",
+      "MR": 3,
+      "efecto": "Golpe adicional por peso al caer desde altura"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Derecha", "rango": "01", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Izquierda", "rango": "02", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Derecha", "rango": "03", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "04", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Cuerpo Posterior", "rango": "05-08", "armadura": 9, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Central Derecha", "rango": "09", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Izquierda", "rango": "10", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "11", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "12", "armadura": 4, "pv": "PV/3 - 1"},
+    {"locacion": "Pinza Derecha", "rango": "13-15", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Pinza Izquierda", "rango": "16-18", "armadura": 9, "pv": "PV/3"},
+    {"locacion": "Cuerpo Frontal", "rango": "19-20", "armadura": 9, "pv": "PV/3 + 1"}
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "nombre": "Avispa Gigante",
+  "descripcion": "Un insecto depredador social de gran tamaño, la avispa gigante puede alimentarse directamente de sus presas o llevarlas a su colmena para sus larvas. Algunas culturas como los Jinetes de Avispas de Dragon Pass han logrado domesticar estas criaturas para montarlas.",
+  "caracteristicas": {
+    "FUE": "4D6",
+    "CON": "3D6",
+    "TAM": "3D6+6",
+    "POD": "3D6",
+    "DES": "2D6+12",
+    "INT": "2D6"
+  },
+  "movimiento": {
+    "tierra": 6,
+    "vuelo": 12,
+    "con_jinete": 10
+  },
+  "MR": 0,
+  "armadura": 3,
+  "puntos_vida": 13,
+  "puntos_magia": 11,
+  "SR_base": 1,
+
+  "habilidades": {
+    "Esquivar": "55%",
+    "Volar": "90%",
+    "Buscar": "60%"
+  },
+
+  "habilidadesEspeciales": [ 
+   "Montura: Puede llevar un jinete con TAM máximo igual o menor que su FUE. Con jinete, movimiento máximo se reduce a 10.",
+   "Veneno: El veneno tiene una POT igual a la CON de la avispa (10-11) y es sistémico." 
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "35%",
+      "daño": "1D6",
+      "SR": 6,
+      "efecto": ""
+    },
+    {
+      "nombre": "Aguijón",
+      "porcentaje": "70%",
+      "daño": "1D8",
+      "SR": 6,
+      "efecto": "Inyecta veneno (POT = CON de la avispa)"
+    }
+  ],
+
+  "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Central Derecha", "rango": "02", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "03", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Central Izquierda", "rango": "04", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 3, "pv": "PV/3"},
+    {"locacion": "Tórax", "rango": "09-10", "armadura": 3, "pv": "PV/3 + 1"},
+    {"locacion": "Ala Derecha", "rango": "11-12", "armadura": 1, "pv": "PV/3 - 1"},
+    {"locacion": "Ala Izquierda", "rango": "13-14", "armadura": 1, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "15-16", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "17-18", "armadura": 3, "pv": "PV/3 - 2"},
+    {"locacion": "Cabeza", "rango": "19-20", "armadura": 3, "pv": "PV/3"}
+  ],
+
+  "notas": {
+    "montura": "Puede llevar un jinete con TAM máximo igual o menor que su FUE. Con jinete, movimiento máximo se reduce a 10.",
+    "veneno": "El veneno tiene una POT igual a la CON de la avispa (10-11) y es sistémico.",
+    "jinetes": "Los Jinetes de Avispas tienen +2 a DES y -2 a TAM respecto a humanos normales."
+  }
+}

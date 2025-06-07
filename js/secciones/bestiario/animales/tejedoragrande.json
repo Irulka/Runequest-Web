@@ -1,0 +1,59 @@
+{
+  "nombre": "Araña Tejedora Grande",
+  "descripcion": "Una enorme araña tejedora del tamaño de un caballo, con patas gruesas cubiertas de quitina y ojos múltiples que brillan con inteligencia arácnida. Sus redes son lo suficientemente fuertes como para atrapar a un humano adulto, y su veneno puede matar a una criatura de tamaño mediano en minutos.",
+  "caracteristicas": {
+    "FUE": "6D6+18",
+    "CON": "3D6+12",
+    "TAM": "6D6+18",
+    "INT": "2D6",
+    "POD": "4D6",
+    "DES": "2D6+6"
+  },
+  "movimiento": 5,
+  "MR": 0,
+  "armadura": 6,
+  "puntos_vida": 30,
+  "puntos_magia": 14,
+  "SR_base": 2,
+
+  "habilidades": {
+    "Trepar": "90%",
+    "Ocultarse": "60%",
+    "Moverse Silenciosamente": "75%"
+  },
+
+  "habilidadesEspeciales": [
+    "Telaraña: Capas sucesivas son acumulativas. La araña no puede morder y lanzar telaraña en el mismo asalto. Una víctima atrapada solo puede intentar liberarse.",
+    "Veneno: El veneno tiene una POT igual a la CON de la araña y es sistémico."
+  ],
+
+  "ataques": [
+    {
+      "nombre": "Mordisco",
+      "porcentaje": "60%",
+      "daño": "1D6",
+      "SR": 6,
+      "efecto": "Inyecta veneno (POT = CON de la araña)"
+    },
+    {
+      "nombre": "Telaraña",
+      "porcentaje": "65%",
+      "daño": "N/A",
+      "SR": 6,
+      "efecto": "Efecto de pegamento (FUE = PV máx. de la araña), alcance 39m, área 3x3m"
+    }
+  ],
+
+ "localizaciones": [
+    {"locacion": "Pata Trasera Derecha", "rango": "01", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Trasera Izquierda", "rango": "02", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Trasera Derecha", "rango": "03", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Trasera Izquierda", "rango": "04", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Abdomen", "rango": "05-08", "armadura": 6, "pv": "PV/3 + 1"},
+    {"locacion": "Pata Central Delantera Derecha", "rango": "09-10", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Central Delantera Izquierda", "rango": "11-12", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Derecha", "rango": "13-14", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Pata Delantera Izquierda", "rango": "15-16", "armadura": 6, "pv": "PV/3 - 1"},
+    {"locacion": "Cabeza", "rango": "17-20", "armadura": 6, "pv": "PV/3"}
+  ]
+}

@@ -140,7 +140,7 @@ function aplicarImagenDeFondo(nombreImagen) {
   const imagenHeight = (GRID_ROWS * CELL_SIZE) + ((GRID_ROWS - 1) * GAP_SIZE);
 
   if (nombreImagen) {
-    estadoCombate.imagenFondo = `../../../imagenes/combates/${nombreImagen}.webp`;
+    estadoCombate.imagenFondo = `imagenes/combates/${nombreImagen}.webp`;
     tableroDiv.style.backgroundImage = `url(${estadoCombate.imagenFondo})`;
     tableroDiv.style.backgroundSize = `${imagenWidth}px ${imagenHeight}px`; // Tamaño fijo para la imagen
     tableroDiv.style.backgroundRepeat = 'no-repeat';

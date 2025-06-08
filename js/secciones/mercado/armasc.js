@@ -5,13 +5,12 @@
 
 (function() {
     const CONFIG = {
-        BASE: '../../',
+        BASE: '', // Aquí está el cambio clave: ahora es una cadena vacía.
         PATHS: {
             armasc: 'js/secciones/mercado/armasc.json'
         },
         DEBUG: false
     };
-
     // Variables globales
     let todasLasArmas = [];
     const UI = {

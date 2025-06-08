@@ -27,7 +27,8 @@
 
     async function cargarArmaduras() {
         try {
-            const response = await fetch(`/${CONFIG.PATHS.armaduras}`);
+            // Ahora la ruta se resuelve de forma relativa a la URL base del documento principal.
+            const response = await fetch(`${CONFIG.PATHS.armaduras}`); 
             if (!response.ok) throw new Error(`Error HTTP ${response.status}`);
             todasLasArmaduras = await response.json();
             
@@ -38,7 +39,10 @@
             return true;
         } catch (error) {
             console.error("Error cargando armaduras:", error);
-            todasLasArmaduras = generarDatosError();
+            // Si hay un error, puedes devolver un array vacío o null
+            // para que el resto del código no falle.
+            todasLasArmaduras = []; // Asegura que `todasLasArmaduras` no sea undefined en caso de error
+            mostrarMensajeTabla("Error al cargar los datos. Por favor, recarga la página.");
             return false;
         }
     }

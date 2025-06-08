@@ -13,7 +13,7 @@
                 </div>
 
                 <div id="selector-imagen-fondo-container" style="display:none; margin-top: 20px; text-align: center;">
-                    <label for="selector-imagen-fondo" style="color: white; margin-right: 10px;">Fondo del Tablero:</label>
+                    <label for="selector-imagen-fondo" style="color: white; margin-right: 10px;">Escenario:</label>
                     <select id="selector-imagen-fondo" class="modal-input-short" style="width: auto;">
                         <option value="">Ninguno</option>
                         <option value="almacen">Almacén Abandonado</option>
@@ -129,8 +129,8 @@
         grid-template-columns: repeat(20, 45px); /* **CAMBIADO: 20 columnas fijas de 45px** */
         grid-template-rows: repeat(18, 45px); /* **CAMBIADO: 18 filas fijas de 45px** */
         gap: 0px; /* **CAMBIADO: Reducido a 0 para que la imagen de fondo se vea continua** */
-        width: 900px; /* **CAMBIADO: 20 * 45px** */
-        height: 810px; /* **CAMBIADO: 18 * 45px** */
+        width: 904px; /* **CAMBIADO: 20 * 45px** */
+        height: 814px; /* **CAMBIADO: 18 * 45px** */
         margin: 40px auto;
         position: relative;
         background-color: #333; /* Este color solo se verá si la imagen no carga */
@@ -148,6 +148,7 @@
         border-radius: 0px; /* Sin borde radio para celdas si quieres líneas rectas */
         background: rgba(45, 55, 72, 0.0); /* **CAMBIADO: Fondo COMPLETAMENTE transparente para ver la imagen de fondo.** */
         display: flex;
+        border-radius: 10px;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;

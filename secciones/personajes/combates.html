@@ -2,22 +2,59 @@
     <div class="varita-header-container">
         <h2 class="text-center">Gestión de Combates</h2>
     </div>
-    
+
     <div class="varita-layout-container">
         <div class="varita-content-container">
-            <div class="varita-container">                
+            <div class="varita-container">
                 <div class="controles text-center">
                     <button id="btn-nuevo-combate" class="btn-magia">Nuevo Combate</button>
                     <button id="btn-agregar-pj" class="btn-magia">Añadir PJ</button>
                     <button id="btn-agregar-npc" class="btn-magia">Añadir NPC</button>
                 </div>
-                
+
+                <div id="selector-imagen-fondo-container" style="display:none; margin-top: 20px; text-align: center;">
+                    <label for="selector-imagen-fondo" style="color: white; margin-right: 10px;">Fondo del Tablero:</label>
+                    <select id="selector-imagen-fondo" class="modal-input-short" style="width: auto;">
+                        <option value="">Ninguno</option>
+                        <option value="almacen">Almacén Abandonado</option>
+                        <option value="barco">Barco</option>
+                        <option value="barcoatra">Barco Atracado</option>
+                        <option value="cala">Cala con Acantilados</option>
+                        <option value="campgarganta">Campamento en Garganta</option>
+                        <option value="campmont">Campamento entre Montañas</option>                        
+                        <option value="camporco1">Campamento Orco sur</option>
+                        <option value="camporco2">Campamento Orco Norte</option>
+                        <option value="cienaga">Cienaga</option>
+                        <option value="ciudadabandonada">Ciudad Abandonada</option>
+                        <option value="escaleraspiedra">Escaleras de Piedra</option>
+                        <option value="temploext">Exterior Templo Aldea</option>
+                        <option value="islote">Islote </option>
+                        <option value="mercadomuelle">Mercado del Muelle</option>
+                        <option value="mercadomuelle2">Mercado del Muelle Norte</option> 
+                        <option value="muralla1">Ciudad Amurallada </option>  
+                        <option value="muralla2">Ciudad Amurallada Mercado</option>
+                        <option value="pasarelas">Pasarelas sobre el Agua</option>
+                        <option value="posada">Pequeña Taberna</option>
+                        <option value="posada1">Posada 1º Planta</option>
+                        <option value="posada2">Posada 2º Planta</option>
+                        <option value="pueblomuralla">Pueblo Amurallado</option>
+                        <option value="puentelava">Puente sobre Río Lava</option> 
+                        <option value="relojsolar">Reloj Solar </option>      
+                        <option value="ruinadesierto">Ruinas en el Desierto</option> 
+                        <option value="templomontaña">Templo en la Montaña </option>                    
+                        <option value="torresuelo">Torre Ere-Trea (superficie)</option>
+                        <option value="torresotano">Torre Ere-Trea (sótano)</option>
+                        <option value="torrecatacumba">Torre Ere-Trea (catacumba)</option>
+                        </option>
+                    </select>
+                </div>
+
                 <div id="tablero-combate" style="display:none;"></div>
-                
+
                 <div id="lista-participantes" style="margin-top:20px; display:none;"></div>
             </div>
         </div>
-        
+
         <div class="eurmal-image-container">
             <img src="./imagenes/combates.webp" alt="Combate" class="eurmal-image">
         </div>
@@ -28,11 +65,11 @@
     <div class="modal-content-info">
         <span class="close-button-info">&times;</span>
         <h3 id="modal-personaje-nombre"></h3>
-        <p>PV: <span id="modal-personaje-pv"></span> 
+        <p>PV: <span id="modal-personaje-pv"></span>
             <button class="btn-mod-stat" data-stat="pv" data-action="minus">-</button>
             <button class="btn-mod-stat" data-stat="pv" data-action="plus">+</button>
         </p>
-        <p>PM: <span id="modal-personaje-pm"></span> 
+        <p>PM: <span id="modal-personaje-pm"></span>
             <button class="btn-mod-stat" data-stat="pm" data-action="minus">-</button>
             <button class="btn-mod-stat" data-stat="pm" data-action="plus">+</button>
         </p>
@@ -79,58 +116,71 @@
 </div>
 
 <style>
-    /* ===== ESTILOS CUADRÍCULA CUADRADA ===== */
-    #tablero-combate { 
-        display: grid;
-        grid-template-columns: repeat(16, 45px); /* 16 columnas fijas de 50px */
-        grid-template-rows: repeat(12, 45px); /* 12 filas fijas de 50px */
-        gap: 2px; 
-        width: calc(16 * 45px + 15 * 2px + 4px); /* Ancho calculado para 16 columnas + 15 gaps + padding */
-        margin: 40px auto;
-        position: relative;
-        background-color: #333; 
-        padding: 2px; 
-        overflow: hidden; 
+    /* ===== ESTILOS PARA CONTENEDOR PRINCIPAL ===== */
+    /* Ajustado para controlar el ancho de la caja contenedora y reducir los márgenes laterales */
+    .varita-content-container {
+        max-width: 1100px; /* **CAMBIADO: Ancho máximo (900px del tablero + 200px de margen, 100px a cada lado)** */
+        margin: 0 auto; /* Centra el contenedor en la página */
     }
 
-    .celda-tablero { 
+    /* ===== ESTILOS CUADRÍCULA CUADRADA ===== */
+    #tablero-combate {
+        display: grid;
+        grid-template-columns: repeat(20, 45px); /* **CAMBIADO: 20 columnas fijas de 45px** */
+        grid-template-rows: repeat(18, 45px); /* **CAMBIADO: 18 filas fijas de 45px** */
+        gap: 0px; /* **CAMBIADO: Reducido a 0 para que la imagen de fondo se vea continua** */
+        width: 900px; /* **CAMBIADO: 20 * 45px** */
+        height: 810px; /* **CAMBIADO: 18 * 45px** */
+        margin: 40px auto;
+        position: relative;
+        background-color: #333; /* Este color solo se verá si la imagen no carga */
+        padding: 0px; /* **CAMBIADO: Reducido a 0 para eliminar el borde.** */
+        overflow: hidden;
+        border: 2px solid #555; /* Borde para el tablero */
+        background-position: center center; /* Centrar la imagen de fondo */
+        /* Las propiedades background-image, background-size y background-repeat */
+        /* se gestionan ahora desde JavaScript en aplicarImagenDeFondo() */
+    }
+
+    .celda-tablero {
         width: 100%;
         height: 100%;
-        border-radius: 8px; 
-        background: #2d3748;
+        border-radius: 0px; /* Sin borde radio para celdas si quieres líneas rectas */
+        background: rgba(45, 55, 72, 0.0); /* **CAMBIADO: Fondo COMPLETAMENTE transparente para ver la imagen de fondo.** */
         display: flex;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
+        border: 1px solid rgba(0,0,0,0.1); /* **CAMBIADO: Borde suave para la cuadrícula sobre la imagen.** */
     }
 
     /* Clases para estados de las celdas */
-    .celda-ocupada { background: #2c5282; } 
-    .celda-enemigo { background: #9b2c2c; } 
-    .celda-fallecido { 
-        background-color: rgba(0,0,0,0.7); 
-        border: 2px dashed #ff0000; 
+    .celda-ocupada { background: rgba(44, 82, 130, 0.5); } /* Fondo semitransparente */
+    .celda-enemigo { background: rgba(155, 44, 44, 0.5); } /* Fondo semitransparente */
+    .celda-fallecido {
+        background-color: rgba(0,0,0,0.7);
+        border: 2px dashed #ff0000;
     }
     .celda-fallecido .personaje-hex {
-        opacity: 0.5; 
-        filter: grayscale(100%); 
-        cursor: default; 
+        opacity: 0.5;
+        filter: grayscale(100%);
+        cursor: default;
     }
 
     /* Estilos para tipos de obstáculos */
-    .celda-obstaculo-celeste { background-color: #63b3ed; } 
-    .celda-obstaculo-verde { background-color: #68d391; } 
-    .celda-obstaculo-gris { background-color: #a0aec0; } 
-    .celda-obstaculo-marron { background-color: #b3745c; } 
-    .celda-obstaculo-negro { background-color: #000000; }  
-    .celda-obstaculo-original { background-color: #2d3748; } 
+    .celda-obstaculo-celeste { background-color: rgba(99, 179, 237, 0.7); }
+    .celda-obstaculo-verde { background-color: rgba(104, 211, 145, 0.7); }
+    .celda-obstaculo-gris { background-color: rgba(160, 174, 192, 0.7); }
+    .celda-obstaculo-marron { background-color: rgba(179, 116, 92, 0.7); }
+    .celda-obstaculo-negro { background-color: rgba(0, 0, 0, 0.7); }
+    .celda-obstaculo-original { background-color: rgba(45, 55, 72, 0.0); } /* Transparente */
 
 
     .personaje-hex {
-        width: 40px; /* Reducido para ajustarse a 50x50 */
-        height: 40px; /* Reducido para ajustarse a 50x50 */
+        width: 40px; /* **CAMBIADO: Tamaño del personaje, más pequeño que la celda de 45px** */
+        height: 40px; /* **CAMBIADO: Tamaño del personaje** */
         border-radius: 50%;
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.6); /* Más opaco para que se vea bien sobre la imagen */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -138,9 +188,15 @@
         font-weight: bold;
         cursor: move;
         user-select: none;
-        font-size: 0.8em; /* Ajustado el tamaño de fuente */
+        font-size: 0.7em; /* Ajustado el tamaño de fuente */
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
+    /* Asegurar que el personaje se centre en la celda de 45px */
+    .celda-tablero .personaje-hex {
+        width: 40px; /* Deja un margen de 2.5px a cada lado dentro de la celda de 45px */
+        height: 40px;
+    }
+
 
     /* Efectos arrastre */
     #personaje-arrastrando {
@@ -158,19 +214,18 @@
         margin: 5px 0;
         border-radius: 4px;
         color: white;
-        display: flex; 
-        justify-content: space-between; 
-        align-items: center; 
-        /* flex-wrap: wrap; Ya no es necesario si los datos vuelven a una línea */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .participante-card .info-personaje-lista {
-        flex-grow: 1; 
-        margin-right: 10px; 
+        flex-grow: 1;
+        margin-right: 10px;
     }
     .participante-card .info-personaje-lista span {
-        display: inline; /* Vuelve a mostrar en línea */
-        margin-right: 10px; /* Espacio entre los elementos de la línea */
+        display: inline;
+        margin-right: 10px;
     }
     .participante-card .info-personaje-lista span:last-child {
         margin-right: 0;
@@ -178,7 +233,7 @@
 
 
     /* Estilo para los botones de "Colocar" en la lista de participantes */
-    .participante-card .btn-magia-pequeno { 
+    .participante-card .btn-magia-pequeno {
         background-color: #d69e2e;
         border: none;
         color: #1a202c;
@@ -187,11 +242,11 @@
         text-decoration: none;
         display: inline-block;
         font-size: 14px;
-        margin-left: 10px; 
+        margin-left: 10px;
         cursor: pointer;
         border-radius: 4px;
         transition: background-color 0.3s ease;
-        flex-shrink: 0; 
+        flex-shrink: 0;
     }
 
     .participante-card .btn-magia-pequeno:hover {
@@ -219,7 +274,7 @@
         border: 1px solid #888;
         border-radius: 10px;
         width: 80%;
-        max-width: 280px; 
+        max-width: 280px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         position: relative;
         color: white;
@@ -345,18 +400,18 @@
 
 
     .modal-input {
-        width: calc(100% - 10px); 
+        width: calc(100% - 10px);
         padding: 8px;
         border: 1px solid #555;
         border-radius: 5px;
         background-color: #2a3340;
         color: white;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
 
     /* Nuevo: Estilo para inputs de PV/PM más estrechos */
     .modal-input-short {
-        width: 60px; /* Ancho fijo para 2 dígitos */
+        width: 60px;
         padding: 8px;
         border: 1px solid #555;
         border-radius: 5px;
@@ -364,7 +419,7 @@
         color: white;
         box-sizing: border-box;
         text-align: center;
-        margin-right: 5px; /* Espacio antes de los botones */
+        margin-right: 5px;
     }
 
     #btn-confirmar-add-personaje {

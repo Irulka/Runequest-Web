@@ -4,8 +4,8 @@
  */
 
 (function() {
-    const CONFIG = {
-        BASE: '../../',
+        const CONFIG = {
+        BASE: '', // Aquí está el cambio clave: ahora es una cadena vacía.
         PATHS: {
             armasd: 'js/secciones/mercado/armasd.json'
         },

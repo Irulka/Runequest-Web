@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentros en Zonas Urbanas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .controles-superiores {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .controles-superiores > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .controles-superiores select {
+            width: 150px;
+            padding: 8px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 4px;
+            color: #f7fafc;
+            cursor: pointer;
+            font-size: 1.1rem;
+            text-align: center;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23f7fafc%22%20d%3D%22M287%2069.9a14.7%2014.7%200%200%200-20.9%200L146.2%20189.9%2026.3%2069.9a14.7%2014.7%200%200%200-20.9%2020.9l130.4%20130.4a14.7%2014.7%200%200%200%2020.9%200L287%2090.8a14.7%2014.7%200%200%200%200-20.9z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 8px top 50%;
+            background-size: 12px auto;
+        }
+
+        .controles-inferiores {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        #input-valor {
+            width: 120px;
+            padding: 8px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 4px;
+            color: #f7fafc;
+            font-size: 1.1rem;
+            text-align: center;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .controles-superiores {
+                flex-direction: column;
+                align-items: center;
+            }
+            .controles-superiores select {
+                width: 100%;
+            }
+            .controles-inferiores {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center">Encuentros en Zonas Urbanas</h2>
+
+    <div class="seccion-activa">
+        <div class="varita-layout-container">
+            <div class="varita-content-container">
+                <div class="varita-container">
+                    <p class="explicacion-varita">
+                        Los encuentros en las ciudades de Glorantha son un tapiz vibrante de la vida cotidiana, lo misterioso y lo peligroso. Dependiendo del <strong>tamaño de la urbe</strong>, el <strong>momento del día</strong> y la <strong>zona</strong> por la que transites, podrás encontrarte con situaciones que van desde lo mundano hasta lo verdaderamente inesperado.
+                    </p>
+
+                    <div class="controles-superiores">
+                        <div>
+                            <label for="ciudad-tamano">Tamaño de la Ciudad:</label>
+                            <select id="ciudad-tamano">
+                                <option value="pequena">Pequeña</option>
+                                <option value="media">Media</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="momento-dia">Momento del Día:</label>
+                            <select id="momento-dia">
+                                <option value="dia">Día</option>
+                                <option value="noche">Noche</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="zona">Zona:</label>
+                            <select id="zona">
+                                <option value="civilizada">Civilizada</option>
+                                <option value="salvaje">Salvaje</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="controles-inferiores">
+                        <button id="btn-aleatorio" class="btn-magia">Tirada Aleatoria</button>
+                        <button id="btn-manual" class="btn-magia">Introducir Valor</button>
+                        <input type="number" id="input-valor" min="1" max="100" placeholder="1-100">
+                    </div>
+
+                    <div class="resultados-container" style="display: none;">
+                        <div id="resultado-principal" class="resultado-box resultado-principal">
+                            <div class="resultado-valor"></div>
+                            <div class="resultado-efecto"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="eurmal-image-container">
+                <img src="imagenes/ciudad.webp" alt="Imagen de Ciudad" class="eurmal-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/secciones/tablas/encuentros.js"></script>
+</body>
+</html>

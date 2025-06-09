@@ -6,45 +6,49 @@ function initRazas() {
     const selectRaza = document.getElementById('raza');
     const resultadosContainer = document.getElementById('resultados-container');
     
-    // Lista de razas disponibles
+    // Determinar la ruta base según el entorno
+    const isGitHubPages = window.location.host.includes('github.io');
+    const basePath = isGitHubPages ? '/Runequest-Webt' : '';
+    
+    // Lista de razas disponibles (rutas modificadas)
     const razasLista = [
-        { nombre: "Dryade", archivo: "/razas/dryade.json" }, 
-        { nombre: "Elfo Marrón", archivo: "/razas/elfom.json" }, 
-        { nombre: "Elfo Verde", archivo: "/razas/elfov.json" },
-        { nombre: "Elfo Amarillo", archivo: "/razas/elfoa.json" },
-        { nombre: "Elfo Negro", archivo: "/razas/elfon.json" },
-        { nombre: "Elfo Azul", archivo: "/razas/elfoaz.json" },        
-        { nombre: "Duende", archivo: "/razas/duende.json" },
-        { nombre: "Corredor", archivo: "/razas/corredor.json" },
-        { nombre: "Babuino", archivo: "/razas/babuino.json" },
-        { nombre: "Centauro", archivo: "/razas/centauro.json" },
-        { nombre: "Mujer Zorro (forma animal)", archivo: "/razas/zorroa.json" },
-        { nombre: "Mujer Zorro (Forma mujer)", archivo: "/razas/zorrob.json" },
-        { nombre: "Mantícora", archivo: "/razas/manticora.json" },
-        { nombre: "Minotauro", archivo: "/razas/minotauro.json" },
-        { nombre: "Sátiro", archivo: "/razas/satiro.json" }, 
-        { nombre: "Dragonewt Crestado (Primer Estadío)", archivo: "/razas/drago1.json" },
-        { nombre: "Dragonewt Picudo (Segundo Estadío)", archivo: "/razas/drago2.json" },
-        { nombre: "Dragonwet Sacerdote (Tercer Estadío)", archivo: "/razas/drago3.json" },
-        { nombre: "Dragonewt (Cuarto Estadío)", archivo: "/razas/drago4.json" },
-        { nombre: "Dragonewt (Estadío Final)", archivo: "/razas/drago5.json" },
-        { nombre: "Gigante", archivo: "/razas/gigante.json" },
-        { nombre: "Glotarón", archivo: "/razas/glotaron.json" },
-        { nombre: "Agimori (Hombre y Medio)", archivo: "/razas/hombreymedio.json" },
-        { nombre: "Morocante", archivo: "/razas/moro.json" },
-        { nombre: "Enano", archivo: "/razas/enano.json" },
-        { nombre: "Newtling", archivo: "/razas/newtling.json" },  
-        { nombre: "Ludoch", archivo: "/razas/ludoch.json" },  
-        { nombre: "Troll Negro", archivo: "/razas/trolln.json" },
-        { nombre: "Gran Troll", archivo: "/razas/trollg.json" },  
-        { nombre: "Troll Raza Señorial", archivo: "/razas/matriarca.json" }, 
-        { nombre: "Trollkin", archivo: "/razas/trollkin.json" },   
-        { nombre: "Troll de las Cavernas", archivo: "/razas/trollc.json" }, 
-        { nombre: "Troll Marino", archivo: "/razas/trollmar.json" }, 
-        { nombre: "Hijo del Viento", archivo: "/razas/hijov.json" }, 
-        { nombre: "Telmori", archivo: "/razas/hermano.json" },         
-        { nombre: "Jinete de los Colmillos", archivo: "/razas/jinete.json" },                               
-        { nombre: "Pato", archivo: "/razas/pato.json" } 
+        { nombre: "Dryade", archivo: `${basePath}/js/secciones/bestiario/razas/dryade.json` }, 
+        { nombre: "Elfo Marrón", archivo: `${basePath}/js/secciones/bestiario/razas/elfom.json` }, 
+        { nombre: "Elfo Verde", archivo: `${basePath}/js/secciones/bestiario/razas/elfov.json` },
+        { nombre: "Elfo Amarillo", archivo: `${basePath}/js/secciones/bestiario/razas/elfoa.json` },
+        { nombre: "Elfo Negro", archivo: `${basePath}/js/secciones/bestiario/razas/elfon.json` },
+        { nombre: "Elfo Azul", archivo: `${basePath}/js/secciones/bestiario/razas/elfoaz.json` },        
+        { nombre: "Duende", archivo: `${basePath}/js/secciones/bestiario/razas/duende.json` },
+        { nombre: "Corredor", archivo: `${basePath}/js/secciones/bestiario/razas/corredor.json` },
+        { nombre: "Babuino", archivo: `${basePath}/js/secciones/bestiario/razas/babuino.json` },
+        { nombre: "Centauro", archivo: `${basePath}/js/secciones/bestiario/razas/centauro.json` },
+        { nombre: "Mujer Zorro (forma animal)", archivo: `${basePath}/js/secciones/bestiario/razas/zorroa.json` },
+        { nombre: "Mujer Zorro (Forma mujer)", archivo: `${basePath}/js/secciones/bestiario/razas/zorrob.json` },
+        { nombre: "Mantícora", archivo: `${basePath}/js/secciones/bestiario/razas/manticora.json` },
+        { nombre: "Minotauro", archivo: `${basePath}/js/secciones/bestiario/razas/minotauro.json` },
+        { nombre: "Sátiro", archivo: `${basePath}/js/secciones/bestiario/razas/satiro.json` }, 
+        { nombre: "Dragonewt Crestado (Primer Estadío)", archivo: `${basePath}/js/secciones/bestiario/razas/drago1.json` },
+        { nombre: "Dragonewt Picudo (Segundo Estadío)", archivo: `${basePath}/js/secciones/bestiario/razas/drago2.json` },
+        { nombre: "Dragonwet Sacerdote (Tercer Estadío)", archivo: `${basePath}/js/secciones/bestiario/razas/drago3.json` },
+        { nombre: "Dragonewt (Cuarto Estadío)", archivo: `${basePath}/js/secciones/bestiario/razas/drago4.json` },
+        { nombre: "Dragonewt (Estadío Final)", archivo: `${basePath}/js/secciones/bestiario/razas/drago5.json` },
+        { nombre: "Gigante", archivo: `${basePath}/js/secciones/bestiario/razas/gigante.json` },
+        { nombre: "Glotarón", archivo: `${basePath}/js/secciones/bestiario/razas/glotaron.json` },
+        { nombre: "Agimori (Hombre y Medio)", archivo: `${basePath}/js/secciones/bestiario/razas/hombreymedio.json` },
+        { nombre: "Morocante", archivo: `${basePath}/js/secciones/bestiario/razas/moro.json` },
+        { nombre: "Enano", archivo: `${basePath}/js/secciones/bestiario/razas/enano.json` },
+        { nombre: "Newtling", archivo: `${basePath}/js/secciones/bestiario/razas/newtling.json` },  
+        { nombre: "Ludoch", archivo: `${basePath}/js/secciones/bestiario/razas/ludoch.json` },  
+        { nombre: "Troll Negro", archivo: `${basePath}/js/secciones/bestiario/razas/trolln.json` },
+        { nombre: "Gran Troll", archivo: `${basePath}/js/secciones/bestiario/razas/trollg.json` },  
+        { nombre: "Troll Raza Señorial", archivo: `${basePath}/js/secciones/bestiario/razas/matriarca.json` }, 
+        { nombre: "Trollkin", archivo: `${basePath}/js/secciones/bestiario/razas/trollkin.json` },   
+        { nombre: "Troll de las Cavernas", archivo: `${basePath}/js/secciones/bestiario/razas/trollc.json` }, 
+        { nombre: "Troll Marino", archivo: `${basePath}/js/secciones/bestiario/razas/trollmar.json` }, 
+        { nombre: "Hijo del Viento", archivo: `${basePath}/js/secciones/bestiario/razas/hijov.json` }, 
+        { nombre: "Telmori", archivo: `${basePath}/js/secciones/bestiario/razas/hermano.json` },         
+        { nombre: "Jinete de los Colmillos", archivo: `${basePath}/js/secciones/bestiario/razas/jinete.json` },                               
+        { nombre: "Pato", archivo: `${basePath}/js/secciones/bestiario/razas/pato.json` } 
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
     // Llenar el select con las razas
@@ -65,7 +69,7 @@ function initRazas() {
         }
         
         // Cargar el archivo específico de la raza
-        fetch(`../js/secciones/bestiario/${archivoSeleccionado}`)
+        fetch(archivoSeleccionado)
             .then(response => {
                 if (!response.ok) throw new Error('Raza no encontrada');
                 return response.json();

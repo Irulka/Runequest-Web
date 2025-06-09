@@ -6,57 +6,61 @@ function initBestiario() {
     const selectMonstruo = document.getElementById('monstruo');
     const resultadosContainer = document.getElementById('resultados-container');
     
-    // Lista de monstruos disponibles
+    // Determinar la ruta base según el entorno
+    const isGitHubPages = window.location.host.includes('github.io');
+    const basePath = isGitHubPages ? '/Runequest-Web' : '';
+    
+    // Lista de monstruos disponibles (rutas modificadas)
     const monstruosLista = [
-        { nombre: "Alosaurio", archivo: "/monstruos/alosaurio.json" },
-        { nombre: "Anguila Gigante", archivo: "/monstruos/anguila.json" },        
-        { nombre: "Anquilosaurio", archivo: "/monstruos/anquilo.json" },
-        { nombre: "Bailarina de las Tinieblas", archivo: "/monstruos/dancer.json" },
-        { nombre: "Brontosaurio", archivo: "/monstruos/bronto.json" },        
-        { nombre: "Brollachán", archivo: "/monstruos/brolla.json" },        
-        { nombre: "Huan-to", archivo: "/monstruos/huanto.json" },
-        { nombre: "Broo", archivo: "/monstruos/broo.json" },
-        { nombre: "Deinomychus", archivo: "/monstruos/deino.json" }, 
-        { nombre: "Dragón de los Sueños", archivo: "/monstruos/dragon.json" },           
-        { nombre: "Elasmosaurus", archivo: "/monstruos/elasmo.json" }, 
-        { nombre: "Esqueleto", archivo: "/monstruos/esqueleto.json" },                        
-        { nombre: "Insecto Toro", archivo: "/monstruos/bullsit.json" },
-        { nombre: "Caracol Dragón", archivo: "/monstruos/caracol.json" },
-        { nombre: "Necrófago", archivo: "/monstruos/necrofago.json" },
-        { nombre: "Glargola", archivo: "/monstruos/gargola.json" },       
-        { nombre: "Gorp", archivo: "/monstruos/gorp.json" },
-        { nombre: "Grifo", archivo: "/monstruos/grifo.json" },        
-        { nombre: "Gusano Dragón", archivo: "/monstruos/gusano.json" },
-        { nombre: "Hadrosaurio", archivo: "/monstruos/hadro.json" }, 
-        { nombre: "Hipogrifo", archivo: "/monstruos/hipog.json" },                
-        { nombre: "Hydra Menor", archivo: "/monstruos/hydra.json" },
-        { nombre: "Hijo de Krarsht", archivo: "/monstruos/hijosdek.json" },
-        { nombre: "Hombre Escoprión", archivo: "/monstruos/hscorpion.json" },
-        { nombre: "Reptil Marino", archivo: "/monstruos/lagartosa.json" },        
-        { nombre: "Lagarto de las Rocas", archivo: "/monstruos/lagarto.json" },        
-        { nombre: "Magisaurio", archivo: "/monstruos/magi.json" },              
-        { nombre: "Jackoso", archivo: "/monstruos/jackoso.json" },
-        { nombre: "Pteranodón Gitante", archivo: "/monstruos/ptera.json" },        
-        { nombre: "Ogro", archivo: "/monstruos/ogro.json" },
-        { nombre: "Pulpandante", archivo: "monstruos/pulpa.json" },
-        { nombre: "Renacido", archivo: "/monstruos/reven.json" },        
-        { nombre: "Sapo de los Acantilados", archivo: "/monstruos/sapo.json" },
-        { nombre: "Semi Pájaros", archivo: "/monstruos/semi.json" }, 
-        { nombre: "Tiranosaurio", archivo: "/monstruos/tirano.json" },         
-        { nombre: "Triceratops", archivo: "/monstruos/trice.json" },  
-        { nombre: "Toro Celestial", archivo: "/monstruos/toroc.json" },         
-        { nombre: "Tortua Marina Gigante", archivo: "/monstruos/tortumar.json" },
-        { nombre: "Tortuga Mordedora Gigante", archivo: "/monstruos/tortu.json" },                                       
-        { nombre: "Arpía", archivo: "/monstruos/arpia.json" },
-        { nombre: "Unicornio", archivo: "/monstruos/unicornio.json" },       
-        { nombre: "Vampiro", archivo: "/monstruos/vampiro.json" },
-        { nombre: "Wyrm", archivo: "/monstruos/wyrm.json" },
-        { nombre: "Wyrm Marino", archivo: "/monstruos/wyrnmma.json" },
-        { nombre: "Wyverna", archivo: "/monstruos/wyverna.json" },  
-        { nombre: "Devorador", archivo: "/monstruos/devorador.json" }, 
-        { nombre: "Jolanti", archivo: "/monstruos/jolanti.json" },  
-        { nombre: "Nilmerg", archivo: "/monstruos/nilmerg.json" },                              
-        { nombre: "Zombi", archivo: "/monstruos/zombi.json" }                  
+        { nombre: "Alosaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/alosaurio.json` },
+        { nombre: "Anguila Gigante", archivo: `${basePath}/js/secciones/bestiario/monstruos/anguila.json` },        
+        { nombre: "Anquilosaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/anquilo.json` },
+        { nombre: "Bailarina de las Tinieblas", archivo: `${basePath}/js/secciones/bestiario/monstruos/dancer.json` },
+        { nombre: "Brontosaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/bronto.json` },        
+        { nombre: "Brollachán", archivo: `${basePath}/js/secciones/bestiario/monstruos/brolla.json` },        
+        { nombre: "Huan-to", archivo: `${basePath}/js/secciones/bestiario/monstruos/huanto.json` },
+        { nombre: "Broo", archivo: `${basePath}/js/secciones/bestiario/monstruos/broo.json` },
+        { nombre: "Deinomychus", archivo: `${basePath}/js/secciones/bestiario/monstruos/deino.json` }, 
+        { nombre: "Dragón de los Sueños", archivo: `${basePath}/js/secciones/bestiario/monstruos/dragon.json` },           
+        { nombre: "Elasmosaurus", archivo: `${basePath}/js/secciones/bestiario/monstruos/elasmo.json` }, 
+        { nombre: "Esqueleto", archivo: `${basePath}/js/secciones/bestiario/monstruos/esqueleto.json` },                        
+        { nombre: "Insecto Toro", archivo: `${basePath}/js/secciones/bestiario/monstruos/bullsit.json` },
+        { nombre: "Caracol Dragón", archivo: `${basePath}/js/secciones/bestiario/monstruos/caracol.json` },
+        { nombre: "Necrófago", archivo: `${basePath}/js/secciones/bestiario/monstruos/necrofago.json` },
+        { nombre: "Glargola", archivo: `${basePath}/js/secciones/bestiario/monstruos/gargola.json` },       
+        { nombre: "Gorp", archivo: `${basePath}/js/secciones/bestiario/monstruos/gorp.json` },
+        { nombre: "Grifo", archivo: `${basePath}/js/secciones/bestiario/monstruos/grifo.json` },        
+        { nombre: "Gusano Dragón", archivo: `${basePath}/js/secciones/bestiario/monstruos/gusano.json` },
+        { nombre: "Hadrosaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/hadro.json` }, 
+        { nombre: "Hipogrifo", archivo: `${basePath}/js/secciones/bestiario/monstruos/hipog.json` },                
+        { nombre: "Hydra Menor", archivo: `${basePath}/js/secciones/bestiario/monstruos/hydra.json` },
+        { nombre: "Hijo de Krarsht", archivo: `${basePath}/js/secciones/bestiario/monstruos/hijosdek.json` },
+        { nombre: "Hombre Escoprión", archivo: `${basePath}/js/secciones/bestiario/monstruos/hscorpion.json` },
+        { nombre: "Reptil Marino", archivo: `${basePath}/js/secciones/bestiario/monstruos/lagartosa.json` },        
+        { nombre: "Lagarto de las Rocas", archivo: `${basePath}/js/secciones/bestiario/monstruos/lagarto.json` },        
+        { nombre: "Magisaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/magi.json` },              
+        { nombre: "Jackoso", archivo: `${basePath}/js/secciones/bestiario/monstruos/jackoso.json` },
+        { nombre: "Pteranodón Gitante", archivo: `${basePath}/js/secciones/bestiario/monstruos/ptera.json` },        
+        { nombre: "Ogro", archivo: `${basePath}/js/secciones/bestiario/monstruos/ogro.json` },
+        { nombre: "Pulpandante", archivo: `${basePath}/js/secciones/bestiario/monstruos/pulpa.json` },
+        { nombre: "Renacido", archivo: `${basePath}/js/secciones/bestiario/monstruos/reven.json` },        
+        { nombre: "Sapo de los Acantilados", archivo: `${basePath}/js/secciones/bestiario/monstruos/sapo.json` },
+        { nombre: "Semi Pájaros", archivo: `${basePath}/js/secciones/bestiario/monstruos/semi.json` }, 
+        { nombre: "Tiranosaurio", archivo: `${basePath}/js/secciones/bestiario/monstruos/tirano.json` },         
+        { nombre: "Triceratops", archivo: `${basePath}/js/secciones/bestiario/monstruos/trice.json` },  
+        { nombre: "Toro Celestial", archivo: `${basePath}/js/secciones/bestiario/monstruos/toroc.json` },         
+        { nombre: "Tortua Marina Gigante", archivo: `${basePath}/js/secciones/bestiario/monstruos/tortumar.json` },
+        { nombre: "Tortuga Mordedora Gigante", archivo: `${basePath}/js/secciones/bestiario/monstruos/tortu.json` },                                       
+        { nombre: "Arpía", archivo: `${basePath}/js/secciones/bestiario/monstruos/arpia.json` },
+        { nombre: "Unicornio", archivo: `${basePath}/js/secciones/bestiario/monstruos/unicornio.json` },       
+        { nombre: "Vampiro", archivo: `${basePath}/js/secciones/bestiario/monstruos/vampiro.json` },
+        { nombre: "Wyrm", archivo: `${basePath}/js/secciones/bestiario/monstruos/wyrm.json` },
+        { nombre: "Wyrm Marino", archivo: `${basePath}/js/secciones/bestiario/monstruos/wyrnmma.json` },
+        { nombre: "Wyverna", archivo: `${basePath}/js/secciones/bestiario/monstruos/wyverna.json` },  
+        { nombre: "Devorador", archivo: `${basePath}/js/secciones/bestiario/monstruos/devorador.json` }, 
+        { nombre: "Jolanti", archivo: `${basePath}/js/secciones/bestiario/monstruos/jolanti.json` },  
+        { nombre: "Nilmerg", archivo: `${basePath}/js/secciones/bestiario/monstruos/nilmerg.json` },                              
+        { nombre: "Zombi", archivo: `${basePath}/js/secciones/bestiario/monstruos/zombi.json` }                  
     ].sort((a, b) => a.nombre.localeCompare(b.nombre));
 
     // Llenar el select con los monstruos
@@ -77,7 +81,7 @@ function initBestiario() {
         }
         
         // Cargar el archivo específico del monstruo
-        fetch(`../js/secciones/bestiario/${archivoSeleccionado}`)
+        fetch(archivoSeleccionado)
             .then(response => {
                 if (!response.ok) throw new Error('Monstruo no encontrado');
                 return response.json();
@@ -100,20 +104,20 @@ function initBestiario() {
     });
 
     // Función para variar porcentajes ±25% con límites de 10-100%
-  function variarPorcentaje(valor) {
-    if (typeof valor === 'string' && valor.endsWith('%')) {
-        const num = parseInt(valor);
-        if (!isNaN(num)) {
-            // Variación aleatoria entre -10 y +25
-            const variacion = Math.floor(Math.random() * 36) - 10;
-            let nuevoValor = num + variacion;
-            // Asegurar que esté entre 10% y 150%
-            nuevoValor = Math.max(10, Math.min(150, nuevoValor));
-            return `${nuevoValor}%`;
+    function variarPorcentaje(valor) {
+        if (typeof valor === 'string' && valor.endsWith('%')) {
+            const num = parseInt(valor);
+            if (!isNaN(num)) {
+                // Variación aleatoria entre -10 y +25
+                const variacion = Math.floor(Math.random() * 36) - 10;
+                let nuevoValor = num + variacion;
+                // Asegurar que esté entre 10% y 150%
+                nuevoValor = Math.max(10, Math.min(150, nuevoValor));
+                return `${nuevoValor}%`;
+            }
         }
+        return valor;
     }
-    return valor;
-}
 
     // Función para procesar objetos con posibles porcentajes
     function procesarPorcentajes(obj) {
@@ -174,61 +178,61 @@ function initBestiario() {
         // Calcular modificadores de combate
         const modCombate = calcularModificadoresCombate(caracteristicasGeneradas);
             
-            // Procesar todos los campos con porcentajes
-            const habilidadesProcesadas = procesarPorcentajes(monstruo.habilidades);
-            const idiomasProcesados = procesarPorcentajes(monstruo.idiomas);
-            const pasionesProcesadas = procesarPorcentajes(monstruo.pasiones);
-            const runasProcesadas = procesarPorcentajes(monstruo.runas);
-            const ataquesProcesados = procesarAtaques(monstruo.ataques);
-            
-            document.getElementById('resultado-principal').innerHTML = `
-                <div class="ficha-monstruo">
-                    <h2>${monstruo.nombre}</h2>
-                    
-                    <div class="tabs">
-                        <button class="tab-btn active" data-tab="caracteristicas">Características</button>
-                        <button class="tab-btn" data-tab="combate">Combate</button>
-                        <button class="tab-btn" data-tab="habilidades">Habilidades</button>
-                        <button class="tab-btn" data-tab="magia">Magia</button>
-                    </div>
-                    
-                    <div class="tab-content active" id="caracteristicas">
-                        ${generarTablaCaracteristicas(
-                            {...monstruo, pasiones: pasionesProcesadas, runas: runasProcesadas}, 
-                            caracteristicasGeneradas, 
-                            puntosVida, 
-                            pvLocalizaciones, 
-                            modCombate
-                        )}
-                    </div>
-                    
-                    <div class="tab-content" id="combate">
-                        ${generarTablaCombate({...monstruo, ataques: ataquesProcesados}, pvLocalizaciones, puntosVida)}
-                    </div>
-                    
-                    <div class="tab-content" id="habilidades">
-                        ${generarTablaHabilidades({...monstruo, habilidades: habilidadesProcesadas, idiomas: idiomasProcesados})}
-                    </div>
-                    
-                    <div class="tab-content" id="magia">
-                        ${generarTablaMagia(monstruo, caracteristicasGeneradas)}
-                    </div>
-                    
-                    <button class="btn-magia">Volver a la lista</button>
+        // Procesar todos los campos con porcentajes
+        const habilidadesProcesadas = procesarPorcentajes(monstruo.habilidades);
+        const idiomasProcesados = procesarPorcentajes(monstruo.idiomas);
+        const pasionesProcesadas = procesarPorcentajes(monstruo.pasiones);
+        const runasProcesadas = procesarPorcentajes(monstruo.runas);
+        const ataquesProcesados = procesarAtaques(monstruo.ataques);
+        
+        document.getElementById('resultado-principal').innerHTML = `
+            <div class="ficha-monstruo">
+                <h2>${monstruo.nombre}</h2>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="caracteristicas">Características</button>
+                    <button class="tab-btn" data-tab="combate">Combate</button>
+                    <button class="tab-btn" data-tab="habilidades">Habilidades</button>
+                    <button class="tab-btn" data-tab="magia">Magia</button>
                 </div>
-            `;
-            
-            // Configurar pestañas
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const tabId = btn.getAttribute('data-tab');
-                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                    document.getElementById(tabId).classList.add('active');
-                    btn.classList.add('active');
-                });
+                
+                <div class="tab-content active" id="caracteristicas">
+                    ${generarTablaCaracteristicas(
+                        {...monstruo, pasiones: pasionesProcesadas, runas: runasProcesadas}, 
+                        caracteristicasGeneradas, 
+                        puntosVida, 
+                        pvLocalizaciones, 
+                        modCombate
+                    )}
+                </div>
+                
+                <div class="tab-content" id="combate">
+                    ${generarTablaCombate({...monstruo, ataques: ataquesProcesados}, pvLocalizaciones, puntosVida)}
+                </div>
+                
+                <div class="tab-content" id="habilidades">
+                    ${generarTablaHabilidades({...monstruo, habilidades: habilidadesProcesadas, idiomas: idiomasProcesados})}
+                </div>
+                
+                <div class="tab-content" id="magia">
+                    ${generarTablaMagia(monstruo, caracteristicasGeneradas)}
+                </div>
+                
+                <button class="btn-magia">Volver a la lista</button>
+            </div>
+        `;
+        
+        // Configurar pestañas
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+                btn.classList.add('active');
             });
-        }
+        });
+    }
 
     function generarTablaCaracteristicas(monstruo, caracteristicas, puntosVida, pvLocalizaciones, modCombate) {
         return `

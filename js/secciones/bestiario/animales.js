@@ -6,7 +6,9 @@ function initAnimales() {
     const selectAnimal = document.getElementById('animal');
     const resultadosContainer = document.getElementById('resultados-container');
     
-    // Determinar la ruta base según el entorno
+    // Determinar la ruta base según el entorno SI CAMBIAS EL PROYECTO DE NOMBRE O LO ALOJO
+    // HABRIA QUE ELIMINAR LO DE RUNEQUEST-WEB Y CAMBIARLO POR EL NUEVO NOMBRE DEL PROYECTO.
+    // OJO CON ESTO, QUE PODRÍA DAR PROBLEMAS EN EL FUTURO.
     const isGitHubPages = window.location.host.includes('github.io');
     const basePath = isGitHubPages ? '/Runequest-Web' : '';
     

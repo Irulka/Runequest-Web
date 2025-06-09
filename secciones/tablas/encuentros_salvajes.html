@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentros en Zonas Urbanas</title>
+    <title>Encuentros en Zonas Salvajes</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Los estilos se mantienen idénticos a encuentros.html */
         .controles-superiores {
             display: flex;
             flex-wrap: wrap;
@@ -76,23 +77,29 @@
     </style>
 </head>
 <body>
-    <h2 class="text-center">Encuentros en Zonas Urbanas</h2>
+    <h2 class="text-center">Encuentros en Zonas Exteriores</h2>
 
     <div class="seccion-activa">
         <div class="varita-layout-container">
             <div class="varita-content-container">
                 <div class="varita-container">
                     <p class="explicacion-varita">
-                        Los encuentros en las ciudades de Glorantha son un tapiz vibrante de la vida cotidiana, lo misterioso y lo peligroso. Dependiendo del <strong>tamaño de la urbe</strong>, el <strong>momento del día</strong> y la <strong>zona</strong> por la que transites, podrás encontrarte con situaciones que van desde lo mundano hasta lo verdaderamente inesperado.
+                        Glorantha es una tierra vasta y salvaje, donde los caminos serpentean a través de paisajes indómitos y cada paso fuera de la civilización es una aventura.
                     </p>
 
                     <div class="controles-superiores">
                         <div>
-                            <label for="ciudad-tamano">Tamaño de la Ciudad:</label>
-                            <select id="ciudad-tamano">
-                                <option value="pequena">Pequeña</option>
-                                <option value="media">Media</option>
-                                <option value="grande">Grande</option>
+                            <label for="tipo-entorno">Tipo de Entorno:</label>
+                            <select id="tipo-entorno">
+                                <option value="bosque">Bosque</option>
+                                <option value="montana">Montaña</option>
+                                <option value="sendero_poco_transitado">Sendero Poco Transitado</option>
+                                <option value="camino_principal">Camino Principal</option>
+                                <option value="tierras_baldias">Tierras Baldías</option>
+                                <option value="pantanos">Pantanos</option>
+                                <option value="rios_lagos">Ríos/Lagos</option>
+                                <option value="zona_costera">Zona Costera</option>
+                                <option value="ruinas">Ruinas</option>
                             </select>
                         </div>
                         <div>
@@ -100,18 +107,6 @@
                             <select id="momento-dia">
                                 <option value="dia">Día</option>
                                 <option value="noche">Noche</option>
-                            </select>
-                        </div>
-                         <div>
-                            <label for="zona">Zona de la Ciudad:</label>
-                            <select id="zona">
-                                <option value="calles">Calles</option>
-                                <option value="mercado">Mercado</option>
-                                <option value="distrito_rico">Distrito Rico</option>
-                                <option value="barrios_bajos">Barrios Bajos</option>
-                                <option value="alcantarillas">Alcantarillas</option>
-                                <option value="subterraneo">Subterráneo</option>
-                                <option value="afueras">Afueras</option>
                             </select>
                         </div>
                     </div>
@@ -131,11 +126,11 @@
                 </div>
             </div>
             <div class="eurmal-image-container">
-                <img src="imagenes/ciudad.webp" alt="Imagen de Ciudad" class="eurmal-image">
+                <img src="imagenes/exterior.webp" alt="Imagen de Zona Salvaje" class="eurmal-image">
             </div>
         </div>
     </div>
 
-    <script src="js/secciones/tablas/encuentros.js"></script>
+    <script src="js/secciones/tablas/encuentros_salvajes.js"></script>
 </body>
 </html>

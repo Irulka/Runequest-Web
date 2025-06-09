@@ -8,7 +8,7 @@ function initRazas() {
     
     // Determinar la ruta base según el entorno
     const isGitHubPages = window.location.host.includes('github.io');
-    const basePath = isGitHubPages ? '/Runequest-Webt' : '';
+    const basePath = isGitHubPages ? '/Runequest-Web' : '';
     
     // Lista de razas disponibles (rutas modificadas)
     const razasLista = [

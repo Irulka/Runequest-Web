@@ -176,15 +176,34 @@
                 <a class="submenu-item" href="#" data-seccion="magia/varita-deseos">Varita de los Deseos</a>
             </div>
 
-            <!-- Cerrar sesión - Color corregido -->
+                        <!-- Cerrar sesión - Color corregido -->
             <a class="menu-item" id="logout-btn" href="#">
                 <i class="bi bi-box-arrow-left"></i>
                 <span>Salir</span>
             </a>
             
+<div class="dice-roller-container">
+                <div class="dice-display" id="dice-display"></div>
+                <div class="dice-buttons-grid">
+                    <button class="dice-button" data-type="die" data-sides="4">D4</button>
+                    <button class="dice-button" data-type="die" data-sides="6">D6</button>
+                    <button class="dice-button" data-type="die" data-sides="8">D8</button>
+                    <button class="dice-button" data-type="die" data-sides="10">D10</button>
+                    <button class="dice-button" data-type="die" data-sides="12">D12</button>
+                    <button class="dice-button" data-type="die" data-sides="20">D20</button>
+                    <button class="dice-button" data-type="die" data-sides="100">D100</button>
+                    <button class="dice-button" data-type="modifier" data-value="1">+1</button>
+                </div>
+                <div class="dice-actions">
+                    <button class="btn-magia" id="roll-dice-btn">Lanzar</button>
+                    <button class="btn-magia" id="clear-dice-btn">Limpiar</button>
+                </div>
+                <div class="dice-results" id="dice-results"></div>
+            </div>
+
             <!-- Footer del menú con copyright -->
             <div class="menu-footer">
-                © Diego Vivo, 2025
+                Diego Vivo, 2025
             </div>
         </div>
     </div>

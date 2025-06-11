@@ -12,14 +12,14 @@ body {
 
 /* === ESTRUCTURA PRINCIPAL === */
 .main-content {
-    margin-left: 0; /* Cambiado de 30px a 0 */
+    margin-left: 0;
     height: 100vh;
     overflow-y: auto;
     padding: 20px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     transition: margin-left 0.3s ease;
-    position: absolute; /* Cambiado para cubrir toda la pantalla */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -28,13 +28,12 @@ body {
 
 /* === MENÚ LATERAL === */
 .sidebar {
-    width: 15%;
-    min-width: 200px;
+    width: 240px; /* Ancho del sidebar aumentado a 240px */
     height: 100vh;
     background: #2c3e50;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
     position: fixed;
-    left: -200px;
+    left: -230px; /* Ajustado para que queden 10px visibles (240 - 10 = 230) */
     top: 0;
     padding: 0;
     display: flex;
@@ -42,15 +41,17 @@ body {
     z-index: 1000;
     color: white;
     transition: left 0.3s ease;
+    overflow: hidden; /* Asegura que el contenido que se desborda se corte */
 }
 
 .sidebar.active {
     left: 0;
 }
 
-.sidebar.active ~ .main-content {
-    margin-left: 15%;
-}
+/* Eliminar el ajuste para el main-content cuando el sidebar está activo */
+/* .sidebar.active ~ .main-content {
+    margin-left: 200px;
+} */
 
 .menu-activator {
     position: fixed;
@@ -86,7 +87,7 @@ body {
 
 .menu-container {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* Permite el scroll si el contenido es demasiado largo */
     padding: 10px 0;
 }
 
@@ -146,6 +147,107 @@ body {
     transform: rotate(90deg);
 }
 
+/* === ESTILOS DEL GENERADOR DE DADOS === */
+.dice-roller-container {
+    padding: 15px;
+    margin: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+    width: 100%; /* Ocupa el 100% del sidebar */
+}
+
+.dice-display {
+    min-height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    font-size: 0.9em;
+}
+
+.dice-display .selected-die {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.dice-display .selected-die.modifier {
+    background-color: rgba(91, 192, 190, 0.2);
+}
+
+
+/* Grid para los botones de los dados en 2 columnas */
+.dice-buttons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 15px;
+    /* Nuevo max-width para aprovechar el ancho extra del sidebar */
+    max-width: 210px; /* 240px (sidebar) - 30px (padding) = 210px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dice-button {
+    background: #5bc0be;
+    border: none;
+    border-radius: 4px;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 6px 0;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    font-size: 0.9em;
+    width: 85%;
+}
+
+.dice-button:hover {
+    background: #46a2a0;
+    transform: translateY(-1px);
+}
+
+.dice-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dice-actions .btn-magia {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.dice-results {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #eee;
+    font-size: 1em;
+    text-align: left;
+}
+
+.dice-results p {
+    margin-bottom: 5px;
+}
+
+.dice-results p:last-child {
+    margin-bottom: 0;
+}
+
+
 /* === ESTILOS DE CONTENIDO === */
 .seccion-activa {
     animation: fadeIn 0.5s;
@@ -166,7 +268,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1500px; /* Aumentado a 1500px */
+    max-width: 1500px;
     margin: 0 auto;
     gap: 15px;
     padding: 0 20px;
@@ -175,29 +277,29 @@ h2 {
 .varita-content-container {
     flex: 1;
     min-width: 300px;
-    max-width: 1000px; /* Aumentado a 1000px */
-    margin-right: -50px; /* Compensación para aprovechar espacio */
+    max-width: 1000px;
+    margin-right: -50px;
 }
 
 .varita-container {
     background-color: rgba(42, 33, 61, 0.6);
-    padding: 20px; /* Aumentado padding */
+    padding: 20px;
     margin-top: 1%;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     color: #f0e6ff;
     backdrop-filter: blur(5px);
     border: 1px solid #6a0dad;
-    width: calc(100% + 50px); /* Extender hacia la derecha */
+    width: calc(100% + 50px);
 }
 
 .eurmal-image-container {
-    flex: 0 0 400px; /* Reducido para dar más espacio al contenido */
+    flex: 0 0 400px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
     padding-top: 0px;
-    margin-left: -30px; /* Superposición controlada */
+    margin-left: -30px;
 }
 
 .eurmal-image {
@@ -217,17 +319,17 @@ h2 {
     text-align: center;
     margin-bottom: 0px;
     line-height: 1.7;
-    font-size: 1.2rem; /* Aumentado tamaño de fuente */
+    font-size: 1.2rem;
     color: #d9c7ff;
     padding: 0 20px;
 }
 
 .controles {
-    margin: 20px 0; /* Aumentado margen */
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Aumentado espacio entre botones */ 
+    gap: 15px;
 }
 
 .btn-magia {
@@ -241,19 +343,19 @@ h2 {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.2s ease;
-    display: inline-block; /* <--- Aquí está la clave */
-    width: auto;           /* <--- Por si acaso heredaba width: 100% */
+    display: inline-block;
+    width: auto;
 }
 
 .btn-magia:hover {
     background: #b7791f;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #input-valor {
     padding: 15px;
-    width: 120px; /* Aumentado ancho */
+    width: 120px;
     text-align: center;
     border: 2px solid #6a0dad;
     border-radius: 8px;
@@ -262,13 +364,13 @@ h2 {
 }
 
 .resultados-container {
-    margin-top: 0px; /* Aumentado margen */
+    margin-top: 0px;
     display: none;
     width: 100%;
 }
 
 .resultado-box {
-    padding: 15px 20px; /* Aumentado padding */
+    padding: 15px 20px;
     margin: 10px 0;
     border-radius: 8px;
     backdrop-filter: blur(5px);
@@ -277,7 +379,7 @@ h2 {
 }
 
 .resultado-header {
-    font-size: 1rem; /* Aumentado tamaño de fuente */
+    font-size: 1rem;
     margin-bottom: 10px;
     color: inherit;
 }
@@ -296,7 +398,7 @@ h2 {
 
 .resultado-efecto {
     line-height: 1.6;
-    font-size: 1.05rem; /* Aumentado tamaño de fuente */
+    font-size: 1.05rem;
     margin: 0;
     padding: 0;
 }
@@ -339,10 +441,6 @@ h2 {
     .main-content {
         margin-left: 0;
     }
-    
-    .sidebar.active ~ .main-content {
-        margin-left: 200px;
-    }
 }
 
 @media (max-width: 600px) {
@@ -375,7 +473,7 @@ h2 {
     }
 }
 
-menu-footer {
+.menu-footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: auto;
     padding: 15px;

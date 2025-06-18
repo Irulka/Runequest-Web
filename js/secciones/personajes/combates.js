@@ -42,6 +42,8 @@ function initCombate() {
 function setupEventListeners() {
   // Botones principales
   document.getElementById('btn-nuevo-combate').addEventListener('click', iniciarNuevoCombate);
+  document.getElementById('btn-guardar-combate').addEventListener('click', guardarCombate);
+  document.getElementById('btn-cargar-combate').addEventListener('click', cargarCombate);
   document.getElementById('btn-agregar-pj').addEventListener('click', () => mostrarModalAddPersonaje('pj'));
   document.getElementById('btn-agregar-npc').addEventListener('click', () => mostrarModalAddPersonaje('npc'));
 
@@ -544,6 +546,131 @@ function seleccionarTipoObstaculo(color) {
 
     console.log(`Celda ${celdaIndex} configurada como obstáculo: ${color}`);
     cerrarModalObstaculoSelector();
+}
+
+// ===== FUNCIONES DE GUARDAR/CARGAR EN ARCHIVO EXTERNO =====
+
+function guardarCombate() {
+  try {
+    const estadoGuardar = {
+      participantes: estadoCombate.participantes,
+      tablero: estadoCombate.tablero,
+      activo: estadoCombate.activo,
+      imagenFondo: estadoCombate.imagenFondo
+    };
+    
+    const jsonString = JSON.stringify(estadoGuardar, null, 2); // Formato legible
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Meses son 0-11
+    const year = now.getFullYear();
+    const filename = `combate-${day}-${month}-${year}.json`;
+
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(a.href);
+
+    console.log(`Combate guardado como ${filename}`);
+  } catch (e) {
+    alert('Error al guardar el combate: ' + e.message);
+    console.error('Error al guardar el combate:', e);
+  }
+}
+
+function cargarCombate() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json'; // Solo acepta archivos JSON
+
+  input.onchange = e => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      try {
+        const parsedEstado = JSON.parse(event.target.result);
+        
+        // Restaurar el estado global
+        estadoCombate.participantes = parsedEstado.participantes || [];
+        estadoCombate.tablero = parsedEstado.tablero || Array(TOTAL_CELLS).fill(null);
+        estadoCombate.activo = parsedEstado.activo !== undefined ? parsedEstado.activo : true;
+        estadoCombate.imagenFondo = parsedEstado.imagenFundo || parsedEstado.imagenFondo || ''; // Compatibilidad con 'imagenFundo' si existiera
+
+        // Actualizar la UI
+        const tableroDiv = document.getElementById('tablero-combate');
+        tableroDiv.style.display = 'grid';
+        document.getElementById('lista-participantes').style.display = 'block';
+        document.getElementById('selector-imagen-fondo-container').style.display = 'block';
+
+        // Aplicar imagen de fondo
+        if (estadoCombate.imagenFondo) {
+          const imageName = estadoCombate.imagenFondo.split('/').pop().replace('.webp', '');
+          document.getElementById('selector-imagen-fondo').value = imageName;
+          aplicarImagenDeFondo(imageName);
+        } else {
+          document.getElementById('selector-imagen-fondo').value = '';
+          aplicarImagenDeFondo('');
+        }
+        
+        // Limpiar y dibujar el tablero con el estado cargado
+        document.querySelectorAll('.celda-tablero').forEach(celda => {
+          celda.classList.remove(
+            'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
+            'celda-obstaculo-celeste', 'celda-obstaculo-verde',
+            'celda-obstaculo-gris', 'celda-obstaculo-marron',
+            'celda-obstaculo-negro', 'celda-obstaculo-original'
+          );
+          celda.innerHTML = '';
+          celda.style.backgroundColor = '';
+        });
+
+        estadoCombate.tablero.forEach((celdaContenido, index) => {
+          const celdaElement = document.querySelector(`.celda-tablero[data-index="${index}"]`);
+          if (!celdaElement) return;
+
+          if (celdaContenido === null) {
+            // Celda vacía, ya está limpia por el bucle anterior
+          } else if (typeof celdaContenido === 'number') {
+            // Es un personaje
+            const personaje = estadoCombate.participantes.find(p => p.id === celdaContenido);
+            if (personaje) {
+              personaje.posicion = index; // Asegurar que la posición del personaje esté actualizada
+              celdaElement.classList.add('celda-ocupada');
+              if (personaje.tipo === 'npc') celdaElement.classList.add('celda-enemigo');
+              if (personaje.fallecido) celdaElement.classList.add('celda-fallecido');
+              const iniciales = obtenerIniciales(personaje.nombre);
+              celdaElement.innerHTML = `
+                <div class="personaje-hex" data-id="${personaje.id}" ${personaje.fallecido ? 'style="cursor: default;"' : ''}>
+                  ${iniciales}
+                </div>
+              `;
+            }
+          } else if (typeof celdaContenido === 'string' && celdaContenido.startsWith('obstaculo-')) {
+            // Es un obstáculo
+            const color = celdaContenido.split('-')[1];
+            celdaElement.classList.add(`celda-obstaculo-${color}`);
+          }
+        });
+        
+        actualizarListaParticipantes();
+        alert('Combate cargado exitosamente desde el archivo.');
+        console.log('Estado del combate cargado:', parsedEstado);
+
+      } catch (e) {
+        alert('Error al leer o parsear el archivo JSON: ' + e.message);
+        console.error('Error al cargar el combate:', e);
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click(); // Abrir el diálogo de selección de archivo
 }
 
 // ===== FUNCIONES AUXILIARES =====

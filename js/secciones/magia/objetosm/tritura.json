@@ -1,6 +1,6 @@
 {
     "nombre": "Tritura Broos",
-    "imagen": "./imagenes/objetosm/Tritura.webp",
+    "imagen": "./imagenes/objetosm/tritura.webp",
     "descripcion": "Este bumerán mágico está construido en un tipo de madera procedente de bosques aldryani, la cual es extraordinariamente densa y dura, dando como resultado un arma que pesa tanto como una espada ancha o similar. Mide unos 50 centímetros de largo. Su forma es la de un trozo de madera curvo y plano, que presenta ambos bordes afilados. En ambos lados posee brillantes runas sunchen las cuales ponen simplemente 'Triturador de Broos'.",
     "propiedades": {
         "Peso": "1,5 Kg",

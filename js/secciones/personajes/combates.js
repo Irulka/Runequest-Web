@@ -24,6 +24,10 @@ const CELL_SIZE = 45; // **CAMBIADO: Tamaño de 45px**
 // **AÑADIDO: Constante para el gap (0 para una imagen continua)**
 const GAP_SIZE = 0;
 
+// Variable global para almacenar el BoundingClientRect de la celda clicada
+// Esta variable ya no será usada para posicionar los modales, pero se mantiene si se necesitara para otras cosas.
+let clickedCellRect = null;
+
 // Inicialización cuando el DOM está listo
 function initCombate() {
   console.log("Inicializando módulo de combate");
@@ -159,45 +163,51 @@ function mostrarModalAddPersonaje(tipo) {
     return;
   }
   estadoCombate.tipoPersonajeAgregando = tipo;
+  const modal = document.getElementById('modal-add-personaje');
   document.getElementById('modal-add-personaje-title').textContent = `Añadir ${tipo.toUpperCase()}`;
   document.getElementById('input-nombre-personaje').value = '';
   document.getElementById('input-pv-personaje').value = '12';
   document.getElementById('input-pm-personaje').value = '12';
-  document.getElementById('modal-add-personaje').style.display = 'flex';
+
+  // Posicionamiento para centrado en pantalla
+  modal.style.left = '50%';
+  modal.style.top = '50%';
+  modal.style.transform = 'translate(-50%, -50%)';
+  modal.style.display = 'flex';
   document.getElementById('input-nombre-personaje').focus();
 }
 
 function agregarNuevoPersonaje() {
-    const nombre = document.getElementById('input-nombre-personaje').value.trim();
-    const pv = parseInt(document.getElementById('input-pv-personaje').value);
-    const pm = parseInt(document.getElementById('input-pm-personaje').value);
-    const tipo = estadoCombate.tipoPersonajeAgregando;
+  const nombre = document.getElementById('input-nombre-personaje').value.trim();
+  const pv = parseInt(document.getElementById('input-pv-personaje').value);
+  const pm = parseInt(document.getElementById('input-pm-personaje').value);
+  const tipo = estadoCombate.tipoPersonajeAgregando;
 
-    if (!nombre || isNaN(pv) || isNaN(pm)) {
-        alert("Por favor, introduce un nombre y valores numéricos válidos para PV y PM.");
-        return;
-    }
+  if (!nombre || isNaN(pv) || isNaN(pm)) {
+    alert("Por favor, introduce un nombre y valores numéricos válidos para PV y PM.");
+    return;
+  }
 
-    const nuevoPersonaje = {
-        id: Date.now(),
-        nombre,
-        pv,
-        pm,
-        tipo,
-        posicion: null,
-        anotaciones: "", 
-        fallecido: false
-    };
+  const nuevoPersonaje = {
+    id: Date.now(),
+    nombre,
+    pv,
+    pm,
+    tipo,
+    posicion: null,
+    anotaciones: "",
+    fallecido: false
+  };
 
-    estadoCombate.participantes.push(nuevoPersonaje);
-    actualizarListaParticipantes();
-    console.log(`${tipo.toUpperCase()} creado:`, nuevoPersonaje);
-    cerrarModalAddPersonaje();
+  estadoCombate.participantes.push(nuevoPersonaje);
+  actualizarListaParticipantes();
+  console.log(`${tipo.toUpperCase()} creado:`, nuevoPersonaje);
+  cerrarModalAddPersonaje();
 }
 
 function cerrarModalAddPersonaje() {
-    document.getElementById('modal-add-personaje').style.display = 'none';
-    estadoCombate.tipoPersonajeAgregando = null;
+  document.getElementById('modal-add-personaje').style.display = 'none';
+  estadoCombate.tipoPersonajeAgregando = null;
 }
 
 
@@ -212,6 +222,10 @@ function crearTableroCuadrado() {
 
     // Evento de click en la celda
     celda.addEventListener('click', (e) => {
+      // Guardar el BoundingClientRect de la celda clicada
+      // Esta línea se mantiene, aunque clickedCellRect ya no se use para posicionar los modales.
+      clickedCellRect = celda.getBoundingClientRect();
+
       const celdaIndex = parseInt(celda.dataset.index);
       const celdaEstado = estadoCombate.tablero[celdaIndex];
 
@@ -219,7 +233,7 @@ function crearTableroCuadrado() {
       if (celdaEstado && typeof celdaEstado === 'number') {
         const personaje = estadoCombate.participantes.find(p => p.id === celdaEstado);
         if (personaje) {
-          mostrarModalInfoPersonaje(personaje);
+          mostrarModalInfoPersonaje(personaje); // Pasa el personaje para edición
         }
       }
       // Si la celda está vacía o es un obstáculo, mostrar selector de obstáculos
@@ -261,7 +275,10 @@ function actualizarListaParticipantes() {
         <span>PM: <span id="pm-lista-${p.id}">${p.pm}</span></span>
         ${anotacionesDisplay}
       </div>
-      ${botonColocarHTML}
+      <div class="botones-personaje-lista">
+        ${botonColocarHTML}
+        <button class="btn-magia-pequeno btn-eliminar" onclick="eliminarPersonaje(${p.id})">Eliminar</button>
+      </div>
     `;
     lista.appendChild(card);
   });
@@ -274,8 +291,9 @@ function colocarPersonaje(id) {
   const iniciales = obtenerIniciales(personaje.nombre);
 
   const celdas = document.querySelectorAll('.celda-tablero');
+  // Buscar la primera celda vacía para colocar al personaje
+  let celdaEncontrada = false;
   for (let i = 0; i < celdas.length; i++) {
-    // Solo colocar si la celda está vacía (null) y no es un obstáculo
     if (estadoCombate.tablero[i] === null) {
       // Limpiar posición anterior si existe
       if (personaje.posicion !== null) {
@@ -283,10 +301,10 @@ function colocarPersonaje(id) {
         const oldCelda = document.querySelector(`.celda-tablero[data-index="${personaje.posicion}"]`);
         // Eliminar todas las clases de estado de la celda antigua
         oldCelda.classList.remove(
-            'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
-            'celda-obstaculo-celeste', 'celda-obstaculo-verde',
-            'celda-obstaculo-gris', 'celda-obstaculo-marron',
-            'celda-obstaculo-negro', 'celda-obstaculo-original'
+          'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
+          'celda-obstaculo-celeste', 'celda-obstaculo-verde',
+          'celda-obstaculo-gris', 'celda-obstaculo-marron',
+          'celda-obstaculo-negro', 'celda-obstaculo-original'
         );
         oldCelda.innerHTML = '';
         oldCelda.style.backgroundColor = '';
@@ -308,9 +326,40 @@ function colocarPersonaje(id) {
       `;
 
       console.log(`${personaje.nombre} colocado en posición ${i}`);
-      actualizarListaParticipantes();
+      celdaEncontrada = true;
       break;
     }
+  }
+  if (!celdaEncontrada) {
+    alert("No hay celdas vacías disponibles para colocar al personaje.");
+  }
+  actualizarListaParticipantes();
+}
+
+function eliminarPersonaje(id) {
+  const index = estadoCombate.participantes.findIndex(p => p.id === id);
+  if (index !== -1) {
+    const personajeEliminado = estadoCombate.participantes[index];
+
+    // Si el personaje está en el tablero, quitarlo visualmente y del estado del tablero
+    if (personajeEliminado.posicion !== null) {
+      estadoCombate.tablero[personajeEliminado.posicion] = null;
+      const celda = document.querySelector(`.celda-tablero[data-index="${personajeEliminado.posicion}"]`);
+      if (celda) {
+        celda.classList.remove(
+          'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
+          'celda-obstaculo-celeste', 'celda-obstaculo-verde',
+          'celda-obstaculo-gris', 'celda-obstaculo-marron',
+          'celda-obstaculo-negro', 'celda-obstaculo-original'
+        );
+        celda.innerHTML = '';
+        celda.style.backgroundColor = '';
+      }
+    }
+
+    estadoCombate.participantes.splice(index, 1); // Eliminar del array de participantes
+    actualizarListaParticipantes();
+    console.log(`Personaje con ID ${id} eliminado.`);
   }
 }
 
@@ -412,10 +461,10 @@ function moverPersonaje(fromIndex, toIndex) {
   const celdaTo = document.querySelector(`.celda-tablero[data-index="${toIndex}"]`);
 
   celdaFrom.classList.remove(
-      'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
-      'celda-obstaculo-celeste', 'celda-obstaculo-verde',
-      'celda-obstaculo-gris', 'celda-obstaculo-marron',
-      'celda-obstaculo-negro', 'celda-obstaculo-original'
+    'celda-ocupada', 'celda-enemigo', 'celda-fallecido',
+    'celda-obstaculo-celeste', 'celda-obstaculo-verde',
+    'celda-obstaculo-gris', 'celda-obstaculo-marron',
+    'celda-obstaculo-negro', 'celda-obstaculo-original'
   );
   celdaFrom.innerHTML = '';
   celdaFrom.style.backgroundColor = '';
@@ -435,117 +484,129 @@ function moverPersonaje(fromIndex, toIndex) {
 // ===== FUNCIONES MODAL INFORMACIÓN PERSONAJE (EDICIÓN) =====
 
 function mostrarModalInfoPersonaje(personaje) {
-    estadoCombate.personajeEditando = personaje;
+  estadoCombate.personajeEditando = personaje;
 
-    const modal = document.getElementById('modal-personaje-info');
-    document.getElementById('modal-personaje-nombre').textContent = personaje.nombre;
-    document.getElementById('modal-personaje-pv').textContent = personaje.pv;
-    document.getElementById('modal-personaje-pm').textContent = personaje.pm;
-    document.getElementById('modal-personaje-anotaciones').value = personaje.anotaciones || '';
+  const modal = document.getElementById('modal-personaje-info');
+  document.getElementById('modal-personaje-nombre').textContent = personaje.nombre;
+  document.getElementById('modal-personaje-pv').textContent = personaje.pv;
+  document.getElementById('modal-personaje-pm').textContent = personaje.pm;
+  document.getElementById('modal-personaje-anotaciones').value = personaje.anotaciones || '';
 
-    modal.style.display = 'flex';
+  // Posicionamiento para centrado en pantalla visible (viewport)
+  modal.style.left = '50%';
+  modal.style.top = '50%';
+  modal.style.transform = 'translate(-50%, -50%)'; // Centra el modal respecto a su propio tamaño
+  modal.style.display = 'flex'; // Mostrar el modal
 }
 
 function cerrarModalInfoPersonaje() {
-    document.getElementById('modal-personaje-info').style.display = 'none';
-    estadoCombate.personajeEditando = null;
-    actualizarListaParticipantes();
+  document.getElementById('modal-personaje-info').style.display = 'none';
+  estadoCombate.personajeEditando = null;
+  clickedCellRect = null; // Limpiar el rect de la celda clicada
+  actualizarListaParticipantes();
 }
 
 function modificarEstadisticaPersonaje(stat, action) {
-    if (!estadoCombate.personajeEditando) return;
+  if (!estadoCombate.personajeEditando) return;
 
-    if (action === 'plus') {
-        estadoCombate.personajeEditando[stat]++;
-    } else if (action === 'minus') {
-        estadoCombate.personajeEditando[stat]--;
+  if (action === 'plus') {
+    estadoCombate.personajeEditando[stat]++;
+  } else if (action === 'minus') {
+    estadoCombate.personajeEditando[stat]--;
+  }
+
+  if (stat === 'pv' && estadoCombate.personajeEditando[stat] < 0) {
+    estadoCombate.personajeEditando[stat] = 0;
+  }
+
+  // Actualizar la UI del modal
+  document.getElementById(`modal-personaje-${stat}`).textContent = estadoCombate.personajeEditando[stat];
+  console.log(`${estadoCombate.personajeEditando.nombre} ${stat.toUpperCase()} ahora es: ${estadoCombate.personajeEditando[stat]}`);
+
+  if (stat === 'pv') {
+    if (estadoCombate.personajeEditando.pv === 0) {
+      estadoCombate.personajeEditando.fallecido = true;
+      actualizarPersonajeEnTablero(estadoCombate.personajeEditando);
+    } else if (estadoCombate.personajeEditando.pv > 0 && estadoCombate.personajeEditando.fallecido) {
+      estadoCombate.personajeEditando.fallecido = false;
+      actualizarPersonajeEnTablero(estadoCombate.personajeEditando);
     }
+  }
 
-    if (stat === 'pv' && estadoCombate.personajeEditando[stat] < 0) {
-        estadoCombate.personajeEditando[stat] = 0;
-    }
-
-    // Actualizar la UI del modal
-    document.getElementById(`modal-personaje-${stat}`).textContent = estadoCombate.personajeEditando[stat];
-    console.log(`${estadoCombate.personajeEditando.nombre} ${stat.toUpperCase()} ahora es: ${estadoCombate.personajeEditando[stat]}`);
-
-    if (stat === 'pv') {
-        if (estadoCombate.personajeEditando.pv === 0) {
-            estadoCombate.personajeEditando.fallecido = true;
-            actualizarPersonajeEnTablero(estadoCombate.personajeEditando);
-        } else if (estadoCombate.personajeEditando.pv > 0 && estadoCombate.personajeEditando.fallecido) {
-            estadoCombate.personajeEditando.fallecido = false;
-            actualizarPersonajeEnTablero(estadoCombate.personajeEditando);
-        }
-    }
-
-    // Actualizar también la lista de participantes en la parte inferior
-    actualizarListaParticipantes();
+  // Actualizar también la lista de participantes en la parte inferior
+  actualizarListaParticipantes();
 }
 
 function guardarAnotacionesPersonaje() {
-    if (!estadoCombate.personajeEditando) return;
-    estadoCombate.personajeEditando.anotaciones = document.getElementById('modal-personaje-anotaciones').value;
-    console.log(`Anotaciones de ${estadoCombate.personajeEditando.nombre} guardadas.`);
-    cerrarModalInfoPersonaje();
+  if (!estadoCombate.personajeEditando) return;
+  estadoCombate.personajeEditando.anotaciones = document.getElementById('modal-personaje-anotaciones').value;
+  console.log(`Anotaciones de ${estadoCombate.personajeEditando.nombre} guardadas.`);
+  cerrarModalInfoPersonaje();
 }
 
 function actualizarPersonajeEnTablero(personaje) {
-    if (personaje.posicion === null) return;
+  if (personaje.posicion === null) return;
 
-    const celda = document.querySelector(`.celda-tablero[data-index="${personaje.posicion}"]`);
-    if (!celda) return;
+  const celda = document.querySelector(`.celda-tablero[data-index="${personaje.posicion}"]`);
+  if (!celda) return;
 
-    const personajeHex = celda.querySelector('.personaje-hex');
-    if (!personajeHex) return;
+  const personajeHex = celda.querySelector('.personaje-hex');
+  if (!personajeHex) return;
 
-    if (personaje.fallecido) {
-        celda.classList.add('celda-fallecido');
-        personajeHex.style.cursor = 'default';
-    } else {
-        celda.classList.remove('celda-fallecido');
-        personajeHex.style.cursor = 'move';
-    }
+  if (personaje.fallecido) {
+    celda.classList.add('celda-fallecido');
+    personajeHex.style.cursor = 'default';
+  } else {
+    celda.classList.remove('celda-fallecido');
+    personajeHex.style.cursor = 'move';
+  }
 }
 
 // ===== FUNCIONES MODAL OBSTÁCULO =====
 
 function mostrarModalObstaculoSelector() {
-    document.getElementById('modal-obstaculo-selector').style.display = 'flex';
+  const modal = document.getElementById('modal-obstaculo-selector');
+
+  // Posicionamiento para centrado en pantalla visible (viewport)
+  modal.style.left = '50%';
+  modal.style.top = '50%';
+  modal.style.transform = 'translate(-50%, -50%)'; // Centra el modal respecto a su propio tamaño
+  modal.style.display = 'flex'; // Mostrar el modal
 }
 
 function cerrarModalObstaculoSelector() {
-    document.getElementById('modal-obstaculo-selector').style.display = 'none';
-    estadoCombate.celdaObstaculoSeleccionando = null;
+  document.getElementById('modal-obstaculo-selector').style.display = 'none';
+  estadoCombate.celdaObstaculoSeleccionando = null;
+  clickedCellRect = null; // Limpiar el rect de la celda clicada
 }
 
 function seleccionarTipoObstaculo(color) {
-    if (estadoCombate.celdaObstaculoSeleccionando === null) return;
+  if (estadoCombate.celdaObstaculoSeleccionando === null) return;
 
-    const celdaIndex = estadoCombate.celdaObstaculoSeleccionando;
-    const celdaElement = document.querySelector(`.celda-tablero[data-index="${celdaIndex}"]`);
+  const celdaIndex = estadoCombate.celdaObstaculoSeleccionando;
+  const celdaElement = document.querySelector(`.celda-tablero[data-index="${celdaIndex}"]`);
 
-    if (!celdaElement) return;
+  if (!celdaElement) return;
 
-    celdaElement.classList.remove(
-        'celda-obstaculo-celeste',
-        'celda-obstaculo-verde',
-        'celda-obstaculo-gris',
-        'celda-obstaculo-marron',
-        'celda-obstaculo-negro',
-        'celda-obstaculo-original'
-    );
-    celdaElement.style.backgroundColor = '';
+  celdaElement.classList.remove(
+    'celda-obstaculo-celeste',
+    'celda-obstaculo-verde',
+    'celda-obstaculo-gris',
+    'celda-obstaculo-marron',
+    'celda-obstaculo-negro',
+    'celda-obstaculo-original'
+  );
+  celdaElement.style.backgroundColor = '';
 
-    if (color === 'original') {
-        estadoCombate.tablero[celdaIndex] = null;
-    } else {
-        estadoCombate.tablero[celdaIndex] = `obstaculo-${color}`;
-        celdaElement.classList.add(`celda-obstaculo-${color}`);
-    }
+  if (color === 'original') {
+    estadoCombate.tablero[celdaIndex] = null;
+  } else {
+    estadoCombate.tablero[celdaIndex] = `obstaculo-${color}`;
+    celdaElement.classList.add(`celda-obstaculo-${color}`);
+  }
 
-    console.log(`Celda ${celdaIndex} configurada como obstáculo: ${color}`);
-    cerrarModalObstaculoSelector();
+  console.log(`Celda ${celdaIndex} configurada como obstáculo: ${color}`);
+  cerrarModalObstaculoSelector();
 }
 
 // ===== FUNCIONES DE GUARDAR/CARGAR EN ARCHIVO EXTERNO =====
@@ -558,10 +619,10 @@ function guardarCombate() {
       activo: estadoCombate.activo,
       imagenFondo: estadoCombate.imagenFondo
     };
-    
+
     const jsonString = JSON.stringify(estadoGuardar, null, 2); // Formato legible
     const blob = new Blob([jsonString], { type: 'application/json' });
-    
+
     const now = new Date();
     const day = String(now.getDate()).padStart(2, '0');
     const month = String(now.getMonth() + 1).padStart(2, '0'); // Meses son 0-11
@@ -596,7 +657,7 @@ function cargarCombate() {
     reader.onload = function(event) {
       try {
         const parsedEstado = JSON.parse(event.target.result);
-        
+
         // Restaurar el estado global
         estadoCombate.participantes = parsedEstado.participantes || [];
         estadoCombate.tablero = parsedEstado.tablero || Array(TOTAL_CELLS).fill(null);
@@ -618,7 +679,7 @@ function cargarCombate() {
           document.getElementById('selector-imagen-fondo').value = '';
           aplicarImagenDeFondo('');
         }
-        
+
         // Limpiar y dibujar el tablero con el estado cargado
         document.querySelectorAll('.celda-tablero').forEach(celda => {
           celda.classList.remove(
@@ -658,10 +719,9 @@ function cargarCombate() {
             celdaElement.classList.add(`celda-obstaculo-${color}`);
           }
         });
-        
+
         actualizarListaParticipantes();
-        alert('Combate cargado exitosamente desde el archivo.');
-        console.log('Estado del combate cargado:', parsedEstado);
+        console.log('Estado del combate cargado exitosamente.');
 
       } catch (e) {
         alert('Error al leer o parsear el archivo JSON: ' + e.message);
@@ -694,3 +754,4 @@ if (document.readyState === 'loading') {
 // Hacer funciones accesibles globalmente para los botones HTML
 window.colocarPersonaje = colocarPersonaje;
 window.agregarNuevoPersonaje = agregarNuevoPersonaje;
+window.eliminarPersonaje = eliminarPersonaje; // Hacer la función eliminarPersonaje accesible

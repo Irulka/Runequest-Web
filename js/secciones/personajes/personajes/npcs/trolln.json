@@ -1,0 +1,78 @@
+{
+  "nombre": "Troll Negro",
+  "imagen": "./imagenes/npcs/trolln.webp",
+  "caracteristicas": {
+    "FUE": 19,
+    "CON": 13,
+    "TAM": 21,
+    "INT": 14,
+    "POD": 13,
+    "DES": 12,
+    "CAR": 10,
+    "Puntos de Vida": 17,
+    "Movimiento": 3,
+    "SR DES": 3,
+    "SR TAM": 0,
+    "Bonus de Daño": " 2D6 ",
+    "Daño Combate Espiritual": "1D6+3",
+    "Tasa de Curación": 3,
+    "Puntos de Magia": "13",
+    "Puntos de Runa": 3,
+    "Reputación": "20%"
+  },
+  "runas": {
+    "Aire": "90%",
+    "Muerte": "75%",
+    "Tierra": "20%",
+    "Luna": "50%",
+    "Movimiento": "75%",
+    "Verdad": "70%"
+  },
+  "magia": {
+     "Curación": 2,
+    "Garrotazo": 3,
+    "Mano de Hierro": 3,
+    "Pared Oscura": 2,
+    "Silencio": 2
+  },
+  "pasiones": {
+    "Devoción (Kyger Litor)": "80%",
+    "Odio (Elfos)": "940%",
+    "Lealtad (Clan)": "75%"
+  },
+  "combate": "Trata de ocultarse tras una pared oscura para emboscar.",
+  "armadura": "Placas de plomo en todo el cuerpo (5 puntos) + 2 puntos de piel.",
+  "habilidades": {
+    "Agilidad +0%": "Esquivar 36%, Trepar 53%",
+    "Comunicación +10%": " ",
+    "Conocimiento +5%": " ",
+    "Magia +10%": " ",
+    "Manipulación +5%": "Incluye todas las habilidades con armas",
+    "Percepción +5%": "S.Ocuro 53%, Otear 32%, Oler 56%, Buscar 41%",
+    "Sigilo +5%": "Esconderse 23%, Moverse Silenciosamente 21%"
+  },
+  "idiomas": {
+    "Habla Uz": "60%",
+    "Habla Sartarita": "22%"
+  },
+  "ataques": [
+    {"arma": "Garrote Troll", "%": 53, "daño": "2D8+2D6", "MR": 4, "Prs": 12},
+    {"arma": "Mordisco", "%": 45, "daño": "3D6", "MR": 6, "Prs": 3},
+    {"arma": "Cesto Pesado", "%": 57, "daño": "1D3+2+1D6", "MR": 6, "Prs": 6}
+  ],
+  "localizaciones": [
+    {"zona": "Pierna Derecha", "d20": "1-4", "armadura/HP": "6/2"},
+    {"zona": "Pierna Izquierda", "d20": "5-8", "armadura/HP": "6/2"},
+    {"zona": "Abdomen", "d20": "9-11", "armadura/HP": "6/2"},
+    {"zona": "Pecho", "d20": "12", "armadura/HP": "7/2"},
+    {"zona": "Brazo Derecho", "d20": "13-15", "armadura/HP": "5/2"},
+    {"zona": "Brazo Izquierdo", "d20": "16-18", "armadura/HP": "5/2"},
+    {"zona": "Cabeza", "d20": "19-20", "armadura/HP": "6/2"}
+  ],
+  "objetos_magicos": [
+    " "
+  ],
+  "tesoros": "2000 B",
+  "rescate": "100 L",
+  "notas": " "
+}

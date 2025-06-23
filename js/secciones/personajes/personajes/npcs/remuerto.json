@@ -1,0 +1,74 @@
+{
+  "nombre": "Darkan el Remuerto",
+  "imagen": "./imagenes/npcs/remuerto.webp",
+  "caracteristicas": {
+    "FUE": 21,
+    "CON": 17,
+    "TAM": 11,
+    "INT": 11,
+    "POD": 10,
+    "DES": 19,
+    "CAR": 8,
+    "Puntos de Vida": 17,
+    "Movimiento": 3,
+    "SR DES": 0,
+    "SR TAM": 2,
+    "Bonus de Daño": " +1D4 ",
+    "Daño Combate Espiritual": "1D6+1",
+    "Tasa de Curación": 3,
+    "Puntos de Magia": "10",
+    "Puntos de Runa": 3,
+    "Reputación": "65%"
+  },
+  "runas": {
+    "Muerte": "75%",
+    "Luna": "30%",
+    "Movimiento": "36%",
+    "Oscuridad": "60%"
+  },
+  "magia": {
+     "Confusión": 2,
+     "Cuchilla Afilada": 4,
+     "Protección": 4,
+     "Rielar": 3
+  },
+  "pasiones": {
+    "Odio (Enanos)": "60%",
+    "Odio (Trolls)": "54%"
+  },
+  "combate": "Si se enfrenta a varios oponentes, tratará de confundir a uno antes de llegar al cuerpo a cuerpo.",
+  "armadura": "Viste armaduras de piezas dispares, fruto del saqueo.",
+  "habilidades": {
+    "Agilidad +15%": "Esquivar 60%, Saltar 51%, Trepar 52%",
+    "Comunicación -5%": " ",
+    "Conocimiento 0%": "Hacha (1M) 72%, Hacha (2M) 69%, Escudo Pequeño 63%",
+    "Magia 0%": " ",
+    "Manipulación +15%": "Incluye todas las habilidades con armas.",
+    "Percepción 0%": "Otear 32%, Buscar 41%.",
+    "Sigilo +10%": "Esconderse 45%, Moverse Silenciosamente 51%."
+  },
+  "idiomas": {
+    "HablaR común": "23%",
+    "HablaR orco": "63%" 
+  },
+  "ataques": [
+    {"arma": "Hacha de Combate", "%": 72, "daño": "1D8+2", "MR": 5, "Prs": 8},
+    {"arma": "Hacha doble pua", "%": 69, "daño": "2D8", "MR": 3, "Prs": 8},
+    {"arma": "Escudo pequeño", "%": 63, "daño": "1D3+1", "MR": 5, "Prs": 10}
+  ],
+  "localizaciones": [
+    {"zona": "Pierna Derecha", "d20": "1-4", "armadura/HP": "5/6"},
+    {"zona": "Pierna Izquierda", "d20": "5-8", "armadura/HP": "5/6"},
+    {"zona": "Abdomen", "d20": "9-11", "armadura/HP": "6/6"},
+    {"zona": "Pecho", "d20": "12", "armadura/HP": "6/7"},
+    {"zona": "Brazo Derecho", "d20": "13-15", "armadura/HP": "5/5"},
+    {"zona": "Brazo Izquierdo", "d20": "16-18", "armadura/HP": "5/5"},
+    {"zona": "Cabeza", "d20": "19-20", "armadura/HP": "6/6"}
+  ],
+  "objetos_magicos": [
+    "No lleva ningún objeto mágico. "
+  ],
+  "tesoros": "60 L",
+  "rescate": "500 L",
+  "notas": " "
+}

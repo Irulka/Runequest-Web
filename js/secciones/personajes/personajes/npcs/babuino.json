@@ -1,0 +1,61 @@
+{
+  "nombre": "Jefe Babuino",
+  "imagen": "./imagenes/npcs/babuino.webp",
+  "caracteristicas": {
+    "FUE": 17,
+    "CON": 11,
+    "TAM": 10,
+    "INT": 13,
+    "POD": 13,
+    "DES": 13,
+    "CAR": 10,
+    "Puntos de Vida": 11,
+    "Movimiento": 10,
+    "Bonus de Daño": "+1D4",
+    "Puntos de Magia": 13
+  },
+  "runas": {
+    "Bestia": "80%",
+    "Desorden": "75%"
+  },
+  "magia": {
+    "Contramagia": 2,
+    "Curar": 2,
+    "Movilidad": "1 punto",
+    "Pantalla Espiritual": 2
+  },
+  "pasiones": {
+    "Amor (Familia)": "60%"
+  },
+  "combate": "Ataca primero con lanza y luego se acerca para usar garras o mordisco.",
+  "armadura": "Pelaje (1 punto)",
+  "habilidades": {
+    "Trepar": "90%",
+    "Esquivar": "26%",
+    "Conocimiento Animal": "30%",
+    "Combate Espiritual": "50%",
+    "Adoración (Abuelo Babuino)": "35%",
+    "Escuchar": "40%",
+    "Rastrear": "25%",
+    "Moverse Silenciosamente": "45%"
+  },
+  "idiomas": {
+    "Habla Bestias": "30%",
+    "Habla Praxiano": "10%"
+  },
+  "ataques": [
+    {"arma": "Garra", "%": 50, "daño": "1D6+1+1D4", "MR": 8},
+    {"arma": "Mordisco", "%": 40, "daño": "1D8+1+1D4", "MR": 8},
+    {"arma": "Lanza Corta", "%": 30, "daño": "1D6+1+1D4", "MR": 6, "Prs": 10},
+    {"arma": "Honda", "%": 30, "daño": "1D8", "MR": 2}
+  ],
+  "localizaciones": [
+    {"zona": "Pierna Derecha", "d20": "1-2", "armadura/HP": "1/3"},
+    {"zona": "Pierna Izquierda", "d20": "3-4", "armadura/HP": "1/3"},
+    {"zona": "Abdomen", "d20": "5-7", "armadura/HP": "1/5"},
+    {"zona": "Pecho", "d20": "8-10", "armadura/HP": "1/5"},
+    {"zona": "Brazo Derecho", "d20": "11-13", "armadura/HP": "1/3"},
+    {"zona": "Brazo Izquierdo", "d20": "14-16", "armadura/HP": "1/3"},
+    {"zona": "Cabeza", "d20": "17-20", "armadura/HP": "1/4"}
+  ]
+}

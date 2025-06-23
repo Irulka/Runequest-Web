@@ -1,0 +1,342 @@
+{
+  "nombre": "Borngold Piedra-Lluvia",
+  "datosPersonales": {
+    "anoNacimiento": 1608,
+    "edad": 32,
+    "ocupación": "Explorador/Guerrero Tribal",
+    "rescate": 50,
+    "raza": "humano",
+    "genero": "Masculino",
+    "tierra natal": "Sartar",
+    "reputación": 25,
+    "estandarVida": "Modesto",
+    "ingresoBase": 10,
+    "tribu": "Colymar",
+    "clan": "Piedra-Lluvia",
+    "campana": "Defensa de Sartar",
+    "jugador": "DM",
+    "imagen": "../../imagenes/personajes/borngold.webp"
+  },
+  "caracteristicas": {
+    "FUE": 14,
+    "CON": 13,
+    "TAM": 12,
+    "DES": 15,
+    "INT": 11,
+    "POD": 10,
+    "CAR": 9,
+    "bonoDanio": "+1D4",
+    "SR_TAM": 1,
+    "SR_DES": 0,
+    "tasaCuracion_semana": 3
+  },
+  "puntosRuna": {
+    "actual": 10,
+    "maximo": 10
+  },
+  "afinidadesRunicas": {
+    "fuego": false,
+    "aire": true,
+    "oscuridad": false,
+    "luna": false,
+    "tierra": false,
+    "bestia": false,
+    "agua": false,
+    "hombre": true,
+    "fertilidad": false,
+    "armonia": false,
+    "desorden": false,
+    "muerte": false,
+    "verdad": false,
+    "ilusion": false,
+    "estasis": false,
+    "movimiento": false
+  },
+  "pasiones": [
+    {
+      "nombre": "Lealtad (Clan Piedra-Lluvia)",
+      "valor": 90
+    },
+    {
+      "nombre": "Odio (Lunaritas)",
+      "valor": 70
+    },
+    {
+      "nombre": "Honor",
+      "valor": 60
+    }
+  ],
+  "cultos": [
+    {
+      "nombre": "Orlanth",
+      "rango": "Iniciado"
+    },
+    {
+      "nombre": "Orlanth Thunderous",
+      "rango": "Miembro Asociado"
+    },
+    {
+      "nombre": "Humakt",
+      "rango": "Miembro Asociado"
+    }
+  ],
+  "localizacionesGolpe": {
+    "cabeza": { "AP": 2, "HP": 4 },
+    "brazoDerecho": { "AP": 2, "HP": 3 },
+    "brazoIzquierdo": { "AP": 2, "HP": 3 },
+    "pecho": { "AP": 2, "HP": 4 },
+    "abdomen": { "AP": 2, "HP": 3 },
+    "piernaDerecha": { "AP": 2, "HP": 4 },
+    "piernaIzquierda": { "AP": 2, "HP": 4 }
+  },
+  "armasEquipadas": {
+    "cuerpoACuerpo": [
+      {
+        "nombre": "Espada Ancha",
+        "danio": "1D8+1D4",
+        "enc": 10,
+        "hp": 4,
+        "sr": 8
+      },
+      {
+        "nombre": "Hacha 1M",
+        "danio": "1D8+1D4",
+        "enc": 8,
+        "hp": 3,
+        "sr": 7
+      }
+    ],
+    "proyectil": [
+      {
+        "nombre": "Jabalina",
+        "danio": "1D6",
+        "enc": 3,
+        "hp": 2,
+        "rango": "20m",
+        "tasa": "1"
+      },
+      {
+        "nombre": "Arco Simple",
+        "danio": "1D6",
+        "enc": 8,
+        "hp": 3,
+        "rango": "50m",
+        "tasa": "2"
+      }
+    ],
+    "escudos": [
+      {
+        "nombre": "Escudo Mediano (Madera)",
+        "AP": 6,
+        "parada": 12
+      }
+    ]
+  },
+  "combateEspiritual": {
+    "valor": 50,
+    "danio": "1D6+1"
+  },
+  "habilidades": {
+    "agilidad": {
+      "modificador": null,
+      "habilidades": {
+        "Conducir Carro": 15,
+        "Esquivar": 45,
+        "Montar": 50,
+        "Nadar": 20,
+        "Remar": 40,
+        "Saltar": 35,
+        "Trepar": 30
+      }
+    },
+    "comunicacion": {
+      "modificador": null,
+      "habilidades": {
+        "arte": 10,
+        "baiar": 5,
+        "cantar": 25,
+        "charlatanería": 0,
+        "disfrazarse": 10,
+        "encanto": 5,
+        "interpretar": 15,
+        "intimidar": 35,
+        "intrigar": 10,
+        "lengua propia": 40,
+        "negociar": 5,
+        "oratoria": 0,
+        "otra lengua": 0
+      }
+    },
+     "conocimiento": {
+      "modificador": null,
+      "habilidades": {
+        "administrar": 0,
+        "agricultura": 30,
+        "alquimia": 40,
+        "batalla": 0,
+        "burocracia": 5,
+        "buscar libros": 35,
+        "costumbres propias": 50,
+        "costumbres": 25,
+        "despiece pacífico": 0,
+        "juegos": 15,
+        "leer y escribir": 20,
+        "navegación": 45,
+        "pastorear": 60,
+        "primeros auxilios": 10,
+        "saber animal": 60,
+        "saber celestial": 25,
+        "saber razas antiguas": 0,
+        "saber mineral": 10,
+        "saber región (propia)": 5,
+        "saber región": 0,
+        "saber religioso": 20,
+        "saber vegetal": 0,
+        "supervivencia": 15,
+        "tasar objetos": 55,
+        "tratar Enfermedad": 0,
+        "tratar Veneno": 0
+      }
+    },
+        "magia": {
+      "modificador": null,
+      "habilidades": {
+        "adorar": 30,
+        "baile espiritual": 10,
+        "combate espiritual": 25,
+        "meditar": 25,
+        "percibir asesinos": 20,
+        "percibir el caos": 25,
+        "preparar cadaver": 25,
+        "saber espiritual": 20,
+        "viaje espiritual": 11
+      }
+    },
+    "manipulacion": {
+      "modificador": null,
+      "habilidades": {
+        "fabricación": 30,
+        "juegos de manos": 10,
+        "mecanismos": 25,
+        "ocultar": 25,
+        "tocar instrumento": 20
+      }
+    },
+    "percepcion": {
+      "modificador": null,
+      "habilidades": {
+        "buscar": 40,
+        "escuchar": 20,
+        "otear": 65,
+        "psicología (propia especia)": 60,
+        "psicología": 50,
+        "rastrear": 75
+      }
+    },
+    "sigilo": {
+      "modificador": null,
+      "habilidades": {
+        "deslizarse en silencio": 40,
+        "esconderse": 35
+      }
+    },
+    "armasCuerpoACuerpo": {
+      "modificador": null,
+      "habilidades": {
+        "alabarda": 5,
+        "daga": 55,
+        "espada 1M": 0,
+        "espada 2M": 65,
+        "hacha 1M": 45,
+        "hacha 2M": 0,
+        "lanza 1M": 0,
+        "lanza 2M": 0,
+        "martillo 1M": 0,
+        "martillo 2M": 0,
+        "maza 1M": 40,
+        "maza 2M": 0
+      }
+    },
+    "armasProyectil": {
+      "modificador": null,
+      "habilidades": {
+        "arco": 0,
+        "arrojadiza": 22,
+        "ballesta": 0,
+        "cerbatana": 10,
+        "jabalina": 40,
+        "honda": 0,
+        "lazo praxiano": 60
+      }
+    },
+    "escudos": {
+      "modificador": null,
+      "habilidades": {
+        "escudo Pequeño": 0,
+        "escudo Mediano": 60,
+        "escudo Grande": 0
+      }
+    },
+    "armasNaturales": {
+      "modificador": null,
+      "habilidades": {
+        "punetazo": 30,
+        "agarre": 25,
+        "patada": 20
+      }
+    },
+    "otrasHabilidades": {
+      "modificador": null,
+      "habilidades": {
+        "  ": 0
+      }
+    }
+  },
+  "magia": {
+    "limiteCAR": 9,
+    "magiaEspiritual": [
+      "Curación 2",
+      "Protección 1",
+      "Fuerza 2",
+      "Contrahechizo 1"
+    ],
+    "magiaRunica": [
+      "Invocar la Tormenta (Orlanth)",
+      "Volar (Orlanth)"
+    ],
+    "runasHechiceriaTecnicas": [],
+    "intLibre": 0,
+    "puntosMagia": {
+      "sinUsar": 1,
+      "actual": 10,
+      "maximo": 10
+    }
+  },
+  "inventario": {
+    "maximoEncumbrancia": 24,
+    "actualEncumbrancia": 18,
+    "equipo": [
+      "Armadura de Cuero Duro (2 AP)",
+      "Mochila",
+      "Raciones (5 días)",
+      "Cantimplora",
+      "Cuerda (10m)",
+      "Pedernal y yesca",
+      "Manta",
+      "Saco de dormir",
+      "10 flechas",
+      "Poción curativa (1D6 HP)"
+    ],
+    "tesoro": {
+      "ruedas": 0,
+      "lunares": 35,
+      "clacks": 0,
+      "bolgs": 0,
+      "bienes": 0
+    },
+    "objetosMagicos": []
+  },
+  "notasCombate": "Experto en emboscadas y uso del terreno. Prefiere luchar con espada y escudo en formación.",
+  "notasMagia": "Los hechizos de Orlanth son para la protección y el ataque directo, invocando el trueno.",
+  "notasGenerales": "Borngold tiene una cicatriz en la mejilla izquierda de un encuentro con un broo. Fiel a sus amigos y familia, desconfía de los extraños y odia a los Lunaritas. Tiene un buen ojo para las huellas y los signos en la naturaleza."
+}

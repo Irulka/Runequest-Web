@@ -81,7 +81,7 @@ function initGrupo() {
                 </div>
 
                 <div class="tab-content" id="caracteristicas">
-                    ${generarCaracteristicas(member.caracteristicas, member.puntosRuna, member.afinidadesRunicas, member.pasiones, member.cultos)}
+                    ${generarCaracteristicas(member.caracteristicas, member.puntosRuna, member.runasElementales, member.runasDePoder, member.pasiones, member.cultos)}
                 </div>
 
                 <div class="tab-content" id="combate">
@@ -125,11 +125,43 @@ function initGrupo() {
                 btn.classList.add('active');
             });
         });
+
+        // Add event listeners for runas de poder after content is rendered
+        document.querySelectorAll('.runa-poder-valor span[contenteditable="true"]').forEach(span => {
+            span.addEventListener('input', (e) => {
+                let editedValue = parseInt(e.target.innerText) || 0;
+                // Clamp value between 0 and 100
+                if (editedValue < 0) editedValue = 0;
+                if (editedValue > 100) editedValue = 100;
+                e.target.innerText = editedValue; // Update the displayed value
+
+                const field = e.target.getAttribute('data-field');
+                const pathParts = field.split('.'); // e.g., ['runasDePoder', 'hombre', 'valor']
+                const currentRuneName = pathParts[1]; // 'hombre'
+
+                // Find the other rune in the pair from the member's data structure
+                let partnerRuneName = null;
+                for (const runeKey in member.runasDePoder) {
+                    if (runeKey === currentRuneName) {
+                        partnerRuneName = member.runasDePoder[runeKey].pareja;
+                        break;
+                    }
+                }
+
+                if (partnerRuneName) {
+                    const partnerSpan = document.querySelector(`span[data-field="runasDePoder.${partnerRuneName}.valor"]`);
+                    if (partnerSpan) {
+                        const newPartnerValue = 100 - editedValue;
+                        partnerSpan.innerText = newPartnerValue;
+                    }
+                }
+            });
+        });
     }
 
     function formatKey(key) {
         // Specific keys that should not be automatically formatted
-        const noFormatKeys = ['FUE', 'CON', 'TAM', 'DES', 'INT', 'POD', 'CAR'];
+        const noFormatKeys = ['FUE', 'CON', 'TAM', 'DES', 'INT', 'POD', 'CAR', 'AP', 'HP', 'Enc', 'Rango', 'Tasa', 'Parada'];
 
         if (noFormatKeys.includes(key)) {
             return key;
@@ -147,19 +179,22 @@ function initGrupo() {
             case 'tasaCuracion_semana': return 'Tasa Curación (semana)';
             case 'actualEncumbrancia': return 'Encumbrancia Actual';
             case 'maximoEncumbrancia': return 'Encumbrancia Máxima';
-            // case 'sinUsar': return 'Sin Usar'; // This key is being removed, so no need to format it
             case 'actual': return 'Actual';
             case 'maximo': return 'Máximo';
             case 'valor': return 'Valor';
             case 'danio': return 'Daño';
             case 'SR_TAM': return 'MR TAM';
             case 'SR_DES': return 'MR DES';
-            case 'AP': return 'AP';
-            case 'HP': return 'HP';
-            case 'Enc': return 'Enc.';
-            case 'Rango': return 'Rango';
-            case 'Tasa': return 'Tasa';
-            case 'Parada': return 'Parada';
+            case 'hombre': return 'Hombre';
+            case 'bestia': return 'Bestia';
+            case 'fertilidad': return 'Fertilidad';
+            case 'muerte': return 'Muerte';
+            case 'armonia': return 'Armonía';
+            case 'desorden': return 'Desorden';
+            case 'verdad': return 'Verdad';
+            case 'ilusion': return 'Ilusión';
+            case 'inmovilidad': return 'Inmovilidad';
+            case 'movimiento': return 'Movimiento';
             default:
                 // Capitalize first letter and add spaces before capital letters
                 return key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
@@ -177,7 +212,7 @@ function initGrupo() {
         return html;
     }
 
-    function generarCaracteristicas(caracteristicas, puntosRuna, afinidadesRunicas, pasiones, cultos) {
+    function generarCaracteristicas(caracteristicas, puntosRuna, runasElementales, runasDePoder, pasiones, cultos) {
         let html = `
             <h3>Características Principales</h3>
             <div class="caracteristicas-grid">
@@ -198,13 +233,61 @@ function initGrupo() {
                 </div>
             </div>
 
-            <h3>Afinidades Rúnicas</h3>
+            <h3>Runas Elementales</h3>
             <div class="runas-grid">
-                ${Object.entries(afinidadesRunicas).map(([runa, valor]) => `
+                ${Object.entries(runasElementales).map(([runa, valor]) => `
                     <div class="runa">
-                        <strong>${runa.charAt(0).toUpperCase() + runa.slice(1)}:</strong> <span contenteditable="true" data-field="afinidadesRunicas.${runa}">${valor}</span>
+                        <strong>${formatKey(runa)}:</strong> <span contenteditable="true" data-field="runasElementales.${runa}">${valor}</span>
                     </div>
                 `).join('')}
+            </div>
+
+            <h3>Runas de Poder</h3>
+            <div class="runas-grid">
+                ${(function() {
+                    const renderedPairs = new Set();
+                    return Object.entries(runasDePoder).map(([runaKey, runaData]) => {
+                        // Check if this rune has a defined pair and if this pair has already been rendered
+                        if (runaData.pareja && !renderedPairs.has(runaKey) && !renderedPairs.has(runaData.pareja)) {
+                            const primaryRune = runaKey;
+                            const secondaryRune = runaData.pareja;
+
+                            // Mark both runes in the pair as rendered
+                            renderedPairs.add(primaryRune);
+                            renderedPairs.add(secondaryRune);
+
+                            // Retrieve values for both runes
+                            const primaryValue = runasDePoder[primaryRune].valor;
+                            const secondaryValue = runasDePoder[secondaryRune].valor;
+
+                            return `
+                                <div class="runa">
+                                    <div class="runa-poder-par">
+                                        <div class="runa-poder-valor">
+                                            <strong>${formatKey(primaryRune)}:</strong> <span contenteditable="true" data-field="runasDePoder.${primaryRune}.valor">${primaryValue}</span>
+                                        </div>
+                                        <div class="runa-poder-valor">
+                                            <strong>${formatKey(secondaryRune)}:</strong> <span contenteditable="true" data-field="runasDePoder.${secondaryRune}.valor">${secondaryValue}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        } else if (!runaData.pareja && !renderedPairs.has(runaKey)) {
+                            // Handle single runes that don't have a pair defined
+                            renderedPairs.add(runaKey);
+                             return `
+                                <div class="runa">
+                                    <div class="runa-poder-par">
+                                        <div class="runa-poder-valor">
+                                            <strong>${formatKey(runaKey)}:</strong> <span contenteditable="true" data-field="runasDePoder.${runaKey}.valor">${runaData.valor}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        return ''; // Skip if already rendered as part of a pair or no pair and already rendered
+                    }).join('')
+                })()}
             </div>
 
             <h3>Pasiones</h3>
@@ -535,19 +618,29 @@ function initGrupo() {
                 finalData.nombre = editedNameElement.innerText;
             }
 
-            // Remove 'sinUsar' from puntosMagia if it exists in finalData
+            // Remove 'sinUsar' from puntosMagia if it exists in finalData (legacy key)
             if (finalData.magia && finalData.magia.puntosMagia && 'sinUsar' in finalData.magia.puntosMagia) {
                 delete finalData.magia.puntosMagia.sinUsar;
             }
 
-            // Iterate over all editable fields to update existing data
+            // Iterate over all editable fields to update existing data and collect new simple array items
             document.querySelectorAll('[contenteditable="true"][data-field]').forEach(span => {
                 const path = span.getAttribute('data-field').split('.');
-                let currentTarget = finalData; // Navigate in finalData
-                let originalCurrentTarget = originalMember; // Navigate in originalMember for reference
+                let currentTarget = finalData;
 
-                // Skip new items for this initial loop as they are handled separately below
-                if (path[path.length - 1].startsWith('new-')) return;
+                // Handle 'new-N' items separately for arrays of primitives
+                if (path[path.length - 2] && path[path.length - 2].startsWith('new-')) { // Example: inventario.equipo.new-0
+                     // This is a new item in a simple array (like equipo, objetosMagicos, spiritual/runic magic)
+                    // We'll collect these at the end, so skip processing here for now.
+                    return;
+                }
+
+                if (path[path.length - 1].startsWith('new-')) { // Example: armasEquipadas.cuerpoACuerpo.new-0.nombre
+                    // This is a property of a new object in an array (like a new weapon/shield)
+                    // We'll collect these at the end, so skip processing here for now.
+                    return;
+                }
+
 
                 for (let i = 0; i < path.length; i++) {
                     const key = path[i];
@@ -556,22 +649,28 @@ function initGrupo() {
                         if (Array.isArray(currentTarget) && !isNaN(key)) { // If it's an array and key is an index
                             currentTarget[parseInt(key)] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
                         } else {
-                            currentTarget[key] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
+                            // Special handling for runasDePoder to ensure values are numbers
+                            if (path[0] === 'runasDePoder' && key === 'valor') {
+                                currentTarget[key] = Number(span.innerText);
+                            } else {
+                                currentTarget[key] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
+                            }
                         }
                     } else {
-                        // Navigate down the object/array structure
                         if (isNaN(key)) { // Object property
                             if (!currentTarget[key]) currentTarget[key] = {};
                             currentTarget = currentTarget[key];
-                            originalCurrentTarget = originalCurrentTarget ? originalCurrentTarget[key] : undefined;
                         } else { // Array index
                             const index = parseInt(key);
-                            if (!Array.isArray(currentTarget)) currentTarget = []; // Should not happen if original structure is correct
-                            if (!currentTarget[index] && (originalCurrentTarget && Array.isArray(originalCurrentTarget) && originalCurrentTarget[index] && typeof originalCurrentTarget[index] === 'object')) {
-                                currentTarget[index] = {}; // Initialize object if it's an object within an array
+                            if (!Array.isArray(currentTarget)) currentTarget = [];
+                            if (!currentTarget[index]) { // Ensure array element exists
+                                if (originalMember && originalMember[path[0]] && Array.isArray(originalMember[path[0]]) && originalMember[path[0]][index] && typeof originalMember[path[0]][index] === 'object') {
+                                    currentTarget[index] = {}; // Initialize as object if original was object
+                                } else {
+                                     // This case is already covered by the new-N checks at the top, or it's an existing simple array element
+                                }
                             }
                             currentTarget = currentTarget[index];
-                            originalCurrentTarget = originalCurrentTarget && Array.isArray(originalCurrentTarget) ? originalCurrentTarget[index] : undefined;
                         }
                     }
                 }
@@ -581,16 +680,16 @@ function initGrupo() {
 
             // New Inventory Items
             document.querySelectorAll('#equipo-list li span[data-field^="inventario.equipo.new-"]').forEach(span => {
-                const newItemText = span.innerText;
-                if (!finalData.inventario.equipo.includes(newItemText)) { // Avoid duplicates if re-saving without refresh
+                const newItemText = span.innerText.trim();
+                if (newItemText && !finalData.inventario.equipo.includes(newItemText)) {
                     finalData.inventario.equipo.push(newItemText);
                 }
             });
 
             // New Magic Objects
             document.querySelectorAll('#objetosMagicos-list li span[data-field^="inventario.objetosMagicos.new-"]').forEach(span => {
-                const newItemText = span.innerText;
-                if (!finalData.inventario.objetosMagicos.includes(newItemText)) { // Avoid duplicates
+                const newItemText = span.innerText.trim();
+                if (newItemText && !finalData.inventario.objetosMagicos.includes(newItemText)) {
                     finalData.inventario.objetosMagicos.push(newItemText);
                 }
             });
@@ -602,12 +701,17 @@ function initGrupo() {
                     const newWeapon = {};
                     newWeaponFields.forEach(span => {
                         const propertyName = span.getAttribute('data-field').split('.').pop();
-                        newWeapon[propertyName] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
+                        newWeapon[propertyName] = isNaN(span.innerText) ? span.innerText.trim() : Number(span.innerText);
                     });
-                    // Check if a weapon with the same name already exists to prevent exact duplicates on re-save
-                    const exists = finalData.armasEquipadas.cuerpoACuerpo.some(arma => arma.nombre === newWeapon.nombre);
-                    if (!exists || newWeapon.nombre === "Nueva Arma C/C") { // Allow adding "Nueva Arma C/C" multiple times
-                        finalData.armasEquipadas.cuerpoACuerpo.push(newWeapon);
+                    const weaponName = newWeapon.nombre.trim();
+                    if (weaponName) { // Only add if name is not empty
+                        // Check if a weapon with the same name already exists in the original data or newly added
+                        const exists = originalMember.armasEquipadas.cuerpoACuerpo.some(arma => arma.nombre === weaponName) ||
+                                       finalData.armasEquipadas.cuerpoACuerpo.some(arma => arma.nombre === weaponName);
+
+                        if (!exists || weaponName === "Nueva Arma C/C") { // Allow adding "Nueva Arma C/C" multiple times, but prefer unique names
+                            finalData.armasEquipadas.cuerpoACuerpo.push(newWeapon);
+                        }
                     }
                 }
             });
@@ -619,11 +723,15 @@ function initGrupo() {
                     const newWeapon = {};
                     newWeaponFields.forEach(span => {
                         const propertyName = span.getAttribute('data-field').split('.').pop();
-                        newWeapon[propertyName] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
+                        newWeapon[propertyName] = isNaN(span.innerText) ? span.innerText.trim() : Number(span.innerText);
                     });
-                    const exists = finalData.armasEquipadas.proyectil.some(arma => arma.nombre === newWeapon.nombre);
-                    if (!exists || newWeapon.nombre === "Nueva Arma Proyectil") {
-                        finalData.armasEquipadas.proyectil.push(newWeapon);
+                    const weaponName = newWeapon.nombre.trim();
+                    if (weaponName) {
+                        const exists = originalMember.armasEquipadas.proyectil.some(arma => arma.nombre === weaponName) ||
+                                       finalData.armasEquipadas.proyectil.some(arma => arma.nombre === weaponName);
+                        if (!exists || weaponName === "Nueva Arma Proyectil") {
+                            finalData.armasEquipadas.proyectil.push(newWeapon);
+                        }
                     }
                 }
             });
@@ -635,31 +743,34 @@ function initGrupo() {
                     const newShield = {};
                     newShieldFields.forEach(span => {
                         const propertyName = span.getAttribute('data-field').split('.').pop();
-                        newShield[propertyName] = isNaN(span.innerText) ? span.innerText : Number(span.innerText);
+                        newShield[propertyName] = isNaN(span.innerText) ? span.innerText.trim() : Number(span.innerText);
                     });
-                    const exists = finalData.armasEquipadas.escudos.some(escudo => escudo.nombre === newShield.nombre);
-                    if (!exists || newShield.nombre === "Nuevo Escudo") {
-                        finalData.armasEquipadas.escudos.push(newShield);
+                    const shieldName = newShield.nombre.trim();
+                    if (shieldName) {
+                        const exists = originalMember.armasEquipadas.escudos.some(escudo => escudo.nombre === shieldName) ||
+                                       finalData.armasEquipadas.escudos.some(escudo => escudo.nombre === shieldName);
+                        if (!exists || shieldName === "Nuevo Escudo") {
+                            finalData.armasEquipadas.escudos.push(newShield);
+                        }
                     }
                 }
             });
 
             // New Spiritual Magic Spells
             document.querySelectorAll('#magiaEspiritual-grid .hechizo span[data-field^="magia.magiaEspiritual.new-"]').forEach(span => {
-                const newSpellText = span.innerText;
-                if (!finalData.magia.magiaEspiritual.includes(newSpellText)) { // Avoid duplicates
+                const newSpellText = span.innerText.trim();
+                if (newSpellText && !finalData.magia.magiaEspiritual.includes(newSpellText)) {
                     finalData.magia.magiaEspiritual.push(newSpellText);
                 }
             });
 
             // New Runic Magic Spells
             document.querySelectorAll('#magiaRunica-grid .hechizo span[data-field^="magia.magiaRunica.new-"]').forEach(span => {
-                const newSpellText = span.innerText;
-                if (!finalData.magia.magiaRunica.includes(newSpellText)) { // Avoid duplicates
+                const newSpellText = span.innerText.trim();
+                if (newSpellText && !finalData.magia.magiaRunica.includes(newSpellText)) {
                     finalData.magia.magiaRunica.push(newSpellText);
                 }
             });
-
 
             // Construct the path to the original JSON file based on the character's name
             const fileName = `${finalData.nombre.toLowerCase().replace(/ /g, '')}.json`;

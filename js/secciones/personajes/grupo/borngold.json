@@ -34,23 +34,55 @@
     "actual": 10,
     "maximo": 10
   },
-  "afinidadesRunicas": {
-    "fuego": false,
-    "aire": true,
-    "oscuridad": false,
-    "luna": false,
-    "tierra": false,
-    "bestia": false,
-    "agua": false,
-    "hombre": true,
-    "fertilidad": false,
-    "armonia": false,
-    "desorden": false,
-    "muerte": false,
-    "verdad": false,
-    "ilusion": false,
-    "estasis": false,
-    "movimiento": false
+ "runasElementales": {
+    "aire": 60,
+    "agua": 40,
+    "fuego": 50,
+    "oscuridad": 30,
+    "tierra": 70,
+    "luna": 20
+  },
+  "runasDePoder": {
+    "hombre": {
+      "valor": 70,
+      "pareja": "bestia"
+    },
+    "bestia": {
+      "valor": 30,
+      "pareja": "hombre"
+    },
+    "fertilidad": {
+      "valor": 80,
+      "pareja": "muerte"
+    },
+    "muerte": {
+      "valor": 20,
+      "pareja": "fertilidad"
+    },
+    "armonia": {
+      "valor": 50,
+      "pareja": "desorden"
+    },
+    "desorden": {
+      "valor": 50,
+      "pareja": "armonia"
+    },
+    "verdad": {
+      "valor": 90,
+      "pareja": "ilusion"
+    },
+    "ilusion": {
+      "valor": 10,
+      "pareja": "verdad"
+    },
+    "inmovilidad": {
+      "valor": 45,
+      "pareja": "movimiento"
+    },
+    "movimiento": {
+      "valor": 55,
+      "pareja": "inmovilidad"
+    }
   },
   "pasiones": [
     {

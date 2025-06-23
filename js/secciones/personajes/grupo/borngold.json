@@ -15,7 +15,7 @@
     "clan": "Piedra-Lluvia",
     "campana": "Defensa de Sartar",
     "jugador": "DM",
-    "imagen": "../../imagenes/personajes/borngold.webp"
+    "imagen": "./imagenes/personajes/borngold.webp"
   },
   "caracteristicas": {
     "FUE": 14,

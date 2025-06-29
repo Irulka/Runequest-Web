@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Personajes - RuneQuest</title>
+    <link rel="stylesheet" href="css/estilos.css"> <style>
+        /* Estilos específicos para esta sección, siguiendo la estética de monstruos.html */
+        body {
+            background-color: #1a202c; /* Fondo oscuro */
+            color: #e2e8f0; /* Texto claro */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .varita-header-container h2 {
+            text-align: center;
+            color: #000000; /* Color dorado/amarillo para títulos */
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .explicacion-varita {
+            text-align: justify;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .selector-raza, .selector-profesion {
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            background-color: #4a5568;
+            border-radius: 5px;
+        }
+
+        .selector-raza label, .selector-profesion label {
+            margin-right: 10px;
+            color: #cbd5e0;
+            font-weight: bold;
+        }
+
+        .selector-raza select, .selector-profesion select {
+            padding: 8px;
+            border: 1px solid #6a768f;
+            border-radius: 4px;
+            background-color: #2d3748;
+            color: #e2e8f0;
+            width: calc(100% - 120px); /* Ajuste para que no sea 100% y deje espacio a la label */
+            max-width: 300px; /* Limitar el ancho máximo */
+        }
+
+        .formulario-caracteristicas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .caracteristica-input {
+            background-color: #4a5568;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .caracteristica-input label {
+            margin-bottom: 5px;
+            color: #cbd5e0;
+            font-weight: bold;
+        }
+
+        .roll-formula {
+            font-size: 0.8em;
+            color: #a0aec0; /* Un color más suave para la fórmula */
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .caracteristica-input input[type="number"] {
+            width: 60px;
+            padding: 8px;
+            border: 1px solid #6a768f;
+            border-radius: 5px;
+            background-color: #2d3748;
+            color: #e2e8f0;
+            box-sizing: border-box;
+            align-self: center;
+        }
+
+        .botones-generacion {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+
+        .resultados-container {
+            background-color: #4a5568;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .resultado-seccion h3 {
+            color: #ecc94b;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ecc94b;
+            padding-bottom: 5px;
+        }
+
+        .resultado-seccion p,
+        .resultado-seccion ul {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .resultado-seccion ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .tabla-atributos,
+        .tabla-habilidades,
+        .tabla-localizaciones {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: #2d3748;
+            border-radius: 4px;
+            overflow: hidden; /* Para que los bordes redondeados se apliquen a la tabla */
+        }
+
+        .tabla-atributos th,
+        .tabla-atributos td,
+        .tabla-habilidades th,
+        .tabla-habilidades td,
+        .tabla-localizaciones th,
+        .tabla-localizaciones td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #6a768f;
+        }
+
+        .tabla-atributos th,
+        .tabla-habilidades th,
+        .tabla-localizaciones th {
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #e2e8f0;
+        }
+
+        .tabla-atributos tr:last-child td,
+        .tabla-habilidades tr:last-child td,
+        .tabla-localizaciones tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tabla-localizaciones tbody tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .formulario-caracteristicas {
+                grid-template-columns: 1fr;
+            }
+            .botones-generacion {
+                flex-direction: column;
+            }
+            .btn-magia {
+                width: 100%;
+            }
+            .selector-raza select, .selector-profesion select {
+                width: calc(100% - 80px); /* Ajuste en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="seccion-activa">
+        <div class="varita-header-container">
+            <h2 class="text-center">Creación de Personajes - RuneQuest</h2>
+        </div>
+
+        <div class="varita-layout-container">
+            <div class="varita-content-container">
+                <div class="varita-container">
+                    <p class="explicacion-varita">
+                        Aquí podrás crear tu personaje para RuneQuest. Primero selecciona una raza y una profesión. Luego, puedes introducir los resultados de tus tiradas de dados para las características o generarlos aleatoriamente.
+                        Recuerda que los puntos de afinidades rúnicas y las pasiones quedarán a tu criterio para su distribución posterior.
+                    </p>
+
+                    <div class="selector-raza">
+                        <label for="raza-selector">Raza:</label>
+                        <select id="raza-selector">
+                            <option value="humano">Humano</option>
+                            </select>
+                    </div>
+
+                    <div class="selector-profesion">
+                        <label for="profesion-selector">Profesión:</label>
+                        <select id="profesion-selector">
+                            <option value="">-- Selecciona una profesión --</option>
+                            </select>
+                    </div>
+
+                    <div class="formulario-caracteristicas">
+                        <div class="caracteristica-input">
+                            <label for="str">Fuerza: <span id="str-roll" class="roll-formula"></span></label>
+                            <input type="number" id="str" min="3" max="18" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="con">Constitución: <span id="con-roll" class="roll-formula"></span></label>
+                            <input type="number" id="con" min="3" max="18" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="siz">Tamaño: <span id="siz-roll" class="roll-formula"></span></label>
+                            <input type="number" id="siz" min="2" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="dex">Destreza: <span id="dex-roll" class="roll-formula"></span></label>
+                            <input type="number" id="dex" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="int">Inteligencia: <span id="int-roll" class="roll-formula"></span></label>
+                            <input type="number" id="int" min="3" max="24" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="pow">Poder: <span id="pow-roll" class="roll-formula"></span></label>
+                            <input type="number" id="pow" min="3" max="21" value="10">
+                        </div>
+                        <div class="caracteristica-input">
+                            <label for="cha">Carisma: <span id="cha-roll" class="roll-formula"></span></label>
+                            <input type="number" id="cha" min="3" max="21" value="10">
+                        </div>
+                    </div>
+
+                    <div class="botones-generacion">
+                        <button class="btn-magia" id="btn-generar-aleatorio">Características Aleatorias</button>
+                        <button class="btn-magia" id="btn-mostrar-personaje">Crear Personaje</button>
+                    </div>
+
+                    <div class="resultados-container" id="resultados-container" style="display: none;">
+                        <div id="resultado-principal"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="eurmal-image-container">
+                <img id="imagen-dinamica" src="./imagenes/generador.webp" alt="Creación de Personajes" class="eurmal-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="creacion-personajes.js"></script>
+</body>
+</html>

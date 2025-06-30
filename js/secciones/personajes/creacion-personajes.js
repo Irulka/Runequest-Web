@@ -185,7 +185,7 @@ const profesiones = [
     },
     {
         nombre: "Cazador",
-        skills: "Conocimiento Animal +20%, Primeros Auxilios +15%, Ocultarse +20%, Moverse Sigilosamente +20%, Rastrear +25%, Tirar (Arco) +25%, Escuchar +15%, Buscar +15%",
+        skills: "Conocimiento Animal +20%, Primeros Auxilios +15%, Ocultarse +20%, Deslizarse en Silencio +20%, Rastrear +25%, Tirar (Arco) +25%, Escuchar +15%, Buscar +15%",
         living: "Escaso",
         income: "50 L",
         cults: "Orlanth, Aldryami (cuando se caza en bosques)",
@@ -251,7 +251,7 @@ const profesiones = [
     },
     {
         nombre: "Explorador",
-        skills: "Orientación +25%, Rastrear +20%, Conocimiento de Plantas +15%, Ocultarse +15%, Moverse Sigilosamente +15%, Supervivencia +20%, Escuchar +15%, Buscar +15%",
+        skills: "Orientación +25%, Rastrear +20%, Conocimiento de Plantas +15%, Ocultarse +15%, Deslizarse en silencio +15%, Supervivencia +20%, Escuchar +15%, Buscar +15%",
         living: "Escaso",
         income: "45 L",
         cults: "Orlanth, Lanbril",
@@ -284,7 +284,7 @@ const profesiones = [
     },
     {
         nombre: "Ladrón",
-        skills: "Ocultarse +25%, Moverse Sigilosamente +25%, Juego de Manos +20%, Abrir Cerraduras +15%, Tasar +15%, Pelear (Cuchillo) +20%",
+        skills: "Ocultarse +25%, Deslizarse en silencio +25%, Juego de Manos +20%, Abrir Cerraduras +15%, Tasar +15%, Pelear (Cuchillo) +20%",
         living: "Pobre",
         income: "variable (1D6x10 L)",
         cults: "Lanbril, Argan Argar",
@@ -442,9 +442,105 @@ const profesiones = [
         passions: "Odio (elfos) 60%, Odio (enanos) 60%, Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "150 L",
         equipment: "Maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), timbales y INTx100 Bolgs. ."
     },
-
-
-
+       {
+        nombre: "Artesano (Troll)",
+        skills: "Regatear +10%, Ocultar +10%, Artesanía (primaria) +30%, Artesanía (secundaria) +20%, Arma cultural (elige una) +20%, Inventar +20%, Perspicacia (Troll) +10%, Conocimiento (cualquiera) +20%",
+        living: "Pobre", income: "50 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) 60%, Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "150 L",
+        equipment: "Herramientas para su profesión, maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs. ."
+    },
+    {
+        nombre: "Cazador / Recolector (Troll)",
+        skills: "Saber (local) +10%, Arma cultural (elige una) +10%, Sentido Oscuro (Otear) +20%, Sentido Oscuro (buscar) +10%, Esconderse +10%, Deslizarse en Silencio +30%, Honda +20%, Rastrear +30%.",
+        living: "Pobre", income: "50 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "150 L",
+        equipment: "Trampas y lazos para presas, maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs."
+    },
+    {
+        nombre: "Pastor de Insectos (Troll)",
+        skills: "Trepar +20%, Artesanía (Cuidado de insectos) +30%, Arma cuerpo a cuerpo (elige una) +10%, Sentido Oscuro (buscar) +10%, Primeros auxilios +10%, Escudo grande +10%, Montar (insectos) +30%, Honda +20%, Nadar +10%.",
+        living: "Pobre", income: "50 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "150 L",
+        equipment: "Maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs."
+    },
+    {
+        nombre: "Noble (Troll)",
+        skills: "Arma cultural (elige una) +30%, Arma cultural (elige otra) +30%, Costumbres (Troll) +10%, Perspicacia (Troll) +20%, Intimidar +20%, Escudo grande +30%, Combate espíritual +10%, Leer/Escribir (lengua oscura) +10%, Hablar otro idioma +10%",
+        living: "Normal", income: "120 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "360 L",
+        equipment: "Armas culturales, escudo grande, armadura de bronce (6 ptos.), yelmo abierto (4 ptos.), ropa elegante por valor de 80 L, una dosis de poción curativa (POT 1D6), una dosis de antídoto de veneno (POT 6, cualquier tipo); esclavo trollkin o escarabajo guardián entrenado, cristal de poder (1D6 puntos). Posee SIZx1.000 bolgs."
+    },
+    {
+        nombre: "Matrona (Troll)",
+        skills: "Alquimia +10%, Primeros auxilios +30%, Perspicacia (trol) +10%, Saber (vegetal) +20%, Preparar cadáver +20%, Tratar enfermedad +30%, Tratar veneno +20%.",
+        living: "Normal", income: "60 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "180 L",
+        equipment: "Maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs."
+    },
+    {
+        nombre: "Capataz (Troll)",
+        skills: "Arma cultural (melé, elige una) +20%, Sentido Oscuro (buscar) +25%, Sentido Oscuro (otear) +10%, Primeros auxilios +10%, Perspicacia (Trollkin) +20%, Intimidar +10%, Escuchar +25%, Rastrear +20%.",
+        living: "Normal", income: "70 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "210 L",
+        equipment: "Esclavo trollkin, maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs."
+    },
+    {
+        nombre: "Sacerdotisa (Troll)",
+        skills: "Bailar +15%, Saber (culto) +30%, Meditar +10%, Preparar cadaver +10%, Leer/Escribir (lengua oscura) +10%, Cantar +20%, Combate Espiritual +20%, Baile espiritual +10%, Saber espiritual +10%, Viaje Espiritual +10%, Adorar (Kyger Litor) +30%.",
+        living: "Normal", income: "150 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "450 L",
+        equipment: "Armas culturales, escudo grande, armadura de bronce (6 ptos.), yelmo abierto (4 ptos.), ropas elegantes por valor de 80 L, una dosis de poción curativa (POT 1D6), una dosis de antídoto de veneno de cualquier tipo (POT 6), esclavo trollkin (ver página 77) o escarabajo guardián entrenado (ver página 131), cristal de almacenamiento de puntos mágicos (1D6 puntos). Posee TAMx1000 bolgs."
+    },
+    {
+        nombre: "Chaman (Troll)",
+        skills: "Primeros auxilios +15%, Meditar +10%, Cantar +20%, Combate espiritual +30%, Danza espiritual +10%, Saber espiritual +20%, Viaje espiritual +20%, Tratar enfermedad +15%, Tratar veneno +15%.",
+        living: "Normal", income: "120 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "360 L",
+        equipment: "Maza pesada, honda, escudo grande o maza 1M, armadura cuero (3 ptos), y INTx100 Bolgs."
+    },
+    {
+        nombre: "Mercader (Troll)",
+        skills: "Regatear +30%, Arma cultural (elige una) +20%, Costumbres (cualquiera) +10%, Perspicacia (Troll) +10%, Leer/Escribir(lengua oscura) +10%, Montar (Insecto) +20%, Hablar (cualquier otro idioma) +10%, Hablar (comercial) +30%.",
+        living: "Normal", income: "110 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "330 L",
+        equipment: "Maza o lanza pesada, escudo grande, honda, ropas extravagantes, a menudo de fabricación o diseño humano, y un sombrero grande de ala ancha . Uno o más objetos específicos que son raros o de tierras lejanas por valor de 200 L y artículos de comercio general por valor de 1.000 bolgs. Posee CHAx200 bolgs."
+    },
+    {
+        nombre: "Guerrero (Troll)",
+        skills: "Batalla +30%, Sentido oscuro (buscar) +10%, Primeros Auxilios +10%, Maza pesada +25%, Esconderse +10%, Escudo grande +25%, Escuchar +10%, Desliarse en silencio +10%, Otra arma (cualquiera) +25%, Cantar +10%.",
+        living: "Normal", income: "750 L",
+        passions: "Odio (elfos) 60%, Odio (enanos) Amor (familia) 60%, Lealtad (matriarca) 60%.", ransom: "220 L",
+        equipment: "Maza pesada, otra arma, honda, escudo grande,  peto de escamas ligeras (4 ptos.), grebas cuirboilli y brazales (3 ptos. cada uno), y un yelmo abierto (4 ptos.). Posee INTx100 bolgs."
+    },
+// PROFESIONES DE LOS TROLKIN
+    {
+        nombre: "Valor (trolkin)",
+        skills: "Arma cultural (melé, elige una) +20%, Sentido Oscuro (buscar) +25%, Sentido Oscuro (otear) +10%, Primeros auxilios +10%, Perspicacia (Trollkin) +20%, Intimidar +10%, Escuchar +25%, Rastrear +20%.",
+        living: "Pobre", income: "3 L",
+        passions: "Lealtad (al amo) 60%", ransom: "9 L",
+        equipment: "Honda, escudo pequeño, porra, armadura cuero (1 o 2 ptos), y INTx10 Bolgs."
+    },
+    {
+        nombre: "Guerrero (Trolkin)",
+        skills: "Batalla +30%, Sentido oscuro (buscar) +10%, Primeros Auxilios +10%, Maza pesada +25%, Esconderse +10%, Escudo grande +25%, Escuchar +10%, Desliarse en silencio +10%, Otra arma (cualquiera) +25%, Cantar +10%.",
+        living: "Pobre", income: "4 L",
+        passions: "Lealtad (al amo) 60%", ransom: "12 L",
+        equipment: "Maza, honda, escudo pequeño,  armadura de cuero (2 ptos.). Posee INTx10 bolgs."
+    },
+    {
+        nombre: "Comida (Trolkin)",
+        skills: "Saber (local) +10%, Arma cultural (elige una) +10%, Sentido Oscuro (Otear) +20%, Sentido Oscuro (buscar) +10%, Esconderse +10%, Deslizarse en Silencio +30%, Honda +20%, Rastrear +30%.",
+        living: "Pobre", income: "1 L",
+        passions: "Lealtad (al amo) 60%", ransom: "3 L",
+        equipment: "Trampas y lazos para presas, maza, honda, escudo pequeño, armadura cuero (1 pto), y INTx10 Bolgs."
+    },
+{
+        nombre: "Esclavo (Troll)",
+        skills: "Trepar +20%, Artesanía (Cuidado de insectos) +30%, Arma cuerpo a cuerpo (elige una) +10%, Sentido Oscuro (buscar) +10%, Primeros auxilios +10%, Escudo grande +10%, Montar (insectos) +30%, Honda +20%, Nadar +10%.",
+        living: "Pobre", income: "2 L",
+        passions: "Lealtad (al amo) 60%", ransom: "6 L",
+        equipment: "Maza, honda, escudo pequeño, armadura cuero (1 pto), y INTx10 Bolgs."
+    }
 
 
 
@@ -581,7 +677,45 @@ const races = {
         magia: "Todos conocen al menos tres conjuros de hechicería, acordes a su subtipo: (Conjuro de Hechicería) +25%, (Conjuro de Hechicería) +20%, (Conjuro de Hechicería) +15%.",
         notas: "Poseen una altura promedio de 120 centímetros y 45 kilos de peso. Sus rasgos facciales son bastante grotescos para los humanos, pero no resultan repulsivos ni horribles. La mayoría lleva barba."
     },
-        'Troll Negro (Uzko)': {
+        'Orco': {
+        caracteristicasRoll: {
+            STR: '4D6', CON: '3D6', SIZ: '2D6+2',
+            DEX: '4D6', INT: '3D6', POW: '2D6+3', CHA: '2D6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Ocultar': 20, 'Rastrear': 20, 'Esconderse': 20, 'Deslizarse en Silencio': 20, 'Saltar': 40,
+            'Intrigar': 20,'Trepar': 30,
+        }, 
+        profesionesDisponibles: [
+          "Cazador", "Guerrero", "Mercenario"
+        ],
+        movimiento: 6,
+        cults: "Principalmente Humakt.",
+        runas: "Muerte 60%, Movimiento 50%, Bestia 60%.",
+        magia: "Magia espiritual",
+        notas: "Son seres bajos, de piernas arqueadas y brazos largos, pero con una gran fuerza y agilidad. Son seres belicosos y bastante propensos a la pelea, por eso suelen tomar profesiones relacionadas con la batalla."
+    },
+    'Ogro': {
+        caracteristicasRoll: {
+            STR: '2D6+12', CON: '2D6+6', SIZ: '2D6+6',
+            DEX: '3D6', INT: '2D6+6', POW: '2D6+6', CHA: '3D6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Esquivar': 65, 'Disfrazarse': 50, 'Encanto': 25, 'Intimidar': 25,'Hablar (lengua local)': 30,
+        }, 
+        profesionesDisponibles: [
+           "Cazador", "Guerrero", "Comerciante", "Sacerdote", "Explorador",
+            "Músico/Bardo", "Noble/Terrateniente", "Ladrón", "Mercenario"
+        ],
+        movimiento: 8,
+        cults: "Cacodemonio y en ocasiones Bagog y Xiola Umbar.",
+        runas: "Caos, Ilusión y Muerte al 60%.",
+        magia: "Forma Falsa, Atraer Atención (Xiola umbar)",
+        notas: "Tienen un aspecto y tamaño similar al de un humano, con dientes puntiagudos como los de los carnívoros. Se alimentan de seres inteligentes y son esencialmente malignos. Se integran en sociedades humanas, donde pasan desapercibidos. Tienen un 5% de posibilidades de tener algún rasgo caótico."
+    },
+    'Troll Negro (Uzko)': {
         caracteristicasRoll: {
             STR: '3D6+6', CON: '3D6', SIZ: '3D6+8',
             DEX: '3D6', INT: '2D6+6', POW: '3D6', CHA: '3D6'
@@ -592,18 +726,90 @@ const races = {
              'Maza 2M': 20,  'Maza 1M': 20,'Escudo G': 25, 'Montar': 0,  'Honda': 20, 'Nadar': 5, 'Saber (troll)': 25,
         }, 
         profesionesDisponibles: [
-           "Artista (Troll)",
+           "Artista (Troll)", "Artesano (Troll)", "Cazador / Recolector (Troll)", "Pastor de Insectos (Troll)", "Noble (Troll)", "Matrona (Troll)", "Capataz (Troll)", "Sacerdotisa (Troll)", "Chaman (Troll)", "Mercader (Troll)", "Guerrero (Troll)"
         ],
         movimiento: 9,
         cults: "Adoran a Kyger Litor y pueden elegir un segundo culto del panteón de las Tinieblas, como por ejemplo Zorak Zoran.",
         runas: "Runa de la oscuridad al menos al 60%",
         magia: "Pared Oscura, Garrotazo, Silencio.",
         notas: "Los trolls negros son la población básica actual de los uz, y sólo ceden los puestos de mayor autoridad a los trolls de la Raza Señorial. Son inteligentes y utilizan todas las armas y la magia. Su gruesa piel les otorga un punto de armadura."
-    }
-
-
-
-
+    },
+        'Gran Troll (Uzdo)': {
+        caracteristicasRoll: {
+            STR: '4D6+12', CON: '1D4+14', SIZ: '4D6+12',
+            DEX: '3D6', INT: '2D6+2', POW: '3D6', CHA: '2D6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Hablar (lengua oscura)': 45, 'Trepar': 40, 'Sentido oscuro (otear)': 30, 'Sentido Oscuro (buscar)': 30, 'Esquivar': 25, 'Ocultarse': 35, 'Intimidar': 45, 'Saltar': 40, 'Escuchar': 40, 'Deslizarse en Silencio': 40, 'Combate Espiritual': 40,
+             'Maza 2M': 20,  'Maza 1M': 20,'Escudo G': 25, 'Montar': 0,  'Honda': 20, 'Nadar': 5, 'Saber (troll)': 25,
+        }, 
+        profesionesDisponibles: [
+           "Artista (Troll)", "Artesano (Troll)", "Cazador / Recolector (Troll)", "Pastor de Insectos (Troll)", "Matrona (Troll)", "Capataz (Troll)", "Sacerdotisa (Troll)", "Mercader (Troll)", "Guerrero (Troll)"
+        ],
+        movimiento: 7,
+        cults: "Adoran a Kyger Litor y pueden elegir un segundo culto del panteón de las Tinieblas, como por ejemplo Zorak Zoran.",
+        runas: "Runa de la oscuridad al menos al 60%",
+        magia: "Pared Oscura, Garrotazo, Silencio.",
+        notas: "Los Grandes trolls fueron creados por la bruja araña como su guardia personal. La mitad de estos ejemplares tienen su origen en su programa de cría, sin embargo, han perdido algo de intelecto en el proceso. Su gruesa piel les otorga tres puntos de armadura."
+    },
+    'Troll Raza Señorial (Uzuz)': {
+        caracteristicasRoll: {
+            STR: '4D6+6', CON: '2D6+6', SIZ: '3D6+12',
+            DEX: '2D6+6', INT: '2D6+12', POW: '3D6', CHA: '2D6+6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Hablar (lengua oscura)': 75, 'Bailar': 64, 'Cantar': 65,'Trepar': 40, 'Sentido oscuro (otear)': 85, 'Sentido Oscuro (buscar)': 85, 'Saber (troll)': 85, 'Saber (mundo subterraneo)': 85,'Esquivar': 35, 'Ocultarse': 70, 'Intimidar': 85, 'Saltar': 40, 'Escuchar': 470, 'Deslizarse en Silencio': 70, 'Combate Espiritual': 95,
+             'Maza 2M': 20,  'Maza 1M': 20,'Escudo G': 25, 'Montar': 0,  'Honda': 20, 'Nadar': 5, 'Saber (troll)': 25,
+        }, 
+        profesionesDisponibles: [
+           "Noble (Troll)", "Sacerdotisa (Troll)", "Chaman (Troll)"
+        ],
+        movimiento: 9,
+        cults: "Adoran a Kyger Litor y pueden elegir un segundo culto del panteón de las Tinieblas, como por ejemplo Zorak Zoran.",
+        runas: "Runa de la oscuridad al menos al 90%",
+        magia: "Pared Oscura, Garrotazo, Silencio.",
+        notas: "La Raza de las Amas, las veneradas madres de los trolls, es una raza extraordinariamente antigua. Las hembras tienen varios pares de mamas y suelen tener varios partos en cada embarazo. Allí donde existen, los trols de la Raza Señorial ocupan los puestos de poder. Son poderosos mágicamente y tienden a confiar en esos talentos por encima de todos los demás, pero cuando deben hacerlo también pueden recurrir a una fuerza física y un poder aterradores. Poseen dos puntos de armadura por su gruesa piel. Independientemente de su profesión, un troll de la raza señorial, siempre llevará el mejor equipamiento posible."
+    },
+     'Trolkin (Enlo)': {
+        caracteristicasRoll: {
+            STR: '2D6+3', CON: '3D6', SIZ: '1D6+6',
+            DEX: '3D6+3', INT: '2D6+3', POW: '2D6', CHA: '2D6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Sentido oscuro (otear)': 20, 'Sentido Oscuro (buscar)': 25, 'Esquivar': 25, 'Ocultarse': 35, 'Escuchar': 35, 'Deslizarse en Silencio': 25, 'Otear': 15,'Buscar': 25, 'Hablar (lengua oscura)': 50,
+        }, 
+        profesionesDisponibles: [
+           "Comida (Trolkin)", "Esclavo (Troll)","Guerrero (Trolkin)", "Valor (trolkin)" 
+        ],
+        movimiento: 6,
+        cults: "Adoran a Kyger Litor.",
+        runas: "Runa de la oscuridad al menos al 40%. Ninguna runa de poder por encima del 20%",
+        magia: "Si conocieran algún conjuro espiritual, sería de escasa potencia.",
+        notas: "Esta subespecie fue provocada por una maldición. La mayoría de los trolkin rara vez superan el metro de altura.Los de su propia especie los dividen en cuatro clases: valor, guerrero, esclavo y comida. La luz solar les desmoraliza (igual que el conjuro espiritual). Poseen un punto de armadura natural por su gruesa piel."
+    },
+     'Hobbit': {
+        caracteristicasRoll: {
+            STR: '2D6', CON: '2D6+12', SIZ: '2D3',
+            DEX: '2D6+10', INT: '2D6+6', POW: '2D6+3', CHA: '3D6'
+        },
+        puntosExtra: 3, // Puntos para distribuir si el total es <= 92
+        habilidadesBase: {
+            'Remar': 10, 'Trepar': 25, 'Esquivar': 25, 'Nadar': 25, 'Habla Fluida': 20, 'Oratoria': 20,'Trucos de manos': 15,'Ocultarse': 20, 'Deslizarse en Silencio': 20, 'Hablar (local)': 40,
+        }, 
+        profesionesDisponibles: [
+        "Aprendiz de Chamán", "Cazador", "Guerrero", "Granjero/Campesino",
+        "Artesano", "Comerciante", "Sacerdote", "Explorador",
+        "Músico/Bardo", "Noble/Terrateniente", "Ladrón", "Marinero/Pescador",
+        ],
+        movimiento: 5,
+        cults: "Ernalda, Voria y Barntar",
+        runas: "Tierra 60%. Fertilidad, Hombre y Armonía al menos al 50%",
+        magia: "Pueden conocer y utilizar cualquier tipo de magia, pero rara vez un hobbit se convierte en chaman o hechicero.",
+        notas: "Pequeños humanoides de complexión robusta, pero muy ágiles. Son bastante civilizados y habitan las zonas templadas de GLorantha."
+    },
 
 
 

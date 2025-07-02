@@ -9,7 +9,8 @@ function initObjetosM() {
     const objetoFiles = [
         'js/secciones/magia/objetosm/het-het.json',
         'js/secciones/magia/objetosm/tritura.json',
-        'js/secciones/magia/objetosm/laudnav.json'
+        'js/secciones/magia/objetosm/laudnav.json',
+        'js/secciones/magia/objetosm/raahgurt.json'
 
         // Añade más archivos aquí según sea necesario
     ];

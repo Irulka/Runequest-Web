@@ -6,6 +6,7 @@
         "Perfil": "Idéntico a una maza ligera",
         "Matriz": "12 PM",
         "Poder": "16",
+        "Combate espiritual": "60%",
         "Daño en combate espiritual": "1D6+2"
 },
  "efectos": [

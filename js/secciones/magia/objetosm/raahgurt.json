@@ -1,0 +1,24 @@
+{
+    "nombre": "Éxtasis de Raahgurt",
+    "imagen": "./imagenes/objetosm/raahgurt.webp",
+    "descripcion": "Una maza formada por lo que parece un Fémur de gran tamaño, probablemente de un Hombre y Medio excepcionalmente alto, o de un gigante joven. Está adornada y rematada de plata labrada, decorada con cuatro gemas de larimar, las cuales pueden almacenar PM.",
+    "propiedades": {
+        "Perfil": "Idéntico a una maza ligera",
+        "Matriz": "12 PM",
+        "Poder": "16",
+        "Daño en combate espiritual": "1D6+2"
+},
+ "efectos": [
+        {
+            "nombre": "Arma común",
+            "descripcion": "Éste arma se puede utilizar del mismo modo (y con las mismas estadísticas) que una maza ligera a un mano."
+        },
+                {
+            "nombre": "Potenciar daño",
+            "descripcion": "Éste arma se puede utilizar del mismo modo (y con las mismas estadísticas) que una maza a un mano. Los puntos mágicos deberán ser cargados por el portador en el arma. Estos, únicamente servirán para potenciar el daño de la misma. Cada ataque exitoso consecutivo realizados con este arma (a partir del primero) añadirá dos puntos de daño al total, el cual se irá acumulando a razón de dos puntos adicionales por cada impacto. En el proceso consumirá los puntos mágicos almacenados en el arma a razón de 1 PM por cada punto de daño adicional. Si se siguiera utilizando una vez agotados los PMs del arma, esta los obtendrá succionándolos directamente de su portador. Si el usuario se resistiese, la maza atacaría a su portador en combate espiritual. Si el portador falla el ataque, o si el blanco esquiva el mismo, el bonificador de daño se reiniciará. Esto no sucederá si el ataque es detenido por un arma o escudo del oponente."
+        }
+    ]
+}
+
+
+       

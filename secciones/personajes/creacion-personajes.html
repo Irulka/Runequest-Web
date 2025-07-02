@@ -27,9 +27,18 @@
             line-height: 1.6;
         }
 
-        .selector-raza, .selector-profesion {
+        /* Contenedor para alinear los selectores */
+        .selectores-alineados {
+            display: flex; /* Usa flexbox para poner los elementos en línea */
+            gap: 50px; /* Espacio entre los selectores */
             margin-bottom: 20px;
-            padding: 10px 15px;
+            flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+        }
+
+        .selector-raza, .selector-profesion {
+            flex: 1; /* Permite que cada selector ocupe el mismo espacio */
+            min-width: 250px; /* Ancho mínimo para evitar que se aprieten demasiado */
+            padding: 10px 30px;
             background-color: #4a5568;
             border-radius: 5px;
         }
@@ -177,6 +186,12 @@
             .selector-raza select, .selector-profesion select {
                 width: calc(100% - 80px); /* Ajuste en pantallas pequeñas */
             }
+            .selectores-alineados { /* Vuelven a apilarse en pantallas pequeñas */
+                flex-direction: column;
+            }
+            .selector-raza, .selector-profesion {
+                min-width: unset; /* Restablecer el ancho mínimo */
+            }
         }
     </style>
 </head>
@@ -194,18 +209,20 @@
                         Recuerda que los puntos de afinidades rúnicas y las pasiones quedarán a tu criterio para su distribución posterior.
                     </p>
 
-                    <div class="selector-raza">
-                        <label for="raza-selector">Raza:</label>
-                        <select id="raza-selector">
-                            <option value="humano">Humano</option>
+                    <div class="selectores-alineados">
+                        <div class="selector-raza">
+                            <label for="raza-selector">Raza:</label>
+                            <select id="raza-selector">
+                                <option value="humano">Humano</option>
                             </select>
-                    </div>
+                        </div>
 
-                    <div class="selector-profesion">
-                        <label for="profesion-selector">Profesión:</label>
-                        <select id="profesion-selector">
-                            <option value="">-- Selecciona una profesión --</option>
+                        <div class="selector-profesion">
+                            <label for="profesion-selector">Profesión:</label>
+                            <select id="profesion-selector">
+                                <option value="">-- Selecciona una profesión --</option>
                             </select>
+                        </div>
                     </div>
 
                     <div class="formulario-caracteristicas">
